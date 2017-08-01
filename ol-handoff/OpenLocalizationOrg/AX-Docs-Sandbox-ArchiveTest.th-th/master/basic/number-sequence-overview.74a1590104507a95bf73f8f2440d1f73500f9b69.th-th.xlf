@@ -1,0 +1,291 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="th-th">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eb13bba" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">041e1ae83852d914fbc2a7e3546f54e29d2b6ec6</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">core\organization-administration\number-sequence-overview.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">basic</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">cf268ebdcc7a9a8b9b59b12425a55dd0ca531fbc</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">79e0f93dc90532ba0fe83e024202a95c1b9d0a7d</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Number sequence overview</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Number sequences in Microsoft Dynamics 365 for Finance and Operations are used to generate readable, unique identifiers for master data records and transaction records that require identifiers.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>A master data record or transaction record that requires an identifier is referred to as a &lt;em&gt;reference&lt;/em&gt;.</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Number sequence overview</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Number sequences in Microsoft Dynamics 365 for Finance and Operations are used to generate readable, unique identifiers for master data records and transaction records that require identifiers.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>A master data record or transaction record that requires an identifier is referred to as a <bpt id="p1">&lt;em&gt;</bpt>reference<ept id="p1">&lt;/em&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Before you can create new records for a reference in Microsoft Dynamics 365 for Finance and Operations, you must set up a number sequence and associate it with the reference.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>We recommend that you use the pages in <bpt id="p1">**</bpt>Organization administration<ept id="p1">**</ept> to set up number sequences.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>If module-specific settings are required, you can use the parameters page in a module to specify number sequences for the references in that module.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>For example, in <bpt id="p1">**</bpt>Accounts receivable<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Accounts payable<ept id="p2">**</ept>, you can set up number sequence groups to allocate specific number sequences to specific customers or vendors.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>When you set up a number sequence, you must specify a scope, which defines which organization uses the number sequence.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>The scope can be <bpt id="p1">**</bpt>Shared<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Company<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Legal entity<ept id="p3">**</ept>, or <bpt id="p4">**</bpt>Operating unit<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Legal entity<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Company<ept id="p2">**</ept> scopes can be combined with <bpt id="p3">**</bpt>Fiscal calendar period<ept id="p3">**</ept> to create even more specific number sequences.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Number sequence formats consist of segments.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Number sequences with a scope other than <bpt id="p1">**</bpt>Shared<ept id="p1">**</ept> can contain segments that correspond to the scope.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>For example, a number sequence with a scope of <bpt id="p1">**</bpt>Legal entity<ept id="p1">**</ept> can contain a legal entity segment.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>By including a scope segment in the number sequence format, you can identify the scope of a particular record by looking at its number.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>In addition to segments that correspond to scopes, number sequence formats can contain <bpt id="p1">**</bpt>Constant<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Alphanumeric segments<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">**</bpt>Constant<ept id="p1">**</ept> segment contains a set of letters, numbers, or symbols that does not change.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>An <bpt id="p1">**</bpt>Alphanumeric<ept id="p1">**</ept> segment contains a set of letters or numbers that increment every time that a number is used.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Use a number sign (<ph id="ph1">\#</ph>) to represent incrementing numbers and an ampersand (&amp;) to represent incrementing letters.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>For example, the format <ph id="ph1">\#</ph><ph id="ph2">\#</ph><ph id="ph3">\#</ph><ph id="ph4">\#</ph><ph id="ph5">\#</ph><ph id="ph6">\_</ph>2017 creates the sequence 00001<ph id="ph7">\_</ph>2017, 00002<ph id="ph8">\_</ph>2017, and so on.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Number sequence examples</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>The following examples show how to use segments to create number sequence formats.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>In particular, the examples demonstrate the effects of using scope segments.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Expense report numbers</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>In the following example, expense report numbers are set up for the legal entity that is titled <bpt id="p1">**</bpt>CS<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Area:<ept id="p1">**</ept> Travel and expense <bpt id="p2">**</bpt>Reference:<ept id="p2">**</ept> Expense report number <bpt id="p3">**</bpt>Scope:<ept id="p3">**</ept> Legal entity <bpt id="p4">**</bpt>Legal entity:<ept id="p4">**</ept> CS</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Segments</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Segment type</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Value</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Segment 1</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Legal entity</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>CS</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Segment 2</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Constant</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>-EXPENSE-</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Segment 3</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Alphanumeric</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Example of formatted number<ept id="p1">**</ept>: CS-EXPENSE-0039 You can set up a similar number sequence format for other legal entities.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>For example, for a legal entity that is named <bpt id="p1">**</bpt>RW<ept id="p1">**</ept>, if you change only the value of the legal entity segment, the formatted number is RW-EXPENSE-0039.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>You can also change the whole number sequence format for other legal entities.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>For example, you can omit the legal entity scope segment to create a formatted number such as Exp-0001.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Sales order numbers</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>In the following example, sales order numbers are set up for the company ID <bpt id="p1">**</bpt>CEU<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Area:<ept id="p1">**</ept> Sales <bpt id="p2">**</bpt>Reference:<ept id="p2">**</ept> Sales order <bpt id="p3">**</bpt>Scope:<ept id="p3">**</ept> Company <bpt id="p4">**</bpt>Company:<ept id="p4">**</ept> CEU</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Segments</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Segment type</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Value</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Segment 1</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Constant</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>SO-</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Segment 2</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Alphanumeric</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Example of formatted number<ept id="p1">**</ept>: SO-0029 Even though a scope segment is not included in the format, numbering restarts for each company ID.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>If you use the same format for all company IDs, the same numbers are used in each company.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>For example, sales order number SO-0029 is used in each company.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>You can also change the whole number sequence format for other company IDs.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Purchase requisition numbers</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>In the following example, purchase requisition numbers are organization-wide.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Area:<ept id="p1">**</ept> Purchase <bpt id="p2">**</bpt>Reference:<ept id="p2">**</ept> Purchase requisition <bpt id="p3">**</bpt>Scope:<ept id="p3">**</ept> Shared</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Segments</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Segment type</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Value</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Segment 1</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Constant</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Req</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Segment 2</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Alphanumeric</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Example of formatted number<ept id="p1">**</ept>: Req0052 Because the scope is <bpt id="p2">**</bpt>Shared<ept id="p2">**</ept>, the number sequence format is used across the organization.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>You cannot set up different number sequence formats for different parts of the organization.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Performance considerations for number sequences</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Consider the following information about how the configuration of number sequences can affect system performance before you set up number sequences.</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Continuous and non-continuous number sequences</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Number sequences can be continuous or non-continuous.</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>A continuous number sequence does not skip any numbers, but numbers may not be used sequentially.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Numbers from a non-continuous number sequence are used sequentially, but the number sequence may skip numbers.</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>For example, if a user cancels a transaction, a number is generated, but not used.</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>In a continuous number sequence, that number is recycled later.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>In a non-continuous number sequence, the number is not used.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Continuous number sequences are typically required for external documents, such as purchase orders, sales orders, and invoices.</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>However, continuous number sequences can adversely affect system response times because the system must request a number from the database every time that a new document or record is created.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>If you use a non-continuous number sequence, you can enable <bpt id="p1">**</bpt>Preallocation<ept id="p1">**</ept> on the <bpt id="p2">**</bpt>Performance<ept id="p2">**</ept> FastTab of the <bpt id="p3">**</bpt>Number sequences<ept id="p3">**</ept> page.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>When you specify a quantity of numbers to preallocate, the system selects those numbers and stores them in memory.</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>New numbers are requested from the database only after the preallocated quantity has been used.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Unless there is a regulatory requirement that you use continuous number sequences, we recommend that you use non-continuous number sequences for better performance.</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>Automatic cleanup of number sequences</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>In case of a power failure, an application error, or other unexpected failure, the system cannot recycle numbers automatically for continuous number sequences.</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>You can run the cleanup process manually or automatically to recover the lost numbers.</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Carefully consider server usage when you plan the cleanup process.</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>We recommend that you perform the cleanup as a batch job during non-peak hours.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
