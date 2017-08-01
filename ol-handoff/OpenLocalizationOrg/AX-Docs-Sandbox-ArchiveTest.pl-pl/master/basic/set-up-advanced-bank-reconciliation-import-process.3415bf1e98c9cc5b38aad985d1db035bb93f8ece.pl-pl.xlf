@@ -1,0 +1,462 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="pl-pl">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">785da18a851c4d040843f49ca9f1b9ae12d701d3</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">financials\cash-bank-management\set-up-advanced-bank-reconciliation-import-process.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">basic</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">42250f46455392447a8c0140d4f89d71885d934e</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">f153f4615773f50c569df0bf2c36f1839a824b1b</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Set up the advanced bank reconciliation import process</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>The Advanced bank reconciliation feature lets you import electronic bank statements and automatically reconcile them with bank transactions in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This article explains how to set up the import functionality for your bank statements.</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Set up the advanced bank reconciliation import process</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>The Advanced bank reconciliation feature lets you import electronic bank statements and automatically reconcile them with bank transactions in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This article explains how to set up the import functionality for your bank statements.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>The setup for bank statement import varies, depending on the format of your electronic bank statement.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Finance and Operations supports three bank statement formats out of the box: ISO20022, MT940, and BAI2.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Sample files</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>For all three formats, you must have files that translate the electronic bank statement from the original format to a format that Finance and Operations can use.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>You can find the required resource files under the <bpt id="p1">**</bpt>Resources<ept id="p1">**</ept> node in Application Explorer in Microsoft Visual Studio.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>After you find the files, copy them to a single known location, so that you can more easily upload them during the setup process.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Resource name</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>File name</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>BankStmtImport<ph id="ph1">\_</ph>BAI2CSV<ph id="ph2">\_</ph>to<ph id="ph3">\_</ph>BAI2XML<ph id="ph4">\_</ph>xslt</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>BAI2CSV-to-BAI2XML.xslt</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>BankStmtImport<ph id="ph1">\_</ph>BAI2XML<ph id="ph2">\_</ph>to<ph id="ph3">\_</ph>Reconciliation<ph id="ph4">\_</ph>xslt</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>BAI2XML-to-Reconciliation.xslt</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>BankStmtImport<ph id="ph1">\_</ph>BankReconciliation<ph id="ph2">\_</ph>to<ph id="ph3">\_</ph>Composite<ph id="ph4">\_</ph>xslt</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>BankReconciliation-to-Composite.xslt</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>BankStmtImport<ph id="ph1">\_</ph>ISO20022XML<ph id="ph2">\_</ph>to<ph id="ph3">\_</ph>Reconciliation<ph id="ph4">\_</ph>xslt</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>ISO20022XML-to-Reconciliation.xslt</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>BankStmtImport<ph id="ph1">\_</ph>MT940TXT<ph id="ph2">\_</ph>to<ph id="ph3">\_</ph>MT940XML<ph id="ph4">\_</ph>xslt</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>MT940TXT-to-MT940XML.xslt</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>BankStmtImport<ph id="ph1">\_</ph>MT940XML<ph id="ph2">\_</ph>to<ph id="ph3">\_</ph>Reconciliation<ph id="ph4">\_</ph>xslt</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>MT940XML-to-Reconciliation.xslt</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>BankStmtImport<ph id="ph1">\_</ph>SampleBankCompositeEntity<ph id="ph2">\_</ph>xml</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>SampleBankCompositeEntity.xml</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Examples of bank statement formats and technical layouts</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Below are examples of the advanced bank reconciliation import file technical layout definitions and three related bank statement example files: https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Technical layout definition</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Bank statement example file</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>DynamicsAXMT940Layout</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>MT940StatementExample</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>DynamicsAXISO20022Layout</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>ISO20022StatementExample</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>DynamicsAXBAI2Layout</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>BAI2StatementExample</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Set up the import of ISO20022 bank statements</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>First, you must define the bank statement format processing group for ISO20022 bank statements by using the data entity framework.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Go to <bpt id="p1">**</bpt>Workspaces<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Data management<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Import<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Enter a name for the format, such as <bpt id="p1">**</bpt>ISO20022<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Set the <bpt id="p1">**</bpt>Source data format<ept id="p1">**</ept> field to <bpt id="p2">**</bpt>XML-Element<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Set the <bpt id="p1">**</bpt>Entity name<ept id="p1">**</ept> field to <bpt id="p2">**</bpt>Bank statements<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>To upload the import files, click <bpt id="p1">**</bpt>Upload<ept id="p1">**</ept>, and then browse to select the <bpt id="p2">**</bpt>SampleBankCompositeEntity.xml<ept id="p2">**</ept> file that you saved earlier.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>After the Bank statements entity is uploaded and the mapping is completed, click the <bpt id="p1">**</bpt>View map<ept id="p1">**</ept> action for the entity.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>The Bank statements entity is a composite entity that consists of four separate entities.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>In the list, select <bpt id="p1">**</bpt>BankStatementDocumentEntity<ept id="p1">**</ept>, and then click the <bpt id="p2">**</bpt>View map<ept id="p2">**</ept> action.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Transformations<ept id="p1">**</ept> tab, click <bpt id="p2">**</bpt>New<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>For sequence number 1, click <bpt id="p1">**</bpt>Upload file<ept id="p1">**</ept>, and select the <bpt id="p2">**</bpt>ISO20022XML-to-Reconciliation.xslt<ept id="p2">**</ept> file that you saved earlier.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> Finance and Operations transformation files are built for the standard format.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Because banks often diverge from this format, you may have to update the transformation file to map to your bank statement format.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>New<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>For sequence number 2, click <bpt id="p1">**</bpt>Upload file<ept id="p1">**</ept>, and select the <bpt id="p2">**</bpt>BankReconciliation-to-Composite.xslt<ept id="p2">**</ept> file that you saved earlier.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Apply transforms<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>After the format processing group is set up, the next step is to define the bank statement format rules for ISO20022 bank statements.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Go to <bpt id="p1">**</bpt>Cash and bank management<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Advanced bank reconciliation setup<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Bank statement format<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>New<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Specify a statement format, such as <bpt id="p1">**</bpt>ISO20022<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Enter a name for the format.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Set the <bpt id="p1">**</bpt>Processing group<ept id="p1">**</ept> field to the group that you defined earlier, such as <bpt id="p2">**</bpt>ISO20022<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Select the <bpt id="p1">**</bpt>XML file<ept id="p1">**</ept> check box.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>The last step is to enable Advanced bank reconciliation and set the statement format on the bank account.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Go to <bpt id="p1">**</bpt>Cash and bank management<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Bank accounts<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Select the bank account, and open it to view the details.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Reconciliation<ept id="p1">**</ept> tab, set the <bpt id="p2">**</bpt>Advanced bank reconciliation<ept id="p2">**</ept> option to <bpt id="p3">**</bpt>Yes<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Set the <bpt id="p1">**</bpt>Statement format<ept id="p1">**</ept> field to the format that you created earlier, such as <bpt id="p2">**</bpt>ISO20022<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Set up the import of MT940 bank statements</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>First, you must define the bank statement format processing group for MT940 bank statements by using the data entity framework.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Go to <bpt id="p1">**</bpt>Workspaces<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Data management<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Import<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Enter a name for the format, such as <bpt id="p1">**</bpt>MT940<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Set the <bpt id="p1">**</bpt>Source data format<ept id="p1">**</ept> field to <bpt id="p2">**</bpt>XML-Element<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Set the <bpt id="p1">**</bpt>Entity name<ept id="p1">**</ept> field to <bpt id="p2">**</bpt>Bank statements<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>To upload import files, click <bpt id="p1">**</bpt>Upload<ept id="p1">**</ept>, and then browse to select the <bpt id="p2">**</bpt>SampleBankCompositeEntity.xml<ept id="p2">**</ept> file that you saved earlier.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>After the Bank statements entity is uploaded and the mapping is completed, click the <bpt id="p1">**</bpt>View map<ept id="p1">**</ept> action for the entity.</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>The Bank statements entity is a composite entity that consists of four separate entities.</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>In the list, select <bpt id="p1">**</bpt>BankStatementDocumentEntity<ept id="p1">**</ept>, and then click the <bpt id="p2">**</bpt>View map<ept id="p2">**</ept> action.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Transformations<ept id="p1">**</ept> tab, click <bpt id="p2">**</bpt>New<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>For sequence number 1, click <bpt id="p1">**</bpt>Upload file<ept id="p1">**</ept>, and select the <bpt id="p2">**</bpt>MT940TXT-to-MT940XML.xslt<ept id="p2">**</ept> file that you saved earlier.</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>New<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>For sequence number 2, click <bpt id="p1">**</bpt>Upload file<ept id="p1">**</ept>, and select the <bpt id="p2">**</bpt>MT940XML-to-Reconciliation.xslt<ept id="p2">**</ept> file that you saved earlier.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> Finance and Operations transformation files are built for the standard format.</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Because banks often diverge from this format, you may have to update the transformation file to map to your bank statement format.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>New<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>For sequence number 3, click <bpt id="p1">**</bpt>Upload file<ept id="p1">**</ept>, and select the <bpt id="p2">**</bpt>BankReconciliation-to-Composite.xslt<ept id="p2">**</ept> file that you saved earlier.</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Apply transforms<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>After the format processing group is set up, the next step is to define the bank statement format rules for MT940 bank statements.</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Go to <bpt id="p1">**</bpt>Cash and bank management<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Advanced bank reconciliation setup<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Bank statement format<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>New<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Specify a statement format, such as <bpt id="p1">**</bpt>MT940<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>Enter a name for the format.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>Set the <bpt id="p1">**</bpt>Processing group<ept id="p1">**</ept> field to the group that you defined earlier, such as <bpt id="p2">**</bpt>MT940<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>Set the <bpt id="p1">**</bpt>File type<ept id="p1">**</ept> field to <bpt id="p2">**</bpt>txt<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>The last step is to enable Advanced bank reconciliation and set the statement format on the bank account.</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Go to <bpt id="p1">**</bpt>Cash and bank management<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Bank accounts<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>Select the bank account, and open it to view the details.</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Reconciliation<ept id="p1">**</ept> tab, set the <bpt id="p2">**</bpt>Advanced bank reconciliation<ept id="p2">**</ept> option to <bpt id="p3">**</bpt>Yes<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>When you're prompted to confirm your selection and enable Advanced bank reconciliation, click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>Set the <bpt id="p1">**</bpt>Statement format<ept id="p1">**</ept> field to the format that you created earlier, such as <bpt id="p2">**</bpt>MT940<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Set up the import of BAI2 bank statements</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>First, you must define the bank statement format processing group for BAI2 bank statements by using the data entity framework.</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>Go to <bpt id="p1">**</bpt>Workspaces<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Data management<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Import<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>Enter a name for the format, such as <bpt id="p1">**</bpt>BAI2<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Set the <bpt id="p1">**</bpt>Source data format<ept id="p1">**</ept> field to <bpt id="p2">**</bpt>XML-Element<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>Set the <bpt id="p1">**</bpt>Entity name<ept id="p1">**</ept> field to <bpt id="p2">**</bpt>Bank statements<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>To upload import files, click <bpt id="p1">**</bpt>Upload<ept id="p1">**</ept>, and then browse to select the <bpt id="p2">**</bpt>SampleBankCompositeEntity.xml<ept id="p2">**</ept> file that you saved earlier.</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>After the Bank statements entity is uploaded and the mapping is completed, click the <bpt id="p1">**</bpt>View map<ept id="p1">**</ept> action for the entity.</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>The Bank statements entity is a composite entity that consists of four separate entities.</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>In the list, select <bpt id="p1">**</bpt>BankStatementDocumentEntity<ept id="p1">**</ept>, and then click the <bpt id="p2">**</bpt>View map<ept id="p2">**</ept> action.</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Transformations<ept id="p1">**</ept> tab, click <bpt id="p2">**</bpt>New<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>For sequence number 1, click <bpt id="p1">**</bpt>Upload file<ept id="p1">**</ept>, and select the <bpt id="p2">**</bpt>BAI2CSV-to-BAI2XML.xslt<ept id="p2">**</ept> file that you saved earlier.</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>New<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>For sequence number 2, click <bpt id="p1">**</bpt>Upload file<ept id="p1">**</ept>, and select the <bpt id="p2">**</bpt>BAI2XML-to-Reconciliation.xslt<ept id="p2">**</ept> file that you saved earlier.</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> Finance and Operations transformation files are built for the standard format.</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>Because banks often diverge from this format, and you may have to update the transformation file to map to your bank statement format.</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>New<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>For sequence number 3, click <bpt id="p1">**</bpt>Upload file<ept id="p1">**</ept>, and select the <bpt id="p2">**</bpt>BankReconciliation-to-Composite.xslt<ept id="p2">**</ept> file that you saved earlier.</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Apply transforms<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>After the format processing group is set up, the next step is to define the bank statement format rules for BAI2 bank statements.</source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>Go to <bpt id="p1">**</bpt>Cash and bank management<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Advanced bank reconciliation setup<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Bank statement format<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>New<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>Specify a statement format, such as <bpt id="p1">**</bpt>BAI2<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>Enter a name for the format.</source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>Set the <bpt id="p1">**</bpt>Processing group<ept id="p1">**</ept> field to the group that you defined earlier, such as <bpt id="p2">**</bpt>BAI2<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>Set the <bpt id="p1">**</bpt>File type<ept id="p1">**</ept> field to <bpt id="p2">**</bpt>txt<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>The last step is to enable Advanced bank reconciliation and set the statement format on the bank account.</source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>Go to <bpt id="p1">**</bpt>Cash and bank management<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Bank accounts<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>Select the bank account, and open it to view the details.</source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Reconciliation<ept id="p1">**</ept> tab, set the <bpt id="p2">**</bpt>Advanced bank reconciliation<ept id="p2">**</ept> option to <bpt id="p3">**</bpt>Yes<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>When you're prompted to confirm your selection and enable Advanced bank reconciliation, click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>Set the <bpt id="p1">**</bpt>Statement format<ept id="p1">**</ept> field to the format that you created earlier, such as <bpt id="p2">**</bpt>BAI2<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>Test the bank statement import</source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>The final step is to test that you can import your bank statement.</source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>Go to <bpt id="p1">**</bpt>Cash and bank management<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Bank accounts<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>Select the bank account that Advanced bank reconciliation functionality is enabled for.</source>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Reconcile<ept id="p1">**</ept> tab, click <bpt id="p2">**</bpt>Bank statements<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Bank statement<ept id="p1">**</ept> page, click <bpt id="p2">**</bpt>Import statement<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>Set the <bpt id="p1">**</bpt>Bank account<ept id="p1">**</ept> field to the selected bank account.</source>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Statement format<ept id="p1">**</ept> field will be set automatically, based on the setting on the bank account.</source>
+        </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Browse<ept id="p1">**</ept>, and select your electronic bank statement file.</source>
+        </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Upload<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>If the import is successful, you will receive a message that states that your statement was imported.</source>
+        </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>If the import wasn't successful, in the <bpt id="p1">**</bpt>Data management<ept id="p1">**</ept> workspace, in the <bpt id="p2">**</bpt>Job history<ept id="p2">**</ept> section, find the job.</source>
+        </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Execution details<ept id="p1">**</ept> for the job to open the <bpt id="p2">**</bpt>Execution summary<ept id="p2">**</ept> page, and then click <bpt id="p3">**</bpt>View execution log<ept id="p3">**</ept> to view the import errors.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
