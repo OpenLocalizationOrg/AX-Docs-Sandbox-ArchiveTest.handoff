@@ -1,0 +1,204 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="fr-fr">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">a45a75d23c77af86b55866f99a97343a210ec777</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\data-entities\tips-tricks-import-general-journal-entity.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">basic</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ff391e6c1f0b132057e3beef8968404554f766b7</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">134789eb8b66c7713e567145ec54d27c1cc03419</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Best practices for importing vouchers using the General journal entity</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic provides tips for importing data into the General journal by using the General journal entity.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Best practices for importing vouchers using the General journal entity</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This topic provides tips for importing data into the General journal by using the General journal entity.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>You can use the General journal entity to import vouchers that have an account or offset account type of <bpt id="p1">**</bpt>Ledger, Customer, Vendor, or Bank<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>The voucher can be entered as one line, using both the <bpt id="p1">**</bpt>Account<ept id="p1">**</ept> field and the <bpt id="p2">**</bpt>Offset account<ept id="p2">**</ept> field, or as a multi-line voucher, where only the <bpt id="p3">**</bpt>Account<ept id="p3">**</ept> field is used (and the <bpt id="p4">**</bpt>Offset account<ept id="p4">**</ept> is left blank on each line).</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>The General journal entity doesn't support every account type.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Instead, other entities exist for scenarios where different combinations of account types are required.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>For example, to import a project transaction, use the Project expense journal entity.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Each entity is designed to support specific scenarios, which means additional fields may be available in entities for those scenarios but not in entities for a different scenario.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Setup</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Before you import by using the General journal entity, validate the following setup:</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Number sequence setup for the journal batch number<ept id="p1">**</ept> - By default, when you import by using the General journal entity, the journal batch number uses the number sequence that is defined in the General ledger parameters.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>If you set the number sequence for the journal batch number to <bpt id="p1">**</bpt>Manual<ept id="p1">**</ept>, a default number isn't applied.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>This setup isn't supported.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Financial dimension configuration<ept id="p1">**</ept> - Every organization must define the order of financial dimensions when entities are used to import transactions.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The order is defined for the <bpt id="p1">**</bpt>Ledger dimensions integration<ept id="p1">**</ept> format, at <bpt id="p2">**</bpt>General ledger<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Chart of accounts<ept id="p3">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p4">**</bpt>Dimensions<ept id="p4">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p5">**</bpt>Financial dimension configuration for integrating applications<ept id="p5">**</ept> <ph id="ph4">&amp;gt;</ph> <bpt id="p6">**</bpt>Select data entities<ept id="p6">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>The segments of the ledger account that is imported must have the same order.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Otherwise, an error will occur during import.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>General journal entity setup</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Two settings in Data management affect how the default journal batch number or voucher number is applied:</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Set-based processing<ept id="p1">**</ept> (on the data entity)</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Auto-generated<ept id="p1">**</ept> (on the field mapping)</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>The following sections describe the effect of these settings, and also explain how journal batch numbers and voucher numbers are generated.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Journal batch number</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Set-based processing<ept id="p1">**</ept> setting on the General journal entity doesn't affect the way that journal batch numbers are generated.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>If the <bpt id="p1">**</bpt>Journal batch number<ept id="p1">**</ept> field is set to <bpt id="p2">**</bpt>Auto-generated<ept id="p2">**</ept>, a new journal batch number is created for every line that is imported.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>This behavior isn't recommended.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Auto-generated<ept id="p1">**</ept> setting is found on the import project, under <bpt id="p2">**</bpt>View map<ept id="p2">**</ept>, on the <bpt id="p3">**</bpt>Mapping details<ept id="p3">**</ept> tab.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>If the <bpt id="p1">**</bpt>Journal batch number<ept id="p1">**</ept> field isn't set to <bpt id="p2">**</bpt>Auto-generated<ept id="p2">**</ept>, the journal batch number is created as follows:</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>If the journal batch number that is defined in the imported file matches an existing, unposted daily journal, all lines that have a matching journal batch number are imported into the existing journal.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Lines are never imported into a posted journal batch number.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Instead, a new number is created.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>If the journal batch number that is defined in the imported file doesn't match an existing, unposted daily journal, all lines that have the same journal batch number are grouped under a new journal.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>For example, all lines that have a journal batch number of 1 are imported into a new journal, and all lines that have a journal batch number of 2 are imported into a second new journal.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>The journal batch number is created by using the number sequence that is defined in the General ledger parameters.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Voucher number</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>When you use the <bpt id="p1">**</bpt>Set-based processing<ept id="p1">**</ept> setting on the General journal entity, the voucher number must be provided in the imported file.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Every transaction in the General journal is assigned the voucher number that is provided in the imported file, even if the voucher isn’t balanced.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>If you want to use set-based processing, but you also want to use the number sequence that is defined for voucher numbers, a hotfix has been provided for the February 2016 release.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>The hotfix number is 3170316 and available for download from Lifecycle services (LCS).</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Download hotfixes from Lifecycle Services<ept id="p1">](..\migration-upgrade\download-hotfix-lcs.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>To enable this functionality, on the journal name that is used for imports, set <bpt id="p1">**</bpt>Number allocation at posting<ept id="p1">**</ept> to <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>A voucher number must still be defined in the imported file.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>However, this number is temporary and is overwritten by the voucher number when the journal is posted.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>You must make sure that the lines of the journal are grouped correctly by temporary voucher number.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>For example, during posting, three lines are found that have a temporary voucher number of 1.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>The temporary voucher number of all three lines is overwritten by the next number in the number sequence.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>If those three lines aren’t a balanced entry, the voucher isn't posted.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Next, if lines are found that have a temporary voucher number of 2, this number is overwritten by the next voucher number in the number sequence, and so on.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>When you don't use the <bpt id="p1">**</bpt>Set-based processing<ept id="p1">**</ept> setting, you do not need to provide a voucher number in the imported file.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>The voucher numbers are created during import, based on the setup of the journal name (<bpt id="p1">**</bpt>One voucher only<ept id="p1">**</ept>, <bpt id="p2">**</bpt>In connection of balance<ept id="p2">**</ept>, and so on).</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>For example, if the journal name is defined as <bpt id="p1">**</bpt>In connection of balance<ept id="p1">**</ept>, the first line receives a new default voucher number.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>The system then evaluates the line to determine whether the debits equal the credits.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>If an offset account exists on the line, the next line that is imported receives a new voucher number.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>If no offset account exists, the system evaluates whether the debits equal the credits as each new line is imported.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>If the <bpt id="p1">**</bpt>Voucher number<ept id="p1">**</ept> field is set to <bpt id="p2">**</bpt>Auto-generated<ept id="p2">**</ept>, the import won't succeed.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Auto-generated<ept id="p1">**</ept> setting for the <bpt id="p2">**</bpt>Voucher number<ept id="p2">**</ept> field isn't supported.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>By default, the General journal entity uses set-based processing.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>After you evaluate the business requirements for your organization, you can change the <bpt id="p1">**</bpt>Set-based processing<ept id="p1">**</ept> setting by clicking <bpt id="p2">**</bpt>Data entities<ept id="p2">**</ept> in the <bpt id="p3">**</bpt>Data management<ept id="p3">**</ept> workspace.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Set-based processing is used to speed up the import process.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>If you don't use set-based processing, import of the General journal entity import will be slower.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
