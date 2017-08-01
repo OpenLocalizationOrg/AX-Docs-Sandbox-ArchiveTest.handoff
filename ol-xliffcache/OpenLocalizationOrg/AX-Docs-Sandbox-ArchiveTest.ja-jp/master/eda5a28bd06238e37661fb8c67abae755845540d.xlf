@@ -1,0 +1,300 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ja-jp">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">eda5a28bd06238e37661fb8c67abae755845540d</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">financials\general-ledger\year-end-close.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">basic</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">efcd01ce944a0491de498ad37763966517abd658</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">e4e9af449083aa5bcbea124f71b5a0954362b1e5</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Year-end close</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic describes the required setup and steps for running the general ledger year-end close process.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Year-end close</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This topic describes the required setup and steps for running the general ledger year-end close process.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>At the end of a fiscal year, you must run the year-end close process to transfer opening balances to the new year.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Most organizations will run the year-end close process multiple times.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>The first time would be to get the balances moved into the new fiscal year.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>The year-end close can then be run again, as many times are required, to move the balances from adjusting entries into the new fiscal year.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>During the year-end close process, there are two types of possible transactions created.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>An Opening transaction is always generated and is used to create the opening balances in the new fiscal year.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>The Opening transaction shows the balance sheet ledger account balances in the new fiscal year and balances from the profit and loss ledger account balances in the retained earnings ledger account in the new fiscal year.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>The Closing transaction is optionally created to bring the balances of the profit and loss accounts down to zero in the fiscal year being closed.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Prepare to run the year-end close</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Before you run the year-end close process, validate the settings for the following:</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Main account<ept id="p1">**</ept> page:</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Validate the <bpt id="p1">**</bpt>Main account type<ept id="p1">**</ept> is defined properly for each main account.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The Main account type is used to determine whether the balance of the main account will be brought forward as an opening balance or closed into retained earnings in the Opening transaction.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Opening account<ept id="p1">**</ept> field can be used to transfer the balance of the main account to a new main account during the year-end close.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>The new main account is entered in the <bpt id="p1">**</bpt>Opening account<ept id="p1">**</ept> field.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Typically this will be used for balance sheet main accounts when the main account is inactivated and a new main account is used for the new fiscal year.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>General ledger parameters<ept id="p1">**</ept> page under <bpt id="p2">**</bpt>Fiscal year close<ept id="p2">**</ept>:</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Delete close of year transactions<ept id="p1">**</ept> option is used to specify whether the system-generated Opening transaction from a previous year-end close should be deleted when the year-end close is run again.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>If this option is set to <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept>, the previous Opening transaction is deleted and a new Opening transaction is created based on the current balances.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>If this option is set to <bpt id="p1">**</bpt>No<ept id="p1">**</ept>, the previous Opening transaction remains and an additional Opening transaction is created to move the balances forward from adjusting transactions posted after the previous year-end close.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Create closing transactions during transfer<ept id="p1">**</ept> option is used to create Closing transactions in the fiscal year being closed in order to bring the balances of the profit and loss accounts to zero.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>If this option is set to <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept>, both the Opening transaction and Closing transaction is created.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>If this option is set to <bpt id="p1">**</bpt>No<ept id="p1">**</ept>, only the Opening transaction is created in the next fiscal year to transfer the balances.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>The profit and loss account balances remain at the end of the fiscal year.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Set fiscal year status to permanently closed<ept id="p1">**</ept> option is used to set the fiscal year to a permanently closed status.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Use this setting with caution, because all periods with a permanently closed status cannot be reopened, preventing adjustments from being posted to the fiscal year.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>It's a best practice to set this to <bpt id="p1">**</bpt>No<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Voucher number must be filled in<ept id="p1">**</ept> option is used to define whether a voucher number is required when running the year-end close process.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>It’s a best practice to require a voucher number in order to easily identify the Opening transaction.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Fiscal calendar<ept id="p1">**</ept> page:</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>The next fiscal year must exist before running the year-end close.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>The next fiscal year is required in order to create the beginning balances in the opening period.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Ledger calendar<ept id="p1">**</ept> page:</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Optional: Each fiscal period for the fiscal year being closed can be set to <bpt id="p1">**</bpt>On hold<ept id="p1">**</ept> to prevent new transactions from being entered.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>When adjusting entries are identified, the On hold periods can be reopened to post adjusting entries, even if the year-end close process has already been run.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Define year-end close templates</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>After the system is configured, the year-end close process can be run.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Year-end close<ept id="p1">**</ept> page, a template can be defined for the group of legal entities for which the year-end close process will be run.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>The template will be reused at each year-end close, but can be modified if your organization changes.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>First, define the <bpt id="p1">**</bpt>Group name<ept id="p1">**</ept> for the template, and select the fiscal calendar.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>The group name should identify the group of legal entities included.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>For example, the templates may be set up based on geography, with separate groups created for North American legal entities, EMEA legal entities, and APAC legal entities.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Next, the legal entities can be added to the template.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Legal entities can be added by selecting an organizational hierarchy or by selecting the legal entities.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>If an organizational hierarchy is selected, only legal entities within the hierarchy that use the selected fiscal calendar will be added to the template.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>If you use legal entities to add to the template, only legal entities with the same fiscal calendar can be added.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>The same fiscal calendar is required because the year-end close is run by selecting a fiscal year, which can vary from calendar to calendar.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>After the legal entities are added, define the retained earnings main accounts for each legal entity.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Date of last year end close<ept id="p1">**</ept> field will be updated each time the year end close is run for the legal entity.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Financial dimension<ept id="p1">**</ept> tab is used to define which financial dimensions will be used on the Opening transaction.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Note that the settings you are defining are relevant to only the legal entity selected in the <bpt id="p1">**</bpt>Legal entities<ept id="p1">**</ept> grid.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>You will repeat the setup for each legal entity in the grid.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Transfer balance sheet dimensions<ept id="p1">**</ept> is used to define whether the financial dimensions on transactions posted to balance sheet accounts should be maintained on the Opening transaction.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>It’s a best practice to set this option to <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Transfer profit and loss dimensions<ept id="p1">**</ept> is used to define which financial dimensions on transactions posted to profit and loss account will be transferred to the retained earnings main account.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>First, identify the financial dimensions relevant to the selected legal entity.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>This would include any financial dimensions posted against during the year, even if the financial dimension is not part of an active account structure.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Next, define each dimension as either <bpt id="p1">**</bpt>Close single<ept id="p1">**</ept> or <bpt id="p2">**</bpt>Close all<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>The default is <bpt id="p1">**</bpt>Close all<ept id="p1">**</ept>, which maintains the original financial dimension values from posted transactions and uses them for creating the opening balances for the retained earnings account.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Separate retained earnings beginning balances will be created for each unique combination of financial dimension values.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>If <bpt id="p1">**</bpt>Close single<ept id="p1">**</ept> is selected, all transactions posted with that financial dimension will be summarized into a retained earnings beginning balance for the dimension value entered in the field after <bpt id="p2">**</bpt>Close single<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>For example, assume that all transactions for the fiscal year were posted with the account structure of Main account - Department.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>On the Department financial dimension on the template, <bpt id="p1">**</bpt>Close single<ept id="p1">**</ept> is selected and 100 is the value entered.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>If the total income of all transactions posted to departments 200, 300, and 400 is $100,000, one opening balance will be created for Retained earnings - 100.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>If you select <bpt id="p1">**</bpt>Close single<ept id="p1">**</ept> and leave the financial dimension value blank, all transactions will post to retained earnings with that dimension value being blank.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>The year-end close process doesn’t adhere to account structures.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>This is because account structures can change throughout a fiscal year and it's not always possible to identify the relevant account structure due to those changes.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>When opening transactions are created, the balances will be brought forward with financial dimensions as defined in the year end close template.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>The beginning balances entries could include financial dimensions no longer in the current account structure and segment combinations that are no longer valid in the current account structure.</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>If your organization wants to exclude a financial dimension for the retained earning beginning balance, set the financial dimension to be <bpt id="p1">**</bpt>Close single<ept id="p1">**</ept> and leave the dimension value empty.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Run the year-end close process</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>After the year-end close templates are created, the year-end close process is initiated by choosing <bpt id="p1">**</bpt>Run fiscal year<ept id="p1">**</ept> on the Action Pane.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Either select all or a subset of legal entities from the template for which to run the year-end close.</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>When running the year-end close for the first time in a fiscal year, you will likely choose all the legal entities to create beginning balances for all the legal entities.</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>If you're running the year-end close again, you may choose to run the process for only the legal entities for which adjusting entries were posted.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Select the fiscal year that you would like to run the year end close process against.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>If more than one closing period exists for the last period of the fiscal year, the <bpt id="p1">**</bpt>Period name<ept id="p1">**</ept> field will become available so you can select which closing period to post the Closing transaction, if setup is defined to create the Closing transaction.</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Enter a voucher number, which or may not be required, depending on the setup in General ledger parameters.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>The same voucher number will be used for all the legal entities selected for the year end close process.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>The voucher number is not generated using a number sequence.</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>It’s a best practice to enter a voucher number, even if it’s not required.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Entering a voucher number makes it easier to find the Opening transaction in the new fiscal year.</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>If a voucher number isn’t entered, the voucher will be blank for the Opening transaction.</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>If you would like to reverse a previous year end close for the selected fiscal year, set <bpt id="p1">**</bpt>Undo previous close<ept id="p1">**</ept> to <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>The year-end close will be reversed, but the process can be rerun at any time.</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>If you reverse a year-end close, the <bpt id="p1">**</bpt>Date of last year end close<ept id="p1">**</ept> will be unavailable.</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>The year-end close process defaults to run in batch mode.</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>It’s a best practice to run the process in batch mode, to allow the user to return to other activities.</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>After the year end close process is complete, the <bpt id="p1">**</bpt>Date of last year end close<ept id="p1">**</ept> will be updated with the session date.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Close the general ledger at period end<ept id="p1">](close-general-ledger-at-period-end.md)</ept>.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,378 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ja-jp">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">616366009ce7bf7135704e980becc331617cf5af</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">core\get-started\advanced-filtering-query-options.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">basic</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">da794c34b9532c38f83f9b3f11d6047cc67b01d4</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">6d8ca27f21c6c29e2b876c9da59f56198888f05e</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Advanced filtering and query syntax</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This article describes the filtering and query options that are available when you use the "matches" operator in the Advanced filter/sort dialog.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Advanced filtering and query syntax</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This article describes the filtering and query options that are available when you use the "matches" operator in the Advanced filter/sort dialog.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Advanced query syntax</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Syntax</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Character description</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Example</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;em&gt;</bpt>value<ept id="p1">&lt;/em&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Equal to the value that is entered</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Type the value to find.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Smith<ept id="p1">&lt;/strong&gt;</ept> finds <ph id="ph1">&amp;quot;</ph>Smith<ph id="ph2">&amp;quot;</ph>.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>!<bpt id="p1">&lt;em&gt;</bpt>value<ept id="p1">&lt;/em&gt;</ept> (exclamation point)</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Not equal to the value that is entered</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Type an exclamation point and then the value to exclude.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>!Smith<ept id="p1">&lt;/strong&gt;</ept> finds all values except <ph id="ph1">&amp;quot;</ph>Smith<ph id="ph2">&amp;quot;</ph>.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;em&gt;</bpt>from-value<ept id="p1">&lt;/em&gt;</ept>..<bpt id="p2">&lt;em&gt;</bpt>to-value<ept id="p2">&lt;/em&gt;</ept> (double period)</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Between the two values that are separated by double periods</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Type the from-value, then two periods, and then the to-value.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>1..10<ept id="p1">&lt;/strong&gt;</ept> finds all values from 1 through 10.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>However, in a string field, <bpt id="p1">&lt;strong&gt;</bpt>A..C<ept id="p1">&lt;/strong&gt;</ept> finds all values that start with <ph id="ph1">&amp;quot;</ph>A<ph id="ph2">&amp;quot;</ph> and <ph id="ph3">&amp;quot;</ph>B<ph id="ph4">&amp;quot;</ph>, and values that are exactly equal to <ph id="ph5">&amp;quot;</ph>C<ph id="ph6">&amp;quot;</ph>.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>For example, this query won't find <ph id="ph1">&amp;quot;</ph>Ca<ph id="ph2">&amp;quot;</ph>.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>To find all values from <ph id="ph1">&amp;quot;</ph>A<bpt id="p1">*</bpt><ph id="ph2">&amp;quot;</ph> through <ph id="ph3">&amp;quot;</ph>C<ept id="p1">*</ept><ph id="ph4">&amp;quot;</ph>, type <bpt id="p2">&lt;strong&gt;</bpt>A..D<ept id="p2">&lt;/strong&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>..<bpt id="p1">&lt;em&gt;</bpt>value<ept id="p1">&lt;/em&gt;</ept> (double period)</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Less than or equal to the value that is entered</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Type two periods and then the value.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>..1000<ept id="p1">&lt;/strong&gt;</ept> finds any number that is less than or equal to 1000, such as <ph id="ph1">&amp;quot;</ph>100<ph id="ph2">&amp;quot;</ph>, <ph id="ph3">&amp;quot;</ph>999.95<ph id="ph4">&amp;quot;</ph>, and <ph id="ph5">&amp;quot;</ph>1,000<ph id="ph6">&amp;quot;</ph>.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;em&gt;</bpt>value<ept id="p1">&lt;/em&gt;</ept>..</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>(double period)</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Greater than or equal to the value that is entered</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Type the value and then two periods.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>1000..<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>finds any number that is greater than or equal to 1000, such as <ph id="ph1">&amp;quot;</ph>1,000<ph id="ph2">&amp;quot;</ph>, <ph id="ph3">&amp;quot;</ph>1,000.01<ph id="ph4">&amp;quot;</ph>, and <ph id="ph5">&amp;quot;</ph>1,000,000<ph id="ph6">&amp;quot;</ph>.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">&amp;gt;</ph><bpt id="p1">&lt;em&gt;</bpt>value<ept id="p1">&lt;/em&gt;</ept> (greater than sign)</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Greater than the value that is entered</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Type a greater than sign (<bpt id="p1">&lt;strong&gt;</bpt><ph id="ph1">&amp;gt;</ph><ept id="p1">&lt;/strong&gt;</ept>) and then the value.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt><ph id="ph1">&amp;gt;</ph>1000<ept id="p1">&lt;/strong&gt;</ept> finds any number that is greater than 1000, such as <ph id="ph2">&amp;quot;</ph>1000.01<ph id="ph3">&amp;quot;</ph>, <ph id="ph4">&amp;quot;</ph>20,000<ph id="ph5">&amp;quot;</ph>, and <ph id="ph6">&amp;quot;</ph>1,000,000<ph id="ph7">&amp;quot;</ph>.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">&amp;lt;</ph><bpt id="p1">&lt;em&gt;</bpt>value<ept id="p1">&lt;/em&gt;</ept> (less than sign)</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Less than the value that is entered</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Type a less than sign (<bpt id="p1">&lt;strong&gt;</bpt><ph id="ph1">&amp;lt;</ph><ept id="p1">&lt;/strong&gt;</ept>) and then the value.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt><ph id="ph1">&amp;lt;</ph>1000<ept id="p1">&lt;/strong&gt;</ept> finds any number that is less than 1000, such as <ph id="ph2">&amp;quot;</ph>999.99<ph id="ph3">&amp;quot;</ph>, <ph id="ph4">&amp;quot;</ph>1<ph id="ph5">&amp;quot;</ph>, and <ph id="ph6">&amp;quot;</ph>-200<ph id="ph7">&amp;quot;</ph>.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;em&gt;</bpt>value<ept id="p1">&lt;/em&gt;</ept><ph id="ph1">*</ph> (asterisk)</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Starting from the value that is entered</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Type the starting value and then an asterisk (<bpt id="p1">&lt;strong&gt;</bpt><ept id="p1">*&lt;/strong&gt;</ept>).</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>S*<ept id="p1">&lt;/strong&gt;</ept> finds any string that starts with <ph id="ph1">&amp;quot;</ph>S<ph id="ph2">&amp;quot;</ph>, such as <ph id="ph3">&amp;quot;</ph>Stockholm<ph id="ph4">&amp;quot;</ph>, <ph id="ph5">&amp;quot;</ph>Sydney<ph id="ph6">&amp;quot;</ph>, and <ph id="ph7">&amp;quot;</ph>San Francisco<ph id="ph8">&amp;quot;</ph>.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*&lt;em&gt;</bpt>value<ept id="p1">&lt;/em&gt;</ept> (asterisk)</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Ending with the value that is entered</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Type an asterisk and then the ending value.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>*east<ept id="p1">&lt;/strong&gt;</ept> finds any string that ends with <ph id="ph1">&amp;quot;</ph>east<ph id="ph2">&amp;quot;</ph>, such as <ph id="ph3">&amp;quot;</ph>Northeast<ph id="ph4">&amp;quot;</ph> and <ph id="ph5">&amp;quot;</ph>Southeast<ph id="ph6">&amp;quot;</ph>.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*&lt;em&gt;</bpt>value<ept id="p1">&lt;/em&gt;</ept><ph id="ph1">*</ph> (asterisk)</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Containing the value that is entered</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Type an asterisk, then a value, and then another asterisk.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">*</bpt>th<ept id="p2">*</ept><ept id="p1">&lt;/strong&gt;</ept> finds any string that contains <ph id="ph1">&amp;quot;</ph>th<ph id="ph2">&amp;quot;</ph>, such as <ph id="ph3">&amp;quot;</ph>Northeast<ph id="ph4">&amp;quot;</ph> and <ph id="ph5">&amp;quot;</ph>Southeast<ph id="ph6">&amp;quot;</ph>.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>?</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>(question mark)</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Having one or more unknown characters</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Type a question mark at the position of the unknown character in the value.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Sm?th<ept id="p1">&lt;/strong&gt;</ept> finds <ph id="ph1">&amp;quot;</ph>Smith<ph id="ph2">&amp;quot;</ph> and <ph id="ph3">&amp;quot;</ph>Smyth<ph id="ph4">&amp;quot;</ph>.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;em&gt;</bpt>value<ept id="p1">&lt;/em&gt;</ept>,<bpt id="p2">&lt;em&gt;</bpt>value<ept id="p2">&lt;/em&gt;</ept> (comma)</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Matching the values that are separated by commas</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Type all your criteria, and separate them by using commas.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>A, D, F, G<ept id="p1">&lt;/strong&gt;</ept> finds exactly <ph id="ph1">&amp;quot;</ph>A<ph id="ph2">&amp;quot;</ph>, <ph id="ph3">&amp;quot;</ph>D<ph id="ph4">&amp;quot;</ph>, <ph id="ph5">&amp;quot;</ph>F<ph id="ph6">&amp;quot;</ph>, and <ph id="ph7">&amp;quot;</ph>G<ph id="ph8">&amp;quot;</ph>.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>10, 20, 30, 100<ept id="p1">&lt;/strong&gt;</ept> finds exactly <ph id="ph1">&amp;quot;</ph>10, 20, 30, 100<ph id="ph2">&amp;quot;</ph>.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>(<bpt id="p1">&lt;span class="code"&gt;</bpt>SQL statement<ept id="p1">&lt;/span&gt;</ept>) (SQL statement between parentheses)</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Matching a defined query</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Type a query as an SQL statement between parentheses.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="code"&gt;</bpt>(data source.Fieldname != <ph id="ph1">&amp;quot;</ph>A<ph id="ph2">&amp;quot;</ph>)<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>T</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Today's date</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Type <bpt id="p1">&lt;strong&gt;</bpt>T<ept id="p1">&lt;/strong&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>T<ept id="p1">&lt;/strong&gt;</ept> matches today's date.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>(methodName(parameters)) (<bpt id="p1">&lt;strong&gt;</bpt>SysQueryRangeUtil<ept id="p1">&lt;/strong&gt;</ept> method between parentheses)</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Matching the value or range of values that are specified by the parameters of the <bpt id="p1">&lt;strong&gt;</bpt>SysQueryRangeUtil<ept id="p1">&lt;/strong&gt;</ept> method</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Type a <bpt id="p1">&lt;strong&gt;</bpt>SysQueryRangeUtil<ept id="p1">&lt;/strong&gt;</ept> method that has parameters that specify the value or range of values.</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">&lt;strong&gt;</bpt>Accounts receivable<ept id="p1">&lt;/strong&gt;</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">&lt;strong&gt;</bpt>Invoices<ept id="p2">&lt;/strong&gt;</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">&lt;strong&gt;</bpt>Open customer invoices<ept id="p3">&lt;/strong&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Press Ctrl+Shift+F3 to open the <bpt id="p1">&lt;strong&gt;</bpt>Inquiry<ept id="p1">&lt;/strong&gt;</ept> page.</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">&lt;strong&gt;</bpt>Range<ept id="p1">&lt;/strong&gt;</ept> tab, click <bpt id="p2">&lt;strong&gt;</bpt>Add<ept id="p2">&lt;/strong&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">&lt;strong&gt;</bpt>Table<ept id="p1">&lt;/strong&gt;</ept> field, select <bpt id="p2">&lt;strong&gt;</bpt>Open customer transactions<ept id="p2">&lt;/strong&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">&lt;strong&gt;</bpt>Field<ept id="p1">&lt;/strong&gt;</ept> field, select <bpt id="p2">&lt;strong&gt;</bpt>Due date<ept id="p2">&lt;/strong&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">&lt;strong&gt;</bpt>Criteria<ept id="p1">&lt;/strong&gt;</ept> field, enter <bpt id="p2">&lt;strong&gt;</bpt>(yearRange(-2,0))<ept id="p2">&lt;/strong&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">&lt;strong&gt;</bpt>OK<ept id="p1">&lt;/strong&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>The list page is updated and lists the invoices that match the criterion that you entered.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>For this example, invoices that were due in the previous two years are listed.</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>See the table in the next section for additional details about <bpt id="p1">&lt;strong&gt;</bpt>SysQueryRangeUtil<ept id="p1">&lt;/strong&gt;</ept> date methods, and several examples.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Advanced date queries that use SysQueryRangeUtil methods</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>Method</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Example</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Day (_relativeDays=0)</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Find a date relative to the session date.</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Positive values indicate future dates, and negative values indicate past dates.</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Tomorrow<ept id="p1">&lt;/strong&gt;</ept> – Enter <bpt id="p2">&lt;strong&gt;</bpt>(Day(1))<ept id="p2">&lt;/strong&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Today<ept id="p1">&lt;/strong&gt;</ept> – Enter <bpt id="p2">&lt;strong&gt;</bpt>(Day(0))<ept id="p2">&lt;/strong&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Yesterday<ept id="p1">&lt;/strong&gt;</ept> – Enter <bpt id="p2">&lt;strong&gt;</bpt>(Day(-1))<ept id="p2">&lt;/strong&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>DayRange (_relativeDaysFrom=0, _relativeDaysTo=0)</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Find a range of dates relative to the session date.</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>Positive values indicate future dates, and negative values indicate past dates.</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Last 30 days<ept id="p1">&lt;/strong&gt;</ept> – Enter <bpt id="p2">&lt;strong&gt;</bpt>(DayRange(-30,0))<ept id="p2">&lt;/strong&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Previous 30 days and next 30 days<ept id="p1">&lt;/strong&gt;</ept> – Enter <bpt id="p2">&lt;strong&gt;</bpt>(DayRange(-30,30))<ept id="p2">&lt;/strong&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>GreaterThanDate (_relativeDays=0) GreaterThanUtcDate (_relativeDays=0)</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Find all dates after the specified relative date.</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>More than 30 days from now<ept id="p1">&lt;/strong&gt;</ept> – Enter <bpt id="p2">&lt;strong&gt;</bpt>(GreaterThanDate(30))<ept id="p2">&lt;/strong&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>GreaterThanUtcNow ()</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>Find all date/time entries after the current time.</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>All future date/times<ept id="p1">&lt;/strong&gt;</ept> – Enter <bpt id="p2">&lt;strong&gt;</bpt>(GreaterThanUtcNow())<ept id="p2">&lt;/strong&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>LessThanDate (_relativeDays=0) LessThanUtcDate (_relativeDays=0)</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>Find all dates before the specified relative date.</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Less than seven days from now<ept id="p1">&lt;/strong&gt;</ept> – Enter <bpt id="p2">&lt;strong&gt;</bpt>(LessThanDate(7))<ept id="p2">&lt;/strong&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>LessThanUtcNow ()</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>Find all date/time entries before the current time.</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>All past date/times<ept id="p1">&lt;/strong&gt;</ept> – Enter <bpt id="p2">&lt;strong&gt;</bpt>(LessThanUtcNow())<ept id="p2">&lt;/strong&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>MonthRange (_relativeFrom=0, _relativeTo=0)</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>Find a range of dates, based on months relative to the current month.</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Previous two months<ept id="p1">&lt;/strong&gt;</ept> – Enter <bpt id="p2">&lt;strong&gt;</bpt>(MonthRange(-2,0))<ept id="p2">&lt;/strong&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Next three months<ept id="p1">&lt;/strong&gt;</ept> – Enter <bpt id="p2">&lt;strong&gt;</bpt>(MonthRange(0,3))<ept id="p2">&lt;/strong&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>YearRange (_relativeFrom=0, _relativeTo=0)</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>Find a range of dates, based on years relative to the current year.</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Next year<ept id="p1">&lt;/strong&gt;</ept> – Enter <bpt id="p2">&lt;strong&gt;</bpt>(YearRange(0, 1))<ept id="p2">&lt;/strong&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Previous year<ept id="p1">&lt;/strong&gt;</ept> – Enter <bpt id="p2">&lt;strong&gt;</bpt>(YearRange(-1,0))<ept id="p2">&lt;/strong&gt;</ept>.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
