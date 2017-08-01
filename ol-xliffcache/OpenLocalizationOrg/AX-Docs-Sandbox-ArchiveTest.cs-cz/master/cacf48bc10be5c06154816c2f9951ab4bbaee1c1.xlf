@@ -1,0 +1,225 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="cs-cz">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">cacf48bc10be5c06154816c2f9951ab4bbaee1c1</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scm\warehousing\upgrade-migration-warehouse-management-processes.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">basic</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">c98c9bfc60e0b9e65a1fae28454232903e0cab3b</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2c6d49256bcaf74b741b712e233fe3cc90def577</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Migrate from AX 2012 to Finance and Operations</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This article provides an overview of the product and warehouse management migration options within Dynamics 365 for Finance and Operations.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Migrate from AX 2012 to Finance and Operations</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This topic provides an overview of the product and warehouse management migration options within Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Introduction</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>During an upgrade to Finance and Operations, products are blocked if they are associated with a storage dimension group that has settings that don't match the requirements for storage dimension group settings in Finance and Operations.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>However, after the upgrade, you can use a set of migration options in the <bpt id="p1">**</bpt>Change storage dimension group for items<ept id="p1">**</ept> process to unblock products that were blocked during upgrade.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>You can then process transactions for those products.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Some of your items might already be associated with storage dimension groups where the Site, Warehouse, and Location inventory dimensions are active and physically tracked.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>In this case, you can use the <bpt id="p1">**</bpt>Change storage dimension group for items<ept id="p1">**</ept> process to enable those items to be used in warehouse management processes.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>This feature is useful if you want to use the warehouse management functionality for existing items.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Upgrading to Finance and Operations, when AX 2012 R3 WMSII is used</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Finance and Operations, no longer supports the legacy <bpt id="p1">**</bpt>WMSII<ept id="p1">**</ept> module from Microsoft Dynamics AX 2012.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Instead, you can use the new <bpt id="p1">**</bpt>Warehouse management<ept id="p1">**</ept> module.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>In previous versions, the Location and Pallet ID inventory dimensions could be selected for financial inventory.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>However, as part of the upgrade process, the Pallet ID inventory dimension can no longer be enabled for financial inventory.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>All products that are associated with a storage dimension group that uses the Pallet ID inventory dimension will be blocked and won't be processed.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Enabling items in Finance and Operations</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>In Finance and Operations, items that will be used as part of warehouse management processes must be associated with a storage dimension group where the <bpt id="p1">**</bpt>Use warehouse management processes<ept id="p1">**</ept> parameter is selected.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>When this setting is selected, the Site, Warehouse, Inventory status, Location, and License plate inventory dimensions become active.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>You can change to this type of storage dimension group only for items that are already associated with storage dimension groups where the Location inventory dimension is active.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Items that are blocked for inventory updates</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>To view the list of released products that were blocked during upgrade and can't be processed, click <bpt id="p1">**</bpt>Inventory management<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Inventory<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Items blocked for inventory updates<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Reapplying blocked products</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>To unblock products that were blocked during upgrade, you must select a new storage dimension group for the products.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Note that you can change the storage dimension group even if open inventory transactions exist.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>To use items that were blocked during upgrade, you have two options:</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Change the storage dimension group for the item to a storage dimension group that uses only the Site, Warehouse, and Location inventory dimensions.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>As a result of this change, the Pallet ID inventory dimension is no longer used.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Change the storage dimension group for the item to a storage dimension group that uses the warehouse management processes.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>As a result of this change, the License plate inventory dimension is now used.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Migration processes</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>In Finance and Operations, item tracking is part of the warehouse management processes.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>For these processes, all warehouses and their locations must be associated with a location profile.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Conceptually, if you want to use warehouse management processes, two processes must be handled:</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Existing warehouses must be enabled to use warehouse management processes.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Existing released products must be associated with a new storage dimension group that uses warehouse management processes.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>If the source storage dimension groups use the Pallet ID inventory dimension, the locations of existing on-hand inventory that used the Pallet ID inventory dimension must be associated with a location profile where the <bpt id="p1">**</bpt>Use license plate tracking<ept id="p1">**</ept> parameter is selected.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>If the existing warehouses should not be enabled to use warehouse management processes, you can change the storage dimension groups of the existing on-hand inventory to groups that handle only the Site, Warehouse, and Location inventory dimensions.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Using the warehouse management processes</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Before you can use released products in the <bpt id="p1">**</bpt>Warehouse management<ept id="p1">**</ept> module, the products must use a storage dimension group where the <bpt id="p2">**</bpt>Use warehouse management processes<ept id="p2">**</ept> parameter is selected.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Enable warehouses to use warehouse management processes</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Create at least one new location profile.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Warehouse management<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Enable warehouse management processes<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Enable warehouse setup<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Enable warehouse setup<ept id="p1">**</ept> page, add the warehouses that should be enabled.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>You can complete this step either directly on the page or by using the Microsoft Office integration.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Assign a location profile to all the locations.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>You can easily complete this step by using the Microsoft Office integration directly from the page.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>You can either export and import the data, or use the data entity processing in <bpt id="p1">[</bpt>Data management<ept id="p1">](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Validate the changes.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>As part of the validation process, various validations of data integrity occur.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>As part of a larger upgrade process, issues that occur might have to be adjusted on the source implementation.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>In this case, an additional data upgrade will be required.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Process the changes.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Change the storage dimension group for items, so that it uses warehouse management processes</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Create a new <bpt id="p1">**</bpt>Inventory status<ept id="p1">**</ept> value, and assign it as the <bpt id="p2">**</bpt>Default inventory status ID<ept id="p2">**</ept> value in the <bpt id="p3">**</bpt>Warehouse management parameters<ept id="p3">**</ept> settings.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Create a new storage dimension group where the <bpt id="p1">**</bpt>Use warehouse management processes<ept id="p1">**</ept> parameter is selected.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Reservation hierarchy<ept id="p1">**</ept> page, define a new reservation hierarchy according to the item’s storage and tracking dimension groups.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Create one or more unit sequence groups that include at least the same units that are used for the items' inventory units.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Warehouse management<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Enable warehouse management processes<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Change storage dimension group for items<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Change storage dimension group for items<ept id="p1">**</ept> page, add the item numbers, storage dimension groups, and unit sequence groups.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>You can complete this step directly on the page, by using the Microsoft Office integration, or by using the data entity process in <bpt id="p1">[</bpt>Data management<ept id="p1">](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Validate the changes.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>As part of the validation process, various validations of data integrity occur.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>As part of a larger upgrade process, issues that occur might have to be adjusted on the source implementation.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>In this case, additional data upgrade will be required.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Process the changes.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>An update of all the inventory dimensions can take a while.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>You can monitor the progress by using the batch jobs tasks.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
