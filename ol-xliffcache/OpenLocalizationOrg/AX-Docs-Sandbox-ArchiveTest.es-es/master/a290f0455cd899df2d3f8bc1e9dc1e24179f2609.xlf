@@ -1,0 +1,363 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="es-es">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">a290f0455cd899df2d3f8bc1e9dc1e24179f2609</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">financials\localizations\latam-mex-electronic-ledger-accounting-statements.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">basic</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">7460461bd4e72214c179c057bb992aec8a0023f0</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">822001d85086c7c6f91bdab498638c9a519174c6</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Electronic ledger accounting statements</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This article explains how to set up and generate the general ledger XML files version 1.1 that all companies in Mexico are required to report to the Mexican tax authorities (SAT) on a monthly basis.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Electronic ledger accounting statements</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This article explains how to set up and generate the general ledger XML files version 1.1 that all companies in Mexico are required to report to the Mexican tax authorities (SAT) on a monthly basis.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>All companies in Mexico are required to report ledger accounting statements to the Mexican tax authorities (Servicio de Administración Tributaria <ph id="ph1">\[</ph>SAT<ph id="ph2">\]</ph>) every month.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Annex 24 of Miscellaneous Tax Resolution for 2015 requires that you submit general ledger XML files version 1.1.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>You can generate the following XML files per company:</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Chart of account</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Monthly Trial Balance</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Journal transactions, together with the related subledger transactions (Comprobante Fiscal Digital a través de Internet <ph id="ph1">\[</ph>CFDI<ph id="ph2">\]</ph>, Comprobante Fiscal Digital <ph id="ph3">\[</ph>CFD<ph id="ph4">\]</ph>, and other operations)</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Auxiliary ledger account</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>This functionality is available only when the country/region of the company is defined as MEX.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The government also requires an additional auxiliary XML file (folios) that details all fiscal documents (CFDI, CFD, and others).</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>This file isn't included in the current feature, because this information is included in the Journal transactions XML file, as specified in Chapter 2.8, section 2.8.1.3 of the Miscellaneous Tax Resolution for 2015 (Second section) of December 30, 2014.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">&lt;</bpt>http://www.sat.gob.mx/fichas_tematicas/buzon_tributario/Documents/extracto_reglas.pdf<ept id="p1">&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Prerequisites</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The following process lists the prerequisites that must be in place before you start to generate the XML files that SAT requires.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Parameters determine how the data will be exposed in the XML files, and all of them are required.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Missing parameters can cause inconsistencies or incorrect validations in the government validation tool.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Set up main account parameters.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Set up a Parent<ph id="ph1">\_</ph>Account to identify the level of account.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Set up total accounts in all levels.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Set up SAT account group.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Create consolidation account group for SAT.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Assign main account to SAT group and level accounts.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Set up Method of payments and Bank accounts.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Assign SAT method of payments.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Assign SAT bank code in routing number field.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Chart of accounts</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Per government requirements, the Chart of account XML file must include specific information that you must configure in advance to prevent inconsistencies when the XML file is generated and validated.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Set the following parameters to configure this information:</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Parent main account:<ept id="p1">**</ept> The <bpt id="p2">**</bpt><ph id="ph1">&amp;lt;</ph>SubCtaDe<ph id="ph2">&amp;gt;</ph><ept id="p2">**</ept> tag in the XML file is used to specify the account of the previous level.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>In this case, we use a <bpt id="p1">**</bpt>Parent account<ept id="p1">**</ept> country/region field in the configuration of the chart of accounts.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Account level:<ept id="p1">**</ept> The <bpt id="p2">**</bpt><ph id="ph1">&amp;lt;</ph>Nivel<ph id="ph2">&amp;gt;</ph><ept id="p2">**</ept> tag in the XML file is used to specify the level of the government account group.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>We localized the functionality of the <bpt id="p1">**</bpt>Consolidation account group<ept id="p1">**</ept> field under <bpt id="p2">**</bpt>Additional consolidation accounts<ept id="p2">**</ept> to specify the level of the government account group.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Debit and Credit indicator:<ept id="p1">**</ept> The <bpt id="p2">**</bpt><ph id="ph1">&amp;lt;</ph>Natur<ph id="ph2">&amp;gt;</ph><ept id="p2">**</ept> tag in the XML file is used to specify the debit and credit indicator of the main account.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>The following rules have been defined:</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>D-Debit<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Main Account type = Cost, Asset</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Main Account type:  If Profit &amp; Loss and DB/CR proposal = Debit</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Main Account type: If Balance and DB/CR proposal = Debit</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Main Account type: If Profit &amp; Loss and DB/CR proposal = Blank</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Main Account type: If Balance and DB/CR proposal = Blank</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>A-Credit<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Account type : Revenue, Liability</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Account type AX: If Profit &amp; Loss and DB/CR proposal = Credit</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Account type AX: If Balance and DB/CR proposal = Credit</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Totals amount in all levels:<ept id="p1">**</ept> Configure the <bpt id="p2">**</bpt>Totals<ept id="p2">**</ept> value in the chart of accounts to enable generation of a Monthly Trial Balance XML file that includes the related totals amounts in all levels of the hierarchy.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>SAT account group</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>The Chart of account XML file includes a <bpt id="p1">**</bpt><ph id="ph1">&amp;lt;</ph>CodAgrup<ph id="ph2">&amp;gt;</ph><ept id="p1">**</ept> tag that is used to specify the related government account group for the reported account.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>The government has published a table on the government portal.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>To meet this requirement, you must use the Consolidation account groups functionality, which lets you configure the mapping between your company chart of account and the government account group.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Then, when you generate the report, you will be asked to indicate which consolidated account group is used to specify the government grouping.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Payment methods</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>In specific situations, the government might request that you deliver a Journal transaction XML file that details all accounting transactions and the document that originated them.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>When these transactions are related to vendors payments, you must specify the type of payment in the <bpt id="p1">**</bpt><ph id="ph1">&amp;lt;</ph>OtrMetododePago<ph id="ph2">&amp;gt;</ph><ept id="p1">**</ept> node and the <bpt id="p2">**</bpt><ph id="ph3">&amp;lt;</ph>MetPagPol<ph id="ph4">&amp;gt;</ph><ept id="p2">**</ept> attribute by using a specific table that is published by the government.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Accounts payable<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Payment setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Methods of payment<ept id="p3">**</ept>, and assign the SAT payment method to the company's method of payment.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Bank transactions</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>The Journal transaction XML file must include all bank transfer transactions that are posted to the general ledger where some additional information is required in a specific node <bpt id="p1">**</bpt><ph id="ph1">&amp;lt;</ph>Transferencias<ph id="ph2">&amp;gt;</ph><ept id="p1">**</ept> and their attributes <bpt id="p2">**</bpt><ph id="ph3">&amp;lt;</ph>BancoOriNal<ph id="ph4">&amp;gt;</ph><ept id="p2">**</ept> and <bpt id="p3">**</bpt><ph id="ph5">&amp;lt;</ph>BancoDestNal<ph id="ph6">&amp;gt;</ph><ept id="p3">**</ept> is required to inform the government bank code.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Cash and bank management<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Bank accounts<ept id="p2">**</ept>, and use the <bpt id="p3">**</bpt>Routing number<ept id="p3">**</ept> field to set up this information.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Invoice identification</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>The Journal transaction XML file also requires that you identify the invoice number when an invoice is issued and received.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Per Mexican legislation, this invoice number can be represented in various ways, depending on how the invoice was delivered:</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Regular invoice (non-electronic).</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>You must include the <bpt id="p1">**</bpt>Series<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Invoice number<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>CFD: You must include the <bpt id="p1">**</bpt>UUID<ept id="p1">**</ept> of an electronic invoice CFD.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>CFDI:  You must include the <bpt id="p1">**</bpt>UUID<ept id="p1">**</ept> of an electronic invoice CFD.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Users can now include this information in transactions that are generated from the following areas:</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Purchase invoice</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Vendor invoice (non–purchase order)</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Invoice register</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Invoice journal</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Invoice approval</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Invoice pool</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Electronic reporting</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>This feature is based on Electronic reporting configuration (ER), where each XML file format is defined by using the model and format designer for electronic reporting.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Use the <bpt id="p1">**</bpt>AX resources<ept id="p1">**</ept> repository configuration type to import these configurations into the current company and enable the generation of XML files.</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Organization administration<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Workspaces<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Electronic reporting<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Repositories<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>You must upload the following repository models and formats:</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Electronic ledger accounting model MX</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Auxiliary Ledger XML MX (format)</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Chart of Account XML MX (format)</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Journal XML MX (format)</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>Trial Balance XML MX (format)</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>After the repository is available in your environment, you must identify these formats in the general ledger parameters.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>General ledger<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Ledger setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>General ledger parameters<ept id="p3">**</ept>, and then, in the <bpt id="p4">**</bpt>Electronic reporting mapping<ept id="p4">**</ept> field group, select the format to use to generate the XML files.</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>Generate electronic ledger accounting files</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>General ledger<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Inquire and reports<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Ledger reports<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Electronic ledger accounting statement<ept id="p4">**</ept> to generate the required XML files and download them to your environment.</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>The following table describes the parameters that you must set.</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>SAT consolidation account group<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Select the consolidation account group that you previously configured to identify the SAT account group.</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Period<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>Select the period for the report.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>The selected date will include all general ledger transactions for the selected month.</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Closing transactions<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>This slider indicates if the closing transactions should be included as transactions in the Monthly Trial Balance XML file.</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Switch this slider to <bpt id="p1">&lt;strong&gt;</bpt>No<ept id="p1">&lt;/strong&gt;</ept> to exclude closing transactions from the Monthly Trial balance XML file.</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Trial Balance<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Select this check box to generate the Chart of account and Monthly Trial Balance XML files for the specified period.</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Delivery type<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>Specify the type of delivery:</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Normal</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>Complementary</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Update date<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>Specify the updated date of a complementary delivery.</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Ledger entries<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>This slider indicates if the Journal transaction XML file is generated for the specified period.</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Auxiliary ledger<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>This slider indicates if the Auxiliary ledger XML file is generated for the specified period.</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Request type<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>Select this option to identify the type of request when the <bpt id="p1">&lt;strong&gt;</bpt>Ledger entries<ept id="p1">&lt;/strong&gt;</ept> or <bpt id="p2">&lt;strong&gt;</bpt>Auxiliary ledger<ept id="p2">&lt;/strong&gt;</ept> slider is set to <bpt id="p3">&lt;strong&gt;</bpt>Yes<ept id="p3">&lt;/strong&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Order number<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Enter the order number that was assigned by the government tax authority, if the request type is <bpt id="p1">&lt;strong&gt;</bpt>Control<ept id="p1">&lt;/strong&gt;</ept> or <bpt id="p2">&lt;strong&gt;</bpt>Compulsive control<ept id="p2">&lt;/strong&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Process Number<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>Enter the process number that was assigned by the government tax authority, if the request type is <bpt id="p1">&lt;strong&gt;</bpt>Return<ept id="p1">&lt;/strong&gt;</ept> or <bpt id="p2">&lt;strong&gt;</bpt>Compensation<ept id="p2">&lt;/strong&gt;</ept>.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

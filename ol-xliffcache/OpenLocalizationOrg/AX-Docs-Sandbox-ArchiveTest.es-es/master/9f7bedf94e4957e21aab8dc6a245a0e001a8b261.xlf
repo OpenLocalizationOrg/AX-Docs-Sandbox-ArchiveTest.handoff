@@ -1,0 +1,186 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="es-es">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">9f7bedf94e4957e21aab8dc6a245a0e001a8b261</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scm\production-control\lean-manufacturing-kanban-job-scheduling.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">basic</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">5b1226ebaec430727b8f5dec1b35b7efb01137c4</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">f5c5721d4d817e93ce399f865cce5a8353d5232b</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Kanban job scheduling for lean manufacturing</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This article provides information about visual control over kanban job scheduling and various ways to schedule kanban jobs.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Kanban job scheduling for lean manufacturing</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This article provides information about visual control over kanban job scheduling and various ways to schedule kanban jobs.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Kanban job scheduling<ept id="p1">**</ept> page provides visual control over the schedules of lean manufacturing work cells.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>It gives an overview of all kanban jobs and provides multiple filtering capabilities.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>From this page, you can move to all other pages that are related to kanban configuration and execution.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Automatic scheduling of kanban jobs</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Scheduling can be triggered automatically if you set the <bpt id="p1">**</bpt>Automatic planning quantity<ept id="p1">**</ept> parameter on the kanban rule.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>If you set <bpt id="p1">**</bpt>Automatic planning quantity<ept id="p1">**</ept> to <bpt id="p2">**</bpt>1<ept id="p2">**</ept>, each kanban job is planned immediately when it's created.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>The result is a series of first pull, first serve operations.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>If you set <bpt id="p1">**</bpt>Automatic planning quantity<ept id="p1">**</ept> to a value that is more than 1, kanban jobs are grouped before they are planned.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>This concept enables kanban sizes to be reduced below the actual economic batch sizes.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>For example, the economic batch size for a specific item (or item family) is 30.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Instead of creating kanbans that use the product quantity, 30, you can configure the kanban rule so that it has a product quantity of 10 and an <bpt id="p1">**</bpt>Automatic planning quantity<ept id="p1">**</ept> value of <bpt id="p2">**</bpt>3<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Although automatic planning schedules the kanban jobs for the work cell only when three unplanned jobs exist, it's fully transparent to the planner and the shop floor supervisor that two unplanned jobs might be awaiting execution.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The planner or shop floor manager can then take those two jobs into production by manually planning them or creating additional kanbans.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Manual scheduling</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>For manual scheduling, Microsoft Dynamics AX 2012 introduced the kanban scheduling board.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Manual scheduling can be combined with automatic scheduling.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The kanban scheduling board lets you plan and unplan jobs, moved them in sequence, or move them from period to period.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Jobs that are based on a kanban rule where the <bpt id="p1">**</bpt>Automatic planning<ept id="p1">**</ept> value is more than <bpt id="p2">**</bpt>0<ept id="p2">**</ept> can be manually unplanned.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>However, these jobs will be replanned when the next automatic planning event occurs (that is, when a new kanban is created).</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>The following options are available for manual scheduling:</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Schedule<ept id="p1">**</ept> schedules the selected jobs according to their due date.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>(This option resembles automatic planning.)</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Schedule forward from date<ept id="p1">**</ept> tries to schedule the selected jobs according to their due date but constrains the result by using the specified earliest start date.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Backward<ept id="p1">**</ept> moves the selected scheduled jobs back in the sequence within the period.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Forward<ept id="p1">**</ept> moves the selected scheduled jobs forward in the sequence with the period.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Previous period<ept id="p1">**</ept> moves the selected scheduled jobs to the start or end of the previous period.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Next period<ept id="p1">**</ept> moves the selected scheduled jobs to the start or end of the next period.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Plan<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Revert job status<ept id="p2">**</ept> lets you unschedule a scheduled job.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Lean scheduling groups</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Each color represents a lean scheduling group.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Lean scheduling groups can be freely defined as generic groups or as groups that belong to a single work cell.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Items and dimensions can be freely assigned to the scheduling groups.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>For example, in a Painting cell, a schedule group can represent a color of the product.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>In work that is driven by specific tooling requirements, items might be grouped by tool requirement, and a packaging work cell might group items by packaging template.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>The use of colors for lean scheduling groups is optional but recommended.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>It improves visibility into the status of the plan.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>For example, it's very easy to see which colors are produced on which day, and you can tell at a glance how this work can be optimized.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Work cell capacity and period capacity</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>The capacity of a lean work cell is always concurrent capacity.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>In other words, multiple jobs can be active in a work cell at the same time.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>The capacity can be tracked in two modes: throughput and hours.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Throughput</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>The capacity of a work cell is defined by the average throughput quantity of a reference period (standard workday, week, or month).</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>The actual capacity per day or week is then calculated based on the working times of the calendar that is assigned to the work cell.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>The capacity that is loaded by job is the quantity of the job, adjusted by the throughput ratio of the item in the work cell.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Hours</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>The available capacity by day or week is defined by the calendar that is assigned to the work cell.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>The capacity that is loaded by job is the cycle time of the activity, adjusted by the quantity (default activity quantity versus actual job quantity) and the throughput ratio of the item in the work cell.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Period capacity FactBox</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Kanban job scheduling<ept id="p1">**</ept> list page contains a FactBox that shows the available and booked period capacity for the selected work cell.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Depending on the selected schedule periods in the production flow model, the periods show days or weeks.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>See also</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

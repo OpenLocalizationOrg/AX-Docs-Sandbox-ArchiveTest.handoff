@@ -1,0 +1,219 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="es-es">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">f16f22d44d1ce14ea98f12679cca3ed187a58975</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scm\warehousing\replenishment.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">basic</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">d4ad3d382b55f785f60be4bed2a312448c99d3c1</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">87664dec1faf2c87d6b3b87c6fa617eed24f69f9</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Replenishment</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic describes the replenishment strategies that are available for warehouses which use the functionality that is available in Warehouse management.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Replenishment</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This topic describes the replenishment strategies that are available for warehouses which use the functionality that is available in Warehouse management.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>The information doesn't apply to the warehousing solution that is available in Inventory management.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>The following replenishment strategies are available:</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Wave demand replenishment<ept id="p1">**</ept> – This strategy creates replenishment work for outbound orders or loads if inventory isn't available when the wave creates work.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>For example, replenishment work can be created if the quantity that is required for a sales order isn't available when a wave is processed.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Min/Max replenishment<ept id="p1">**</ept> – This strategy uses minimum and maximum stocking limits to determine when locations should be replenished.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>The item and location criteria define the inventory that is evaluated for replenishment.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Min/Max replenishment templates are the primary mechanism for maintaining optimal levels in picking locations.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>To ensure that enough pick face inventory is available to meet wave demand, you can use demand replenishment as a supplement between Min/Max replenishment cycles.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Load demand replenishment<ept id="p1">**</ept> – This strategy sums the demand for several loads and creates the replenishment work that is required in order to stock the relevant picking locations.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>This strategy helps to ensure that the loads that are created can be picked in the warehouse after they are released.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>All three strategies create replenishment work, based on a replenishment template.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Wave demand replenishment</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Wave demand replenishment creates replenishment work, based on demand, if the quantity that is required for production orders, kanbans, outbound orders or loads isn't available when a wave creates work.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>The replenishment template contains information about the item criteria, the unit of measure, the demand increment, and the location.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Location directives are used to determine which location should be replenished.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>You link these location directives to the replenishment template by using the <bpt id="p1">**</bpt>Directive code<ept id="p1">**</ept> field.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>If the <bpt id="p1">**</bpt>Directive code<ept id="p1">**</ept> field isn't set, queries are used to determine which location directive should be used.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Note that if a directive code isn't specified in the replenishment template, and the location directive has a directive code, the location directive will be ignored, even if the query on the location directive is correct.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Pick location directives are used to determine where to get inventory for the replenishment.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>In addition to creating a template, you must specify some replenishment settings in the wave template.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>The wave template should contain a wave step for replenishment that is run only if allocation of an item isn't successful.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>This replenishment wave step uses a wave step code to determine which replenishment template should be used.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>In addition to having a wave step for replenishment, you need to make sure that <bpt id="p1">**</bpt>Replenish<ept id="p1">**</ept> is selected in the <bpt id="p2">**</bpt>Methods<ept id="p2">**</ept> section of the wave template.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Replenishment template<ept id="p1">**</ept> page includes an <bpt id="p2">**</bpt>Allow wave demand to use unreserved quantities<ept id="p2">**</ept> check box.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>You should select this check box if you want to allow demand replenishment to deduct unreserved quantities from work that is generated from the selected replenishment template.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>To enable demand replenishment templates to use this logic, select this check box for every existing replenishment template.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>When demand replenishment is triggered in the warehouse, it will deduct the demand from existing replenishment work that has unreserved quantities, if the work originates from replenishment templates where the <bpt id="p1">**</bpt>Allow wave demand to use unreserved quantities<ept id="p1">**</ept> check box is selected.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Demand replenishment is supported for sales orders, transfer orders, production orders, and kanbans.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Min/Max replenishment</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>In Min/Max replenishment, stock is replenished so that it's between the minimum and maximum limits that have been set.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Typically, this process occurs one time every day to ensure that all picking locations are filled to the maximum level before picking starts.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>The minimum and maximum amounts are set in a replenishment template.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Many of the other settings in the template resemble the settings in templates that are used in Wave demand replenishment.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>The template should contain one line for each item and location.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>When you run replenishment by using the batch job, Finance and Operations evaluates whether replenishment is required, in the sequence that the lines are organized in.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Note that the Min/Max replenishment strategy can't replenish an empty location unless the location is set as the fixed location for the item.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>If the location that must be replenished isn't a fixed location, it's not possible to determine which item to replenish.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Therefore, at least some on-hand quantity is required before replenishment occurs.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Load demand replenishment</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Load demand replenishment sums the demand for several loads and creates the replenishment work that is required to stock the relevant picking locations.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Load demand replenishment resembles Wave demand replenishment in many ways.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>The main difference is how and when Load demand replenishment and Wave demand replenishment are run.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Like Min/Max replenishment, Load demand replenishment is run by using a batch job.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>To set up the batch job, on the <bpt id="p1">**</bpt>Load demand replenishment<ept id="p1">**</ept> page, select the replenishment template that you want to use, and set a filter query to specify which loads are used to determine the demand.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>The location query defines the locations that any available quantity will be subtracted from to meet the aggregated demand of the loads.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Replenishment prerequisites</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Prerequisite</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Item</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>The item must be enabled for warehouse management processes.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Warehouse</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>The warehouse must be enabled for warehouse management processes.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>To enable the warehouse for warehouse management processes, on the <bpt id="p1">**</bpt>Warehouses<ept id="p1">**</ept> page, select the warehouse, and then select the <bpt id="p2">**</bpt>Use warehouse management processes<ept id="p2">**</ept> option.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Replenishment templates</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>At least one replenishment template must be set up for Min/Max replenishment, Wave demand replenishment, or Load demand replenishment.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Locations</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Locations must be created and connected to a location profile.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Location profiles</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Location profiles are required in order to create locations.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Location directives</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Location directives are required in order to guide work to the locations where replenishment is required, and to the locations that inventory is sourced from.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Work templates</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Work templates of the <bpt id="p1">**</bpt>Replenishment<ept id="p1">**</ept> type are required in order to create replenishment work so that inventory can be moved to the desired locations.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
