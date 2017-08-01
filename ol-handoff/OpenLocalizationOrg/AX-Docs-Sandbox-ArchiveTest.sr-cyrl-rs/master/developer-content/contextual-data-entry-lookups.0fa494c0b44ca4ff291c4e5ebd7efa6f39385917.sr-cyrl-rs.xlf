@@ -1,0 +1,492 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">7a27abff77ab2b020207a73b3beb078b9625e80e</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\user-interface\contextual-data-entry-lookups.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">0279d9afda99c8595283957a973891f931da8424</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">f1ca24037f650a98c3d8c8b6a8662f306af1bf0d</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Contextual data entry for lookups</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>In data entry scenarios, it is common for a user to attempt to identify an entity in terms of some more descriptive or natural language attribute if that entity is formally identified by a synthetic key, such as a number sequence.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>The contextual data entry feature allows users to type in either the synthetic key or a more descriptive attribute directly into a lookup field.</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This page explains how contextual data entry works and also provides implementation details and tips for developers who want their lookups to have this behavior.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Contextual data entry for lookups</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>In data entry scenarios, it is common for a user to attempt to identify an entity in terms of some more descriptive or natural language attribute if that entity is formally identified by a synthetic key, such as a number sequence.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>The contextual data entry feature allows users to type in either the synthetic key or a more descriptive attribute directly into a lookup field.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>This page explains how contextual data entry works and also provides implementation details and tips for developers who want their lookups to have this behavior.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Introduction</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>In data entry scenarios, it is common for a user to attempt to identify an entity in terms of some more descriptive or natural language attribute if that entity is formally identified by a synthetic key, such as a number sequence.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>A user will typically attempt to enter an <bpt id="p1">**</bpt>Account Name<ept id="p1">**</ept> instead of an <bpt id="p2">**</bpt>Account ID<ept id="p2">**</ept> for the <bpt id="p3">**</bpt>Customer Account<ept id="p3">**</ept> when creating a Sales Order.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>This is because most interaction with a customer is done using their actual name instead of some synthetic identifier.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Unfortunately, any user’s attempt to enter an <bpt id="p1">**</bpt>Account Name<ept id="p1">**</ept> will fail because the <bpt id="p2">**</bpt>Customer account<ept id="p2">**</ept> control’s underlying foreign key relates to a field that is a synthetic key—a number sequence—and Dynamics AX 2012 (and older) will always attempt to validate the entered value directly.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Therefore, if the <bpt id="p1">**</bpt>Account ID<ept id="p1">**</ept> was unknown to the user, the user would be forced to perform some type of searching step, such as opening the <bpt id="p2">**</bpt>Customer account<ept id="p2">**</ept> control’s lookup and filtering on the <bpt id="p3">**</bpt>Account Name<ept id="p3">**</ept> column to identify the correct <bpt id="p4">**</bpt>Account ID<ept id="p4">**</ept> (see the image below).</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>HowToContextualLookups (3)<ept id="p1">](./media/howtocontextuallookups-3.png)](./media/howtocontextuallookups-3.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>This user experience is not optimal and is being addressed by data entry efficiency and productivity.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The platform adds initial support for contextual data entry, where the system automatically attempts to understand whether the user’s entered data is in the context of the key field or some other more descriptive or well-understood field, and handle it appropriately.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>For the remainder of this document, we’ll generically refer to these types of fields as ID (synthetic) and NAME (descriptive) fields, respectively.<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Contextual lookup forms</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Just like keyboard data entry, all system generated lookup forms are also now contextual, meaning that filtering and sorting occur in the context of the data the user has entered.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Using the create a Sales Order scenario as an example, the user will see the lookup shown below if an ID is entered.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Customer account lookup form opened in the context of ID<ept id="p1">](./media/howtocontextuallookups-1.png)](./media/howtocontextuallookups-1.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>If a NAME is entered, then the user will see the following lookup.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Notice how the NAME column is moved first in the Grid, and how the lookup is sorted and filtered upon when the user’s data is in the context of NAME.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Customer account lookup form opened in the context of NAME</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Contextual data entry implementation details</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Behavior</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>In the context of the Sales order create scenario mentioned above, the contextual data entry feature will allow the user to be able to freely type in either the ID or NAME without performing any laborious search process.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>In detail, the following behaviors will occur:</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>If the user enters a complete ID reference, the value will be taken directly.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>If the user enters a complete and unique NAME reference, the value will be automatically translated into an ID and then processed.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>If the user enters a non-complete ID or NAME reference (such as <bpt id="p1">*</bpt>Micro<ept id="p1">*</ept> instead of <bpt id="p2">*</bpt>Microsoft<ept id="p2">*</ept>), but it still uniquely matches either ID or NAME via a BEGINS WITH predicate, then the value will be translated into its complete ID and then processed.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>If the user enters a non-complete ID or a non-unique NAME and there are multiple matches, then a <bpt id="p1">*</bpt>disambiguation<ept id="p1">*</ept> lookup will be presented to the user to select which value was actually intended.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>See Appendix A for more detailed sample scenarios of contextual data entry.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Prerequisites</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>To maintain functional correctness and reasonable performance, the following constraints were added to the application of the behaviors described in the previous section:</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>*****Title Field 2*** **is the NAME field****.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>The NAME field must either be covered by an index <bpt id="p1">***</bpt>OR<ept id="p1">***</ept> belong to a Table whose <bpt id="p2">*</bpt>Cache Lookup<ept id="p2">*</ept> property is set to <bpt id="p3">*</bpt>EntireTable<ept id="p3">*</ept>.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>All contextual lookup behavior will be disabled if this requirement is not met for performance reasons.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>NOTE: An index should only be added for NON TRANSACTIONAL tables because of index maintenance costs<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Also note that you will <bpt id="p1">**</bpt>likely want to mark this index as non-unique<ept id="p1">**</ept> (Allow Duplicates = Yes).</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>If a control is using a custom lookup form (such as SysTableLookup; FormHelp on an EDT) then the disambiguation behavior described previously will not be turned on by default.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>This is because these custom lookup forms (and even surrounding modified and lookup method overrides) can and will do advanced things such as presenting a dialog, which are not desirable in the context of contextual lookups.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Handling custom lookup forms requires additional knowledge and will be covered in its own section.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Programming model additions</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>The behaviors and rules expressed in <bpt id="p1">*</bpt>Listings 1<ept id="p1">*</ept> and <bpt id="p2">*</bpt>2<ept id="p2">*</ept> are contained primarily by a new X++ class called <bpt id="p3">*</bpt>FormControlAmbiguousReferenceResolver<ept id="p3">*</ept>.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>FormControlAmbiguousReferenceResolver<ept id="p1">*</ept> uptake in application code will be necessary in more advanced scenarios.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Its use will be described later in the document.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>In addition to the <bpt id="p1">*</bpt>FormControlAmbiguousReferenceResolver<ept id="p1">*</ept> class, a new control override called <bpt id="p2">*</bpt>resolveAmbiguousReference<ept id="p2">*</ept> has been added.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>R<bpt id="p1">*</bpt>esolveAmbiguousReference<ept id="p1">*</ept> acts as a hook point in the system for translating what the user typed into a value that the system is expecting.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>The basic flow is as follows:</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>The user enters a value into a control and removes focus.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>An interaction is sent from the client to the server, indicating that a new value has been entered.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>The appropriate command is executed on the server.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Before the command attempts to process the value entered by the user, it makes a call to <bpt id="p1">*</bpt>resolveAmbiguousReference<ept id="p1">*</ept> to give the system a chance to translate the value into the expected domain.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>The super implementation of resolveAmbiguousReference creates an instance of <bpt id="p1">*</bpt>FormControlAmbiguousReferenceResolver<ept id="p1">*</ept> which executes the rules described above.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>The value returned from <bpt id="p1">*</bpt>resolveAmbiguousReference<ept id="p1">*</ept> is used for the remainder of the command’s execution.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Validate() and modified() operate against the returned value.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Standard lookup uptake</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Add an index that covers TitleField2</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>TitleField2<ept id="p1">*</ept> defines the default definition of NAME.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>In order to enable ID and NAME contextual data entry, <bpt id="p1">*</bpt>TitleField2<ept id="p1">*</ept> must be either indexed OR belong to a table with <bpt id="p2">*</bpt>CacheLookup<ept id="p2">*</ept> set to <bpt id="p3">*</bpt>EntireTable<ept id="p3">*</ept>.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>If the table containing <bpt id="p1">*</bpt>TitleField2<ept id="p1">*</ept> does not yet define an index covering <bpt id="p2">*</bpt>TitleField2<ept id="p2">*</ept> <bpt id="p3">**</bpt>and, importantly, the table does not have a high volume of CUD (Creates/Updates/Deletes<ph id="ph1">\*</ph>)<ept id="p3">**</ept>, then add a <bpt id="p4">**</bpt>non-unique<ept id="p4">**</ept> index (Allow Duplicates = Yes) covering <bpt id="p5">*</bpt>TitleField2<ept id="p5">*</ept>.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>This will cause the system to start executing the contextual data entry behavior, except for the custom lookup limitation described in the Prerequisites section.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\*</ph>Adding an index on high-volume transactional tables may incur a noticeable performance penalty due to index maintenance costs.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Enable disambiguation behavior for custom lookup scenarios</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Custom lookup implementations can provide advanced or non-typical behaviors, such as presenting dialogs.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Therefore, the system disables the default disambiguation behavior when a custom lookup scenario is detected.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>To opt into the default disambiguation behavior, override the <bpt id="p1">*</bpt>resolveAmbiguousReference<ept id="p1">*</ept> method (as shown below) <bpt id="p2">**</bpt>on the control hosting the lookup<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Note that the second parameter to the <bpt id="p1">*</bpt>resolveAmbiguousReferenceForControl<ept id="p1">*</ept> call is what overrides the default behavior of not performing disambiguation for custom lookup scenarios.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Make custom lookup forms contextual</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>As mentioned earlier, all system generated lookup forms automatically consider the context of the data entered into their host control.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>This includes most lookup forms generated via <bpt id="p1">*</bpt>SysTableLookup<ept id="p1">*</ept>.</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Modeled custom lookup forms, by their nature, cannot be fully-handled by the system and must be modified to match the behavior and visuals of contextual lookups forms.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>If the data contained by the host control is in the context of ID, then:</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Make the ID column first in the Grid.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Sort and filter by ID.</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>If the data contained by the host control is in the context of NAME, then:</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Make the NAME column first in the Grid,</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Sort and filter by NAME,</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>The following scenarios illustrate some custom lookups, along with the recommendation for how to enable contextual data entry in these cases.</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Scenario 1: Custom lookup defined via the FormHelp property on an EDT</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Custom lookups defined via FormHelp (even though modeled) still go through normal kernel-based lookup generation routines.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>Therefore, the kernel still has hooks to make some changes to the lookup form.</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Specifically, the lookup system has enough information to apply the correct filters and sorts; however, it is NOT known which controls should be moved in the lookup's grid.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>(While an educated guess could be made based on bindings, that guess may be incorrect in more advanced lookup form designs.) If your custom lookup form is leveraging the <bpt id="p1">*</bpt>SysTableLookup::filterLookupPreRun<ept id="p1">*</ept> and <bpt id="p2">*</bpt>SysTableLookup::<ept id="p2">*</ept> <bpt id="p3">*</bpt>filterLookupPostRun<ept id="p3">*</ept> methods, then uptake the (new) optional parameters on <bpt id="p4">*</bpt>filterLookupPostRun<ept id="p4">*</ept> to have the NAME control moved automatically, as shown.</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>If your lookup form isn’t using the <bpt id="p1">*</bpt>SysTableLookup::filterLookup<ph id="ph1">\*</ph><ept id="p1">*</ept> methods, and you don’t want to uptake those methods, then you can simply add a control move as shown below.</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Scenario 2: Override of lookup method manually launching a form</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Unlike Scenario 1, lookup forms launched by completely manual mechanisms, such as the class factory, have no kernel hooks.</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Therefore, it is the responsibility of the lookup form to adhere to the contextual data entry behaviors.</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>The easiest way to do this is to leverage the SysTableLookup::filterLookup<ph id="ph1">\*</ph> methods (similar to Scenario 1) except include one additional parameter to indicate that sorting should also be maintained.</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>An example is shown below.</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>Advanced lookup uptake</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>Scenario 1: Overriding ID and NAME bindings</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>If you want to use a set of fields other than what is chosen by default, you must manually construct an instance of <bpt id="p1">*</bpt>FormControlAmbiguousReferenceResolver<ept id="p1">*</ept> and provide the optional parameters representing the custom bindings.</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>This specialized instance must be used in an override of <bpt id="p1">*</bpt>resolveAmbiguousReference<ept id="p1">*</ept> and in a custom lookup form (including <bpt id="p2">*</bpt>SysTableLookup<ept id="p2">*</ept>, which also accepts an instance of <bpt id="p3">*</bpt>FormControlAmbiguousReferenceResolver<ept id="p3">*</ept>).</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>A custom binding cannot currently be specified in kernel-generated lookups.</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>Methods currently accepting custom ID and NAME bindings:</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>FormControlAmbiguousReferenceResolver</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>Constructor</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>resolveAmbiguousReferenceForControl</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>surrogateFKHelperForAlternativeFieldMapping</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>isControlValueMappedToAlternativeField</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>Here's an end-to-end example of how to provide custom bindings.</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>Scenario 2: Custom resolution logic</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>It’s possible to use custom resolution logic by overriding resolveAmbiguousReference and leveraging something other than FormControlAmbiguousReferenceResolver.</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Note that this logic needs to be common to the hosted lookup form so that keyboard and lookup based entry stay in sync.</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>Appendix  Detailed usage scenarios for contextual data entry</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>For the scenarios, assume there is a table called "TableA" with PK field "ID" and index field "Name", with the FK we're trying to enter that is related to the ID (the user ultimately needs to pick an ID).</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>Note that any algorithms that depend on like/begins with are assuming string fields.</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>We won't be able to provide high fidelity resolution behavior on, for example, integral types.</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Scenario 1: User enters a valid ID of "1234"<ept id="p1">**</ept> The super() implementation of resolveReference first queries against TableA.ID with the appropriate predicate.</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>The query finds a single record, and returns the user's entered value to be further processed by validate and modified.</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>Validation passes and the user sees "1234" in the UI.</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Scenario 2: User enters an invalid ID of "4321"<ept id="p1">**</ept> The super() implementation of resolveReference first queries against TableA.ID.</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>The query does not find any records, so a second query is performed against the Name field (SELECT TOP 2 FROM TableA WHERE TableA.Name LIKE "4321%").</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>Still, no record is found, so "4321" is passed through to validation, which fails.</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>The user sees "4321" in the browser as well as a validation error.</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Scenario 3: User enters a valid Name of "ACME"<ept id="p1">**</ept> The super() implementation of resolveReference first queries against TableA.ID.</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>The query does not find any records, so a second query is performed against the Name field (SELECT TOP 2 FROM TableA WHERE TableA.Name LIKE "ACME%").</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>This query does find a single record (unique reference), so the lookup automatically returns the corresponding TableA.ID.</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>Validate and modified continue executing in the context of that value.</source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>Validation passes, and ultimately the user sees the ID value for ACME in the browser (for example, ACME would switch to 1234 in the browser).</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Scenario 4: User enters an invalid Name of "ACNE"<ept id="p1">**</ept> The super() implementation of resolveReference first queries against TableA.ID.</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>The query does not find any records, so a second query is performed against the Name field (SELECT TOP 2 FROM TableA WHERE TableA.Name LIKE "ACNE%").</source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>This query does not find any records, so the lookup passes ACNE through to validation, which fails.</source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>The user sees "ACNE" in the browser as well as a validation error.</source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Scenario 5: User enters an ambiguous Name of "ACME"<ept id="p1">**</ept> In this case, assume there are two records in the database: one with Name "ACME W" and another with "ACME E".</source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>The super() implementation of resolveReference first queries against TableA.ID.</source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>The query does not find any records, so a second query is performed against the Name field (SELECT TOP 2 FROM TableA WHERE TableA.Name LIKE "ACME%").</source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>This query finds two records, so it cannot make any further assumptions.</source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>A disambiguation lookup is presented to the user showing "ACME W" and "ACME E" as choices.</source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>The user picks "ACME E".</source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>resolveReference then takes the records selected by the user and redirects it to the ID of "ACME E".</source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>Validate and modified continue execution in the context of the ID of "ACME E".</source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>The browser ultimately displays the ID of "ACME E" (for example, 1234).</source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Scenario 6: User enters an ambiguous Name of "ACME" and doesn't make a choice in the disambiguation lookup<ept id="p1">**</ept> In this case, assume there are two records in the database: one with Name "ACME W" and another with "ACME E".</source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>The super() implementation of resolveReference first queries against TableA.ID.</source>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>The query does not find any records, so a second query is performed against the Name field (SELECT TOP 2 FROM TableA WHERE TableA.Name LIKE "ACME%").</source>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>This query finds two records, so it cannot make any further assumptions.</source>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>A disambiguation lookup is presented to the user showing "ACME W" and "ACME E" as choices.</source>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>The user doesn't make a selection from the lookup.</source>
+        </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>Therefore "ACME" is passed through to validate and modified.</source>
+        </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>Validation fails and the user is presented with a validation failure message.</source>
+        </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>The browser still displays a value of "ACME".</source>
+        </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Scenario 7: User enters a "valid" ID of "12" and presents the lookup form<ept id="p1">**</ept> Prior to presenting the lookup, the system queries against TableA.ID (SELECT TOP 1 FROM TableA WHERE TableA.ID LIKE '12%').</source>
+        </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>The query finds a record and therefore assumes the user must be operating in the context of ID.</source>
+        </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>It presents the lookup, filtering and sorting by ID.</source>
+        </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Scenario 8: User enters an invalid ID of "4321" and presents the lookup form<ept id="p1">**</ept> Prior to presenting the lookup, the system queries against TableA.ID (SELECT TOP 1 FROM TableA WHERE TableA.ID LIKE '4321%').</source>
+        </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>The query does not find a matching record and therefore assumes the user is entering a Name.</source>
+        </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>The lookup is presented as filtered and sorted by Name (no records shown in this case).</source>
+        </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Scenario 9: User enters a "valid" Name of "AC" and presents the lookup form<ept id="p1">**</ept> Prior to presenting the lookup, the system queries against TableA.ID (SELECT TOP 1 FROM TableA WHERE TableA.ID LIKE 'AC%').</source>
+        </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>The query does not find a matching record and therefore assumes the user is entering a Name.</source>
+        </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>The lookup is presented as filtered (those records matching "begins with AC") and sorted by Name in alphabetical order.</source>
+        </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Scenario 10: User enters an invalid Name of "EM" and presents the lookup form<ept id="p1">**</ept> Prior to presenting the lookup, the system queries against TableA.ID (SELECT TOP 1 FROM TableA WHERE TableA.ID LIKE 'EM%').</source>
+        </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>The query does not find a matching record and therefore assumes the user is entering a Name.</source>
+        </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>The lookup is presented as filtered and sorted by Name.</source>
+        </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>No records are found and therefore the user is presented with an empty lookup.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

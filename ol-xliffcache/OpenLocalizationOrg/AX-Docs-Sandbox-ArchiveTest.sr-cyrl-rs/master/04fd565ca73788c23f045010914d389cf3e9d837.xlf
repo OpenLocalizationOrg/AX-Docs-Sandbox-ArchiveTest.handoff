@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">04fd565ca73788c23f045010914d389cf3e9d837</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\data-entities\data-entity-wizard-rules.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">7b3d8fae202693b466a04f6826de51040cb08681</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">069d780f7b9cd74b2a857f43a600e832e2ae78b6</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Data entity wizard rules</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This article provides information about the natural key expansion of surrogate foreign key fields and the expansion of child/parent relations.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Data entity wizard rules</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This article provides information about the natural key expansion of surrogate foreign key fields and the expansion of child/parent relations.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Natural key expansion of surrogate foreign keys</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>A surrogate foreign key field’s extended data type must be <bpt id="p1">**</bpt>RefRecId<ept id="p1">**</ept> or a derivative.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>The natural key expansion of a surrogate foreign key field uses the rules in the following list.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>These rules are listed in the order of evaluation.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Replacement key<ept id="p1">**</ept> – The replacement key fields</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Primary key<ept id="p1">**</ept> – The primary index key fields</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Alternate key<ept id="p1">**</ept> – The first unique alternate key</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Auto-identification key<ept id="p1">**</ept> – The auto-identification fields</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Surrogate foreign key fields that are nested in the natural key are recursively expanded.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Recurring nested surrogates are limited to the first occurrence.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>If you select the <bpt id="p1">**</bpt>is mapped<ept id="p1">**</ept> property of a surrogate foreign key (that is, if you set the property to <bpt id="p2">**</bpt>true<ept id="p2">**</ept>), the related data source is automatically added to the entity, and the <bpt id="p3">**</bpt>is mapped<ept id="p3">**</ept> property of each field in the related data source’s natural key is selected.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>In addition, any nested surrogate foreign key data sources are recursively added to the entity.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>If you clear the <bpt id="p1">**</bpt>is mapped<ept id="p1">**</ept> property of a surrogate foreign key (that is, if you set the property to <bpt id="p2">**</bpt>false<ept id="p2">**</ept>), the related data source are automatically removed and unmapped from the entity and any nested surrogate foreign key data sources.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>The effect of selecting and clearing the <bpt id="p1">**</bpt>is mapped<ept id="p1">**</ept> property of a surrogate foreign key field differs from the effect of using the <bpt id="p2">**</bpt>Add data source<ept id="p2">**</ept> and <bpt id="p3">**</bpt>Remove data source<ept id="p3">**</ept> buttons.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>If you add a surrogate foreign key data source, the <bpt id="p1">**</bpt>is mapped<ept id="p1">**</ept> property of the parent data source surrogate foreign key field isn't automatically set to <bpt id="p2">**</bpt>true<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Likewise if you removing a surrogate foreign key data source, the <bpt id="p1">**</bpt>is mapped<ept id="p1">**</ept> property of the parent data source surrogate foreign key field isn't automatically set to <bpt id="p2">**</bpt>false<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>By default, the <bpt id="p1">**</bpt>is mapped<ept id="p1">**</ept> property of the root data source’s surrogate foreign key field is set to <bpt id="p2">**</bpt>true<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Therefore, by default, surrogate foreign key relations are expanded to one level.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Expansion of parent/child relations</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Parent/child relations are composition/extension relations that are stored as a relation on the child table.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>The parent table doesn't detect the relation.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>A parent/child relation can be either a surrogate foreign key relation or a natural foreign key.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Parent/child relations use the following rules:</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>The collection of child tables is obtained by querying the cross-reference database for “type reference” relations to the parent table.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>The child table must belong to the same table group as the parent table.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>The relation between the child and parent <bpt id="p1">**</bpt>relationship type<ept id="p1">**</ept> property must be <bpt id="p2">**</bpt>association<ept id="p2">**</ept>, <bpt id="p3">**</bpt>composition<ept id="p3">**</ept>, <bpt id="p4">**</bpt>link<ept id="p4">**</ept>, or <bpt id="p5">**</bpt>aggregation<ept id="p5">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>The relation between the child and parent <bpt id="p1">**</bpt>cardinality<ept id="p1">**</ept> property must be <bpt id="p2">**</bpt>exactly one<ept id="p2">**</ept> or <bpt id="p3">**</bpt>zero or one<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>The relation between the child and parent <bpt id="p1">**</bpt>related table cardinality<ept id="p1">**</ept> property must be <bpt id="p2">**</bpt>exactly one<ept id="p2">**</ept> or <bpt id="p3">**</bpt>zero or one<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>By default, parent/child relations aren't expanded.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>You must add them by using the <bpt id="p1">**</bpt>Add data source<ept id="p1">**</ept> button.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>To change the default behavior for a project in Microsoft Visual Studio, set the <bpt id="p1">**</bpt>Expand parent/child<ept id="p1">**</ept> option to <bpt id="p2">**</bpt>true<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Using label text as field names</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>The following rules enable label text to be used as the field name when the option is selected (<bpt id="p1">**</bpt>true<ept id="p1">**</ept>):</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>All whitespace is removed from the label text.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>The label text is truncated to 77 characters, and then a unique three-digit numeric identifier (000 through 999) is added.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>The label text is passed to the <bpt id="p1">**</bpt>NamedElement.IsValid<ept id="p1">**</ept> method.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>If the name is valid, it can be used as the field name.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Otherwise, the label text isn't used, and the field name remains unchanged.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>The Is mandatory field</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>The default value of data entity fields is <bpt id="p1">**</bpt>auto<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>This value is used unless it's explicitly changed.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>For relations, the related field’s <bpt id="p1">**</bpt>Is mandatory<ept id="p1">**</ept> property is set based on the value of the field’s <bpt id="p2">**</bpt>Is mandatory<ept id="p2">**</ept> value.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>If the field’s <bpt id="p1">**</bpt>Is mandatory<ept id="p1">**</ept> property and the related field’s <bpt id="p2">**</bpt>Is mandatory<ept id="p2">**</ept> are both <bpt id="p3">**</bpt>true<ept id="p3">**</ept>, both fields are explicitly set to <bpt id="p4">**</bpt>true<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>If the field’s <bpt id="p1">**</bpt>Is mandatory<ept id="p1">**</ept> property and the related field’s <bpt id="p2">**</bpt>Is mandatory<ept id="p2">**</ept> are both <bpt id="p3">**</bpt>false<ept id="p3">**</ept>, both fields are explicitly set to <bpt id="p4">**</bpt>false<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>If the field’s <bpt id="p1">**</bpt>Is mandatory<ept id="p1">**</ept> property and the related field’s <bpt id="p2">**</bpt>Is mandatory<ept id="p2">**</ept> property differ in value, both fields remain unchanged.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>In this case, the default value of <bpt id="p1">**</bpt>auto<ept id="p1">**</ept> is used.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

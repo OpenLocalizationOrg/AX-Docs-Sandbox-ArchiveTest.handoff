@@ -1,0 +1,222 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">a75f9a44367dc52b4ad5ab6fa754283cb79943ba</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\user-interface\messaging-api-center-bar-details.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">bf52b836c44ca6dce4335358bfe68935db77e575</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">032eb1be152b69128f4085e372c3c9c5227ddcc2</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Message center, message bar, and message details API</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic describes the messaging system.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Message center, message bar, and message details API</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This topic describes the messaging system.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Message API</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Microsoft Dynamics AX 2012 has an all-purpose, "one size fits all" window that displays a list of the most calls to <bpt id="p1">**</bpt>info()<ept id="p1">**</ept>, <bpt id="p2">**</bpt>warning()<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>error()<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>This window was appropriately and generically named the "Information Log," or “Infolog” for short.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Although the Infolog was a useful tool in some cases, its “one size fits all” approach was deemed ineffective for differentiating severity and determining whether the user should be interrupted.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>A new messaging system improves the experience.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>This richer, more powerful messaging system that includes the following features:</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Improved association of a message with its context (form versus global).</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Improved level of interruption (none, subtle, and interrupting).</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Improved clarity between types of messages and their use.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>The control that is used to display messages is deterministic and based on form context.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Legacy API support: info(), warning()/checkfailed(), and error()</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>The legacy <bpt id="p1">**</bpt>info()<ept id="p1">**</ept>, <bpt id="p2">**</bpt>warning()<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>error()<ept id="p3">**</ept> application programming interfaces (APIs) are still supported.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>However, they now sit upon the framework's new messaging system, and their destination is deterministic.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>In other words, it uses the context of the call to determine the best way to present the message to the user.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>In general, if the use of the API originated from a form, the message appears in a message bar on that same form.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>(A drop dialog and a slider dialog are both considered forms.) <bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> There are a few exceptions to this rule.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>If the message API was called from a slider dialog, and that dialog was closed, the message appears on the slider's parent form.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Alternatively, if that slider was closed, and it was hosted by a workspace, the message is routed to the Message center.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>The message API never "eats" a message.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>If an appropriate host form isn't found, the message is sent to the Message center.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>The following screen shot shows the info, warning/checkfailed, and error bars.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>1<ph id="ph2">\_</ph>API<ept id="p1">](./media/1_api.jpg)](./media/1_api.jpg)</ept></source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Message API and batch or asynchronous operations</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>If <bpt id="p1">**</bpt>info()<ept id="p1">**</ept>, <bpt id="p2">**</bpt>warning()<ept id="p2">**</ept><ph id="ph1">/</ph><bpt id="p3">**</bpt>checkfailed()<ept id="p3">**</ept>, or <bpt id="p4">**</bpt>error()<ept id="p4">**</ept> is called from an asynchronous process (for example, a batch), there is no form context to consider, and the messages are sent to the Message center.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>(To open the Message center, click the flag icon on the navigation bar.) <bpt id="p1">[</bpt><ph id="ph1">![</ph>2<ph id="ph2">\_</ph>API<ept id="p1">](./media/2_api.png)](./media/2_api.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Legacy API support: SetPrefix()</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>This version also supports the <bpt id="p1">**</bpt>SetPrefix()<ept id="p1">**</ept> API.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>This too remains backward-compatible.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>However, in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition the results of <bpt id="p1">**</bpt>SetPrefix()<ept id="p1">**</ept> don't actively interrupt the user.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Instead, the results are collected and stored (as in previous versions), and a message bar or Message center notification is presented to the user.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>This notification indicates that the related task has been completed, and that it might have messages that the user should review.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>The "Notification of results" message actually uses the task's first call to <bpt id="p1">**</bpt>SetPrefix()<ept id="p1">**</ept> to frame the message.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>This behavior is similar to the behavior in previous versions, where the first call was the "title" of the results.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>In this example, "Posting Results" comes from the application's first call to <bpt id="p1">**</bpt>SetPrefix()<ept id="p1">**</ept>.<bpt id="p2">[</bpt><ph id="ph1">![</ph>3<ph id="ph2">\_</ph>API<ept id="p2">](./media/3_api.png)](./media/3_api.png)</ept> The user can then click <bpt id="p3">**</bpt>Message Details<ept id="p3">**</ept> to open the new <bpt id="p4">**</bpt>Message details<ept id="p4">**</ept> pane.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>4<ph id="ph2">\_</ph>API<ept id="p1">](./media/4_api.png)](./media/4_api.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Message type</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Info</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">*</bpt>notification<ept id="p1">*</ept> informs a user about events that are unrelated to the current user activity.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>The notification can be caused by a user action or significant system event, or it can offer potentially useful information from the product.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>You notify the user by using the <bpt id="p1">**</bpt>info()<ept id="p1">**</ept> API.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Warning</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">*</bpt>warning<ept id="p1">*</ept> alerts the user about a condition that might cause a problem in the future.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Data that is in an incorrect state isn’t an error.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>However, an attempt to use that data might cause an error, and therefore invalid data triggers a warning.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>You express data validation issues by using the <bpt id="p1">**</bpt>warning()<ept id="p1">**</ept> or <bpt id="p2">**</bpt>checkfailed()<ept id="p2">**</ept> API.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Error</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>An <bpt id="p1">*</bpt>error<ept id="p1">*</ept> alerts a user about a problem that has already occurred.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>A user action that has failed triggers an error.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>You express a passive error (non-interrupting) by using the <bpt id="p1">**</bpt>error()<ept id="p1">**</ept> API.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>You express an interrupting error to the user by using the <bpt id="p1">**</bpt>box::<ept id="p1">**</ept> API.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>The messaging system is deterministic.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Results are displayed in either a message bar or the Message center, depending where the message is called from in the code:</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>For messages that are the result of synchronous form actions (actions where the user must wait for the result), the results are displayed in a message bar on the current form.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>The exceptions are messages for a slider dialog that was closed just after the action was started.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Those messages appear on the parent form.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>For asynchronous (disconnected) actions, where the user can continue to do other tasks while the action is being processed, the results are displayed in the Message center.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>If a synchronous or other form action or evaluation produces an error, there can be two types of errors:</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>An interrupting error, where a direct action can't be completed and must be corrected immediately.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>This type of error is shown in a dialog.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>A non-interrupting error, which is often the result of a task/batch operation failure.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>This type of error is shown in a message bar.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>See also</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>User interface development home page<ept id="p1">](user-interface-development-home-page.md)</ept></source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

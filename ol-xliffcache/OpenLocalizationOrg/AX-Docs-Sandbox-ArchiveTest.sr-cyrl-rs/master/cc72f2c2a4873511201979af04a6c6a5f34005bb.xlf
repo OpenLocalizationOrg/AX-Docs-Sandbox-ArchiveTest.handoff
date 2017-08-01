@@ -1,0 +1,1461 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">cc72f2c2a4873511201979af04a6c6a5f34005bb</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\office-integration\office-integration-tutorial.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">823bfd5152c4f3e928c6a3736aa9bfe9ad8593cf</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ad2fa01797b2b2eea0e55afc3877d2c412223fa9</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Office integration tutorial</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>In this tutorial, you will use and build Office integration experiences that involve Excel, Word, Document Management, and email.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Office integration tutorial</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>In this tutorial, you will use and build Office integration experiences that involve Excel, Word, Document Management, and email.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Overview</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>In this tutorial, you will use and build Microsoft Office integration experiences that involve Microsoft Excel, Microsoft Word, the Document Management subsystem, and email.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>You will see how Excel and Word use data entities as an entry point into the system, how Excel can become a core part of the user experience, and how Excel and Word can be used for ad-hoc lightweight reporting.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>You will also see how files can be stored and shared by using the Document Management and email capabilities.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Prerequisites</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>For this tutorial, you must access the environment by using Remote Desktop, and you must be provisioned as an administrator on the instance.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Access development instances<ept id="p1">](..\dev-tools\access-instances.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>If you're running Internet Explorer on the virtual machine (VM), you must enable font and file downloads at <bpt id="p1">**</bpt>Internet Options<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Security<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Custom Level<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Microsoft Visual Studio 2015 runs on the VM, and it must run as an administrator so that metadata and compilation files can be overwritten.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>To make sure that Visual Studio runs as an administrator, search for the program, and pin it to the taskbar.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Then right-click the shortcut on the taskbar, right-click <bpt id="p1">**</bpt>Visual Studio 2015<ept id="p1">**</ept>, click <bpt id="p2">**</bpt>Properties<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Advanced<ept id="p3">**</ept>, and select the <bpt id="p4">**</bpt>Run as administrator<ept id="p4">**</ept> check box.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Visual Studio will now run as an administrator via a single left click of the taskbar shortcut.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Key concepts</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Entities and OData<ept id="p1">**</ept> – You will use the Microsoft Dynamics Excel Data Connector App (Excel App) to create, read, update, and delete.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>The connector uses OData services that are created for any entity that is left in the default state of "public" (<bpt id="p1">**</bpt>DataEntity.Public<ept id="p1">**</ept><ph id="ph1">=</ph><bpt id="p2">**</bpt>Yes<ept id="p2">**</ept>).</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Apps for Office<ept id="p1">**</ept> – The Excel App is built by using the Apps for Office framework (which is also known as the Office Web API).</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The Excel App is web-based, and therefore shares technology with the client and will run inside both on-premises Excel instances and Microsoft Excel Online (Microsoft Office 365).</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>The app runs inside Excel in a task pane.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Microsoft Office 2016<ept id="p1">**</ept> – The Excel and Word Apps use advances in the Apps for Office framework that were introduced in Office 2016.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Therefore, Office 2016 is required in order to run the Excel and Word Apps.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Authentication<ept id="p1">**</ept> – The Excel and Word Apps run in an Internet Explorer window inside Excel and Word.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Even if the user is running the client in an InPrivate Browsing session in Internet Explorer, or in a different browser, such as Chrome, Internet Explorer is still used to run the app inside Excel or Word.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Authentication is facilitated by OAuth, and the user can select accounts and sign in within the app.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Internet Explorer will first try to automatically sign the user in.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Therefore, if you aren't signed in as the correct user, or if you have trouble signing in, you might have to force a sign-out from the app by using the sign-out link on the user menu in the lower-right corner of the app.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>After sign-out, right-click in the app, and try to sign in again.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Excel App<ept id="p1">**</ept> – In addition to facilitating refresh and publish data operations, the Excel App also provides source and field information, lookups, filtering, error messaging, and a design experience for adding or removing fields, table columns, or labels from entity data sources.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Setup</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Load the Fleet data set</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>During this tutorial, we will mainly use forms, entities, and data in the Fleet Management model.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Therefore, we must first load the Fleet data set.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Navigate to <bpt id="p1">**</bpt>Fleet Management<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Fleet<ept id="p3">**</ept> <bpt id="p4">**</bpt>setup<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Create<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Static Export to Excel experiences</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Static Export to Excel</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Static Export to Excel provides a quick mechanism for getting data into grids on a page.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>The standard mechanism for triggering Export to Excel is the <bpt id="p1">**</bpt>Open in<ept id="p1">**</ept> <bpt id="p2">**</bpt>Microsoft Office<ept id="p2">**</ept> menu.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Static Export to Excel is also available via a shortcut menu on the grid.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>In Internet Explorer, navigate to <bpt id="p1">**</bpt>Fleet Management<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Customers<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Customer<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Open in<ept id="p1">**</ept> <bpt id="p2">**</bpt>Microsoft Office<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Export to Excel<ept id="p3">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p4">**</bpt>Customers<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Download and open the workbook that is generated.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Note that the columns in the workbook match the columns in the grid.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Select ("mark") the first two rows by clicking in the left edge of the row, below the "Select all" check mark.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Right-click the grid header to open the shortcut menu.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Note that both <bpt id="p1">**</bpt>Export all rows<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Export marked rows<ept id="p2">**</ept> are available as commands.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Export marked rows<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Note that the columns in the workbook match the columns in the grid, and that the rows that are exported match the rows that you marked.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Modify the static Export to Excel experience</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>You can suppress the static Export to Excel mechanism for a grid or change the label that appears on the <bpt id="p1">**</bpt>Open in<ept id="p1">**</ept> <bpt id="p2">**</bpt>Microsoft Office<ept id="p2">**</ept> menu.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Start Visual Studio 2015.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Make sure that it's running as an administrator.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>View<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Application Explorer<ept id="p2">**</ept> (or press Ctrl+E, Ctrl+E).</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Navigate to <bpt id="p1">**</bpt>AOT<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>User Interface<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Forms<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>FMCustomer<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Right-click <bpt id="p1">**</bpt>FMCustomer<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>Add to new project<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>In Solution Explorer, double-click the <bpt id="p1">**</bpt>FMCustomer<ept id="p1">**</ept> form to open the designer view.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>FMCustomerDesignTab(Tab)TabPageGrid(TabPage)MainGrid(Grid)<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept> window, find the <bpt id="p2">**</bpt>Export Label<ept id="p2">**</ept> property.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Set the <bpt id="p1">**</bpt>Export Label<ept id="p1">**</ept> property to <bpt id="p2">**</bpt>Fleet Customers<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Save the form.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>If you're asked whether you want to overwrite the existing form or save it as a new form, click <bpt id="p1">**</bpt>Overwrite<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Build the solution (press Ctrl+Shift+B).</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>In Internet Explorer, navigate to <bpt id="p1">**</bpt>Fleet Management<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Customers<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Customer<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Open in Microsoft Office<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Note that the <bpt id="p1">**</bpt>Customers<ept id="p1">**</ept> option has changed to <bpt id="p2">**</bpt>Fleet Customers<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Generated Open in Excel experiences</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Generated Open in Excel</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Generated Open in Excel options are automatically added to forms when the system finds data entities that have the same root data source as the form.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>The workbook that is generated will contain a single table data source where the data from that entity is loaded.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>The Open in Excel experiences are listed on the <bpt id="p1">**</bpt>Open in<ept id="p1">**</ept> <bpt id="p2">**</bpt>Microsoft Office<ept id="p2">**</ept> menu.</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>(When an entity has the same root data source as a form, it's added as an option in the <bpt id="p1">**</bpt>Open in Excel<ept id="p1">**</ept> section of the <bpt id="p2">**</bpt>Open in Microsoft Office<ept id="p2">**</ept> menu.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>This option is referred to as a “generated” option.)</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>In Internet Explorer, navigate to <bpt id="p1">**</bpt>Fleet Management<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Customers<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Customer<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Open in<ept id="p1">**</ept> <bpt id="p2">**</bpt>Microsoft Office<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Open in Excel<ept id="p3">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p4">**</bpt>Fleet Management Customers (unfiltered)<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Download and open the workbook that is generated.</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>This workbook contains the Excel Data Connector App, a binding to the <bpt id="p1">**</bpt>Fleet Management Customer<ept id="p1">**</ept> entity, and a pointer to the server that the workbook was generated from.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Enable editing<ept id="p1">**</ept> to enable the Excel Data Connector App to load.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Customer data is read from the OData service on the server and added to the table.</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>In Internet Explorer, on the <bpt id="p1">**</bpt>Customer<ept id="p1">**</ept> page, click <bpt id="p2">**</bpt>Edit<ept id="p2">**</ept> (or press F2), and change the email address of one of the customers.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>In the Excel App, click <bpt id="p1">**</bpt>Refresh<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>Note that the new email address is shown in Excel.</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>In Excel, change the email address of one of the customers.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>In the Excel App, click <bpt id="p1">**</bpt>Publish<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>In Internet Explorer, click <bpt id="p1">**</bpt>Refresh<ept id="p1">**</ept> in the upper right of the page (or press Shift+F5).</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Note that the new email address is shown on the <bpt id="p1">**</bpt>Customer<ept id="p1">**</ept> page.</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>In Excel, click the <bpt id="p1">**</bpt>Settings<ept id="p1">**</ept> (gear) button in the lower-right corner of the Excel App.</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>You can use the dialog box that appears to adjust the settings in the current workbook.</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Note that the <bpt id="p1">**</bpt>Server URL<ept id="p1">**</ept> value matches the start of the URL that is shown in Internet Explorer.</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Also note that the data refresh and data publish operations are listed.</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Cancel<ept id="p1">**</ept> to close the <bpt id="p2">**</bpt>Settings<ept id="p2">**</ept> dialog box.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>Click the <bpt id="p1">**</bpt>Message Center<ept id="p1">**</ept> (flag) button in the lower-right corner of the Excel App.</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>The message center dialog box that appears provides information about what is occurring in the Excel App.</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>Add and remove table columns from an existing table data source in the Excel App</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>The Excel App has a design experience that lets users add and edit bindings to entity data sources and labels.</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>To add and remove fields from an existing binding, you use the edit experience that is outlined in the following steps.</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Get a workbook that has an existing table data source:</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>In Internet Explorer, navigate to <bpt id="p1">**</bpt>Fleet Management<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Customers<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Customer<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Open in Microsoft Office<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Open in Excel<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Fleet Management Customers (unfiltered)<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Download and open the workbook that is generated.</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>This workbook contains the Excel Data Connector App, a binding to the Fleet Management Customer entity, and a pointer to the server that the workbook was generated from.</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Enable editing<ept id="p1">**</ept> to enable the Excel Data Connector App to load.</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>Customer data is read from the OData service on the server and added to the table.</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>Open the data source for editing:</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>In Excel, in the Excel App, click <bpt id="p1">**</bpt>Design<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>A list of table and field data sources appears.</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>Click the <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept> (pencil) button next to the existing table data source.</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>The data source details are shown.</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>Remove fields.</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Selected<ept id="p1">**</ept> list, double-click a field.</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Alternatively, click a field, and then click <bpt id="p1">**</bpt>Remove<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>To select multiple fields, keep the Ctrl key held down while you click them.</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>To select all fields, press Ctrl+A.</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>Add fields.</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Available<ept id="p1">**</ept> list, double-click a field.</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>Alternatively, click a field, and then click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>To select multiple fields, keep the Ctrl key held down while you click them.</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>To select all fields, press Ctrl+A.</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>Change the field order.</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Selected<ept id="p1">**</ept> list, click a field, and then click <bpt id="p2">**</bpt>Up<ept id="p2">**</ept> or <bpt id="p3">**</bpt>Down<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>Change a field label.</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Selected<ept id="p1">**</ept> list, click a field, and then click in the <bpt id="p2">**</bpt>Column label<ept id="p2">**</ept> field below the list.</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>You can change the label to either a static string or a label identifier that will be translated to the active language (for example, <bpt id="p1">**</bpt><ph id="ph1">@SYS129977</ph><ept id="p1">**</ept>).</source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>Apply the changes that you made to data source fields:</source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Update<ept id="p1">**</ept> to return to the data source list.</source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Refresh<ept id="p1">**</ept> to make sure that any new fields are filled with data.</source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>Change an automatically generated Open in Excel experience</source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>The automatically generated Open in Excel experiences that are created for entities have a single table binding.</source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>The list of fields that are added to that table binding is defined by the <bpt id="p1">**</bpt>AutoReport<ept id="p1">**</ept> field group if the table binding contains fields.</source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>Otherwise, the key and mandatory fields for the entity are automatically added.</source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>The order of fields in the <bpt id="p1">**</bpt>AutoReport<ept id="p1">**</ept> group determines the order of fields in the table binding.</source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>Start Visual Studio 2015.</source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>Make sure that it's running as an administrator.</source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>View<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Application Explorer<ept id="p2">**</ept> (or press Ctrl+E, Ctrl+E).</source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>Navigate to <bpt id="p1">**</bpt>AOT<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Data Model<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Data Entities<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>FMCustomerEntity<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>Right-click <bpt id="p1">**</bpt>FMCustomerEntity<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>Add to project<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>Expand <bpt id="p1">**</bpt>FMCustomerEntity<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Field Groups<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>AutoReport<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>Reverse the order of the <bpt id="p1">**</bpt>First name<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Last name<ept id="p2">**</ept> fields by clicking the <bpt id="p3">**</bpt>Last name<ept id="p3">**</ept> field and moving it up (press Alt+Up arrow key).</source>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>Save the entity.</source>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>If you're asked whether you want to overwrite the existing entity or save it as a new entity, click <bpt id="p1">**</bpt>Overwrite<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>Build the solution (press Ctrl+Shift+B).</source>
+        </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>In Internet Explorer, navigate to <bpt id="p1">**</bpt>Fleet Management<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Customers<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Customer<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Open in<ept id="p1">**</ept> <bpt id="p2">**</bpt>Microsoft Office<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Open in Excel<ept id="p3">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p4">**</bpt>Fleet Management Customers<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>Open the workbook that is generated.</source>
+        </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Enable editing<ept id="p1">**</ept> to enable the Excel Data Connector App to load.</source>
+        </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>Note that the <bpt id="p1">**</bpt>Last name<ept id="p1">**</ept> column appears before the <bpt id="p2">**</bpt>First name<ept id="p2">**</ept> column.</source>
+        </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>Open in Excel Online</source>
+        </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>The Excel App is built by using a new Apps for Office framework.</source>
+        </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>This framework provides a JavaScript-based web application programming interface (API) that enables apps to communicate with Office applications.</source>
+        </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>The biggest advantage of this new framework is that apps can run in on-premises Excel instances (Win32), Excel Online (Office 365), and Excel on the Apple iPad.</source>
+        </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>They will also be able to run in other Excel apps in the future.</source>
+        </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>Navigate to <bpt id="p1">**</bpt>Fleet Management<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Customers<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Customer<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Open in<ept id="p1">**</ept> <bpt id="p2">**</bpt>Microsoft Office<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Open in Excel<ept id="p3">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p4">**</bpt>Fleet Management Customers<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>SharePoint<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>Browse to the desired Microsoft SharePoint folder.</source>
+        </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>The default behavior is to open the file after it's saved.</source>
+        </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>Note that the workbook opens in Excel Online.</source>
+        </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>In Excel Online, capabilities of the Excel App, such as refresh and publish, and the design experience, should work just as they work in on-premises Excel instances.</source>
+        </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>Template Open in Excel experiences</source>
+        </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>Template Open in Excel</source>
+        </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>Template options resemble the generated Open in Excel options.</source>
+        </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>They are automatically added to forms when the system finds templates that have the same first data source as the root data source in the form.</source>
+        </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>A workbook template can have multiple data sources.</source>
+        </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>It can also have unbound content.</source>
+        </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>The Open in Excel experiences are listed on the <bpt id="p1">**</bpt>Open in<ept id="p1">**</ept> <bpt id="p2">**</bpt>Microsoft Office<ept id="p2">**</ept> menu.</source>
+        </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Excel workbook designer<ept id="p1">**</ept> page provides an easy way to get a generated Open in Excel experience for an entity.</source>
+        </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>It also provides a mechanism getting a blank workbook that contains just the Excel App and a pointer to the server.</source>
+        </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>In Internet Explorer, navigate to <bpt id="p1">**</bpt>Common<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Common<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Office integration<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Excel workbook designer<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>Select the <bpt id="p1">**</bpt>FleetCustomer<ept id="p1">**</ept> entity.</source>
+        </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>Add all fields in the list of available fields to the list of selected fields.</source>
+        </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Create workbook<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>Open the workbook that is generated.</source>
+        </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>This workbook contains the Excel Data Connector App, a binding to the <bpt id="p1">**</bpt>Fleet Management Customer<ept id="p1">**</ept> entity, and a pointer to the server that the workbook was generated from.</source>
+        </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Enable editing<ept id="p1">**</ept> to enable the Excel Data Connector App to load.</source>
+        </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>Customer data is read from the OData service on the server and added to the table.</source>
+        </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>Insert a blank row above the table, and enter <bpt id="p1">**</bpt>Fleet Customers<ept id="p1">**</ept> as the title.</source>
+        </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source>Rename the worksheet <bpt id="p1">**</bpt>FleetCustomers<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source>Rearrange some of the fields in the table.</source>
+        </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Design<ept id="p1">**</ept> to open the design experience.</source>
+        </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source>Next to the <bpt id="p1">**</bpt>FleetCustomer<ept id="p1">**</ept> data source, there are buttons for editing and deleting the data source.</source>
+        </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept> to see the field list.</source>
+        </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>Select fields, and move them as you require.</source>
+        </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source>Set the order for the first three fields to <bpt id="p1">**</bpt>FirstName<ept id="p1">**</ept>, <bpt id="p2">**</bpt>LastName<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>DriverLicense<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Update<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source>Note that the field order is changed.</source>
+        </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Done<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source>Click the <bpt id="p1">**</bpt>Settings<ept id="p1">**</ept> (gear) button.</source>
+        </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Clear binding data<ept id="p1">**</ept> so that the workbook contains no bound data.</source>
+        </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source>Save the workbook as <bpt id="p1">**</bpt>FleetCustomersBasic.xlsx<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source>In Internet Explorer, navigate to <bpt id="p1">**</bpt>Common<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Common<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Office integration<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Document templates<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>New<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source>Browse to the file that you just saved.</source>
+        </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="298" translate="yes" xml:space="preserve">
+          <source>The template is added as a line in the templates table.</source>
+        </trans-unit>
+        <trans-unit id="299" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>FleetCustomersBasic<ept id="p1">**</ept> row, clear the <bpt id="p2">**</bpt>Apply current record filter<ept id="p2">**</ept> check box, so that an unfiltered list of customers will be loaded after the template is opened.</source>
+        </trans-unit>
+        <trans-unit id="300" translate="yes" xml:space="preserve">
+          <source>Change the <bpt id="p1">**</bpt>Template display name<ept id="p1">**</ept> value to <bpt id="p2">**</bpt>Fleet Customers Basic<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="301" translate="yes" xml:space="preserve">
+          <source>Navigate to <bpt id="p1">**</bpt>Fleet Management<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Customers<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Customer<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="302" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Open in<ept id="p1">**</ept> <bpt id="p2">**</bpt>Microsoft Office<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="303" translate="yes" xml:space="preserve">
+          <source>Note that <bpt id="p1">**</bpt>Fleet Customers Basic<ept id="p1">**</ept> is now an option in the <bpt id="p2">**</bpt>Open in Excel<ept id="p2">**</ept> section.</source>
+        </trans-unit>
+        <trans-unit id="304" translate="yes" xml:space="preserve">
+          <source>Click that option.</source>
+        </trans-unit>
+        <trans-unit id="305" translate="yes" xml:space="preserve">
+          <source>Open the workbook that is generated.</source>
+        </trans-unit>
+        <trans-unit id="306" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Enable editing<ept id="p1">**</ept> to enable the Excel Data Connector App to load.</source>
+        </trans-unit>
+        <trans-unit id="307" translate="yes" xml:space="preserve">
+          <source>Customer data is read from the OData service on the server and added to the table binding that you created.</source>
+        </trans-unit>
+        <trans-unit id="308" translate="yes" xml:space="preserve">
+          <source>Register a template as a system-defined template</source>
+        </trans-unit>
+        <trans-unit id="309" translate="yes" xml:space="preserve">
+          <source>Templates that are registered as system-defined templates are loaded at deployment.</source>
+        </trans-unit>
+        <trans-unit id="310" translate="yes" xml:space="preserve">
+          <source>This behavior is useful for independent software vendors (ISVs) and partners that want to package templates together with other model artifacts.</source>
+        </trans-unit>
+        <trans-unit id="311" translate="yes" xml:space="preserve">
+          <source>Start Visual Studio 2015 by opening the previously created project where the model is set to <bpt id="p1">**</bpt>Fleet Management<ept id="p1">**</ept>, or create a new project.</source>
+        </trans-unit>
+        <trans-unit id="312" translate="yes" xml:space="preserve">
+          <source>Right-click the project, and then click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>New item<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="313" translate="yes" xml:space="preserve">
+          <source>Select the <bpt id="p1">**</bpt>Resource<ept id="p1">**</ept> item type.</source>
+        </trans-unit>
+        <trans-unit id="314" translate="yes" xml:space="preserve">
+          <source>Set the name to <bpt id="p1">**</bpt>FleetCustomersBasicTemplate<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="315" translate="yes" xml:space="preserve">
+          <source>Make sure that the FleetCustomersBasic.xlsx file is closed.</source>
+        </trans-unit>
+        <trans-unit id="316" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="317" translate="yes" xml:space="preserve">
+          <source>Select the <bpt id="p1">**</bpt>FleetCustomersBasic.xlsx<ept id="p1">**</ept> file.</source>
+        </trans-unit>
+        <trans-unit id="318" translate="yes" xml:space="preserve">
+          <source>Note that the resource is added to the project.</source>
+        </trans-unit>
+        <trans-unit id="319" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>View<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Application Explorer<ept id="p2">**</ept> (or press Ctrl+E, Ctrl+E).</source>
+        </trans-unit>
+        <trans-unit id="320" translate="yes" xml:space="preserve">
+          <source>Navigate to <bpt id="p1">**</bpt>AOT<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Classes<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Code<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>FMTemplateRegistrations<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="321" translate="yes" xml:space="preserve">
+          <source>Right-click <bpt id="p1">**</bpt>FMTemplateRegistrations<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>Add to project<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="322" translate="yes" xml:space="preserve">
+          <source>Open <bpt id="p1">**</bpt>FMTemplateRegistrations<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="323" translate="yes" xml:space="preserve">
+          <source>The FMTemplateRegistrations.xpp code file should be shown.</source>
+        </trans-unit>
+        <trans-unit id="324" translate="yes" xml:space="preserve">
+          <source>Copy one of the existing lines, and change it by providing the template name, resource name, description, display name, and <bpt id="p1">**</bpt>Apply current record filter<ept id="p1">**</ept> and <bpt id="p2">**</bpt>List in Open in Office menu<ept id="p2">**</ept> values.</source>
+        </trans-unit>
+        <trans-unit id="325" translate="yes" xml:space="preserve">
+          <source>The display name is the text that appears as an Open in Excel option.</source>
+        </trans-unit>
+        <trans-unit id="326" translate="yes" xml:space="preserve">
+          <source>The description appears when the user holds the pointer over that item.</source>
+        </trans-unit>
+        <trans-unit id="327" translate="yes" xml:space="preserve">
+          <source>The display name and description can be either labels or static strings.</source>
+        </trans-unit>
+        <trans-unit id="328" translate="yes" xml:space="preserve">
+          <source>The code should resemble the following example.</source>
+        </trans-unit>
+        <trans-unit id="329" translate="yes" xml:space="preserve">
+          <source>Save the code.</source>
+        </trans-unit>
+        <trans-unit id="330" translate="yes" xml:space="preserve">
+          <source>If you're asked whether you want to overwrite the existing code or save it as a new file, click <bpt id="p1">**</bpt>Overwrite<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="331" translate="yes" xml:space="preserve">
+          <source>Build the solution (press Ctrl+Shift+B).</source>
+        </trans-unit>
+        <trans-unit id="332" translate="yes" xml:space="preserve">
+          <source>Verify that the change was successful.</source>
+        </trans-unit>
+        <trans-unit id="333" translate="yes" xml:space="preserve">
+          <source>In Internet Explorer, navigate to <bpt id="p1">**</bpt>Common<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Common<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Office integration<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Document templates<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="334" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Reload system templates<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="335" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept> to confirm that you want to reload the system templates.</source>
+        </trans-unit>
+        <trans-unit id="336" translate="yes" xml:space="preserve">
+          <source>Verify that the new system-defined template is loaded, and that the template name is <bpt id="p1">**</bpt>FleetCustomersBasicTemplate<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="337" translate="yes" xml:space="preserve">
+          <source>Journal Entry in Excel experience powered by a template</source>
+        </trans-unit>
+        <trans-unit id="338" translate="yes" xml:space="preserve">
+          <source>In Internet Explorer, navigate to <bpt id="p1">**</bpt>General ledger<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Journal entries<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>General journals<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="339" translate="yes" xml:space="preserve">
+          <source>Make sure that you're in company <bpt id="p1">**</bpt>USMF<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="340" translate="yes" xml:space="preserve">
+          <source>Create a new journal by clicking <bpt id="p1">**</bpt>New<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="341" translate="yes" xml:space="preserve">
+          <source>Set the name to <bpt id="p1">**</bpt>GenJrn<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="342" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Open lines in Excel<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="343" translate="yes" xml:space="preserve">
+          <source>Open the workbook that is generated, and enable editing as required.</source>
+        </trans-unit>
+        <trans-unit id="344" translate="yes" xml:space="preserve">
+          <source>Note that header fields are filled with data.</source>
+        </trans-unit>
+        <trans-unit id="345" translate="yes" xml:space="preserve">
+          <source>Enter a new line, and set the <bpt id="p1">**</bpt>MainAccount<ept id="p1">**</ept> field to <bpt id="p2">**</bpt>110110<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="346" translate="yes" xml:space="preserve">
+          <source>Enter a description, a currency, and a debit amount.</source>
+        </trans-unit>
+        <trans-unit id="347" translate="yes" xml:space="preserve">
+          <source>Note that lookups are provided for the company and currency fields, because those relationships are defined for this entity.</source>
+        </trans-unit>
+        <trans-unit id="348" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Publish<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="349" translate="yes" xml:space="preserve">
+          <source>Note that the line is updated with the current date and a debit amount of 0 (zero).</source>
+        </trans-unit>
+        <trans-unit id="350" translate="yes" xml:space="preserve">
+          <source>In Internet Explorer, click <bpt id="p1">**</bpt>Lines<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="351" translate="yes" xml:space="preserve">
+          <source>Note that line that you entered in Excel is shown.</source>
+        </trans-unit>
+        <trans-unit id="352" translate="yes" xml:space="preserve">
+          <source>Lookups in Excel experiences</source>
+        </trans-unit>
+        <trans-unit id="353" translate="yes" xml:space="preserve">
+          <source>Lookups in the Excel App</source>
+        </trans-unit>
+        <trans-unit id="354" translate="yes" xml:space="preserve">
+          <source>To facilitate data entry, the Excel App provides lookups and data assistance.</source>
+        </trans-unit>
+        <trans-unit id="355" translate="yes" xml:space="preserve">
+          <source>Date fields provide a date picker, enumeration (enum) fields provide an enum list, and relationships provide a relationship lookup.</source>
+        </trans-unit>
+        <trans-unit id="356" translate="yes" xml:space="preserve">
+          <source>In Internet Explorer, navigate to <bpt id="p1">**</bpt>Fleet Management<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Rentals<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Rental<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="357" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Open in<ept id="p1">**</ept> <bpt id="p2">**</bpt>Microsoft Office<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Open in Excel<ept id="p3">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p4">**</bpt>Fleet Management Rentals<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="358" translate="yes" xml:space="preserve">
+          <source>Open the workbook that is generated.</source>
+        </trans-unit>
+        <trans-unit id="359" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Enable editing<ept id="p1">**</ept> to enable the Excel Data Connector App to load and read in data.</source>
+        </trans-unit>
+        <trans-unit id="360" translate="yes" xml:space="preserve">
+          <source>Click a <bpt id="p1">**</bpt>Drivers license<ept id="p1">**</ept> value.</source>
+        </trans-unit>
+        <trans-unit id="361" translate="yes" xml:space="preserve">
+          <source>Note that a relationship lookup now appears in the Excel App and shows a list of customers.</source>
+        </trans-unit>
+        <trans-unit id="362" translate="yes" xml:space="preserve">
+          <source>Because relationship lookups are in their first generation, no filtering or sorting is currently supported.</source>
+        </trans-unit>
+        <trans-unit id="363" translate="yes" xml:space="preserve">
+          <source>Click another customer in the lookup, and note that the <bpt id="p1">**</bpt>Drivers license<ept id="p1">**</ept> value changes.</source>
+        </trans-unit>
+        <trans-unit id="364" translate="yes" xml:space="preserve">
+          <source>Because this field is part of the key, click the original <bpt id="p1">**</bpt>Drivers license<ept id="p1">**</ept> value to reset it.</source>
+        </trans-unit>
+        <trans-unit id="365" translate="yes" xml:space="preserve">
+          <source>Note that the <bpt id="p1">**</bpt>Drivers license<ept id="p1">**</ept>, <bpt id="p2">**</bpt>First name<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>Last name<ept id="p3">**</ept> fields form a multi-part key, but the Excel App doesn’t immediately change all parts of the multi-part key.</source>
+        </trans-unit>
+        <trans-unit id="366" translate="yes" xml:space="preserve">
+          <source>Click a <bpt id="p1">**</bpt>Start date<ept id="p1">**</ept> value.</source>
+        </trans-unit>
+        <trans-unit id="367" translate="yes" xml:space="preserve">
+          <source>Note that a date picker now appears in the Excel App.</source>
+        </trans-unit>
+        <trans-unit id="368" translate="yes" xml:space="preserve">
+          <source>Click another date to change the <bpt id="p1">**</bpt>Start date<ept id="p1">**</ept> value.</source>
+        </trans-unit>
+        <trans-unit id="369" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Design<ept id="p1">**</ept>, and edit the FleetRental data source by adding the <bpt id="p2">**</bpt>Status<ept id="p2">**</ept> field as a column in the table binding.</source>
+        </trans-unit>
+        <trans-unit id="370" translate="yes" xml:space="preserve">
+          <source>When you've finished adding the <bpt id="p1">**</bpt>Status<ept id="p1">**</ept> column, click a <bpt id="p2">**</bpt>Status<ept id="p2">**</ept> value.</source>
+        </trans-unit>
+        <trans-unit id="371" translate="yes" xml:space="preserve">
+          <source>Note that an enum list now appears in the Excel App.</source>
+        </trans-unit>
+        <trans-unit id="372" translate="yes" xml:space="preserve">
+          <source>While focus is in the <bpt id="p1">**</bpt>Status<ept id="p1">**</ept> column, move up and down the list of rentals to see how quickly the enum list changes to reflect the current value.</source>
+        </trans-unit>
+        <trans-unit id="373" translate="yes" xml:space="preserve">
+          <source>The whole enum list is shown, so that the user can quickly see all the available values.</source>
+        </trans-unit>
+        <trans-unit id="374" translate="yes" xml:space="preserve">
+          <source>Click a different <bpt id="p1">**</bpt>Status<ept id="p1">**</ept> value to see how an enum value can be changed by using a single click.</source>
+        </trans-unit>
+        <trans-unit id="375" translate="yes" xml:space="preserve">
+          <source>Create a relationship lookup</source>
+        </trans-unit>
+        <trans-unit id="376" translate="yes" xml:space="preserve">
+          <source>When relationships exist between entities, a relationship lookup is shown.</source>
+        </trans-unit>
+        <trans-unit id="377" translate="yes" xml:space="preserve">
+          <source>Start Visual Studio 2015 by opening the previously created project where the model is set to <bpt id="p1">**</bpt>Fleet Management<ept id="p1">**</ept>, or create a new project.</source>
+        </trans-unit>
+        <trans-unit id="378" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>View<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Application Explorer<ept id="p2">**</ept> (or press Ctrl+E, Ctrl+E).</source>
+        </trans-unit>
+        <trans-unit id="379" translate="yes" xml:space="preserve">
+          <source>Navigate to <bpt id="p1">**</bpt>AOT<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Data Model<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Tables<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>FMCustGroup<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="380" translate="yes" xml:space="preserve">
+          <source>Right-click, and then click <bpt id="p1">**</bpt>Open designer<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="381" translate="yes" xml:space="preserve">
+          <source>In the designer, right-click <bpt id="p1">**</bpt>FMCustGroup<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>Addins<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Create data entity<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="382" translate="yes" xml:space="preserve">
+          <source>Artifacts are added to the project.</source>
+        </trans-unit>
+        <trans-unit id="383" translate="yes" xml:space="preserve">
+          <source>Open the designer view for <bpt id="p1">**</bpt>FMCustGroupEntity<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="384" translate="yes" xml:space="preserve">
+          <source>In the property sheet for <bpt id="p1">**</bpt>FMCustGroupEntity<ept id="p1">**</ept>, set <bpt id="p2">**</bpt>Public Collection Name<ept id="p2">**</ept> to <bpt id="p3">**</bpt>FleetCustomerGroups<ept id="p3">**</ept> and <bpt id="p4">**</bpt>Public Entity Name<ept id="p4">**</ept> to <bpt id="p5">**</bpt>FleetCustomerGroup<ept id="p5">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="385" translate="yes" xml:space="preserve">
+          <source>Add the <bpt id="p1">**</bpt>CustGroup<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Description<ept id="p2">**</ept> fields to the <bpt id="p3">**</bpt>AutoLookup<ept id="p3">**</ept> field group.</source>
+        </trans-unit>
+        <trans-unit id="386" translate="yes" xml:space="preserve">
+          <source>If <bpt id="p1">**</bpt>FMCustomerEntity<ept id="p1">**</ept> isn't already in the project, add it.</source>
+        </trans-unit>
+        <trans-unit id="387" translate="yes" xml:space="preserve">
+          <source>Open the designer view for <bpt id="p1">**</bpt>FMCustomerEntity<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="388" translate="yes" xml:space="preserve">
+          <source>Right-click <bpt id="p1">**</bpt>Relations<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>New<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Relation<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="389" translate="yes" xml:space="preserve">
+          <source>On the new relation, set <bpt id="p1">**</bpt>Name<ept id="p1">**</ept> to <bpt id="p2">**</bpt>CustomerGroup<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Cardinality<ept id="p3">**</ept> to <bpt id="p4">**</bpt>ZeroMore<ept id="p4">**</ept>, <bpt id="p5">**</bpt>RelatedDataEntity<ept id="p5">**</ept> to <bpt id="p6">**</bpt>FMCustGroupEntity<ept id="p6">**</ept>, <bpt id="p7">**</bpt>RelatedDataEntityCardinality<ept id="p7">**</ept> to <bpt id="p8">**</bpt>ZeroOne<ept id="p8">**</ept>, <bpt id="p9">**</bpt>RelationshipType<ept id="p9">**</ept> to <bpt id="p10">**</bpt>Association<ept id="p10">**</ept>, <bpt id="p11">**</bpt>Role<ept id="p11">**</ept> to <bpt id="p12">**</bpt>CustomerGroupSource<ept id="p12">**</ept>, and <bpt id="p13">**</bpt>RelatedDataEntityRole<ept id="p13">**</ept> to <bpt id="p14">**</bpt>CustomerGroupTarget<ept id="p14">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="390" translate="yes" xml:space="preserve">
+          <source>Build the solution (press Ctrl+Shift+B).</source>
+        </trans-unit>
+        <trans-unit id="391" translate="yes" xml:space="preserve">
+          <source>Verify that the change was successful.</source>
+        </trans-unit>
+        <trans-unit id="392" translate="yes" xml:space="preserve">
+          <source>In Internet Explorer, navigate to <bpt id="p1">**</bpt>Fleet Management<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Customers<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Customer<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="393" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Open in<ept id="p1">**</ept> <bpt id="p2">**</bpt>Microsoft Office<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Open in Excel<ept id="p3">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p4">**</bpt>Fleet Management Customers<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="394" translate="yes" xml:space="preserve">
+          <source>Open the workbook that is generated.</source>
+        </trans-unit>
+        <trans-unit id="395" translate="yes" xml:space="preserve">
+          <source>Click a <bpt id="p1">**</bpt>Customer group<ept id="p1">**</ept> value.</source>
+        </trans-unit>
+        <trans-unit id="396" translate="yes" xml:space="preserve">
+          <source>Change the <bpt id="p1">**</bpt>Customer group<ept id="p1">**</ept> value for a customer.</source>
+        </trans-unit>
+        <trans-unit id="397" translate="yes" xml:space="preserve">
+          <source>Publish the change.</source>
+        </trans-unit>
+        <trans-unit id="398" translate="yes" xml:space="preserve">
+          <source>Change the value back, and publish that change.</source>
+        </trans-unit>
+        <trans-unit id="399" translate="yes" xml:space="preserve">
+          <source>Create a custom lookup</source>
+        </trans-unit>
+        <trans-unit id="400" translate="yes" xml:space="preserve">
+          <source>You can create custom lookups to show data options when an enum or relationship isn't sufficient.</source>
+        </trans-unit>
+        <trans-unit id="401" translate="yes" xml:space="preserve">
+          <source>The main use case is when data must be retrieved from an external service and presented in real time.</source>
+        </trans-unit>
+        <trans-unit id="402" translate="yes" xml:space="preserve">
+          <source>Start Visual Studio 2015 by opening the previously created project where the model is set to <bpt id="p1">**</bpt>Fleet Management<ept id="p1">**</ept>, or create a new project.</source>
+        </trans-unit>
+        <trans-unit id="403" translate="yes" xml:space="preserve">
+          <source>Open the designer view for <bpt id="p1">**</bpt>FMCustomerEntity<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="404" translate="yes" xml:space="preserve">
+          <source>Right-click <bpt id="p1">**</bpt>Methods<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>New Method<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="405" translate="yes" xml:space="preserve">
+          <source>Add the <bpt id="p1">**</bpt>lookup<ph id="ph1">\_</ph>Country<ept id="p1">**</ept> code from the following example.</source>
+        </trans-unit>
+        <trans-unit id="406" translate="yes" xml:space="preserve">
+          <source>Save the code.</source>
+        </trans-unit>
+        <trans-unit id="407" translate="yes" xml:space="preserve">
+          <source>If you're asked whether you want to overwrite the existing code or save is as a new file, click <bpt id="p1">**</bpt>Overwrite<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="408" translate="yes" xml:space="preserve">
+          <source>Build the solution (press Ctrl+Shift+B).</source>
+        </trans-unit>
+        <trans-unit id="409" translate="yes" xml:space="preserve">
+          <source>Verify that the change was successful.</source>
+        </trans-unit>
+        <trans-unit id="410" translate="yes" xml:space="preserve">
+          <source>In Internet Explorer, navigate to <bpt id="p1">**</bpt>Fleet Management<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Customers<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Customer<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="411" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Open in<ept id="p1">**</ept> <bpt id="p2">**</bpt>Microsoft Office<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Open in Excel<ept id="p3">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p4">**</bpt>Fleet Management Customers<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="412" translate="yes" xml:space="preserve">
+          <source>Open the workbook that is generated.</source>
+        </trans-unit>
+        <trans-unit id="413" translate="yes" xml:space="preserve">
+          <source>Click a <bpt id="p1">**</bpt>Country<ept id="p1">**</ept> value.</source>
+        </trans-unit>
+        <trans-unit id="414" translate="yes" xml:space="preserve">
+          <source>Change the <bpt id="p1">**</bpt>Country<ept id="p1">**</ept> value for a customer.</source>
+        </trans-unit>
+        <trans-unit id="415" translate="yes" xml:space="preserve">
+          <source>Publish the change.</source>
+        </trans-unit>
+        <trans-unit id="416" translate="yes" xml:space="preserve">
+          <source>Change the value back, and publish that change.</source>
+        </trans-unit>
+        <trans-unit id="417" translate="yes" xml:space="preserve">
+          <source>Export to Word experiences</source>
+        </trans-unit>
+        <trans-unit id="418" translate="yes" xml:space="preserve">
+          <source>Export to Word</source>
+        </trans-unit>
+        <trans-unit id="419" translate="yes" xml:space="preserve">
+          <source>Export to Word experiences can be used for lightweight reporting.</source>
+        </trans-unit>
+        <trans-unit id="420" translate="yes" xml:space="preserve">
+          <source>They are powered by pre-built templates.</source>
+        </trans-unit>
+        <trans-unit id="421" translate="yes" xml:space="preserve">
+          <source>The Export to Word experiences are listed on the <bpt id="p1">**</bpt>Open in<ept id="p1">**</ept> <bpt id="p2">**</bpt>Microsoft Office<ept id="p2">**</ept> menu.</source>
+        </trans-unit>
+        <trans-unit id="422" translate="yes" xml:space="preserve">
+          <source>Let's look at an example experience that has been created for Fleet Management Customers.</source>
+        </trans-unit>
+        <trans-unit id="423" translate="yes" xml:space="preserve">
+          <source>In Internet Explorer, navigate to <bpt id="p1">**</bpt>Fleet Management<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Customers<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Customer<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="424" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Open in<ept id="p1">**</ept> <bpt id="p2">**</bpt>Microsoft Office<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Export to Word<ept id="p3">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p4">**</bpt>Customer information Fleet Management Customers (unfiltered)<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="425" translate="yes" xml:space="preserve">
+          <source>Download and open the document that is generated.</source>
+        </trans-unit>
+        <trans-unit id="426" translate="yes" xml:space="preserve">
+          <source>The document contains data from the record that is currently selected.</source>
+        </trans-unit>
+        <trans-unit id="427" translate="yes" xml:space="preserve">
+          <source>Create a Word template</source>
+        </trans-unit>
+        <trans-unit id="428" translate="yes" xml:space="preserve">
+          <source>The Microsoft Dynamics App for Office can be run in Word to enable the creation of templates that can then be used for document generation.</source>
+        </trans-unit>
+        <trans-unit id="429" translate="yes" xml:space="preserve">
+          <source>Add a trusted catalog that points to the file share that contains the Microsoft Dynamics App manifest:</source>
+        </trans-unit>
+        <trans-unit id="430" translate="yes" xml:space="preserve">
+          <source>In Word, click <bpt id="p1">**</bpt>File<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Options<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="431" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Trust Center<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Trust Center Settings<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="432" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Trusted Add-in Catalogs<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="433" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Catalog URL<ept id="p1">**</ept> field, enter the file share location of the manifest.</source>
+        </trans-unit>
+        <trans-unit id="434" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Add catalog<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="435" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="436" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="437" translate="yes" xml:space="preserve">
+          <source>Restart Word.</source>
+        </trans-unit>
+        <trans-unit id="438" translate="yes" xml:space="preserve">
+          <source>Add the Microsoft Dynamics App to a document:</source>
+        </trans-unit>
+        <trans-unit id="439" translate="yes" xml:space="preserve">
+          <source>In Word, click <bpt id="p1">**</bpt>Insert<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>My Add-ins<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Shared Folder<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Microsoft Dynamics<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="440" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Insert<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="441" translate="yes" xml:space="preserve">
+          <source>In the app, click <bpt id="p1">**</bpt>Add server information<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="442" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Server URL<ept id="p1">**</ept> field, enter the start of the URL (protocol + hostname).</source>
+        </trans-unit>
+        <trans-unit id="443" translate="yes" xml:space="preserve">
+          <source>For example, enter <bpt id="p1">**</bpt>https://topo00dfa4stbobaos.cloudax.test.dynamics.com<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="444" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="445" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept> to apply the settings change and reload the app.</source>
+        </trans-unit>
+        <trans-unit id="446" translate="yes" xml:space="preserve">
+          <source>Sign in to the app:</source>
+        </trans-unit>
+        <trans-unit id="447" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Sign In<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="448" translate="yes" xml:space="preserve">
+          <source>The Azure Active Directory sign-in screen should provide a list of credentials.</source>
+        </trans-unit>
+        <trans-unit id="449" translate="yes" xml:space="preserve">
+          <source>If you encounter an error, force a sign-out (by using the sign-out link in the lower-right corner of the app), and then sign in again.</source>
+        </trans-unit>
+        <trans-unit id="450" translate="yes" xml:space="preserve">
+          <source>Select the appropriate account, or click <bpt id="p1">**</bpt>Use another account<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="451" translate="yes" xml:space="preserve">
+          <source>Enter the credentials for that environment, and then click <bpt id="p1">**</bpt>Sign in<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="452" translate="yes" xml:space="preserve">
+          <source>Load the template designer applet:</source>
+        </trans-unit>
+        <trans-unit id="453" translate="yes" xml:space="preserve">
+          <source>After sign-in, click <bpt id="p1">**</bpt>Load applets<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="454" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Template Designer<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="455" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>OK.<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="456" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept> to confirm.</source>
+        </trans-unit>
+        <trans-unit id="457" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> to close the settings page.</source>
+        </trans-unit>
+        <trans-unit id="458" translate="yes" xml:space="preserve">
+          <source>The latest OData metadata is loaded.</source>
+        </trans-unit>
+        <trans-unit id="459" translate="yes" xml:space="preserve">
+          <source>Follow one of these steps:</source>
+        </trans-unit>
+        <trans-unit id="460" translate="yes" xml:space="preserve">
+          <source>Add a fields data source:</source>
+        </trans-unit>
+        <trans-unit id="461" translate="yes" xml:space="preserve">
+          <source>In the app, click <bpt id="p1">**</bpt>Design<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="462" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Add fields<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="463" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>FleetCustomer<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="464" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Next<ept id="p1">**</ept> to go to the field selection page.</source>
+        </trans-unit>
+        <trans-unit id="465" translate="yes" xml:space="preserve">
+          <source>In the document, add a title and/or some blank lines at the top of the document.</source>
+        </trans-unit>
+        <trans-unit id="466" translate="yes" xml:space="preserve">
+          <source>In the app, in the <bpt id="p1">**</bpt>Available<ept id="p1">**</ept> list, select the <bpt id="p2">**</bpt>FirstName<ept id="p2">**</ept> field.</source>
+        </trans-unit>
+        <trans-unit id="467" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Add label<ept id="p1">**</ept> to add a content control that references the "First name" label.</source>
+        </trans-unit>
+        <trans-unit id="468" translate="yes" xml:space="preserve">
+          <source>In the document, click to put focus into the document, click again to put focus at the end of the label, and then press the Right arrow key until the cursor is outside the content control (the control box will disappear).</source>
+        </trans-unit>
+        <trans-unit id="469" translate="yes" xml:space="preserve">
+          <source>Add a separator, such as space+hyphen+space (" - ") or space+colon+space (" : ").</source>
+        </trans-unit>
+        <trans-unit id="470" translate="yes" xml:space="preserve">
+          <source>In the app, click <bpt id="p1">**</bpt>Add value<ept id="p1">**</ept> to add a content control that references the <bpt id="p2">**</bpt>FirstName<ept id="p2">**</ept> field.</source>
+        </trans-unit>
+        <trans-unit id="471" translate="yes" xml:space="preserve">
+          <source>Repeat the process for the <bpt id="p1">**</bpt>LastName<ept id="p1">**</ept> field label and value.</source>
+        </trans-unit>
+        <trans-unit id="472" translate="yes" xml:space="preserve">
+          <source>Continue to add fields as desired.</source>
+        </trans-unit>
+        <trans-unit id="473" translate="yes" xml:space="preserve">
+          <source>Add a table data source:</source>
+        </trans-unit>
+        <trans-unit id="474" translate="yes" xml:space="preserve">
+          <source>In the app, click <bpt id="p1">**</bpt>Design<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="475" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Add table<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="476" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>FleetCustomer<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="477" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Next<ept id="p1">**</ept> to go to the field selection page.</source>
+        </trans-unit>
+        <trans-unit id="478" translate="yes" xml:space="preserve">
+          <source>In the document, add a title and/or some blank lines at the top of the document.</source>
+        </trans-unit>
+        <trans-unit id="479" translate="yes" xml:space="preserve">
+          <source>In the app, in the <bpt id="p1">**</bpt>Available fields<ept id="p1">**</ept> list, add the <bpt id="p2">**</bpt>FirstName<ept id="p2">**</ept>, <bpt id="p3">**</bpt>LastName<ept id="p3">**</ept>, and <bpt id="p4">**</bpt>City<ept id="p4">**</ept> fields.</source>
+        </trans-unit>
+        <trans-unit id="480" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Done<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="481" translate="yes" xml:space="preserve">
+          <source>In Word, save the template document.</source>
+        </trans-unit>
+        <trans-unit id="482" translate="yes" xml:space="preserve">
+          <source>Create a Word template and use it for document generation</source>
+        </trans-unit>
+        <trans-unit id="483" translate="yes" xml:space="preserve">
+          <source>After you've built a Word template, you can upload it to create an Export to Word experience.</source>
+        </trans-unit>
+        <trans-unit id="484" translate="yes" xml:space="preserve">
+          <source>Upload a template:</source>
+        </trans-unit>
+        <trans-unit id="485" translate="yes" xml:space="preserve">
+          <source>Navigate to <bpt id="p1">**</bpt>Common<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Common<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Office integration<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Document templates<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="486" translate="yes" xml:space="preserve">
+          <source>Alternatively, search for the page.</source>
+        </trans-unit>
+        <trans-unit id="487" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>New<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="488" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Browse<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="489" translate="yes" xml:space="preserve">
+          <source>In the dialog box, select a previously created template, and then click <bpt id="p1">**</bpt>Open<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="490" translate="yes" xml:space="preserve">
+          <source>Note that the Root data entity is obtained from the template and appears near the bottom of the dialog box.</source>
+        </trans-unit>
+        <trans-unit id="491" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="492" translate="yes" xml:space="preserve">
+          <source>Scroll down the list of templates to confirm that the template was added.</source>
+        </trans-unit>
+        <trans-unit id="493" translate="yes" xml:space="preserve">
+          <source>Optional: If the template should not be filtered to the user's current record, clear the <bpt id="p1">**</bpt>Apply current record filter<ept id="p1">**</ept> check box.</source>
+        </trans-unit>
+        <trans-unit id="494" translate="yes" xml:space="preserve">
+          <source>Optional: If the template should not be filtered to the user's current company, clear the <bpt id="p1">**</bpt>Apply company filter<ept id="p1">**</ept> check box.</source>
+        </trans-unit>
+        <trans-unit id="495" translate="yes" xml:space="preserve">
+          <source>Use the uploaded template for document generation:</source>
+        </trans-unit>
+        <trans-unit id="496" translate="yes" xml:space="preserve">
+          <source>Navigate to a page that shares the same root data source as the template's root data entity.</source>
+        </trans-unit>
+        <trans-unit id="497" translate="yes" xml:space="preserve">
+          <source>For <bpt id="p1">**</bpt>FleetCustomer<ept id="p1">**</ept> (<bpt id="p2">**</bpt>FMCustomerEntity<ept id="p2">**</ept>), that page is <bpt id="p3">**</bpt>Fleet Management<ept id="p3">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p4">**</bpt>Customers<ept id="p4">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p5">**</bpt>Customer<ept id="p5">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="498" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Open in Microsoft Office<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Export to Word<ept id="p2">**</ept>, and click the template.</source>
+        </trans-unit>
+        <trans-unit id="499" translate="yes" xml:space="preserve">
+          <source>Download and open the document that is generated.</source>
+        </trans-unit>
+        <trans-unit id="500" translate="yes" xml:space="preserve">
+          <source>Document Management and SharePoint experiences</source>
+        </trans-unit>
+        <trans-unit id="501" translate="yes" xml:space="preserve">
+          <source>Add a SharePoint document type</source>
+        </trans-unit>
+        <trans-unit id="502" translate="yes" xml:space="preserve">
+          <source>The Document Management subsystem can be used to attach files to records.</source>
+        </trans-unit>
+        <trans-unit id="503" translate="yes" xml:space="preserve">
+          <source>Most non-executable file types are supported as attachments.</source>
+        </trans-unit>
+        <trans-unit id="504" translate="yes" xml:space="preserve">
+          <source>A document preview is provided for Office document files and PDFs.</source>
+        </trans-unit>
+        <trans-unit id="505" translate="yes" xml:space="preserve">
+          <source>Administrators create document types to indicate where attachments should be stored.</source>
+        </trans-unit>
+        <trans-unit id="506" translate="yes" xml:space="preserve">
+          <source>When administrators use SharePoint as the storage location, they must provide a specific folder that the files should be put in.</source>
+        </trans-unit>
+        <trans-unit id="507" translate="yes" xml:space="preserve">
+          <source>Security of that SharePoint folder is a separate administration responsibility.</source>
+        </trans-unit>
+        <trans-unit id="508" translate="yes" xml:space="preserve">
+          <source>In Internet Explorer, navigate to <bpt id="p1">**</bpt>Organization administration<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Document management<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Document management parameters<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="509" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>SharePoint<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="510" translate="yes" xml:space="preserve">
+          <source>Make sure that the <bpt id="p1">**</bpt>Default SharePoint server<ept id="p1">**</ept> field is set to a default value for the tenant, such as <bpt id="p2">**</bpt>contosoax7.sharepoint.com<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="511" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Test SharePoint connection<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="512" translate="yes" xml:space="preserve">
+          <source>Note a successful connection.</source>
+        </trans-unit>
+        <trans-unit id="513" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="514" translate="yes" xml:space="preserve">
+          <source>Navigate to <bpt id="p1">**</bpt>Organization administration<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Document management<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Document types<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="515" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>New<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="516" translate="yes" xml:space="preserve">
+          <source>Set <bpt id="p1">**</bpt>Type<ept id="p1">**</ept> to <bpt id="p2">**</bpt>SharePointDoc<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="517" translate="yes" xml:space="preserve">
+          <source>Set <bpt id="p1">**</bpt>Name<ept id="p1">**</ept> to <bpt id="p2">**</bpt>SharePointDoc<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="518" translate="yes" xml:space="preserve">
+          <source>Set <bpt id="p1">**</bpt>Location<ept id="p1">**</ept> to <bpt id="p2">**</bpt>SharePoint<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="519" translate="yes" xml:space="preserve">
+          <source>Click the <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept> (pencil) button next to the <bpt id="p2">**</bpt>SharePoint Address<ept id="p2">**</ept> field.</source>
+        </trans-unit>
+        <trans-unit id="520" translate="yes" xml:space="preserve">
+          <source>On the left side of the dialog box, select a site.</source>
+        </trans-unit>
+        <trans-unit id="521" translate="yes" xml:space="preserve">
+          <source>For the contosoax7 tenant, select <bpt id="p1">**</bpt>ContosoAX Team Site<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="522" translate="yes" xml:space="preserve">
+          <source>On the right side of the dialog box, select a folder.</source>
+        </trans-unit>
+        <trans-unit id="523" translate="yes" xml:space="preserve">
+          <source>For the contosoax7 tenant, select <bpt id="p1">**</bpt>ContosoAX Team Site<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Documents<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>OfficeIntegration<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Attachments<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="524" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="525" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="526" translate="yes" xml:space="preserve">
+          <source>Click the <bpt id="p1">**</bpt>Browse<ept id="p1">**</ept> (globe) button next to the <bpt id="p2">**</bpt>SharePoint Address<ept id="p2">**</ept> field.</source>
+        </trans-unit>
+        <trans-unit id="527" translate="yes" xml:space="preserve">
+          <source>Note that a new browser tab that shows the selected folder appears.</source>
+        </trans-unit>
+        <trans-unit id="528" translate="yes" xml:space="preserve">
+          <source>Use Windows Explorer to create a Word document in the Documents folder, and enter a few words in the document.</source>
+        </trans-unit>
+        <trans-unit id="529" translate="yes" xml:space="preserve">
+          <source>In Internet Explorer, navigate to <bpt id="p1">**</bpt>Fleet Management<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Customers<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Customer<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="530" translate="yes" xml:space="preserve">
+          <source>Put focus on the first customer, and then click the <bpt id="p1">**</bpt>Attach<ept id="p1">**</ept> (paperclip) button in the upper-right corner of the page.</source>
+        </trans-unit>
+        <trans-unit id="531" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>New<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>SharePointDoc<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="532" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Browse<ept id="p1">**</ept>, and select the Word document that you created.</source>
+        </trans-unit>
+        <trans-unit id="533" translate="yes" xml:space="preserve">
+          <source>Expand the <bpt id="p1">**</bpt>Preview<ept id="p1">**</ept> FastTab to see a preview of the Word document.</source>
+        </trans-unit>
+        <trans-unit id="534" translate="yes" xml:space="preserve">
+          <source>Expand the <bpt id="p1">**</bpt>Attachment<ept id="p1">**</ept> FastTab to see the file location of the Word document.</source>
+        </trans-unit>
+        <trans-unit id="535" translate="yes" xml:space="preserve">
+          <source>In Internet Explorer, use the previously opened tab that shows the SharePoint folder to double-check that the file has been placed appropriately.</source>
+        </trans-unit>
+        <trans-unit id="536" translate="yes" xml:space="preserve">
+          <source>Email experiences</source>
+        </trans-unit>
+        <trans-unit id="537" translate="yes" xml:space="preserve">
+          <source>Send mail via a local mail client</source>
+        </trans-unit>
+        <trans-unit id="538" translate="yes" xml:space="preserve">
+          <source>Email workflows that are enabled via the SysEmail framework can generate email messages (.eml files) that contain attachments.</source>
+        </trans-unit>
+        <trans-unit id="539" translate="yes" xml:space="preserve">
+          <source>You can then send these messages via Microsoft Outlook or another email client.</source>
+        </trans-unit>
+        <trans-unit id="540" translate="yes" xml:space="preserve">
+          <source>In Internet Explorer, navigate to <bpt id="p1">**</bpt>Accounts receivable<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Customers<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>All customers<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="541" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>US-008 Sparrow Retail<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="542" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Collect<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Customer balances<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Collections<ept id="p3">**</ept> to open the <bpt id="p4">**</bpt>Collections<ept id="p4">**</ept> page.</source>
+        </trans-unit>
+        <trans-unit id="543" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Communicate<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Email<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Statements to contact<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="544" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> to accept the default values in the dialog box.</source>
+        </trans-unit>
+        <trans-unit id="545" translate="yes" xml:space="preserve">
+          <source>If you're prompted for the mail option to use, clear the <bpt id="p1">**</bpt>Do not ask again<ept id="p1">**</ept> check box (you can change this option from the user options page), select <bpt id="p2">**</bpt>Use an email app, such as Outlook<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>OK<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="546" translate="yes" xml:space="preserve">
+          <source>If you're running Internet Explorer on your laptop, open the email (.eml) file that is generated.</source>
+        </trans-unit>
+        <trans-unit id="547" translate="yes" xml:space="preserve">
+          <source>If you're running Internet Explorer on the VM, copy the file to your laptop, and open it there.</source>
+        </trans-unit>
+        <trans-unit id="548" translate="yes" xml:space="preserve">
+          <source>Note the email address in the <bpt id="p1">**</bpt>To<ept id="p1">**</ept> field and the generated workbook attachment.</source>
+        </trans-unit>
+        <trans-unit id="549" translate="yes" xml:space="preserve">
+          <source>Send mail via SMTP</source>
+        </trans-unit>
+        <trans-unit id="550" translate="yes" xml:space="preserve">
+          <source>Email workflows that are enabled via the SysEmail framework can also be created in a simple email dialog box and then sent via Simple Mail Transfer Protocol (SMTP).</source>
+        </trans-unit>
+        <trans-unit id="551" translate="yes" xml:space="preserve">
+          <source>In Internet Explorer, navigate to <bpt id="p1">**</bpt>System administration<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Email<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Email parameters<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="552" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>SMTP settings<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="553" translate="yes" xml:space="preserve">
+          <source>Set the <bpt id="p1">**</bpt>Outgoing mail server<ept id="p1">**</ept> to the desired SMTP server:</source>
+        </trans-unit>
+        <trans-unit id="554" translate="yes" xml:space="preserve">
+          <source>For <bpt id="p1">[</bpt>Office 365 production<ept id="p1">](https://support.office.com/en-us/article/Outlook-settings-for-POP-and-IMAP-access-for-Office-365-for-business-or-Microsoft-Exchange-accounts-7fc677eb-2491-4cbc-8153-8e7113525f6c)</ept> (including <ph id="ph1">\*</ph>.onmicrosoft.com accounts): smtp.office365.com (Find this setting via outlook.office.com, at <bpt id="p2">**</bpt>Settings<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Mail<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>POP and IMAP<ept id="p4">**</ept>.)</source>
+        </trans-unit>
+        <trans-unit id="555" translate="yes" xml:space="preserve">
+          <source>For Outlook/Hotmail: smtp-mail.outlook.com</source>
+        </trans-unit>
+        <trans-unit id="556" translate="yes" xml:space="preserve">
+          <source>Set the user name and password to an appropriate email account and password.</source>
+        </trans-unit>
+        <trans-unit id="557" translate="yes" xml:space="preserve">
+          <source>Leave <bpt id="p1">**</bpt>SSLRequired<ept id="p1">**</ept> turned on, and leave <bpt id="p2">**</bpt>SMTP port number<ept id="p2">**</ept> set to <bpt id="p3">**</bpt>587<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="558" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="559" translate="yes" xml:space="preserve">
+          <source>In Internet Explorer, navigate to <bpt id="p1">**</bpt>Accounts receivable<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Customers<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>All customers<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="560" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>US-008 Sparrow Retail<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="561" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Collect<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Customer balances<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Collections<ept id="p3">**</ept> to open the <bpt id="p4">**</bpt>Collections<ept id="p4">**</ept> page.</source>
+        </trans-unit>
+        <trans-unit id="562" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Communicate<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Email<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Statements to contact<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="563" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> to accept the default values in the dialog box.</source>
+        </trans-unit>
+        <trans-unit id="564" translate="yes" xml:space="preserve">
+          <source>If you're prompted for the mail option to use, select <bpt id="p1">**</bpt>Use the Microsoft Dynamics 365 for Finance and Operations email client<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>OK<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="565" translate="yes" xml:space="preserve">
+          <source>To receive the test message, change the To address to your email address.</source>
+        </trans-unit>
+        <trans-unit id="566" translate="yes" xml:space="preserve">
+          <source>Enter a subject and body for the message.</source>
+        </trans-unit>
+        <trans-unit id="567" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Send<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="568" translate="yes" xml:space="preserve">
+          <source>The message should be delivered in one to five minutes.</source>
+        </trans-unit>
+        <trans-unit id="569" translate="yes" xml:space="preserve">
+          <source>Note that the message will appear to be sent from the email account that is set on the <bpt id="p1">**</bpt>Email parameters<ept id="p1">**</ept> page.</source>
+        </trans-unit>
+        <trans-unit id="570" translate="yes" xml:space="preserve">
+          <source>If that email account is given "Send As" (or "Send email from this mailbox") permissions for the From address that is used in the <bpt id="p1">**</bpt>Send email<ept id="p1">**</ept> dialog box, messages will appear to come from that address.</source>
+        </trans-unit>
+        <trans-unit id="571" translate="yes" xml:space="preserve">
+          <source>You can configure "Send As" permissions in the Office 365 admin center (portal.office.com/Admin), at <bpt id="p1">**</bpt>Users<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Active users<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>User<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Edit mailbox permissions<ept id="p4">**</ept> <ph id="ph4">&amp;gt;</ph> <bpt id="p5">**</bpt>Send email from this mailbox<ept id="p5">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="572" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Enable sending email from another user's mailbox in Office 365<ept id="p1">](https://support.office.com/en-us/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="573" translate="yes" xml:space="preserve">
+          <source>Before users can send email messages, "Send As" permissions for each user email account in the client must be given to the email account that is set on the <bpt id="p1">**</bpt>Email parameters<ept id="p1">**</ept> page.</source>
+        </trans-unit>
+        <trans-unit id="574" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>How to set up a multifunction device or application to send email using Office 365<ept id="p1">](https://technet.microsoft.com/en-us/library/dn554323(v=exchg.150).aspx)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="575" translate="yes" xml:space="preserve">
+          <source>Email that is sent directly from the server, without user interaction, is sent via a batch process and requires that the <bpt id="p1">**</bpt>Email distributor batch<ept id="p1">**</ept> process be started.</source>
+        </trans-unit>
+        <trans-unit id="576" translate="yes" xml:space="preserve">
+          <source>Follow these steps to start the process:</source>
+        </trans-unit>
+        <trans-unit id="577" translate="yes" xml:space="preserve">
+          <source>Navigate to <bpt id="p1">**</bpt>System administration<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Periodic tasks<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Email processing<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Batch<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="578" translate="yes" xml:space="preserve">
+          <source>Turn on <bpt id="p1">**</bpt>Batch processing<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="579" translate="yes" xml:space="preserve">
+          <source>See also</source>
+        </trans-unit>
+        <trans-unit id="580" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Office integration<ept id="p1">](office-integration.md)</ept></source>
+        </trans-unit>
+        <trans-unit id="581" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Office Integration Troubleshooting<ept id="p1">](office-integration-troubleshooting.md)</ept></source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

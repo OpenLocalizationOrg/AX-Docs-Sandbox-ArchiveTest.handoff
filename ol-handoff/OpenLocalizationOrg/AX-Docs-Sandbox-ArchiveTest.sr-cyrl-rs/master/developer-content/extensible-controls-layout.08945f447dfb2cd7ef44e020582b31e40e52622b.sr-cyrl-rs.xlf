@@ -1,0 +1,186 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">b71e9d0c0bf81f84ffa9b496abbe046a0faf497b</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\user-interface\extensible-controls-layout.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">9ce6d0b910be27561f5fec3b51f97e968f8257df</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">c2be74d4e56e054b202a9dfd71b9d268e3860ab3</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Extensible control layout guidelines</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This article provides guidelines that you should follow when you specify the layout and sizing of extensible controls.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Extensible control layout guidelines</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This article provides guidelines that you should follow when you specify the layout and sizing of extensible controls.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Dos and don'ts for achieving the desired layout</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Don't use the layout classes on your control directly.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>(For example, <bpt id="p1">**</bpt>layout-container<ept id="p1">**</ept> and <bpt id="p2">**</bpt>layout-horizontal<ept id="p2">**</ept> are classes that you might see on controls in the DOM.) Instead, use the layout binding handlers to apply these classes.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Internet Explorer uses a different layout framework, and to add some inline styles to elements, this framework requires the extra binding information that the handlers provide.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Therefore, make sure that the classes are <bpt id="p1">**</bpt>not<ept id="p1">**</ept> hard-coded into the controls.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Don't use absolute positioning (<bpt id="p1">**</bpt>position: absolute<ept id="p1">**</ept> and <bpt id="p2">**</bpt>top<ept id="p2">**</ept><ph id="ph1">/</ph><bpt id="p3">**</bpt>bottom<ept id="p3">**</ept><ph id="ph2">/</ph><bpt id="p4">**</bpt>left<ept id="p4">**</ept><ph id="ph3">/</ph><bpt id="p5">**</bpt>right<ept id="p5">**</ept> positions) for elements that are children of a container that uses the layout binding handler.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Absolute positioning of these elements prevents the CSS classes that are applied from laying things out correctly.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Be careful about using <bpt id="p1">**</bpt>width: 100%<ept id="p1">**</ept> and <bpt id="p2">**</bpt>height: 100%<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>These settings might not always work when they are combined with our layout CSS classes.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>If you want filling behavior, it's a good idea to use the <bpt id="p1">**</bpt>$dyn.layout.Size.available<ept id="p1">**</ept> option of the sizing binding handler instead.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Layout binding handlers</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Layout</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Used to apply <bpt id="p1">**</bpt>ArrangeMethod<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Columns<ept id="p2">**</ept> attributes to containers Options: <bpt id="p3">**</bpt>arrangeMethod<ept id="p3">**</ept>, <bpt id="p4">**</bpt>Columns<ept id="p4">**</ept>, <bpt id="p5">**</bpt>Children<ept id="p5">**</ept></source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>ArrangeMethod</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>$dyn.layout.ArrangeMethod.vertical</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>$dyn.layout.ArrangeMethod.horizontalLeft</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>$dyn.layout.ArrangeMethod.horizontalWrap</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>$dyn.layout.ArrangeMethod.horizontalRight</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>$dyn.layout.ArrangeMethod.none (No layout CSS classes should be applied to the element.)</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Columns</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>$dyn.layout.Columns.fill<ept id="p1">**</ept> – Use this constant.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Depending on the control, either "fill" and "balanced" columns are used.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>$dyn.layout.Columns.fixed<ept id="p1">**</ept> – Use a fixed value, such as <bpt id="p2">**</bpt>1<ept id="p2">**</ept>, <bpt id="p3">**</bpt>2<ept id="p3">**</ept>, or <bpt id="p4">**</bpt>3<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Children</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Use **$data.Children **if the content handlers (append, replace) will be used to append children through this container.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>It should be used only if this control is a container.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Example usage:<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Sizing</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Height/width</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>$dyn.layout.Size.available (SizeToAvailable)<ept id="p1">**</ept> – Fill the available space in that direction.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>$dyn.layout.Size.content (SizeToContent)<ept id="p1">**</ept> – Size to the contents in that direction.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>$dyn.layout.Size.fixed (Manual)<ept id="p1">**</ept> – A fixed pixel value.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Example usage:<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Things to note about the sizing binding handler:<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>When you use the sizing binding handler in combination with the <bpt id="p1">**</bpt>SizeToAvailable<ept id="p1">**</ept> option (<bpt id="p2">**</bpt>$dyn.layout.Size.available<ept id="p2">**</ept>), the layout binding handler must be used on the parent <bpt id="p3">**</bpt><ph id="ph1">&amp;lt;</ph>div<ph id="ph2">&amp;gt;</ph><ept id="p3">**</ept>/DOM element.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>This is how we know which axis to fill along (horizontal or vertical).</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Should you use layout/sizing handlers or set the properties directly?<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>If your extensible control inherits from a client control (such as Group or PivotItem), you won't use the binding handlers directly on the <bpt id="p1">**</bpt><ph id="ph1">&amp;lt;</ph>div<ph id="ph2">&amp;gt;</ph><ept id="p1">**</ept> that is associated with that control, because the binding is already there.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>However, you might have to set the properties as you want them directly in the <bpt id="p1">**</bpt>data-dyn-bind<ept id="p1">**</ept> attribute.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Example:<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>FAQ</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Is my control being laid out as expected?</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>A good way to tell is to inspect the element and look for the desired classes.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Layout classes to look for, depending on the options applied:</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>layout-container</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>layout-vertical</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>layout-horizontal</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Sizing classes to look for:</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>For <bpt id="p1">**</bpt>$dyn.layout.Size.available<ept id="p1">**</ept>,  you should see either <bpt id="p2">**</bpt>fill-width<ept id="p2">**</ept> or <bpt id="p3">**</bpt>fill-height<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>For manual size, you should see either <bpt id="p1">**</bpt>fixed-height<ept id="p1">**</ept> or <bpt id="p2">**</bpt>fixed-width<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>For <bpt id="p1">**</bpt>$dyn.layout.Size.content<ept id="p1">**</ept>, there should be no extra classes, and the manual height/width should be specified inline on the element.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>If these classes don't appear as you expected, examine the usage of your binding handlers, and make sure that you've read through the list of dos and don'ts on this page.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

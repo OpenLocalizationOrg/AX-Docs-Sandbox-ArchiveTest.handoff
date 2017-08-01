@@ -1,0 +1,234 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">e0b334b7cebc40549db7126b938395f15cd2e510</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">retail\dev-itpro\retail-sdk\retail-sdk-samples.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">b0eb468205601ee2891006108c01553b2cbe6c24</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">d906f344cfc802b76dc5b355d5b8f70ceeb8807a</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Retail SDK samples</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic describes three new samples that were released together with the Retail SDK in December 2016.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Retail SDK samples</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This topic describes three new samples that were released together with the Retail SDK in December 2016.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Override message handler sample</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Scenario:<ept id="p1">**</ept> Sometimes, one of Fabrikam's customers is in the customer relationship management (CRM) system but isn't imported into Microsoft Dynamics 365 for Retail.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Therefore, Fabrikam wants to look up the customer from the CRM system and the point of sale (POS).</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Here are the business requirements:</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Search for customers from the CRM system and the POS.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Merge the results, and show a unified result set in Retail Modern POS (MPOS).</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Here are some situations where you might use the override message handler:</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>You want to use a third-party inventory system for stock updates and inquiries.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>You want to integrate with an external tax system for tax calculation.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>You want to integrate with a third-party loyalty system.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Here are the basic tasks in the sample:</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Override and implement the existing customer search request, because we are changing the existing search behavior so that an external search is performed.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>After the external search is completed, call the standard search request, and merge both results.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Here is the code for these tasks.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>The full sample code is in the RetailSDK<ph id="ph1">\\</ph>SampleExtensions<ph id="ph2">\\</ph>CommerceRuntime<ph id="ph3">\\</ph>Extensions.CustomerSearchSample folder of the software development kit (SDK).</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Best practice</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>If you're planning to completely change the behavior of an existing request or response, or if you want to use your logic in addition to the standard logic, override the standard message handler.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Request handler triggers and extension properties sample</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Scenario:<ept id="p1">**</ept> Fabrikam wants to collect customer email preferences for email marketing.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Here are the business requirements:</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Enable a customer’s email preferences to be collected and updated from the POS.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>A customer's email preferences should become effective immediately.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Here are some situations where you might use extension properties:</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>You want to extend entities such as the customer and sales order, but you don't want to create a new separate entity.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>As new entity fields are read from or written to the database, they should be sent between the commerce runtime (CRT) and the POS, and updated in the client.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>You want temporary internal flags that can be used to control the flow of custom logic.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>You want to set custom receipt fields that the receipt customization will access when receipts are generated.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>The following steps show the CRT code changes.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>For MPOS and the channel database, see the full sample.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Notice that the following samples differ from previous code, where changes to the standard database artifacts were required.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>(For example, to expose new columns as extension properties, changes to the view were required.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>To receive a list of extension properties and update these properties together with standard fields, changes to the stored procedure were required.) Eventually, as we move to a model that doesn't have inline changes, merge conflicts should not occur even when the database is updated.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Therefore, our new recommendation is that you make separate database calls to read, write, and update entities.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Read the entity.<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Implement the post-trigger for <bpt id="p1">**</bpt>GetCustomerDataRequest<ept id="p1">**</ept>, read the value from channel database, and add the value to the extension property.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Write the entity.<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Override the handler for <bpt id="p1">**</bpt>CreateOrUpdateCustomerDataRequest<ept id="p1">**</ept> to run the original request handler and the custom stored procedure inside a transaction scope.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>If the database transaction isn't required, a post-trigger suffices here.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Before you try this sample, be sure to create the custom tables, views, and stored procedures in the channel database.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Additionally, make the relevant changes to MPOS.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>The full sample code, together with additional comments, is in the RetailSDK<ph id="ph1">\\</ph>SampleExtensions<ph id="ph2">\\</ph>CommerceRuntime<ph id="ph3">\\</ph>Extensions.EmailPreferenceSample folder of the SDK.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>For information about how to create custom database artifacts, see the RetailSDK<ph id="ph1">\\</ph>Documents<ph id="ph2">\\</ph>SampleExtensionsInstructions<ph id="ph3">\\</ph>EmailPreference folder of the SDK.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Best practice</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Because the order of triggers isn't guaranteed when the triggers are chained, and because of the internal cache mechanism, the pre-triggers should not change the <bpt id="p1">*</bpt>request<ept id="p1">*</ept> message, and the post-triggers should not change the <bpt id="p2">*</bpt>response<ept id="p2">*</ept> message.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Extension properties are allowed, because no core properties are being changed.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>You should use pre-triggers and post-triggers to handle extension properties.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>You should also use pre-triggers to do validation and post-triggers to do additional actions.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Custom fields and custom receipt types sample</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Scenario:<ept id="p1">**</ept> Fabrikam wants to print a special receipt whenever products that have a warranty are sold.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Sales receipts should include the warranty expiration date, the warranty ID, and other information.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Here are the business requirements:</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Print special receipts.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Print additional warranty information on sale receipts.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>The following steps show the CRT code changes:</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>At the headquarters (HQ), create two custom receipt fields: <bpt id="p1">**</bpt>EXPIRATIONDATE<ept id="p1">**</ept> for the warranty expiration date and <bpt id="p2">**</bpt>WARRANTYID<ept id="p2">**</ept> for the warranty ID.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Add these fields to the receipt format layout.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>To add the custom fields to the sales receipts or any receipt format, implement <bpt id="p1">**</bpt>GetSalesTransactionCustomReceiptFieldServiceRequest<ept id="p1">**</ept>, as shown in the following code.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>This code is called every time that the standard code doesn’t recognize the receipt field.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Add the logic for your sample fields.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>To create new receipt type, implement <bpt id="p1">**</bpt>GetCustomReceiptsRequest<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>The full sample code is in the RetailSDK<ph id="ph1">\\</ph>SampleExtensions<ph id="ph2">\\</ph>CommerceRuntime<ph id="ph3">\\</ph>Extensions.ReceiptsSamplefolder folder of the SDK.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> You should call the printing of the custom receipt type from the client.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Extensibility patterns and best practices<ept id="p1">](https://youtu.be/qQkHFubENIY)</ept><bpt id="p2">[</bpt>.<ept id="p2">]()</ept></source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Best practice</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Avoid making database calls for each custom receipt field.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Instead, use extension properties that were previously set on entities.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Custom receipt types can be called by any logic (per sales line, one time per some condition).</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>See the sample for a more complete scenario.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

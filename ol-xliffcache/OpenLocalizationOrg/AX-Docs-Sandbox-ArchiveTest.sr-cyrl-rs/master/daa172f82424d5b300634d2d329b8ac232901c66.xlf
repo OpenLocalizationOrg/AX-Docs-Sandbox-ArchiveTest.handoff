@@ -1,0 +1,435 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">daa172f82424d5b300634d2d329b8ac232901c66</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">retail\localizations\emea-swe-cash-registers.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">basic</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">8c5db6c3513f729ac052072e312cb0ce113261a9</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">b6cb36e23238cd2a6e0f909b53a07862143d19d7</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Cash registers for Sweden</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic provides an overview of the cash register functionality that is available for Sweden.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Cash registers for Sweden</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This topic provides an overview of the cash register functionality that is available for Sweden in Microsoft Dynamics 365 for Retail.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>It also provides guidelines for setting up the functionality.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>The functionality consists of the following parts:</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Common point-of sale (POS) features that are made available to customers in all countries or regions, such as an option to prevent sales and returns from being combined on one retail receipt</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Sweden-specific features, such as additional counters in daily POS reports</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>A sample for integration of Dynamics 365 for Retail POS with Sweden-specific fiscal devices that are known as control units.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Overview of cash register functionality for Sweden</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Common POS features</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>To learn about common POS features that are available to customers in all countries or regions, see <bpt id="p1">[</bpt>Microsoft Dynamics 365 for Retail documentation<ept id="p1">](../index.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Additionally, the following POS features that were implemented for Sweden have been made available to customers in all countries or regions:</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Prohibit sales and returns from being combined on one retail receipt.<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>When you set the <bpt id="p1">**</bpt>Prohibit mixing sales and returns in one receipt<ept id="p1">**</ept> parameter in the POS functionality profile to <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept>, Cloud POS and Modern POS won't let users create a transaction that contains both positive and negative lines.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Print text fields on the receipt in a large font size.<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>You can use the <bpt id="p1">**</bpt>Font size<ept id="p1">**</ept> parameter in the Receipt format designer to specify that the large font size should be used for a field in a receipt format.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>(The large font size is approximately double the usual font size.) For example, you can use this parameter to print the "Copy" indicator on a receipt copy in large characters.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Register the printing of receipt copies in the POS audit event log.<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>You can use the <bpt id="p1">**</bpt>Audit<ept id="p1">**</ept> parameter in the POS functionality profile to enable the printing of receipt copies and other POS audit events to be registered.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The audit events are registered in the channel database and in Retail headquarters.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>You can view the audit events on the <bpt id="p1">**</bpt>Audit events<ept id="p1">**</ept> page.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Prevent a copy of a receipt from being printed more than one time.<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>When the parameter <bpt id="p1">**</bpt>Audit<ept id="p1">**</ept> in the POS functionality profile is enabled, the <bpt id="p2">**</bpt>Allow printing receipt copies<ept id="p2">**</ept> POS permission controls whether receipt copies can be printed.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>There is also an option to prevent a copy of a receipt from being printed more than one time.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Sweden-specific POS features</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>The following Sweden-specific POS features are enabled when the <bpt id="p1">**</bpt>ISO code<ept id="p1">**</ept> parameter in the POS functionality profile is set to <bpt id="p2">**</bpt>SE<ept id="p2">**</ept>:</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Additional counters on daily POS reports, such as X-reports and Z-reports:</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Receipt copy count and total amount</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Value added tax amounts per tax rate</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Total quantities of items and services sold</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Total sales excluding and including VAT</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Grand total sales, returns, and net</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>An <bpt id="p1">**</bpt>Electronic journal (Sweden)<ept id="p1">**</ept> channel report that lists continuous use events in the POS, such as sales, returns, receipt copies, drawer openings, and price overrides.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Currently, the <bpt id="p1">**</bpt>Electronic journal (Sweden)<ept id="p1">**</ept> report can't be exported or printed.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>However, functionality for exporting and printing the report will be added later.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Integration of Retail POS with control units</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Retail includes a sample for integration of POS with Sweden-specific fiscal devices that are known as control units.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>It's assumed that a control unit is physically connected to a Hardware station that POS is paired with.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>The sample is implemented as source code of POS, Hardware station, and Commerce runtime extensions, and is available in the Retail software development kit (SDK).</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>The sample includes the following capabilities:</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Sales, returns, and receipt copies are automatically registered in a control unit that is connected to the Hardware station that is paired with the POS.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>The control code and the manufacturing number of the control unit for a registered transaction are captured from the control unit and saved in the transaction.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>(This data is also referred to as <bpt id="p1">_</bpt>fiscal data<ept id="p1">_</ept>.) The fiscal data can be viewed on the <bpt id="p2">**</bpt>Retail store transactions<ept id="p2">**</ept> page in Retail.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Custom fields for the control code and the manufacturing number of the control unit can be added to a receipt format, so that you can print the fiscal data for the transaction on a receipt.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>The fiscal data for a transaction is printed on the <bpt id="p1">**</bpt>Electronic journal (Sweden)<ept id="p1">**</ept> channel report.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>If a failure occurs during the registration of a transaction in the control unit, the fiscal data for the transaction remains blank.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>In this case, a new transaction can't be started, and the current shift can't be closed.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>The operator will be asked to try to register the unregistered transaction again in the control unit.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>If the second attempt fails, the operator can skip the registration, provided that he or she has a special permission.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>If the operator skips the registration of a transaction in the control unit, information about this event is saved in the transaction instead of the fiscal data.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Currently, the control unit integration sample doesn't support customer orders.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>However, a sample that supports customer orders will be available later.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>For more information about the control unit integration sample, see the <bpt id="p1">[</bpt>sample deployment guide<ept id="p1">](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-control-unit-sample)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Setting up Retail for Sweden</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>This section describes the Retail settings that are specific to and recommended for Sweden.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>For more information about how to set up Retail, see <bpt id="p1">[</bpt>Microsoft Dynamics 365 for Retail documentation<ept id="p1">](../index.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>To use the Sweden-specific functionality for Retail, you must complete these tasks:</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Set the <bpt id="p1">**</bpt>Country/region<ept id="p1">**</ept> field to <bpt id="p2">**</bpt>SWE<ept id="p2">**</ept> (Sweden) in the primary address of the legal entity.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Set the <bpt id="p1">**</bpt>ISO code<ept id="p1">**</ept> field to <bpt id="p2">**</bpt>SE<ept id="p2">**</ept> (Sweden) in the POS functionality profile of every store that is located in Sweden.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Sweden-specific settings can be divided into two groups:</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>General settings</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Control unit–specific settings</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>General settings</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>You must specify the following general settings for Sweden.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Set up the following parameters for value-added tax (VAT) per Swedish requirements:</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Sales tax codes</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Sales tax groups</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Item sales tax groups</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Sales tax settings in items (item sales tax groups for sales)</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>For more information about how to set up and use sales tax in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, and in Retail, see <bpt id="p1">[</bpt>Sales tax overview<ept id="p1">](/dynamics365/unified-operations/financials/general-ledger/indirect-taxes-overview)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>All retail stores<ept id="p1">**</ept> page, update retail store details.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Specifically, set the following parameters:</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Sales tax group<ept id="p1">**</ept> field, set the sales tax group that should be used for sales to the default retail customer.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Select the <bpt id="p1">**</bpt>Prices include sales tax<ept id="p1">**</ept> check box.</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Set the <bpt id="p1">**</bpt>Store name<ept id="p1">**</ept> field so that it includes the company name.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>This change helps guarantee that the company name appears on a sales receipt.</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Alternatively, you can add the company name to the sales receipt layout as free-format text.</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Set the <bpt id="p1">**</bpt>Tax identification number (TIN)<ept id="p1">**</ept> field so that it includes the company identification number.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>This change helps guarantee that the company identification number appears on a sales receipt.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Alternatively, you can add the company identification number to the sales receipt layout as free-format text.</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Set up POS functionality profiles:</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Functions<ept id="p1">**</ept> FastTab, select the <bpt id="p2">**</bpt>Audit<ept id="p2">**</ept> and <bpt id="p3">**</bpt>Prohibit mixing sales and returns in one receipt<ept id="p3">**</ept> check boxes.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Receipt numbering<ept id="p1">**</ept> FastTab, set up receipt numbering.</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Create or update records for the <bpt id="p1">**</bpt>Sale<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Return<ept id="p2">**</ept> receipt transaction types.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Set the formats so that they include only numeric characters.</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>Clear the <bpt id="p1">**</bpt>Independent sequence<ept id="p1">**</ept> check box in both records.</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Update POS permissions groups and individual permission settings for store workers.</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Set the <bpt id="p1">**</bpt>Allow printing receipt copy<ept id="p1">**</ept> permission to an appropriate value:</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Allow always<ept id="p1">**</ept> – The operator can print a copy of a receipt multiple times.</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Allow only once<ept id="p1">**</ept> – The operator can print a copy of a receipt only one time.</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Allow only once, and only if HQ DB is available<ept id="p1">**</ept> – The operator can print a copy of a receipt only one time, and only if the headquarters database is available through Real-Time service, so that the system can verify that no copies of the receipt have previously been printed in any store.</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Never<ept id="p1">**</ept> – The operator can't print a copy of a receipt.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>Make the required changes to receipt formats for sales receipts:</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>Change the value of the <bpt id="p1">**</bpt>Print behavior<ept id="p1">**</ept> field to <bpt id="p2">**</bpt>Always print<ept id="p2">**</ept> for the receipt format.</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>In the Receipt format designer, make these changes:</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Add at least the following fields to the <bpt id="p1">**</bpt>Header<ept id="p1">**</ept> section of the receipt layout:</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Store name<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Tax Identification Number<ept id="p2">**</ept> fields, so that the company name and identity number are printed receipts.</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Alternatively, you can add the company name and identity number to the layout as free-format text.</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Store address<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Date<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Time 24H<ept id="p3">**</ept>, <bpt id="p4">**</bpt>Receipt Number<ept id="p4">**</ept>, and <bpt id="p5">**</bpt>Register number<ept id="p5">**</ept> fields.</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Reprint Message<ept id="p1">**</ept> field, so that the "Copy" indicator is printed on receipt copies.</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Set the <bpt id="p1">**</bpt>Font size<ept id="p1">**</ept> field for the <bpt id="p2">**</bpt>Reprint Message<ept id="p2">**</ept> field to <bpt id="p3">**</bpt>Large<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>Add at least the following field to the <bpt id="p1">**</bpt>Lines<ept id="p1">**</ept> section of the receipt layout: <bpt id="p2">**</bpt>Item name<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Qty<ept id="p3">**</ept>, and <bpt id="p4">**</bpt>Total price with tax<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>Add at least the following fields to the <bpt id="p1">**</bpt>Footer<ept id="p1">**</ept> section of the receipt layout:</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>Tax fields, so that the receipt tax amounts for each tax rate are printed.</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>For example, add the <bpt id="p1">**</bpt>Tax Id<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Tax percentage<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>Tax amounts<ept id="p3">**</ept> fields to one line of the layout.</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Payment fields, so that the payment amounts for each payment method are printed.</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>For example, add the <bpt id="p1">**</bpt>Tender name<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Tender amount<ept id="p2">**</ept> fields to one line of the layout.</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Channel reports configuration<ept id="p1">**</ept> page, set up the <bpt id="p2">**</bpt>Electronic journal (Sweden)<ept id="p2">**</ept> report.</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>In the  <bpt id="p1">**</bpt>Permission groups<ept id="p1">**</ept> field, select the POS permission groups that should be allowed to run the report.</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>Control unit–specific settings</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>You must specify the following settings to enable the <bpt id="p1">[</bpt>integration sample<ept id="p1">](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-control-unit-sample)</ept>, so that Retail POS is integrated with control units for Sweden.</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Create fiscal register configurations, and assign them to hardware profiles:</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Fiscal register configurations<ept id="p1">**</ept> page, create a new fiscal register configuration record.</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>Set the name and the description of the configuration.</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>Fill in the configuration content.</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>For this sample, a configuration is an XML file that establishes the mapping between sales tax codes and a control unit's VAT groups.</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>You can map up to four sales tax codes.</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>In the following example of a configuration, <bpt id="p1">**</bpt>VAT10<ept id="p1">**</ept> and <bpt id="p2">**</bpt>VAT20<ept id="p2">**</ept> represent sales tax codes that must be mapped.</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>You can also export a sample configuration by clicking <bpt id="p1">**</bpt>Export sample configuration<ept id="p1">**</ept> on the Action Pane.</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Hardware profiles<ept id="p1">**</ept> page, select the hardware profile of the Hardware station that the POS is paired with and the control unit is connected to.</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Fiscal register<ept id="p1">**</ept> FastTab, set the following fields:</source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Fiscal register<ept id="p1">**</ept> field, select <bpt id="p2">**</bpt>Third-party driver<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Configuration<ept id="p1">**</ept> field, select the name of the fiscal register configuration that you just created.</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>Set up custom fields for receipt layouts, so that the control code and the manufacturing number of the control unit are printed on receipts:</source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Language text<ept id="p1">**</ept> page, add two records for the captions of the custom receipt layout fields.</source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>In the appropriate fields, specify the language ID for the captions (for example, <bpt id="p1">**</bpt>sv-se<ept id="p1">**</ept>), the text ID (for example, <bpt id="p2">**</bpt>900001<ept id="p2">**</ept> and <bpt id="p3">**</bpt>900002<ept id="p3">**</ept>), and the caption text (for example, <bpt id="p4">**</bpt>Control code<ept id="p4">**</ept> and <bpt id="p5">**</bpt>Control unit ID<ept id="p5">**</ept>).</source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Custom fields<ept id="p1">**</ept> page, add two records for the custom receipt layout fields.</source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Type<ept id="p1">**</ept> field, select <bpt id="p2">**</bpt>Receipt<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>Specify names and captions for the custom receipt layout fields:</source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>Control code:</source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Name:<ept id="p1">**</ept> <bpt id="p2">**</bpt>FiscalRegisterControlCode<ept id="p2">**</ept></source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Caption text ID:<ept id="p1">**</ept> The text ID that you specified for the control code field (<bpt id="p2">**</bpt>900001<ept id="p2">**</ept> in the preceding example)</source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>Manufacturing number of the control unit:</source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Name:<ept id="p1">**</ept> <bpt id="p2">**</bpt>FiscalRegisterId<ept id="p2">**</ept></source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Caption text ID:<ept id="p1">**</ept> The text ID that you specified for the control unit ID field (<bpt id="p2">**</bpt>900002<ept id="p2">**</ept> in the preceding example)</source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>For sales receipt formats, in the Receipt format designer, in the <bpt id="p1">**</bpt>Footer<ept id="p1">**</ept> section of the receipt layout, add the fields for the specified captions  (<bpt id="p2">**</bpt>Control code<ept id="p2">**</ept> and <bpt id="p3">**</bpt>Control unit ID<ept id="p3">**</ept> in the preceding example).</source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>Update POS permissions groups and individual permission settings for store workers.</source>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>To allow workers who are assigned to the permission group to skip the fiscal registration, select the <bpt id="p1">**</bpt>Allow skip fiscal registration<ept id="p1">**</ept> check box.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

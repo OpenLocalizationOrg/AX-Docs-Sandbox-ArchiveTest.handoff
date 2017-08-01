@@ -1,0 +1,677 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">00dba7c4bbd0ea30b573faeeb019eaedd8f317bf</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\data-entities\data-entities-data-packages.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">34f8bccf250ad41fe05de1d82c9aa11e3008a3d2</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">38ba6ef3f5852c00639677cdf67e391a50fb179f</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Data entities and packages framework</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic provides information about using data entities and data entity packages.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Data entities and packages framework</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This topic provides information about using data entities and data entity packages.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Data entities</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Data entities provide conceptual abstraction and encapsulation of underlying table schema that represent data concepts and functionalities.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>In Microsoft Dynamics AX 2012, most tables, like the Customer and Vendor tables, were de-normalized and split into multiple tables.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>This was beneficial from a database design point of view, but made it difficult for implementers and ISV’s to use without a thorough understanding of the physical schema.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Data entities were introduced as part of data management to be used as a layer of abstraction to easily understand by using business concepts.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>In previous versions of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, there were multiple ways to manage data, such as Microsoft Excel Add-ins, AIF, and DIXF.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>The concept of data entities combines those different concepts into one.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>After data entities are created, you should be able to reuse them for an Excel Add-ins, import/export, or integration.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The following table shows core data management scenarios.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Data Migration<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Migrate reference, master, and document data from legacy or external systems.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Setup and copy configuration<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Copy configuration between company/environments.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Configure processes or modules using the Lifecycle Services (LCS) environment.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Integration<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Real-time service based integration.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Asynchronous integration.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Data migration</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>The following pain points can occur during migration:</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Inability to quickly do iterative migration and validations.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Multiple hops that lead to multiple dependencies and change of errors.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Complexity due to repeated manual interventions.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Difficulty in tracing and error troubleshooting.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Difficulty migrating a large volume of data within a time constraint.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>During migration, you can strategize and choose data entities.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Data entities also save time during implementation because previous activities required data export from a database, data export validation, and data transformation to files such as Excel or XML.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>These hoops have been eliminated.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>If an import error occurs, you can skip selected records and choose to proceed with the import using the good data, opting to then fix and import the bad data later.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>You will be allowed to partially continue and bad data will be indicated by using errors.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Data imports can be easily scheduled using a batch, which offers flexibility when it is required to run.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>For example, you can migrate customer groups, customers, vendors, and other data entities in the system at any time.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Set up and copy configuration</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Starting a new implementation can be difficult because the knowledge of the data that needs to be entered can sometimes be limited.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Data must be entered by module, or it must be configured using business processes.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>It is even more difficult to determine data dependencies and how the data sequencing should be configured in the implementation.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Re-usability is also a factor as to where and how data can be used across environments.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>These pain points are now addressed.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Movement of data becomes easier as it moves from test to staging to production environments.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Movement of data can occur in any order.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>This is not a movement of the entire database but rather, only the data entities that you have chosen.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Migration now allows:</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Moving data between two similar systems.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Discovering setup entities and any dependency between each entity for a given process or module.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Maintaining a reusable library of data templates and datasets.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Data packages is a new concept that allows you to build incremental data entities.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Data entities can be sequenced inside the packages.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>You can name data packages, which can be easily identifiable during import or export.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>When building data packages, data entities can be mapped on staging tables in a tabular format or by using available visual representation in data management.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>You can also drag-and-drop columns manually, depending on the mapping that you want for an entity.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>During import, data can easily be viewed using data management enabling data comparison.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Data management concepts</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>The following terms are introduced.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Data project<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>A project that contains configured data entities, which include mapping and default processing options.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Data job<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>A job that contains an execution instance of the data project, uploaded files, schedule (recurrence), and processing options.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Job history<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Histories of source to staging and staging to target.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Data package<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>A single compressed file that contains a data project manifest and/or data files.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>This is generated from a data job and used for import or export of multiple files with the manifest.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Using data entities</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>The following sections provide quick snapshots of the different functionalities of data management using data entities.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>The goal is to help to you strategize and make effective decisions on how to best utilize the available tools during data migration.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>You will also find tips and tricks on how to effectively use each area during data migration.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>A list of available data entities for each area can also be found with the suggested data sequences, showing data dependencies.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Microsoft provides data packages that can be found on Lifecycle Services (LCS) as an initial guide.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>The information in this document can be used as a guide for creating your own packages.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>The description of each data entity shows what the object contains and if it is needed during data migration.</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Sequencing</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>There are two types of sequencing that should be considered when working with data entities.</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Sequencing data entities within the data packages.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Sequencing for the order of importing the data packages.</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Sequencing data entities within the Data Packages<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>When a user adds data entities to a data project, by default, a sequence is set for the order in which the entities will load.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>The first entity added to the project will be set as the first entity to load, the next entity added will be second, the next entity will be third, and so on.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>For example, if a user added two entities in this order, <bpt id="p1">**</bpt>Sales tax codes<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Sales Tax groups<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Sales tax codes<ept id="p3">**</ept> is assigned an entity sequence of <bpt id="p4">**</bpt>1.1.1<ept id="p4">**</ept>, and <bpt id="p5">**</bpt>Sales tax groups<ept id="p5">**</ept> is assigned an entity sequence of <bpt id="p6">**</bpt>1.1.2<ept id="p6">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>The sequence level indicates that the second entity will not start the import process until the first level has completed.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>To view or edit the sequence, click the <bpt id="p1">**</bpt>Entity sequence<ept id="p1">**</ept> button on the Action Pane of the data project.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>DataEntitiesDataPackages01<ept id="p1">](./media/dataentitiesdatapackages01.png)](./media/dataentitiesdatapackages01.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>In the definition group entity sequence, you can see the execution units and the sequence.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>The sequence can be changed by selecting the data entity in the list, setting a different Execution unit or Sequence in level, and then clicking <bpt id="p1">**</bpt>Update selected<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>After clicking <bpt id="p1">**</bpt>Update selected<ept id="p1">**</ept>, the entity will be moved up or down in the entity list.</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>To further illustrate, the following screenshot shows the entity sequence that is set for the Sales Tax CodeGroups data package.</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>DataEntitiesDataPackages02<ept id="p1">](./media/dataentitiesdatapackages02.png)](./media/dataentitiesdatapackages02.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>In order to successfully import sales tax codes and groups, the sales tax codes and details have to be loaded first, before sales tax groups can be imported.</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Sales tax codes and groups are all in Execution unit = 1, but the sequences are in the order that they will be imported.</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Other related sales tax entities that are not dependent upon other data entities being loaded are included in the package.</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>For example, sales tax exempt numbers, is set in its own Execution unit = 2.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>This data entity will start loading immediately because there are no dependencies on other entities loading before it.</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Sequencing of the data packages<ept id="p1">**</ept> In order to successfully load data, the order of loading the data packages is important because of dependencies that exist within and across modules.</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>The numbering format that has been created for the data packages within LCS are as follows:</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>First segment = Modulearea</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>Second segment = Data type (SetupMasterTransaction)</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Third sequence = Sequence number</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>The following tables provide more information about the different kinds of numbering.</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>ModuleArea numbering<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>DataEntitiesDataPackages03<ept id="p1">](./media/dataentitiesdatapackages03.png)](./media/dataentitiesdatapackages03.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Data type numbering<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>DataEntitiesDataPackages04<ept id="p1">](./media/dataentitiesdatapackages04.png)](./media/dataentitiesdatapackages04.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Numbering format<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>DataEntitiesDataPackages05<ept id="p1">](./media/dataentitiesdatapackages05.png)](./media/dataentitiesdatapackages05.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>The data packages will have the numbering format, followed by the module abbreviation, and description.</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>The following example shows General ledger data packages.</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>DataEntitiesDataPackages06<ept id="p1">](./media/dataentitiesdatapackages06.png)](./media/dataentitiesdatapackages06.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>Mapping</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>When working with data entities, the mapping of the entity to the source is automatic.</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>This mapping of fields can be overridden if needed.</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>To view the mapping, locate the tile for the entity in the project, and then click <bpt id="p1">**</bpt>View map<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>When viewing the mapping there are two views: mapping visualization (default view) or mapping details.</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>A red asterisk (<ph id="ph1">\*</ph>) will identify any required fields in the entity.</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>These fields need to be mapped in order to work with the entity.</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>Other fields can be unmapped as required when working with the entity.</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>To unmap a field, highlight the field in either column (<bpt id="p1">**</bpt>Entity<ept id="p1">**</ept> or <bpt id="p2">**</bpt>Source<ept id="p2">**</ept>), and then click <bpt id="p3">**</bpt>Delete selection<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Save<ept id="p1">**</ept> to save your changes.</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>After saving, close the form to return to the project.</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>The field mapping from source to staging can also be edited after import using the same process.</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>DataEntitiesDataPackages07<ept id="p1">](./media/dataentitiesdatapackages07.png)](./media/dataentitiesdatapackages07.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>If you have extended an entity (added fields) or if the automatic mapping appears to be incorrect, the mapping of the entity can be regenerated in the <bpt id="p1">**</bpt>Mapping<ept id="p1">**</ept> form.</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>To do this, click <bpt id="p1">**</bpt>Generate source mapping<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>A message will display asking, “Do you want to generate the mapping from scratch ?”</source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept> to regenerate the mapping.</source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>Export</source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>Export is the process of pulling data out of a system utilizing data entities.</source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>The export process is done through a project.</source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>When creating the process there is a lot of flexibility as to how the export project is defined.</source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>There is an option to choose not only which data entities to export, but also the number of entities, the file format used (there are 14 different formats to choose for export), and apply a filter to each entity to limit what is exported.</source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>After the data entities have been pulled into the project, the sequencing and mapping described earlier can be performed for each export project.</source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>DataEntitiesDataPackages08<ept id="p1">](./media/dataentitiesdatapackages08-1024x400.png)](./media/dataentitiesdatapackages08.png)</ept><ph id="ph2">
+</ph><bpt id="p2">[</bpt><ph id="ph3">![</ph>DataEntitiesDataPackages09<ept id="p2">](./media/dataentitiesdatapackages09.png)](./media/dataentitiesdatapackages09.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>After the project is created and saved you can export the project to create a job.</source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>During the export process, you can see a graphical view of the status of the job and the record count.</source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>This view shows multiple records so you can review the status of each record prior to downloading the actual files.</source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>DataEntitiesDataPackages10<ept id="p1">](./media/dataentitiesdatapackages10-1024x280.png)](./media/dataentitiesdatapackages10.png)</ept><ph id="ph2"> 
+</ph><bpt id="p2">[</bpt><ph id="ph3">![</ph>DataEntitiesDataPackages11<ept id="p2">](./media/dataentitiesdatapackages11.png)](./media/dataentitiesdatapackages11.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>After the job is completed you can choose how to download the files, either as each data entity as a separate file or by combining the files as a package.</source>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>If there are multiple data entities in the job, choosing the package option will expedite the upload process.</source>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>The package is a zipped file, containing a data file for each entity as well as a package header and manifest.</source>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>These additional documents are used when importing in order to add the data files to the correct data entities and sequence the import process.</source>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>Import</source>
+        </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>Import is the process of pulling data into a system utilizing data entities.</source>
+        </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>The import process is done through the <bpt id="p1">**</bpt>Import<ept id="p1">**</ept> tile in the <bpt id="p2">**</bpt>Data Management<ept id="p2">**</ept> workspace.</source>
+        </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>Data can be imported either for individual entities or for a group of logically related entities that are sequenced in the correct order.</source>
+        </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>The file formats vary depending on the type of import.</source>
+        </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>For an entity, it can be an Excel file that is comma-separated, tab-separated, text.</source>
+        </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>For a data package, it is a .zip file.</source>
+        </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>In both cases, the files are exported using the above mentioned export process.</source>
+        </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>The detailed steps for importing data using data packages is as follows.</source>
+        </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>Log into the environment using a login with sufficient privileges (typically this is the Administrator role).</source>
+        </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>On the dashboard, select the <bpt id="p1">**</bpt>Data Management<ept id="p1">**</ept> workspace.</source>
+        </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>To begin importing, select the <bpt id="p1">**</bpt>Import<ept id="p1">**</ept> tile.</source>
+        </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>On the next page, do the following:</source>
+        </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Name<ept id="p1">**</ept> field, provide a logical name for the package being imported.</source>
+        </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Source Data Format<ept id="p1">**</ept> field, select <bpt id="p2">**</bpt>Package<ept id="p2">**</ept> as the source data format.</source>
+        </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>Click the <bpt id="p1">**</bpt>Upload<ept id="p1">**</ept> button and choose the appropriate package file from the location for the data being imported.</source>
+        </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>This will import all the files from the package.</source>
+        </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>DataEntitiesDataPackages12<ept id="p1">](./media/dataentitiesdatapackages12-1024x555.png)](./media/dataentitiesdatapackages12.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>Import<ept id="p2">**</ept> to import the data.</source>
+        </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>If multiple data packages need to be imported this can be accomplished in two ways:</source>
+        </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>Create new job for each package – Repeat steps 4(a) through 4(d) above, for each package.</source>
+        </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>- or-</source>
+        </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>Create one job to import multiple packages in a sequence.</source>
+        </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>Repeat steps 4(a) through 4(c) above, and then repeat step 4(c) for all the packages that need to be imported.</source>
+        </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>After you select the planned packages, execute step 4(d) to import the data from the selected data packages through a single job.</source>
+        </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>DataEntitiesDataPackages13<ept id="p1">](./media/dataentitiesdatapackages13-1024x555.png)](./media/dataentitiesdatapackages13.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>After you click <bpt id="p1">**</bpt>Import<ept id="p1">**</ept>, the data will be imported through staging tables.</source>
+        </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>The progress of the import can be tracked using the <bpt id="p1">**</bpt>Refresh<ept id="p1">**</ept> button in the upper-right corner of the screen.</source>
+        </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note: Utilizing the auto generated functionality<ept id="p1">**</ept> - If you have fields in entities that you want the system to generate on import, instead of providing the data in the source file, you can use the auto-generated functionality in the mapping details for the entity.</source>
+        </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>For example, if you want to import customers and customer address information, but the address information was not previously imported with the Global Address Book (GAB) entities, you can have the entity auto-generate the party number upon import and the GAB information will be created.</source>
+        </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>To access this functionality, view the map of the entity and click the <bpt id="p1">**</bpt>Mapping details<ept id="p1">**</ept> tab.</source>
+        </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>Select the fields that you want to auto-generate.</source>
+        </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>This will change the source field to <bpt id="p1">**</bpt>Auto<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>DataEntitiesDataPackages18<ept id="p1">](./media/dataentitiesdatapackages18.png)](./media/dataentitiesdatapackages18.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>Troubleshooting</source>
+        </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>This section describes how to troubleshoot during the different stages of data package processing.</source>
+        </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>Export process</source>
+        </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>If you get an error during the export process, click <bpt id="p1">**</bpt>View execution log<ept id="p1">**</ept> and review the log text, staging log details, and Infolog for more information</source>
+        </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source>If you get an error during the export process with a note directing you to not skip staging, turn off the <bpt id="p1">**</bpt>Skip staging<ept id="p1">**</ept>, and then add the entity.</source>
+        </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source>If you are exporting multiple data entities, you can use the <bpt id="p1">**</bpt>Skip staging<ept id="p1">**</ept> button for each data entity.</source>
+        </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source>Import process</source>
+        </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source>Upload the data entity files</source>
+        </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>If data entities do not display in <bpt id="p1">**</bpt>Selected files and entities<ept id="p1">**</ept> after you click <bpt id="p2">**</bpt>Upload<ept id="p2">**</ept> during the import process, wait a few minutes, then check if the OLEDB driver is still installed.</source>
+        </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>If not, then reinstall the OLEDB driver.</source>
+        </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source>The driver is Microsoft Access Database Engine 2010 Redistributable – AccessDatabaseEngine<ph id="ph1">\_</ph>x64.exe.</source>
+        </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source>If data entities display in <bpt id="p1">**</bpt>Selected Files and Entities<ept id="p1">**</ept> with a warning after you click <bpt id="p2">**</bpt>Upload<ept id="p2">**</ept> during the import process, verify and fix the mapping of individual data entities by clicking <bpt id="p3">**</bpt>View map<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source>Update the mapping and click <bpt id="p1">**</bpt>Save<ept id="p1">**</ept> for each data entity.</source>
+        </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source>Import the data entities</source>
+        </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source>If data entities fail (shown with a red X or yellow triangle icon on the data entity tile) after you click <bpt id="p1">**</bpt>Import<ept id="p1">**</ept>, click <bpt id="p2">**</bpt>View staging data<ept id="p2">**</ept> on each tile under the <bpt id="p3">**</bpt>Execution summary<ept id="p3">**</ept> page to review the errors.</source>
+        </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source>Sort and scroll through the records with Transfer status = Error to display the errors in the Message section.</source>
+        </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source>Download the staging table via Microsoft Office.</source>
+        </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source>Fix a record (or all records) directly in staging by clicking <bpt id="p1">**</bpt>Edit, Validate all, and Copy data to target<ept id="p1">**</ept>,  or fix the import file (not staging file) and reimport the data.</source>
+        </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source>If data entities fail (shown with a red x or yellow triangle icon on the data entity tile) after you click <bpt id="p1">**</bpt>Import<ept id="p1">**</ept>, and <bpt id="p2">**</bpt>View staging data<ept id="p2">**</ept> shows no data, go back to the <bpt id="p3">**</bpt>Execution summary<ept id="p3">**</ept> page.</source>
+        </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source>Go to <bpt id="p1">**</bpt>View execution log<ept id="p1">**</ept>, select the data entity, and review the <bpt id="p2">**</bpt>Log text, Staging log details, and Infolog<ept id="p2">**</ept> for more information.</source>
+        </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Staging log details<ept id="p1">**</ept> will display <bpt id="p2">**</bpt>Error column<ept id="p2">**</ept> (field) details and <bpt id="p3">**</bpt>Log description<ept id="p3">**</ept> will describe errors in detail.</source>
+        </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>If data entities fail, you can check the import file to see if there’s an extra line in the file with text which displays, “This is a string that is inserted into Excel as a dummy cell to make the column to support more than 255 characters.</source>
+        </trans-unit>
+        <trans-unit id="298" translate="yes" xml:space="preserve">
+          <source>By default, an Excel destination component will not support more than 255 characters.</source>
+        </trans-unit>
+        <trans-unit id="299" translate="yes" xml:space="preserve">
+          <source>The default type of Excel will be set based on the first few rows.</source>
+        </trans-unit>
+        <trans-unit id="300" translate="yes" xml:space="preserve">
+          <source>”.</source>
+        </trans-unit>
+        <trans-unit id="301" translate="yes" xml:space="preserve">
+          <source>This line is added during data export.</source>
+        </trans-unit>
+        <trans-unit id="302" translate="yes" xml:space="preserve">
+          <source>If this line exists, delete this line, re-package the data entity, and try to import.</source>
+        </trans-unit>
+        <trans-unit id="303" translate="yes" xml:space="preserve">
+          <source>After exports and imports</source>
+        </trans-unit>
+        <trans-unit id="304" translate="yes" xml:space="preserve">
+          <source>Status and error details of a scheduled job can be found under the <bpt id="p1">**</bpt>Job history<ept id="p1">**</ept> section in the <bpt id="p2">**</bpt>Data management<ept id="p2">**</ept> form.</source>
+        </trans-unit>
+        <trans-unit id="305" translate="yes" xml:space="preserve">
+          <source>Status and error details of previous runs for data entities can be displayed by selecting a data project and clicking <bpt id="p1">**</bpt>Job history<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="306" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>the Execution history<ept id="p1">**</ept> form, select a job, and click <bpt id="p2">**</bpt>View staging data<ept id="p2">**</ept> and <bpt id="p3">**</bpt>View execution log<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="307" translate="yes" xml:space="preserve">
+          <source>The previous runs include data project runs that were executed as batch jobs or manually.</source>
+        </trans-unit>
+        <trans-unit id="308" translate="yes" xml:space="preserve">
+          <source>Number sequence</source>
+        </trans-unit>
+        <trans-unit id="309" translate="yes" xml:space="preserve">
+          <source>Many entities support automatic generation of identifiers based on number sequence setup.</source>
+        </trans-unit>
+        <trans-unit id="310" translate="yes" xml:space="preserve">
+          <source>For example, when creating a product, the product number is automatically generated and the form does not allow you to edit values manually.</source>
+        </trans-unit>
+        <trans-unit id="311" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>DataEntitiesDataPackages15.png<ept id="p1">](./media/dataentitiesdatapackages15.png-300x213.jpg)](./media/dataentitiesdatapackages15.png.jpg)</ept> It is possible to enable manual assignment of number sequences.</source>
+        </trans-unit>
+        <trans-unit id="312" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>DataEntitiesDataPackages16<ept id="p1">](./media/dataentitiesdatapackages16-300x153.png)](./media/dataentitiesdatapackages16.png)</ept> In this case, you can manually provide the value and enable manual assignment of product numbers instead.<bpt id="p2">[</bpt><ph id="ph2">![</ph>DataEntitiesDataPackages17<ept id="p2">](./media/dataentitiesdatapackages17-300x214.png)](./media/dataentitiesdatapackages17.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="313" translate="yes" xml:space="preserve">
+          <source>System users entity</source>
+        </trans-unit>
+        <trans-unit id="314" translate="yes" xml:space="preserve">
+          <source>While importing the system users entity, you may receive a integrity violation error if there is a guest user in the exported package.</source>
+        </trans-unit>
+        <trans-unit id="315" translate="yes" xml:space="preserve">
+          <source>The guest user must be deleted from the package in order for the entity to work.</source>
+        </trans-unit>
+        <trans-unit id="316" translate="yes" xml:space="preserve">
+          <source>If a record already exists in the <bpt id="p1">**</bpt>UserInfo<ept id="p1">**</ept> table (the Admin record would most likely always exist), the import will fail for those records but work for other records.</source>
+        </trans-unit>
+        <trans-unit id="317" translate="yes" xml:space="preserve">
+          <source>See also</source>
+        </trans-unit>
+        <trans-unit id="318" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Data entities<ept id="p1">](data-entities.md)</ept></source>
+        </trans-unit>
+        <trans-unit id="319" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Data entities<ept id="p1">](data-entities.md)</ept></source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

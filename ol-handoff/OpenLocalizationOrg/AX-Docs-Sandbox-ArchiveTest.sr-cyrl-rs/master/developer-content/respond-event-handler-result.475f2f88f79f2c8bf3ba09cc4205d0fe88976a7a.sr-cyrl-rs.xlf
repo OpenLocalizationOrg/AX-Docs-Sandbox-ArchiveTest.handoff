@@ -1,0 +1,144 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">bfdbbbacc9c1b2963b18f462c6b9b17463a1661b</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\extensibility\respond-event-handler-result.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">c585c306bdc9e9f6edfdbea268e7174c37fe9d6e</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">c5e95f4c61e61c18740c5a0472df9e55eba90247</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Respond by using EventHandlerResult</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic describes how to subscribe to events that has a parameter of any type that implements the IEventHandlerResult interface.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Respond by using EventHandlerResult or types that implement IEventHandlerResult</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Some delegate methods are implemented so that they can request a response from subscribing delegate handler methods.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>The delegate calling logic then uses the response from a potential subscriber when it continues execution after the response has been received.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>These delegate methods usually have a signature that has an <bpt id="p1">**</bpt>EventHandlerResult<ept id="p1">**</ept> parameter as the last parameter.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>However, because of the support for the <bpt id="p1">**</bpt>EventHandlerAcceptResult<ept id="p1">**</ept> and <bpt id="p2">**</bpt>EventHandlerRejectResult<ept id="p2">**</ept> types, the parameter can be of any type that implements the <bpt id="p3">**</bpt>IEventHandlerResult<ept id="p3">**</ept> interface.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>In general, the logic that is implemented in the delegate handler method should contain a condition that verifies that the subscribing logic is responsible for providing a response.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>It should also include logic to provide the response in the form of a result.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>When the delegate handler method must provide the response to an <bpt id="p1">**</bpt>EventHandlerResult<ept id="p1">**</ept> object parameter, the subscribing logic might also contain logic to calculate or retrieve the result.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>When the condition and the response logic are implemented, the calculation of the result must occur only when the condition is evaluated to <bpt id="p1">**</bpt>true<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>All the subscribing delegate handler methods are run when a delegate is called.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Therefore, you should make sure that the overhead of running your method is as low as possible when the method isn't responsible for providing a response.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Therefore, make sure that the condition is evaluated to <bpt id="p1">**</bpt>false<ept id="p1">**</ept> as quickly as possible when your delegate handler method isn't responsible for providing a result.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Examples</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>The following example shows a delegate handler that has a condition in the form of a <bpt id="p1">**</bpt>switch<ept id="p1">**</ept> statement.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The delegate handler also has logic to provide a response in the form of the result.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>The responding logic is run only when the condition is evaluated to <bpt id="p1">**</bpt>true<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>When the delegate method requests a response by using an <bpt id="p1">**</bpt>EventHandlerAcceptResult<ept id="p1">**</ept> or an <bpt id="p2">**</bpt>EventHandlerRejectResult<ept id="p2">**</ept> object parameter, the subscriber is expected to respond only with an accept or a reject.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>The subscribing logic might also add messages to the Infolog.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The following example resembles the previous example.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>However, the delegate method now requests a response by using an <bpt id="p1">**</bpt>EventHandlerAcceptResult<ept id="p1">**</ept> object and by calling the <bpt id="p2">**</bpt>accept<ept id="p2">**</ept> method.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>The following example shows a delegate handler method that responds by using an <bpt id="p1">**</bpt>EventHandlerRejectResult<ept id="p1">**</ept> object.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>To respond by using an <bpt id="p1">**</bpt>EventHandlerRejectResult<ept id="p1">**</ept> object, you can call the <bpt id="p2">**</bpt>reject<ept id="p2">**</ept> method or the <bpt id="p3">**</bpt>checkFailed<ept id="p3">**</ept> extension method.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>If you use the <bpt id="p1">**</bpt>checkFailed<ept id="p1">**</ept> method, you can add a warning message to the Infolog.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Internally, the <bpt id="p1">**</bpt>checkFailed<ept id="p1">**</ept> method calls the <bpt id="p2">**</bpt>reject<ept id="p2">**</ept> method.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Guidelines</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>In addition to the previously described practices, the following general guidelines apply:</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Respond only when the subscribing logic is responsible for responding.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>The delegate handler methods were implemented to provide a response when a specific condition is met.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Therefore, the subscribing logic must provide a result when a specific condition is met.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Before the subscribing logic responds, it should not evaluate whether the result object parameter already contains a result.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>For example, a delegate handler method should not contain logic that resembles the logic in the following example.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>This logic evaluates whether the <bpt id="p1">**</bpt>EventHandlerResult<ept id="p1">**</ept> object parameter already contains a result when the method is run.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>This example is an example of code that you should <bpt id="p1">**</bpt>not<ept id="p1">**</ept> write.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Don't provide a response on behalf of other subscribers.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>If the delegate handler method isn't responsible for providing a response, the method must not provide a response.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>If the method provides a response when the condition isn't met, it provides a response on behalf of other subscribers.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>The requesting logic must be responsible for handling situations where no subscribers have responded.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>The delegate handler method must not contain logic that resembles the logic in the following example.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>This logic which provides a result when the condition is evaluated to <bpt id="p1">**</bpt>false<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>This example is an example of code that you should <bpt id="p1">**</bpt>not<ept id="p1">**</ept> write.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

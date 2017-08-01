@@ -1,0 +1,527 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">f866a264f194d44b0c799a95c4ce84d8c38014f6</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\lifecycle-services\support-experience.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">f3d89c1853f4bfa63e5cbd8b761e94afe5aeffd2</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">8ae3d222dec944809b217e0878c9a259a05115db</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Set up technical support for Finance and Operations</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic provides information about the support experience for cloud and on-premises deployments.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>It describes the setup that is required and explains how to create and work with support issues.</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Set up technical support</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Prerequisites</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Before you can set up technical support, you must acquire a Microsoft Azure Active Directory (AAD) account.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>This account is created during the setup of the Microsoft Dynamics 365 for Finance and Operations, Enterprise edition subscription.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Create a Visual Studio Team Services project</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Support<ept id="p1">**</ept> tile in a Lifecycle Services project uses Microsoft Visual Studio Team Services (VSTS) to store issues that are submitted through the client and issues that are manually created from the <bpt id="p2">**</bpt>Support<ept id="p2">**</ept> tile in Lifecycle Services (LCS).</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>This functionality requires that a VSTS project be configured in the LCS project that you want to use for support.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>All users who need to use the <bpt id="p1">**</bpt>Support<ept id="p1">**</ept> tile to submit an issue must have access to the VSTS project, and must authorize LCS to access VSTS on their own behalf.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Most users don't have access to LCS or VSTS.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Therefore, in the VSTS project, you should create a special system account that can be used to submit issues.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Create a new VSTS project</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Go to <bpt id="p1">&lt;</bpt>https://www.visualstudio.com/<ept id="p1">&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Sign in<ept id="p1">**</ept> in the upper-right corner.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Sign in by using an AAD account that is in the tenant that your subscription is linked to.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>If the browser already has your credentials, you won't see the sign-in page and should instead click your name in the upper-right corner.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>On the right side of the page, under <bpt id="p1">**</bpt>Accounts<ept id="p1">**</ept>, click <bpt id="p2">**</bpt>Create a free account now<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Specify an account URL, and then click <bpt id="p1">**</bpt>Create Account<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Name your project, and specify a process template.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Your project should now be created.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Add users to the VSTS project</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>In the upper-left corner, click <bpt id="p1">**</bpt>Team Services<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Users<ept id="p1">**</ept> tab, click <bpt id="p2">**</bpt>Add<ept id="p2">**</ept>, and invite users who will use the Support experience to the VSTS account.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>For each user that you invite, select either <bpt id="p1">**</bpt>Basic<ept id="p1">**</ept> or <bpt id="p2">**</bpt>Stakeholder<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>In the upper-left corner, click <bpt id="p1">**</bpt>Team Services<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Browse<ept id="p1">**</ept>, and browse to the project that you created in the previous procedure.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Members<ept id="p1">**</ept> section of the project home page, click <bpt id="p2">**</bpt>Add<ept id="p2">**</ept>, and add the users that you invited in step 2.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Create the Support system user</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Create a new user in your AAD tenant, and enter a descriptive name, such as <bpt id="p1">**</bpt>LcsCpsSystemAccount<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>In the upper-left corner, click <bpt id="p1">**</bpt>Team Services<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>On the **Users **tab, click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept>, and invite the system user that you created in step 1.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>For this user, select <bpt id="p1">**</bpt>Stakeholder<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>In the upper-left corner, click <bpt id="p1">**</bpt>Team Services<ept id="p1">**</ept> again.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Browse<ept id="p1">**</ept>, and browse to the project that you created earlier.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Members<ept id="p1">**</ept> section of the project home page, click <bpt id="p2">**</bpt>Add<ept id="p2">**</ept>, and add the system user.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Retrieve the personal access token for the Support system user</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Sign out of Team Services by clicking the user name in the upper-right corner and then clicking <bpt id="p1">**</bpt>Sign out<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Sign in to Team Services by using the Support system account that you created in the previous procedure.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>In the upper-right corner, click the user name, and then click <bpt id="p1">**</bpt>My profile<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Security<ept id="p1">**</ept> tab, on the <bpt id="p2">**</bpt>Personal access tokens<ept id="p2">**</ept> tab, click <bpt id="p3">**</bpt>Add<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Enter a description, such as <bpt id="p1">**</bpt>LCS Support system account<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Select an expiry of one year.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Selected scopes<ept id="p1">**</ept>, and the select <bpt id="p2">**</bpt>Work items (read and write)<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Create token<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Copy the token and paste it in a safe location because it won't be accessible after you move away from the page.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Configure LCS</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Sign in to LCS by using an account that has the <bpt id="p1">**</bpt>Owner<ept id="p1">**</ept> role for the LCS project that Finance and Operations is deployed in.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Open the project in LCS.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Project settings<ept id="p1">**</ept>, and then click the <bpt id="p2">**</bpt>Visual Studio Team Services<ept id="p2">**</ept> link.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>LCS-Project-Tiles<ept id="p1">](./media/lcs-project-tiles-237x300.png)](./media/lcs-project-tiles.png)</ept><ph id="ph2">
+</ph><bpt id="p2">[</bpt><ph id="ph3">![</ph>LCS-Project-Settings-VSO<ept id="p2">](./media/lcs-project-settings-vso-1024x320.png)](./media/lcs-project-settings-vso.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Setup Visual Studio Team Services<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Visual Studio Team Services site URL<ept id="p1">**</ept> field, enter the URL of the VSTS project that you created in the previous section.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Personal access token<ept id="p1">**</ept> field, enter the personal access token that you created in the previous section.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>LCS-Project-Settings-VSO-Setup-1<ept id="p1">](./media/lcs-project-settings-vso-setup-1.png)](./media/lcs-project-settings-vso-setup-1.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Continue<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Select the VSO project to use, and then click <bpt id="p1">**</bpt>Continue<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Authorize<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>In the confirmation message box, click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Sign in to Visual Studio Online.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Accept<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Create an issue in the Finance and Operations client (Microsoft Dynamics AX 7.0, Dynamics AX platform update 1 or update 2, or Finance and Operations platform update 3)</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>If you are on Microsoft Finance and Operations platform update 4, or if you have consumed KB 4010473 for platform update 3, skip to the next section.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Important:<ept id="p1">**</ept> If you have an on-premises deployment of Finance and Operations, the option to search for existing issues and submit a support incident from the Dynamics 365 for Finance and Operations on-premises client to your Visual Studio Team Services project is not available.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>In the client, click the <bpt id="p1">**</bpt>Help<ept id="p1">**</ept> menu, or question mark icon, in the upper-right corner.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>AX7-help-Contact<ph id="ph2">\_</ph>Your<ph id="ph3">\_</ph>Support<ept id="p1">](./media/ax7-help-contact_your_support1.png)](./media/ax7-help-contact_your_support1.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Contact your support team<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Enter information in the <bpt id="p1">**</bpt>Issue<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Description<ept id="p2">**</ept> fields.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Optional: Enter the time when the issue occurred (Platform update 3 feature).</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Optional: Set the <bpt id="p1">**</bpt>Work stoppage<ept id="p1">**</ept> fields to <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Optional: Upload a task recording.</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Set the option to share your email address with LCS to <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Submit<ept id="p1">**</ept> button won't be available unless you share your email address.</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Submit<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Contact Support<ept id="p1">](./media/contact-support.png)](./media/contact-support.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>You should receive a confirmation message that states that the issue has been submitted to LCS.</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Users who are in the <bpt id="p1">**</bpt>Operations users<ept id="p1">**</ept> role are notified that a new issue has been submitted to LCS.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>To view the issue that was submitted, click the <bpt id="p1">**</bpt>Support<ept id="p1">**</ept> tile in the associated LCS project.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Create an issue in the Finance and Operations client (Finance and Operations platform update 4 and platform update 3 KB 4010473)</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>If you have not taken platform update 4 for Finance and Operations, or if you have not consumed KB 4010473 for platform update 3, complete the procedure in the previous section.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>The Support experience has been updated to show updates that are published by Microsoft.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>In the client, on the top bar, click <bpt id="p1">**</bpt>?<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>Support<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Important:<ept id="p1">**</ept> If you have an on-premises deployment of Finance and Operations, the option to search for existing issues and submit a support incident from the Dynamics 365 for Finance and Operations on-premises client to your Visual Studio Team Services project is not available.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>wiki1<ept id="p1">](./media/wiki1-1024x518.png)](./media/wiki1.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> If you haven’t already connected to Lifecycle Services (LCS), a dialog box will display where you can connect.</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Click the link to connect before proceeding.</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>wiki2<ept id="p1">](./media/wiki2.png)](./media/wiki2.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Search for a fix</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>After you connect to LCS, you can search for existing Microsoft published updates and fixes.</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Enter your issue in the <bpt id="p1">**</bpt>Search<ept id="p1">**</ept> box and press <bpt id="p2">**</bpt>Enter<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> If you don't want the functionality to search for existing fixes enabled for all users, you can remove the <bpt id="p2">**</bpt>SearchExistingFixes<ept id="p2">**</ept> duty from the System user role and add it to only those roles which you want to have this functionality.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>Search results are based on the Microsoft Issue Search data that is relevant to your environment.</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>Fixes that you have already installed will not be included in your search results.</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>To view a specific result, click the link to view the details.</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Based on the duties assigned to you, you will see either the <bpt id="p1">**</bpt>Download view<ept id="p1">**</ept> or the <bpt id="p2">**</bpt>Request view<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Download view:<ept id="p1">**</ept> By default, this view is only available to system administrators.</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>From this view, you can directly download the hotfix.</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> The duty <bpt id="p2">**</bpt>DownloadHotfix<ept id="p2">**</ept> controls the ability to directly download fixes from LCS rather than requesting them.</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>Only system administrators will have access to it by default.</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>If you want to assign this duty to users other than system administrators, you can do so by adding the duty to the selected roles.</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Request view:<ept id="p1">**</ept> By default, this view is available to all users who are not system administrators.</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>From this view, you can make a request to download the hotfix.</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>After you submit your request to download the hotfix, a work item will be created in the VSTS project that is associated to your LCS project.</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>The customer IT admin can view all requested hotfixes by clicking the <bpt id="p1">**</bpt>Support<ept id="p1">**</ept> tile in LCS and then clicking the <bpt id="p2">**</bpt>Hotfix requests<ept id="p2">**</ept> tab.</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Create and submit a new issue</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>If you don’t see a fix in the search results, you can create a new issue by clicking <bpt id="p1">**</bpt>Create<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>This is the same functionality that is available for previous releases and is documented in earlier procedures.</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>Work with issues in LCS</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>View issues</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>In the LCS <bpt id="p1">**</bpt>Support<ept id="p1">**</ept> tile, issues are stored as work items in the VSTS project that is associated with the LCS project.</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Specifically, issues are stored as work items of the <bpt id="p1">**</bpt>Issue<ept id="p1">**</ept> or <bpt id="p2">**</bpt>Impediment<ept id="p2">**</ept> type, depending on the type of VSTS project, in the <bpt id="p3">**</bpt>AxAndLcsGeneratedIssues<ept id="p3">**</ept> area.</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>Every work item of one of those types in that area will be included in the list of issues in the <bpt id="p1">**</bpt>Support<ept id="p1">**</ept> tile.</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>If an issue is modified in VSTS, the changes will be reflected in Support issues.</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>Issues can be assigned to any user in the VSTS project.</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>Users don't need to have access to LCS to work with issues in VSTS.</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>Go to <bpt id="p1">[</bpt>lcs.dynamics.com,<ept id="p1">](https://lcs.dynamics.com/en/)</ept> and sign in.</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>Open the LCS project that is associated with the environment that you want to view issues for.</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>Click the <bpt id="p1">**</bpt>Support<ept id="p1">**</ept> tile.</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>A list of the issues that have been created appears.</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>LCS-CPS-list<ept id="p1">](./media/lcs-cps-list-1024x243.png)](./media/lcs-cps-list.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>Edit issues</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Issues<ept id="p1">**</ept> grid, click the title of an issue.</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>If necessary, sign in to Visual Studio Team Services by using an account that has access to the VSTS project that you set up in the first section of this topic, <bpt id="p1">**</bpt>Create a Visual Studio Team Services project<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> There is an issue in VSTS, where the link to edit work items doesn't work correctly if sign-in is required.</source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>If you see the <bpt id="p1">**</bpt>Assigned to me<ept id="p1">**</ept> query after you sign in to VSTS, go back to LCS, and click the title of the issue in the issue grid again.</source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>The VSTS editor opens.</source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>Edit the issue, and then save your changes.</source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>The changes will be reflected in the <bpt id="p1">**</bpt>Support<ept id="p1">**</ept> tile.</source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>Troubleshoot issues</source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> The information in this section is not applicable to on-premises deployments.</source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>Issues that are created through the client contain metadata about the environment.</source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>When those issues are selected in the <bpt id="p1">**</bpt>Issue<ept id="p1">**</ept> grid, the <bpt id="p2">**</bpt>Troubleshoot<ept id="p2">**</ept> button becomes available.</source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>When you click <bpt id="p1">**</bpt>Troubleshoot<ept id="p1">**</ept>, the <bpt id="p2">**</bpt>Event monitoring<ept id="p2">**</ept> page opens.</source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>This page lets you access events and logs that are related to the issue.</source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>The page shows activities, error messages, and other information that has occurred within the last two hours since an issue was reported.</source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>LCS-CPS-list-troubleshoot-1024x331<ept id="p1">](./media/lcs-cps-list-troubleshoot-1024x3311-1024x331.png)](./media/lcs-cps-list-troubleshoot-1024x3311.png)</ept><ph id="ph2"> 
+</ph><bpt id="p2">[</bpt><ph id="ph3">![</ph>LCS-Monitoring-1024x419<ept id="p2">](./media/lcs-monitoring-1024x4191-1024x419.png)](./media/lcs-monitoring-1024x4191.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>Submit an issue to Microsoft</source>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>You can submit issues to Microsoft support.</source>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>When you submit an issue to Microsoft, the information and attachments in the issue can be included in the Microsoft support incident.</source>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> LCS users must have a valid Microsoft support plan to submit issues to Microsoft.</source>
+        </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>If you have trouble submitting issues to Microsoft, work with your administrator to make sure that your LCS credentials are added to or associated with your organization's support plan with Microsoft Partner Source Business Center.</source>
+        </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Issue<ept id="p1">**</ept> grid, select the issue to submit to Microsoft, and then click <bpt id="p2">**</bpt>Submit to Microsoft<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>If your account is associated with multiple support organizations, select the organization to use to create the Microsoft support incident.</source>
+        </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>Use <bpt id="p1">**</bpt>Issue search<ept id="p1">**</ept> to verify that your issue hasn't already been solved.</source>
+        </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>If <bpt id="p1">**</bpt>Issue search<ept id="p1">**</ept> doesn't provide a solution to your issue, click <bpt id="p2">**</bpt>Create incident<ept id="p2">**</ept> at the bottom of the page.</source>
+        </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>Share diagnostic data with the Microsoft support team.</source>
+        </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>By providing version information, your issues can be resolved more quickly.</source>
+        </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>Describe your issue, provide your contact information, and then click <bpt id="p1">**</bpt>Submit<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>Support settings</source>
+        </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> The information in this section is not applicable to on-premises deployments.</source>
+        </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>When you deploy Finance and Operations from Lifecycle Services, no configuration is required, because the Support tool automatically saves any issues to the same LCS project that Finance and Operations was deployed from.</source>
+        </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>To verify the LCS project that Support uses, go to <bpt id="p1">**</bpt>System administration<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Setup<ept id="p2">**</ept><ph id="ph2"> &gt; </ph><bpt id="p3">**</bpt>System parameters<ept id="p3">**</ept>, and then click <bpt id="p4">**</bpt>Help<ept id="p4">**</ept><ph id="ph3"> &gt; </ph><bpt id="p5">**</bpt>Support Contact<ept id="p5">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Configure Contact support<ept id="p1">](./media/configure-contact-support.jpg)](./media/configure-contact-support.jpg)</ept></source>
+        </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>Support plans (on-premises only)</source>
+        </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>The following customer and partner support plans are available for on-premises deployments.</source>
+        </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Customer:<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>Software assurance</source>
+        </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>Advantage/Advantage Plus</source>
+        </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>Premier</source>
+        </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Partner:<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>Partner Advantage/Partner Advantage Plus</source>
+        </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>Advanced Support for Partners</source>
+        </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>Premier</source>
+        </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>Prevent users from creating issues from the client</source>
+        </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>By default, the System user role has the privilege, <bpt id="p1">*</bpt>SysLCSCPSIssueEntry<ept id="p1">*</ept> assigned.</source>
+        </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>This privilege controls access to the <bpt id="p1">**</bpt>Contact your support team<ept id="p1">**</ept> menu item on the Help menu.</source>
+        </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>If you want to prevent users from being able to create and submit issues from the client, remove this privilege from the System user role.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

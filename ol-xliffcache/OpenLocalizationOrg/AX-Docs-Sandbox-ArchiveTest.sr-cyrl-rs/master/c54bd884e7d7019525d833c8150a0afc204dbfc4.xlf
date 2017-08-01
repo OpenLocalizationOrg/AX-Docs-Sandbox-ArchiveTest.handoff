@@ -1,0 +1,1026 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">c54bd884e7d7019525d833c8150a0afc204dbfc4</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\analytics\model-aggregate-data.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dea7c59c1a6c4ff56dfa79681d7634722622cf0b</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">36fd64a7ffd4ec47fa314636c4d97cf0149ec7e8</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Modeling and aggregate data</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This tutorial will walk you through the process of modeling aggregate data .</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Modeling and aggregate data</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This tutorial will walk you through the process of modeling aggregate data .</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Prerequisites</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This tutorial requires you to access the environment using Remote Desktop, and be provisioned as an administrator.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>For more information, see the topic named <bpt id="p1">[</bpt>Access Microsoft Dynamics 365 for Finance and Operations instances<ept id="p1">](..\dev-tools\access-instances.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Key concepts</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Aggregate measurements<ept id="p1">**</ept>, similar to <bpt id="p2">**</bpt>perspectives<ept id="p2">**</ept> and <bpt id="p3">**</bpt>Cubes<ept id="p3">**</ept> from earlier versions, enable you to model and consume aggregate data.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Key Performance Indicators (KPIs)<ept id="p1">**</ept> are a form of analytic controls that track organizational performance against the current status.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>KPIs are represented as tiles in a <bpt id="p1">**</bpt>workspace<ept id="p1">**</ept> or the <bpt id="p2">**</bpt>dashboard<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>In this tutorial, you will model a KPI in Visual Studio.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>KPIs that are modeled in Visual Studio can be modified in the client.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>A user also has the ability to model new KPIs using the client.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">**</bpt>workspace<ept id="p1">**</ept> is an overview page that is specific to a particular subject area.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Workspaces are common to all users.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>dashboard<ept id="p1">**</ept> is the default home page for each user.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Tiles<ept id="p1">**</ept> are securable objects that can be pinned to a workspace or the dashboard.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>KPIs and aggregate data that are shown on the dashboard, or a workspace, can be secured by using menu items.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Aggregate data can be consumed in building charts and other controls.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Using the model driven approach, you have the ability to create data entities by directly referencing aggregate measurements and aggregate dimensions.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>These entities are referred to as <bpt id="p1">**</bpt>Aggregate data entities<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Aggregate data entities are read-only data entities used for reporting purposes.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>The aggregate programming model<ept id="p1">**</ept> enables a developer to consume aggregate data programmatically using either X++ or C<ph id="ph1">\#</ph> code.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Data retrieved using the aggregate programming model can be used as a data source in forms.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Method expressions<ept id="p1">**</ept> enable a developer to build rich expressions using aggregate data.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Method expressions are an X++ class.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>KPIs can be modeled using method expressions, thereby eliminating the need to build MDX expressions.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Contextual BI<ept id="p1">**</ept> refers to providing required insights as part of the user experience such that the user has relevant insights to not only achieve the task at hand, but be highly-productive during the course of the day.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Embedded BI<ept id="p1">**</ept> refers to analytic content being embedded within the user experience.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Contextual BI and embedded BI teams are closely related.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Contextual BI implies the added notion that the context of analytic context revolves around the data or the task.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Self-service BI<ept id="p1">**</ept> refers to enabling a user to tweak existing and/or create new analytic content such as reports, KPIs, and dashboards.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Set up</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>If this is the first tutorial you are working on, make sure you have configured the administrator user if you are running on a local VM.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Import the tutorial project</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>If you have already imported the Fleet management tutorial project, skip to the next section.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>In Visual Studio, on the <bpt id="p1">**</bpt>Dynamics 365<ept id="p1">**</ept> menu, click <bpt id="p2">**</bpt>Import Project<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Download the Fleet Management sample from <bpt id="p1">&lt;</bpt>https://github.com/Microsoft/FMLab<ept id="p1">&gt;</ept>, save it to <bpt id="p2">**</bpt>C:<ept id="p2">**</ept>, and unzip it.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Import Project<ept id="p1">**</ept> window, next to the <bpt id="p2">**</bpt>Filename<ept id="p2">**</ept> text box, click the ellipsis button.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Select the file to import<ept id="p1">**</ept> window, browse to the location of the <bpt id="p2">**</bpt>FMLab<ept id="p2">**</ept> folder, click <bpt id="p3">**</bpt>FMTutorialDataModel.axpp<ept id="p3">**</ept>, and then click <bpt id="p4">**</bpt>Open<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Project file location<ept id="p1">**</ept> text box, enter <bpt id="p2">**</bpt>C:<ph id="ph1">\\</ph>FMLab<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Select the <bpt id="p1">**</bpt>Overwrite Elements<ept id="p1">**</ept> check box, and then click <bpt id="p2">**</bpt>OK<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Open the tutorial project</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>In Visual Studio, open the <bpt id="p1">**</bpt>FMTutorial<ept id="p1">**</ept> project.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>File<ept id="p1">**</ept> menu, point to <bpt id="p2">**</bpt>Open<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>Project/Solution<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Open Project<ept id="p1">**</ept> dialog box, browse to C:FMLabFMTutorial, and then click FMTutorial.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Open<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>FMTutorial<ept id="p1">**</ept> project appears in <bpt id="p2">**</bpt>Solution Explorer<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Use the FMTDataHelper class to load data for the Fleet Management tutorial.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, in the FMTutorial project, expand <bpt id="p2">**</bpt>Classes<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Right-click <bpt id="p1">**</bpt>FMTDataHelper<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>Set as Startup Object<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Build<ept id="p1">**</ept> menu, click <bpt id="p2">**</bpt>Rebuild Solution<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>You use the rebuild to update the timestamps of the imported artifacts.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>You can view the build progress in the <bpt id="p1">**</bpt>Output<ept id="p1">**</ept> window.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Press <bpt id="p1">**</bpt>Ctrl+F5<ept id="p1">**</ept> to run the project and load the data.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Model an aggregate measurement for rental charges</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Often, when a user asks for additional information, you get a request for one or more new reports.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Imagine that the manager of a rental car company has called and asked for a report.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>She is interested in finding out how the rental business is performing.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>She wants a report that shows rental revenue by month.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>You soon find out that she is interested in a breakdown of rental revenues.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>She wants to know whether the rental revenue is high in cases where they have sold additional services, for example, car seats, GPS, re-fueling, as opposed to the base rental charge.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>As it turns out, she suspects that specific customer groups are driving revenue up, and this is why she wanted the report in the first place.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>She insists on adding Customer group to the report.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Because the revenue must be considered in relation to the number of rentals, she doesn’t want a few large corporate rentals to skew her analysis.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>You both agree that the number of rentals needs to be shown along with revenue.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>We could represent this requirement as a set of business questions using a matrix.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Rows indicate the <bpt id="p1">**</bpt>measures<ept id="p1">**</ept> (or numbers) and the columns indicate the <bpt id="p2">**</bpt>dimensions<ept id="p2">**</ept> (or slicers).</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>An “X” in the intersection between a measure and a dimension indicates that the measure needs to be “grouped by” the dimension.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>** **</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Rental date<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Customer group<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Rental charge type<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Revenue<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>X</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>X</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>X</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Number of rentals<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>X</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>X</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>X</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Next, we will model an aggregate measurement to answer this business question.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>Add a measure group for rental charges by using an existing view</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>In this section you will add a new measure group to an existing aggregate measurement.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, expand the <bpt id="p2">**</bpt>Analytics<ept id="p2">**</ept> folder of the project, and then double-click the aggregate measurement, <bpt id="p3">**</bpt>FMTAggregateMeasurement<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>The aggregate measurement will be launched in the designer.</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Notice that the existing aggregate measurement contains two measure groups related to vehicle inventory and rental details.</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>You will create a new measure group related to rental charges.</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>FMTAggregateMeasurement<ept id="p1">](./media/fmtaggregatemeasurement.png)](./media/fmtaggregatemeasurement.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, expand the <bpt id="p2">**</bpt>Views<ept id="p2">**</ept> folder of the project, and then select the <bpt id="p3">**</bpt>FMTRentalChargeExtendedView<ept id="p3">**</ept> view.</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Drag-and-drop the <bpt id="p1">**</bpt>FMTRentalChargeExtendedView<ept id="p1">**</ept> into the root node of the <bpt id="p2">**</bpt>FMTAggregateMeasurement<ept id="p2">**</ept> aggregate measurement in the designer.</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>Notice that a new measure group is created and the values of properties have been applied as follows.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>Property</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>Value</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>Name</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>FMRentalChargeExtendedView</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>Table</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>FMRentalChargeExtendedView</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, double-click the <bpt id="p2">**</bpt>FMRentalChargeExtendedView<ept id="p2">**</ept> view.</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>When the designer form opens, expand the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> node.</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Select the <bpt id="p1">**</bpt>ExtendedAmount<ept id="p1">**</ept> and <bpt id="p2">**</bpt>RentalID<ept id="p2">**</ept> fields, and then drag-and-drop the two fields onto the <bpt id="p3">**</bpt>Measures<ept id="p3">**</ept> node of the newly created <bpt id="p4">**</bpt>FMAggregateMeasurement<ept id="p4">**</ept> measure group called <bpt id="p5">**</bpt>FMRentalChargeExtendedView<ept id="p5">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>As you drag the fields, hover your cursor over the <bpt id="p1">**</bpt>FMAggregateMeasurement<ept id="p1">**</ept> tab to access the <bpt id="p2">**</bpt>Measures<ept id="p2">**</ept> node.</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>By default, when you drag-and-drop the fields, the system assumes that you want counts of the measures.</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>In this case, you need to modify default properties for the <bpt id="p1">**</bpt>ExtendedAmount<ept id="p1">**</ept> and <bpt id="p2">**</bpt>RentalId<ept id="p2">**</ept> measures as follows:</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>Property (ExtendedAmount)</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Value</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>Default Aggregate</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Sum<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>Field</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>ExtendedAmount (no change required)</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>Name</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Revenue</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>Property (RentalId)</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>Value</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>Default Aggregate</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>DistinctCount<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>Field</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>RentalId (no change required)</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>Name</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>NumRentals</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>Next let's create another measure which calculates <bpt id="p1">**</bpt>Revenue per Rental<ept id="p1">**</ept> by copying an existing measure.</source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>Select the <bpt id="p1">**</bpt>TotalRevenue<ept id="p1">**</ept> measure.</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>Right-click and select <bpt id="p1">**</bpt>Copy<ept id="p1">**</ept> from the <bpt id="p2">**</bpt>Context<ept id="p2">**</ept> menu.</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>Select the <bpt id="p1">**</bpt>FMRentalDetails<ept id="p1">**</ept> measure group.</source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>Right-click and select paste.</source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>Rename the newly created measure to <bpt id="p1">**</bpt>RevenuePerRental<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>Modify the aggregation function to <bpt id="p1">**</bpt>Average<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>Model an aggregate dimension charge type</source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>To analyze rental revenue by the different charge types, you need to be able to slice revenue by the charge type.</source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>For this purpose, you will first model a charge type dimension.</source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, under <bpt id="p2">**</bpt>FMTutorial<ept id="p2">**</ept>, right-click <bpt id="p3">**</bpt>Analytics<ept id="p3">**</ept>, point to <bpt id="p4">**</bpt>Add<ept id="p4">**</ept>, and then click <bpt id="p5">**</bpt>New Item<ept id="p5">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Dynamics 365 Artifacts<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Analytics<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Aggregate Dimension<ept id="p3">**</ept> from the list of items.</source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Name<ept id="p1">**</ept> property, enter <bpt id="p2">**</bpt>FMTChargeType<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>This is the name of the aggregate dimension that will be created.</source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>This name must be unique.</source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>The new dimension will appear in Visual Studio.</source>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Application Explorer<ept id="p1">**</ept>, expand the <bpt id="p2">**</bpt>AOT<ept id="p2">**</ept> and click <bpt id="p3">**</bpt>Data Model<ept id="p3">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p4">**</bpt>Tables<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>Drag-and-drop the <bpt id="p1">**</bpt>FMTChargeType<ept id="p1">**</ept> table from <bpt id="p2">**</bpt>Application Explorer<ept id="p2">**</ept> onto the root node of the newly created <bpt id="p3">**</bpt>FMTChargeType<ept id="p3">**</ept> dimension in the designer.</source>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>Notice that dimension attributes and corresponding keys have been added using the AutoReport field group of the table.</source>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>Expand the <bpt id="p1">**</bpt>Attributes<ept id="p1">**</ept> node of the new dimension.</source>
+        </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>Notice that several attributes have been created for you by default.</source>
+        </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>The system has also created a dimension key based on unique indexes of the table.</source>
+        </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>You can add additional fields by dragging and dropping them into the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> node.</source>
+        </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>FMTChargeType<ept id="p1">](./media/fmtchargetype.png)](./media/fmtchargetype.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>Save the new dimension.</source>
+        </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>You may get a warning asking you to rename the field name Description to avoid the MDX reserved word.</source>
+        </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>Even though the aggregate dimension may not be deployed to SSAS in this aggregate measurement, it's possible that this dimension may be used by an aggregate measurement deployed to SSAS in the future.</source>
+        </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>To avoid potential issues in the future, rename the field name <bpt id="p1">**</bpt>Description<ept id="p1">**</ept> to <bpt id="p2">**</bpt>ChargeDescription<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>Model dimension references for customer profile and charge type dimensions</source>
+        </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>Next, create dimension references to new and existing dimensions so that revenue can be sliced by customer as well as charge type.</source>
+        </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, double-click <bpt id="p2">**</bpt>FMTAggregateMeasurement<ept id="p2">**</ept> or, if you have it open, navigate to it in the designer.</source>
+        </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, select the dimensions <bpt id="p2">**</bpt>FMTChargeType<ept id="p2">**</ept> and <bpt id="p3">**</bpt>FMTCustomerProfile<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>Drag-and-drop them into the <bpt id="p1">**</bpt>Dimensions<ept id="p1">**</ept> node of the <bpt id="p2">**</bpt>FMTRentalChargeExtendedView<ept id="p2">**</ept> measure group.</source>
+        </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>Notice that dimension references have been created along with relations.</source>
+        </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>Save changes to <bpt id="p1">**</bpt>FMTAggregateMeasurement<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>Review the property sheet for the dimension relation and notice that the <bpt id="p1">**</bpt>Use Table relations<ept id="p1">**</ept> property is set to <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>Notice that the drag-and-drop operation created relationships between the measure group dimensions <bpt id="p1">**</bpt>FMTRentalChargeExtendedView<ept id="p1">**</ept> and <bpt id="p2">**</bpt>FMTChargeType<ept id="p2">**</ept>, <bpt id="p3">**</bpt>FMTCustomerProfile<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>Review the property sheet for the dimension relation and notice that the <bpt id="p1">**</bpt>Use Table relations<ept id="p1">**</ept> property is set to <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>FMTChargeType2<ept id="p1">](./media/fmtchargetype2.png)](./media/fmtchargetype2.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>NOTE:<ept id="p1">**</ept> In platform update 1611 and later, <bpt id="p2">**</bpt>UseTableRelations<ept id="p2">**</ept> property has been removed.</source>
+        </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>When a new dimension reference is created, system will default existing relationships.</source>
+        </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>You can continue to provide an explicit relationship by changing the relationship field that was defaulted.</source>
+        </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>Providing an explicit relationship is equal to setting <bpt id="p1">**</bpt>UseTableRelationship<ept id="p1">**</ept> to <bpt id="p2">**</bpt>No<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>Expand the Dimension relations node for the <bpt id="p1">**</bpt>FMTCustomerProfile<ept id="p1">**</ept> dimension.</source>
+        </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>Notice that the <bpt id="p1">**</bpt>UseTableRelations<ept id="p1">**</ept> property is set to <bpt id="p2">**</bpt>No<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>In this case, the system has not been able to find a suitable relationship between the Measure group and dimension.</source>
+        </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>You will need to specify one manually.</source>
+        </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>Expand the <bpt id="p1">**</bpt>FMTCustomerProfile<ept id="p1">**</ept> dimension reference if you have not done so already.</source>
+        </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>Select the node <bpt id="p1">**</bpt>FMTCustomerExtendedView<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>Right-click and see the property sheet.</source>
+        </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>CustomerID<ept id="p1">**</ept> as the value for property <bpt id="p2">**</bpt>DimensionAttribute<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>Select the relationship shown below.</source>
+        </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Customer<ept id="p1">**</ept> for the property value <bpt id="p2">**</bpt>RelatedField<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>Save changes to <bpt id="p1">**</bpt>FMTAggregateMeasurement<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>FMT4<ept id="p1">](./media/fmt4.png)](./media/fmt4.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>In this scenario, we specified a relationship because the system was unable to find one.</source>
+        </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>You could also specify a different relationship if you want to override the system choice by setting <bpt id="p1">**</bpt>Use Table Relations property<ept id="p1">**</ept> to <bpt id="p2">**</bpt>No<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source>Model dimension references for the date dimension's rental start date and transaction date</source>
+        </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source>Assume that for analysis purposes, you want to enable slicing by the start date of the rental; but for accounting purposes, you want to enable slicing by the transaction date for each of the charges.</source>
+        </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source>To do this, you need to associate the rental charges measure group with two date dimensions.</source>
+        </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source>In the BI world, this pattern is known as <bpt id="p1">**</bpt>Role Playing dimensions<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>By default, a date dimension is added to the measure group.</source>
+        </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>You can rename the default name appropriately and add new date dimensions as required.</source>
+        </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source>Expand the <bpt id="p1">**</bpt>Dimensions<ept id="p1">**</ept> node of the <bpt id="p2">**</bpt>FMTRentalChargeExtendedView<ept id="p2">**</ept> measure group.</source>
+        </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source>Notice that the <bpt id="p1">**</bpt>Date<ph id="ph1">\_</ph><ept id="p1">**</ept> dimension has already been included as dimension slicers.</source>
+        </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> If the table or the view used to model the measure group is a Company-specific table, for example it contains DATAAREAID as part of the key), a <bpt id="p2">**</bpt>Company<ept id="p2">**</ept> dimension relation will be created by default.</source>
+        </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source>In this case, the view we used is not a company specific one.</source>
+        </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>FMT5<ept id="p1">](./media/fmt5.png)](./media/fmt5.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source>Select the <bpt id="p1">**</bpt>Date<ept id="p1">**</ept> dimension and specify the following properties.</source>
+        </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source>Property</source>
+        </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source>Value</source>
+        </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source>Name</source>
+        </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source>RentalStartDate</source>
+        </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source>Use Table Relations</source>
+        </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>No (This is the default – no need to change)</source>
+        </trans-unit>
+        <trans-unit id="298" translate="yes" xml:space="preserve">
+          <source>Define the table relationship.</source>
+        </trans-unit>
+        <trans-unit id="299" translate="yes" xml:space="preserve">
+          <source>Expand <bpt id="p1">**</bpt>RentalStartDate<ept id="p1">**</ept>, and then expand the <bpt id="p2">**</bpt>Date<ept id="p2">**</ept> node.</source>
+        </trans-unit>
+        <trans-unit id="300" translate="yes" xml:space="preserve">
+          <source>Select the Relationship shown.</source>
+        </trans-unit>
+        <trans-unit id="301" translate="yes" xml:space="preserve">
+          <source>Right-click and select the property sheet.</source>
+        </trans-unit>
+        <trans-unit id="302" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>StartDate<ept id="p1">**</ept> for the value of <bpt id="p2">**</bpt>Related field<ept id="p2">**</ept> property.</source>
+        </trans-unit>
+        <trans-unit id="303" translate="yes" xml:space="preserve">
+          <source>The relationship you defined should look like the following screenshot.</source>
+        </trans-unit>
+        <trans-unit id="304" translate="yes" xml:space="preserve">
+          <source>FMT6</source>
+        </trans-unit>
+        <trans-unit id="305" translate="yes" xml:space="preserve">
+          <source>Next, enable slicing of measures by the TransactionDate dimension.</source>
+        </trans-unit>
+        <trans-unit id="306" translate="yes" xml:space="preserve">
+          <source>TransactionDate is also a date dimension, so you will add another reference to the date dimension and associate that with the corresponding field that contains the transaction date.</source>
+        </trans-unit>
+        <trans-unit id="307" translate="yes" xml:space="preserve">
+          <source>When more than one date dimension is used as a slicer, each date dimension is known as a <bpt id="p1">**</bpt>Role playing date dimension<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="308" translate="yes" xml:space="preserve">
+          <source>Under the <bpt id="p1">**</bpt>FMTRentalChargeExtendedView<ept id="p1">**</ept> measure group, right-click the <bpt id="p2">**</bpt>Dimensions<ept id="p2">**</ept> node, and then click <bpt id="p3">**</bpt>New Dimension<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="309" translate="yes" xml:space="preserve">
+          <source>A new dimension will be added to the list of dimension references.</source>
+        </trans-unit>
+        <trans-unit id="310" translate="yes" xml:space="preserve">
+          <source>Specify the following properties for the new dimension reference.</source>
+        </trans-unit>
+        <trans-unit id="311" translate="yes" xml:space="preserve">
+          <source>Property Value Dimension Name <bpt id="p1">**</bpt>NOTE:<ept id="p1">**</ept> If you select the Dimension Name in the wrong order, it will reset the other values you already set.</source>
+        </trans-unit>
+        <trans-unit id="312" translate="yes" xml:space="preserve">
+          <source>Date<ph id="ph1">\_</ph> Name TransactionDate Use table relations No Tags RolePlayingDate; Fleet Notice the new property called <bpt id="p1">**</bpt>Tags<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="313" translate="yes" xml:space="preserve">
+          <source>This property enables the discovery of patterns within code and metadata from within the Visual studio environment.</source>
+        </trans-unit>
+        <trans-unit id="314" translate="yes" xml:space="preserve">
+          <source>You can enter any number of tags and they can be searched using the hot keys or the <bpt id="p1">**</bpt>Dynamics 365<ept id="p1">**</ept> menu in Visual Studio.</source>
+        </trans-unit>
+        <trans-unit id="315" translate="yes" xml:space="preserve">
+          <source>Define the table relationship.</source>
+        </trans-unit>
+        <trans-unit id="316" translate="yes" xml:space="preserve">
+          <source>Right-click <bpt id="p1">**</bpt>TransactionDate<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>New Relation<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="317" translate="yes" xml:space="preserve">
+          <source>You do not need to specify any properties in the DimensionsRelation at this point.</source>
+        </trans-unit>
+        <trans-unit id="318" translate="yes" xml:space="preserve">
+          <source>Expand <bpt id="p1">**</bpt>BIDateDimensionValue<ept id="p1">**</ept>, and then select the <bpt id="p2">**</bpt>Relationship<ept id="p2">**</ept> <bpt id="p3">**</bpt>Constraint<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="319" translate="yes" xml:space="preserve">
+          <source>Right-click and select the property sheet</source>
+        </trans-unit>
+        <trans-unit id="320" translate="yes" xml:space="preserve">
+          <source>Specify the following properties for the BIDateDimensionsView relation constraint.</source>
+        </trans-unit>
+        <trans-unit id="321" translate="yes" xml:space="preserve">
+          <source>Property</source>
+        </trans-unit>
+        <trans-unit id="322" translate="yes" xml:space="preserve">
+          <source>Value</source>
+        </trans-unit>
+        <trans-unit id="323" translate="yes" xml:space="preserve">
+          <source>Field</source>
+        </trans-unit>
+        <trans-unit id="324" translate="yes" xml:space="preserve">
+          <source>Date</source>
+        </trans-unit>
+        <trans-unit id="325" translate="yes" xml:space="preserve">
+          <source>Related Field</source>
+        </trans-unit>
+        <trans-unit id="326" translate="yes" xml:space="preserve">
+          <source>TranDate</source>
+        </trans-unit>
+        <trans-unit id="327" translate="yes" xml:space="preserve">
+          <source>The relationship you defined should look like the following screenshot.</source>
+        </trans-unit>
+        <trans-unit id="328" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>FMY7<ept id="p1">](./media/fmy7.png)](./media/fmy7.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="329" translate="yes" xml:space="preserve">
+          <source>Save the aggregate measurement.</source>
+        </trans-unit>
+        <trans-unit id="330" translate="yes" xml:space="preserve">
+          <source>Deploy the newly generated aggregate measurement</source>
+        </trans-unit>
+        <trans-unit id="331" translate="yes" xml:space="preserve">
+          <source>Now that you have completed modeling the aggregate measurement, you can deploy the aggregate measurement and continue with building KPIs and visualizations.</source>
+        </trans-unit>
+        <trans-unit id="332" translate="yes" xml:space="preserve">
+          <source>You have 2 deployment choices as shown below.</source>
+        </trans-unit>
+        <trans-unit id="333" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Option<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="334" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Considerations<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="335" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>In-memory real-time<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="336" translate="yes" xml:space="preserve">
+          <source>This option will leverage the In-memory Column store indexes of SQL Server database to deploy Aggregate Measurements.</source>
+        </trans-unit>
+        <trans-unit id="337" translate="yes" xml:space="preserve">
+          <source>This option is recommended when the Aggregate measurement is used for embedded analytics within the client where you need <bpt id="p1">**</bpt>real-time analytics<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="338" translate="yes" xml:space="preserve">
+          <source>For an overview of concepts on real-time analytics, refer to document here: &lt;analytics.md&gt;</source>
+        </trans-unit>
+        <trans-unit id="339" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Stage in Entity Store<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="340" translate="yes" xml:space="preserve">
+          <source>This option leverages Entity store, the operational data store that enables <bpt id="p1">**</bpt>near real-time PowerBI reporting<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="341" translate="yes" xml:space="preserve">
+          <source>If you choose this option, Aggregate measurement can be deployed to Entity store and you can schedule the data to be refreshed periodically.</source>
+        </trans-unit>
+        <trans-unit id="342" translate="yes" xml:space="preserve">
+          <source>For an overview of this approach, refer to the blog post here: <bpt id="p1">[</bpt>https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/ <ept id="p1">](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/)</ept></source>
+        </trans-unit>
+        <trans-unit id="343" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>NOTE:<ept id="p1">**</ept> <bpt id="p2">**</bpt>SSAS Cube<ept id="p2">**</ept> option is no longer supported when modeling aggregate measurements.</source>
+        </trans-unit>
+        <trans-unit id="344" translate="yes" xml:space="preserve">
+          <source>Select the <bpt id="p1">**</bpt>FMTAggregateMeasurement<ept id="p1">**</ept> node.</source>
+        </trans-unit>
+        <trans-unit id="345" translate="yes" xml:space="preserve">
+          <source>Right-click and select <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="346" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>InMemoryRealTime<ept id="p1">**</ept> as the value for the property <bpt id="p2">**</bpt>Usage<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="347" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>FMT9<ept id="p1">](./media/fmt9.png)](./media/fmt9.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="348" translate="yes" xml:space="preserve">
+          <source>InMemoryRealTime aggregate models are deployed to SQL Server using Non-Clustered Column Store Index (NCCI) technology.</source>
+        </trans-unit>
+        <trans-unit id="349" translate="yes" xml:space="preserve">
+          <source>NCCIs is an in-memory technology that enables analytical and operational workloads to be served from SQL server database.</source>
+        </trans-unit>
+        <trans-unit id="350" translate="yes" xml:space="preserve">
+          <source>NCCI indexes can be defined on tables similar to any other index.</source>
+        </trans-unit>
+        <trans-unit id="351" translate="yes" xml:space="preserve">
+          <source>While NCCI indexes can be defined manually, framework has the ability to analyze index requirements and add them to underlying tables where necessary.</source>
+        </trans-unit>
+        <trans-unit id="352" translate="yes" xml:space="preserve">
+          <source>Right-click <bpt id="p1">**</bpt>FMAggregateMeasurement<ept id="p1">**</ept> in Solution Explorer, and then click <bpt id="p2">**</bpt>Add Column store indices option<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="353" translate="yes" xml:space="preserve">
+          <source>You will notice several new indexes being added by the system.</source>
+        </trans-unit>
+        <trans-unit id="354" translate="yes" xml:space="preserve">
+          <source>Save and build the project.</source>
+        </trans-unit>
+        <trans-unit id="355" translate="yes" xml:space="preserve">
+          <source>InMemoryRealTime aggregate models do not require data processing as the models are queried real-time.</source>
+        </trans-unit>
+        <trans-unit id="356" translate="yes" xml:space="preserve">
+          <source>If you have not enabled database synchronization along with the build, manually synchronize the database.</source>
+        </trans-unit>
+        <trans-unit id="357" translate="yes" xml:space="preserve">
+          <source>Model a KPI to show revenue per rental</source>
+        </trans-unit>
+        <trans-unit id="358" translate="yes" xml:space="preserve">
+          <source>Model a KPI in Visual Studio</source>
+        </trans-unit>
+        <trans-unit id="359" translate="yes" xml:space="preserve">
+          <source>Model a KPI definition in Visual Studio by using the aggregate measurement you defined above.</source>
+        </trans-unit>
+        <trans-unit id="360" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, right-click <bpt id="p2">**</bpt>FMTutorial<ept id="p2">**</ept>, point to <bpt id="p3">**</bpt>Add<ept id="p3">**</ept>, and then click <bpt id="p4">**</bpt>New Item<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="361" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Dynamics 365 Artifacts<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Analytics<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Key Performance Indicator<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="362" translate="yes" xml:space="preserve">
+          <source>Enter FMTRevenuePerRental as the name of the KPI, and then click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="363" translate="yes" xml:space="preserve">
+          <source>The name must be unique across KPIs.</source>
+        </trans-unit>
+        <trans-unit id="364" translate="yes" xml:space="preserve">
+          <source>The KPI is created.</source>
+        </trans-unit>
+        <trans-unit id="365" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>FMTRevenuePerRental<ept id="p1">**</ept>, and specify the <bpt id="p2">**</bpt>Measurement<ept id="p2">**</ept> Leave the default values for the other properties.</source>
+        </trans-unit>
+        <trans-unit id="366" translate="yes" xml:space="preserve">
+          <source>Property</source>
+        </trans-unit>
+        <trans-unit id="367" translate="yes" xml:space="preserve">
+          <source>Value</source>
+        </trans-unit>
+        <trans-unit id="368" translate="yes" xml:space="preserve">
+          <source>Measurement</source>
+        </trans-unit>
+        <trans-unit id="369" translate="yes" xml:space="preserve">
+          <source>FMTAggregateMeasurement</source>
+        </trans-unit>
+        <trans-unit id="370" translate="yes" xml:space="preserve">
+          <source>Bad Threshold</source>
+        </trans-unit>
+        <trans-unit id="371" translate="yes" xml:space="preserve">
+          <source>0</source>
+        </trans-unit>
+        <trans-unit id="372" translate="yes" xml:space="preserve">
+          <source>Good Threshold</source>
+        </trans-unit>
+        <trans-unit id="373" translate="yes" xml:space="preserve">
+          <source>0</source>
+        </trans-unit>
+        <trans-unit id="374" translate="yes" xml:space="preserve">
+          <source>Scoring Pattern</source>
+        </trans-unit>
+        <trans-unit id="375" translate="yes" xml:space="preserve">
+          <source>MoreIsBetter</source>
+        </trans-unit>
+        <trans-unit id="376" translate="yes" xml:space="preserve">
+          <source>Show Goal</source>
+        </trans-unit>
+        <trans-unit id="377" translate="yes" xml:space="preserve">
+          <source>Yes</source>
+        </trans-unit>
+        <trans-unit id="378" translate="yes" xml:space="preserve">
+          <source>Show Status and Trend</source>
+        </trans-unit>
+        <trans-unit id="379" translate="yes" xml:space="preserve">
+          <source>Yes</source>
+        </trans-unit>
+        <trans-unit id="380" translate="yes" xml:space="preserve">
+          <source>Threshold Type</source>
+        </trans-unit>
+        <trans-unit id="381" translate="yes" xml:space="preserve">
+          <source>Value</source>
+        </trans-unit>
+        <trans-unit id="382" translate="yes" xml:space="preserve">
+          <source>Define the expression for the KPI value.</source>
+        </trans-unit>
+        <trans-unit id="383" translate="yes" xml:space="preserve">
+          <source>Under <bpt id="p1">**</bpt>FMTRevenuePerRental<ept id="p1">**</ept>, select <bpt id="p2">**</bpt>Value<ept id="p2">**</ept>, and specify the following properties.</source>
+        </trans-unit>
+        <trans-unit id="384" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: The values must be entered in the order they appear in the table:</source>
+        </trans-unit>
+        <trans-unit id="385" translate="yes" xml:space="preserve">
+          <source>Property</source>
+        </trans-unit>
+        <trans-unit id="386" translate="yes" xml:space="preserve">
+          <source>Value</source>
+        </trans-unit>
+        <trans-unit id="387" translate="yes" xml:space="preserve">
+          <source>Value Type</source>
+        </trans-unit>
+        <trans-unit id="388" translate="yes" xml:space="preserve">
+          <source>BasedOnMeasure</source>
+        </trans-unit>
+        <trans-unit id="389" translate="yes" xml:space="preserve">
+          <source>Measure Group</source>
+        </trans-unit>
+        <trans-unit id="390" translate="yes" xml:space="preserve">
+          <source>FMTRentalChargeExtendedView</source>
+        </trans-unit>
+        <trans-unit id="391" translate="yes" xml:space="preserve">
+          <source>Measure</source>
+        </trans-unit>
+        <trans-unit id="392" translate="yes" xml:space="preserve">
+          <source>RevenuePerRental</source>
+        </trans-unit>
+        <trans-unit id="393" translate="yes" xml:space="preserve">
+          <source>Define the expression for the KPI Goal.</source>
+        </trans-unit>
+        <trans-unit id="394" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Goal<ept id="p1">**</ept>, and specify the following properties.</source>
+        </trans-unit>
+        <trans-unit id="395" translate="yes" xml:space="preserve">
+          <source>Property</source>
+        </trans-unit>
+        <trans-unit id="396" translate="yes" xml:space="preserve">
+          <source>Value</source>
+        </trans-unit>
+        <trans-unit id="397" translate="yes" xml:space="preserve">
+          <source>Goal Type</source>
+        </trans-unit>
+        <trans-unit id="398" translate="yes" xml:space="preserve">
+          <source>BasedOnValue</source>
+        </trans-unit>
+        <trans-unit id="399" translate="yes" xml:space="preserve">
+          <source>Value</source>
+        </trans-unit>
+        <trans-unit id="400" translate="yes" xml:space="preserve">
+          <source>250</source>
+        </trans-unit>
+        <trans-unit id="401" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: You could have defined a goal based on an aggregate measure as well.</source>
+        </trans-unit>
+        <trans-unit id="402" translate="yes" xml:space="preserve">
+          <source>In this case, we will define a number as the goal.</source>
+        </trans-unit>
+        <trans-unit id="403" translate="yes" xml:space="preserve">
+          <source>6.</source>
+        </trans-unit>
+        <trans-unit id="404" translate="yes" xml:space="preserve">
+          <source>Save the KPI definition.</source>
+        </trans-unit>
+        <trans-unit id="405" translate="yes" xml:space="preserve">
+          <source>Preview KPI in client</source>
+        </trans-unit>
+        <trans-unit id="406" translate="yes" xml:space="preserve">
+          <source>Next you will preview the KPI definition in the client.</source>
+        </trans-unit>
+        <trans-unit id="407" translate="yes" xml:space="preserve">
+          <source>Right-click <bpt id="p1">**</bpt>FMTutorial<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>Re-Build<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="408" translate="yes" xml:space="preserve">
+          <source>On completion of the build, select the <bpt id="p1">**</bpt>Synchronize ... database<ept id="p1">**</ept> option</source>
+        </trans-unit>
+        <trans-unit id="409" translate="yes" xml:space="preserve">
+          <source>Open Internet Explorer, and navigate to your Rainier instance base URL.</source>
+        </trans-unit>
+        <trans-unit id="410" translate="yes" xml:space="preserve">
+          <source>Navigate to the <bpt id="p1">**</bpt>Reservation Management workspace<ept id="p1">**</ept> under <bpt id="p2">**</bpt>App links<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph>** Fleet Management** <ph id="ph2">&amp;gt;</ph>** Workspaces <ph id="ph3">&amp;gt;</ph> Reservation Management**.</source>
+        </trans-unit>
+        <trans-unit id="411" translate="yes" xml:space="preserve">
+          <source>Select the KPI tile <bpt id="p1">**</bpt>Total Revenue<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="412" translate="yes" xml:space="preserve">
+          <source>KPI details page for T<bpt id="p1">**</bpt>otal Revenue<ept id="p1">**</ept> KPI will be displayed.</source>
+        </trans-unit>
+        <trans-unit id="413" translate="yes" xml:space="preserve">
+          <source>To navigate to the newly defined KPI, select the <bpt id="p1">**</bpt>Show list<ept id="p1">**</ept> icon on top left.</source>
+        </trans-unit>
+        <trans-unit id="414" translate="yes" xml:space="preserve">
+          <source>From the list of KPIs shown, select <bpt id="p1">**</bpt>FMTRevenuePerRental<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="415" translate="yes" xml:space="preserve">
+          <source>Notice that the KPI details page for the new KPI, <bpt id="p1">**</bpt>FMTRevenuePerRental<ept id="p1">**</ept> is shown.</source>
+        </trans-unit>
+        <trans-unit id="416" translate="yes" xml:space="preserve">
+          <source>Even though we did not define trend charts, the system created a set of charts based on the limited metadata defined by the developer.</source>
+        </trans-unit>
+        <trans-unit id="417" translate="yes" xml:space="preserve">
+          <source>Users have the ability to modify KPI definitions and create new ones in the client.</source>
+        </trans-unit>
+        <trans-unit id="418" translate="yes" xml:space="preserve">
+          <source>Next, you will modify the newly defined KPI.</source>
+        </trans-unit>
+        <trans-unit id="419" translate="yes" xml:space="preserve">
+          <source>6.</source>
+        </trans-unit>
+        <trans-unit id="420" translate="yes" xml:space="preserve">
+          <source>To demonstrate this capability, you can change the KPI Goal.</source>
+        </trans-unit>
+        <trans-unit id="421" translate="yes" xml:space="preserve">
+          <source>Click the <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept> button on top left, and enter 900 as the Goal Value.</source>
+        </trans-unit>
+        <trans-unit id="422" translate="yes" xml:space="preserve">
+          <source>7.</source>
+        </trans-unit>
+        <trans-unit id="423" translate="yes" xml:space="preserve">
+          <source>Modify the threshold properties as follows:</source>
+        </trans-unit>
+        <trans-unit id="424" translate="yes" xml:space="preserve">
+          <source>Property</source>
+        </trans-unit>
+        <trans-unit id="425" translate="yes" xml:space="preserve">
+          <source>Value</source>
+        </trans-unit>
+        <trans-unit id="426" translate="yes" xml:space="preserve">
+          <source>Threshold Type</source>
+        </trans-unit>
+        <trans-unit id="427" translate="yes" xml:space="preserve">
+          <source>Percentage</source>
+        </trans-unit>
+        <trans-unit id="428" translate="yes" xml:space="preserve">
+          <source>Red if less than</source>
+        </trans-unit>
+        <trans-unit id="429" translate="yes" xml:space="preserve">
+          <source>90</source>
+        </trans-unit>
+        <trans-unit id="430" translate="yes" xml:space="preserve">
+          <source>Green if more than</source>
+        </trans-unit>
+        <trans-unit id="431" translate="yes" xml:space="preserve">
+          <source>110</source>
+        </trans-unit>
+        <trans-unit id="432" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Save<ept id="p1">**</ept> on the bottom left to save changes.</source>
+        </trans-unit>
+        <trans-unit id="433" translate="yes" xml:space="preserve">
+          <source>Notice that the KPI status color has changed in the KPI tile shown.</source>
+        </trans-unit>
+        <trans-unit id="434" translate="yes" xml:space="preserve">
+          <source>See also</source>
+        </trans-unit>
+        <trans-unit id="435" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Adding BI to workspaces<ept id="p1">](add-bi-workspaces.md)</ept></source>
+        </trans-unit>
+        <trans-unit id="436" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Adding contextual BI to forms<ept id="p1">](add-contextual-bi-forms.md)</ept></source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

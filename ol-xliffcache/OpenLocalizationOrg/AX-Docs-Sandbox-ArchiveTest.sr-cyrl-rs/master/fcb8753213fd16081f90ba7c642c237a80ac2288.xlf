@@ -1,0 +1,276 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">fcb8753213fd16081f90ba7c642c237a80ac2288</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\dev-tools\lock-models.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">38618e81967844e11bf62ff58b5c09aba8e670b7</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">7596ddb97067e1ca6df520bb3081cf28311e8903</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Turn off model customization and deprecate functionality</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This article describes the process of disabling customization of a model.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>By following this process, you make it ineligible for over-layering.</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Developers will still be able to extend that model.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This article also describes how you can deprecate obsolete functionality.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Turn off model customization and deprecate functionality</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>This article describes the process of disabling customization of a model.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>By following this process, you make it ineligible for over-layering.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Developers will still be able to extend that model.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>This article also describes how you can deprecate obsolete functionality.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Typically, you build an application in models that depend on other models.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>At the very least, your models will depend on the Application Platform model that is provided.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition runs on the Microsoft Azure cloud platform.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>In other words, it runs off-premises, in data centers that are managed by Microsoft.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Because we can’t support changes from a large number of vendors in the fundamental models, your applications can no longer over-layer artifacts in those models.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Therefore, to build your applications, you must use extensions instead of over-layering.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Even though all the artifacts in the models that you depend on are available for documentation purposes, you can’t compile someone else’s intellectual property and run it in the cloud.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Locking customizations</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Transitioning a model from over-layering to extensions involves three steps:</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>You set a property that causes instances of over-layering to be flagged as warnings.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>This step is sometimes known as “soft-locking.”</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>You have a period when you can burn down the warnings by using extensions instead of over-layering.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>When you have resolved all the warnings, it’s time to make over-layering a hard error that causes compilation to fail.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>This step is known as “hard-locking.”</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>When a model is hard-locked, the tooling that is required for over-layering can’t be used for that model.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Additionally, you can’t have more than one model in a given package.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Currently, there is no tooling that you can use to manipulate the property that disables customizations.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Instead, you must add the <bpt id="p1">**</bpt>Customization<ept id="p1">**</ept> XML element to the model descriptor file, as shown in the following example.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>You can find the model descriptor file at ...<ph id="ph1">\\</ph><ph id="ph2">&amp;lt;</ph>packages<ph id="ph3">&amp;gt;</ph><ph id="ph4">\\</ph><ph id="ph5">&amp;lt;</ph>package name<ph id="ph6">&amp;gt;</ph><ph id="ph7">\\</ph>Descriptor<ph id="ph8">\\</ph><ph id="ph9">&amp;lt;</ph>model name<ph id="ph10">&amp;gt;</ph>.xml.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>There are three levels of customization settings:</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Allow customizations<ept id="p1">**</ept> – If the <bpt id="p2">**</bpt>Customization<ept id="p2">**</ept> element is omitted, or if it’s provided but the text <bpt id="p3">**</bpt>Allow<ept id="p3">**</ept> is used inside it, there are no restrictions.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Soft-locking<ept id="p1">**</ept> – If you require soft-locking, use the text <bpt id="p2">**</bpt>AllowAndWarn<ept id="p2">**</ept> inside the <bpt id="p3">**</bpt>Customization<ept id="p3">**</ept> element.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Hard-locking<ept id="p1">**</ept> – To disable customization of the model, use the text <bpt id="p2">**</bpt>DoNotAllow<ept id="p2">**</ept> inside the <bpt id="p3">**</bpt>Customization<ept id="p3">**</ept> element, as shown in the preceding example.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> Elements in the descriptor file must be listed in alphabetical order.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Backward compatibility of the platform</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>There is a requirement that your application must continue to run even if a newer version of a dependent platform model is installed.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Therefore, we enforce strict requirements for backward compatibility on all the changes that we make in those platform models.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>We can clarify this point through an example.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>For this example, you have a base model M that has the following class.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>In your model that depends on model M, you want to take advantage of all the great functionality that the <bpt id="p1">**</bpt>DoSomething<ept id="p1">**</ept> class offers.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Therefore, you have the following code.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Later, your vendor (perhaps Microsoft) releases a new, updated version of the model that you depend on (model M).</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>When this model is released, we must support the public interface, because things must run without recompilation.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Suppose that we changed the method signature by adding another parameter, as shown here.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>In this case, we break the app.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>The common language runtime (CLR) can’t call the method, because the parameter profile that is assumed in the call isn’t the same as the parameter profile of the callee (the calling code provided one parameter, but two are now required).</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Therefore, it’s a good idea to limit what is publicly consumable.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>If something is private, nobody can use it from outside your model.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>However, another option is to make the artifact internal.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>If you apply the <bpt id="p1">**</bpt>internal<ept id="p1">**</ept> modifier to a class or method, the artifact is visible only inside your model and can’t be reached from the outside.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Essentially, you must assume that anything that isn’t internal or private will be used from outside your model.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Therefore, you must support it forever.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Never make anything public or protected unless it absolutely must be public or protected, and use interfaces to hide implementation details that aren’t relevant outside the boundary of your model.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>There is no way to mark metadata (as opposed to code) with the internal visibility specifier.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Testing internal functionality</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>By limiting the surface area of your model, you help guarantee that you will be able to fix issues in your models that do not allow customizations, and that the application will run smoothly.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>However, you might argue that, by making things internal, you limit the ability to test your code.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>To remedy this situation, you can inform your test packages about the packages that they should test.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>In other words, the test packages can access internal things.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>To implement this solution, you edit the descriptor file, as shown in the following example.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>You can provide any number of external packages by including them in the <bpt id="p1">**</bpt>InternalsVisibleTo<ept id="p1">**</ept> element.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>This information is provided for the package that contains the code to test, not for the package that contains the testing code.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>In other words, the package determines who it shares information with.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> The elements under <bpt id="p2">**</bpt>AxModelInfo<ept id="p2">**</ept> must be in alphabetical order.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Deprecating functionality</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Deprecating methods</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Sometimes, you no longer want to support source code that is public.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>As we mentioned earlier, you should not remove an artifact from the code unless that artifact is private or internal, because there might be users who rely on it.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Instead, you can use the <bpt id="p1">**</bpt>SysObsoleteAttribute<ept id="p1">**</ept> attribute to specify that consumers should no longer use that artifact.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>We recommend that you mark things as obsolete in two phases:</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Specify that using the artifact is flagged as a warning.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>After one or more release cycles, make using the artifact an error.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>In the following example, the <bpt id="p1">**</bpt>DoSomething<ept id="p1">**</ept> method is defined in the first release of a model.</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>In the second release, you’ve determined that there is a better way to accomplish something.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Therefore, you add the new implementation and make the old implementation obsolete.</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>All your existing customers will continue to call the old version.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>This situation is fine, but the customers won’t be able to take advantage of the benefits of the new version.</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Anyone who codes against your class will receive a build warning together with the message that you provided in the <bpt id="p1">**</bpt>SysObsolete<ept id="p1">**</ept> attribute argument.</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Presumably, these clients will update their code so that it uses the new method.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>As time passes, more clients will move to the new version.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Therefore, at some point, it will make sense for you to make coding against the method a hard error.</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Again, for the reasons that we mentioned earlier, you may never be able to get rid of the old method completely, because it was not made private or internal.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Deprecating metadata</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>For deprecating model elements (tables, data entities, EDTs, Enums, ...etc.), use the property <bpt id="p1">**</bpt>IsObsolete<ept id="p1">**</ept> that is available on all model element types.</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>IsObsolete<ept id="p1">**</ept> is also available on table, view, and data entity fields.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>When you set <bpt id="p1">**</bpt>IsObsolete<ept id="p1">**</ept> to Yes, references to that element or field will cause compilation warnings.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,174 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2b54fb935c31f5b34bb21acd3b67933380f820f3</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">retail\dev-itpro\retail-sdk\loyalty-extension-sample.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">08fc8fbe5eec18a77f8ec4aac0e4fb245309b189</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ef1b777241568a9966321167c604614fe052df37</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Loyalty extension sample</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic explains how to set up the system so that customers can both earn loyalty points and pay by using loyalty points in the same transaction.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Loyalty extension sample</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Scenario</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>A retailer wants customers to be able to earn loyalty points and pay by using loyalty points in a single transaction.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Scenario details</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>The retailer has set up a loyalty scheme for the channel and associated that scheme with a loyalty program.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>The loyalty scheme includes some earning and redemption rules.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>The retailer wants customers to be able to partially pay a transaction amount by using their loyalty points.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>The customers should then be able to earn loyalty points for the remaining transaction amount that they pay by using other payment methods.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Assumptions</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Because of the flexibility that the loyalty setup provides, this scenario can quickly become very complex.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>We have made some assumptions to reduce the complexity of this sample.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>However, these assumptions aren't far removed from the real-world examples.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Here are the assumptions:</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>No tiers are associated with the loyalty program.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>There is a single loyalty scheme and a single loyalty reward point type.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>There is a single earning rule that applies to all product categories.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>For example, this rule might specify that, for every $1 that the customer spends, he or she earns 0.1 reward point.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>There is a single redemption rule that applies to all product categories.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>For example, this rule might specify that one reward point is equivalent to $1.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>The earning and redemption rules that are mentioned here are just examples.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>For this sample, we have hard-coded the values.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>For a production scenario, the values should be read from the database instead.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Customization approach</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>We implement this customization in two steps.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>In step 1, points will be earned as though loyalty points weren't used in the transaction.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Then, in step 2, the extra points that were earned will be reduced, based on the points that were redeemed.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>There are six service requests for the loyalty feature:</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>GetLoyaltyCardStatusServiceRequest</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>CalculateLoyaltyRewardPointsServiceRequest</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>IssueLoyaltyCardServiceRequest</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>FillInLoyaltyRewardPointLinesForSalesServiceRequest</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>FillInLoyaltyRewardPointLinesForReturnServiceRequest</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>FillInLoyaltyRewardPointLinesForEarnOrDeductServiceRequest</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>To calculate the reward points for a cash-and-carry transaction, the system uses <bpt id="p1">**</bpt>FillInLoyaltyRewardPointLinesForSalesServiceRequest<ept id="p1">**</ept> for sales transaction lines.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>This request, in turn, uses <bpt id="p1">**</bpt>FillInLoyaltyRewardPointLinesForEarnOrDeductServiceRequest<ept id="p1">**</ept> to do the actual reward calculation.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Similarly, the system uses <bpt id="p1">**</bpt>FillInLoyaltyRewardPointLinesForReturnServiceRequest<ept id="p1">**</ept> for return transaction lines, and this request also uses <bpt id="p2">**</bpt>FillInLoyaltyRewardPointLinesForEarnOrDeductServiceRequest<ept id="p2">**</ept> to do the actual reward calculation.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>In the out-of-box implementation of the loyalty feature, customers can't both redeem and earn loyalty points in the same transaction.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>In other words, if the sales transaction has a tender line for the loyalty card, <bpt id="p1">**</bpt>FillInLoyaltyRewardPointLinesForSalesServiceRequest<ept id="p1">**</ept> doesn't call <bpt id="p2">**</bpt>FillInLoyaltyRewardPointLinesForEarnOrDeductServiceRequest<ept id="p2">**</ept> to calculate the reward points.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>To enable loyalty points to be redeemed and earned in the same transaction, we will work with one service request,  <bpt id="p1">**</bpt>FillInLoyaltyRewardPointLinesForSalesServiceRequest<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Step 1</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>For our scenario, we must implement <bpt id="p1">**</bpt>FillInLoyaltyRewardPointLinesForSalesServiceRequest<ept id="p1">**</ept> in such a way that it always calls <bpt id="p2">**</bpt>FillInLoyaltyRewardPointLinesForEarnOrDeductServiceRequest<ept id="p2">**</ept> to calculate the reward points.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>However, this change will cause the system to calculate extra earned points, based on the amount that the customer pays by using loyalty points.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Therefore, we must be able to reduce the earned points by an appropriate amount.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>This adjustment is done in step 2.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Step 2</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>We take advantage of the post trigger mechanism that the extensibility framework provides on <bpt id="p1">**</bpt>FillInLoyaltyRewardPointLinesForSalesServiceRequest<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>In the post trigger, we will use the earning and redemption rules to determine how many extra points were earned for each reward point that was redeemed.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>We will then subtract those extra points to get the correct amount.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Implement FillInLoyaltyRewardPointLinesForSalesServiceRequest</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Implement the post trigger for FillInLoyaltyRewardPointLinesForSalesServiceRequest</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

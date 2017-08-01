@@ -1,0 +1,768 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2cc9890f8171e9cc00af27ce5a9c4b360886a469</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\user-interface\build-customer-form.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">d27aab7677d5c6104a605aa01b8a3e1ea92c6c1d</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">234eeb2accb139255894777692b277cf3cfc85ab</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Build the Customer form</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>In this lab you’ll create a Master Details form and apply the appropriate form pattern and subpatterns.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>A Master Details form shows primary data that has many fields.</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>For example, the form that you create will show customer information.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Build the Customer form</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>In this lab you’ll create a Master Details form and apply the appropriate form pattern and subpatterns.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>A Master Details form shows primary data that has many fields.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>For example, the form that you create will show customer information.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Prerequisites</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>For this tutorial, you will need to access the environment using Remote Desktop, and be provisioned as an administrator on the instance.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Access Instances<ept id="p1">](..\dev-tools\access-instances.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Overview</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>To create the form, you’ll start from the existing form, <bpt id="p1">**</bpt>FmtCustomer<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>The form represents the old Master Details template.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>As a part of the tutorial, you’ll apply the Master Details pattern, which will enforce a consistent structure for this form type.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>The following illustration shows the <bpt id="p1">**</bpt>FmtCustomer<ept id="p1">**</ept> starting artifact.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>CustForm1<ept id="p1">](./media/custform1.png)](./media/custform1.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Key concepts</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Create a Master Details form.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Apply a form pattern to a form.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Use the Visual Studio pattern add-ins to get information about form/model pattern coverage.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Apply subpatterns to form controls.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>View the form using Visual Studio and a browser.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Determine the amount of remaining patterns work in a model.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Setup</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Import the tutorial project and transactional data</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Use Visual Studio to import the tutorial project.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>The tutorial project includes the artifacts you will use to complete this tutorial.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Use Visual Studio to open the FMTutorial project and load the data for the tutorial.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>You will use the FMTDataHelper class to load data for the Fleet Management tutorial.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>If this is the first tutorial you are working on, review <bpt id="p1">[</bpt>Access Instances<ept id="p1">](..\dev-tools\access-instances.md)</ept> and make sure you provision your administrator user if you’re working on a local VM.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Download the Fleet Management sample from <bpt id="p1">&lt;</bpt>https://github.com/Microsoft/FMLab<ept id="p1">&gt;</ept>, save it to <bpt id="p2">**</bpt>C:<ept id="p2">**</ept>, and unzip it.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>On the desktop, double-click the Visual Studio shortcut to open the development environment.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Finance and Operations<ept id="p1">**</ept> menu, click <bpt id="p2">**</bpt>Import Project<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Import Project<ept id="p1">**</ept> window, next to the <bpt id="p2">**</bpt>Filename<ept id="p2">**</ept> text box, click the ellipsis button.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Select the file to import<ept id="p1">**</ept> window, browse to <bpt id="p2">**</bpt>C: <ph id="ph1">\\</ph>FMLab<ept id="p2">**</ept>, click FMTutorialDataModel.axpp, and then click <bpt id="p3">**</bpt>Open<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Project file location<ept id="p1">**</ept> text box, enter <bpt id="p2">**</bpt>C:<ph id="ph1">\\</ph>FMLab<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Select the <bpt id="p1">**</bpt>Overwrite Elements<ept id="p1">**</ept> option and the <bpt id="p2">**</bpt>Current solution<ept id="p2">**</ept> radio button.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>The following illustration shows the completed <bpt id="p1">**</bpt>Import Project<ept id="p1">**</ept> dialog box.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>CustForm2<ept id="p1">](./media/custform2.png)](./media/custform2.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, expand <bpt id="p2">**</bpt>Classes<ept id="p2">**</ept>, and under the <bpt id="p3">**</bpt>FMTutorial<ept id="p3">**</ept> project, right-click <bpt id="p4">**</bpt>FMTDataHelper<ept id="p4">**</ept>, and then click <bpt id="p5">**</bpt>Set as Startup Object<ept id="p5">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Build<ept id="p1">**</ept> menu, click <bpt id="p2">**</bpt>Rebuild Solution<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>You use the rebuild to make sure all files in the project are built regardless of timestamps.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>You can view the build progress in the Output window.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>After the build completes, press <bpt id="p1">**</bpt>Ctrl+F5<ept id="p1">**</ept> to run the project.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>The browser will open and run the class that imports the data.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Open the FMTutorial project</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Use Visual Studio to open the FMTutorial project.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>If you have Visual Studio open and have already loaded the FMTutorial project, you can continue to the next section.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>If the development environment is not already open, on the Desktop, double-click the Visual Studio shortcut to open the development environment.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>File<ept id="p1">**</ept> menu, click <bpt id="p2">**</bpt>Open<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Project/Solution<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Open Project<ept id="p1">**</ept> dialog box, browse to C:FmLabFMTutorial, select the <bpt id="p2">**</bpt>FMTutorial<ept id="p2">**</ept> solution, and then click <bpt id="p3">**</bpt>Open<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>The FMTutorial project appears in <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Use a template to create the form</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Use Visual Studio to create the <bpt id="p1">**</bpt>FmtCustomer<ept id="p1">**</ept> form.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>You’ll use a template to create a new master details form.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>The data source for this tutorial is provided by the starter form.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>However, you’ll add fields to the grid and details view and apply the Master Details form pattern.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, right-click the <bpt id="p2">**</bpt>FMTutorial<ept id="p2">**</ept> project, point to <bpt id="p3">**</bpt>Add<ept id="p3">**</ept>, and then click <bpt id="p4">**</bpt>Existing Item<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Add Existing Item<ept id="p1">**</ept> window, browse to C:FmLab, select <bpt id="p2">**</bpt>AxForm<ph id="ph1">\_</ph>FmtCustomer<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>Add<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>FmtCustomer<ept id="p1">**</ept> form appears at the bottom of the <bpt id="p2">**</bpt>FMTutorial<ept id="p2">**</ept> project in Solution Explorer.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>In Solution Explorer, double-click <bpt id="p1">**</bpt>FmtCustomer<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>The form opens in the form designer.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>In the Form designer, click <bpt id="p1">**</bpt>Design<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept> window, specify the following values.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Property<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Value<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Data Source</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>FmtCustomer</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Caption</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Customers</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>In the Form designer, click <bpt id="p1">**</bpt>Design<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>GridDetailsTab<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>TabPageGrid<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>MainGrid<ept id="p4">**</ept>, and then click <bpt id="p5">**</bpt>MainGrid<ept id="p5">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept> window, click <bpt id="p2">**</bpt>Data Source<ept id="p2">**</ept>, and then select <bpt id="p3">**</bpt>FmtCustomer<ept id="p3">**</ept> to bind the <bpt id="p4">**</bpt>FmtCustomer<ept id="p4">**</ept> table to the grid.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>You can now use the fields from the data source to add columns to the grid.</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Data sources<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>FmtCustomer<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Fields<ept id="p3">**</ept> to add fields to the grid.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>FirstName<ept id="p1">**</ept>, press and hold the <bpt id="p2">**</bpt>Ctrl<ept id="p2">**</ept> key, and then select the following additional fields in the order shown:</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>LastName</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>CellPhone</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>DriverLicense</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Email</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Drag the highlighted fields to <bpt id="p1">**</bpt>Design<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>GridDetailsTab<ept id="p2">**</ept><ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>TabPageGrid<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>MainGrid<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>The following illustration shows the grid after expanding the grid node and adding the fields.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>CustForm3<ept id="p1">](./media/custform3.png)](./media/custform3.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Design<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>GridDetailsTab<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>TabPageDetails<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>TitleGroup<ept id="p4">**</ept> to add the record header to the details view.</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>HeaderTitle<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept> window, specify the following values.</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Property<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Value<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Data Source</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>FmtCustomer</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>Data Method</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>titleFields</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Design<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>GridDetailsTab<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>TabPageDetails<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>DetailsBodyTab<ept id="p4">**</ept> <ph id="ph4">&amp;gt;</ph> <bpt id="p5">**</bpt>General<ept id="p5">**</ept> to add content to the details view.</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>FmtCustomer<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Data sources<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>FmtCustomer<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Fields<ept id="p4">**</ept>, press and hold the Ctrl key, and then select the following fields:</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>FirstName</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>LastName</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>CellPhone</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>DriverLicense</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>Email</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Drag the highlighted fields onto <bpt id="p1">**</bpt>General<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>Save<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>View the form</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>Run the form to verify that it loads correctly.</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, right-click <bpt id="p2">**</bpt>FmtCustomer<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>Set as Startup Object<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>Press <bpt id="p1">**</bpt>Ctrl+F5<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>The grid view should render like the following illustration.</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>CustForm4<ept id="p1">](./media/custform4-1024x567.png)](./media/custform4.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>On the application bar, click <bpt id="p1">**</bpt>Open in Microsoft Office<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Export to Excel <ph id="ph2">&amp;gt;</ph> Customers<ept id="p2">**</ept> to send the information in the grid view to a Microsoft Excel spreadsheet.</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>(If a dialog appears asking if you’re sure you want to leave the page, click “Leave this page”.) When asked, click <bpt id="p1">**</bpt>Open<ept id="p1">**</ept> to view the data in Excel.</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>Close Excel.</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Tony<ept id="p1">**</ept> to navigate to the details view for that record.</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>CustForm5<ept id="p1">](./media/custform5-1024x567.png)](./media/custform5.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Close<ept id="p1">**</ept>  (or the browser Back button) to go back to the grid view.</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>Apply a pattern to the form</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>Use Visual Studio to apply the Master Details form pattern to the <bpt id="p1">**</bpt>Customer<ept id="p1">**</ept> form.</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>Applying a form pattern ensures your form has the expected structure.</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>It also simplifies the design experience by automatically setting the values of properties in the nodes that are part of the pattern.</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>Right-click <bpt id="p1">**</bpt>Design<ept id="p1">**</ept>, point to <bpt id="p2">**</bpt>Apply pattern,<ept id="p2">**</ept> and then click <bpt id="p3">**</bpt>Details Master<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>CustForm6<ept id="p1">](./media/custform6.png)](./media/custform6.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>CustForm7<ept id="p1">](./media/custform7.png)](./media/custform7.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>Add the missing Navigation List group.</source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>The red highlighting in the Patterns Information Panel indicates that this control is missing.</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>Right-click <bpt id="p1">**</bpt>Design<ept id="p1">**</ept>, point to <bpt id="p2">**</bpt>New<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>Group<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept> window, in the <bpt id="p2">**</bpt>Name<ept id="p2">**</ept> property, enter <bpt id="p3">**</bpt>SidePanel<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>SidePanel<ept id="p1">**</ept>, and press <bpt id="p2">**</bpt>Alt+Up<ept id="p2">**</ept> to move this group above the <bpt id="p3">**</bpt>GridDetailsTab (Tab)<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Design<ept id="p1">**</ept> again.</source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>The yellow highlighting around the <bpt id="p1">**</bpt>Navigation List<ept id="p1">**</ept> and the <bpt id="p2">**</bpt>Panel Tab<ept id="p2">**</ept> indicate that there are problems that need to be resolved under each of these nodes before the pattern can be successfully applied.</source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>CustForm8<ept id="p1">](./media/custform8.png)](./media/custform8.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>CustForm9<ept id="p1">](./media/custform9.png)](./media/custform9.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>In the Patterns Information Panel, click <bpt id="p1">**</bpt>SidePanel<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>CustForm10<ept id="p1">](./media/custform10.png)](./media/custform10.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>CustForm11<ept id="p1">](./media/custform11.png)](./media/custform11.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>Add the missing controls.</source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>Right-click <bpt id="p1">**</bpt>SidePanel<ept id="p1">**</ept>, point to <bpt id="p2">**</bpt>New<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>QuickFilter<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept> window, specify the following values.</source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Property<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Value<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>Name</source>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>SidePanelQuickFilter</source>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>Target Control</source>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>MainGrid <bpt id="p1">*</bpt>This QuickFilter should have the same columns available for filtering as the main grid on the form<ept id="p1">*</ept></source>
+        </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>Right-click <bpt id="p1">**</bpt>SidePanel<ept id="p1">**</ept>, point to <bpt id="p2">**</bpt>New<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>Grid.<ept id="p3">**</ept></source>
+        </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Property<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Value<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>Name</source>
+        </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>NavigationList</source>
+        </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>Datasource</source>
+        </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>FmtCustomer</source>
+        </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>Add identifying fields to the Navigation list.</source>
+        </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>Right-click <bpt id="p1">**</bpt>NavigationList<ept id="p1">**</ept>, point to <bpt id="p2">**</bpt>New<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>String<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept> window, specify the following values.</source>
+        </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Property<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Value<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>DataSource</source>
+        </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>FmtCustomer</source>
+        </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>DataMethod</source>
+        </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>fullName</source>
+        </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>Name</source>
+        </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>FmtCustomer<ph id="ph1">\_</ph>FullName</source>
+        </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>Expand <bpt id="p1">**</bpt>Data Sources<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>FmtCustomer<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Fields<ept id="p3">**</ept> to add phone numbers to the Simple list.</source>
+        </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>Drag the <bpt id="p1">**</bpt>CellPhone<ept id="p1">**</ept> field onto the grid under <bpt id="p2">**</bpt>Design <ph id="ph1">&amp;gt;</ph> SidePanel <ph id="ph2">&amp;gt;</ph> NavigationList<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>SidePanel<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>Notice the <bpt id="p1">**</bpt>Patterns Information Panel<ept id="p1">**</ept> is now indicating that the controls in this subtree are in full compliance with the pattern.</source>
+        </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>CustForm12<ept id="p1">](./media/custform12.png)](./media/custform12.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>CustForm13<ept id="p1">](./media/custform13.png)](./media/custform13.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Design<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>GridDetailsTab<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>The yellow highlighting around the subnodes indicates that there are problems that need to be resolved under both nodes before the form pattern can be successfully applied.</source>
+        </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>CustForm14<ept id="p1">](./media/custform14.png)](./media/custform14.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>CustForm15<ept id="p1">](./media/custform15.png)](./media/custform15.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>Notice that the pattern expects the <bpt id="p1">**</bpt>Grid Panel<ept id="p1">**</ept> to be after the <bpt id="p2">**</bpt>Details Panel.<ept id="p2">**</ept></source>
+        </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>TabPageGrid<ept id="p1">**</ept> and press <bpt id="p2">**</bpt>Alt+Down<ept id="p2">**</ept> to move that tab below the <bpt id="p3">**</bpt>Details Panel<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>GridDetailsTab<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>TabPageDetails<ept id="p1">**</ept> tab page now adheres to the pattern.</source>
+        </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>However, the <bpt id="p1">**</bpt>TabPageGrid<ept id="p1">**</ept> tab page needs additional attention.</source>
+        </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>CustForm16<ept id="p1">](./media/custform16.png)](./media/custform16.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>CustForm17<ept id="p1">](./media/custform17.png)](./media/custform17.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>TabPageGrid<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>Focus in the designer is now on <bpt id="p1">**</bpt>TabPageGrid<ept id="p1">**</ept>, and the <bpt id="p2">**</bpt>Patterns Information Panel<ept id="p2">**</ept> has been updated.</source>
+        </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>CustForm18<ept id="p1">](./media/custform18.png)](./media/custform18.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>CustForm19<ept id="p1">](./media/custform19.png)](./media/custform19.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Patterns Information Panel<ept id="p1">**</ept> now indicates a missing Group control at the top of the <bpt id="p2">**</bpt>TabPageGrid<ept id="p2">**</ept> container.</source>
+        </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source>Right-click <bpt id="p1">**</bpt>TabPageGrid<ept id="p1">**</ept>, point to <bpt id="p2">**</bpt>New<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>Group<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>Press <bpt id="p1">**</bpt>Alt+Up<ept id="p1">**</ept> two times to position the group as the first control in the group.</source>
+        </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept> window, in the <bpt id="p2">**</bpt>Name<ept id="p2">**</ept> property, enter <bpt id="p3">**</bpt>GridCustomFilterGroup<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>CustForm20<ept id="p1">](./media/custform20.png)](./media/custform20.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source>The pattern is looking for a subpattern to be applied to <bpt id="p1">**</bpt>GridCustomFilterGroup<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source>Right-click <bpt id="p1">**</bpt>GridCustomFilterGroup,<ept id="p1">**</ept> point to <bpt id="p2">**</bpt>Apply pattern<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>Custom and Quick Filters<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>CustForm21<ept id="p1">](./media/custform21.png)](./media/custform21.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>CustForm22<ept id="p1">](./media/custform22.png)](./media/custform22.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Custom and Quick Filters<ept id="p1">**</ept> subpattern requires a QuickFilter control.</source>
+        </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source>Right-click <bpt id="p1">**</bpt>GridCustomFilterGroup<ept id="p1">**</ept>, point to <bpt id="p2">**</bpt>New<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>QuickFilter<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept> window, specify the following values.</source>
+        </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Property<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Value<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source>Name</source>
+        </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>MainGridQuickFilter</source>
+        </trans-unit>
+        <trans-unit id="298" translate="yes" xml:space="preserve">
+          <source>Target Control</source>
+        </trans-unit>
+        <trans-unit id="299" translate="yes" xml:space="preserve">
+          <source>MainGrid</source>
+        </trans-unit>
+        <trans-unit id="300" translate="yes" xml:space="preserve">
+          <source>Browse up the control tree to design and notice how the <bpt id="p1">**</bpt>Patterns Information Panel<ept id="p1">**</ept> now shows no issues under each of the controls.</source>
+        </trans-unit>
+        <trans-unit id="301" translate="yes" xml:space="preserve">
+          <source>Press <bpt id="p1">**</bpt>Ctrl+S<ept id="p1">**</ept> to save the form.</source>
+        </trans-unit>
+        <trans-unit id="302" translate="yes" xml:space="preserve">
+          <source>View the details form</source>
+        </trans-unit>
+        <trans-unit id="303" translate="yes" xml:space="preserve">
+          <source>Run the form to see the Details view and the Grid view.</source>
+        </trans-unit>
+        <trans-unit id="304" translate="yes" xml:space="preserve">
+          <source>Press <bpt id="p1">**</bpt>Ctrl+F5<ept id="p1">**</ept> to run the project.</source>
+        </trans-unit>
+        <trans-unit id="305" translate="yes" xml:space="preserve">
+          <source>The following illustration shows how the grid view appears.</source>
+        </trans-unit>
+        <trans-unit id="306" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>CustForm23<ept id="p1">](./media/custform23-1024x599.png)](./media/custform23.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="307" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Phil<ept id="p1">**</ept> to go to the details view for that record.</source>
+        </trans-unit>
+        <trans-unit id="308" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>CustForm24<ept id="p1">](./media/custform24-1024x599.png)](./media/custform24.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="309" translate="yes" xml:space="preserve">
+          <source>Click the <bpt id="p1">**</bpt>Show list<ept id="p1">**</ept> button on the left side of the form to open the navigation list.</source>
+        </trans-unit>
+        <trans-unit id="310" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>CustForm25<ept id="p1">](./media/custform25-1024x597.png)](./media/custform25.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="311" translate="yes" xml:space="preserve">
+          <source>To go back to the grid view, click <bpt id="p1">**</bpt>Close<ept id="p1">**</ept> (or the browser Back button).</source>
+        </trans-unit>
+        <trans-unit id="312" translate="yes" xml:space="preserve">
+          <source>Return to Visual Studio.</source>
+        </trans-unit>
+        <trans-unit id="313" translate="yes" xml:space="preserve">
+          <source>Add subpatterns</source>
+        </trans-unit>
+        <trans-unit id="314" translate="yes" xml:space="preserve">
+          <source>In Visual Studio, in the Form designer, right-click <bpt id="p1">**</bpt>FmtCustomer<ept id="p1">**</ept>, point to <bpt id="p2">**</bpt>Addins<ept id="p2">**</ept>, and then select <bpt id="p3">**</bpt>Form statistics<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="315" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>CustForm26<ept id="p1">](./media/custform26.png)](./media/custform26.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="316" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Form Statistics<ept id="p1">**</ept> add-in provides several useful data points about the state of the form.</source>
+        </trans-unit>
+        <trans-unit id="317" translate="yes" xml:space="preserve">
+          <source>This includes:</source>
+        </trans-unit>
+        <trans-unit id="318" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Pattern=Unspecified count<ept id="p1">**</ept> – The number of nodes for which no form pattern or subpattern has been applied.</source>
+        </trans-unit>
+        <trans-unit id="319" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Pattern=Custom count<ept id="p1">**</ept> – The number of nodes for which a custom pattern was applied, meaning the structure did not fit with any existing pattern.</source>
+        </trans-unit>
+        <trans-unit id="320" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Pattern coverage<ept id="p1">**</ept> – The percentage of controls on the form that are covered by the form pattern or a subpattern.</source>
+        </trans-unit>
+        <trans-unit id="321" translate="yes" xml:space="preserve">
+          <source>A value of 100% indicates a fully-covered form.</source>
+        </trans-unit>
+        <trans-unit id="322" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>CustForm27<ept id="p1">](./media/custform27.png)](./media/custform27.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="323" translate="yes" xml:space="preserve">
+          <source>To complete pattern coverage for this form, the Pattern=Unspecified count should be zero.</source>
+        </trans-unit>
+        <trans-unit id="324" translate="yes" xml:space="preserve">
+          <source>Use the Visual Studio form search to find all instances of “unspecified “in the form.</source>
+        </trans-unit>
+        <trans-unit id="325" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>CustForm28<ept id="p1">](./media/custform28.png)](./media/custform28.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="326" translate="yes" xml:space="preserve">
+          <source>Because the <bpt id="p1">**</bpt>General<ept id="p1">**</ept> tab page contains only input controls and no custom layout is required for this FastTab, the Fields and Field Groups pattern should be applied to guarantee a responsive layout.</source>
+        </trans-unit>
+        <trans-unit id="327" translate="yes" xml:space="preserve">
+          <source>Right-click <bpt id="p1">**</bpt>General<ept id="p1">**</ept>, point to <bpt id="p2">**</bpt>Apply pattern<ept id="p2">**</ept>, and then select <bpt id="p3">**</bpt>Fields and Field Groups<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="328" translate="yes" xml:space="preserve">
+          <source>On the far right of the screen, click <bpt id="p1">**</bpt>Clear search<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="329" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>CustForm29<ept id="p1">](./media/custform29.png)](./media/custform29.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="330" translate="yes" xml:space="preserve">
+          <source>Press <bpt id="p1">**</bpt>Ctrl+S<ept id="p1">**</ept> to save the form.</source>
+        </trans-unit>
+        <trans-unit id="331" translate="yes" xml:space="preserve">
+          <source>Repeat step 1 to run the <bpt id="p1">**</bpt>Form Statistics<ept id="p1">**</ept> add-in a second time to verify the form is fully-covered by patterns.</source>
+        </trans-unit>
+        <trans-unit id="332" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>CustForm30<ept id="p1">](./media/custform30.png)](./media/custform30.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="333" translate="yes" xml:space="preserve">
+          <source>Press <bpt id="p1">**</bpt>Ctrl+F5<ept id="p1">**</ept> to run the project and see the updated form.</source>
+        </trans-unit>
+        <trans-unit id="334" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Adrian<ept id="p1">**</ept> to go to the details view.</source>
+        </trans-unit>
+        <trans-unit id="335" translate="yes" xml:space="preserve">
+          <source>The following illustration shows how the details view now appears after applying the Fields and Field Groups subpattern so that the fields lay out responsively.</source>
+        </trans-unit>
+        <trans-unit id="336" translate="yes" xml:space="preserve">
+          <source>By changing the browser width, you’ll see how the field layout adjusts to better fill the width of the browser.</source>
+        </trans-unit>
+        <trans-unit id="337" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>CustForm31<ept id="p1">](./media/custform31-1024x674.png)](./media/custform31.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="338" translate="yes" xml:space="preserve">
+          <source>Return to Visual Studio</source>
+        </trans-unit>
+        <trans-unit id="339" translate="yes" xml:space="preserve">
+          <source>Determine the amount of remaining patterns work in a model</source>
+        </trans-unit>
+        <trans-unit id="340" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Finance and Operations<ept id="p1">**</ept>, point to <bpt id="p2">**</bpt>Addins<ept id="p2">**</ept>, and then select <bpt id="p3">**</bpt>Run form patterns report<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="341" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>CustForm32<ept id="p1">](./media/custform32-1024x469.png)](./media/custform32.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="342" translate="yes" xml:space="preserve">
+          <source>A notification dialog will be shown when the form patterns report has been generated.</source>
+        </trans-unit>
+        <trans-unit id="343" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>CustForm33<ept id="p1">](./media/custform33.png)](./media/custform33.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="344" translate="yes" xml:space="preserve">
+          <source>Open the PatternsReport file in Excel.</source>
+        </trans-unit>
+        <trans-unit id="345" translate="yes" xml:space="preserve">
+          <source>Filter the report to the Fleet Management Tutorial model.</source>
+        </trans-unit>
+        <trans-unit id="346" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Data<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Filter<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="347" translate="yes" xml:space="preserve">
+          <source>Filter the <bpt id="p1">**</bpt>Model<ept id="p1">**</ept> column to FleetMgmntTutorial.</source>
+        </trans-unit>
+        <trans-unit id="348" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>CustForm34<ept id="p1">](./media/custform34-1024x422.png)](./media/custform34.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="349" translate="yes" xml:space="preserve">
+          <source>The report shows pattern-related information regarding the forms in this model including the top-level form pattern currently applied, and the percentage of controls on the form covered by patterns.</source>
+        </trans-unit>
+        <trans-unit id="350" translate="yes" xml:space="preserve">
+          <source>This can be used to track the remaining patterns work in one or more models.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

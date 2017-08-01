@@ -1,0 +1,414 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">992aec1facbbc50bcfcd44783c11bf897d9b6738</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\user-interface\tile-list-caching-workspaces.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">50938ea4f7060562430024e00640fbdf304d3b20</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">a0df893d3ae8a4457af2e61f9ddfc1acfea7a9de</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Tile and list caching for workspaces</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>It's important that workspaces perform well, and that they be responsive (that is, the data that appears in a workspace is refreshed as expected and kept up to date).</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic discusses framework support for caching data that is used for tiles and lists.</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Tile and list caching for workspaces</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>It's important that workspaces perform well, and that they be responsive (that is, the data that appears in a workspace is refreshed as expected and kept up to date).</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This topic discusses framework support for caching data that is used for tiles and lists.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Introduction</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Workspaces are intended to be the hub of activity for most users.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>They display a wealth of information that is collected from various sources.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Therefore, you must make sure that workspaces perform well and are responsive (that is, the data shown in the workspace is refreshed as expected and/or kept up to date).</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Caching can help guarantee great workspace performance when data comes from poorly performing queries, and is especially useful when multiple users require access to the same set of data at the same time.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>For example, if a grid on a form uses a complex (that is, low-performing) query, you can cache the results so that they are available for subsequent loads of the form.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>This article discusses framework support for caching data that is used for tiles and lists.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>In terms of a responsive workspace, when users navigate to a workspace (or return to it), they expect that the data in the workspace will be relatively up to date.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>For example, if a user takes an action that changes the data for a list or tile in a workspace, the workspace should reflect that change immediately after the action is performed (if the action was taken directly from the workspace) or when the user returns to the workspace form (if the action was taken on a different form).</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>This article describes techniques for making sure that this type of data refresh occurs (both metadata and code) for both tiles and lists.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Count tiles</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Automatic data caching</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>The framework automatically sets up data caching behind any defined count tile.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Therefore, no extra code is required in this case.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">**</bpt>Refresh Frequency<ept id="p1">**</ept> metadata property on Tiles determines how often the count on the tile is automatically updated.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>The following table describes the options and guidance for this property.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Value</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>When to use</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>As Fast As Permissible (5 seconds)</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Query execution time is 25 ms or less, and there is demand to see the updated value all the time.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>10 Minutes</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Query execution time is less than 250 ms, and updated data must be seen periodically</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>24 Hours</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Query execution time is less than 2000 ms, and/or the count isn't expected to change often or up-to-date counts are vital.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Refresh management</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Count tiles that show values that represent pending work should be fairly responsive.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Ideally, the fastest possible refresh frequency should be defined for these tiles, so that the count that appears on a workspace tile is always within five seconds of being up to date.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Because this quick refresh rate should be set only on performant queries (queries that have an execution time of less than 25 ms), the first recommendation is that you work on query performance for count tiles, to try to get query execution under the 25-ms threshold.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>In general, achieving this execution speed requires two things:</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>A selective WHERE condition on the query Preferably, the conditions on the query should reduce the result set to fewer than ~500 records, and ideally to fewer than ~100 rows.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>An index structure that can act on the selective WHERE condition</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>See the "Common mistakes and tips for query optimization" section for details about how to evaluate and improve query performance to achieve these execution speeds.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>For tiles that have backing queries and can't meet the 25-ms execution speed threshold, the refresh frequency on the tile should be set to one of the lower values (for example, 10 minutes or 24 hours).</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>If the values must be updated more frequently for tiles that have less-efficient queries (which should be rare), you can add the following code to manually refresh the cache when an action is taken that will affect the cached set.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>An example of a data set that might not change often is products that have no configuration.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>A tile that shows this count might have a refresh frequency of 10 minutes.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>However, the tile count might still appear responsive if the products form is instrumented to force-refresh the data cache when a configuration is defined for a product that previously had no configuration.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Workspace lists</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Although the framework automatically sets up data caches for count tiles, manual setup is required for lists that must use data caching.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Here are the high-level steps for introducing cached data for a list:</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Create a query that references all the columns that you want in the cached data set.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Create a table that contains all the fields that you want to cache.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Create a class that defines a mapping between the cache query and cache table.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Add/reference the cached table as a data source on your form.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Each of these steps is described in detail in the following sections and is paired with an example from the Fleet workspace (Reservation Management).</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Cache query</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>First, you must create a query that will be used to populate the cache table.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>This query should have the following characteristics:</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>It should be against the tables that you want to get your cache data from.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>It should limit the results to the results that you’re actually interested in.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>It should select only the fields that you want to cache.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> Each data source should have <bpt id="p2">**</bpt>DynamicFields<ept id="p2">**</ept><ph id="ph1">=</ph><bpt id="p3">**</bpt>No<ept id="p3">**</ept> to avoid extraneous fields.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Cache table</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Next, you must define a table that contains a set of fields that match the fields from the cache query.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>In addition to those fields, you must also add a field that is named <bpt id="p1">**</bpt>SysDataCacheContextId<ept id="p1">**</ept> (Int64).</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>This field is used to map the cache row to the base cache tables.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>You'll define a mapping on the table, between the SysDataSetCacheTableMap table’s <bpt id="p1">**</bpt>Id<ept id="p1">**</ept> and <bpt id="p2">**</bpt>SysDataCacheContextId<ept id="p2">**</ept> fields and the cache table’s <bpt id="p3">**</bpt>RecId<ept id="p3">**</ept> and <bpt id="p4">**</bpt>SysDataCacheContextId<ept id="p4">**</ept> fields, respectively.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>You can also define relations between this table and others, in addition to data methods that use the cached fields.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Cache class</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>The third step is to create a class that defines the relationship between the cache query and the cache table.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>This class requires that a few attributes be defined, and it must also extend and implement the appropriate framework data caching classes.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>The following code shows the corresponding class from the Reservation Management workspace.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>In some circumstances, you might also have to implement the <bpt id="p1">**</bpt>parmQueryableToCacheMapping()<ept id="p1">**</ept> method.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>This method is required when at least one column name in your cache table doesn't match the name of the corresponding column in the backing table (for example, if you must add two fields that have the same name but are from different tables).</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>In this case, you can implement this method to define the column mapping between the cache table and the backing tables.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>The syntax is the same as the syntax for the <bpt id="p1">**</bpt>Query::Insert<ph id="ph1">\_</ph>RecordSet()<ept id="p1">**</ept> method (<bpt id="p2">&lt;</bpt>https://msdn.microsoft.com/en-us/library/query.insert_recordset.aspx<ept id="p2">&gt;</ept>).</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Form implementation</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>After you've built your cache query, table, and class, you’re ready to use the cache on your form.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Add the cache table to your form as a data source, and reference it just as you would reference any other data source.</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>In order for the form to correctly take advantage of caching, some code is required.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>In a <bpt id="p1">**</bpt>registerDatasourceOnQueryingEvent()<ept id="p1">**</ept> method, add an event handler to the data source’s <bpt id="p2">**</bpt>OnQueryExecuting<ept id="p2">**</ept> event that calls <bpt id="p3">**</bpt>prepareDataSet<ept id="p3">**</ept>,.</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>This requires that the form class implement <bpt id="p1">**</bpt>SysIDataSetConsumerForm<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>If you want the form to use filtering, as provided by a workspace-wide filter, in a <bpt id="p1">**</bpt>registerDatasourceOnQueryingEvent()<ept id="p1">**</ept> method, register <bpt id="p2">**</bpt>applyFilter<ept id="p2">**</ept> on the <bpt id="p3">**</bpt>OnQueryExecuting<ept id="p3">**</ept> event.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>This requires that the form class implement <bpt id="p1">**</bpt>SysIFilterConsumerForm<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>If the form must react when a parent form’s filters change (for example, a workspace-wide filter), implement <bpt id="p1">**</bpt>SysIFilterEventHandler<ept id="p1">**</ept> on the form class, and include an <bpt id="p2">**</bpt>onFilterChanged()<ept id="p2">**</ept> method that calls <bpt id="p3">**</bpt>executeQuery()<ept id="p3">**</ept> on the cache data source.</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>The following code is an example from the <bpt id="p1">**</bpt>FMPickingUpTodayPart<ept id="p1">**</ept> form, which is one of the tabbed lists on the Reservation Management workspace.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Additional examples</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>In addition to the previous examples, you can refer to <bpt id="p1">**</bpt>SysFoundationTestOpenHeaderDataset<ept id="p1">**</ept>, which is used on <bpt id="p2">**</bpt>SysFoundationTestOpenHeadersFormPart<ept id="p2">**</ept> (which is itself referenced in <bpt id="p3">**</bpt>SysFoundationTestWorkspace<ept id="p3">**</ept>).</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>This form uses the same method that is described earlier, but also includes some caching of a query aggregate count.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Refresh management</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>Lists of data in workspaces should also be responsive to user actions, especially if those actions cause records to no longer meet the criteria for appearing in the list.</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>For example, you have a list of car rentals that are scheduled to start today.</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Every time that an employee initiates a rental record from that list with a customer, that record should no longer appear in the workspace list.</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Two mechanisms are available for keeping this list up to date:</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>If the user takes an action that removes the record from the list, code can be added to guarantee that the list is immediately updated by refreshing the data source.</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>If the data source is a cache data source, and the refresh frequency is slow, you might want to delete the corresponding records from the cache data source before you call <bpt id="p1">**</bpt>refresh<ept id="p1">**</ept>, to avoid having to force-refresh the cache.</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>If the first option doesn't meet your requirements, you can asynchronously refresh form parts at a time interval.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>This option can be set up by using the <bpt id="p1">**</bpt>AutoRefreshInterval<ept id="p1">**</ept> property on the FormPart control.</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>For workspaces that have user interaction, the cache refresh frequency should be set based on query performance.</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>In this case, the current recommendation is to not set the <bpt id="p1">**</bpt>AutoRefreshInterval<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Instead, rely on the user to manually refresh the workspace to bring in more data.</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>Alternatively, you consider using an infrequent auto-refresh.</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>However, in this case, the user’s current selection will not be retained if the list is updated while the user is interacting with it.</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>A small percentage of workspaces are intended for viewing purposes only (no user interaction).</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>These workspaces should use set the <bpt id="p1">**</bpt>AutoRefreshInterval<ept id="p1">**</ept> property programmatically to match the current refresh frequency of the backing cache.</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>(Use <bpt id="p1">**</bpt>SysIDataCacheConfiguration.parmRefreshFrequency()<ept id="p1">**</ept> to retrieve the current refresh frequency of a cache, because it can be modified by the system administrator at run time.)</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>FormParts that have Charts should set the <bpt id="p1">**</bpt>AutoRefreshInterval<ept id="p1">**</ept> property to periodically show updated chart data.</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>Common mistakes and tips for query optimization</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>Here a few general guidelines to consider when you optimize queries.</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>This isn't an extensive guide to query optimization but provides just a few simple guiding principles.</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Trace the statement by using SQL Profiler.<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>Attach the Microsoft SQL Server Profiler to the database, and capture the SQL statement that you want to optimize.</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>You can use the tuning template that is provided in a default installation.</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>Don’t forget to disable tracing after you've obtained the statement that you're interested in.</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">&lt;</bpt>https://msdn.microsoft.com/en-us/library/ms175047.aspx<ept id="p1">&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Always look at the query plan.<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>In Microsoft SQL Server Management Studio, make sure that you've enabled <bpt id="p1">**</bpt>Include actual Execution Plan<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>Look at the query plan, and watch out for any warnings.</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>The thickness of the arrows indicate how many rows have been fetched and brought to the next step.</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Compare CPU milliseconds and logical I/O.<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>One good way to determine whether a change to a given SQL statement improved the statement is to look at the logical I/O and CPU milliseconds.</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>To obtain these numbers, use the following statements in the query editor:</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>set statistics time on</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>set statistics io on</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Always clear caches when you measure a statement.<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>To make sure that Microsoft SQL Server isn't using a cached execution plan, it's advisable that you flush the cache when you rerun a statement.</source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>To flush the cache, run the following two commands:</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>dbcc dropCleanBuffers</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>dbcc freeProcCache</source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Here are some common patterns to watch out for:<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Missing index:<ept id="p1">**</ept> Analyze your WHERE conditions, and make sure that a selective index exists.</source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Processing the same table/row many times:<ept id="p1">**</ept> Especially when you do joins, try not to repeat yourself.</source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>Minimize the number of times that the same table/row must be processed.</source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>If you have tables that must be part of the result set but aren't used to narrow down the result set, move them as far out as possible (especially in union queries).</source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Test on volume data.<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>To identify issues in your query, always run it on volume data.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

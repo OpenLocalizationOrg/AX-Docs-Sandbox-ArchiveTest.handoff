@@ -1,0 +1,231 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">eafc8502cf012f528979a76b6d0df3e4b8d8fcf7</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">retail\dev-itpro\retail-sdk\integrate-retail-sdk-continuous-build.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">a17d1561ff714a54fe8fe8688df4837ecb2a3322</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ead3d86cc9a0b47eda5f4aaadf785a509a03d20b</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Integrate the Retail SDK with the continuous build system (VSTS)</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>The LCS-integrated experience supports both code upgrades and new projects.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>The Retail SDK is a self-contained MSBuild-based build system.</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Many customizers want to make productive changes in both Microsoft Dynamics 365 for Retail and Retail components.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This article outlines the manual steps for merging both build systems.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Integrate the Retail SDK with the continuous build system (VSTS)</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>The LCS-integrated experience supports both code upgrades and new projects.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>The Retail SDK is a self-contained MSBuild-based build system.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Many customizers want to make productive changes in both Microsoft Dynamics 365 for Retail and Retail components.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>This article outlines the manual steps for merging both build systems.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Enable the build system</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>To get started, you must follow all the steps to get a full continuous build system up and running.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>For information, see <bpt id="p1">[</bpt>Developer topology deployment with continuous build and test automation<ept id="p1">](/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>After deployment, you create the build definition and build steps.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Build at least one time, so that you become familiar with it and are sure that you can build without errors.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Then move to the next step.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Prepare the Retail SDK</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Getting the Retail SDK</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>If you don't already have the Retail software development kit (SDK) in the same Microsoft Visual Studio Team Services (VSTS) project, add it now.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>You will find the Retail SDK in any developer or build topology.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Follow the branching documentation in the <bpt id="p1">**</bpt>Retail Sdk Handbook.pdf<ept id="p1">**</ept> file, which is in the Documents folder for the Retail SDK.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>We recommend that you create your Retail SDK mirror and your Retail SDK customization branch at this time.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>After your Retail SDK customization branch is ready, and it has been submitted in the same VSTS project as Retail, you can start.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Get the build target working</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>You must make some changes in a few filesto get the correct build targeting to work.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>(These changes will be made in a future release of the Retail SDK.)</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>1. Add a Clean target</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Add a correct Clean target at the end of these four project files:</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Packages<ph id="ph1">\\</ph>CloudPos<ph id="ph2">\\</ph>Sdk.CloudPosSetup.proj</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Packages<ph id="ph1">\\</ph>RetailDeployablePackage<ph id="ph2">\\</ph>Sdk.RetailDeployablePackageSetup.proj</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Packages<ph id="ph1">\\</ph>RetailSelfService<ph id="ph2">\\</ph>Sdk.RetailSelfServiceSetup.proj</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Packages<ph id="ph1">\\</ph>RetailServer<ph id="ph2">\\</ph>Sdk.RetailServerSetup.proj</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>In an XML editor of your choice, update the Rebuild and Clean MSBuild targets as shown here.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>All four project files require the same changes.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>2. Change the CopyTypeScriptLibraries target</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Change the CopyTypeScriptLibraries target in these four project files:</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>OnlineStore<ph id="ph1">\\</ph>Ecommerce.Sdk.Controls<ph id="ph2">\\</ph>Platform.Ecommerce.Sdk.Controls.csproj</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>POS<ph id="ph1">\\</ph>App<ph id="ph2">\\</ph>Pos.App.jsproj</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>POS<ph id="ph1">\\</ph>ViewModels<ph id="ph2">\\</ph>Pos.ViewModels.csproj</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>POS<ph id="ph1">\\</ph>Web<ph id="ph2">\\</ph>Pos.Web.csproj</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Make this change in all four files.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>When you've finished, submit these eight file changes to VSTS.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Add two Windows PowerShell scripts to the Retail SDK that will be used for build tasks</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>You need to add two scripts that the build can use to do its work.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>(These scripts will be added automatically in a future release of the Retail SDK.) In the Retail Sdk<ph id="ph1">\\</ph>Buildtools folder, add a file that has the following content file.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Name this file <bpt id="p1">**</bpt>Copy-RetailBinaries.ps1<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>In the same folder, add a file that has the following content.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Name this file <bpt id="p1">**</bpt>Copy-RetailPackages.ps1<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>When you've finished, submit both files to VSTS.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Add a repository mapping for the Retail SDK</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Edit the build definition so that it includes the location of the Retail SDK.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>(In other words, add a map.) <bpt id="p1">[</bpt><ph id="ph1">![</ph>Adding a repository mapping for the Retail SDK<ept id="p1">](./media/build-map-addition.png)](./media/build-map-addition.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Add a new build step to build the Retail SDK</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Add a new step at the beginning of the build pipeline, as shown in the following screen shot.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Adding a new build step to build the Retail SDK<ept id="p1">](./media/new-build-step-1024x527.png)](./media/new-build-step.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Add a copy step for binaries from the Retail SDK to the Retail  build</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>This build step enables Microsoft to copy the latest built Retail binaries to the Retail bin folder, if Microsoft shares files/binaries.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Make sure that you complete this step immediately after you add a build step for the Retail SDK, as described in the previous section.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Adding a copy step for binaries from the Retail SDK to the Dynamics 365 for Retail build<ept id="p1">](./media/binary-drop-to-ax.png)](./media/binary-drop-to-ax.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Add a copy step for all Retail packages</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Make sure that this step occurs after the “PowerShell: Generate packages” step (see image below).</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Here are the arguments.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Adding a copy step for all Retail packages<ept id="p1">](./media/package-drop-1024x473.png)](./media/package-drop.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Optional: Referencing a Retail DLL from Retail</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>You must complete this task only if you must add built Retail binaries to the Retail package.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>In this case, you must follow these three steps:</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Use a normal AXReference in your Retail project.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Add the corresponding AXReference folder and the XML file inside it to VSTS.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Update the Copy-RetailBinaries.ps1 file with the appropriate file commands to get the binary file from the Retail SDK to the Retail bin folder.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>The Microsoft Windows PowerShell file includes a sample that copies the PricingEngine.dll file into the ApplicationSuite bin folder.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Depending on the modules that you're building, the files and folders must be changed so that they are in a different location.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

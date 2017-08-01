@@ -1,0 +1,252 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">acde44612acb9c913801b95fe91fe6dae5756ca0</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\database\request-point-in-time-restore.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">433df981c511c2ecb726ec14d4664438ffe03a74</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">11db03922a718f46a1fd9f9d425add256c27f4b5</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Restore a database on a non-production environment</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Microsoft Dynamics 365 for Finance and Operations lets you request that a database be restored to a specific point in time that is within 35 days of your request.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic describes how to request a point-in-time restore.</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Restore a database on a non-production environment</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Microsoft Dynamics 365 for Finance and Operations lets you request that a database be restored to a specific point in time that is within 35 days of your request.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This topic describes how to request a point-in-time restore.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Overview</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Point-in-time restore is a Microsoft Azure SQL Database feature that can be used with Microsoft Dynamics 365 for Finance and Operations.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>A point-in-time restore resets a non-production environment to a known good state after destructive testing.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>In an emergency, you can also do a point-in-time restore on a production environment.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>However, to request a production restore, don't use the process that is described in this topic.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Instead, you should use Microsoft Support.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Important:<ept id="p1">**</ept> The point-in-time restore feature always creates a new database.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>To uptake the new database into the Dynamics 365 for Finance and Operations environment, you must replace the original database with the new database.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Therefore, after you uptake the new database, all backup history is gone.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>History tracking will begin again from that moment.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Example of a database before and after a point-in-time restore<ept id="p1">](./media/pitrestorebehaviour.png)](./media/pitrestorebehaviour.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Code versioning</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>When you're trying to determine which restore point in time to select, it's important that you consider code versioning, because the current version of the code might be incompatible with the state of the database at the restore point.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>For example, today's database is running Microsoft Dynamics 365 for Finance and Operations Platform Update 2, plus some customizations.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>However, 10 days ago, the environment was running the Microsoft Dynamics AX February 2016 release, plus customizations that were created for that build.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>If you try to restore the database to the state that it was in 10 days ago, but the environment is still running the most recent version of the code, the environment might not work as you expect, because the database has been upgraded.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Although you might be able to mix a version of the database and a version of the code without encountering issues, it's important that you be aware that issues can occur.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>We recommend that, as a rule, you not mix major version releases from Microsoft, or major versions of customizations.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Here is the most common scenario where you will require a point-in-time restore:</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>User tests that are run in the sandbox environment identify some bugs.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>The bugs are fixed in a development environment, and a new build is deployed to the sandbox environment.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>You request a point-in-time restore to restore the database to a time before the tests were run, so that the database can be retested in exactly the same way.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>In this case, there is mismatch of the code version and the database, because the bug fixes were deployed.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>However, this mismatch is unlikely to cause an issue.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Consult the developers who make the customizations to verify that you can proceed.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>After the database is restored, synchronize it.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Point-in-time restore process</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>The Microsoft Service Engineering team will take your environment offline, complete the point-in-time restore, and then bring the environment back online.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>You can expect the downtime period to be less than two hours.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>The period after you enter your request and before our Service Engineers take action will be longer than your environment downtime.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>In the future, we will provide a self-service method that you can use to perform your own point-in-time restores.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Click the hamburger icon in the upper left of the Microsoft Dynamics Lifecycle Services (LCS) window, and then select <bpt id="p1">**</bpt>Work items<ept id="p1">**</ept> in the list.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Work items<ept id="p1">](./media/selectworkitems.png)](./media/selectworkitems.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Work items<ept id="p1">**</ept> page, click <bpt id="p2">**</bpt>Add<ept id="p2">**</ept> on the toolbar, and then click <bpt id="p3">**</bpt>Database point-in-time restore request<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Database point-in-time restore request<ept id="p1">](./media/createrequest.png)](./media/createrequest.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Request for database point-in-time restore<ept id="p1">**</ept> dialog box, follow these steps:</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Environment name<ept id="p1">**</ept> field, select the environment to restore.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> Only Azure SQL Database environments can be restored.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Therefore, you can't select one-box environments that are based on Microsoft SQL Server.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Database<ept id="p1">**</ept> field, the database to restore is always Microsoft Dynamics AX or Microsoft Dynamics 365 for Finance and Operations.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Other databases, such as Entity store or Management Reporter, aren't currently supported for point-in-time restores.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Enter information in the <bpt id="p1">**</bpt>Restore point time<ept id="p1">**</ept> fields.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Azure SQL Database lets you restore a database to a point in time that is up to 35 days before the date when you make the request.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>If the environment is less than 35 days old, or if it has previously been restored, the maximum amount of time will be less.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Enter information in the <bpt id="p1">**</bpt>Preferred downtime start date<ept id="p1">**</ept> and the <bpt id="p2">**</bpt>Preferred downtime end date<ept id="p2">**</ept> fields.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>The end date must be at least one hour after the start date.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Requests must be submitted least 24 hours before the preferred downtime window, to help guarantee that resources are available to complete the request.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Carefully read and acknowledge the three statements that have check boxes next to them.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Request for database point-in-time restore dialog box<ept id="p1">](./media/requestform.png)](./media/requestform.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>After you submit your request, you will be redirected to the list of work items.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Here, you can view the status of the request, or reschedule or cancel the request.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>When the Microsoft Service Engineering team has acknowledged that it can complete your request, the status of the request changes to <bpt id="p1">**</bpt>Request accepted<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>At this point, you can follow any of these steps:</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Wait for the Service Engineering team to complete the restore.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>When restore is completed, the status changes to <bpt id="p1">**</bpt>Succeeded<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Reschedule the request by clicking the ID, or by selecting the request and then clicking <bpt id="p1">**</bpt>Reschedule<ept id="p1">**</ept> on the toolbar.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>You can then change the downtime windows dates and times, and the point in time to restore to.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Cancel the request by selecting the request and then clicking <bpt id="p1">**</bpt>Cancel<ept id="p1">**</ept> on the toolbar.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Conditions of a point-in-time restore</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Here is the list of requirements and conditions of operation for a point-in-time restore:</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Requests must be submitted 24 hours before the desired downtime window, to help guarantee that resources will be available to complete the request.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>A point-in-time restore erases the existing database in the target environment.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>The existing database can't be recovered after the restore is completed.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>The target environment will be unavailable until the refresh process is completed.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>The point-in-time restore will affect only the Dynamics 365 for Finance and Operations database.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Document handling documents that are stored in Azure blob storage won't be changed and will remain in their current state.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>The same rule applies to any documents that are stored in Azure blob storage through X++ customization.</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>The Management Reporter database will also remain in the current state and must be reset after the restore is completed.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>The Dynamics 365 for Finance and Operations database will be left at the precise state that it was in at the requested point in time.</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>We do <bpt id="p1">**</bpt>not<ept id="p1">**</ept> withhold batches or restrict access to the restored database.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>LCS users who have a role of <bpt id="p1">**</bpt>Project Owner<ept id="p1">**</ept> or <bpt id="p2">**</bpt>Environment Manager<ept id="p2">**</ept> in LCS will have access to the Azure SQL Database and machine credentials for all non-production environments.</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>To help guarantee security of the data that is copied to non-production environments, restrict membership in these roles.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

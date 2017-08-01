@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">559dda68bfd0ab5f528d8caaa6f5d84217bb8758</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\extensibility\extend-number-sequence-scope.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">c2dcb649a2adf66f7956927174b3654a6496967e</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">bf180ca3e93d333dafe3d055c4ac5ce25024983a</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Extend the number sequence scope</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic explains how developers can extend number sequence scope.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Extend the number sequence scope</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This topic shows you how to extend the number sequence scope.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>The scope of a number sequence defines which organization uses the number sequence.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>The scope can be <bpt id="p1">**</bpt>Shared<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Company<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Legal entity<ept id="p3">**</ept>, or <bpt id="p4">**</bpt>Operating unit<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Company<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Legal entity<ept id="p2">**</ept> scopes can be combined with fiscal calendar periods to create even more specific number sequences.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>New number sequence scopes can be added through extensions.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>To create a new scope and have it show up in the client, complete the following steps:</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Create an enum extension for <bpt id="p1">**</bpt>NumberSeqParameterType<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>In the extension, add a new enum value for the new scope type.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Create an enum extension for <bpt id="p1">**</bpt>NumberSequenceType<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Add a new enum value for the new scope type.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>NumberSequenceType<ept id="p1">**</ept> enum is used in <bpt id="p2">**</bpt>NumberSequenceTableEntity<ept id="p2">**</ept> and <bpt id="p3">**</bpt>NumberSequencesReferenceEntity<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Create a table extension for the <bpt id="p1">**</bpt>NumberSequenceScope<ept id="p1">**</ept> table.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Add a new field for the new scope type.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Create an extension class for <bpt id="p1">**</bpt>NumberSeqScope<ept id="p1">**</ept> class.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Create a post handler for the <bpt id="p1">**</bpt>NumberSeqScope::getValidScopeTypes<ept id="p1">**</ept> method.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>In the event handler method, add the new scope type to the valid scope types list.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Create an event handler for the <bpt id="p1">**</bpt>onGetFormatSegmentShortName<ept id="p1">**</ept> delegate.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>In the event handler, return the short name for the new scope type.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Create a post handler for the <bpt id="p1">**</bpt>NumberSeqScope::find<ept id="p1">**</ept> method and add logic for the new scope type so the corresponding <bpt id="p2">**</bpt>NumberSeqScope<ept id="p2">**</ept> instance can be found.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Create a post handler for the <bpt id="p1">**</bpt>NumberSeqScope::getId<ept id="p1">**</ept> method and add logic for the new scope type, so the corresponding record can be found (or created if it does not exist) in the <bpt id="p2">**</bpt>NumberSequenceScope<ept id="p2">**</ept> table.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Create an extension class for the <bpt id="p1">**</bpt>NumberSequenceScopeFactory<ept id="p1">**</ept> class.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Add a method that initializes the new <bpt id="p1">**</bpt>NumberSeqScope<ept id="p1">**</ept> that represents the new scope type.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Create a form extension for the <bpt id="p1">**</bpt>NumberSequenceDetails<ept id="p1">**</ept> form.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Add controls that show the new scope type to the <bpt id="p1">**</bpt>Scope<ept id="p1">**</ept> tab.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Create an extension class for the <bpt id="p1">**</bpt>NumberSequenceDetails<ept id="p1">**</ept> form.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Create a post handler for the <bpt id="p1">**</bpt>updateScopeControlVisibility<ept id="p1">**</ept> method to show the new scope type when the new scope type is selected in the <bpt id="p2">**</bpt>Scope<ept id="p2">**</ept> box.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Create a post handler for the <bpt id="p1">**</bpt>updateScopeControlValues<ept id="p1">**</ept> method to update the values of the controls in the <bpt id="p2">**</bpt>Scope<ept id="p2">**</ept> tab.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Create a post handler for the <bpt id="p1">**</bpt>createScope<ept id="p1">**</ept> method to initialize a <bpt id="p2">**</bpt>NumberSeqScope<ept id="p2">**</ept> instance when the new scope type is selected.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Create an event handler for the <bpt id="p1">**</bpt>getShortNameForParameterType<ept id="p1">**</ept> delegate to return the short name for the new scope type.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Add an extension class for the <bpt id="p1">**</bpt>NumberSequenceTableEntity<ept id="p1">**</ept> and <bpt id="p2">**</bpt>NumberSequencesReferenceEntity<ept id="p2">**</ept> data entities.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Create post handlers for the <bpt id="p1">**</bpt>GenerateNumberSequenceScopeTypes<ept id="p1">**</ept> and <bpt id="p2">**</bpt>GenerateNumberSequenceScopeValues<ept id="p2">**</ept> methods to generate the <bpt id="p3">**</bpt>NumberSequenceScope<ept id="p3">**</ept> for the new scope type.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

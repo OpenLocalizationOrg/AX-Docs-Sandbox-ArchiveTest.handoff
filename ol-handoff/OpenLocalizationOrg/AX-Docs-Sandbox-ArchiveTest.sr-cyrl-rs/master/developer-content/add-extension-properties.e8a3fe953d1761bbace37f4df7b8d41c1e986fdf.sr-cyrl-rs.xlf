@@ -1,0 +1,342 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">c9535e2bc8ef1cb76e7f8958a28c8e522637be53</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">retail\dev-itpro\add-extension-properties.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">f1c5d351af7ef9d48935d8c34942ff472b4d0dca</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">bba0a7f595c08be13ea26635ec546be387f7f234</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Add extension properties to a customer entity</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This tutorial shows how to use extension properties to extend an entity.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Add extension properties to a customer entity</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This tutorial shows how to use extension properties to extend an entity.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>In this tutorial, an entity is extended in Microsoft 365 for Retail, and persisted in both Retail and the channel databases.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>The point of sale (POS) user interface (UI) then provides access to the value.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>The new value is also written synchronously to Dynamics AX via the Commerce Data Exchange (CDX) transaction service.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>No customizations are required for the commerce runtime or Retail Server, because extension properties flow automatically.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Changes are required in forms, tables, the Real-time Service (RTS) client, CDX, the channel database, and the POS (both Retail Modern POS and Cloud POS).</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>This tutorial doesn't support offline mode.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Create a new Dynamics AX project</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Create a new table that is named <bpt id="p1">**</bpt>RetailCustPreference<ept id="p1">**</ept> and that references the CustTable table.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Start Microsoft Visual Studio.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Create a new model and project.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Dynamics AX<ept id="p1">**</ept> menu, click <bpt id="p2">**</bpt>Model Management<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Create Model<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Create a new model in the USR layer, and then click <bpt id="p1">**</bpt>Next<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Add the model to the existing ApplicationSuite package.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Next<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>Finish<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Enter a name for the project, and then click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>In Solution Explorer, right-click your new project.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Add<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>New Item<ept id="p2">**</ept>, and add a new table that is named <bpt id="p3">**</bpt>RetailCustPreference<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>In your project, double-click <bpt id="p1">**</bpt>RetailCustPreference<ept id="p1">**</ept> to open the table designer.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Create a new enumeration field that is named <bpt id="p1">**</bpt>EmailOptIn<ept id="p1">**</ept>, and set the <bpt id="p2">**</bpt>Enum Type<ept id="p2">**</ept> property to <bpt id="p3">**</bpt>NoYes<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Create a new string field that is named <bpt id="p1">**</bpt>AccountNum<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Set the field's extended data type to <bpt id="p1">**</bpt>CustAccount<ept id="p1">**</ept>, and set the <bpt id="p2">**</bpt>Mandatory<ept id="p2">**</ept> property to <bpt id="p3">**</bpt>Yes<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Create a new relation with the CustTable table, and add a new normal relation between <bpt id="p1">**</bpt>RetailCustPreference.AccountNum<ept id="p1">**</ept> and <bpt id="p2">**</bpt>CustTable.AccountNum<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Save your changes.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>In Solution Explorer, right-click your project, and then select <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Select the <bpt id="p1">**</bpt>Synchronize database<ept id="p1">**</ept> <bpt id="p2">**</bpt>on build<ept id="p2">**</ept> check box.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Right-click your project, and then select <bpt id="p1">**</bpt>Build<ept id="p1">**</ept> to build the new code and synchronize the database.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>When the build is completed, return to the project properties, and clear the <bpt id="p1">**</bpt>Synchronize database<ept id="p1">**</ept> <bpt id="p2">**</bpt>on build<ept id="p2">**</ept> check box.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Update the CustTable form</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>In Application Explorer, select <bpt id="p1">**</bpt>User Interface<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Forms<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>CustTable<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Right-click <bpt id="p1">**</bpt>CustTable<ept id="p1">**</ept>, and then select <bpt id="p2">**</bpt>Create Extension<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Your project now includes a new element that is named <bpt id="p1">**</bpt>CustTable.Extension<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Double-click this element to open the form designer.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Add a new data source that is named <bpt id="p1">**</bpt>RetailCustPreference<ept id="p1">**</ept>, and set the <bpt id="p2">**</bpt>Link Type<ept id="p2">**</ept> property to <bpt id="p3">**</bpt>OuterJoin<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>CustTable<ept id="p1">**</ept> form on the <bpt id="p2">**</bpt>Retail<ept id="p2">**</ept> tab page, add a new group that is named <bpt id="p3">**</bpt>CustomerPreference<ept id="p3">**</ept> and that has the <bpt id="p4">**</bpt>Caption<ept id="p4">**</ept> property set to <bpt id="p5">**</bpt>Customer Preference<ept id="p5">**</ept> .</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>To the <bpt id="p1">**</bpt>RetailCustPreference<ept id="p1">**</ept> table in the <bpt id="p2">**</bpt>CustomerPreference<ept id="p2">**</ept> group, add a new check box field that is named <bpt id="p3">**</bpt>EmailOptIn<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Add a new class that is named <bpt id="p1">**</bpt>CustTable<ph id="ph1">\_</ph>Extension<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>In the code editor, add the following code.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Save all your changes, and build your project again.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Run <bpt id="p1">**</bpt>iisreset<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>In Dynamics 365 for Retail, go to <bpt id="p1">**</bpt>Accounts receivable<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Common<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Customers<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>All customers<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Edit a customer record.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Retail<ept id="p1">**</ept> FastTab, select the <bpt id="p2">**</bpt>Email Opt In<ept id="p2">**</ept> check box, and then save your change.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Customize the existing RetailTransactionService class so that it handles the new data correctly</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>In Application Explorer, right-click the <bpt id="p1">**</bpt>RetailTransactionService (sys)<ept id="p1">**</ept> class, and then select <bpt id="p2">**</bpt>Customize<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Add the following two methods at the end.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Update the <bpt id="p1">**</bpt>updateCustomerExt<ept id="p1">**</ept> method by adding the following code to the end.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>(Also add the variable declaration for <bpt id="p1">**</bpt>customerContainer<ept id="p1">**</ept> on the first line of code.)</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Compile the project.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Configure CDX to sync the new table</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>In Dynamics 365 for Retail, go to <bpt id="p1">**</bpt>Retail<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Retail scheduler<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Retail channel<ept id="p4">**</ept> <bpt id="p5">**</bpt>schema<ept id="p5">**</ept>, and edit the channel schema by adding a new table:</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Channel tables<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>New<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Name the table <bpt id="p1">**</bpt>ax.RetailCustPreference<ept id="p1">**</ept>, and save it.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Add the following fields: <bpt id="p1">**</bpt>ACCOUNTNUM<ept id="p1">**</ept>, <bpt id="p2">**</bpt>DATAAREAID<ept id="p2">**</ept>, <bpt id="p3">**</bpt>EMAILOPTIN<ept id="p3">**</ept>, and <bpt id="p4">**</bpt>RECID<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Go to <bpt id="p1">**</bpt>Retail<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Retail scheduler<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Scheduler subjobs<ept id="p4">**</ept>, and create a new subjob:</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Set the <bpt id="p1">**</bpt>Name<ept id="p1">**</ept> field to <bpt id="p2">**</bpt>RetailCustPreference<ept id="p2">**</ept> and the <bpt id="p3">**</bpt>Description<ept id="p3">**</ept> field to <bpt id="p4">**</bpt>RetailCustPreference<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Set the <bpt id="p1">**</bpt>Channel table name<ept id="p1">**</ept> field to <bpt id="p2">**</bpt>ax.RetailCustPreference<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Set the <bpt id="p1">**</bpt>AX table<ept id="p1">**</ept> field to <bpt id="p2">**</bpt>RetailCustPreference<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Match fields<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Retail<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Retail Scheduler<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Scheduler subjobs<ept id="p4">**</ept>, add the new subjob to the <bpt id="p5">**</bpt>Customers - 1010<ept id="p5">**</ept> job, and save your change.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Go to <bpt id="p1">**</bpt>Retail<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Retail Scheduler<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Retail channel schema<ept id="p4">**</ept>, <bpt id="p5">**</bpt>export, edit,<ept id="p5">**</ept> <bpt id="p6">**</bpt>save with new name<ept id="p6">**</ept>, <bpt id="p7">**</bpt>import<ept id="p7">**</ept>, and edit the CDX table distribution XML.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Add the following XML fragment inside both <bpt id="p1">**</bpt>CustTable<ept id="p1">**</ept> nodes.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>(By adding this XML fragment, you're explicitly including changes in this table when it's synced with the channels.)</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Retail channel schema<ept id="p1">**</ept> page, select <bpt id="p2">**</bpt>AX<ept id="p2">**</ept> as the schema name, and then click <bpt id="p3">**</bpt>Generate queries<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Channel database</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>You will manually change the channel database for development.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>For the live deployment, see the "Live deployment" section later in this topic.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>You must apply the schema change from ChannelDBUpgrade.sql to the correct channel database to add the new table.</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Change <ph id="ph1">\[</ph>crt<ph id="ph2">\]</ph>.<ph id="ph3">\[</ph>CUSTOMERSVIEW<ph id="ph4">\]</ph>:</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Before the UNION All, add ", isnull(rcp.EMAILOPTIN, 0) as EMAILOPTIN" to the end of the list of columns that should be selected.</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Before the UNION All, add "LEFT OUTER JOIN <ph id="ph1">\[</ph>ax<ph id="ph2">\]</ph>.RETAILCUSTPREFERENCE rcp ON ct.ACCOUNTNUM = rcp.ACCOUNTNUM AND ct.DATAAREAID = rcp.DATAAREAID".</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>After the UNION All, add ", 0  as EMAILOPTIN" to the end of the list of columns that should be selected.</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Change sproc <ph id="ph1">\[</ph>crt<ph id="ph2">\]</ph>.<ph id="ph3">\[</ph>CREATEUPDATECUSTOMER<ph id="ph4">\]</ph>:</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Add the following code just before line "MERGE INTO <ph id="ph1">\[</ph>ax<ph id="ph2">\]</ph>.DIRADDRESSBOOKPARTY":</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Verify CDX</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Run the 1010 job by using full synchronization (channel data group).</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Check the download sessions and the channel database to verify that the data arrived (it should appear as <bpt id="p1">**</bpt>Applied<ept id="p1">**</ept>).</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> No customizations are required for the commerce runtime or Retail Server.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>Extension properties flow automatically.</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Test the customization's business logic by using the Retail Server test client</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Open the project at <bpt id="p1">**</bpt>RetailSdk<ph id="ph1">\\</ph>SampleExtensions<ph id="ph2">\\</ph>RetailServer<ph id="ph3">\\</ph>Extensions.TestClient<ept id="p1">**</ept>, and then compile and run it.</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>In the field next to the <bpt id="p1">**</bpt>Activate New<ept id="p1">**</ept> button, enter the Retail Server URL, and then click <bpt id="p2">**</bpt>Activate New<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Enter the device and register IDs, and then click <bpt id="p1">**</bpt>Activate<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Enter the Microsoft Azure Active Directory (Azure AD) credentials that have registration privileges, and then click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Wait for the test client to show which device is registered.</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Click the sign-in button, and sign in by using worker credentials.</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Sdk Tests<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>This button calls the new functionality that saves a customer with the <bpt id="p1">**</bpt>EmailOptIn<ept id="p1">**</ept> extension property applied.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>In Dynamics AX or the database, verify that the customer's <bpt id="p1">**</bpt>EmailOptIn<ept id="p1">**</ept> value is stored correctly.</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>**Note: **To see a console that includes errors/logs, use the <bpt id="p1">**</bpt>Debug<ept id="p1">**</ept> button.</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>Extend Modern POS</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Open the <bpt id="p1">**</bpt>ModernPos.sln<ept id="p1">**</ept> solution.</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>Do a global search for <bpt id="p1">**</bpt>BEGIN SDKSAMPLE<ph id="ph1">\_</ph>CUSTOMERPREFERENCES<ept id="p1">**</ept> in the solution.</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Enable the code at all places that you found, and recompile.</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>Only one resources file is required.</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>You can select the required locale.</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Run Modern POS, and verify that you can create a new customer.</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>When an existing customer is updated, the flag should be updated correctly in both the channel database and the Dynamics AX database.</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>Live deployment</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>Add the channel database change file to the database folder, and register it in <bpt id="p1">**</bpt>customization.settings<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>Run <bpt id="p1">**</bpt>msbuild<ept id="p1">**</ept> for the whole Retail SDK solution.</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>All packages will have all appropriate changes.</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>Deploy packages, either by using Microsoft Dynamics Lifecycle Services (LCS) or manually.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

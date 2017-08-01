@@ -1,0 +1,231 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">c32209fcebe49b6ccca5fa50960b6f9c2e0546d3</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\analytics\power-bi-integration-entity-store.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">49fdf78c83eaebe0f7611f33c672c82324bbd7f3</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">82e95c1d0ab19c8720471bad8bcf5d33356ab783</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Overview of Power BI integration with Entity store</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Entity store is an operational data store that is included with Microsoft Dynamics 365 for Finance and Operations.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic describes how Entity store enables Power BI integration with Finance and Operations.</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Overview of Power BI integration with Entity store</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Entity store is an operational data store that is included with Microsoft Dynamics 365 for Finance and Operations.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This topic describes how Entity store enables Power BI integration with Finance and Operations.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Entity store is an operational data store that is included with Microsoft Dynamics 365 for Finance and Operations.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>The Entity store feature was introduced in the Microsoft Dynamics AX platform update 1 (May 2016) release.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>This feature lets an administrator or power user stage aggregate measurements in a dedicated data store for reporting and analytics.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>(Aggregate measurements are a star schema that is modeled by using entities.) We call this data store Entity store.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>It’s a database that is optimized for reporting purposes.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Entity store uses the in-memory, clustered columnstore index (CCI) functionality that is built into Microsoft SQL Server to optimize reporting and queries.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Customers can use Microsoft Power BI DirectQuery models together with Entity store to enable high-volume, near-real-time analytical reporting over large volumes of data.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Power BI DirectQuery mode</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>In the February 2016 release of Microsoft Dynamics AX, you could create Power BI reports by using OData endpoints that are exposed via data entities (both aggregate data entities and detailed or regular data entities).</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Although this approach is still supported in Dynamics 365 for Operations, Entity store also lets power users create Power BI DirectQuery reports.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>DirectQuery mode<ept id="p1">](./media/entity-store-architecture-1024x587.jpg)](./media/entity-store-architecture.jpg)</ept></source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>As the preceding illustration shows, DirectQuery is a reporting mode that runs reports directly on Entity store.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>In this reporting mode, data isn't staged in Power BI caches.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>This mode provides two immediate benefits:</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>You can create Power BI reports over large data volumes.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Reports don't have to be updated by using Power BI.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>When Entity store is updated, reports reflect the latest data.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Additionally, data doesn't leave your Dynamics 365 for Finance and Operations environment, because no data is cached in the Power BI service.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Stage aggregate measurements in Entity store</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Aggregate measurements are a star schema that is modeled for analytical scenarios.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>In the February 2016 release, we enabled real-time, in-memory aggregate measurements.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>By using real-time aggregate measurements, you can enable embedded charts and key performance indicators (KPIs) that react to real-time operations on data.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>For information, see <bpt id="p1">[</bpt>In-memory, real-time aggregate models replace SSAS cubes<ept id="p1">](..\migration-upgrade\in-memory-real-time-aggregate-models.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Real-time aggregate measurements take advantage of the in-memory, non-clustered columnstore index (NCCI) technology.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Visuals and aggregate calculations that are built over real-time aggregate measurements reflect transactions within seconds.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>In the platform update 1 (May 2016) release, we enabled aggregate measurements that can be staged in Entity store.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Aggregate measurements that are staged in Entity store can be used for near-real-time analytical scenarios where large volumes of data must be explored by using Power BI.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>As a developer, you learned how to model an aggregate measurement for real-time analytics in <bpt id="p1">[</bpt>Modeling and using aggregate data<ept id="p1">](model-aggregate-data.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>In the platform update 1 (May 2016) release, we also added the capability to model aggregate measurements that can be staged in Entity store.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>In Microsoft Visual Studio, you can specify <bpt id="p1">**</bpt>StagedEntityStore<ept id="p1">**</ept> as the usage property of an aggregate measurement.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>This new property was added in May 2016.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Previously, <bpt id="p1">**</bpt>InMemoryRealTime<ept id="p1">**</ept> was available as the usage property.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>New StagedEntityStore usage property in Visual Studio<ept id="p1">](https://msdnshared.blob.core.windows.net/media/2016/06/New-usage-property-in-VS-300x242.png)](https://msdnshared.blob.core.windows.net/media/2016/06/New-usage-property-in-VS.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>However, you might wonder why you would model an aggregate measurement so that it can be staged?</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Why wouldn’t you use in-memory real-time aggregate measurements all the time?</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>There are several reasons for using the <bpt id="p1">**</bpt>StagedEntityStore<ept id="p1">**</ept> pattern:</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>There might be large amounts of data that must be explored and analyzed.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>You might have Analysis projects (that is, cubes) that you migrated from Microsoft Dynamics AX 2012 R3 as part of the code upgrade process to Dynamics 365 for Finance and Operations.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Because of the complex views and joins that are present in the schema, query response times might not be acceptable for embedded visuals.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>However, you might not want to refactor the visuals to take advantage of NCCI technology immediately.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Unlike the operational database schema, the schema in Entity store is modeled specifically for reporting.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Therefore, it's much easier to build new reports from the schema in Entity store.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Your scenario might not require that analytical data be updated within seconds of an operation.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Most Power BI reports that are built to enable data exploration fall into this category.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>If data freshness of approximately 10 minutes is acceptable for your scenario, you might want to use the staged pattern.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>If one of the preceding reasons covers your situation, you should stage your aggregate measurement in Entity store and it use for Power BI integration.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Update Entity store</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>In the client, you can find the <bpt id="p1">**</bpt>Entity Store<ept id="p1">**</ept> page at <bpt id="p2">**</bpt>Systems administration<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Setup<ept id="p3">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p4">**</bpt>Entity Store<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Entity Store page<ept id="p1">](./media/entity-store-form-1024x548.jpg)](./media/entity-store-form.jpg)</ept></source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>This page includes a list of aggregate measurements.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>You can stage any of these aggregate measurements in Entity store.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>If you're a developer and are familiar with the aggregate measurements that are available in the Application Object Tree (AOT), you might wonder why some aggregate measurements aren't shown here.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>If you have aggregate measurements that you migrated from AX 2012 R3 (that is, SQL Server Analysis Services projects that were migrated as part of the upgrade process), they can't be deployed until a developer changes the usage property to <bpt id="p1">**</bpt>StagedEntityStore<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>This behavior is intentional.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>We have enabled best practice warnings and errors that are intended to capture some of the common upgrade issues that affect aggregate measurements.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>You should fix best practice errors and warnings if you plan to use near-real-time (NCCI) mode.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>As of the May 2016 update, the administrator must schedule a periodic update by clicking <bpt id="p1">**</bpt>Refresh<ept id="p1">**</ept> on the <bpt id="p2">**</bpt>Entity Store<ept id="p2">**</ept> page.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>You can use the <bpt id="p1">**</bpt>Refresh<ept id="p1">**</ept> button for a one-time update (that is, demo) or to schedule periodic updates, as shown in the following illustration.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Configure refresh dialog box<ept id="p1">](./media/retail-cube-refresh-1024x548.jpg)](./media/retail-cube-refresh.jpg)</ept></source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>The batch framework is used for scheduling.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Therefore, refresh jobs can be monitored, load balanced, and prioritized by using the capabilities of the batch framework.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>As of the May 2016 update, we support only full updates.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>However, we will enable incremental updates soon.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Eventually, in a future update, the system will update Entity store based on actual usage patterns.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Therefore, as an administrator, you will have to use the <bpt id="p1">**</bpt>Configure refresh<ept id="p1">**</ept> dialog box only as an exception.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

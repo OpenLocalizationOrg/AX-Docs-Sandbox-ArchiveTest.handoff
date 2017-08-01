@@ -1,0 +1,804 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">89172da78f753fed282de52a068ecbf600cf550e</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\lifecycle-services\ax-2012\create-purge-objects.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">1d79542c37fa19aa0132c2b3ab1309f7208a5c50</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">d5fcde9886bc800c3728b5ded4189ea0f11c0ae4</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Create purge objects (AX 2012)</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Create Intelligent Data Management Framework purge objects (AX 2012)</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Considerations for Purge Objects, driver tables, relations, and rules</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: Before you use Purge Objects, you must have experience in the maintenance and administration of the Microsoft Dynamics AX application and database.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>IDMF lets you create a Purge Object that defines a hierarchical relationship tree among the Microsoft Dynamics AX application tables.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>You can then apply rules to selected records based on specific criteria.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Records matching the selection criteria are deleted from the whole relationship tree in the Purge Object when a purge task runs.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Improper use of this framework can cause unexpected results, database corruption, and application downtime requiring full database and application recovery.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Exercise extreme caution, and thoroughly test your recycling strategy in a test environment before working in the production environment.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Consider the following points when working with a Purge Object:</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Tables that store transient or intermediate data are usually good candidates for a Purge Object.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>You must validate the data dependency and application functionality before creating a Purge Object with such tables.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Verify that the table you select as the driver table for a Purge Object is a header table, such as <bpt id="p1">**</bpt>SalesParmTable<ept id="p1">**</ept> or <bpt id="p2">**</bpt>SalesQuotationTable<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>A good indication, although not always accurate, is that the <bpt id="p1">**</bpt>TableGroup<ept id="p1">**</ept> value for such a table is <bpt id="p2">**</bpt>WorkSheetHeader<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Miscellaneous<ept id="p3">**</ept>, or <bpt id="p4">**</bpt>Transaction<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Tables with a <bpt id="p1">**</bpt>TableGroup<ept id="p1">**</ept> value of <bpt id="p2">**</bpt>Main<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Parameter<ept id="p3">**</ept>, <bpt id="p4">**</bpt>Group<ept id="p4">**</ept>, and <bpt id="p5">**</bpt>WorkSheetLine<ept id="p5">**</ept> cannot be driver tables.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>The driver table becomes the root parent in the hierarchical relationship tree.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>IDMF queries the <bpt id="p1">**</bpt>XRefTableRelation<ept id="p1">**</ept> table to determine the parent-child relationships.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Removing records from a Purge Object may cause data inconsistency in your application in these conditions:</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>The driver table has known parent tables.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>The driver table has known child tables that are not added to the Purge Table as a relation.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Always minimize the Purge Object, and keep only the necessary relations and rules for your implementations.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Consider removing a table from the Purge Object in these conditions:</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>The table does not contain any data, and it is not likely to contain data in the future.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>The table stores only transient data, such as <bpt id="p1">**</bpt>CustTransOpen<ept id="p1">**</ept> or <bpt id="p2">**</bpt>SpecTrans<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>The table stores open transactions.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>The table creates nested relationships.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>If a table appears multiple times on different levels in the relationship tree, with the same qualifying relationship condition or set of primary keys, consider keeping the occurrence only in the lowest-numbered level in the relationship tree.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>There may be multiple relationships between two tables.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>In that case, evaluate the relationships and functionality carefully.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>We recommend that you use only a single relationship in the Purge Object.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>However, you can use multiple relationships if necessary.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Be sure to select a valid relationship using a unique index or primary key, if one exists.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>A table is unrelated to the driver table and makes its own Purge Object.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>For example, if you use <bpt id="p1">**</bpt>ProdTable<ept id="p1">**</ept> as a driver table, it also discovers <bpt id="p2">**</bpt>ProdJournalTable<ept id="p2">**</ept>, which itself is a separate Purge Object.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Another example is PurchReqTable.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>If you use <bpt id="p1">**</bpt>PurchReqTable<ept id="p1">**</ept> as a driver table, it discovers <bpt id="p2">**</bpt>PurchParmLine<ept id="p2">**</ept>, which itself is a part of the <bpt id="p3">**</bpt>PurchParmTable<ept id="p3">**</ept> Purge Object.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Verify that the relationship tree that you have created in the Purge Object actually purges the intended data from your system.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>A Purge Object that you create must look at all related records.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Missing relationships lead to orphaned data.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Thoroughly test the effect of the purge on your database and application in a test environment that resembles your production environment.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Test all business processes, and obtain user sign-off before trying to implement the Purge Object in the production environment.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>When you create a Purge Object from a purge template that is included with IDMF, validate and thoroughly test the Purge Object in a test environment.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>These templates are created in a standard Microsoft Dynamics AX application and may not match your implementation.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>We recommend that you use the discovery process to create your own Purge Objects or Archive Objects, and compare them with the templates, if a matching template is available.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Carefully analyze any difference between the object you created through the discovery process and the template, to determine the cause of the difference.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Manually add relations and rules to, or remove relations and rules from, the Purge Objects and Archive Objects to fit your requirements.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Make sure that the TableGroup property is set for all custom tables in Microsoft Dynamics AX, so that the discovery process can retrieve all related tables.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Synchronize changes, such as adding, deleting, or updating a table in the Application Object Tree (AOT), or the data dictionary synchronization in the Microsoft Dynamics AX metadata with IDMF.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Run the post-installation tasks to synchronize the metadata.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>For information, see the "Post-installation tasks" section in the <bpt id="p1">[</bpt>Data Management Framework Installation Guide<ept id="p1">](http://www.microsoft.com/en-us/download/details.aspx?id=16111)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Caution<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Verify that any tables with a table group of type Transaction are part of the Purge Object only if it is acceptable to purge data from these tables.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Create a new Purge Object</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Follow these steps to create a new Purge Object:</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>On the toolbar, click <bpt id="p1">**</bpt>Create Purge Object<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Create Purge Object<ept id="p1">**</ept> dialog box, select a table from the <bpt id="p2">**</bpt>Driver table<ept id="p2">**</ept> list.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>The list excludes tables from the exception list.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Navigate to and select <bpt id="p1">**</bpt>PurchParmTable<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>A driver table is the parent table that defines the relationship tree for a specific Purge Object.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>In a Purge Object, the driver table may have child entities, but it does not have a parent entity in the relationship tree.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>To continue, select the most unique index for the table.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>This index is used to create the parent-child relationship in the Purge Object.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Unique keys<ept id="p1">**</ept> field, select <bpt id="p2">**</bpt>ParmId<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>ParmTableRefIdx<ept id="p1">**</ept> index is created using the <bpt id="p2">**</bpt>ParmID<ept id="p2">**</ept> and <bpt id="p3">**</bpt>TableRefID<ept id="p3">**</ept> fields.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Notice that by selecting <bpt id="p1">**</bpt>ParmID<ept id="p1">**</ept>, you are selecting a partial key.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>A unique index enables the discovery process to identify related tables in the same functional area, such as Finance.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>If you do not select a unique index, the discovery process may find related tables from all functional areas.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>You must make sure that the discovery process identifies the correct functional relationships for your implementation of Microsoft Dynamics AX.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Discover<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>IDMF uses metadata that is imported from the Microsoft Dynamics AX database, and the exception parameters list, to generate a relationship tree.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>The relationship tree starts with the driver table and creates a hierarchy of parent-child relationships.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Make sure that your Purge Object resembles the following graphic.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>IDMF Purge object</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>The relationship tree in this Purge Object is three levels deep.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Level 0, the topmost level, contains the driver table, PurchParmTable.</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Level 1 contains the child entities of the driver table.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>The last level, level 2, contains the child entities of tables in level 1.</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>This relationship tree is created based on the following information:</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>The Microsoft Dynamics AX metadata.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>The discovery process uses the metadata to create a list of related tables that form the parent-child hierarchy based on the driver table.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>The exception parameters.</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Tables that belong to the exception parameters list are filtered out from the relationship tree.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Use the <bpt id="p1">**</bpt>Administer<ept id="p1">**</ept> menu to configure the exception parameters.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>Verify the relationship tree, and assess the functional effect of the tree on your Microsoft Dynamics AX application.</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>As a result of your assessment, you may decide to manually add or remove some relations and rules.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>For example, when you click <bpt id="p1">**</bpt>Restore<ept id="p1">**</ept> in the <bpt id="p2">**</bpt>Properties<ept id="p2">**</ept> pane, the Purge Object is restored from the default template that ships with IDMF.</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>The restored relationship tree in this case differs from the Purge Object you created using <bpt id="p1">**</bpt>PurchParmTable<ept id="p1">**</ept> as the discovery table.</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>This is because the default template in IDMF is modified based on the functionality assessment of a standard Microsoft Dynamics AX application.</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>The Purge Object you create through discovery may not agree with the default template that is included with IDMF, if one exists for the discovery table.</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Be careful with your selection of the driver table.</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>If you select a table such as the <bpt id="p1">**</bpt>ProdTable<ept id="p1">**</ept> table, the relationship tree can go many levels deep, spanning many tables on each level.</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Such a Purge Object creates a complex relationship tree and increases the potential for error.</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>The default template that is included with IDMF may not match the metadata of your Microsoft Dynamics AX implementation.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>A table in the default template that is not found in the metadata from the production database is marked invalid.</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>An invalid table appears with a dotted red border.</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>You must remove all invalid tables from the Purge Object.</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>The fields that you use to create relations and rules from the valid tables are also validated.</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>A field with a disabled configuration key is considered invalid.</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>A valid table with invalid fields is shown with a yellow dotted border, as shown in Figure 2.</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>You must remove any rules or relations in the Purge Object that are defined with the disabled fields.</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>You can continue using the object after removing the invalid table or tables with invalid fields.</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>IDMF Purge Object with Invalid Tables</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>Navigation of the Create Purge Object workspace</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>The following tables provide descriptions for the controls in this workspace.</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>Panes</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>Pane</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Relationship tree pane<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>Provides a graphical view of all the tables in the Purge Object.</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>The following list describes the controls and command that you can use to navigate the relationship tree pane:</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>With the <bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="ui"&gt;</bpt>Level<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept> slider, you can select a level and show only the tables at the selected and higher levels.</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>With the <bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="ui"&gt;</bpt>Zoom<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept> slider, you can change the diagram size.</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Right-click the driver table, and then click <bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="ui"&gt;</bpt>Remove all invalid tables<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept> to remove all invalid tables, together with all related tables in the nested hierarchy.</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>Right-click a table to display a menu with the following options:</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="ui"&gt;</bpt>Remove<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept> to remove the selected table and its related tables from the hierarchical tree.</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>For example, the <bpt id="p1">&lt;strong&gt;</bpt>SpecTrans<ept id="p1">&lt;/strong&gt;</ept> table appears in level 2 and level 3.</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>If you right-click the table in level 2, and then select <bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="ui"&gt;</bpt>Remove<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept>, the table is removed from level 2, together with its nested child relations.</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>The occurrence of the table remains intact in level 3.</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="ui"&gt;</bpt>Select all occurrences<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept> to display all occurrences of the selected table and its related tables in a dotted green border.</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>In this case, the table <bpt id="p1">&lt;strong&gt;</bpt>SpecTrans<ept id="p1">&lt;/strong&gt;</ept> is selected in levels 2 and 3, together with all its nested child relations.</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="ui"&gt;</bpt>Remove all occurrences<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept> to remove all occurrences of the selected table and its related tables.</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>In this case, the table <bpt id="p1">&lt;strong&gt;</bpt>SpecTrans<ept id="p1">&lt;/strong&gt;</ept> is removed from levels 2 and 3, together with all its nested child relations.</source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>The removed tables appear in a gray-colored shape with a solid red border.</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="ui"&gt;</bpt>Discover<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept> to regenerate the hierarchical parent-child relationship for the selected table.</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>This command is available only when you select a table with a <bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="ui"&gt;</bpt>TableGroup<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept> value of <bpt id="p3">&lt;strong&gt;</bpt><bpt id="p4">&lt;span class="ui"&gt;</bpt>WorkSheetHeader<ept id="p4">&lt;/span&gt;</ept><ept id="p3">&lt;/strong&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="ui"&gt;</bpt>Properties<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>Shows properties for the selected table and provides commands that you can use for the selected table.</source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>When a table in the Purge Object contains multiple relations, you can use the <bpt id="p1">&lt;span class="ui"&gt;</bpt>Relations<ept id="p1">&lt;/span&gt;</ept> node in the tree view to disable one or more relations, as detailed later in this topic.</source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="ui"&gt;</bpt>Remove table<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>Provides a data grid that you can use to select tables for removal from the relationship tree.</source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>This pane also provides an <bpt id="p1">&lt;span class="ui"&gt;</bpt>Advanced filter<ept id="p1">&lt;/span&gt;</ept> control that you can use to filter the data grid.</source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="ui"&gt;</bpt>Related information<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>Provides additional information for some of the tables.</source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>If related information is provided, read it carefully to understand the recycle relevance of the table.</source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>Buttons</source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>Button</source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Remove<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>Remove tables that are selected in the data grid in the Remove table pane.</source>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>When you remove a table, all of the child tables for the selected table are removed.</source>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>The removal spans the whole relationship tree, and all nested parent-child relationships for the selected table's child tables are removed.</source>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Revert<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>Reverse the modifications made to the Purge Object, back to the last save.</source>
+        </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>This is like an "undo" command.</source>
+        </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Show all/Show selected<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>Show all tables or selected tables, and switch the label of the command button.</source>
+        </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>Removed tables appear with a dotted red line around them.</source>
+        </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Restore<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>Revert the Purge Object to the original source that you used to create it.</source>
+        </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>If a purge template was used, the Purge Object reverts to the template that is shipped with IDMF.</source>
+        </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>If the discovery process was used, the Purge Object reverts to the first Purge Object that you discovered and saved.</source>
+        </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>Fields (Remove table pane)</source>
+        </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>Field</source>
+        </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Check boxes<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>Select the tables that you want to remove from the relationship tree.</source>
+        </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Table name<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>The name of the table.</source>
+        </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Configuration key<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>The configuration key of the table.</source>
+        </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Level<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>The level of the table in the relationship tree.</source>
+        </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Row count<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>The number of rows in the table.</source>
+        </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>Walkthrough: Create a Purge Object</source>
+        </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>This section provides a walkthrough for working with a Purge Object.</source>
+        </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>If you have not created the Purge Object already, create one.</source>
+        </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>Use the <bpt id="p1">**</bpt>Zoom<ept id="p1">**</ept> slider to change the diagram size, so that you can read the table names easily.</source>
+        </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>In the relationship tree, move the mouse pointer over the table <bpt id="p1">**</bpt>PurchParmTable<ept id="p1">**</ept> to see the information that is displayed in the tooltip.</source>
+        </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>In the relationship tree, move the mouse pointer over the <bpt id="p1">**</bpt>1:N relationship description<ept id="p1">**</ept> above the <bpt id="p2">**</bpt>PurchParmLine<ept id="p2">**</ept> table to see the information that is displayed in the tooltip.</source>
+        </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept> pane, expand each node in the tree view to see the information that is provided.</source>
+        </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>If the <bpt id="p1">**</bpt>Advanced filter<ept id="p1">**</ept> control does not show the selection criteria, click the <bpt id="p2">**</bpt>Advanced filter<ept id="p2">**</ept> arrow.</source>
+        </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>Type 1 in the level box, and then click <bpt id="p1">**</bpt>Search<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>This changes the grid so that it shows only those tables that are in level 1.</source>
+        </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>Select the <bpt id="p1">**</bpt>PurchParmLine<ept id="p1">**</ept> table by selecting the check box next to it.</source>
+        </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept> pane, click <bpt id="p2">**</bpt>Remove<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>Notice that the table <bpt id="p1">**</bpt>PurchParmLine<ept id="p1">**</ept>, and all its child tables in levels 1 and 2, are marked with a red border, which indicates that these tables have been removed from the relationship tree.</source>
+        </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>Click the <bpt id="p1">**</bpt>Show all<ept id="p1">**</ept> button in the <bpt id="p2">**</bpt>Properties<ept id="p2">**</ept> pane.</source>
+        </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>The diagram shows all the tables, with the removed tables in a gray-colored shape with solid red lines.</source>
+        </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Revert<ept id="p1">**</ept> to restore the original Purge Object.</source>
+        </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source>The diagram now reverts to the state it was in before you deleted <bpt id="p1">**</bpt>PurchParmLine<ept id="p1">**</ept> in step 7.</source>
+        </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source>Repeat steps 6, 7, and 8 to remove the tables again.</source>
+        </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source>You see all the removed tables in a gray-colored shape with solid red lines.</source>
+        </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Show selected<ept id="p1">**</ept> in the <bpt id="p2">**</bpt>Properties<ept id="p2">**</ept> pane to see the revised Purge Object.</source>
+        </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>Verify that the removed tables are not in the Purge Object.</source>
+        </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source>Save the Purge Object.</source>
+        </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source>On the toolbar, click <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source>A warning is displayed.</source>
+        </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source>Read the warning carefully.</source>
+        </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source>IDMF lets you create a Purge Object that defines a hierarchical relationship tree among the Microsoft Dynamics AX application tables.</source>
+        </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source>You can then apply rules to selected records based on specific criteria.</source>
+        </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source>Records matching the selection criteria are deleted from the entire relationship tree in the Purge Object.</source>
+        </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source>Improper use of IDMF can cause unexpected results, database corruption, and application downtime requiring full database and application recovery.</source>
+        </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source>Exercise extreme caution, and thoroughly test your recycling strategy in a test environment before working in the production environment.</source>
+        </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept> to continue saving the Purge Object or <bpt id="p2">**</bpt>No<ept id="p2">**</ept> to cancel the save operation.</source>
+        </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept> to continue with the walkthrough.</source>
+        </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>In the** Save as** dialog box, verify that the name is <bpt id="p1">**</bpt>PurchParmTable<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="298" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="299" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Overwrite Purge Object<ept id="p1">**</ept> dialog box, click <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept> to overwrite the Purge Object with the new version.</source>
+        </trans-unit>
+        <trans-unit id="300" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Save status<ept id="p1">**</ept> dialog box, click <bpt id="p2">**</bpt>OK<ept id="p2">**</ept> to continue.</source>
+        </trans-unit>
+        <trans-unit id="301" translate="yes" xml:space="preserve">
+          <source>On the toolbar, click <bpt id="p1">**</bpt>Purge template/Purge Objects<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>PurchParmTable<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="302" translate="yes" xml:space="preserve">
+          <source>Notice that the icon of the Purge Object has changed.</source>
+        </trans-unit>
+        <trans-unit id="303" translate="yes" xml:space="preserve">
+          <source>This change in the icon differentiates a Purge Object from a purge template.</source>
+        </trans-unit>
+        <trans-unit id="304" translate="yes" xml:space="preserve">
+          <source>Verify that the Purge Object diagram does not contain the tables you removed in step 10.</source>
+        </trans-unit>
+        <trans-unit id="305" translate="yes" xml:space="preserve">
+          <source>Switch between <bpt id="p1">**</bpt>Show all/Show selected<ept id="p1">**</ept> to confirm that the removed tables still show up in the red border.</source>
+        </trans-unit>
+        <trans-unit id="306" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept> pane, click <bpt id="p2">**</bpt>Revert<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="307" translate="yes" xml:space="preserve">
+          <source>The Purge Object does not change.</source>
+        </trans-unit>
+        <trans-unit id="308" translate="yes" xml:space="preserve">
+          <source>The revert action cannot undo the changes, because the Purge Object has been saved.</source>
+        </trans-unit>
+        <trans-unit id="309" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept> pane, click <bpt id="p2">**</bpt>Restore<ept id="p2">**</ept> to revert the Purge Object.</source>
+        </trans-unit>
+        <trans-unit id="310" translate="yes" xml:space="preserve">
+          <source>The Purge Object reverts to the purge template that is included in IDMF, if one exists.</source>
+        </trans-unit>
+        <trans-unit id="311" translate="yes" xml:space="preserve">
+          <source>If there is no default purge template, the Purge Object reverts to the first version you created through the discovery process.</source>
+        </trans-unit>
+        <trans-unit id="312" translate="yes" xml:space="preserve">
+          <source>The restored Purge Object may be the same as, or different from, the Purge Object you started working with in step 1.</source>
+        </trans-unit>
+        <trans-unit id="313" translate="yes" xml:space="preserve">
+          <source>The default purge template contains a modified or adjusted relationship tree based on the functional assessment of the Microsoft Dynamics AX application.</source>
+        </trans-unit>
+        <trans-unit id="314" translate="yes" xml:space="preserve">
+          <source>On the toolbar, click <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="315" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept> to overwrite the object.</source>
+        </trans-unit>
+        <trans-unit id="316" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Save status<ept id="p1">**</ept> dialog box, click <bpt id="p2">**</bpt>OK<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="317" translate="yes" xml:space="preserve">
+          <source>Keep the Purge Object open, because it is also used in the next section.</source>
+        </trans-unit>
+        <trans-unit id="318" translate="yes" xml:space="preserve">
+          <source>Walkthrough: Disable a relation</source>
+        </trans-unit>
+        <trans-unit id="319" translate="yes" xml:space="preserve">
+          <source>This section provides a walkthrough for disabling relations in a table with multiple relationships.</source>
+        </trans-unit>
+        <trans-unit id="320" translate="yes" xml:space="preserve">
+          <source>Click the <bpt id="p1">**</bpt>Configure<ept id="p1">**</ept> menu.</source>
+        </trans-unit>
+        <trans-unit id="321" translate="yes" xml:space="preserve">
+          <source>On the toolbar, click <bpt id="p1">**</bpt>Purge template/Purge Objects<ept id="p1">**</ept>, and then select <bpt id="p2">**</bpt>InventJournalTable<ept id="p2">**</ept> from the list.</source>
+        </trans-unit>
+        <trans-unit id="322" translate="yes" xml:space="preserve">
+          <source>In the relationship tree, move the mouse pointer over the <bpt id="p1">**</bpt>1:N relationship description<ept id="p1">**</ept> above the <bpt id="p2">**</bpt>InventJournalTrans<ept id="p2">**</ept> table to see the information displayed in the tooltip.</source>
+        </trans-unit>
+        <trans-unit id="323" translate="yes" xml:space="preserve">
+          <source>Notice that this table has only one relation.</source>
+        </trans-unit>
+        <trans-unit id="324" translate="yes" xml:space="preserve">
+          <source>In the relationship tree, move the mouse pointer over the <bpt id="p1">**</bpt>1:N relationship description<ept id="p1">**</ept> above the <bpt id="p2">**</bpt>WMSJournalTable<ept id="p2">**</ept> table to see the information displayed in the tooltip.</source>
+        </trans-unit>
+        <trans-unit id="325" translate="yes" xml:space="preserve">
+          <source>Notice that this table has many relations.</source>
+        </trans-unit>
+        <trans-unit id="326" translate="yes" xml:space="preserve">
+          <source>In the relationship tree, select <bpt id="p1">**</bpt>WMSJournalTable<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="327" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept> pane, expand <bpt id="p2">**</bpt>WMSJournalTable<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Relations<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="328" translate="yes" xml:space="preserve">
+          <source>This table has many relations, and you can use the <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept> pane to disable one or more relations.</source>
+        </trans-unit>
+        <trans-unit id="329" translate="yes" xml:space="preserve">
+          <source>Right-click the <bpt id="p1">**</bpt>InventBOM<ept id="p1">**</ept> relation to open the <bpt id="p2">**</bpt>Disable relation<ept id="p2">**</ept> menu.</source>
+        </trans-unit>
+        <trans-unit id="330" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Disable relation<ept id="p1">**</ept> menu appears only when a table has multiple relations.</source>
+        </trans-unit>
+        <trans-unit id="331" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Relations<ept id="p1">**</ept> node, right-click <bpt id="p2">**</bpt>InventCount<ept id="p2">**</ept>, and select <bpt id="p3">**</bpt>Disable relation<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="332" translate="yes" xml:space="preserve">
+          <source>Notice that the disabled relation appears in red.</source>
+        </trans-unit>
+        <trans-unit id="333" translate="yes" xml:space="preserve">
+          <source>Right-click <bpt id="p1">**</bpt>InventCount<ept id="p1">**</ept>, and select <bpt id="p2">**</bpt>Enable relation<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="334" translate="yes" xml:space="preserve">
+          <source>Notice that the enabled relation appears in black.</source>
+        </trans-unit>
+        <trans-unit id="335" translate="yes" xml:space="preserve">
+          <source>An excluded relation does not become part of the Purge Object.</source>
+        </trans-unit>
+        <trans-unit id="336" translate="yes" xml:space="preserve">
+          <source>Multiple enabled relations form the "or" clause in the SQL statement that the Purge Object generates.</source>
+        </trans-unit>
+        <trans-unit id="337" translate="yes" xml:space="preserve">
+          <source>Do not save the purge template.</source>
+        </trans-unit>
+        <trans-unit id="338" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Caution<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="339" translate="yes" xml:space="preserve">
+          <source>Exercise care, and thoroughly test the excluded relations.</source>
+        </trans-unit>
+        <trans-unit id="340" translate="yes" xml:space="preserve">
+          <source>An erroneous or incorrect exclusion causes data corruption.</source>
+        </trans-unit>
+        <trans-unit id="341" translate="yes" xml:space="preserve">
+          <source>Purge template/Purge Objects</source>
+        </trans-unit>
+        <trans-unit id="342" translate="yes" xml:space="preserve">
+          <source>This command provides a list of purge templates and Purge Objects in your system.</source>
+        </trans-unit>
+        <trans-unit id="343" translate="yes" xml:space="preserve">
+          <source>A purge template is a template that is included with IDMF with a predefined relationship tree.</source>
+        </trans-unit>
+        <trans-unit id="344" translate="yes" xml:space="preserve">
+          <source>You can use a purge template as a starting point to create a Purge Object.</source>
+        </trans-unit>
+        <trans-unit id="345" translate="yes" xml:space="preserve">
+          <source>You must review a purge template to make sure that it meets your requirements, and save it before you can use it in a purge task.</source>
+        </trans-unit>
+        <trans-unit id="346" translate="yes" xml:space="preserve">
+          <source>Walkthrough: Work with a purge template</source>
+        </trans-unit>
+        <trans-unit id="347" translate="yes" xml:space="preserve">
+          <source>This section provides a walkthrough for working with a purge template.</source>
+        </trans-unit>
+        <trans-unit id="348" translate="yes" xml:space="preserve">
+          <source>On the toolbar, click <bpt id="p1">**</bpt>Purge template/Purge Objects<ept id="p1">**</ept>, and then select <bpt id="p2">**</bpt>PurchReqTable<ept id="p2">**</ept> from the list.</source>
+        </trans-unit>
+        <trans-unit id="349" translate="yes" xml:space="preserve">
+          <source>Review the tables, table properties, and relationship tree to understand how the delete action on the <bpt id="p1">**</bpt>PurchReqTable<ept id="p1">**</ept> cascades through the relationship tree in the purge template.</source>
+        </trans-unit>
+        <trans-unit id="350" translate="yes" xml:space="preserve">
+          <source>Make sure that this relationship tree covers your application and any customizations you may have made to the Microsoft Dynamics AX application.</source>
+        </trans-unit>
+        <trans-unit id="351" translate="yes" xml:space="preserve">
+          <source>On the toolbar, click <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="352" translate="yes" xml:space="preserve">
+          <source>You can either keep the same name or change the name.</source>
+        </trans-unit>
+        <trans-unit id="353" translate="yes" xml:space="preserve">
+          <source>Change the name to PurchReqTable<ph id="ph1">\_</ph>object to identify this saved object as a Purge Object.</source>
+        </trans-unit>
+        <trans-unit id="354" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="355" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> in the dialog box to continue.</source>
+        </trans-unit>
+        <trans-unit id="356" translate="yes" xml:space="preserve">
+          <source>On the toolbar, click <bpt id="p1">**</bpt>Purge template/Purge Objects<ept id="p1">**</ept>, and compare the icons of <bpt id="p2">**</bpt>PurchReqTable<ept id="p2">**</ept> and <bpt id="p3">**</bpt>PurchReqTable<ph id="ph1">\_</ph>object<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="357" translate="yes" xml:space="preserve">
+          <source>Repeat steps 1 through 3, but save the object as <bpt id="p1">**</bpt>PurchReqTable<ept id="p1">**</ept>, the original name.</source>
+        </trans-unit>
+        <trans-unit id="358" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Overwrite Purge Object<ept id="p1">**</ept> dialog box, click <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept> to overwrite the object with the new version.</source>
+        </trans-unit>
+        <trans-unit id="359" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> to continue.</source>
+        </trans-unit>
+        <trans-unit id="360" translate="yes" xml:space="preserve">
+          <source>Repeat step 5.</source>
+        </trans-unit>
+        <trans-unit id="361" translate="yes" xml:space="preserve">
+          <source>Notice that the icons of a Purge Object and a saved purge template are same.</source>
+        </trans-unit>
+        <trans-unit id="362" translate="yes" xml:space="preserve">
+          <source>This is because when you save a purge template, it becomes a Purge Object.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

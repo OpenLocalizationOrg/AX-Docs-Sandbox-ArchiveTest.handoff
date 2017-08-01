@@ -1,0 +1,477 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">3dcada57d543fc5b4ca643d47135841f2828e898</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\dev-tools\date-effectivity.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">7ff08a1a90ae414ba8bc12f36b6400f59bf68f20</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">0ef74339e0ddc084618405c2cf37af18995d8f29</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Date effectivity</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic provides information about date-effective data entities and data sources, and shows how to create a date-effective entity.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>It also explains how date effectivity applies to read and write activities.</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Date effectivity</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>This topic provides information about date-effective data entities and data sources, and shows how to create a date-effective entity.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>It also explains how date effectivity applies to read and write activities.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>There are different design patterns for date-effective features that involve data entities.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>The patterns are classified into two main categories:</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Date-effective entities<ept id="p1">**</ept> – The entity has at least one date-effective data source, and the entity itself is also date effective.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Non-date-effective entities<ept id="p1">**</ept> – The entity itself is not date effective, but it does contain date-effective data sources.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>The next sections describe the small list of properties and methods that control the date-effective behavior of entities and their date-effective data sources.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Dateeffective entities</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The following table describes the properties that control the date-effective behavior of a data entity.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Property name of the entity</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Node of the property</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Value</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>ValidTimeStateEnabled</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Data entity node in the designer</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Yes (or No)</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The value <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept> makes the entity date effective.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>The entity must have <bpt id="p1">**</bpt>ValidFrom<ept id="p1">**</ept> and <bpt id="p2">**</bpt>ValidTo<ept id="p2">**</ept> fields.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>These fields are mapped to the <bpt id="p1">**</bpt>ValidFrom<ept id="p1">**</ept> and <bpt id="p2">**</bpt>ValidTo<ept id="p2">**</ept> fields of a date-effective data source.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>The value <bpt id="p1">**</bpt>No<ept id="p1">**</ept> does <bpt id="p2">*</bpt>not<ept id="p2">*</ept> disable the enforcement of date effectivity on any date-effective tables that are data sources of the entity.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>ValidTimeStateKey</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Under the data entity node, <bpt id="p1">**</bpt>Keys<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>EntityKey<ept id="p2">**</ept></source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Yes (or No)</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>The value <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept> identifies the key that is required to enforce the date-effective values on this particular entity.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Read activities</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>When date effectivity is set at the data entity level, reads from the entity behave the same way as reads from a table.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>The entity has <bpt id="p1">**</bpt>ValidFrom<ept id="p1">**</ept> and <bpt id="p2">**</bpt>ValidTo<ept id="p2">**</ept> fields that the system applies date filters to during reads.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Query modes and the validtimestate keyword of X++ SQL select</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>A date-effective entity supports the following three <bpt id="p1">*</bpt>query modes<ept id="p1">*</ept>, which vary in their use of the X++ <bpt id="p2">**</bpt>validtimestate<ept id="p2">**</ept> keyword:</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Default mode<ept id="p1">**</ept> – Current records are returned using <ph id="ph1">`select * from FMVehicleRateEntity; // X++ SQL.`</ph></source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>AsOfDate mode<ept id="p1">**</ept> – Records valid for the specified date are returned using <ph id="ph1">`select validtimestate(d1) * from FMVehicleRateEntity;`</ph></source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>AsOfDateRange mode<ept id="p1">**</ept> – Records valid for the specified date range are returned using <ph id="ph1">`select validtimestate(d1,d2) * from FMVehicleRateEntity;`</ph></source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Important:<ept id="p1">**</ept> For data entities that aren't themselves date effective, but that have a data-effective data source, only the default query mode is available.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>This concept is discussed later in this article.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Applying a date filter at the data source level</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>There are scenarios where date-effective filtering is required outside the data entity, at the data source level.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>For example, the customer entity (CustTableTestEntity) contains CustTable and LogisticsPostalAddress as data sources, where LogisticsPostalAddress is a date-effective table and CustTable is a regular table.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>The purpose of a customer entity is to have a list of customers and their active primary addresses, if they have primary addresses.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Therefore, the customer entity itself isn't date effective, but it requires date filters on one of the data sources.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>In this case, the entity isn't marked <bpt id="p1">**</bpt>ValidTimeStateEnabled<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Instead, an <bpt id="p1">**</bpt>Apply Date Filter<ept id="p1">**</ept> property is added on the data source.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>If the value of <bpt id="p1">**</bpt>Apply Date Filter<ept id="p1">**</ept> is set to <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept>, date filters are automatically applied to that data source.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>The following table describes the properties that control the date-effective behavior of a date-effective data source of a data entity.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Property name of the data source</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Node of the property</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Value</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Apply Date Filter</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Node of any particular data source of the entity</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Yes (or No)</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>For <bpt id="p1">*</bpt>reads<ept id="p1">*</ept>, this property controls whether date filters are applied on the entity data source.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>In this case, the data source should be marked <bpt id="p1">**</bpt>ValidTimeStateEnabled<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>This property value has effect regardless of whether the entity itself is date effective.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>For <bpt id="p1">*</bpt>writes<ept id="p1">*</ept>, this property has no effect.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>This article describes the use of these date-effective properties and the interactions between them.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>State matrixes for reads</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>This section concerns only reads from the data entity.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>The following pair of reference matrixes describe the combinations of date-effective states that can exist between a data entity and its data source.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Each table contains four cases, and each case discusses two distinct targets.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Here are the primary points that you should understand:</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>On any given read from the entity, the query mode is the same for both the entity and date-effective data sources.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>If the entity is not date effective, the query mode is limited to the default mode.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Therefore, the date-effective data source is accessed only for the current date.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>On the date-effective data source, the <bpt id="p1">**</bpt>Apply Date Filter<ept id="p1">**</ept> property can be set to <bpt id="p2">**</bpt>No<ept id="p2">**</ept> to make the data source return all data – past, current, and future.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>For OData, date-effective filters are not applied to the data entity.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>However, filters on the data source are applied at all code paths.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>A.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Entity <bpt id="p1">*</bpt>is<ept id="p1">*</ept> date effective, because ValidTimeStateEnabled = Yes</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Data source <bpt id="p2">*</bpt>is<ept id="p2">*</ept> date effective<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Data source is <bpt id="p2">*</bpt>not<ept id="p2">*</ept> date effective<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Apply Date Filter = Yes<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Entity:<ept id="p1">**</ept> Date filters are applied.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Any query mode is supported.</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Data source:<ept id="p1">**</ept> Filters are applied.</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Any query mode is supported, but the mode is the same as is coded for the entity.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Non-date-effective data sources aren't affected.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Apply Date Filter = No<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Entity:<ept id="p1">**</ept> Date filters are applied.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Any query mode is supported.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Data source:<ept id="p1">**</ept> No date filters are applied.</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Non-date-effective data sources aren't affected.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>B.</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>Entity is <bpt id="p1">*</bpt>not<ept id="p1">*</ept> date effective, because ValidTimeStateEnabled = No</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Data source <bpt id="p2">*</bpt>is<ept id="p2">*</ept> date effective<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Data source is <bpt id="p2">*</bpt>not<ept id="p2">*</ept> date effective<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Apply Date Filter = Yes<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Entity:<ept id="p1">**</ept> No date filters are applied.</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Data source:<ept id="p1">**</ept> Date filters are applied.</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>Only the default query mode is supported, where the X++ <bpt id="p1">**</bpt>validtimestate<ept id="p1">**</ept> keyword is omitted.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>Non-date-effective data sources aren't affected.</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Apply Date Filter = No<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Entity:<ept id="p1">**</ept> No date filters are applied.</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Data source:<ept id="p1">**</ept> No date filters are applied.</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>Non-date-effective data sources aren't affected.</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>The following screen shot shows the <bpt id="p1">**</bpt>Apply Date Filter<ept id="p1">**</ept> property set to <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>Therefore, date filters will be applied to reads of the <bpt id="p1">**</bpt>Address<ept id="p1">**</ept> data source.</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Apply Date Filter = Yes<ept id="p1">](./media/date1.png)](./media/date1.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Write activities</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>This section describes your options for configuring the behavior of date-effective entities and their date-effective data sources.</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>We will start by reviewing the concept of date-effective tables and contrasting them with date-effective entities.</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Date-effective table:<ept id="p1">**</ept> When data is inserted or updated in a date-effective table, the process has the option of calling the <bpt id="p2">**</bpt>xRecord.validTimeStateUpdateMode<ept id="p2">**</ept> method on the table buffer.</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>The method accepts an element of the <bpt id="p1">**</bpt>ValidTimeStateUpdate<ept id="p1">**</ept> enumeration.</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Here are the available element values:</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>CreateNewTimePeriod</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>Correction</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>EffectiveBased</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Date-effective entity:<ept id="p1">**</ept> By contrast, when data is inserted or updated in a date-effective data entity, the <bpt id="p2">**</bpt>validTimeStateUpdateMode<ept id="p2">**</ept> method isn't used at the entity level.</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>For writes, the data entity leaves the date-effective processing to the table level.</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>You can use the <bpt id="p1">**</bpt>Valid Time State Update<ept id="p1">**</ept> property on the entity data source to specify the <bpt id="p2">**</bpt>validTimeStateUpdateMode<ept id="p2">**</ept> method to use for each data source of the data entity.</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>Creating a dateeffective entity</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>This section shows how to create a date-effective entity.</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>Create a new project</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>File<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>New<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Project<ept id="p3">**</ept> to create a new project.</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>In Solution Explorer, right-click your project, and then click <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Property Pages<ept id="p1">**</ept> dialog box for your project opens.</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>Change the value of the <bpt id="p1">**</bpt>Synchronize database on build<ept id="p1">**</ept> property to <bpt id="p2">**</bpt>True<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>OK<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>You must set this property only one time per project.</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Synchronize database on build = True<ept id="p1">](./media/date3.png)](./media/date3.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>Add a new data entity to your project</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>Create a new entity that is named <bpt id="p1">**</bpt>FMVehicleRateEntity<ept id="p1">**</ept>, and add it to the project.</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>In the left pane, select <bpt id="p1">**</bpt>Microsoft Dynamics 365 Artifacts<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>Data Entity<ept id="p2">**</ept> in the left column of the main pane.</source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Data Entity View<ept id="p1">**</ept> wizard starts.</source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>Specify the property values for the data entity that you are creating, as shown in the following screen shot.</source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>The most important field is <bpt id="p1">**</bpt>Primary data source<ept id="p1">**</ept>, where you select <bpt id="p2">**</bpt>FMVehicleRate<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Primary data source = FMVehicleRate<ept id="p1">](./media/date5.png)](./media/date5.png)</ept> Click <bpt id="p2">**</bpt>Next<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>Add fields to the entity from the primary data source, <bpt id="p1">**</bpt>FMVehicleRate<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>Select all fields, and then click <bpt id="p1">**</bpt>Finish<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Selecting all the newly added fields<ept id="p1">](./media/date6.png)](./media/date6.png)</ept> The items are added to the project in Solution Explorer.</source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>The project in Solution Explorer<ept id="p1">](./media/date7.png)](./media/date7.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>Build your project</source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Build<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Build Solution<ept id="p2">**</ept> to build your project.</source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>Verify that the build has no errors.</source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>Warnings should be tolerated at this stage in the process.</source>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>Validate the property values</source>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>In Solution Explorer, select the <bpt id="p1">**</bpt>FMVehicleRateEntity<ept id="p1">**</ept> node, and validate the properties of the <bpt id="p2">**</bpt>FMVehicleRateEntity<ept id="p2">**</ept> entity by comparing them to the values in the <bpt id="p3">**</bpt>Properties<ept id="p3">**</ept> pane.</source>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Values in the Properties pane<ept id="p1">](./media/date8.png)](./media/date8.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>Make your entity date effective</source>
+        </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>In Solution Explorer, right-click the <bpt id="p1">**</bpt>FMVehicleRateEntity<ept id="p1">**</ept> node, and then click <bpt id="p2">**</bpt>Open<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>The designer for the entity opens in the middle pane.</source>
+        </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Designer for the FMVehicleRateEntity entity<ept id="p1">](./media/date9.png)](./media/date9.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>Change the value of the <bpt id="p1">**</bpt>Validate Time State Enabled<ept id="p1">**</ept> property to <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Validate Time State Enabled = Yes<ept id="p1">](./media/date10.png)](./media/date10.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>Configure the Valid Time State Update property for the date-effective data source</source>
+        </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>Select the <bpt id="p1">**</bpt>FMVehicleRate<ept id="p1">**</ept> data source, and then set the <bpt id="p2">**</bpt>Valid Time State Update<ept id="p2">**</ept> property to <bpt id="p3">**</bpt>CreateNewTimePeriod<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Valid Time State Update = CreateNewTimePeriod<ept id="p1">](./media/date11.png)](./media/date11.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>Test your project</source>
+        </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>Build your project again, and run the following X++ job to test your project.</source>
+        </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Testing the project<ept id="p1">](./media/capa-504x1024.png)](./media/capa.png)</ept></source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

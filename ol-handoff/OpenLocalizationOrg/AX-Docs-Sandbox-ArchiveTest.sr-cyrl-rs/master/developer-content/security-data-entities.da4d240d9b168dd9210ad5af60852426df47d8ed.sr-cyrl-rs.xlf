@@ -1,0 +1,524 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">7bd58467a3fb0744f8043eae8dc99d212ad6f641</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\data-entities\security-data-entities.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">6b86cabb6f6a33a97e488e5df2f366d716373f61</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">fbf498ac2b680698f14dce92e383bcaf061ede11</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Security and data entities</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic provides information about security for data entities.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Because data entities support entry point security, they are governed by the role-based security framework.</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>The model for mapping data entity entry points to privileges and duties depends on the target scenarios.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Therefore, data entities enable separate security configuration for each integration mode.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Security and data entities</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Entry points</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Data entities support entry point security.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>This support resembles the support that menu items and pages have.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>To give you flexibility when you define a security model, data entities allow for a separate security configuration for each integration mode.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Currently, two entry points/integration modes are identified for a data entity.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Entry point<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Description<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Data services</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>The ability to use OData services (API) for the entity.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Data management</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The ability to use asynchronous integration options for the entity, such as import/export and connector integration.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Target scenarios</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Data entities can support multiple categories of scenarios.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Each category might have to be secured separately.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Data management (file-based import/export, and so on)<ept id="p1">**</ept> – Typically, a data manager performs these scenarios.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>These scenarios might provide access to data that isn’t usually accessible through the UI for the Finance and Operations client.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Therefore, you will often want to secure data management scenarios independently of access to the related page, so that a data manager can perform only import/export operations.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>General integration via OData<ept id="p1">**</ept> – Many integration scenarios require that data entities be exposed as services, so that data can be accessed via OData (for example, from an online storefront or a Process Lifetime Management [PLM] system).</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Often, you will want to control access to data entities that are built for this purpose independently of page access.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>In other words, you will want to grant access to the service interface without granting access through the Finance and Operations client UI.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Microsoft Office integration (Edit in Excel, and so on)<ept id="p1">**</ept> – Office integration scenarios also require that data entities be accessed via OData.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>However, from an end-user perspective, these scenarios can be viewed as a natural extension of the Finance and Operations client, where, for example, Microsoft Excel is used to simplify some editing tasks.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Therefore, there is usually no reason to secure the Microsoft Office integration independently of page access.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Privilege/duty mapping</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Depending on the target scenarios for a data entity, you should create one or more new privileges, and extend existing duties.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Alternatively, you can map the new privileges to duties that are created specifically for the target scenario.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>This approach helps guarantee that no user is granted more access than he or she requires for the scenario.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>The following table shows the privileges that you should create.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>It also explains how you should map these privileges to duties.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>If your data entity is intended to support more than one scenario, you should create the combined set of privileges and duty mappings.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Target scenario</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Privileges</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Duty mapping</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>The data entity is intended for data management.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Create the following new privileges:</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">&amp;lt;</ph><bpt id="p1">&lt;em&gt;</bpt>DataEntity<ph id="ph2">&amp;gt;</ph><ept id="p1">&lt;/em&gt;</ept><bpt id="p2">&lt;strong&gt;</bpt>Import<ept id="p2">&lt;/strong&gt;</ept><ph id="ph3">
+</ph></source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Grant=Create</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>IntegrationMode=DataManagement</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">&amp;lt;</ph><bpt id="p1">&lt;em&gt;</bpt>DataEntity<ph id="ph2">&amp;gt;</ph><ept id="p1">&lt;/em&gt;</ept><bpt id="p2">&lt;strong&gt;</bpt>Export<ept id="p2">&lt;/strong&gt;</ept><ph id="ph3">
+</ph></source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Grant=Read</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>IntegrationMode=DataManagement</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Extend the relevant data management duties with the new privileges.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>For more information, see the “Data administrator role” section later in this topic.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>The data entity is intended for general integration via OData.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Create the following new privileges:</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;em&gt;</bpt><ph id="ph1">&amp;lt;</ph>DataEntity<ph id="ph2">&amp;gt;</ph><ept id="p1">&lt;/em&gt;</ept><bpt id="p2">&lt;strong&gt;</bpt>View<ept id="p2">&lt;/strong&gt;</ept><ph id="ph3">
+</ph></source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Grant=Read</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>IntegrationMode=DataServices</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">&amp;lt;</ph><bpt id="p1">&lt;em&gt;</bpt>DataEntity<ph id="ph2">&amp;gt;</ph><ept id="p1">&lt;/em&gt;</ept><bpt id="p2">&lt;strong&gt;</bpt>Maintain<ept id="p2">&lt;/strong&gt;</ept><ph id="ph3">
+</ph></source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Grant=Delete</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>IntegrationMode=DataServices</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Create new duties for the integration scenario, and map the relevant new privileges to these duties.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>For more information, see the “Duty naming guidelines” section later in this topic.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>The data entity is intended for Microsoft Office integration.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Create the following new privileges:</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;em&gt;</bpt><ph id="ph1">&amp;lt;</ph>DataEntity<ph id="ph2">&amp;gt;</ph><ept id="p1">&lt;/em&gt;</ept><bpt id="p2">&lt;strong&gt;</bpt>View<ept id="p2">&lt;/strong&gt;</ept><ph id="ph3">
+</ph></source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Grant=Read</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>IntegrationMode=DataServices</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">&amp;lt;</ph><bpt id="p1">&lt;em&gt;</bpt>DataEntity<ph id="ph2">&amp;gt;</ph><ept id="p1">&lt;/em&gt;</ept><bpt id="p2">&lt;strong&gt;</bpt>Maintain<ept id="p2">&lt;/strong&gt;</ept><ph id="ph3">
+</ph></source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Grant=Delete</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>IntegrationMode=DataServices</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Extend the relevant existing duties that provide access to the related pages with the new privileges.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Because the approach that is described in the preceding table complies with the principle of least privilege, we recommend that you use it.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Nevertheless, in some situations, you can use the following simpler approach.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>However, be aware that this approach might be less secure.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>It might also be slightly harder to maintain and extend.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Target scenario</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Privileges</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Duty mapping</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Potential issues</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>The data entity is intended for data management, general integration via OData, and Microsoft Office integration.</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Create the following new privileges:</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;em&gt;</bpt><ph id="ph1">&amp;lt;</ph>DataEntity<ph id="ph2">&amp;gt;</ph><ept id="p1">&lt;/em&gt;</ept><bpt id="p2">&lt;strong&gt;</bpt>View<ept id="p2">&lt;/strong&gt;</ept><ph id="ph3">
+</ph></source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Grant=Read</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>IntegrationMode=All</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">&amp;lt;</ph><bpt id="p1">&lt;em&gt;</bpt>DataEntity<ph id="ph2">&amp;gt;</ph><ept id="p1">&lt;/em&gt;</ept><bpt id="p2">&lt;strong&gt;</bpt>Maintain<ept id="p2">&lt;/strong&gt;</ept><ph id="ph3">
+</ph></source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Grant=Delete</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>IntegrationMode=All</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Extend the relevant data management duties with the new privileges.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Create new duties for the integration scenario, and map the relevant new privileges to these duties.</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>Extend the relevant existing duties that provide access to the related page with the new privileges.</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>When you use this approach, a data manager who is granted access to import/export data can also access the system from a web service.</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Likewise, a user who is granted access to the page that is associated with a data entity can also access the system from a web service.</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>This user will be prevented from data import/export only if he or she hasn’t been granted the related data management duty.</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Duty naming guidelines</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>When you create data entities for specific integration scenarios, you should also create separate duties.</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>These duties grant the external application or service the required access to the data entities.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>The duties that you create should follow the same naming guidelines as the corresponding duties that provide access through the Dynamics 365 for Finance and Operations client UI.</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>However, you should add a “using services” suffix.</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>Duty type</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Duty object name suffix</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>Duty name template</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Enable</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>…IntegrationEnable</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>Enable …</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>using services</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>Record</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>…IntegrationMaintain</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>Maintain …</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>using services</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Authorize</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>…IntegrationApprove (Release, Confirm, Journalize)</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>Approve (Release, Confirm, Journalize) …</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>using services</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>Inquire</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>…IntegrationInquire</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Inquire into …</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>using services</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>Here are some examples of duty names that follow these guidelines:</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>Maintain route master using service</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>Inquire into case progress using services</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>Data administrator role</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>DataManagementApplicationAdministrator<ept id="p1">**</ept> security role enables an associated user to have full import/export capabilities in the <bpt id="p2">**</bpt>Data management<ept id="p2">**</ept> workspace.</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>This security role has two security duties for each of the five data entity categories that are assigned to it.</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>One duty is for importing data via data entities of the associated category, and one for exporting data via data entities of the associated category.</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>Therefore, a total of 10 security duties are assigned to this security role:</source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>DataManagementApplicationDocumentEntitiesMaintain</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>DataManagementApplicationDocumentEntitiesView</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>DataManagementApplicationMasterEntitiesMaintain</source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>DataManagementApplicationMasterEntitiesView</source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>DataManagementApplicationParametersEntitiesMaintain</source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>DataManagementApplicationParametersEntitiesView</source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>DataManagementApplicationReferenceEntitiesMaintain</source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>DataManagementApplicationReferenceEntitiesView</source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>DataManagementApplicationTransactionEntitiesMaintain</source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>DataManagementApplicationTransactionEntitiesView</source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>When you create data entities that can be used in the <bpt id="p1">**</bpt>Data management<ept id="p1">**</ept> workspace, you must extend these duties with the new security privileges, based on the E<bpt id="p2">**</bpt>ntity Category<ept id="p2">**</ept> property that is specified on the data entity.</source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>(For information about how to extend duties with the new security privileges, see the “Privilege/duty mapping” section earlier in this topic.) You can also use the duties to create new roles for specific data management scenarios.</source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>Modeling new entry point security in the Application Explorer</source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>The pattern for modeling security resembles the pattern for modeling security with privileges on an entry point.</source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>To model security, follow these steps.</source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>Create a new privilege.</source>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>Create new data entity permissions.</source>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>Set the <bpt id="p1">**</bpt>Name<ept id="p1">**</ept> to <bpt id="p2">**</bpt>Data Entity<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>Select the <bpt id="p1">**</bpt>Access Level<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Integration Mode<ept id="p1">**</ept> (All <ph id="ph1">&amp;gt;</ph> Data Services <ph id="ph2">&amp;gt;</ph> Data Management).</source>
+        </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>This is specific to Object Type: Data Entity.</source>
+        </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>All<ept id="p1">**</ept> – Applies same security settings to be applied to both OData and data import/export.</source>
+        </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Data Management<ept id="p1">**</ept> – Applies only to data import/export and connector integration.</source>
+        </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Data Services<ept id="p1">**</ept> – Only applies to OData Services.</source>
+        </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>RolebasedSecurity<ept id="p1">](./media/rolebasedsecurity.png)](./media/rolebasedsecurity.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>Sensitive data</source>
+        </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>The Table Protection Framework (TPF) enables strict access control to data that is stored in Finance and Operations.</source>
+        </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>This feature is exposed through the AOSAuthorization property on tables and table fields.</source>
+        </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>If you mark a table or field by using AOSAuthorization, the security framework now requires that a user be granted explicit access to that resource.</source>
+        </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>This requirement also applies when the table or field is accessed through data entities.</source>
+        </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>This section describes the guidelines for granting TPF permissions for data entities.</source>
+        </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>Data management</source>
+        </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>For data entities that are targeted at data migration, you should assign TPF permissions to the corresponding import/export privileges.</source>
+        </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>In this way, you help guarantee that all data can be imported and exported.</source>
+        </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>Integration by using OData</source>
+        </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>For data entities that are targeted at integration scenarios, the TPF permissions that you should assign depend on whether the TPF-protected field is essential for the data entity as a whole to work:</source>
+        </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>If the TPF-protected field is essential<ept id="p1">**</ept>: An essential field is a field that will always be read/written.</source>
+        </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>In this case, TPF permissions should be granted to the same privileges that grant access to the data entity.</source>
+        </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>If the TPF-protected field isn’t essential<ept id="p1">**</ept>: Examples of nonessential fields include the field for a worker’s Social Security number and the field for a vendor’s bank account number.</source>
+        </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>In this case, TPF permissions for accessing the field should be granted through a separate privilege, and that privilege should be assigned directly to the roles that require access to the TPF-protected field.</source>
+        </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>However, if the field is a mapped field on the entity, that access has probably already been granted to the role, if that role also has access to the field through pages in the Finance and Operations client UI.</source>
+        </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>There are several advantages to granting explicit access to TPF-protected fields that aren’t considered essential for the entity:</source>
+        </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>You can more easily discover who has access to sensitive data.</source>
+        </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>You help reduce the risk that someone will gain access to sensitive data by accident, because a role gains access only if you assign both a duty and a privilege to it.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

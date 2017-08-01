@@ -1,0 +1,351 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">1244fa35dceb236855895433f6e9f2da03ec8c7f</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\migration-upgrade\delegates-migration.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">8f0aa406bffedf8f4fd91f6f86be2f98e625c0e4</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">97daffe38b170f0f85a159c1ee8ae48150b2ce5f</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Use delegates to solve dependencies between models when migrating code</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic explains how delegate methods serve as a means for defining a contract between the delegate instance and the delegate handler.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Use delegates to solve dependencies between models when migrating code</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This topic explains how delegate methods serve as a means for defining a contract between the delegate instance and the delegate handler.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Overview</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Microsoft Dynamics 365 for Finance and Operations is split into more several models, with each model in separate package.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>The principal 3 models are Application Platform, Application Foundation, and Application Suite (See <bpt id="p1">[</bpt>Models<ept id="p1">](..\dev-tools\models.md)</ept> to learn about models and packages).</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>With the model split, a hierarchy has been created where a higher model can take dependencies and access elements in the models below, but not in models above.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>In this setup, Application Suite has full access to its elements, Application Foundation’s elements, and Application Platform’s elements.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Application Foundation can access its own elements and those of Application Platform.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Finally, Application Platform can only access its own elements.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Del1<ept id="p1">](./media/del1.jpg)](./media/del1.jpg)</ept></source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>While the model split provides many benefits, it creates a problem when trying to access elements defined in higher models.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Delegates are the recommended method for accessing elements in higher models from a lower model.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Delegates are very similar to events in that when a delegate instance is invoked, a handler with compatible signature code is executed.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>This permits higher layer code, the handler, to be called by lower layer code, the delegate instance.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Create delegates and handlers</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>A delegate declaration must have three things:</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>The delegate keyword</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Type void</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Empty method</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Delegate methods serve as a means for defining a contract between the delegate instance and the delegate handler.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>A delegate takes no action itself.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>This is enforced by having a void type and having no code in the method.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>1<ept id="p1">](./media/12.png)](./media/12.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Adding the SubscribesTo keyword to a method will create a static delegate handler.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>SubscribesTo requires the class name of the delegate, and the string name of the delegate method.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>2<ept id="p1">](./media/21.png)](./media/21.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>In order for a delegate to be properly handled, the delegate method declaration, the delegate instance, and the delegate handler must have the <bpt id="p1">*</bpt>same<ept id="p1">*</ept> method signature.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>For example, the delegate instance below takes two inputs, a real number and an EventHandlerResult, matching the delegate declaration and handler signatures above.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>3<ept id="p1">](./media/32.png)](./media/32.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Due to the fact that delegates do not have a return value, an EventHandlerResult is passed as a parameter to provide access to the needed result value after the delegate has returned.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>This topic focuses on static delegate handlers using the SubscribesTo.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>The delegate functionality from Dynamics AX 2012 remains.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>How to use X++ Delegates in Dynamics AX 2012<ept id="p1">](http://blogs.msdn.com/b/x/archive/2011/08/02/how-to-use-x-delegates-in-dynamics-ax-2012.aspx)</ept> is a great blog post on MSDN by Microsoft developer Marcos Calderon on delegate concepts in Dynamics AX 2012.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>These concepts still apply.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Example scenarios</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Overlaying an existing delegate</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>In many cases where delegates are needed, the code that was formerly overlayed has already been moved to a delegate handler by Microsoft.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>In these instances, Microsoft created delegates that can be leveraged and the code can be overlayed in a similar manner in the delegate handler.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>In this scenario, an Independent Software Vendor (ISV) is migrating code from Dynamics  AX 2012 R3 where they have overlayed the showSalesTax() method in the LogisticsEntityPostalAddressFormHandler class.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>After migration, the CodeUpgrade project will contain the LogisticsEntityPostalAddressFormHandler with the <bpt id="p1">*</bpt>Your Solution<ept id="p1">*</ept>, <bpt id="p2">*</bpt>Microsoft AX 2012,<ept id="p2">*</ept> and <bpt id="p3">*</bpt>Microsoft AX<ept id="p3">*</ept> sections to resolve for the showSalesTax() method.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>The commented Your Solution section shows that the showSalesTax() method was overlayed by adding an additional table to approve showing sales tax from.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>This overlay is shown between the <ph id="ph1">&amp;lt;</ph>isv<ph id="ph2">&amp;gt;</ph> tags circled in red below.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>4<ept id="p1">](./media/41.png)](./media/41.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>When comparing this overlay with the code from Dynamics AX 2012, this is a simple change.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>The overlay has added an additional table to the switch statement.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>5<ept id="p1">](./media/51.png)](./media/51.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>However, the Finance and Operations section does not appear to resemble either of the Dynamics AX 2012 code snippets.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>6<ept id="p1">](./media/61.png)](./media/61.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Upon deeper inspection, the code is calling a delegate method, showSalesTax<ph id="ph1">\_</ph>delegate().</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>this.showSalesTax<ph id="ph2">\_</ph>delegate(this.getCallerRecord().TableId, result);<ept id="p1">](./media/showsalestax_delegate.png)](./media/showsalestax_delegate.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>The use of a delegate implies that code has been moved to another location.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>The showSalesTax<ph id="ph1">\_</ph>delegate() has been declared in the Application Foundation and handled in the Application Suite.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>To view the code that has been moved, find the delegate handler.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Finding Delegates and Handlers<ept id="p1">**</ept> section contains methods to locate delegates and handlers.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>After finding the delegate handler method in the Application Suite, we see the code that has been moved from the showSalesTax() method.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>The same overlayered changes applied in Dynamics AX 2012 can be applied in the delegate handler.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Finding delegates and handlers code sample<ept id="p1">](./media/findingdelegatesandhandles.png)](./media/findingdelegatesandhandles.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>After adding the new table to the switch statement in the delegate handler, the code will function as it did in Dynamics AX 2012.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>ShowSalesTax method code<ept id="p1">](./media/showsalestaxmethod.png)](./media/showsalestaxmethod.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Adding a new delegate</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>In this scenario, we will modify an existing tax calculation method that resides in the Application Foundation to account for discounts created in the Application Suite.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>The following class in the Foundation layer calculates the tax based on the gross total.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>10<ept id="p1">](./media/101.png)](./media/101.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>In the Application Suite, we have introduced the notion of discounts by adding a ProductDiscount class that contains the current discount.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>11<ept id="p1">](./media/112.png)](./media/112.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>The TaxCalculator class, in the lower Foundation layer, does not have access to the DiscountRate in the Suite layer and must use a delegate to update receipt total to use in the tax calculation.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>In the SimpleTax class, we create a delegate method, applyDiscountDelegate, with the state information that is needed by the handler in the signature.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>A delegate method is always empty because its only purpose is to define the contract between the delegate instance and the handler.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>12<ept id="p1">](./media/121.png)](./media/121.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> The signature for the delegate declaration, the delegate instance, and the delegate handler must match.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>We now have to create an instance of the delegate at the point in the code where we would like the delegate handler to be run.</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>The changes in between the <ph id="ph1">&amp;lt;</ph>isv<ph id="ph2">&amp;gt;</ph> tags represent the added code.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>13<ept id="p1">](./media/131.png)](./media/131.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>With the delegate in place, we now add a handler method in the Application Suite layer that has access to the discount information.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>14<ept id="p1">](./media/14.png)](./media/14.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Using the SubscribesTo keyword, we tie the applyDiscountDelegateHandler method as a handler to the applyDiscountDelegate delegate.</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> There can be more than one handler per delegate.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>There is <bpt id="p1">**</bpt>not<ept id="p1">**</ept> a defined order in the processing of handler methods.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>If order is important, delegate handler pairs should be chained together.</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>With the final classes below, when the calculateTotalTax() method is run, the applyDiscountDelegate is fired and handled, updating the receiptTotal to provide an accurate tax calculation.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Full Code</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>SimpleTax class in the Application Foundation Layer</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>15<ept id="p1">](./media/15.png)](./media/15.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>ProductDiscount class in the Application Suite layer</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>16<ept id="p1">](./media/16.png)](./media/16.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Find delegates and handlers</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>There are three key ways to find delegates and handlers</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Metadata search</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Class references</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>SubscribesTo references</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>The Metadata search tool, described on the <bpt id="p1">[</bpt>Metadata search in Visual Studio<ept id="p1">](..\dev-tools\metadata-search-visual-studio.md)</ept> page, is the best way to find either delegates or their handlers.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>In Visual Studio, go to **Dynamics 365 **<ph id="ph1">&amp;gt;</ph> <bpt id="p1">**</bpt>Metadata Search<ept id="p1">**</ept> to open the metadata search tool.</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Del15<ept id="p1">](./media/del15.png)](./media/del15.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>In the search field, type “code:<ph id="ph1">&amp;lt;</ph>delegate name<ph id="ph2">&amp;gt;</ph>” which will restrict the search to code and find any use of the delegate name, returning both the delegate and handler.</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Metadata search will search the entire code base and may take some time to complete, but will return any use of the search term in code.</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Del16<ept id="p1">](./media/del16.png)](./media/del16.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Methods two and three can be used in parallel to the metadata search.</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>The class where a delegate is defined can also serve as a means to narrow down the search for a delegate or handler.</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>The SubscribesTo keyword requires the class name where the delegate was defined.</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Visual Studio’s find references (right-click the class name <ph id="ph1">&amp;gt;</ph> find references) will return a list of files that reference the class.</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>This list will include both the class definition where the delegate is declared and the handler referencing the class.</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>Finding class references is not a perfect method and will require some manual searching through class references.</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>However, it produces a smaller subset of files and can be faster than a metadata search.</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Del17<ept id="p1">](./media/del17-1024x300.png)](./media/del17.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Similar to finding class references, finding all references can be done on the SubscribesTo keyword.</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>The resulting list will include all static delegate handlers.</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>Manually going through this list provides another means for finding static delegate handlers.</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>This will not return dynamically declared delegate handlers that do not use the SubscribesTo keyword.</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Del18<ept id="p1">](./media/del18-1024x328.png)](./media/del18.png)</ept></source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

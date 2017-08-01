@@ -1,0 +1,522 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">14c47d987cdd591297de6e54534661d2f5cd073a</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\data-entities\develop-entity-for-data-migration.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">f152216890ee45398d6a56e7d36b83f95b421818</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">a09bd080510d9bcc004e380ba74e06b1e4e364d6</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Develop an entity for data migration</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This tutorial shows how to develop data entities in Microsoft Visual Studio and then use them for data migration.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Develop an entity for data migration</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This tutorial shows how to develop data entities in Microsoft Visual Studio and then use them for data migration.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>This tutorial is broken out into two sections and four exercises.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>In the first section, you will build a <bpt id="p1">**</bpt>Project Category<ept id="p1">**</ept> entity in Visual Studio.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>You will then use this entity to export data.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>In the second section, you will use <bpt id="p1">**</bpt>Customer Groups<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Customers<ept id="p2">**</ept> entities to import multiple sets of files by using the new Data Import/Export Framework.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> This tutorial is designed to be slightly more challenging than <bpt id="p2">[</bpt>Building and consuming data entities<ept id="p2">](build-consuming-data-entities.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Instead of providing a step-by-step guide, it has scenario exercises and describes the expected outcomes.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>The assumption is that you've already familiarized yourself with entities and the Data Import/Export Framework through Microsoft Office Mix videos.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Prerequisites</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>This tutorial requires that you access the environment by using Remote Desktop.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>You must be provisioned as an administrator on the instance.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Base URL</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Throughout this tutorial, "base URL" refers to the base URL of the  instance.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>In the cloud environment, you obtain the base URL from Microsoft Dynamics Lifecycle Services (LCS).</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>On a local virtual machine (VM), the base URL is https://usnconeboxax1aos.cloud.onebox.dynamics.com.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Developing an entity in Visual Studio and enabling it for data export</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Business problem</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>You're developing a new solution for a Project module.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>As part of your implementation, you must represent the data from project categories, so that this data can be imported into the system or exported from it.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>To accomplish this goal, you will first build an entity for the project category and then use the export functionality to test data extraction.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Exercise 1: Build a Project Category entity</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>In this exercise, you will build an entity, <bpt id="p1">**</bpt>Project Category<ept id="p1">**</ept>, that uses the ProjCategory table as its primary data source.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>This entity has the following properties.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Property</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Value</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Entity AOT name</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>ProjectCategoryEntity</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Label</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Project Categories</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Entity category</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Reference</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Public name</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>ProjectCategory</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Collection name</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>ProjectCategories</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Enable public API</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Yes</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Enable data management</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Yes</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>The entity also has the following fields.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Fields</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>ActiveInJournals</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>CategoryGroup</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Category</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>TransactionType</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>CategoryName</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Worker</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>CustomerPaymentRetention</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>IndirectCostComponent</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>ItemSalesTaxGroup</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>ServiceCode</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Absence</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Steps</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>In Visual Studio, create a new Microsoft Dynamics 365 for Finance and Operations, Enterprise edition project.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>In Solution Explorer, select the project, and then right-click <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Specify the following project properties, and then click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Property</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Value</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Model</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Application Suite</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Company</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>USSI</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Synchronize Database on build</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>True</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>From the project, right-click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>New item<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Data Model<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Data Entity<ept id="p2">**</ept> as your new item.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Enter a name, and then click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept> to start the <bpt id="p2">**</bpt>Data<ept id="p2">**</ept> <bpt id="p3">**</bpt>Entity<ept id="p3">**</ept> wizard.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>On the first page of the wizard, specify the set of properties for the entity by using the table earlier in this exercise.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Then click <bpt id="p1">**</bpt>Next<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Specify properties page<ept id="p1">](./media/specifyproperties_devoentity.png)](./media/specifyproperties_devoentity.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>On the next page, add fields from the primary data source.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Make sure that each field name reflects the public contract (see the table earlier in this exercise).</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>To use the field's label as the field name, select the <bpt id="p1">**</bpt>Convert label to field names<ept id="p1">**</ept> option.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Clear the option for any fields that are not required for the entity.</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Finish<ept id="p1">**</ept> to complete the wizard, and to add the entity and its artifacts to the project.</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Build your project, so that you can start to use the entity.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Expected outcome</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>In Visual Studio, the following artifacts will appear in the project after you've completed the <bpt id="p1">**</bpt>Data Entity<ept id="p1">**</ept> wizard.</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>New project artifacts<ept id="p1">](./media/testappsuite_devoentity.png)](./media/testappsuite_devoentity.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Right-click the data entity, and then select <bpt id="p1">**</bpt>Open table browser<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> Make sure that your company is set to <bpt id="p2">**</bpt>USSI<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Exercise 2: Export a limited set of data by using a sample file mapping and filters</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>In this exercise, you will use the <bpt id="p1">**</bpt>Project Category<ept id="p1">**</ept> entity that you just built to export data.</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>To export only a subset of the data, you will use a sample file mapping and filters.</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>The exported data will be in XML format.</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Steps</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>After you've finished building the <bpt id="p1">**</bpt>Project Category<ept id="p1">**</ept> entity, start the client.</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Change the company to <bpt id="p1">**</bpt>USSI<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Data management<ept id="p1">**</ept> workspace, click <bpt id="p2">**</bpt>Export<ept id="p2">**</ept> to begin data extraction.</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>Enter the export details, such as entity name and target data format.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Entering export details<ept id="p1">](./media/exportprojectcategory_devoentity.png)](./media/exportprojectcategory_devoentity.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>Use the following file as the sample file format for XML: <bpt id="p1">[</bpt>ProjectCategoryExport<ph id="ph1">\_</ph>Sample<ept id="p1">](https://go.microsoft.com/fwlink/?linkid=845209)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>Open this file in a text editor, and save it as an XML file.</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>If the sample file mapping isn't valid, there is an incorrect field name in the entity.</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>Fix either the entity or the sample file to continue.</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Filter<ept id="p1">**</ept>, and then specify <bpt id="p2">**</bpt>Project<ept id="p2">**</ept> as the filter criterion, so that only limited data is exported.</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Filtering by project<ept id="p1">](./media/inquiry_devoentity.png)](./media/inquiry_devoentity.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Export<ept id="p1">**</ept> dialog box, click <bpt id="p2">**</bpt>OK<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Expected outcome</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>Fifteen records are successfully exported.</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>The output is similar to the following file: <bpt id="p1">[</bpt>ProjectCategoryExport<ph id="ph1">\_</ph>Output<ept id="p1">](https://go.microsoft.com/fwlink/?linkid=845210)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>(Open the file in a text editor to verify this outcome.)</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>Migrating data in multiple files by using the Data Import/Export Framework</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Business problem</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>You're implementing a new environment.</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>As part of this implementation, you want to migrate some legacy customer data.</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>The data is contained in two sets of files, each of which has data for the <bpt id="p1">**</bpt>Customers<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Customer Groups<ept id="p2">**</ept> entities.</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>This migration is slightly complex, because some columns in the data files don't map directly to the entities.</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>Additionally, the files have validation errors that must be corrected during the import process.</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Exercise 3: Create a data project and import multiple files</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>In this exercise, you will import two files into the <bpt id="p1">**</bpt>USRT<ept id="p1">**</ept> company by using the new Data Import/Export Framework.</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>These files need to be imported in sequence by using a single data project.</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Customers<ept id="p1">**</ept> entity has a reference to the <bpt id="p2">**</bpt>Customer Groups<ept id="p2">**</ept> entity.</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>Because the Customers1 file doesn't map correctly to the <bpt id="p1">**</bpt>Customers<ept id="p1">**</ept> entity, you will receive an error when you upload the file.</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>Therefore, to complete the import process, you will have to provide the correct column mappings for the <bpt id="p1">**</bpt>Customers<ept id="p1">**</ept> entity.</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>Steps</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>Open the following files in Microsoft Excel, and save them as CSV files in your local directory:</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Customers1<ept id="p1">](https://go.microsoft.com/fwlink/?linkid=845211)</ept></source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>CustomerGroups1<ept id="p1">](https://go.microsoft.com/fwlink/?linkid=845212)</ept></source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>In the client, change the company to <bpt id="p1">**</bpt>USRT<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>From the <bpt id="p1">**</bpt>User<ept id="p1">**</ept> dashboard, open the <bpt id="p2">**</bpt>Data Management<ept id="p2">**</ept> workspace.</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Import<ept id="p1">**</ept> to configure a new data project.</source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>Enter the project details, such as the name and file format.</source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>For each file, select an entity, and then upload the data file.</source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>Because the Customer1.csv file doesn't map correctly to the <bpt id="p1">**</bpt>Customers<ept id="p1">**</ept> entity, you will receive an error when you upload the file.</source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>After the file is uploaded, click <bpt id="p1">**</bpt>View mappings<ept id="p1">**</ept> to fix the column mappings for the <bpt id="p2">**</bpt>Customers<ept id="p2">**</ept> entity.</source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Hint:<ept id="p1">**</ept> <bpt id="p2">**</bpt>CustomerAccount<ept id="p2">**</ept> is required in the entity during import.</source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>It is mapped from <bpt id="p1">**</bpt>AccountNum<ept id="p1">**</ept> in the source file.</source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>Address fields are optional for the import.</source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>When you've finished, click the <bpt id="p1">**</bpt>Back<ept id="p1">**</ept> button in your browser to return to the data project.</source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Data Project<ept id="p1">**</ept> page, click <bpt id="p2">**</bpt>Import now<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>Expected outcome</source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>Four updates and 23 inserts are successfully imported and the <bpt id="p1">**</bpt>Execution summary<ept id="p1">**</ept> page shows the results.</source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>Exercise 4: Re-import by using an existing data project and manage data in staging</source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>In this exercise, you will use a new set of files to import data through the existing data project.</source>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>Customers2 contains new and updated data for the <bpt id="p1">**</bpt>Customers<ept id="p1">**</ept> entity.</source>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>CustomerGroups2 contains updated data for the <bpt id="p1">**</bpt>Customer Groups<ept id="p1">**</ept> entity.</source>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>Customers2 contains some error records.</source>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>You will fix these errors in staging, validate the data, and then push it to the target to complete the import.</source>
+        </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>Steps</source>
+        </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Data management<ept id="p1">**</ept> workspace, select the existing data project, and the click <bpt id="p2">**</bpt>Re-import<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>By using the re-import functionality, you can preserve your previous settings for the data project and use new files for the import.</source>
+        </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>However, if you click <bpt id="p1">**</bpt>Reload data project<ept id="p1">**</ept> and upload new files instead, the previous mappings will be overridden.</source>
+        </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>Open the following files in Excel, and save them as CSV files in your local directory:</source>
+        </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Customers2<ept id="p1">](https://go.microsoft.com/fwlink/?linkid=845213)</ept></source>
+        </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>CustomerGroups2<ept id="p1">](https://go.microsoft.com/fwlink/?linkid=845214)</ept></source>
+        </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>Upload the new files for each entity, and then click <bpt id="p1">**</bpt>Import now<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Status<ept id="p1">**</ept> page, click <bpt id="p2">**</bpt>View execution log<ept id="p2">**</ept> to investigate the errors.</source>
+        </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Status<ept id="p1">**</ept> page, click <bpt id="p2">**</bpt>View staging<ept id="p2">**</ept> to view the data in a staging table.</source>
+        </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>This view will also show records that have errors.</source>
+        </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept> to fix records that have errors.</source>
+        </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>(The <bpt id="p1">**</bpt>Customer Group<ept id="p1">**</ept> value for records DM10221 and DM1022 isn't valid.)</source>
+        </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>Select the records that you fixed, and then click <bpt id="p1">**</bpt>Validate<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>Refresh the page to verify that the status of the records is <bpt id="p1">**</bpt>Validated<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Copy data to target<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Select a job ID to run<ept id="p1">**</ept> dialog box, in the <bpt id="p2">**</bpt>Run for<ept id="p2">**</ept> field, select <bpt id="p3">**</bpt>Criteria<ept id="p3">**</ept>, and set <bpt id="p4">**</bpt>Row selected by user<ept id="p4">**</ept> to <bpt id="p5">**</bpt>Yes<ept id="p5">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>Then click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Selecting a job to run<ept id="p1">](./media/selectjob_devoentity.png)](./media/selectjob_devoentity.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Target data execution<ept id="p1">**</ept> page, click <bpt id="p2">**</bpt>Run<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>When the run is completed, refresh the page to see the latest staging status.</source>
+        </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>Expected outcome</source>
+        </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>On the first try, the import succeeds for the <bpt id="p1">**</bpt>Customer Groups<ept id="p1">**</ept> entity and partially succeeds for the <bpt id="p2">**</bpt>Customers<ept id="p2">**</ept> entity.</source>
+        </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Execution summary<ept id="p1">**</ept> page shows that five records were created, three records were updated, and two records have errors.</source>
+        </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>In the staging view, two records have errors.</source>
+        </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>After you fix the records and run the import again, the staging view shows that all records are completed.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

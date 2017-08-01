@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">955063ef49b124913783f3227021a271eb26de32</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\migration-upgrade\upgrade-sandbox-environment.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">952e285e29a8cafb06445354d87c5c75400f1689</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">3bc5605b8dca9bf12920fd16e7624a484042d4ab</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Process for upgrading a sandbox environment</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic describes the steps for deploying an upgrade to a non-production sandbox or stand-alone sandbox environment.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Process for upgrading a sandbox environment</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This topic describes the steps for performing a data upgrade to a Tier 2 or higher sandbox environment.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>In some environments the Microsoft Service Engineering Team (DSE) will execute the data upgrade for you, for more information see the end to end upgrade process here: <bpt id="p1">[</bpt>Overview of moving to the latest update of Microsoft Dynamics 365 for Finance and Operations<ept id="p1">](upgrade-latest-update.md#scenario-3-upgrade-to-the-most-current-application-update)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Prerequisites</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>If you have any customizations or ISV solutions you must have already completed <bpt id="p1">[</bpt>code upgrade<ept id="p1">](upgrade-latest-update.md#scenario-2-upgrade-your-custom-code)</ept> and have your upgraded deployable packages ready in your asset library in Lifecycle Services.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>We strongly recommend that you perform the data upgrade on a development environment before upgrading in a sandbox environment.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>It is much faster to make corrections and re-run the process in a development environment, so you can reduce the overall time to upgrade by working in a development environment first.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Export the database</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Follow the steps in this article to export the database to a bacpac file from the existing sandbox environment you wish to upgrade: <bpt id="p1">[</bpt>Copy a Finance and Operations database to restore later<ept id="p1">](../database/copy-operations-database.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Additional steps for Management Reporter</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Export your report designs, known as building block groups, from the Report Designer.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Transfer the exported file to a secure location so that you can use it later to reimport the report definitions.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Detailed instructions for exporting: <bpt id="p1">[</bpt>Building block<ept id="p1">](https://msdn.microsoft.com/en-us/library/dn464326.aspx#Exportabuildingblockgroup)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>You can take this file and copy or upload it to secure location such that it may be imported into a different environment at another time.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>See <bpt id="p1">[</bpt>Upload the file to an Azure storage account, by using the AzCopy Command-Line Utility.<ept id="p1">](https://azure.microsoft.com/en-gb/documentation/articles/storage-use-azcopy/)</ept></source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> Microsoft doesn’t provide a storage account as part of your Finance and Operations agreement.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>You must either purchase a storage account or use a storage account from a separate Azure subscription.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Important:<ept id="p1">**</ept> Be aware of the behavior of the D drive on Azure Virtual Machines, do not keep your exported building block groups here permanently unless you are prepared to lose them.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>For details see: <bpt id="p1">[</bpt>Understanding the temporary drive on Windows Azure virtual machines (blog post)<ept id="p1">](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Redeploy sandbox environment</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>In your Lifecycle Services implementation project:</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Locate the sandbox environment that you wish to upgrade and delete it.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Click Deallocate on the toolbar in the Environment page.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>After a few minutes the environment status will change to Deallocated</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Click Delete on the toolbar and type the environment name to confirm deletion.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>After a few minutes the environment will be deleted</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>In the main LCS Project page, in the Environments pane, the deleted environment will display the options to request a deployment – click and request the environment to be deployed with the new version and select your upgraded custom deployable packages from your asset library to be deployed to the environment.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Import the database</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Follow the steps in this article to import the database from a bacpac file into the newly redeployed sandbox environment: <bpt id="p1">[</bpt>Copy a Finance and Operations database to restore later<ept id="p1">](../database/copy-operations-database.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Run the data upgrade package</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Execute the data upgrade as described in this article: <bpt id="p1">[</bpt>Upgrade data in development, demo or sandbox environments.<ept id="p1">](upgrade-data-to-latest-update.md)</ept></source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Update additional components</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>There may be additional components in use in your environment which require further steps to upgrade.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Additional steps for Management Reporter</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Reset the management reporter database by following the steps in this topic <bpt id="p1">[</bpt>Resetting the financial reporting data mart after restoring a database<ept id="p1">](../analytics/reset-financial-reporting-datamart-after-restore.md)</ept> and then reimport the building block groups you exported in an earlier step.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Limitations</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Existing document handling documents which are stored in Azure blob storage will be lost during this upgrade process.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>If you have custom code which utilises the X++ class FileUpload to place files in blob storage, these documents will also be lost.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

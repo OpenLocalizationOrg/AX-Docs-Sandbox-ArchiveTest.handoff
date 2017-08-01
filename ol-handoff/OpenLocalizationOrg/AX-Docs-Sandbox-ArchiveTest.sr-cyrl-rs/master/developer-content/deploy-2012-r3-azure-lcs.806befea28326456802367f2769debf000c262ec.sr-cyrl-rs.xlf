@@ -1,0 +1,384 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">639d9b2658a6752435647fa433cb4613950073b3</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\lifecycle-services\ax-2012\deploy-2012-r3-azure-lcs.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">b097f00ab160cb4569121fbe9569ddbb3c2266a6</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">73f8687c5a9fbdd0cc73434523f87420427f1f65</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Deploy Dynamics AX 2012 R3 on Azure using Lifecycle Services</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Deploy Dynamics AX 2012 R3 on Azure using Lifecycle Services</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Azure is an open and flexible cloud platform that enables you to quickly build, deploy, and manage applications across a global network of datacenters that are managed by Microsoft.</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Azure enables <bpt id="p1">*</bpt>cloud computing<ept id="p1">*</ept>.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Cloud computing is the delivery of computing capabilities as a service.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Cloud computing makes it easy to access IT resources such as computers, networking, and storage.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>As with any utility, you generally only pay for what you use with cloud computing.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>By using cloud services, you can harness the power of massive datacenters without having to build, manage, or maintain costly, complex IT building blocks.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>With the cloud, much of the complexity of IT is abstracted away, letting you focus on the infrastructure, data, and application development that really matter to your business.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>You can deploy AX 2012 R3 on Azure.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>When you do, you may realize the following benefits:</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Reduce costs<ept id="p1">**</ept> Since you don’t have to build out or manage infrastructure with Azure, IT costs may be greatly reduced.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Save time<ept id="p1">**</ept> An on-premises AX 2012 R3 environment may take weeks to plan, acquire necessary hardware, and deploy.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>By using the Cloud-hosted environments tool in Lifecycle Services, you can deploy an AX 2012 R3 environment on Azure in hours.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Gain flexibility<ept id="p1">**</ept> The cloud enables you to easily scale up (or scale down) to meet the changing needs of your business.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Dynamics AX 2012 R3 can also be deployed on-premises.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>For details, see the topic <bpt id="p1">[</bpt>Install Microsoft Dynamics AX 2012<ept id="p1">](https://technet.microsoft.com/en-us/library/dd362138.aspx)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>The Azure services model</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Azure offers three types of services: Software-as-a-Service (SaaS), Platform-as-a-Service (PaaS), and Infrastructure-as-a-Service (IaaS).</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Type of service<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Use to<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Description<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Software as a service (SaaS)</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Consume</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>You use a web browser to use applications that are hosted in the cloud.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Platform as a service (PaaS)</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Build</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>You don’t manage or control the network, servers, or operating system.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>PaaS is more developer-oriented.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>It allows you to focus on the business logic of applications and quickly move applications from concept to launch.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Infrastructure as a service (IaaS)</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Host</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>You have control over your virtual machines and the network configuration, but you don’t have to worry about hardware.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>When you deploy AX 2012 R3 on Azure, you will be using the IaaS offering.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>This means that Azure provides the virtual machines, storage, and networking capabilities.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>You must manage and secure the operating systems, applications, and data installed on the virtual machines.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>DeployAXonAzureUsingLCS1<ept id="p1">](./media/deployaxonazureusinglcs1.jpg)](./media/deployaxonazureusinglcs1.jpg)</ept></source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Architecture of AX 2012 R3 on Azure</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>To deploy AX 2012 R3 on Azure, you can use Microsoft Dynamics Lifecycle Services.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Lifecycle Services is a cloud-based collaborative workspace that customers and partners can use to manage Microsoft Dynamics AX projects.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>The Cloud-hosted environments tool, available on the Lifecycle Services website, helps you deploy AX 2012 R3 environments on Azure.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>When you use the Cloud-hosted environments tool to deploy, you’ll need to select the type of environment that you want to deploy on Azure, such as a demo or development/test environment.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Based on your selection, the Cloud-hosted environments tool provisions the appropriate number of virtual machines on Azure.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>These virtual machines have AX 2012 R3 components—and all of their prerequisites—already installed on them.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>For example, if you deploy an AX 2012 R3 test environment, the architecture looks like this: <bpt id="p1">[</bpt><ph id="ph1">![</ph>DeployAXonAzureUsingLCS2<ept id="p1">](./media/deployaxonazureusinglcs2.jpg)](./media/deployaxonazureusinglcs2.jpg)</ept></source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>You can deploy the following types of AX 2012 R3 environments on Azure with the Cloud-hosted environments tool:</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Demo environment<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Environment</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>AX 2012 R3 demo</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Deploy this environment to demo AX 2012 R3.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>This environment includes 1 virtual machine.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>This virtual machine has Windows Server—and the software and sample data that you’ll need to demo AX 2012 R3—already installed on it.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>AX 2012 R3 CU8 demo</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Deploy this environment to demo AX 2012 R3 Cumulative Update 8.This environment includes 1 virtual machine.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>This virtual machine has Windows Server—and the software and sample data that you’ll need to demo AX 2012 R3 CU8—already installed on it.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Retail essentials demo</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Deploy this environment to demo Retail essentials for AX 2012 R3.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>This environment includes 1 virtual machine, by default.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>This virtual machine has Windows Server—and the software and sample data that you’ll need to demo Retail essentials—already installed on it.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Dev/test environment<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Environment</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Development</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Deploy this environment to develop features for AX 2012 R3.This environment includes 2 virtual machines, by default.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>These virtual machines have Windows Server—and the software that you’ll need for AX 2012 R3 development purposes—already installed on them.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Development with shared SQL Server</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Deploy this environment to develop features for AX 2012 R3.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>The database for each development VM instance will be deployed to a shared SQL Server instance.This environment includes 3 virtual machines, by default.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>These virtual machines have Windows Server—and the software that you’ll need for AX 2012 R3 development purposes—already installed on them.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Test</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Deploy this environment to test features for AX 2012 R3.This environment includes 4 virtual machines, by default.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>These virtual machines have Windows Server—and the software that you’ll need for AX 2012 R3 testing purposes—already installed on them.</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Retail essentials dev/test</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Deploy this environment to develop or test features for Retail essentials for AX 2012 R3.This environment includes 1 virtual machine, by default.</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>This virtual machine has Windows Server—and the software that you’ll need for Retail essentials development and testing purposes—already installed on it.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Retail e-commerce dev/test</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Deploy this environment to create and test an online sales channel that is fully integrated with AX 2012 R3.This environment includes 1 virtual machine, by default.</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>This virtual machine has Windows Server—and the software that you’ll need for Retail e-commerce—already installed on it.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Retail mobility dev/test</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Deploy this environment to enable your sales staff to process sales transactions, enter customer orders, and perform daily operations and inventory management with mobile devices anywhere in a store.This environment includes 1 virtual machine, by default.</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>This virtual machine has Windows Server—and the software that you’ll need for Retail mobility—already installed on it.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>High availability environment<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>Environment</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>High availability</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>Deploy this environment to use AX 2012 R3 in an environment that can be configured for high availability.</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>This environment includes 14 virtual machines, by default.</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>These virtual machines have Windows Server—and the software that you’ll need to use AX 2012 R3 — already installed on them.</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Note: When you deploy this environment, the AX 2012 R3 CU8 version of this environment is deployed by default.</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>If you want to deploy the AX 2012 R3 RTM version, you can select that version during deployment.</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>For more information about the virtual machines, and the software installed on each virtual machine in these environments, see <bpt id="p1">[</bpt>Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure<ept id="p1">](plan-2012-r3-deployment-azure.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>The process for deploying AX 2012 R3 on Azure</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>The process for deploying AX 2012 R3 on Azure is complex and should be completed by system implementers who have experience with:</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Licensing requirements<ept id="p1">**</ept> You’ll need to provide license information for the software included in the AX 2012 R3 environment.</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>This documentation will point you to resources to help you complete this task, but will not provide a step-by-step procedure for completing this task.</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Networks and domains<ept id="p1">**</ept> To enable users in your corporate network to easily access the virtual machines on Azure, you’ll need to create a site-to-site VPN connection.</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>This documentation will point you to resources to help you create the VPN connection, but will not provide a step-by-step procedure for completing this task.</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>To deploy AX 2012 R3 on Azure, see the articles that are listed in the following table.</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Task<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>More information<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Plan your deployment</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>Before you can deploy AX 2012 R3 on Azure, there are several things you must consider and decisions you must make.</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>For example, you must consider licensing requirements, purchase an Azure subscription, and select the type of AX 2012 R3 environment that you will deploy on Azure.For more information, see <bpt id="p1">&lt;a href="plan-2012-r3-deployment-azure.md"&gt;</bpt>Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure<ept id="p1">&lt;/a&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>Deploy AX 2012 R3 on Azure</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>Microsoft Dynamics Lifecycle Services is a cloud-based collaborative workspace that customers and partners can use to manage Microsoft Dynamics AX projects.</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>You’ll use the Cloud-hosted environments tool in Lifecycle Services to deploy AX 2012 R3 on Azure.To deploy a demo environment, see:</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a href="deploy-ax-2012-r3-ax-2012-r3-cu8-demo-environment-azure.md"&gt;</bpt>Deploy an AX 2012 R3 or AX 2012 R3 CU8 demo environment on Azure<ept id="p1">&lt;/a&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a href="deploy-retail-essentials-demo-environment-azure.md"&gt;</bpt>Deploy a Retail essentials demo environment on Azure<ept id="p1">&lt;/a&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>To deploy a dev/test environment, see:</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a href="deploy-development-environment-azure.md"&gt;</bpt>Deploy a development environment on Azure<ept id="p1">&lt;/a&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a href="deploy-test-environment-azure.md"&gt;</bpt>Deploy a test environment on Azure<ept id="p1">&lt;/a&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a href="deploy-retail-essentials-devtest-environment-azure.md"&gt;</bpt>Deploy a Retail essentials dev/test environment on Azure<ept id="p1">&lt;/a&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a href="deploy-retail-ecommerce-devtest-environment-azure.md"&gt;</bpt>Deploy a Retail e-commerce dev/test environment on Azure<ept id="p1">&lt;/a&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a href="deploy-retail-mobility-devtest-environment-azure.md"&gt;</bpt>Deploy a Retail mobility dev/test environment on Azure<ept id="p1">&lt;/a&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>To deploy an environment that can be configured for high availability, see:</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a href="deploy-high-availability-environment-azure.md"&gt;</bpt>Deploy a high availability environment on Azure<ept id="p1">&lt;/a&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>Manage your AX 2012 R3 environment on Azure</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>To help you manage your AX 2012 R3 environment on Azure, see the tips and tricks in <bpt id="p1">&lt;a href="manage-2012-r3-deployment-azure.md"&gt;</bpt>Manage your Microsoft Dynamics AX 2012 R3 deployment on Azure<ept id="p1">&lt;/a&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>Troubleshoot issues that may occur</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>If you need to contact Microsoft with licensing questions or technical issues, you must first determine which support team to contact: the Azure support team or the Microsoft Dynamics AX support team.</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>For information about when and how to contact each support team, see <bpt id="p1">&lt;a href="troubleshoot-2012-r3-deployment-azure.md"&gt;</bpt>Troubleshoot your Microsoft Dynamics AX 2012 R3 deployment on Azure<ept id="p1">&lt;/a&gt;</ept>.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

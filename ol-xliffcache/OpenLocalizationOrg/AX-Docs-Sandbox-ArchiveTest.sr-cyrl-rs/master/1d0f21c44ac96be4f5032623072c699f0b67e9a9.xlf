@@ -1,0 +1,954 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">1d0f21c44ac96be4f5032623072c699f0b67e9a9</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\dev-ref\xpp-statements-loops.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">e515fc2a1e0e7a06632f61d834dc7b05c806924e</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2a58482a22e1c3e9994699ee2db9d010af0d9e5c</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>X++ statements, loops, and exception handling</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic describes statements, loops, and exception handling in X++.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>X++ statements, loops, and exception handling</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This topic describes statements, loops, and exception handling in X++.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Comments</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>It's a good practice to add comments to your code.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Comments make a program easier to read and understand.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Comments are ignored when the program is compiled.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Your comments can use either the <bpt id="p1">**</bpt><ph id="ph1">//</ph><ept id="p1">**</ept> style or the <bpt id="p2">**</bpt><ph id="ph2">/</ph><ph id="ph3">\*</ph><ept id="p2">**</ept>…<bpt id="p3">**</bpt><ph id="ph4">\*</ph><ph id="ph5">/</ph><ept id="p3">**</ept> style.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>However, a best practice is to use the <bpt id="p1">**</bpt><ph id="ph1">//</ph><ept id="p1">**</ept> style for comments, and even for multiline comments.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Conditional statements: if, if...else, switch, and ternary operator (?)</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>The conditional statements are <bpt id="p1">**</bpt>if<ept id="p1">**</ept>, <bpt id="p2">**</bpt>if<ept id="p2">**</ept>...<bpt id="p3">**</bpt>else<ept id="p3">**</ept>, <bpt id="p4">**</bpt>switch<ept id="p4">**</ept>, and the ternary operator (<bpt id="p5">**</bpt>?<ept id="p5">**</ept>).</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>You use conditional statements to specify whether a block of code is executed.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Different conditional statements offer advantages in different situations.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>if and if...else statements</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>if<ept id="p1">**</ept> statement evaluates a conditional expression, and then executes a statement or a set of statements if the conditional expression is evaluated as <bpt id="p2">**</bpt>true<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>You can use the <bpt id="p1">**</bpt>else<ept id="p1">**</ept> clause to provide an alternative statement or set of statements that is executed if the condition is evaluated as <bpt id="p2">**</bpt>false<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Here is the syntax for an <bpt id="p1">**</bpt>if<ept id="p1">**</ept>...<bpt id="p2">**</bpt>else<ept id="p2">**</ept> statement:</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>if (<ept id="p1">**</ept> <bpt id="p2">*</bpt>expression<ept id="p2">*</ept> <bpt id="p3">**</bpt>)<ept id="p3">**</ept> <bpt id="p4">*</bpt>statement<ept id="p4">*</ept> <bpt id="p5">**</bpt><ph id="ph1">\[</ph> else<ept id="p5">**</ept> <bpt id="p6">*</bpt>statement<ept id="p6">*</ept> <bpt id="p7">**</bpt><ph id="ph2">\]</ph><ept id="p7">**</ept></source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>In this syntax, both occurrences of <bpt id="p1">*</bpt>statement<ept id="p1">*</ept> can be compound statements.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">*</bpt>expression<ept id="p1">*</ept> in the parentheses (the conditional expression) can be any valid expression that is evaluated as <bpt id="p2">**</bpt>true<ept id="p2">**</ept> or <bpt id="p3">**</bpt>false<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>All numbers except 0 (zero) are <bpt id="p1">**</bpt>true<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>All non-empty strings are also <bpt id="p1">**</bpt>true<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>You can nest <bpt id="p1">**</bpt>if<ept id="p1">**</ept> statements.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>However, if the nesting of <bpt id="p1">**</bpt>if<ept id="p1">**</ept> statements becomes too deep, you should consider using a <bpt id="p2">**</bpt>switch<ept id="p2">**</ept> statement instead.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Examples of if and if...else statements</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>switch statements</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>switch<ept id="p1">**</ept> statement is a multibranch language construct, unlike the <bpt id="p2">**</bpt>if<ept id="p2">**</ept> statement, where you must nest <bpt id="p3">**</bpt>if<ept id="p3">**</ept> statements to create the same effect.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>The conditional expression of the <bpt id="p1">**</bpt>switch<ept id="p1">**</ept> statement is evaluated and checked against each case value.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>The case values must be constants that the compiler can evaluate.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>If a case constant matches the <bpt id="p1">**</bpt>switch<ept id="p1">**</ept> expression, the <bpt id="p2">**</bpt>case<ept id="p2">**</ept> statement is executed.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>If the case also contains a <bpt id="p1">**</bpt>break<ept id="p1">**</ept> statement, the program then jumps out of the switch.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>If the case doesn't contain a <bpt id="p1">**</bpt>break<ept id="p1">**</ept> statement, the program continues and executes the next set of <bpt id="p2">**</bpt>case<ept id="p2">**</ept> statements.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>If no matches are found, the <bpt id="p1">**</bpt>default<ept id="p1">**</ept> statement is executed.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>If there are no matches and no <bpt id="p1">**</bpt>default<ept id="p1">**</ept> statement, none of the statements inside the <bpt id="p2">**</bpt>switch<ept id="p2">**</ept> statement are executed.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Here is the syntax for a <bpt id="p1">**</bpt>switch<ept id="p1">**</ept> statement:</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>switch (<ept id="p1">**</ept> <bpt id="p2">*</bpt>expression<ept id="p2">*</ept> <bpt id="p3">**</bpt>) { { case } <ph id="ph1">\[</ph> default:<ept id="p3">**</ept> <bpt id="p4">*</bpt>statement<ept id="p4">*</ept> <bpt id="p5">**</bpt><ph id="ph2">\]</ph> }<ept id="p5">**</ept></source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Here is the syntax for a <bpt id="p1">**</bpt>case<ept id="p1">**</ept> statement:</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>case<ept id="p1">**</ept> <bpt id="p2">*</bpt>expression<ept id="p2">*</ept> <bpt id="p3">**</bpt>{ ,<ept id="p3">**</ept> <bpt id="p4">*</bpt>expression<ept id="p4">*</ept> <bpt id="p5">**</bpt>} :<ept id="p5">**</ept> <bpt id="p6">*</bpt>statement<ept id="p6">*</ept></source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>In the syntax for both a <bpt id="p1">**</bpt>switch<ept id="p1">**</ept> statement and a <bpt id="p2">**</bpt>case<ept id="p2">**</ept> statement, every occurrence of s<bpt id="p3">*</bpt>tatement<ept id="p3">*</ept> can be replaced with a block of statements by enclosing the block in braces ({}).</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Examples of switch statements</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Ternary operator (?)</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>The ternary operator (<bpt id="p1">**</bpt>?<ept id="p1">**</ept>) is a conditional statement that is resolved to one of two expressions.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>The result can be assigned to a variable.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>By contrast, an <bpt id="p1">**</bpt>if<ept id="p1">**</ept> statement provides conditional branching of the program flow but can't be assigned to a variable.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Here is the syntax for the ternary operator:</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>expression1<ept id="p1">*</ept> <bpt id="p2">**</bpt>?<ept id="p2">**</ept></source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>expression2<ept id="p1">*</ept> <bpt id="p2">**</bpt>:<ept id="p2">**</ept> <bpt id="p3">*</bpt>expression3<ept id="p3">*</ept></source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>In this syntax, <bpt id="p1">*</bpt>expression1<ept id="p1">*</ept> must return a value of <bpt id="p2">**</bpt>true<ept id="p2">**</ept> or <bpt id="p3">**</bpt>false<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>If <bpt id="p1">*</bpt>expression1<ept id="p1">*</ept> is <bpt id="p2">**</bpt>true<ept id="p2">**</ept>, the whole ternary statement returns <bpt id="p3">*</bpt>expression2<ept id="p3">*</ept>.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Otherwise, the statement returns <bpt id="p1">*</bpt>expression3<ept id="p1">*</ept>.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Both <bpt id="p1">*</bpt>expression2<ept id="p1">*</ept> and <bpt id="p2">*</bpt>expression3<ept id="p2">*</ept> must have the same type.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Examples of the ternary operator (?)</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Exception handling: throw, try...catch, finally, and retry</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>You handle errors by using the <bpt id="p1">**</bpt>throw<ept id="p1">**</ept>, <bpt id="p2">**</bpt>try<ept id="p2">**</ept>...<bpt id="p3">**</bpt>catch<ept id="p3">**</ept>, <bpt id="p4">**</bpt>finally<ept id="p4">**</ept>, and <bpt id="p5">**</bpt>retry<ept id="p5">**</ept> statements to generate and handle exceptions.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>An <bpt id="p1">*</bpt>exception<ept id="p1">*</ept> is a regulated jump away from the sequence of program execution.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>The instruction where program execution resumes is determined by <bpt id="p1">**</bpt>try<ept id="p1">**</ept>...<bpt id="p2">**</bpt>catch<ept id="p2">**</ept> blocks and the type of exception that is thrown.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>An exception is represented by a value of the <bpt id="p1">**</bpt>Exception<ept id="p1">**</ept> enumeration.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>One exception that is often thrown is the <bpt id="p1">**</bpt>Exception::error<ept id="p1">**</ept> enum value.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>A common practice is to write diagnostic information to the Infolog before the exception is thrown.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Global::error<ept id="p1">**</ept> method is often the best way to write diagnostic information to the Infolog.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>For example, your method might receive an input parameter value that isn't valid.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>In this case, the method can throw an exception to immediately transfer control to a <bpt id="p1">**</bpt>catch<ept id="p1">**</ept> code block that contains logic for handling this error situation.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>You don't necessarily have to know the location of the <bpt id="p1">**</bpt>catch<ept id="p1">**</ept> block that will receive control when the exception is thrown.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>throw statements</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>You use the <bpt id="p1">**</bpt>throw<ept id="p1">**</ept> keyword to throw an <bpt id="p2">**</bpt>Exception<ept id="p2">**</ept> enum value.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>For example, the following statement throws an error exception.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Instead of throwing an enum value, a best practice is to use the output of the <bpt id="p1">**</bpt>Global::error<ept id="p1">**</ept> method as the operand for <bpt id="p2">**</bpt>throw<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Global::error<ept id="p1">**</ept> method can automatically convert a label into the corresponding text.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>This functionality helps you write code that can be localized more easily.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>The static methods on the <bpt id="p1">**</bpt>Global<ept id="p1">**</ept> class can be called without the <bpt id="p2">**</bpt>Global::<ept id="p2">**</ept> prefix.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>For example, the <bpt id="p1">**</bpt>Global::error<ept id="p1">**</ept> method can be called like this.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>try, catch, finally, and retry statements</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>When an exception is thrown, it's first processed through the <bpt id="p1">**</bpt>catch<ept id="p1">**</ept> list of the innermost <bpt id="p2">**</bpt>try<ept id="p2">**</ept> block.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>If a <bpt id="p1">**</bpt>catch<ept id="p1">**</ept> block is found that handles the kind of exception that is being thrown, program control jumps to that <bpt id="p2">**</bpt>catch<ept id="p2">**</ept> block.</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>If the <bpt id="p1">**</bpt>catch<ept id="p1">**</ept> list has no block that specifies the exception, the system passes the exception to the <bpt id="p2">**</bpt>catch<ept id="p2">**</ept> list of the next-innermost <bpt id="p3">**</bpt>try<ept id="p3">**</ept> block.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>catch<ept id="p1">**</ept> statements are processed in the same sequence as they appear in the code.</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>It's a common practice to have the first <bpt id="p1">**</bpt>catch<ept id="p1">**</ept> statement handle the <bpt id="p2">**</bpt>Exception::Error<ept id="p2">**</ept> enum value.</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>One strategy is to have the last <bpt id="p1">**</bpt>catch<ept id="p1">**</ept> statement leave the exception type unspecified.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>In this case, the last <bpt id="p1">**</bpt>catch<ept id="p1">**</ept> statement handles all exceptions that aren't handled by any earlier <bpt id="p2">**</bpt>catch<ept id="p2">**</ept> statement.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>This strategy is appropriate for the outermost <bpt id="p1">**</bpt>try<ept id="p1">**</ept>...<bpt id="p2">**</bpt>catch<ept id="p2">**</ept> blocks.</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>An optional ****finally**** clause can be included in <bpt id="p1">**</bpt>try<ept id="p1">**</ept>...<bpt id="p2">**</bpt>catch<ept id="p2">**</ept> statements.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>The semantics of a <bpt id="p1">**</bpt>finally<ept id="p1">**</ept> clause are the same as they are in C<ph id="ph1">\#</ph>.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>The statements in the <bpt id="p1">**</bpt>finally<ept id="p1">**</ept> clause are executed when control leaves the <bpt id="p2">**</bpt>try<ept id="p2">**</ept> block, either normally or through an exception.</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>retry<ept id="p1">**</ept> statement can be written only in a <bpt id="p2">**</bpt>catch<ept id="p2">**</ept> block.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>retry<ept id="p1">**</ept> statement causes control to jump up to the first line of code in the associated <bpt id="p2">**</bpt>try<ept id="p2">**</ept> block.</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>retry<ept id="p1">**</ept> statement is used when the cause of the exception can be fixed by the code in the <bpt id="p2">**</bpt>catch<ept id="p2">**</ept> block.</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>retry<ept id="p1">**</ept> statement gives the code in the <bpt id="p2">**</bpt>try<ept id="p2">**</ept> block another opportunity to succeed.</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>retry<ept id="p1">**</ept> statement erases all messages that have been written to the Infolog since program control entered the <bpt id="p2">**</bpt>try<ept id="p2">**</ept> block.</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> You must make sure that your <bpt id="p2">**</bpt>retry<ept id="p2">**</ept> statements don't cause an infinite loop.</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>As a best practice, the <bpt id="p1">**</bpt>try<ept id="p1">**</ept> block should include a variable that you can test to find out whether you're in a loop.</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>The system exception handler</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>If no <bpt id="p1">**</bpt>catch<ept id="p1">**</ept> statement handles the exception, it's handled by the system exception handler.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>The system exception handler doesn't write to the Infolog.</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>Therefore, an unhandled exception can be hard to diagnose.</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>We recommended that you follow all these guidelines to provide effective exception handling:</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Have a <bpt id="p1">**</bpt>try<ept id="p1">**</ept> block that contains all your statements in the outermost frame on the call stack.</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>Have an unqualified <bpt id="p1">**</bpt>catch<ept id="p1">**</ept> block at the end of your outermost <bpt id="p2">**</bpt>catch<ept id="p2">**</ept> list.</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Avoid throwing an <bpt id="p1">**</bpt>Exception<ept id="p1">**</ept> enum value directly.</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>Throw the enum value that is returned from one of the following methods on the <bpt id="p1">**</bpt>Global<ept id="p1">**</ept> class: <bpt id="p2">**</bpt>Global::error<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Global::warning<ept id="p3">**</ept>, or <bpt id="p4">**</bpt>Global::info<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>(You can omit the implicit <bpt id="p1">**</bpt>Global::<ept id="p1">**</ept> prefix).</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>When you catch an exception that hasn't been shown in the Infolog, call the <bpt id="p1">**</bpt>Global::info<ept id="p1">**</ept> function to show it.</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Exception::CLRError<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Exception::UpdateConflictNotRecovered<ept id="p2">**</ept>, and system kernel exceptions are examples of exceptions that aren't automatically shown in the Infolog.</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>Exceptions and CLR interop</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>You can call Microsoft .NET Framework classes and methods that reside in assemblies that are managed by the common language runtime (CLR).</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>When a .NET Framework <bpt id="p1">**</bpt>System.Exception<ept id="p1">**</ept> instance is thrown, your code can catch it by referencing <bpt id="p2">**</bpt>Exception::CLRError<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Your code can obtain a reference to the <bpt id="p1">**</bpt>System.Exception<ept id="p1">**</ept> instance by calling the <bpt id="p2">**</bpt>CLRInterop::getLastException<ept id="p2">**</ept> method.</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>Ensuring that exceptions are shown</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>Exceptions of the <bpt id="p1">**</bpt>Exception::CLRError<ept id="p1">**</ept> type aren't shown in the Infolog, because these exceptions aren't issued by a call to a method such as <bpt id="p2">**</bpt>Global::error<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>In your <bpt id="p1">**</bpt>catch<ept id="p1">**</ept> block, your code can call <bpt id="p2">**</bpt>Global::error<ept id="p2">**</ept> to report the specific exception.</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>Global class methods</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>This section describes some <bpt id="p1">**</bpt>Global<ept id="p1">**</ept> class methods in more detail.</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>These class methods include <bpt id="p1">**</bpt>Global::error<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Global::info<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>Global::exceptionTextFallThrough<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>Global::error method</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>The following code shows how the <bpt id="p1">**</bpt>error<ept id="p1">**</ept> method is declared.</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>The return type is the <bpt id="p1">**</bpt>Exception::Error<ept id="p1">**</ept> enum value.</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>error<ept id="p1">**</ept> method doesn't throw an exception.</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>It just provides an enum value that can be used in a <bpt id="p1">**</bpt>throw<ept id="p1">**</ept> statement.</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>throw<ept id="p1">**</ept> statement throws the exception.</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>Here are descriptions of the parameters for the <bpt id="p1">**</bpt>error<ept id="p1">**</ept> method.</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>Only the first parameter is required.</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>SysInfoLogStr<ept id="p1">**</ept> txt is a <bpt id="p2">**</bpt>str<ept id="p2">**</ept> of the message text.</source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>It can also be a label reference, such as <bpt id="p1">**</bpt>strFmt("<ph id="ph1">@SYS12345</ph>", strThingName)<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>URL<ept id="p1">**</ept> helpUrl is a reference to the location of a Help topic in Application Explorer, such as <bpt id="p2">**</bpt>"KernDoc:<ph id="ph1">\\</ph><ph id="ph2">\\</ph><ph id="ph3">\\</ph><ph id="ph4">\\</ph>Functions<ph id="ph5">\\</ph><ph id="ph6">\\</ph>substr"<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>The parameter value is ignored if <ph id="ph1">\_</ph>sysInfoAction is supplied.</source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>SysInfoAction<ept id="p1">**</ept> <ph id="ph1">\_</ph>sysInfoAction is an instance of a class that extends the <bpt id="p2">**</bpt>SysInfoAction<ept id="p2">**</ept> class.</source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>The method overrides that we recommend for the child class are the <bpt id="p1">**</bpt>description<ept id="p1">**</ept> method, the <bpt id="p2">**</bpt>run<ept id="p2">**</ept> method, the <bpt id="p3">**</bpt>pack<ept id="p3">**</ept> method, and the <bpt id="p4">**</bpt>unpack<ept id="p4">**</ept> method.</source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>Global::info method</source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Global::info<ept id="p1">**</ept> method is often used to show text in the Infolog.</source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>In programs, it's often written as <bpt id="p1">**</bpt>info("My message.");<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>Although the <bpt id="p1">**</bpt>info<ept id="p1">**</ept> method returns an <bpt id="p2">**</bpt>Exception::Info<ept id="p2">**</ept> enum value, you will rarely want to throw <bpt id="p3">**</bpt>Exception::Info<ept id="p3">**</ept>, because nothing unexpected has occurred.</source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>Global::exceptionTextFallThrough method</source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>Occasionally, you want to do nothing inside your <bpt id="p1">**</bpt>catch<ept id="p1">**</ept> block.</source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>However, the X++ compiler generates a warning if you have an empty <bpt id="p1">**</bpt>catch<ept id="p1">**</ept> block.</source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>To avoid this warning, call the <bpt id="p1">**</bpt>Global::exceptionTextFallThrough<ept id="p1">**</ept> method in the <bpt id="p2">**</bpt>catch<ept id="p2">**</ept> block.</source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>The method does nothing, but it satisfies the compiler.</source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>Exceptions inside transactions</source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>If an exception is thrown inside a transaction, the transaction is automatically aborted (that is, a <bpt id="p1">**</bpt>ttsAbort<ept id="p1">**</ept> operation occurs).</source>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>This behavior applies for both exceptions that are thrown manually and exceptions that the system throws.</source>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>When an exception is thrown inside a <bpt id="p1">**</bpt>ttsBegin<ept id="p1">**</ept><ph id="ph1">-</ph><bpt id="p2">**</bpt>ttsCommit<ept id="p2">**</ept> transaction block, no <bpt id="p3">**</bpt>catch<ept id="p3">**</ept> statement inside that transaction block can process the exception.</source>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>Instead, the innermost <bpt id="p1">**</bpt>catch<ept id="p1">**</ept> statements that are outside the transaction block are the first <bpt id="p2">**</bpt>catch<ept id="p2">**</ept> statements that are tested.</source>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>Examples of exception handling</source>
+        </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>Showing exceptions in the Infolog</source>
+        </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>The following code example shows exceptions in the Infolog.</source>
+        </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>Using the error method to write exception information to the Infolog</source>
+        </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>The following code example uses the <bpt id="p1">**</bpt>error<ept id="p1">**</ept> method to write exception information to the Infolog.</source>
+        </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>Handling a CLRError</source>
+        </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>The following code example handles a <bpt id="p1">**</bpt>CLRError<ept id="p1">**</ept> exception.</source>
+        </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>Using a retry statement</source>
+        </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>The following code example uses a <bpt id="p1">**</bpt>retry<ept id="p1">**</ept> statement.</source>
+        </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>Throwing an exception inside a transaction</source>
+        </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>The following code example throws an exception in a transaction block.</source>
+        </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>Using Global::error with a SysInfoAction parameter</source>
+        </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>When your code throws an exception, it can write messages to the Infolog.</source>
+        </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>You can make those Infolog messages more helpful by using the <bpt id="p1">**</bpt>SysInfoAction<ept id="p1">**</ept> class.</source>
+        </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>In the following example, a <bpt id="p1">**</bpt>SysInfoAction<ept id="p1">**</ept> parameter is passed in to the <bpt id="p2">**</bpt>Global::error<ept id="p2">**</ept> method.</source>
+        </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>error<ept id="p1">**</ept> method writes the message to the Infolog.</source>
+        </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>When the user double-clicks the Infolog message, the <bpt id="p1">**</bpt>SysInfoAction.run<ept id="p1">**</ept> method is run.</source>
+        </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>run<ept id="p1">**</ept> method, you can write code that helps diagnose or fix the issue that caused the exception.</source>
+        </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>The object that is passed in to the <bpt id="p1">**</bpt>Global::error<ept id="p1">**</ept> method is constructed from a class that you write that extends <bpt id="p2">**</bpt>SysInfoAction<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>The following code sample is shown in two parts.</source>
+        </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>The first part shows a job that calls the <bpt id="p1">**</bpt>Global::error<ept id="p1">**</ept> method and then throws the returned value.</source>
+        </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>An instance of the <bpt id="p1">**</bpt>SysInfoAction<ph id="ph1">\_</ph>PrintWindow<ph id="ph2">\_</ph>Demo<ept id="p1">**</ept> class is passed in to the <bpt id="p2">**</bpt>error<ept id="p2">**</ept> method.</source>
+        </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>The second part shows the <bpt id="p1">**</bpt>SysInfoAction<ph id="ph1">\_</ph>PrintWindow<ph id="ph2">\_</ph>Demo<ept id="p1">**</ept> class.</source>
+        </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>Part 1: Calling Global::error</source>
+        </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>Part 2: The SysInfoAction<ph id="ph1">\_</ph>PrintWindow<ph id="ph2">\_</ph>Demo class</source>
+        </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>List of exceptions</source>
+        </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>The following table shows the exception literals that are the values of the <bpt id="p1">**</bpt>Exception<ept id="p1">**</ept> enumeration.</source>
+        </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>Exception literal</source>
+        </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>Break</source>
+        </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>The user pressed Break or Ctrl+C.</source>
+        </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>CLRError</source>
+        </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>An error occurred while the CLR functionality was being used.</source>
+        </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>CodeAccessSecurity</source>
+        </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>An error occurred while the <bpt id="p1">**</bpt>CodeAccessPermission.demand<ept id="p1">**</ept> method was being used.</source>
+        </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>DDEerror</source>
+        </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>An error occurred while the <bpt id="p1">**</bpt>DDE<ept id="p1">**</ept> system class was being used.</source>
+        </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>Deadlock</source>
+        </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source>A database deadlock occurred, because several transactions are waiting for each other.</source>
+        </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source>DuplicateKeyException</source>
+        </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source>An error occurred in a transaction that is using Optimistic Concurrency Control.</source>
+        </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source>The transaction can be retried (use a <bpt id="p1">**</bpt>retry<ept id="p1">**</ept> statement in the <bpt id="p2">**</bpt>catch<ept id="p2">**</ept> block).</source>
+        </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>DuplicateKeyExceptionNotRecovered</source>
+        </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>An error occurred in a transaction that is using Optimistic Concurrency Control.</source>
+        </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source>The code won't be retried.</source>
+        </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source>This exception can't be caught inside a transaction.</source>
+        </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source>Error</source>
+        </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source>A fatal error occurred.</source>
+        </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source>The transaction has been stopped.</source>
+        </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source>Info</source>
+        </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source>This exception literal holds a message for the user.</source>
+        </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source>Don't throw an <bpt id="p1">**</bpt>info<ept id="p1">**</ept> exception.</source>
+        </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source>Internal</source>
+        </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source>An internal error occurred in the development system.</source>
+        </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source>Numeric</source>
+        </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>An error occurred while the <bpt id="p1">**</bpt>str2int<ept id="p1">**</ept>, <bpt id="p2">**</bpt>str2int64<ept id="p2">**</ept>, or <bpt id="p3">**</bpt>str2num<ept id="p3">**</ept> function was being used.</source>
+        </trans-unit>
+        <trans-unit id="298" translate="yes" xml:space="preserve">
+          <source>Sequence</source>
+        </trans-unit>
+        <trans-unit id="299" translate="yes" xml:space="preserve">
+          <source>UpdateConflict</source>
+        </trans-unit>
+        <trans-unit id="300" translate="yes" xml:space="preserve">
+          <source>An error occurred in a transaction that is using Optimistic Concurrency Control.</source>
+        </trans-unit>
+        <trans-unit id="301" translate="yes" xml:space="preserve">
+          <source>The transaction can be retried (use a <bpt id="p1">**</bpt>retry<ept id="p1">**</ept> statement in the <bpt id="p2">**</bpt>catch<ept id="p2">**</ept> block).</source>
+        </trans-unit>
+        <trans-unit id="302" translate="yes" xml:space="preserve">
+          <source>UpdateConflictNotRecovered</source>
+        </trans-unit>
+        <trans-unit id="303" translate="yes" xml:space="preserve">
+          <source>An error occurred in a transaction that is using Optimistic Concurrency Control.</source>
+        </trans-unit>
+        <trans-unit id="304" translate="yes" xml:space="preserve">
+          <source>The code won't be retried.</source>
+        </trans-unit>
+        <trans-unit id="305" translate="yes" xml:space="preserve">
+          <source>This exception can't be caught within a transaction.</source>
+        </trans-unit>
+        <trans-unit id="306" translate="yes" xml:space="preserve">
+          <source>Warning</source>
+        </trans-unit>
+        <trans-unit id="307" translate="yes" xml:space="preserve">
+          <source>An exceptional event has occurred.</source>
+        </trans-unit>
+        <trans-unit id="308" translate="yes" xml:space="preserve">
+          <source>Although the user might have to take action, the event isn't fatal.</source>
+        </trans-unit>
+        <trans-unit id="309" translate="yes" xml:space="preserve">
+          <source>Don't throw a <bpt id="p1">**</bpt>warning<ept id="p1">**</ept> exception.</source>
+        </trans-unit>
+        <trans-unit id="310" translate="yes" xml:space="preserve">
+          <source>Loop statements: for, while, and do...while</source>
+        </trans-unit>
+        <trans-unit id="311" translate="yes" xml:space="preserve">
+          <source>There are three loop statements: <bpt id="p1">**</bpt>for<ept id="p1">**</ept>, <bpt id="p2">**</bpt>while<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>do<ept id="p3">**</ept>...<bpt id="p4">**</bpt>while<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="312" translate="yes" xml:space="preserve">
+          <source>A loop repeats its statement until the condition that is set for the loop is <bpt id="p1">**</bpt>false<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="313" translate="yes" xml:space="preserve">
+          <source>Within the loop statements, you can use <bpt id="p1">**</bpt>break<ept id="p1">**</ept> and <bpt id="p2">**</bpt>continue<ept id="p2">**</ept> statements.</source>
+        </trans-unit>
+        <trans-unit id="314" translate="yes" xml:space="preserve">
+          <source>for loops</source>
+        </trans-unit>
+        <trans-unit id="315" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>for<ept id="p1">**</ept> loop repeatedly executes one or more statements for as long as the conditional expression is <bpt id="p2">**</bpt>true<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="316" translate="yes" xml:space="preserve">
+          <source>The statement is executed as many times as the condition is met.</source>
+        </trans-unit>
+        <trans-unit id="317" translate="yes" xml:space="preserve">
+          <source>The body of the <bpt id="p1">**</bpt>for<ept id="p1">**</ept> loop might be executed zero or more times, depending on the results of the condition test.</source>
+        </trans-unit>
+        <trans-unit id="318" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">**</bpt>for<ept id="p1">**</ept> loop differs from other loops because an initial value can be assigned to a control variable, and because there is a statement for incrementing or decrementing the variable.</source>
+        </trans-unit>
+        <trans-unit id="319" translate="yes" xml:space="preserve">
+          <source>These additions make a <bpt id="p1">**</bpt>for<ept id="p1">**</ept> loop especially useful for traversing lists, containers, and arrays, because they have a fixed number of elements.</source>
+        </trans-unit>
+        <trans-unit id="320" translate="yes" xml:space="preserve">
+          <source>You can also apply a statement to each element and increment your way through the elements, setting the condition to test for the last element.</source>
+        </trans-unit>
+        <trans-unit id="321" translate="yes" xml:space="preserve">
+          <source>Here is the syntax for a <bpt id="p1">**</bpt>for<ept id="p1">**</ept> statement:</source>
+        </trans-unit>
+        <trans-unit id="322" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>for (<ept id="p1">**</ept> <bpt id="p2">*</bpt>initialization<ept id="p2">*</ept> <bpt id="p3">**</bpt>;<ept id="p3">**</ept> <bpt id="p4">*</bpt>test<ept id="p4">*</ept> <bpt id="p5">**</bpt>;<ept id="p5">**</ept> <bpt id="p6">*</bpt>increment<ept id="p6">*</ept> <bpt id="p7">**</bpt>) {<ept id="p7">**</ept> <bpt id="p8">*</bpt>statement<ept id="p8">*</ept> <bpt id="p9">**</bpt>}<ept id="p9">**</ept></source>
+        </trans-unit>
+        <trans-unit id="323" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>tatement<ept id="p1">*</ept> can be a block of statements.</source>
+        </trans-unit>
+        <trans-unit id="324" translate="yes" xml:space="preserve">
+          <source>Example of a for loop</source>
+        </trans-unit>
+        <trans-unit id="325" translate="yes" xml:space="preserve">
+          <source>while loops</source>
+        </trans-unit>
+        <trans-unit id="326" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">**</bpt>while<ept id="p1">**</ept> loop repeatedly executes one or more statements for as long as the conditional expression is <bpt id="p2">**</bpt>true<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="327" translate="yes" xml:space="preserve">
+          <source>The statements are executed as many times as the condition is met (zero to many).</source>
+        </trans-unit>
+        <trans-unit id="328" translate="yes" xml:space="preserve">
+          <source>Here is the syntax for a <bpt id="p1">**</bpt>while<ept id="p1">**</ept> loop:</source>
+        </trans-unit>
+        <trans-unit id="329" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>while (<ept id="p1">**</ept> <bpt id="p2">*</bpt>expression<ept id="p2">*</ept> <bpt id="p3">**</bpt>)<ept id="p3">**</ept> <bpt id="p4">*</bpt>statement<ept id="p4">*</ept></source>
+        </trans-unit>
+        <trans-unit id="330" translate="yes" xml:space="preserve">
+          <source>In this syntax, <bpt id="p1">*</bpt>statement<ept id="p1">*</ept> can be replaced by a block of statements.</source>
+        </trans-unit>
+        <trans-unit id="331" translate="yes" xml:space="preserve">
+          <source>Example of a while loop</source>
+        </trans-unit>
+        <trans-unit id="332" translate="yes" xml:space="preserve">
+          <source>do...while loops</source>
+        </trans-unit>
+        <trans-unit id="333" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>do<ept id="p1">**</ept>...<bpt id="p2">**</bpt>while<ept id="p2">**</ept> loop is similar to the <bpt id="p3">**</bpt>while<ept id="p3">**</ept> loop, but the condition appears after the statements that must be executed.</source>
+        </trans-unit>
+        <trans-unit id="334" translate="yes" xml:space="preserve">
+          <source>The statements are always executed at least one time, because the condition is tested after the statements are executed.</source>
+        </trans-unit>
+        <trans-unit id="335" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>do<ept id="p1">**</ept>...<bpt id="p2">**</bpt>while<ept id="p2">**</ept> loop is well-suited to tasks that must always be done at least one time, such as getting parameters for a report.</source>
+        </trans-unit>
+        <trans-unit id="336" translate="yes" xml:space="preserve">
+          <source>Here is the syntax for a <bpt id="p1">**</bpt>do<ept id="p1">**</ept>...<bpt id="p2">**</bpt>while<ept id="p2">**</ept> loop:</source>
+        </trans-unit>
+        <trans-unit id="337" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>do {<ept id="p1">**</ept> <bpt id="p2">*</bpt>statement<ept id="p2">*</ept> <bpt id="p3">**</bpt>} while (<ept id="p3">**</ept> <bpt id="p4">*</bpt>expression<ept id="p4">*</ept> <bpt id="p5">**</bpt>) ;<ept id="p5">**</ept></source>
+        </trans-unit>
+        <trans-unit id="338" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>tatement<ept id="p1">*</ept> can be a block of statements.</source>
+        </trans-unit>
+        <trans-unit id="339" translate="yes" xml:space="preserve">
+          <source>Example of a do...while loop</source>
+        </trans-unit>
+        <trans-unit id="340" translate="yes" xml:space="preserve">
+          <source>continue and break statements</source>
+        </trans-unit>
+        <trans-unit id="341" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>continue<ept id="p1">**</ept> statement causes execution to move directly to the next iteration of a <bpt id="p2">**</bpt>for<ept id="p2">**</ept>, <bpt id="p3">**</bpt>while<ept id="p3">**</ept>, or <bpt id="p4">**</bpt>do<ept id="p4">**</ept>...<bpt id="p5">**</bpt>while<ept id="p5">**</ept> loop.</source>
+        </trans-unit>
+        <trans-unit id="342" translate="yes" xml:space="preserve">
+          <source>For <bpt id="p1">**</bpt>do<ept id="p1">**</ept> or <bpt id="p2">**</bpt>while<ept id="p2">**</ept>, the test is executed immediately.</source>
+        </trans-unit>
+        <trans-unit id="343" translate="yes" xml:space="preserve">
+          <source>For a <bpt id="p1">**</bpt>for<ept id="p1">**</ept> statement, the increment step is executed.</source>
+        </trans-unit>
+        <trans-unit id="344" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>break<ept id="p1">**</ept> statement within a loop is used to terminate that loop.</source>
+        </trans-unit>
+        <trans-unit id="345" translate="yes" xml:space="preserve">
+          <source>Execution then moves to the first statement after the loop.</source>
+        </trans-unit>
+        <trans-unit id="346" translate="yes" xml:space="preserve">
+          <source>Example of a continue statement</source>
+        </trans-unit>
+        <trans-unit id="347" translate="yes" xml:space="preserve">
+          <source>print statements</source>
+        </trans-unit>
+        <trans-unit id="348" translate="yes" xml:space="preserve">
+          <source>You use the <bpt id="p1">**</bpt>print<ept id="p1">**</ept> statement to show messages (text or selected results) in a temporary window.</source>
+        </trans-unit>
+        <trans-unit id="349" translate="yes" xml:space="preserve">
+          <source>This window appears when the first <bpt id="p1">**</bpt>print<ept id="p1">**</ept> statement is executed.</source>
+        </trans-unit>
+        <trans-unit id="350" translate="yes" xml:space="preserve">
+          <source>During testing, the <bpt id="p1">**</bpt>print<ept id="p1">**</ept> statement can be a convenient alternative to the <bpt id="p2">**</bpt>Global::info<ept id="p2">**</ept> method, which shows text in the Infolog.</source>
+        </trans-unit>
+        <trans-unit id="351" translate="yes" xml:space="preserve">
+          <source>The following table compares the <bpt id="p1">**</bpt>print<ept id="p1">**</ept> statement and the <bpt id="p2">**</bpt>Global::info<ept id="p2">**</ept> method.</source>
+        </trans-unit>
+        <trans-unit id="352" translate="yes" xml:space="preserve">
+          <source>Feature</source>
+        </trans-unit>
+        <trans-unit id="353" translate="yes" xml:space="preserve">
+          <source>print statement</source>
+        </trans-unit>
+        <trans-unit id="354" translate="yes" xml:space="preserve">
+          <source>Info method</source>
+        </trans-unit>
+        <trans-unit id="355" translate="yes" xml:space="preserve">
+          <source>Ease of invocation</source>
+        </trans-unit>
+        <trans-unit id="356" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>print<ept id="p1">**</ept> statement automatically converts various data types into strings.</source>
+        </trans-unit>
+        <trans-unit id="357" translate="yes" xml:space="preserve">
+          <source>It can convert multiple data types in one invocation.</source>
+        </trans-unit>
+        <trans-unit id="358" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>info<ept id="p1">**</ept> method requires that the input parameter be a string.</source>
+        </trans-unit>
+        <trans-unit id="359" translate="yes" xml:space="preserve">
+          <source>Ability to copy contents to the clipboard</source>
+        </trans-unit>
+        <trans-unit id="360" translate="yes" xml:space="preserve">
+          <source>The contents of the window that the <bpt id="p1">**</bpt>print<ept id="p1">**</ept> statement opens can't be copied to the clipboard.</source>
+        </trans-unit>
+        <trans-unit id="361" translate="yes" xml:space="preserve">
+          <source>You can't give the window focus.</source>
+        </trans-unit>
+        <trans-unit id="362" translate="yes" xml:space="preserve">
+          <source>Infolog contents are easily copied from the <bpt id="p1">**</bpt>Infolog<ept id="p1">**</ept> window to the clipboard.</source>
+        </trans-unit>
+        <trans-unit id="363" translate="yes" xml:space="preserve">
+          <source>Scope of lifetime</source>
+        </trans-unit>
+        <trans-unit id="364" translate="yes" xml:space="preserve">
+          <source>The window closes when the X++ application ends, and it might close before you have time to read it.</source>
+        </trans-unit>
+        <trans-unit id="365" translate="yes" xml:space="preserve">
+          <source>The window persists for the whole client session.</source>
+        </trans-unit>
+        <trans-unit id="366" translate="yes" xml:space="preserve">
+          <source>Size and location</source>
+        </trans-unit>
+        <trans-unit id="367" translate="yes" xml:space="preserve">
+          <source>The window can be a specific size and in a specific location on the screen.</source>
+        </trans-unit>
+        <trans-unit id="368" translate="yes" xml:space="preserve">
+          <source>The window is sized and placed by the system.</source>
+        </trans-unit>
+        <trans-unit id="369" translate="yes" xml:space="preserve">
+          <source>Typical usage</source>
+        </trans-unit>
+        <trans-unit id="370" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>print<ept id="p1">**</ept> statement is used for convenience during testing.</source>
+        </trans-unit>
+        <trans-unit id="371" translate="yes" xml:space="preserve">
+          <source>It can help you debug small issues without having to run a formal debugger.</source>
+        </trans-unit>
+        <trans-unit id="372" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>info<ept id="p1">**</ept> method is appropriate for use in production.</source>
+        </trans-unit>
+        <trans-unit id="373" translate="yes" xml:space="preserve">
+          <source>Example of a print statement</source>
+        </trans-unit>
+        <trans-unit id="374" translate="yes" xml:space="preserve">
+          <source>TODO comments</source>
+        </trans-unit>
+        <trans-unit id="375" translate="yes" xml:space="preserve">
+          <source>The compiler recognizes the string <bpt id="p1">**</bpt>TODO<ept id="p1">**</ept> when it occurs at the start of a comment.</source>
+        </trans-unit>
+        <trans-unit id="376" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>TODO<ept id="p1">**</ept> string prompts the compiler to report the rest of the comment text in the <bpt id="p2">**</bpt>Task List<ept id="p2">**</ept> window in Microsoft Visual Studio.</source>
+        </trans-unit>
+        <trans-unit id="377" translate="yes" xml:space="preserve">
+          <source>To open the <bpt id="p1">**</bpt>Task List<ept id="p1">**</ept> window, select <bpt id="p2">**</bpt>View<ept id="p2">**</ept>, and then select <bpt id="p3">**</bpt>Task Window<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="378" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Task Window<ept id="p1">**</ept> reports the line number where the <bpt id="p2">**</bpt>TODO<ept id="p2">**</ept> comment can be found in the code.</source>
+        </trans-unit>
+        <trans-unit id="379" translate="yes" xml:space="preserve">
+          <source>Here are the rules for using <bpt id="p1">**</bpt>TODO<ept id="p1">**</ept> in comments:</source>
+        </trans-unit>
+        <trans-unit id="380" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>TODO<ept id="p1">**</ept> string can appear in a comment that uses either the <bpt id="p2">**</bpt><ph id="ph1">//</ph><ept id="p2">**</ept> style or the <bpt id="p3">**</bpt><ph id="ph2">/</ph><ph id="ph3">\*</ph><ept id="p3">**</ept>...<bpt id="p4">**</bpt><ph id="ph4">\*</ph><ph id="ph5">/</ph><ept id="p4">**</ept> style.</source>
+        </trans-unit>
+        <trans-unit id="381" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>TODO<ept id="p1">**</ept> string must be the very first non–white space string in the comment.</source>
+        </trans-unit>
+        <trans-unit id="382" translate="yes" xml:space="preserve">
+          <source>A carriage return, a line feed, a tab, and a space are all considered white space.</source>
+        </trans-unit>
+        <trans-unit id="383" translate="yes" xml:space="preserve">
+          <source>No white space is required between the start of the comment and the <bpt id="p1">**</bpt>TODO<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="384" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>TODO<ept id="p1">**</ept> string is case-insensitive.</source>
+        </trans-unit>
+        <trans-unit id="385" translate="yes" xml:space="preserve">
+          <source>However, the convention is to type <bpt id="p1">**</bpt>TODO<ept id="p1">**</ept> in all uppercase letters, instead of <bpt id="p2">**</bpt>ToDo<ept id="p2">**</ept> or another variation.</source>
+        </trans-unit>
+        <trans-unit id="386" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>TODO<ept id="p1">**</ept> string can have any characters appended to it.</source>
+        </trans-unit>
+        <trans-unit id="387" translate="yes" xml:space="preserve">
+          <source>However, the convention is either to append a colon to the <bpt id="p1">**</bpt>TODO<ept id="p1">**</ept> string or to follow it with a white space.</source>
+        </trans-unit>
+        <trans-unit id="388" translate="yes" xml:space="preserve">
+          <source>The rest of the comment after the <bpt id="p1">**</bpt>TODO<ept id="p1">**</ept> string is reported as the task description.</source>
+        </trans-unit>
+        <trans-unit id="389" translate="yes" xml:space="preserve">
+          <source>If the comment is longer than 200 characters, it might appear truncated on the <bpt id="p1">**</bpt>Tasks<ept id="p1">**</ept> tab.</source>
+        </trans-unit>
+        <trans-unit id="390" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>TODO<ept id="p1">**</ept> task description can be spread over multiple lines when the <bpt id="p2">**</bpt><ph id="ph1">/</ph><ph id="ph2">\*</ph><ept id="p2">**</ept>...<bpt id="p3">**</bpt><ph id="ph3">\*</ph><ph id="ph4">/</ph><ept id="p3">**</ept> comment style is used.</source>
+        </trans-unit>
+        <trans-unit id="391" translate="yes" xml:space="preserve">
+          <source>Examples of TODO comments</source>
+        </trans-unit>
+        <trans-unit id="392" translate="yes" xml:space="preserve">
+          <source>The following examples show <bpt id="p1">**</bpt>TODO<ept id="p1">**</ept> comments that use the <bpt id="p2">**</bpt><ph id="ph1">//</ph><ept id="p2">**</ept> and <bpt id="p3">**</bpt><ph id="ph2">/</ph><ph id="ph3">\*</ph><ept id="p3">**</ept>...<bpt id="p4">**</bpt><ph id="ph4">\*</ph><ph id="ph5">/</ph><ept id="p4">**</ept> styles.</source>
+        </trans-unit>
+        <trans-unit id="393" translate="yes" xml:space="preserve">
+          <source>Unsupported statements: changeSite, pause, and window</source>
+        </trans-unit>
+        <trans-unit id="394" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>changeSite<ept id="p1">**</ept>, <bpt id="p2">**</bpt>pause<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>window<ept id="p3">**</ept> keywords are no longer a part of the X++ language.</source>
+        </trans-unit>
+        <trans-unit id="395" translate="yes" xml:space="preserve">
+          <source>These keywords will cause compilation errors if you use them.</source>
+        </trans-unit>
+        <trans-unit id="396" translate="yes" xml:space="preserve">
+          <source>using clauses</source>
+        </trans-unit>
+        <trans-unit id="397" translate="yes" xml:space="preserve">
+          <source>You use <bpt id="p1">**</bpt>using<ept id="p1">**</ept> clauses so that you don't have to provide the fully qualified name of a type.</source>
+        </trans-unit>
+        <trans-unit id="398" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>using<ept id="p1">**</ept> clause must precede the class that it applies, and it's required in every source file that you want it to apply to.</source>
+        </trans-unit>
+        <trans-unit id="399" translate="yes" xml:space="preserve">
+          <source>Typically, all <bpt id="p1">**</bpt>using<ept id="p1">**</ept> clauses are put at the beginning of the source file.</source>
+        </trans-unit>
+        <trans-unit id="400" translate="yes" xml:space="preserve">
+          <source>You can also provide aliases that introduce a short name for a fully qualified name.</source>
+        </trans-unit>
+        <trans-unit id="401" translate="yes" xml:space="preserve">
+          <source>Aliases can denote namespaces or classes.</source>
+        </trans-unit>
+        <trans-unit id="402" translate="yes" xml:space="preserve">
+          <source>The following example shows a <bpt id="p1">**</bpt>using<ept id="p1">**</ept> clause, a namespace alias, and a class alias.</source>
+        </trans-unit>
+        <trans-unit id="403" translate="yes" xml:space="preserve">
+          <source>using statements</source>
+        </trans-unit>
+        <trans-unit id="404" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>using<ept id="p1">**</ept> statement helps guarantee that objects that implement <bpt id="p2">**</bpt>IDisposable<ept id="p2">**</ept> are disposed of correctly.</source>
+        </trans-unit>
+        <trans-unit id="405" translate="yes" xml:space="preserve">
+          <source>When you use an <bpt id="p1">**</bpt>IDisposable<ept id="p1">**</ept> object, you should declare and instantiate it in a <bpt id="p2">**</bpt>using<ept id="p2">**</ept> statement.</source>
+        </trans-unit>
+        <trans-unit id="406" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>using<ept id="p1">**</ept> statement calls the <bpt id="p2">**</bpt>Dispose<ept id="p2">**</ept> method on the object in the correct way, even if an exception occurs while you're calling methods on the object.</source>
+        </trans-unit>
+        <trans-unit id="407" translate="yes" xml:space="preserve">
+          <source>You can achieve the same result by putting the object inside a <bpt id="p1">**</bpt>try<ept id="p1">**</ept> block and then explicitly calling <bpt id="p2">**</bpt>Dispose<ept id="p2">**</ept> in a <bpt id="p3">**</bpt>finally<ept id="p3">**</ept> block.</source>
+        </trans-unit>
+        <trans-unit id="408" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>using<ept id="p1">**</ept> statement simplifies the syntax and disposes of the object correctly.</source>
+        </trans-unit>
+        <trans-unit id="409" translate="yes" xml:space="preserve">
+          <source>Here is the syntax for a <bpt id="p1">**</bpt>using<ept id="p1">**</ept> statement:</source>
+        </trans-unit>
+        <trans-unit id="410" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>using (<ept id="p1">**</ept> <bpt id="p2">*</bpt>expression<ept id="p2">*</ept> <bpt id="p3">**</bpt>) {<ept id="p3">**</ept> <bpt id="p4">*</bpt>statement<ept id="p4">*</ept> <bpt id="p5">**</bpt>}<ept id="p5">**</ept></source>
+        </trans-unit>
+        <trans-unit id="411" translate="yes" xml:space="preserve">
+          <source>In this syntax, <bpt id="p1">*</bpt>statement<ept id="p1">*</ept> can be a block of statements, and <bpt id="p2">*</bpt>expression<ept id="p2">*</ept> declares and instantiates an object that implements <bpt id="p3">**</bpt>IDisposable<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="412" translate="yes" xml:space="preserve">
+          <source>The following example creates and uses a <bpt id="p1">**</bpt>StreamReader<ept id="p1">**</ept> object.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

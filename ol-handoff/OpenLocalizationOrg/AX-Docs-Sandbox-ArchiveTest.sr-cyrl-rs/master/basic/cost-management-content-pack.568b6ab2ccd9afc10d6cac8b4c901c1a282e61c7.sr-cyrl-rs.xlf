@@ -1,0 +1,555 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">fb5c39a65ea59acda05b0828f84bfaea4ad75062</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\analytics\cost-management-content-pack.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">basic</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">9b920e53b710fda7d72d3ac3cbea6ca34ad23690</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">d0ec9934ed7b416614d494c88fdfcad2136faf4e</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Cost management Power BI content</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic describes what is included in the Cost management Power BI content.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Cost management Power BI content</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>This topic describes what is included in the Cost management Power BI content.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Overview</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Cost management<ept id="p1">**</ept> Microsoft Power BI content is intended for inventory accountants or individuals in the organization who are responsible for inventory.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Cost management<ept id="p1">**</ept> Power BI content provides managerial insight into inventory and work-in-progress (WIP) inventory, and how cost flows through them by category over time.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>The information can also be used as a detailed supplement to the financial statement.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Key measures</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Beginning balance</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Ending balance</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Net change</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Net change in %</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Aging</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Key performance indicators</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Inventory turn</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Inventory accuracy</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>The primary data source for CostAggregatedCostStatementEntryEntity is the CostStatementCache table.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>This table is managed by the Data set cache framework.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>By default, the table is updated every 24 hours, but you can enable manual updates in the data cache configuration.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>You can then do a manual update in the <bpt id="p1">**</bpt>Cost management<ept id="p1">**</ept> or <bpt id="p2">**</bpt>Cost analysis<ept id="p2">**</ept> workspace.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>After the update of CostStatementCache is run, you must update the OData connection on Power BI.com to see updated data on the site.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>The variance (purchase, production) measures in this Power BI content pertain only to items that are valuated by the Standard cost inventory method.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Production variance is calculated as the difference between active cost and realized cost.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>The production variance is calculated when the production order has a status of <bpt id="p1">**</bpt>Ended<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>For more information about production variance types and how each type is calculated, see <bpt id="p1">[</bpt>About analyzing variances for a completed production order<ept id="p1">](https://technet.microsoft.com/en-us/library/gg242850.aspx)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Accessing the Power BI content</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Cost management<ept id="p1">**</ept> Power BI content is available from PowerBI.com.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>For more information about how to connect and load your Microsoft Dynamics 365 for Finance and Operations data, see <bpt id="p1">[</bpt>Access Power BI content from PowerBI.com<ept id="p1">](power-bi-home-page.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Metrics that are included in the Power BI content</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>The content includes a set of report pages.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Each page consists of a set of metrics that are visualized as charts, tiles, and tables.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>The following table provides an overview of the visualizations in the <bpt id="p1">**</bpt>Cost management<ept id="p1">**</ept> Power BI content.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Report page</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Charts</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Titles</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Inventory overall (Default by current period)</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Accuracy</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Inventory measures:</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Inventory ending balance</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Inventory net change</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Inventory net change %</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Inventory turn</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Inventory ending balance by Resource group</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Inventory net change by Category name level 1 and Category name level 2</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Purchase variances by Resource group and Category name level 3</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Inventory by site (Default by current period)</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Inventory ending balance by Site name and Resource group</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Inventory turn by Site name and Resource group</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Inventory ending balance by City and Resource group</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Inventory by resource group (Default by current period)</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Inventory measures</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Inventory accuracy by amount by Resource group</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Inventory turn by amount by Resource group</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Inventory YOY (Default current year vs previous year)</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Inventory measures</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Inventory KPIs:</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Inventory turn</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Inventory accuracy</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Inventory ending balance by Year and Resource group</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Purchase variances by Year and Category name level 3</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Inventory aging (Default by current year)</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Inventory aging by Quarter and Resource group</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Inventory aging by Quarter and Site name</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>WIP overall (Default by current period)</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>WIP net change by Category name level 1 and Category name level 2</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Work in progress WIP measures:</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>WIP ending balance</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>WIP net change</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>WIP net change %</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Production variances by Resource group and Category name level 3</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>WIP net change by Resource group</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>WIP by site (Default by current period)</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Work in progress WIP measures</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>WIP net change by Site name and Category name level 2</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Production variances by Site name and Category name level 3</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Understanding the data model and entities</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Finance and Operations data is used to populate the report pages in the <bpt id="p1">**</bpt>Cost management<ept id="p1">**</ept> Power BI content.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>This data is represented as aggregate measurements that are staged in the Entity store, which is a Microsoft SQL database that is optimized for analytics.</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Overview of Power BI integration with Entity store<ept id="p1">](power-bi-integration-entity-store.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>The following key aggregate measurements are used as the basis of the content.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>Entity</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Key aggregate measurement</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Data source for Finance and Operations</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>Field</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Statement entries</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Net change</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>CostAggregatedCostStatementEntryEntity</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>sum(<ph id="ph1">\[</ph>Amount<ph id="ph2">\]</ph>)</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>Amount in the accounting currency</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>Statement entries</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>Net change quantity</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>CostAggregatedCostStatementEntryEntity</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>sum(<ph id="ph1">\[</ph>Quantity<ph id="ph2">\]</ph>)</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>The following table shows how the key aggregate measurements are used to create several calculated measures in the content's dataset.</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Measure</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>How the measure is calculated</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>Beginning balance</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\[</ph>Ending balance<ph id="ph2">\]</ph><ph id="ph3">-</ph><ph id="ph4">\[</ph>Net change<ph id="ph5">\]</ph></source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>Beginning balance quantity</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\[</ph>Ending balance quantity<ph id="ph2">\]</ph><ph id="ph3">-</ph><ph id="ph4">\[</ph>Net change quantity<ph id="ph5">\]</ph></source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>Ending balance</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>CALCULATE(SUM(<ph id="ph1">\[</ph>Amount<ph id="ph2">\]</ph>), FILTER(ALLEXCEPT('Fiscal calendars', 'Fiscal calendars'<ph id="ph3">\[</ph>LedgerRecId<ph id="ph4">\]</ph>, 'entities'<ph id="ph5">\[</ph>ID<ph id="ph6">\]</ph>, 'entities'<ph id="ph7">\[</ph>Name<ph id="ph8">\]</ph>, 'Ledgers'<ph id="ph9">\[</ph>Currency<ph id="ph10">\]</ph>, 'Ledgers'<ph id="ph11">\[</ph>Description<ph id="ph12">\]</ph>, 'Ledgers'<ph id="ph13">\[</ph>Name<ph id="ph14">\]</ph>), 'Fiscal calendars'<ph id="ph15">\[</ph>Date<ph id="ph16">\]</ph> <ph id="ph17">&amp;lt;</ph>= MAX('Fiscal calendars'<ph id="ph18">\[</ph>Date<ph id="ph19">\]</ph>)))</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Ending balance quantity</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>CALCULATE(SUM(<ph id="ph1">\[</ph>Quantity<ph id="ph2">\]</ph>), FILTER(ALLEXCEPT('Fiscal calendars', 'Fiscal calendars'<ph id="ph3">\[</ph>LedgerRecId<ph id="ph4">\]</ph>, 'entities'<ph id="ph5">\[</ph>ID<ph id="ph6">\]</ph>, 'entities'<ph id="ph7">\[</ph>Name<ph id="ph8">\]</ph>, 'Ledgers'<ph id="ph9">\[</ph>Currency<ph id="ph10">\]</ph>, 'Ledgers'<ph id="ph11">\[</ph>Description<ph id="ph12">\]</ph>, 'Ledgers'<ph id="ph13">\[</ph>Name<ph id="ph14">\]</ph>), 'Fiscal calendars'<ph id="ph15">\[</ph>Date<ph id="ph16">\]</ph> <ph id="ph17">&amp;lt;</ph>= MAX('Fiscal calendars'<ph id="ph18">\[</ph>Date<ph id="ph19">\]</ph>)))</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>Inventory beginning balance</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>CALCULATE(<ph id="ph1">\[</ph>Beginning balance<ph id="ph2">\]</ph>, 'Statement entries'<ph id="ph3">\[</ph>Statement Type<ph id="ph4">\]</ph> = "Inventory")</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>Inventory ending balance</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>CALCULATE(<ph id="ph1">\[</ph>Ending balance<ph id="ph2">\]</ph>, 'Statement entries'<ph id="ph3">\[</ph>Statement Type<ph id="ph4">\]</ph> = "Inventory")</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Inventory net change</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>CALCULATE(<ph id="ph1">\[</ph>Net change<ph id="ph2">\]</ph>, 'Statement entries'<ph id="ph3">\[</ph>Statement type<ph id="ph4">\]</ph> = "Inventory")</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>Inventory net change quantity</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>CALCULATE(<ph id="ph1">\[</ph>Net change quantity<ph id="ph2">\]</ph>, 'Statement entries'<ph id="ph3">\[</ph>Statement type<ph id="ph4">\]</ph> = "Inventory")</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>Inventory net change %</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>IF(<ph id="ph1">\[</ph>Inventory ending balance<ph id="ph2">\]</ph> = 0, 0, <ph id="ph3">\[</ph>Inventory net change<ph id="ph4">\]</ph><ph id="ph5"> / </ph><ph id="ph6">\[</ph>Inventory ending balance<ph id="ph7">\]</ph>)</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>Inventory turn by amount</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>if(OR(<ph id="ph1">\[</ph>Inventory average balance<ph id="ph2">\]</ph> <ph id="ph3">&amp;lt;</ph>= 0, <ph id="ph4">\[</ph>Inventory sold or consumed issues<ph id="ph5">\]</ph> <ph id="ph6">&amp;gt;</ph>= 0), 0, ABS(<ph id="ph7">\[</ph>Inventory sold or consumed issues<ph id="ph8">\]</ph>)/<ph id="ph9">\[</ph>Inventory average balance<ph id="ph10">\]</ph>)</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>Inventory average balance</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>(<ph id="ph1">\[</ph>Inventory ending balance<ph id="ph2">\]</ph><ph id="ph3"> + </ph><ph id="ph4">\[</ph>Inventory beginning balance<ph id="ph5">\]</ph>) / 2</source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>Inventory sold or consumed issues</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\[</ph>Inventory sold<ph id="ph2">\]</ph><ph id="ph3"> + </ph><ph id="ph4">\[</ph>Inventory consumed material cost<ph id="ph5">\]</ph></source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>Inventory consumed material cost</source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>CALCULATE(<ph id="ph1">\[</ph>Inventory net change<ph id="ph2">\]</ph>, 'Statement entries'<ph id="ph3">\[</ph>Category name - level 2<ph id="ph4">\_</ph><ph id="ph5">\]</ph> = "ConsumedMaterialsCost")</source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>Inventory sold</source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>CALCULATE(<ph id="ph1">\[</ph>Inventory net change<ph id="ph2">\]</ph>, 'Statement entries'<ph id="ph3">\[</ph>Category name - level 2<ph id="ph4">\_</ph><ph id="ph5">\]</ph> = "Sold")</source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>Inventory accuracy by amount</source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>IF(<ph id="ph1">\[</ph>Inventory ending balance<ph id="ph2">\]</ph> <ph id="ph3">&amp;lt;</ph>= 0, IF(OR(<ph id="ph4">\[</ph>Inventory counted amount<ph id="ph5">\]</ph> <ph id="ph6">&amp;lt;</ph><ph id="ph7">&amp;gt;</ph> 0, <ph id="ph8">\[</ph>Inventory ending balance<ph id="ph9">\]</ph> <ph id="ph10">&amp;lt;</ph> 0), 0, 1), MAX(0, (<ph id="ph11">\[</ph>Inventory ending balance<ph id="ph12">\]</ph> - ABS(<ph id="ph13">\[</ph>Inventory counted amount<ph id="ph14">\]</ph>))/<ph id="ph15">\[</ph>Inventory ending balance<ph id="ph16">\]</ph>))</source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>Inventory counted amount</source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>CALCULATE(<ph id="ph1">\[</ph>Inventory net change<ph id="ph2">\]</ph>, 'Statement entries'<ph id="ph3">\[</ph>Category name - level 3<ph id="ph4">\_</ph><ph id="ph5">\]</ph> = "Counting")</source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>Inventory aging</source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>if(ISBLANK(max('Fiscal calendars'<ph id="ph1">\[</ph>Date<ph id="ph2">\]</ph>)), blank(), MAX(0, MIN(<ph id="ph3">\[</ph>Inventory aging receipts quantity<ph id="ph4">\]</ph>, <ph id="ph5">\[</ph>Inventory aging ending balance quantity<ph id="ph6">\]</ph><ph id="ph7"> - </ph><ph id="ph8">\[</ph>Inventory aging receipts quantity in the future<ph id="ph9">\]</ph>))) <ph id="ph10">\*</ph> <ph id="ph11">\[</ph>Inventory avg unit cost<ph id="ph12">\]</ph></source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>Inventory aging receipts quantity</source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>IF(<ph id="ph1">\[</ph>minDate<ph id="ph2">\]</ph><ph id="ph3"> = </ph><ph id="ph4">\[</ph>minDateAllSelected<ph id="ph5">\]</ph>, CALCULATE(<ph id="ph6">\[</ph>Inventory net change quantity<ph id="ph7">\]</ph>, 'Statement entries'<ph id="ph8">\[</ph>Quantity<ph id="ph9">\]</ph> <ph id="ph10">&amp;gt;</ph> 0, FILTER(ALLEXCEPT('Fiscal calendars', 'Fiscal calendars'<ph id="ph11">\[</ph>LedgerRecId<ph id="ph12">\]</ph>, 'entities'<ph id="ph13">\[</ph>ID<ph id="ph14">\]</ph>, 'entities'<ph id="ph15">\[</ph>Name<ph id="ph16">\]</ph>, 'Ledgers'<ph id="ph17">\[</ph>Currency<ph id="ph18">\]</ph>, 'Ledgers'<ph id="ph19">\[</ph>Description<ph id="ph20">\]</ph>, 'Ledgers'<ph id="ph21">\[</ph>Name<ph id="ph22">\]</ph>), 'Fiscal calendars'<ph id="ph23">\[</ph>Date<ph id="ph24">\]</ph> <ph id="ph25">&amp;lt;</ph>= MAX('Fiscal calendars'<ph id="ph26">\[</ph>Date<ph id="ph27">\]</ph>))), CALCULATE(<ph id="ph28">\[</ph>Inventory net change quantity<ph id="ph29">\]</ph>, 'Statement entries'<ph id="ph30">\[</ph>Quantity<ph id="ph31">\]</ph> <ph id="ph32">&amp;gt;</ph> 0))</source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>Inventory aging ending balance quantity</source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\[</ph>Inventory ending balance quantity<ph id="ph2">\]</ph> + CALCULATE(<ph id="ph3">\[</ph>Inventory net change quantity<ph id="ph4">\]</ph>, FILTER(ALLEXCEPT('Fiscal calendars', 'Fiscal calendars'<ph id="ph5">\[</ph>LedgerRecId<ph id="ph6">\]</ph>, 'entities'<ph id="ph7">\[</ph>ID<ph id="ph8">\]</ph>, 'entities'<ph id="ph9">\[</ph>Name<ph id="ph10">\]</ph>, 'Ledgers'<ph id="ph11">\[</ph>Currency<ph id="ph12">\]</ph>, 'Ledgers'<ph id="ph13">\[</ph>Description<ph id="ph14">\]</ph>, 'Ledgers'<ph id="ph15">\[</ph>Name<ph id="ph16">\]</ph>), 'Fiscal calendars'<ph id="ph17">\[</ph>Date<ph id="ph18">\]</ph> <ph id="ph19">&amp;gt;</ph> max('Fiscal calendars'<ph id="ph20">\[</ph>Date<ph id="ph21">\]</ph>) ))</source>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>Inventory aging receipts in the future</source>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>CALCULATE(<ph id="ph1">\[</ph>Inventory net change<ph id="ph2">\]</ph>, 'Statement entries'<ph id="ph3">\[</ph>Amount<ph id="ph4">\]</ph> <ph id="ph5">&amp;gt;</ph> 0, FILTER(ALLEXCEPT('Fiscal calendars', 'Fiscal calendars'<ph id="ph6">\[</ph>LedgerRecId<ph id="ph7">\]</ph>, 'entities'<ph id="ph8">\[</ph>ID<ph id="ph9">\]</ph>, 'entities'<ph id="ph10">\[</ph>Name<ph id="ph11">\]</ph>, 'Ledgers'<ph id="ph12">\[</ph>Currency<ph id="ph13">\]</ph>, 'Ledgers'<ph id="ph14">\[</ph>Description<ph id="ph15">\]</ph>, 'Ledgers'<ph id="ph16">\[</ph>Name<ph id="ph17">\]</ph>), 'Fiscal calendars'<ph id="ph18">\[</ph>Date<ph id="ph19">\]</ph> <ph id="ph20">&amp;gt;</ph> MAX('Fiscal calendars'<ph id="ph21">\[</ph>Date<ph id="ph22">\]</ph>)))</source>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>Inventory avg unit cost</source>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>CALCULATE(<ph id="ph1">\[</ph>Inventory ending balance<ph id="ph2">\]</ph><ph id="ph3"> / </ph><ph id="ph4">\[</ph>Inventory ending balance quantity<ph id="ph5">\]</ph>,ALLEXCEPT('Fiscal calendars', 'Fiscal calendars'<ph id="ph6">\[</ph>LedgerRecId<ph id="ph7">\]</ph>, 'entities'<ph id="ph8">\[</ph>ID<ph id="ph9">\]</ph>, 'entities'<ph id="ph10">\[</ph>Name<ph id="ph11">\]</ph>, 'Ledgers'<ph id="ph12">\[</ph>Currency<ph id="ph13">\]</ph>, 'Ledgers'<ph id="ph14">\[</ph>Description<ph id="ph15">\]</ph>, 'Ledgers'<ph id="ph16">\[</ph>Name<ph id="ph17">\]</ph>))</source>
+        </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>Purchase variances</source>
+        </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>CALCULATE(SUM(<ph id="ph1">\[</ph>Amount<ph id="ph2">\]</ph>), 'Statement entries'<ph id="ph3">\[</ph>Category name - level 2<ph id="ph4">\_</ph><ph id="ph5">\]</ph> = "Procured", 'Statement entries'<ph id="ph6">\[</ph>Statement type<ph id="ph7">\]</ph> = "Variance")</source>
+        </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>WIP beginning balance</source>
+        </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>CALCULATE(<ph id="ph1">\[</ph>Beginning balance<ph id="ph2">\]</ph>, 'Statement entries'<ph id="ph3">\[</ph>Statement Type<ph id="ph4">\]</ph> = "WIP")</source>
+        </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>WIP ending balance</source>
+        </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>CALCULATE(<ph id="ph1">\[</ph>Ending balance<ph id="ph2">\]</ph>, 'Statement entries'<ph id="ph3">\[</ph>Statement Type<ph id="ph4">\]</ph> = "WIP")</source>
+        </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>WIP net change</source>
+        </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>CALCULATE(<ph id="ph1">\[</ph>Net change<ph id="ph2">\]</ph>, 'Statement entries'<ph id="ph3">\[</ph>Statement type<ph id="ph4">\]</ph> = "WIP")</source>
+        </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>WIP net change %</source>
+        </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>IF(<ph id="ph1">\[</ph>WIP ending balance<ph id="ph2">\]</ph> = 0, 0, <ph id="ph3">\[</ph>WIP net change<ph id="ph4">\]</ph><ph id="ph5"> / </ph><ph id="ph6">\[</ph>WIP ending balance<ph id="ph7">\]</ph>)</source>
+        </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>Production variances</source>
+        </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>CALCULATE(SUM(<ph id="ph1">\[</ph>Amount<ph id="ph2">\]</ph>), 'Statement entries'<ph id="ph3">\[</ph>Category name - level 2<ph id="ph4">\_</ph><ph id="ph5">\]</ph> = "ManufacturedCost", 'Statement entries'<ph id="ph6">\[</ph>Statement type<ph id="ph7">\]</ph> = "Variance")</source>
+        </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>Category name - level 1</source>
+        </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>switch(<ph id="ph1">\[</ph>Category name - level 1<ph id="ph2">\_</ph><ph id="ph3">\]</ph>, "None", "None", "NetSourcing", "Net sourcing", "NetUsage", "Net usage", "NetConversionCost", "Net conversion cost", "NetCostOfGoodsManufactured", "Net cost of goods manufactured", "BeginningBalance", "Beginning balance")</source>
+        </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>Category name - level 2</source>
+        </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>switch(<ph id="ph1">\[</ph>Category name - level 2<ph id="ph2">\_</ph><ph id="ph3">\]</ph>, "None", "None", "Procured", "Procured", "Disposed", "Disposed", "Transferred", "Transferred", "Sold", "Sold", "ConsumedMaterialsCost", "Consumed material cost", "ConsumedManufacturingCost", "Consumed manufacturing cost", "ConsumedOutsourcingCost", "Consumed outsourcing cost", "ConsumedIndirectCost", "Consumed indirect cost", "ManufacturedCost", "Manufactured cost", "Variances", "Variances")</source>
+        </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>Category name - level 3</source>
+        </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>switch(<ph id="ph1">\[</ph>Category name - level 3<ph id="ph2">\_</ph><ph id="ph3">\]</ph>, "None", "None", "Counting", "None", "ProductionPriceVariance", "Production price", "QuantityVariance", "Quantity", "SubstitutionVariance", "Substitution", "ScrapVariance", "Scrap", "LotSizeVariance", "Lot size", "RevaluationVariance", "Revaluation", "PurchasePriceVariance", "Purchase price", "CostChangeVariance", "Cost change", "RoundingVariance", "Rounding variance")</source>
+        </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>The following key dimensions are used as filters to slice the aggregate measurements to achieve greater granularity and provide deeper analytical insights.</source>
+        </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>Entity</source>
+        </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>Examples of attributes</source>
+        </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>Entities</source>
+        </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>ID, Name</source>
+        </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>Fiscal calendars</source>
+        </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>Calendar, Month, Period, Quarter, Year</source>
+        </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>KPI goals</source>
+        </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>Inventory accuracy goal, Inventory turn goal</source>
+        </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>Ledgers</source>
+        </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>Currency, Name, Description</source>
+        </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>Sites</source>
+        </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>ID, Name, Country, City</source>
+        </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>Additional resources</source>
+        </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>Here are some helpful links that are related to entities and building Power BI content:</source>
+        </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Data entities<ept id="p1">](..\data-entities\data-entities.md)</ept></source>
+        </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Creating organizational content packs<ept id="p1">](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)</ept></source>
+        </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Data modeling using Power BI<ept id="p1">](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)</ept></source>
+        </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Adding Power BI tiles to workspaces<ept id="p1">](configure-power-bi-integration.md)</ept></source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

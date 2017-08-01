@@ -1,0 +1,480 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">9fa8c803d1435e00da8f79efd16871683f1d3bef</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\data-entities\validations-defaults-unmapped-fields.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">575290999533705953cdcdc0928ddb53d8b247df</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">0192b8074ccb9997da1f70217f6820ff79816e2d</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Validations, defaults, and unmapped fields</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Validations are defined on the tables that back up the entities.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Validations are defined at both the field level and the record level.</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Validations, defaults, and unmapped fields</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Validations are defined on the tables that back up the entities.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Validations are defined at both the field level and the record level.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Validations</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Entities vs. data sources</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Entities are backed by tables (data sources), and validations are defined for these tables at both the field level (<bpt id="p1">**</bpt>Table.validateField()<ept id="p1">**</ept>) and the record level (<bpt id="p2">**</bpt>Table.validateWrite()<ept id="p2">**</ept>).</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>The validations are respected by data entities that are built by using those tables.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Although these validations are intrinsic to the tables that back a data entity, validations can also be defined at the data entity level.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Like table-based validations, entity-based validations can be written at the field level (<bpt id="p1">**</bpt>DataEntity.validateField()<ept id="p1">**</ept>) or the record level (<bpt id="p2">**</bpt>DataEntity.validateWrite()<ept id="p2">**</ept>).</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Entity-based validation behavior</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Validation</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Target</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Caller</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>DataEntity.ValidateField</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Data types</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Mandatory relationships (both tables and extended data types [EDTs])</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Any custom validation</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Doesn't call <bpt id="p1">&lt;strong&gt;</bpt>validateField<ept id="p1">&lt;/strong&gt;</ept> for underlying mapped table fields</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Is called automatically from OData</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Is called by the form engine when a field is modified</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Isn't called automatically if an insert/update is fired from X++ code</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>DataEntity.ValidateWrite</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Mandatory columns</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Relationships (both tables and EDTs)</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Any custom validation</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Doesn't call table-level <bpt id="p1">&lt;strong&gt;</bpt>validateWrite<ept id="p1">&lt;/strong&gt;</ept> for underlying tables</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Is called automatically from OData</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Is called by the form engine when a record is saved.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Isn't called automatically if an insert/update is fired from X++ code</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>DataEntity.ValidateDelete</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>DeleteActions</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Any custom validation</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Doesn't call table-level <bpt id="p1">&lt;strong&gt;</bpt>validateDelete<ept id="p1">&lt;/strong&gt;</ept> for underlying tables</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Is called automatically from OData.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Is called by the form engine when a record is deleted</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Isn't called automatically if a delete is fired from X++ code</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Table-based validation behavior</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Back-end table, or data source, validations are fired automatically as a part of the CUD operations.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Table.ValidateField, AllowEdit, AllowEditOnCreate<ept id="p1">**</ept> Field-level validations are fired automatically when you perform inserts or updates on the data entity.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>This is true for all paths (X++, OData, and so on).</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>These validations occur during the mapping process, when fields are mapped from an entity to individual data sources.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>redo1<ept id="p1">](./media/redo1-1024x582.png)](./media/redo1.png)</ept>After the field values from the data entity are copied to mapped data source fields, field validations are run on the set fields.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Validations include table-level <bpt id="p1">**</bpt>validateField<ept id="p1">**</ept>, which validates <bpt id="p2">**</bpt>AllowEdit<ept id="p2">**</ept> and <bpt id="p3">**</bpt>AllowEditOnCreate<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>If a validation fails because of an error, validation for the remaining fields continues.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Finally, validation checks whether any error occurred during the validation process for any of the data sources.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>If there was an error, the process errors out at this point, and table-level <bpt id="p1">**</bpt>validateWrite()<ept id="p1">**</ept> isn't called.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>To skip <bpt id="p1">**</bpt>validateField<ept id="p1">**</ept> for a back-end table, a consumer can call <bpt id="p2">**</bpt>DataEntity.skipDataSourceValidateField(Int <ph id="ph1">\_</ph>DataEntityFieldId, Boolean <ph id="ph2">\_</ph>skip)<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Note that the field ID for this method is the field ID of the data-entity mapped field, not the back-end table field.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>By using the following API, you can skip validation for a particular field, regardless of the consumer.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Over9<ept id="p1">](./media/over9.png)](./media/over9.png)</ept> <bpt id="p2">**</bpt>Table.ValidateWrite<ept id="p2">**</ept> Record-level <bpt id="p3">**</bpt>ValidateWrite<ept id="p3">**</ept> validations that are defined in back-end tables are fired automatically when you perform data-entity inserts and updates.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>This is true for all paths (X++, OData, and so on).</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>These validations occur just before the actual insert or update is applied to the data source.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>If the validation fails, an error is thrown, and the process stops for other data sources.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">![</ph>redo2<ph id="ph2">](./media/redo2-1024x636.png)</ph> To skip <bpt id="p1">**</bpt>validateWrite<ept id="p1">**</ept> for all back-end tables for a data entity, a consumer can call <bpt id="p2">**</bpt>DataEntity.skipDataSourceValidateWrite(Boolean <ph id="ph3">\_</ph>skip)<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>This method turns <bpt id="p1">**</bpt>validateWrite<ept id="p1">**</ept> on or off for all data sources.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>By using the following API, you can skip validation for a particular field, regardless of the consumer.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Over10<ept id="p1">](./media/over10.png)](./media/over10.png)</ept> <bpt id="p2">**</bpt>Table.ValidateDelete<ept id="p2">**</ept> Record-level <bpt id="p3">**</bpt>ValidateDelete<ept id="p3">**</ept> validations that are defined in back-end tables are fired automatically when you perform data entity deletes.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>This is true for all paths (X++, OData, and so on).</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>These validations occur just before the delete is applied to the data source.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>If the validation fails, an error is thrown, and the process stops for other data sources.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Over11<ept id="p1">](./media/over11.png)](./media/over11.png)</ept> To skip <bpt id="p2">**</bpt>validateDelete<ept id="p2">**</ept> for all back-end tables for a data entity, a consumer can call <bpt id="p3">**</bpt>DataEntity.skipDataSourceValidateDelete(Boolean <ph id="ph2">\_</ph>skip)<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>This method turns <bpt id="p1">**</bpt>validateDelete<ept id="p1">**</ept> on or off for all data sources.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>By using the following API, you can skip validation for a particular data source, regardless of the consumer.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Over12<ept id="p1">](./media/over12.png)](./media/over12.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Defaults</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Initializations</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>DataEntity.initValue:<ept id="p1">**</ept> A data entity is initialized with default values and by using any custom logic that is present in entity-level <bpt id="p2">**</bpt>initValue<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>This method isn't called automatically when an insert or update is performed on a data entity from X++.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>It must be called explicitly if it's required.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>The method is called automatically by the form engine when a new record is created.</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>DataEntity.initValue<ept id="p1">**</ept> doesn't call the <bpt id="p2">**</bpt>initValue<ept id="p2">**</ept> method for back-end tables that are used in the data entity.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Table.initValue:<ept id="p1">**</ept> Table-level <bpt id="p2">**</bpt>initValue<ept id="p2">**</ept>, as defined for back-end tables, is fired when you perform a data entity insert.</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>This is true for all paths (X++, OData, and so on).</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Table.initValue<ept id="p1">**</ept> is run just before the entity is mapped to data source fields.</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Over13<ept id="p1">](./media/over13.png)](./media/over13.png)</ept> To skip entity-level <bpt id="p2">**</bpt>initValue<ept id="p2">**</ept> for all back-end tables for a data entity, a consumer can call <bpt id="p3">**</bpt>DataEntity.skipDataSourceInitValue(Boolean <ph id="ph2">\_</ph>skip)<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>This method turns <bpt id="p1">**</bpt>initValue<ept id="p1">**</ept> on or off for all data sources.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>By using the following API, you can skip <bpt id="p1">**</bpt>initValue<ept id="p1">**</ept> for a particular field, regardless of the consumer.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Capturea<ept id="p1">](./media/capturea.png)](./media/capturea.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>DefaultRow</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>DataEntity.DefaultRow: DataEntity.DefaultRow<ept id="p1">**</ept> is used in conjunction with <bpt id="p2">**</bpt>defaultField<ept id="p2">**</ept> and <bpt id="p3">**</bpt>getDefaultDependencies<ept id="p3">**</ept> to provide defaults.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>It isn't called automatically by X++ or the form engine.</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Table.DefaultRow: Table.DefaultRow<ept id="p1">**</ept> is called automatically for each data source after mapping is completed, and before the insert and validation on the data source.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Captureb<ept id="p1">](./media/captureb.png)](./media/captureb.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>Unmapped fields</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>A data entity can have <bpt id="p1">*</bpt>unmapped<ept id="p1">*</ept> fields in addition those fields that are directly mapped to fields of the data sources.</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>There are two mechanisms for generating values for unmapped fields:</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Custom X++ code</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>SQL that is run by Microsoft SQL Server</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>The two types of unmapped fields are <bpt id="p1">*</bpt>virtual<ept id="p1">*</ept> and <bpt id="p2">*</bpt>computed<ept id="p2">*</ept>.</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>Unmapped fields always support read actions, but the feature specification might not require any development effort to support write actions.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Virtual field<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>A non-persisted field.</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>Controlled by custom X++ code.</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Read and writes occur through custom X++ code.</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>Typically used for intake values that are calculated by using X++ code and can't be replaced by computed columns.</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Computed field<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>The value is generated by an SQL view computed column.</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>During reads, data is computed by SQL and fetched directly from the view.</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>For writes, custom X++ code must parse the input value and then write the parsed values to the regular fields of the data entity.</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>The values are stored in the regular fields of the data sources of the entity.</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>Used mostly for reads.</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>It's a good idea to use computed columns instead of virtual fields whenever you can, because computed columns are computed at the SQL Server level, whereas virtual fields are computed row by row in X++.</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>Properties of unmapped fields</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Category</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>Name</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>Type</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>Default value</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>Behavior</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>Data</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>IsComputedField</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>NoYes</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>Yes</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Yes:<ept id="p1">&lt;/strong&gt;</ept> The field is synchronized as a SQL view computed column.</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>An X++ method is required to compute the SQL definition string for the column.</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>The virtual column definition is static and is used when the entity is synchronized.</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>After that, the X++ method isn't called at run time.</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>No:<ept id="p1">&lt;/strong&gt;</ept> The field is a true virtual field, where inbound and outbound values are fully controlled through custom code.</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>Data</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>ComputedFieldMethod</source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>String</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>A static <bpt id="p1">&lt;strong&gt;</bpt>DataEntity<ept id="p1">&lt;/strong&gt;</ept> method in X++ is used to build the SQL expression that generates the field definition.</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>This property is disabled and irrelevant if the <bpt id="p1">&lt;strong&gt;</bpt>IsComputedField<ept id="p1">&lt;/strong&gt;</ept> property is set to <bpt id="p2">&lt;strong&gt;</bpt>No<ept id="p2">&lt;/strong&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>The method is required if the <bpt id="p1">&lt;strong&gt;</bpt>IsComputedField<ept id="p1">&lt;/strong&gt;</ept> property is set to <bpt id="p2">&lt;strong&gt;</bpt>Yes<ept id="p2">&lt;/strong&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>Data</source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>ExtendedDataType</source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>String</source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>Unmapped field comparison</source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>Virtual field</source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>Computed field</source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>Metadata properties</source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>Is computed = No</source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>Is Computed = Yes</source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>Computed Field Method = static method</source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>Read</source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>X++ (override <bpt id="p1">&lt;strong&gt;</bpt>postLoad<ept id="p1">&lt;/strong&gt;</ept>)</source>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>Row by row</source>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>SQL computed column</source>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>Set-based read possible</source>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>Write</source>
+        </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>X++ (override <bpt id="p1">&lt;strong&gt;</bpt>mapEntityToDataSource<ept id="p1">&lt;/strong&gt;</ept>)</source>
+        </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>X++ (override <bpt id="p1">&lt;strong&gt;</bpt>mapEntityToDataSource<ept id="p1">&lt;/strong&gt;</ept>)</source>
+        </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>Advantages</source>
+        </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>Unbound to the schema, keeps the public contract the same, but the implementation can change</source>
+        </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>Call X++ methods</source>
+        </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>Faster reads, large export can occur directly from the view</source>
+        </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>Examples</source>
+        </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>The following table provides a computed example if a <bpt id="p1">**</bpt>UnitOfMeasure<ept id="p1">**</ept> relationship exists, and displays that in an unmapped field.</source>
+        </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>Virtual field</source>
+        </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>Computed field</source>
+        </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>On postLoad()<bpt id="p1">*</bpt>//Check to see if record exists in UnitOfMeasureInternalCode.UnitOfMeasure//Set hasFixedInternalCode value based on the field<ept id="p1">*</ept>if(this.UnitOfMeasure)this.HasFixedInternalCodeVirtual = NoYes::Yes; else this.HasFixedInternalCodeVirtual = NoYes::No;</source>
+        </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>On computedFieldMethod()<bpt id="p1">*</bpt>//Desired SQL computed column statement(CASE WHEN T2.RECID IS NULL THEN 0 ELSE 1 END) AS INT)<ept id="p1">*</ept></source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

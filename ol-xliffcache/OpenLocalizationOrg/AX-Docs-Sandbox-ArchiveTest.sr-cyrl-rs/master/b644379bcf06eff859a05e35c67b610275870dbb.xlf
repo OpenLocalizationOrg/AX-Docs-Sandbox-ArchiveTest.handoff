@@ -1,0 +1,393 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">b644379bcf06eff859a05e35c67b610275870dbb</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\dev-tools\continuous-delivery-faq.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">abe78cf712cc4184c169e05c0340bd9bdd806b3e</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">5dac6de78214572fdd03af36640309c3f1a3b6d2</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Development and continuous delivery FAQ</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic summarizes answers to questions that are frequently asked by ISVs and partners, especially regarding guidelines about development, testing, delivery, and lifecycle management.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Development and continuous delivery FAQ</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This topic summarizes answers to questions that are frequently asked by ISVs and partners, especially regarding guidelines about development, testing, delivery, and lifecycle management.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Customization</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Do I customize (overlayer) or use extensions?</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Application customization is enabled using a new framework, called <bpt id="p1">*</bpt>extensions<ept id="p1">*</ept>.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Developers can create extension models that compile into separate assemblies and distributable packages.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Within an extension model, developers can create new elements, extend elements that belong to other models and customize business logic using event handlers and plugins.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Extensions enable faster builds, more efficient application lifecycle management and movement of code, better performance at design time, and minimal cost for application upgrades.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>You can still create customizations by using <bpt id="p1">*</bpt>overlayering<ept id="p1">*</ept> of metadata and code, which is a framework similar to what was available in Dynamics AX 2012.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>When you overlayer code, you can freely modify X++ code and metadata, but you will be compiling into the same package (same assembly) of the code that you are customizing.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Here are some guidelines:</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Use extensions as your default mode of development and fall back to overlayering only as a last resort.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>When you need to overlayer code, do not include functional or business logic in the overlayered code.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Instead, define and call a delegate method, then implement the logic in your extension model using an event handler.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>For a detailed example in the context of code migration, see <bpt id="p1">[</bpt>Delegates.<ept id="p1">](../migration-upgrade/delegates-migration.md)</ept></source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Report commonly used over-layering patterns to Microsoft and request extension support.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Extensibility home page<ept id="p1">](..\extensibility\extensibility-home-page.md)</ept> and the <bpt id="p2">[</bpt>Developer home page<ept id="p2">](developer-home-page.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>How do I prevent my models from being customized by customers or other partners?</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>You can block customizations of your model as described in <bpt id="p1">[</bpt>How to disable model customization and deprecate functionality,<ept id="p1">](lock-models.md)</ept> or you can distribute deployable packages to your customers instead of distributing model files.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>See the section titled "How do I distribute my application to customers" later in this topic.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Continuous delivery</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Do I need build environments?</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Yes, you should take advantage of the build and test automation tools provided in the build environments.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>You can deploy build environments from your Lifecycle Services (LCS) project.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Creating daily builds and daily regression tests are key tools to enable the continuous delivery and maintain the quality of your application.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Refer to <bpt id="p1">[</bpt>Developer topology deployment with continuous build and test automation<ept id="p1">](..\perf-test\continuous-build-test-automation.md)</ept> for more details.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>What strategy do I use for test automation?</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>For test automation, concentrate on unit tests (use the SysTest framework) that are data independent or create their own data.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Use a smaller number of functional scenario tests (based on Task Recorder) that rely on test data to execute.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Scenario tests are more expensive to maintain.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Unit tests can then be executed on any development environment easily and quickly.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Review the <bpt id="p1">[</bpt>Test Automation Pyramid<ept id="p1">](https://blogs.msdn.microsoft.com/dave_froslie/2016/03/09/test-automation-pyramid/)</ept> blog article and refer to <bpt id="p2">[</bpt>Automated testing guidance.<ept id="p2">](https://blogs.msdn.microsoft.com/axdevalm/2016/08/12/automated-testing-guidance-for-ax-7/)</ept></source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>media/testautomationpyramid1.png</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Some key concepts to keep in mind:</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Write tests that run independently and do not assume any kind of ordering.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Task recorder tests should be limited to functional scenarios tests.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Write scenario tests after scenarios are complete and after completing unit tests.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Create test helper classes when possible, so others on your team can leverage that as well.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>SysTest framework supports role-based testing, leverage this feature.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>How can I be more agile in my development?</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Deliver incremental features every sprint (2 weeks, preferred) or cycle (1 month).</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Maintain shippable quality of your application at the end of each sprint.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Use Visual Studio Team Services (VSTS) for work item tracking and always prioritize bugs over new features.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>A large bug backlog will quickly become a burden on your efficient delivery of new features and on the quality of your application.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>How do I manage test data?</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Create and manage your test database as follows:</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Start on a clean environment.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Create all base data as required.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Base data will serve as the starting point for all the tests.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Take a backup (.bak) of your AxDB database.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Share this backup with developers.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>On a build environment, copy this backup over to the I:<ph id="ph1">\\</ph>DynamicsBackupDatabases (on some environment it may be a different drive than i:).</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>This database will be restored at the beginning of every build.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>This step is executed as part of the first step of the build definition called <bpt id="p1">**</bpt>Prepare for build<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>media/prepareforbuild.png</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>How do I distribute my application to customers?</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>There are two artifacts you can use to distribute your application to your customers or partners: model files or deployable packages.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Model files are design time artifacts that contain source code.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Use model files if your customer is integrating your application with other third-party models or when you want to allow customization of your models.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Distribution of models: Export and import a model<ept id="p1">](models-export-import.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Model files are the most common methods for ISVs to distribute solutions.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Deployable packages are final applications.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Use deployable packages with customers that will not be customizing or integrating your application with other third-party models.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>If you use deployable packages, your customer can only use or extend your application.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>They will not see or have access to your source code.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>To create a deployable package use the Visual Studio tools (<bpt id="p1">**</bpt>Dynamics 365<ept id="p1">**</ept><ph id="ph1">&amp;gt;</ph>  <bpt id="p2">**</bpt>Deploy<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Create Deployment package<ept id="p3">**</ept>) or use a build environment.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Build environments generate a deployable package with every successful build.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Development topologies</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Should I develop on premises or in the cloud?</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>There are two modes of development: Cloud VMs and on-premises VMs available via a downloadable VHD.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Use a combination of on premise VMs and cloud VMs for development.</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>On premise dev VMs are cost effective if you already have the hardware, IT infrastructure, and Windows server licenses to support it.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Use cloud VMs to scale out when projects require additional resources for a limited period of time.</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>It is more cost effective than planning for worst-case capacity on premise.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Connect all VMs (on premise and cloud VMs) to VSTS for version control.</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Use cloud VMs for build, functional testing, and demos.</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>If you are running on your own Microsoft Azure subscription, turn them off when not in use.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Should I use a customer's dev environment?</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>If you are a partner, use your own VMs for development of your own intellectual property (IP), this is code and configuration data packages that are reusable across different customer implementations.</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>For customer-specific implementations, you can use the customer's dev VM.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>All customer subscriptions come with at least one development VM.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>Customers can pay for add-on dev VMs or run local dev VMs.</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>What are the benefits of MSDN subscriptions with respect to development?</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>The following is a summary of a Visual Studio (VS) with MSDN subscriptions benefits:</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>Includes a Microsoft Azure subscription with a $50 monthly credit for Visual Studio Professional with MSDN and $150 for VS Enterprise with MSDN.</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Subscriptions come with lower dev/test rate, you will pay the Linux rates instead of the Windows rates.</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>For more details, visit <bpt id="p1">&lt;</bpt>https://azure.microsoft.com/en-us/pricing/member-offers/msdn-benefits-details/<ept id="p1">&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>As a Microsoft partner, acquire Microsoft core competencies to earn free VS Enterprise with MSDN subscriptions.</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>For example, an application development competency for a gold partner will earn 25 free MSDN Enterprise licenses in addition to the 10 licenses that come with the core benefits.</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>For more details, visit <bpt id="p1">[</bpt>Monthly Azure credit for Visual Studio subscribers<ept id="p1">](https://azure.microsoft.com/en-us/pricing/member-offers/msdn-benefits-details/)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>These benefits make cloud development very economical, for example:</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>D12v2 VM list price = $470/month (4 core, 28 Gigs)</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>D12v2 VM price if running on MSDN Azure subscription or any other dev/test subscription = $276/month</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>Turn off 12 hours per day: 276/2 =<ph id="ph1">&amp;gt;</ph> $138/month</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Monthly credit (VS Professional with MSDN) =<ph id="ph1">&amp;gt;</ph> 138 - 50 = <bpt id="p1">**</bpt>$88/month<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>Monthly credit (VS Enterprise with MSDN) =<ph id="ph1">&amp;gt;</ph> 138 – 150 = <bpt id="p1">**</bpt>Free<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Here is another example:</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>D13v2 machine list price = $843/month (8 core, 56 Gigs)</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>D13v2 machine price if running on MSDN Azure subscription = $551/month</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Turn off 12 hours per day: 551/2 = $275.5/month</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>Monthly credit (VS Professional with MSDN): 275.5 - 50 = <bpt id="p1">**</bpt>$225.5/month<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>Monthly credit (VS Enterprise with MSDN) =<ph id="ph1">&amp;gt;</ph> 275.5 – 150 = <bpt id="p1">**</bpt>$125.5/month<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>Add an average of $15 monthly for storage (non premium) per VM.</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>Can more than one developer develop concurrently on the same VM?</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>This is not supported.</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>However, you can provision more than one developer account on the same VM, they just cannot develop concurrently.</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>For details, see <bpt id="p1">[</bpt>Enable a new developer on a development machine<ept id="p1">](enable-development-machine.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>Customer implementation LCS projects</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>How many sandbox environments do I need within an LCS customer implementation project?</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>A customer subscription comes with three environments by default: a dev or build environment, a tier-2 sandbox environment, and a production environment.</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>You can use the tier-2 sandbox environment as both a configuration environment and a UAT environment before (or after) the application goes live in production.</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>After configuring the sandbox with the code and data that you need to go live (also known as your <bpt id="p1">*</bpt>gold configuration<ept id="p1">*</ept>), you can run your validation on the same environment.</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>When your validation passes, you can restore your sandbox database to the point in time of its gold configuration.</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>You can then deploy your code to production and copy the sandbox database to your production environment.</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>If you prefer to have two separate sandbox environments, one for pre-production validation and the other to serve as your gold configuration, you can purchase an additional tier-2 sandbox.</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>The following servicing requests and tools are supported by Lifecycle Services, which may help you decide whether one tier-2 sandbox is sufficient for your implementation.</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>Restore a sandbox database to a point in time.</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>Copy a sandbox database to a production environment (only allowed before the application is live in production).</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>Apply configuration data packages on a sandbox environment.</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>Apply configuration data packages on a production environment.</source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>Refresh a sandbox database from production.</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>Copy the production environment's database to a tier-2 sandbox environment.</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>This is typical after the application is live and you want to debug an issue or validate upcoming updates.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

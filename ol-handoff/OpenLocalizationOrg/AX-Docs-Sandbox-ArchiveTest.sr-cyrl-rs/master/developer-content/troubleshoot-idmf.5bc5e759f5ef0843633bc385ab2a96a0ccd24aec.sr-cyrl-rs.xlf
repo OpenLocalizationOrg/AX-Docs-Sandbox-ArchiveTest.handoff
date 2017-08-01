@@ -1,0 +1,432 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">fc835e3b56b67aefd1924aaad665e3066fb42740</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\lifecycle-services\ax-2012\troubleshoot-idmf.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">93e2aa1cf8291332c3ec42e1b9d29ba692e0c5b1</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ed8c969ff5ead8ae343dab06def7790d8da196a6</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Troubleshoot</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic contains information about troubleshooting the Microsoft Dynamics AX Intelligent Data Management Framework (IDMF).</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Troubleshoot the Intelligent Data Management Framework (AX 2012)</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This topic contains information about troubleshooting the Microsoft Dynamics AX Intelligent Data Management Framework (IDMF).</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Known issues</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Issue<ept id="p1">**</ept> The domain account provided during setup and installation of the service is not granted <bpt id="p2">**</bpt>permission to log on as a service<ept id="p2">**</ept>, therefore the IDMF service fails when it is started.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Workaround<ept id="p1">**</ept> Open the <bpt id="p2">**</bpt>Services control<ept id="p2">**</ept> panel.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Security<ept id="p1">**</ept> tab, enter the password for the account.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Issue<ept id="p1">**</ept> If the service account for IDMF has not been granted local administrator privileges, the following error message is received: "An unhandled exception occurred and has been logged.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Please contact support."</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Workaround<ept id="p1">**</ept> Grant the service account for IDMF administrator privileges on the local computer.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Issue<ept id="p1">**</ept> A <bpt id="p2">**</bpt>ByFiscal<ept id="p2">**</ept> archive task cannot be scheduled when a metadata task is running.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Workaround<ept id="p1">**</ept> Wait until the metadata task completes before scheduling a <bpt id="p2">**</bpt>ByFiscal<ept id="p2">**</ept> archive task</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Issue<ept id="p1">**</ept> Running archive, purge or restore archive tasks at the same time as offline <bpt id="p2">**</bpt>ALTER INDEX<ept id="p2">**</ept> operations causes database locking issues.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Workaround<ept id="p1">**</ept> Wait until offline <bpt id="p2">**</bpt>ALTER INDEX<ept id="p2">**</ept> operations for the specified indexes have completed before running archive, purge or restore archive tasks.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Issue<ept id="p1">**</ept> Archive templates and purge template should not be modified when archive or purge tasks are running.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Workaround<ept id="p1">**</ept> Do not modify archive and purge templates when archive or purge tasks are running.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Issue<ept id="p1">**</ept> During a restore, the insert bulk statements can cause a high amount of table lock escalations on tables in the production Microsoft Dynamics AX business database.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Workaround<ept id="p1">**</ept> None.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Issue<ept id="p1">**</ept> In the <bpt id="p2">**</bpt>ByFiscal<ept id="p2">**</ept> task page and in other pages, expand and collapse icons can show reversed images.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Workaround<ept id="p1">**</ept> None.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Issue<ept id="p1">**</ept> Unable to discover archive objects if the drive table is <bpt id="p2">**</bpt>AccountingEvent<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>The system returns the following message: "Error executing code: Insufficient memory to run script."</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Workaround<ept id="p1">**</ept> Update the following registry entries.<ph id="ph1">\[</ph>HKEY<ph id="ph2">\_</ph>CURRENT<ph id="ph3">\_</ph>USERSoftwareMicrosoftDynamics6.0Configurationconfiguration name<ph id="ph4">\]</ph><ph id="ph5">\[</ph>HKEY<ph id="ph6">\_</ph>LOCAL<ph id="ph7">\_</ph>MACHINESoftwareMicrosoftDynamics6.0Configurationconfiguration name<ph id="ph8">\]</ph><ph id="ph9">\[</ph>HKEY<ph id="ph10">\_</ph>LOCAL<ph id="ph11">\_</ph>MACHINESYSTEMCurrentControlSetServicesDynamics Server6.0AOS instance configuration name<ph id="ph12">\]</ph>Value name: maxbuffersizeValue type: REG<ph id="ph13">\_</ph>SZValue: Maximum amount of memory in MB or 0 for no limit</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>View log files</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>IDMF logs error events in a log file in a folder named<bpt id="p1">**</bpt>,<ept id="p1">**</ept>under the installation folder.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>The default installation path is C:Program FilesMicrosoft Dynamics AX Intelligent Data Management Framework.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>IDMF creates the log file when the first error message is generated.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>The file is named trace<ph id="ph1">\_</ph>mm-dd-yyyy.log, with mm-dd-yyyy providing the current month, day, and year.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>The IDMF scheduler service creates an error log file called servicetrace<ph id="ph1">\_</ph>mm-dd-yyyy.log.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>The error log files are created for each day.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>When the first error occurs during the day, the error log file is created, and the error message is appended to the newly created error log file.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>All subsequent error messages are appended to the existing error log file for the day.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Database rights are not set correctly</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>The AOS service account must have <bpt id="p1">**</bpt>datareader<ept id="p1">**</ept>, <bpt id="p2">**</bpt>datawriter<ept id="p2">**</ept> and <bpt id="p3">**</bpt>ddladmin<ept id="p3">**</ept> rights on the IDMF management database.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>IDMF fails to start</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>When starting IDMF, you may encounter the following error: "An unhandled exception occurred and has been logged.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Please contact support."</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>The preceding error message is a generic message that IDMF displays when the error condition is caused by an environmental issue such as permissions.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>This particular error condition typically occurs when the user does not have read and write permissions on the installation folder of IDMF.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>To fix the error condition, provide read and write permissions to the installation folder of IDMF.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>The default path is C:Program FilesMicrosoft Dynamics AX Intelligent Data Management Framework.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Index defragmentation does not reduce the fragmentation percentage to zero</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>The index defragmentation schedules do not always achieve a complete defragmentation, or in other words, 0 (zero) percent fragmentation.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Some of the indexes may still have a small percentage of fragmentation.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>The defragmentation process tries to defragment selected indexes to the maximum possible level.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>However, Microsoft Dynamics AX uses a fill factor of 0 (zero).</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>The fill factor of 0 breaks records out to extra pages without completely filling an index page.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>As a result, the fragmentation level for some of the indexes remains at a non-zero level, even after the defragmentation schedule is completed successfully.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Distributed transaction error</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>You may encounter the following error from the Microsoft SQL Server Integration Services (SSIS) runtime: "The SSIS Runtime has failed to enlist the OLE DB connection in a distributed transaction with error 0x8004D025.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>The partner transaction manager has disabled its support for remote/network transactions."</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>To fix this error condition, you must configure your servers so that Microsoft Distributed Transaction Coordinator (MSDT) communication flows through the firewall.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>For instructions, see <bpt id="p1">[</bpt>Knowledge Base article 306843<ept id="p1">](http://support.microsoft.com/kb/306843)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>If the error persists after configuring the <bpt id="p1">**</bpt>Microsoft Distributed Transaction Coordinator<ept id="p1">**</ept> verify that the firewall settings for <bpt id="p2">**</bpt>Distributed Transaction Coordinator<ept id="p2">**</ept> under the <bpt id="p3">**</bpt>Inbound and Outbound Rules<ept id="p3">**</ept> have been enabled.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Export to Excel fails</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>The export to Excel functionality may not work in some environments.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>To fix this problem, you must have Microsoft Excel and the Excel PIAs installed on the computer.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Verify that Excel is correctly installed and working on the computer.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>If required, download and install the Microsoft Office Primary Interop Assemblies (PIAs).</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>For Excel 2003, see <bpt id="p1">[</bpt>Office 2003 Update: Redistributable Primary Interop Assemblies<ept id="p1">](http://www.microsoft.com/downloads/details.aspx?familyid=3c9a983a-ac14-4125-8ba0-d36d67e0f4ad&amp;displaylang=en)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>For Microsoft Excel 2007, see <bpt id="p1">[</bpt>2007 Microsoft Office System Update: Redistributable Primary Interop Assemblies<ept id="p1">](http://www.microsoft.com/downloads/details.aspx?FamilyID=59daebaa-bed4-4282-a28c-b864d8bfa513&amp;displaylang=en)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Restart IDMF after successful installation of the PIAs.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>The discovery of a driver table fails</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>When starting a discovery process for an Archive Object or a Purge Object, you may encounter the following error: "Unable to discover the driver table for the Archive Object or Purge Object."</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>This error message is usually caused by metadata synchronization issues.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>To fix this error condition, you must run the post-installation tasks.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Run the post-installation application by clicking <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>All programs<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Intelligent Data Management Framework<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Post-installation tasks<ept id="p4">**</ept>, or follow these steps to resolve this error manually.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>For details, see the <bpt id="p1">[</bpt>Installation Guide for the Microsoft Dynamics AX Intelligent Data Management Framework (IDMF)<ept id="p1">](installation-guide-idmf.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Verify that <bpt id="p1">**</bpt>AXDataManagementToolProjectnn.xpo<ept id="p1">**</ept> exists in the Application Object Tree (AOT), where nn is 50, 60, 61, or 62 depending on the version of your Microsoft Dynamics AX application.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Verify that you have successfully completed the post-installation checklist.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Verify that all member of the implementation team are working on the same layer, for example <bpt id="p1">**</bpt>CUS<ept id="p1">**</ept>, <bpt id="p2">**</bpt>VAR<ept id="p2">**</ept>, or <bpt id="p3">**</bpt>USR<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Verify that the XPOs mentioned in step 1 are imported in the same layer, such as the <bpt id="p1">**</bpt>VAR<ept id="p1">**</ept> layer or the <bpt id="p2">**</bpt>USR<ept id="p2">**</ept> layer.</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Verify that all methods from these XPOs are imported in the same layer, such as <bpt id="p1">**</bpt>USR<ept id="p1">**</ept> or <bpt id="p2">**</bpt>VAR<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Use the AOT to correct any difference you find between your AOT and the XPOs that are included with IDMF.</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>You can delete these XPOs from the layer they are currently in and manually import them to another layer, as described in the <bpt id="p1">[</bpt>Data Management Framework Installation Guide<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=143616&amp;clcid=0x409)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>The database snapshot schedule fails with a permission error</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>In a distributed SQL Server 2008 environment, you must install Service Pack 2 or a later version on all SQL Server instances when you store your databases on multiple servers.</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>For example, when you store your production database and archive database on two separate servers, you have a distributed SQL Server environment.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Both the servers must have SQL Server 2008 or a later version before you install and start IDMF.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Failure to do so causes the following error message from a database snapshot schedule: "Syntax error, permission violation, or other nonspecific error."</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>The discovery process fails with an error message</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>The discovery process may display an error message: "Cannot create archive object or purge object."</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>This message may appear if Application Object Server (AOS) is not available or the connection with AOS has failed.</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Check the availability of AOS.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Restart the AOS if necessary, and then restart IDMF.</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>Application Object Server error when connecting to the archive database</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>In some environments, you may receive an error when Application Object Server (AOS) connects to the archive database: "An internal error occurred while creating session for the user."</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Verify that the account used for the AOS service has sufficient permissions to the archive database.</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>For more information, see the "Rights required for installation" section in the <bpt id="p1">[</bpt>Data Management Framework Installation Guide<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=143616&amp;clcid=0x409)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Verify that the account used for the AOS service has the execute permission for stored procedures <bpt id="p1">**</bpt>CREATESERVERSESSIONS<ept id="p1">**</ept> and <bpt id="p2">**</bpt>CREATEUSERSESSIONS<ept id="p2">**</ept> in the archive database.</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>The analysis snapshot schedule fails with a permission error</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>The analysis snapshot schedule may fail with an error message: "An OLE DB error has occurred.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>Error code: 0x80040E14.An OLE DB record is available.</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>Source: "Microsoft SQL Native Client" Hresult: 0x80040E14 Description: "The user does not have permission to perform this action"." This error message appears because of insufficient database permissions.</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>Be sure that the database permissions are assigned by following the instructions in the "Rights required for installation" section in the <bpt id="p1">[</bpt>Data Management Framework Installation Guide<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=143616&amp;clcid=0x409)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>The analysis snapshot schedule fails because of a SQL Server Integration Services error</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>The analysis snapshot schedule may fail with an error: "Message: Package Error: The file exists.</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>The buffer manager could not get a temporary file name.</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>The call to GetTempFileName failed.</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>The buffer manager could not create a temporary file on the path C:DOCUME~1ADMINI~1.SAMLOCALS~1Temp.</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>The path will not be considered for temporary storage again."</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>To resolve this error, you must install SQL Server 2008 or a later version.</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>For more information, see Microsoft Knowledge Base article <bpt id="p1">[</bpt>972365<ept id="p1">](http://support.microsoft.com/kb/972365)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>Unable to create an archive schedule or restore schedule</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>If an archive schedule fails or is aborted, you must try to restart or revert it before you can create another schedule with the same object.</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>This restriction applies to all Archive Objects.</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>Unable to select an archive schedule for restoration</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>The archive schedule that you want to restore may be disabled, so that you cannot select it.</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>This occurs when your previous attempt to restore the schedule has either been aborted or failed.</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>In the Status window, navigate to the aborted or failed restore schedule.</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>Right-click the schedule, and then select <bpt id="p1">**</bpt>Restart schedule<ept id="p1">**</ept> or <bpt id="p2">**</bpt>Revert schedule<ept id="p2">**</ept>, depending on the action you have to perform.</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>If the schedule failed during the initialization state, no data was archived.</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>In that case, there is no need to restore or revert the schedule, and IDMF displays a warning that asks you to create a new schedule.</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>Use the <bpt id="p1">**</bpt>Schedule<ept id="p1">**</ept> menu to create a new archive schedule.</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>Always restart or revert a failed archive schedule before you create a new archive schedule for the same Archive Object.</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>A schedule fails because of insufficient space</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>Archive and purge schedules fail if the database or log files become full.</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>These schedules require a significant amount of free database and log space, depending on the volume of data you archive or purge.</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>By default, the purge and archive schedules process 100,000 records in a batch.</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>Reduce the batch size to decrease the database and log space required when a schedule processes a batch.</source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>Follow these steps to configure the batch size:</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>Using Notepad, open <bpt id="p1">**</bpt>AXDataManagementSchedulerService.exe.config<ept id="p1">**</ept> from the installation folder of IDMF.</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>The default path of the installation folder is C:Program FilesMicrosoft Dynamics AX Intelligent Data Management Framework.</source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>To decrease the batch size for an archive task, locate the configuration key BatchSizeForPurge <ph id="ph1">&amp;lt;</ph>add key="BatchSizeForArchive" value="4000" /<ph id="ph2">&amp;gt;</ph>, and change the key value to a smaller number.</source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>To decrease the batch size for a purge schedule, locate the configuration key BatchSizeForPurge <ph id="ph1">&amp;lt;</ph>add key="BatchSizeForPurge" value="4000" /<ph id="ph2">&amp;gt;</ph>, and change the key value to a smaller number.</source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>You must carefully determine the location and initial size of data and log files for the archive, production, management, and production replica databases.</source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>Be sure that the initial size is sufficient for optimal performance and future growth.</source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>For more information about database configuration, see <bpt id="p1">[</bpt>Planning database configuration for Microsoft Dynamics AX<ept id="p1">](http://www.microsoft.com/downloads/details.aspx?FamilyID=ab4cd401-b366-4c1c-9a73-88c945ae8191)</ept> and the Microsoft Dynamics AX Performance team's <bpt id="p2">[</bpt>blog<ept id="p2">](http://blogs.msdn.com/axperf/)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>Troubleshoot failed schedules</source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>Follow these steps to troubleshoot failed schedules:</source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>View the log file and the list of common causes and associated solutions that are described in the previous sections.</source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>Be sure to synchronize any metadata changes in the production database with the archive database via the metadata synchronization schedule.</source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>The master data synchronization schedule may fail if the metadata is not synchronized between the two databases.</source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>The purge schedule may fail if the Microsoft Distributed Transaction Coordinator (MSDTC) is not configured correctly.</source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>A schedule may fail if the data file or log file in the database becomes full.</source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>You must fix the error conditions before you rerun the schedule.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

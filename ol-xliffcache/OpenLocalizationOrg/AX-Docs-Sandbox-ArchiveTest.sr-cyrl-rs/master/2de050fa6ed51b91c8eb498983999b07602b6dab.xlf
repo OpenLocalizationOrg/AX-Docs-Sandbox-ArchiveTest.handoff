@@ -1,0 +1,1080 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2de050fa6ed51b91c8eb498983999b07602b6dab</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\lifecycle-services\ax-2012\work-with-purge-objects-archive-objects.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">c60914eb71d494c1a181f354ce5e932e532f886b</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ce641eac374ebf875573b1806817d34b2052453e</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Purge and archive objects (AX 2012)</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Intelligent Data Management Framework purge and archive objects (AX 2012)</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Add/Edit rules</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>A rule is the criterion that is used to filter records when a purge task or an archive task runs.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>This command lets you work with rules in a Purge Object or an Archive Object.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>The rules generally apply to the driver table, but can also be applied to a related child table.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>For example, the Purge Object <bpt id="p1">**</bpt>ProdJournalTable<ept id="p1">**</ept> includes a rule for the <bpt id="p2">**</bpt>ProdTable<ept id="p2">**</ept>, which is not the driver table.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Regardless of how you create these rules, the "where" clause always applies to the driver table.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>You must understand the effect of your rule on the Purge Object or Archive Object before applying any rule.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>On the toolbar, click <bpt id="p1">**</bpt>Add/Edit rules<ept id="p1">**</ept> to open the <bpt id="p2">**</bpt>Add/Edit rules<ept id="p2">**</ept> window.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Navigation of the Add/Edit rules window</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>The following tables provide descriptions for the controls in the <bpt id="p1">**</bpt>Add/Edit rules<ept id="p1">**</ept> window.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Panes</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Pane</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Rule collection<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Contains a list of the rules in the Purge Object or Archive Object, and commands to create a new rule, add an expression to the existing rule, or delete a rule or an expression.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Configure rules for purge<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Provides an area to enter or modify the rule name, description, and conditions.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Also provides commands to add the rule to, or update it in, the list in the <bpt id="p1">**</bpt>Rule collection<ept id="p1">**</ept> pane.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Conditional information<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Lets you specify conditions, or the selection criteria, for the Purge Object.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Buttons</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Add/Edit rules window</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Button</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Save<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Save the changes that you made to the list in the <bpt id="p1">**</bpt>Rule collection<ept id="p1">**</ept> pane to the database.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Close<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Close the <bpt id="p1">**</bpt>Add/Edit rules<ept id="p1">**</ept> window.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>You are prompted to confirm the close or save your changes if you try to close the window without saving your changes.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Rule collection pane</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Button</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>New rule<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Create a new rule.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>When you have multiple rules in the Purge Object or Archive Object, they form the "and" condition in the "where" clause of the SQL statement.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Add expression<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Create a new expression.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>An expression is a condition that is added to an existing rule.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>An expression creates an "or" condition in the "where" clause of the SQL statement.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Delete<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Delete the selected rule or expression.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Configure rules pane</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Button</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Add<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Add the new rule or expression to the list in the <bpt id="p1">**</bpt>Rule collection<ept id="p1">**</ept> pane.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Update<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Update the selected rule or expression in the list in the <bpt id="p1">**</bpt>Rule collection<ept id="p1">**</ept> pane.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Cancel<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Cancel the add or update action.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Fields (across all panes)</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Field</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Rule name<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>The name of the rule or expression.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Rule<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>The condition that you create based on the table name, the field name, and a conditional operator.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>This condition forms the "where" clause in the SQL statement.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Rule description<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>A description of the rule.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Enter a new description or modify an existing description here.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Table name<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>The table that you select from the list of all tables in the Purge Object or Archive Object.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Field name<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>The name of the field that you select from the list of all fields for the selected table.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Condition<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>The condition that you place on the table and the field.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>The condition list changes, depending on the field selections.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Value<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Value<ept id="p1">**</ept> field switches between a text box and a list.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>You can select a value from the list, but cannot enter a value in the text box here.</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>You enter the value when you create a purge task.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Walkthrough: Add or modify a rule in a Purge Object</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>This section provides a walkthrough to add or modify a rule in a Purge Object.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Caution<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>This walkthrough deletes and recreates an existing rule from the Purge Object for ease of learning.</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>You must have an excellent understanding of the database design, data flow, process flow, and application functionality of the Microsoft Dynamics AX application to work with rules.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>An error can cause data corruption or application downtime requiring full database and application recovery.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Configure<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Purge templates/Purge Object<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>PurchParmTable<ept id="p3">**</ept> to open the <bpt id="p4">**</bpt>PurchParmTable<ept id="p4">**</ept> Purge Object.</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>This walkthrough assumes that you are working with the Purge Object that was created from the default purge template.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>If you have modified the Purge Object in any way, click <bpt id="p1">**</bpt>Restore<ept id="p1">**</ept> to restore the Purge Object to the original version.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>On the toolbar, click <bpt id="p1">**</bpt>Add/Edit rules<ept id="p1">**</ept> to open the <bpt id="p2">**</bpt>Add/Edit rules<ept id="p2">**</ept> window.</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Rule collection<ept id="p1">**</ept> pane, click the first row in the data grid to select the rule <bpt id="p2">**</bpt>PurchParmTable.ParmJobStatus = Executed<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Delete<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> in the <bpt id="p2">**</bpt>Delete<ept id="p2">**</ept> dialog box.</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>New rule<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Configure rules for purge<ept id="p1">**</ept>, set the following field values:</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Rule name<ept id="p1">**</ept> field, type Clean up.</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Rule description<ept id="p1">**</ept> field, type What should be cleaned up?</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Table name<ept id="p1">**</ept> list, select <bpt id="p2">**</bpt>PurchParmTable<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Field name<ept id="p1">**</ept> list, select <bpt id="p2">**</bpt>ParmJobStatus<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Condition<ept id="p1">**</ept> list, select <bpt id="p2">**</bpt><ph id="ph1">=</ph><ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Value<ept id="p1">**</ept> field, select <bpt id="p2">**</bpt>Executed<ept id="p2">**</ept> from the list.</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept>, and verify that the rule is added to the data grid in the <bpt id="p2">**</bpt>Rule collection<ept id="p2">**</ept> pane.</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Rules<ept id="p1">**</ept> dialog box, click <bpt id="p2">**</bpt>OK<ept id="p2">**</ept> to continue.</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Close<ept id="p1">**</ept> to close the window and return to the Purge Object.</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>Walkthrough: Add or modify a rule in an Archive Object</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>This section provides a walkthrough to add or modify a rule in an Archive Object.</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Configure<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Archive templates/Archive Objects<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>SalesTable<ept id="p3">**</ept> to open the <bpt id="p4">**</bpt>SalesTable<ept id="p4">**</ept> Archive Object.</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>This walkthrough assumes that you are working with the Archive Object that was created from the default archive template.</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>If you have modified the Archive Object in any way, use the <bpt id="p1">**</bpt>Show versions<ept id="p1">**</ept> command on the toolbar to revert to the original archive template that is included with the Data Management Framework.</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>On the toolbar, click <bpt id="p1">**</bpt>Add/Edit rules<ept id="p1">**</ept> to open the <bpt id="p2">**</bpt>Add/Edit rules<ept id="p2">**</ept> window.</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Rule collection<ept id="p1">**</ept> pane, click the second row in the data grid to select the rule <bpt id="p2">**</bpt>SalesTable.SalesStatus In Canceled, Invoiced<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Delete<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> in the <bpt id="p2">**</bpt>Delete<ept id="p2">**</ept> dialog box.</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Rule collection<ept id="p1">**</ept> pane, click <bpt id="p2">**</bpt>Add expression<ept id="p2">**</ept>, and set the following field values:</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Rule name<ept id="p1">**</ept> field, type Status.</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Rule description<ept id="p1">**</ept> field, type Status values considered for archival.</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Conditional information<ept id="p1">**</ept> pane, set the following field values:</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Table name<ept id="p1">**</ept> list, select <bpt id="p2">**</bpt>SalesTable<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Field name<ept id="p1">**</ept> list, select <bpt id="p2">**</bpt>SalesStatus<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Condition<ept id="p1">**</ept> list, select <bpt id="p2">**</bpt>In<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Value<ept id="p1">**</ept> field, select <bpt id="p2">**</bpt>Cancelled and Invoiced<ept id="p2">**</ept> from the list.</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept>, and verify that the rule is added to the data grid in the <bpt id="p2">**</bpt>Rule collection<ept id="p2">**</ept> pane.</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Rules<ept id="p1">**</ept> dialog box, click <bpt id="p2">**</bpt>OK<ept id="p2">**</ept> to continue.</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Close<ept id="p1">**</ept> to close the window and return to the Archive Object.</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>Add relations</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>This command lets you manually add a table to the Purge Object or Archive Object, and establish a relationship.</source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>You may have to manually add a relationship if you have custom tables in the Microsoft Dynamics AX application without a metadata relationship in the Application Object Tree (AOT).</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>To add a relation, select a table by clicking it in the relationship tree diagram.</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>The table you select becomes the parent table, and the table you add becomes the child in the relationship.</source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>On the toolbar, click <bpt id="p1">**</bpt>Add relations<ept id="p1">**</ept> to open the <bpt id="p2">**</bpt>Add relations<ept id="p2">**</ept> window.</source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>Navigation of the Add relations window</source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>The following tables provide descriptions for the controls in the <bpt id="p1">**</bpt>Add relations<ept id="p1">**</ept> window.</source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>Panes</source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>Pane</source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Relationships<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>Provides a list of relations that you created in the Purge Object or Archive Object.</source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>Also provides commands to create a new relation or delete an existing relation.</source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Configure relations<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>Provides an area to enter or modify the relation name, description, and conditions.</source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>Also provides commands to add the relation to, or update it in, the list in the <bpt id="p1">**</bpt>Relationships<ept id="p1">**</ept> pane, or to cancel the add or update action.</source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>Buttons</source>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>Button</source>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Save<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>Save the changes that you made to the list in the <bpt id="p1">**</bpt>Relationships<ept id="p1">**</ept> pane to the database.</source>
+        </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Close<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>Close the <bpt id="p1">**</bpt>Add relations<ept id="p1">**</ept> window.</source>
+        </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>If you try to close the window without saving your changes, you are prompted to confirm the close or save your changes.</source>
+        </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>Relationships pane</source>
+        </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>Button</source>
+        </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>New relation<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>Create a new relation, or a new condition for an existing relation.</source>
+        </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Delete<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>Delete the selected relation or condition.</source>
+        </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>You cannot modify added relations.</source>
+        </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>You must delete the relations, and then add them again to make any changes.</source>
+        </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>Configure relations pane</source>
+        </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>Button</source>
+        </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Add<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>Add a new relation or condition to the list in the <bpt id="p1">**</bpt>Relationships<ept id="p1">**</ept> pane.</source>
+        </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Update<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>Update the selected relation or condition in the list in the <bpt id="p1">**</bpt>Relationships<ept id="p1">**</ept> pane.</source>
+        </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Cancel<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>Cancel an add or update action.</source>
+        </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>Fields</source>
+        </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>Field</source>
+        </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Include child relations<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>Select this field if you have to add all the child entities of the relation that you are adding to the relationship tree.</source>
+        </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>If you clear the field, the child entities of the table you are adding are not added to the Purge Object or Archive Object.</source>
+        </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>Relationships pane</source>
+        </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>Field</source>
+        </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>RelationsDefined<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>A list of the relations in the Purge Object or Archive Object, and the conditions for each relation.</source>
+        </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>This field becomes available in the list when you add a relation.</source>
+        </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>Configure relations pane, Table relations area</source>
+        </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>Field</source>
+        </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Relation name<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source>The name of the relation.</source>
+        </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source>You must enter a relation name to continue.</source>
+        </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Table name<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source>The table that you selected in the Purge Object or Archive Object.</source>
+        </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>You can't change this value in the window.</source>
+        </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>This table is the parent entity in the relationship.</source>
+        </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Field name<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source>Select the field that you want to use in the relationship.</source>
+        </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Condition<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source>By default, the condition is <bpt id="p1">**</bpt><ph id="ph1">=</ph><ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source>You cannot change the condition.</source>
+        </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Related table name<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source>Select the table that you are adding from the list.</source>
+        </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source>This table is the child entity in the relationship.</source>
+        </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Related field name<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source>Select the field that you want to use in the relationship.</source>
+        </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source>Configure relations pane, Conditional information area</source>
+        </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>Field</source>
+        </trans-unit>
+        <trans-unit id="298" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="299" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Table name<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="300" translate="yes" xml:space="preserve">
+          <source>Select a table from the list.</source>
+        </trans-unit>
+        <trans-unit id="301" translate="yes" xml:space="preserve">
+          <source>You can select either the parent or the child from the relationship.</source>
+        </trans-unit>
+        <trans-unit id="302" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Field name<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="303" translate="yes" xml:space="preserve">
+          <source>Select the field that you want to use in the condition.</source>
+        </trans-unit>
+        <trans-unit id="304" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Condition<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="305" translate="yes" xml:space="preserve">
+          <source>Select the condition that you want to use.</source>
+        </trans-unit>
+        <trans-unit id="306" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Value<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="307" translate="yes" xml:space="preserve">
+          <source>Enter the value for the condition.</source>
+        </trans-unit>
+        <trans-unit id="308" translate="yes" xml:space="preserve">
+          <source>Walkthrough: Add a relation in a Purge Object</source>
+        </trans-unit>
+        <trans-unit id="309" translate="yes" xml:space="preserve">
+          <source>This section provides a walkthrough to add a relation in a Purge Object.</source>
+        </trans-unit>
+        <trans-unit id="310" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Configure<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Purge templates/Purge Objects<ept id="p2">**</ept>, and then select <bpt id="p3">**</bpt>ProjJournalTable<ept id="p3">**</ept> from the drop-down list.</source>
+        </trans-unit>
+        <trans-unit id="311" translate="yes" xml:space="preserve">
+          <source>In the Purge Object, click the <bpt id="p1">**</bpt>ProjJournalTable<ept id="p1">**</ept> table in level 0, and then click <bpt id="p2">**</bpt>Add relations<ept id="p2">**</ept> on the toolbar.</source>
+        </trans-unit>
+        <trans-unit id="312" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Add relations<ept id="p1">**</ept> dialog box, click <bpt id="p2">**</bpt>New relation<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="313" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Relation name<ept id="p1">**</ept> field, enter a valid name for the relation.</source>
+        </trans-unit>
+        <trans-unit id="314" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Table relations<ept id="p1">**</ept> area, follow these steps to add the relation:</source>
+        </trans-unit>
+        <trans-unit id="315" translate="yes" xml:space="preserve">
+          <source>From <bpt id="p1">**</bpt>Field name<ept id="p1">**</ept> list, select <bpt id="p2">**</bpt>JournalId<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="316" translate="yes" xml:space="preserve">
+          <source>From the <bpt id="p1">**</bpt>Related table<ept id="p1">**</ept> name list, select <bpt id="p2">**</bpt>JournalError<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="317" translate="yes" xml:space="preserve">
+          <source>From the <bpt id="p1">**</bpt>Related field name<ept id="p1">**</ept> list, select <bpt id="p2">**</bpt>JournalId<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="318" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="319" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Add Relations<ept id="p1">**</ept> dialog box, click <bpt id="p2">**</bpt>New relation<ept id="p2">**</ept> to add a condition to the relation you just added.</source>
+        </trans-unit>
+        <trans-unit id="320" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Conditional information<ept id="p1">**</ept> area, follow these steps to add a condition:</source>
+        </trans-unit>
+        <trans-unit id="321" translate="yes" xml:space="preserve">
+          <source>From the <bpt id="p1">**</bpt>Table name<ept id="p1">**</ept> list, select a table that you want to use in the condition.</source>
+        </trans-unit>
+        <trans-unit id="322" translate="yes" xml:space="preserve">
+          <source>From the <bpt id="p1">**</bpt>Field name<ept id="p1">**</ept> list, select the field that you want to use in the condition.</source>
+        </trans-unit>
+        <trans-unit id="323" translate="yes" xml:space="preserve">
+          <source>From the <bpt id="p1">**</bpt>Condition<ept id="p1">**</ept> list, select the condition.</source>
+        </trans-unit>
+        <trans-unit id="324" translate="yes" xml:space="preserve">
+          <source>From the <bpt id="p1">**</bpt>Value<ept id="p1">**</ept> list, select the value.</source>
+        </trans-unit>
+        <trans-unit id="325" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept> to add the condition to the data grid.</source>
+        </trans-unit>
+        <trans-unit id="326" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="327" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> to continue.</source>
+        </trans-unit>
+        <trans-unit id="328" translate="yes" xml:space="preserve">
+          <source>In the Purge Object, verify that the JournalError table you just added is shown as a child entity in level 1.</source>
+        </trans-unit>
+        <trans-unit id="329" translate="yes" xml:space="preserve">
+          <source>Save the Purge Object.</source>
+        </trans-unit>
+        <trans-unit id="330" translate="yes" xml:space="preserve">
+          <source>Walkthrough: Add a relation in an Archive Object</source>
+        </trans-unit>
+        <trans-unit id="331" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Configure<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Archive templates/Archive Objects<ept id="p2">**</ept>, and then select <bpt id="p3">**</bpt>SalesTable<ept id="p3">**</ept> from the drop-down list.</source>
+        </trans-unit>
+        <trans-unit id="332" translate="yes" xml:space="preserve">
+          <source>In the Archive Object, click the <bpt id="p1">**</bpt>DocuRef<ept id="p1">**</ept> table in level 1, and then click <bpt id="p2">**</bpt>Add relations<ept id="p2">**</ept> on the toolbar.</source>
+        </trans-unit>
+        <trans-unit id="333" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Add relations<ept id="p1">**</ept> dialog box, click <bpt id="p2">**</bpt>New relation<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="334" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Relation name<ept id="p1">**</ept> field, enter a valid name for the relation.</source>
+        </trans-unit>
+        <trans-unit id="335" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Table relations<ept id="p1">**</ept> area, follow these steps to add the relation.</source>
+        </trans-unit>
+        <trans-unit id="336" translate="yes" xml:space="preserve">
+          <source>From the <bpt id="p1">**</bpt>Field name<ept id="p1">**</ept> list, select <bpt id="p2">**</bpt>ValueRecId<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="337" translate="yes" xml:space="preserve">
+          <source>From the <bpt id="p1">**</bpt>Related table name<ept id="p1">**</ept> list, select <bpt id="p2">**</bpt>DocuValue<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="338" translate="yes" xml:space="preserve">
+          <source>From the <bpt id="p1">**</bpt>Related field name<ept id="p1">**</ept> list, select <bpt id="p2">**</bpt>RecId<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="339" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="340" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Add Relations<ept id="p1">**</ept> dialog box, click <bpt id="p2">**</bpt>New relation<ept id="p2">**</ept> to add a condition to the relation you just added.</source>
+        </trans-unit>
+        <trans-unit id="341" translate="yes" xml:space="preserve">
+          <source>In the Conditional <bpt id="p1">**</bpt>information<ept id="p1">**</ept> area, follow these steps to add a condition:</source>
+        </trans-unit>
+        <trans-unit id="342" translate="yes" xml:space="preserve">
+          <source>From the <bpt id="p1">**</bpt>Table name<ept id="p1">**</ept> list, select a table that you want to use in the condition.</source>
+        </trans-unit>
+        <trans-unit id="343" translate="yes" xml:space="preserve">
+          <source>From the <bpt id="p1">**</bpt>Field name<ept id="p1">**</ept> list, select the field that you want to use in the condition.</source>
+        </trans-unit>
+        <trans-unit id="344" translate="yes" xml:space="preserve">
+          <source>From the <bpt id="p1">**</bpt>Condition<ept id="p1">**</ept> list, select the condition.</source>
+        </trans-unit>
+        <trans-unit id="345" translate="yes" xml:space="preserve">
+          <source>From the <bpt id="p1">**</bpt>Value<ept id="p1">**</ept> list, select the value.</source>
+        </trans-unit>
+        <trans-unit id="346" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept> to add the condition to the data grid.</source>
+        </trans-unit>
+        <trans-unit id="347" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="348" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> to continue.</source>
+        </trans-unit>
+        <trans-unit id="349" translate="yes" xml:space="preserve">
+          <source>In the Archive Object, verify that the <bpt id="p1">**</bpt>DocuValue<ept id="p1">**</ept> table you just added is shown as a child entity in level 1.</source>
+        </trans-unit>
+        <trans-unit id="350" translate="yes" xml:space="preserve">
+          <source>Save the Archive Object.</source>
+        </trans-unit>
+        <trans-unit id="351" translate="yes" xml:space="preserve">
+          <source>Export</source>
+        </trans-unit>
+        <trans-unit id="352" translate="yes" xml:space="preserve">
+          <source>This command lets you export a Purge Object or an Archive Object to a file in XML format.</source>
+        </trans-unit>
+        <trans-unit id="353" translate="yes" xml:space="preserve">
+          <source>Follow these steps to export a Purge Object:</source>
+        </trans-unit>
+        <trans-unit id="354" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Configure<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Purge template/Purge Objects<ept id="p2">**</ept>, and then select <bpt id="p3">**</bpt>PurchParmTable<ept id="p3">**</ept> from the list.</source>
+        </trans-unit>
+        <trans-unit id="355" translate="yes" xml:space="preserve">
+          <source>On the toolbar, click <bpt id="p1">**</bpt>Export<ept id="p1">**</ept> to open the <bpt id="p2">**</bpt>Export Object<ept id="p2">**</ept> dialog box.</source>
+        </trans-unit>
+        <trans-unit id="356" translate="yes" xml:space="preserve">
+          <source>By default, the file name is the driver table, which is <bpt id="p1">**</bpt>PurchParmTable<ept id="p1">**</ept> in this case.</source>
+        </trans-unit>
+        <trans-unit id="357" translate="yes" xml:space="preserve">
+          <source>Navigate to a location, and then click <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="358" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> to continue.</source>
+        </trans-unit>
+        <trans-unit id="359" translate="yes" xml:space="preserve">
+          <source>Locate the saved file, and open it in a Web browser.</source>
+        </trans-unit>
+        <trans-unit id="360" translate="yes" xml:space="preserve">
+          <source>Review the file to understand the schema and its relationship to the graphical representation of the Purge Object.</source>
+        </trans-unit>
+        <trans-unit id="361" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> You can take similar steps to export an Archive Object.</source>
+        </trans-unit>
+        <trans-unit id="362" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> On the toolbar, the <bpt id="p2">**</bpt>Import<ept id="p2">**</ept> command appears before the <bpt id="p3">**</bpt>Export<ept id="p3">**</ept> command.</source>
+        </trans-unit>
+        <trans-unit id="363" translate="yes" xml:space="preserve">
+          <source>Import</source>
+        </trans-unit>
+        <trans-unit id="364" translate="yes" xml:space="preserve">
+          <source>This command lets you import a Purge Object or an Archive Object in XML format.</source>
+        </trans-unit>
+        <trans-unit id="365" translate="yes" xml:space="preserve">
+          <source>The following walkthrough provides hands-on instruction to reinstate a modified Purge Object to the state it was in at the time of export:</source>
+        </trans-unit>
+        <trans-unit id="366" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Configure<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Purge template/Purge Objects<ept id="p2">**</ept>, and then select <bpt id="p3">**</bpt>PurchParmTable<ept id="p3">**</ept> from the drop-down list.</source>
+        </trans-unit>
+        <trans-unit id="367" translate="yes" xml:space="preserve">
+          <source>Use the <bpt id="p1">**</bpt>Advanced<ept id="p1">**</ept> filter to filter the data grid in the <bpt id="p2">**</bpt>Remove table<ept id="p2">**</ept> pane so that it shows only tables in level 1.</source>
+        </trans-unit>
+        <trans-unit id="368" translate="yes" xml:space="preserve">
+          <source>Select all tables in the data grid, and then click <bpt id="p1">**</bpt>Remove<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="369" translate="yes" xml:space="preserve">
+          <source>Confirm that the relationship tree contains only <bpt id="p1">**</bpt>PurchParmTable<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="370" translate="yes" xml:space="preserve">
+          <source>On the toolbar, click <bpt id="p1">**</bpt>Save<ept id="p1">**</ept> to save the Purge Object.</source>
+        </trans-unit>
+        <trans-unit id="371" translate="yes" xml:space="preserve">
+          <source>Respond to the prompt, and overwrite the object.</source>
+        </trans-unit>
+        <trans-unit id="372" translate="yes" xml:space="preserve">
+          <source>On the toolbar, click <bpt id="p1">**</bpt>Import<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="373" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Select a valid XML file<ept id="p1">**</ept> dialog box, navigate to the location of the file from the previous section, and then click <bpt id="p2">**</bpt>Open<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="374" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> to continue.</source>
+        </trans-unit>
+        <trans-unit id="375" translate="yes" xml:space="preserve">
+          <source>The Purge Object is now in the same state it was in when you exported it in the previous section.</source>
+        </trans-unit>
+        <trans-unit id="376" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> You can take similar steps to import an Archive Object.</source>
+        </trans-unit>
+        <trans-unit id="377" translate="yes" xml:space="preserve">
+          <source>Save</source>
+        </trans-unit>
+        <trans-unit id="378" translate="yes" xml:space="preserve">
+          <source>This command lets you save a Purge Object, or save a newer version of an Archive Object.</source>
+        </trans-unit>
+        <trans-unit id="379" translate="yes" xml:space="preserve">
+          <source>You must save a purge template as a Purge Object before you can use it in a purge task.</source>
+        </trans-unit>
+        <trans-unit id="380" translate="yes" xml:space="preserve">
+          <source>You must save an archive template as an Archive Object before you can use it in an archive task.</source>
+        </trans-unit>
+        <trans-unit id="381" translate="yes" xml:space="preserve">
+          <source>The archive function does not let you overwrite an existing Archive Object.</source>
+        </trans-unit>
+        <trans-unit id="382" translate="yes" xml:space="preserve">
+          <source>When you save an archive template or an Archive Object, you always create a new version of the Archive Object.</source>
+        </trans-unit>
+        <trans-unit id="383" translate="yes" xml:space="preserve">
+          <source>The archive task always uses the most recent version of the Archive Object you save.</source>
+        </trans-unit>
+        <trans-unit id="384" translate="yes" xml:space="preserve">
+          <source>Working with different versions of Archive Objects is covered in a later section of this topic.</source>
+        </trans-unit>
+        <trans-unit id="385" translate="yes" xml:space="preserve">
+          <source>Show versions</source>
+        </trans-unit>
+        <trans-unit id="386" translate="yes" xml:space="preserve">
+          <source>This command lets you work with different versions of an Archive Object.</source>
+        </trans-unit>
+        <trans-unit id="387" translate="yes" xml:space="preserve">
+          <source>Use the following walkthrough to understand this functionality:</source>
+        </trans-unit>
+        <trans-unit id="388" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Configure<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Archive templates/Archive Object<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>BankDeposit<ept id="p3">**</ept> to open the <bpt id="p4">**</bpt>BankDeposit<ept id="p4">**</ept> Archive Object.</source>
+        </trans-unit>
+        <trans-unit id="389" translate="yes" xml:space="preserve">
+          <source>Review the Archive Object to make sure that the relationship hierarchy, tables, and rules that are contained in this Archive Object apply to your Microsoft Dynamics AX implementation.</source>
+        </trans-unit>
+        <trans-unit id="390" translate="yes" xml:space="preserve">
+          <source>On the toolbar, click <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="391" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Save as<ept id="p1">**</ept> dialog box, enter a name for the Archive Object.</source>
+        </trans-unit>
+        <trans-unit id="392" translate="yes" xml:space="preserve">
+          <source>You must provide a new name for this version of the Archive Object.</source>
+        </trans-unit>
+        <trans-unit id="393" translate="yes" xml:space="preserve">
+          <source>If the name that you provide is already used by a different version of the Archive Object, you receive an error message.</source>
+        </trans-unit>
+        <trans-unit id="394" translate="yes" xml:space="preserve">
+          <source>Enter BankDeposit<ph id="ph1">\_</ph>1, and then click <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="395" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> to continue.</source>
+        </trans-unit>
+        <trans-unit id="396" translate="yes" xml:space="preserve">
+          <source>On the toolbar, click <bpt id="p1">**</bpt>Show versions<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="397" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Version history<ept id="p1">**</ept> dialog box, select <bpt id="p2">**</bpt>BankDeposit<ept id="p2">**</ept> from the <bpt id="p3">**</bpt>Archive template<ept id="p3">**</ept> list.</source>
+        </trans-unit>
+        <trans-unit id="398" translate="yes" xml:space="preserve">
+          <source>The Archive Object list contains the different versions of the Archive Object you saved.</source>
+        </trans-unit>
+        <trans-unit id="399" translate="yes" xml:space="preserve">
+          <source>The list contains the most recent version at the top, and therefore you see BankDeposit<ph id="ph1">\_</ph>1 at the top of the list.</source>
+        </trans-unit>
+        <trans-unit id="400" translate="yes" xml:space="preserve">
+          <source>Select any version, and then click <bpt id="p1">**</bpt>Show in the Archive Object list<ept id="p1">**</ept> to work with that version of the Archive Object.</source>
+        </trans-unit>
+        <trans-unit id="401" translate="yes" xml:space="preserve">
+          <source>If you make any changes to this version and save it, the saved version becomes the most recent version and is used by the archive task at run time.</source>
+        </trans-unit>
+        <trans-unit id="402" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Close<ept id="p1">**</ept> to close the <bpt id="p2">**</bpt>Version history<ept id="p2">**</ept> dialog box.</source>
+        </trans-unit>
+        <trans-unit id="403" translate="yes" xml:space="preserve">
+          <source>On the toolbar, click <bpt id="p1">**</bpt>Archive templates/Archive Object<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>BankDeposit<ept id="p2">**</ept> to open the .</source>
+        </trans-unit>
+        <trans-unit id="404" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> The Data Management Framework opens the most recent version of the Archive Object that you saved.</source>
+        </trans-unit>
+        <trans-unit id="405" translate="yes" xml:space="preserve">
+          <source>The archive task uses the most recent version of the Archive Object at run time.</source>
+        </trans-unit>
+        <trans-unit id="406" translate="yes" xml:space="preserve">
+          <source>Validate all</source>
+        </trans-unit>
+        <trans-unit id="407" translate="yes" xml:space="preserve">
+          <source>This command lets you programmatically validate all templates and objects.</source>
+        </trans-unit>
+        <trans-unit id="408" translate="yes" xml:space="preserve">
+          <source>The purge templates and archive templates that are included with the Data Management Framework are created based on functional validation of a standard Microsoft Dynamics AX application.</source>
+        </trans-unit>
+        <trans-unit id="409" translate="yes" xml:space="preserve">
+          <source>Your installation may not have the same license, configuration, and security keys.</source>
+        </trans-unit>
+        <trans-unit id="410" translate="yes" xml:space="preserve">
+          <source>As a result, you have to validate the default templates against your implementation before you can use them as Archive Objects or Purge Objects.</source>
+        </trans-unit>
+        <trans-unit id="411" translate="yes" xml:space="preserve">
+          <source>This command provides a programmatic way to validate all purge templates or all archive templates with a single click.</source>
+        </trans-unit>
+        <trans-unit id="412" translate="yes" xml:space="preserve">
+          <source>This functionality only works with templates that are not validated yet, and ignores any previously validated templates.</source>
+        </trans-unit>
+        <trans-unit id="413" translate="yes" xml:space="preserve">
+          <source>During the validation process, the Data Management Framework optionally removes tables from all templates and objects that have these characteristics:</source>
+        </trans-unit>
+        <trans-unit id="414" translate="yes" xml:space="preserve">
+          <source>They are not in the production database of your Microsoft Dynamics AX implementation.</source>
+        </trans-unit>
+        <trans-unit id="415" translate="yes" xml:space="preserve">
+          <source>They have a relationship or a rule on a field that has a disabled configuration key in the production database.</source>
+        </trans-unit>
+        <trans-unit id="416" translate="yes" xml:space="preserve">
+          <source>They have a record count of 0 (zero).</source>
+        </trans-unit>
+        <trans-unit id="417" translate="yes" xml:space="preserve">
+          <source>On the toolbar, click <bpt id="p1">**</bpt>Validate all<ept id="p1">**</ept> to open the <bpt id="p2">**</bpt>Validate all templates and Objects<ept id="p2">**</ept> window.</source>
+        </trans-unit>
+        <trans-unit id="418" translate="yes" xml:space="preserve">
+          <source>Navigation of the Validate all templates and Objects window</source>
+        </trans-unit>
+        <trans-unit id="419" translate="yes" xml:space="preserve">
+          <source>The following tables provide descriptions for the controls in the <bpt id="p1">**</bpt>Validate all templates and Objects<ept id="p1">**</ept> window.</source>
+        </trans-unit>
+        <trans-unit id="420" translate="yes" xml:space="preserve">
+          <source>Buttons</source>
+        </trans-unit>
+        <trans-unit id="421" translate="yes" xml:space="preserve">
+          <source>Button</source>
+        </trans-unit>
+        <trans-unit id="422" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="423" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Save<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="424" translate="yes" xml:space="preserve">
+          <source>Save the changes.</source>
+        </trans-unit>
+        <trans-unit id="425" translate="yes" xml:space="preserve">
+          <source>When you work with purge templates and Purge Objects, all existing purge templates and Purge Objects are overwritten.</source>
+        </trans-unit>
+        <trans-unit id="426" translate="yes" xml:space="preserve">
+          <source>When working with archive templates and Archive Objects, you must provide a suffix.</source>
+        </trans-unit>
+        <trans-unit id="427" translate="yes" xml:space="preserve">
+          <source>The changes are saved as new versions, with a suffix value that is used for the new name.</source>
+        </trans-unit>
+        <trans-unit id="428" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Clear<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="429" translate="yes" xml:space="preserve">
+          <source>Clear the values for all the fields in the window.</source>
+        </trans-unit>
+        <trans-unit id="430" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Close<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="431" translate="yes" xml:space="preserve">
+          <source>Close the window.</source>
+        </trans-unit>
+        <trans-unit id="432" translate="yes" xml:space="preserve">
+          <source>Fields</source>
+        </trans-unit>
+        <trans-unit id="433" translate="yes" xml:space="preserve">
+          <source>Field</source>
+        </trans-unit>
+        <trans-unit id="434" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="435" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Select an object type<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="436" translate="yes" xml:space="preserve">
+          <source>From the list, select <bpt id="p1">**</bpt>Purge<ept id="p1">**</ept> to validate all purge templates and Purge Objects.</source>
+        </trans-unit>
+        <trans-unit id="437" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Archive<ept id="p1">**</ept> to validate all archive templates and Archive Objects.</source>
+        </trans-unit>
+        <trans-unit id="438" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Suffix name<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="439" translate="yes" xml:space="preserve">
+          <source>This field is only available when you select <bpt id="p1">**</bpt>Archive<ept id="p1">**</ept> from the <bpt id="p2">**</bpt>Select an object type<ept id="p2">**</ept> list.</source>
+        </trans-unit>
+        <trans-unit id="440" translate="yes" xml:space="preserve">
+          <source>When validating objects, you overwrite existing purge templates and Purge Objects.</source>
+        </trans-unit>
+        <trans-unit id="441" translate="yes" xml:space="preserve">
+          <source>However, you must use a suffix value to save the new versions of archive templates and Archive Objects.</source>
+        </trans-unit>
+        <trans-unit id="442" translate="yes" xml:space="preserve">
+          <source>The suffix value is used to create a new name for the archive templates and Archive Objects.</source>
+        </trans-unit>
+        <trans-unit id="443" translate="yes" xml:space="preserve">
+          <source>For example, if you enter 1 as the suffix name, the BankDeposit archive template is saved as BankDeposit<ph id="ph1">\_</ph>1.</source>
+        </trans-unit>
+        <trans-unit id="444" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Remove invalid tables<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="445" translate="yes" xml:space="preserve">
+          <source>Select this field to remove all tables that are contained in templates and objects that are not in the production database.</source>
+        </trans-unit>
+        <trans-unit id="446" translate="yes" xml:space="preserve">
+          <source>Removing a table from the templates and objects also removes related child tables from the relationship hierarchy, if there are any.</source>
+        </trans-unit>
+        <trans-unit id="447" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Remove tables with invalid fields<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="448" translate="yes" xml:space="preserve">
+          <source>The templates and objects may be using invalid fields in relationships and rules.</source>
+        </trans-unit>
+        <trans-unit id="449" translate="yes" xml:space="preserve">
+          <source>A field that is not valid can be caused by your license, disabled security keys, disabled configuration keys, or incomplete post-installation tasks, such as the database synchronization.</source>
+        </trans-unit>
+        <trans-unit id="450" translate="yes" xml:space="preserve">
+          <source>Select this field to remove all tables that contain fields that are not valid from templates and objects.</source>
+        </trans-unit>
+        <trans-unit id="451" translate="yes" xml:space="preserve">
+          <source>Removing a table from the templates and objects also removes related child tables from the relationship hierarchy, if there are any.</source>
+        </trans-unit>
+        <trans-unit id="452" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Remove tables with zero row<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="453" translate="yes" xml:space="preserve">
+          <source>Select this field to remove all tables without rows from all templates and objects.</source>
+        </trans-unit>
+        <trans-unit id="454" translate="yes" xml:space="preserve">
+          <source>Removing a table from the templates and objects also removes related child tables from the relationship hierarchy, if there are any.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

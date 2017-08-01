@@ -1,0 +1,717 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">6b850f052e41d4bb385a4b4c32bdacc1f1521dc9</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\database\copy-database-from-sql-server-to-azure-sql.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">a8e9de84eaa7eb6872efb5c48bdbc3644231d54f</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">c8ddda57ca5d33f6b6b3d92547679a21d3678b0b</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Copy Finance and Operations database - SQL Server to production Azure SQL</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic describes how to move a Finance and Operations database from an environment that runs on SQL Server (Tier 1 or one-box) to an environment that runs on an Azure SQL database (Tier 2 or higher).</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Copy a Finance and Operations database from SQL Server to a production Azure SQL Database environment</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This topic describes how to move a Finance and Operations database from an environment that runs on SQL Server (Tier 1 or one-box) to an environment that runs on an Azure SQL database (Tier 2 or higher).</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Overview</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This procedure can be used to move a Microsoft Dynamics 365 for Finance and Operations database from an environment that runs on Microsoft SQL Server (Tier 1 or one-box) to an environment that runs on a Microsoft Azure SQL database (Tier 2 or higher).</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>This process is typically performed before go-live to bring a golden (or seed) database that contains only system configuration data into a production environment.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>This process isn't suitable for all situations.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>For example, you should not use this process to import data for a new legal entity for an existing live deployment.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>In those situations, we recommend that you use <bpt id="p1">[</bpt>process data packages<ept id="p1">](../lcs-solutions/process-data-packages-lcs-solutions.md)</ept> or <bpt id="p2">[</bpt>data entity data packages<ept id="p2">](../data-entities/data-entities-data-packages.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Here is the supported procedure for bringing a golden database into the production environment:</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>A customer or partner exports the database from SQL Server.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The customer or partner imports the database to a sandbox environment that runs on an Azure SQL database.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> If you're using Retail components raise a service request of the <bpt id="p2">**</bpt>Other request<ept id="p2">**</ept> type in Microsoft Dynamics Lifecycle Services (LCS) to ask that the Service Engineering Team update the imported database to be reconfigured for the new environment.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>The customer or partner uses a service request of the <bpt id="p1">**</bpt>Other request<ept id="p1">**</ept> type in Microsoft Dynamics Lifecycle Services (LCS) to ask that Microsoft Support update the sandbox database to the production environment.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Support copies the database from the sandbox environment to the production environment.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Microsoft accepts requests to copy a database into a production environment only before go-live.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>The process for moving a database involves using the sqlpackage.exe command-line tool to export the database from SQL Server and import it into an Azure SQL database.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Because the file name extension for the exported data file is .bacpac, the process is often referred to as the bacpac process.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Here are the high-level steps:</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Create a copy of the source database.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Run a script to prepare the database.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Export the database from SQL Server.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Import the database into an Azure SQL database.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Run a script to update the database.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>If you encounter issues, see the Known issues and limitations section at the end of this topic.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>It explains how to troubleshoot, gives performance tips, and explains limitations of the copy process.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Prerequisites</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>The source SQL Server–based environment must be running Microsoft SQL Server 2016 Release to Manufacturing (RTM) (13.0.1601.5) or later.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>The Community Technology Preview (CTP) versions of SQL Server 2016 might cause errors.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>If the source environment is running an earlier version of SQL Server 2016, you must first back up the database and restore it to another environment that is running SQL Server 2016 RTM (13.0.1601.5) or later.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>To import a database into an Azure SQL Database environment, you must install the <bpt id="p1">[</bpt>latest version of Microsoft SQL Server Management Studio<ept id="p1">](https://msdn.microsoft.com/en-us/library/mt238290.aspx)</ept> on the Application Object Server (AOS) computer in <bpt id="p2">**</bpt>that<ept id="p2">**</ept> environment and perform the bacpac import on the AOS computer.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>There are two reasons for this requirement:</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Because of an Internet Protocol (IP) access restriction on all instances of Finance and Operations that run on Azure SQL Database, connections are allowed only from a computer in that environment.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>The version of Management Studio that is installed by default is for a previous version of SQL Server and can't perform the required tasks.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Important:<ept id="p1">**</ept> If your environment includes Retail components, you must manually store some environment-specific values before you begin.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>See the Additional steps for Retail environments section.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Before you begin</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Encrypted and environment-specific values can't be imported into a new environment.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>After you've completed the import, you must re-enter some data from your source environment in your target environment.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Document the values of encrypted fields</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Because of a technical limitation that is related to the certificate that is used for data encryption, values that are stored in encrypted fields in a database will be unreadable after that database is imported into a new environment.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Therefore, after an import, you must manually delete and re-enter values that are stored in encrypted fields.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>New values that are entered in encrypted fields after an import will be readable.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>The following fields are affected.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>(The field names are given in <bpt id="p1">*</bpt>Table<ept id="p1">*</ept>.<bpt id="p2">*</bpt>Field<ept id="p2">*</ept> format.)</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Table.field name<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Where to set the value<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>CreditCardAccountSetup.SecureMerchantProperties</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Accounts receivable<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Payments setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Payment services<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>ExchangeRateProviderConfigurationDetails.Value</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>General ledger<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Currencies<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Configure exchange rate providers<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>FiscalEstablishment<ph id="ph1">\_</ph>BR.ConsumerEFDocCsc</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Organization administration<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Fiscal establishments<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Fiscal establishments<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>FiscalEstablishmentStaging.CSC</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>This field is used by the Data Import/Export Framework</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>HcmPersonIdentificationNumber.PersonIdentificationNumber</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Human resources<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Workers<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Workers<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Worker<ept id="p1">**</ept> tab, in the <bpt id="p2">**</bpt>Personal information<ept id="p2">**</ept> group, click <bpt id="p3">**</bpt>Identification numbers<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>HcmWorkerActionHire.PersonIdentificationNumber</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>This field has been obsolete since the February 2016 release.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>It was previously in the <bpt id="p1">**</bpt>Human resources<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Workers<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Actions<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>All worker actions<ept id="p4">**</ept> form.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>SysEmailSMPTPassword.Password</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>System administration<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Email<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Email parameters<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>SysOAuthUserTokens.EncryptedAccessToken</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>This field is used internally by the AOS.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>It can be ignored.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>SysOAuthUserTokens.EncryptedRefr eshToken</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>This field is used internally by the AOS.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>It can be ignored.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>If you're running Retail components, document encrypted and environment-specific values</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>The values in the following forms are either environment-specific or encrypted in the database.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Therefore, all the imported values will be incorrect.</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Accounts receivable <ph id="ph1">&amp;gt;</ph> Payments setup <ph id="ph2">&amp;gt;</ph> Payments services</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Retail and commerce <ph id="ph1">&amp;gt;</ph> Channel setup <ph id="ph2">&amp;gt;</ph> POS setup <ph id="ph3">&amp;gt;</ph> POS profiles <ph id="ph4">&amp;gt;</ph> Hardware profiles</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Create a copy of the source database</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Before the source SQL Server database can be exported, the database users must be deleted.</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Therefore, you create a copy of the source database to work with, instead of modifying the original database.</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>The following script backs up the default AxDB database and then restores it to the same instance under a new name.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>To use this script, first verify that the path D:<ph id="ph1">\\</ph>backups exists.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Run a script to prepare the database</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Run the following script against the AxDB<ph id="ph1">\_</ph>CopyForExport database that you created in the previous step.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>This script makes the following changes:</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>Set the <bpt id="p1">**</bpt>SysGlobalConfiguration<ept id="p1">**</ept> flag to inform Finance and Operations that the database is Azure-based.</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Remove a reference to tempDB in the XU<ph id="ph1">\_</ph>DisableEnableNonClusteredIndexes procedure.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>References to tempDB aren't allowed in an Azure SQL database.</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>The reference will be re-created later by the database synchronization process.</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Drop users, because Microsoft Windows users are forbidden in Azure SQL databases.</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Other users must be re-created later to correctly link to the appropriate sign-in in the target server.</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>A successful export and import of the database requires all these changes.</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Export the database from SQL Server</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Next, open a <bpt id="p1">**</bpt>Command Prompt<ept id="p1">**</ept> window as an administrator, and run the following commands.</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>Here is an explanation of the parameters:</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>ssn<ept id="p1">**</ept> (source server name) – The name of the SQL Server to export from.</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>For our purposes, the name should always be <bpt id="p1">**</bpt>localhost<ept id="p1">**</ept><bpt id="p2">*</bpt>.<ept id="p2">*</ept></source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>sdn<ept id="p1">**</ept> (source database name) – The name of the database to export.</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>tf<ept id="p1">**</ept> (target file) – The path and name of the file to export to.</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>The folder should already exist, but the export process will create the file.</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Import the database into an Azure SQL database</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>Copy the .bacpac file that was generated in the previous step to the AOS computer in the target environment.</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>A typical golden database .bacpac file will be smaller than 100 MB.</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Therefore, you can copy and paste the file through a Remote Desktop (RDP) window.</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>If the .bacpac file is much larger than 100 MB, <bpt id="p1">[</bpt>upload the file to an Azure storage account,<ept id="p1">](https://azure.microsoft.com/en-gb/documentation/articles/storage-use-azcopy/)</ept> and then download it to the target AOS computer.</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> Microsoft doesn't provide a storage account as part of your Finance and Operations agreement.</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>You must either purchase a storage account or use a storage account from a separate Azure subscription.</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>For performance reasons, we recommend that you put the .bacpac file on drive D on the AOS computer.</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>(For more details, see the Known issues section.) Open a <bpt id="p1">**</bpt>Command Prompt<ept id="p1">**</ept> window as an administrator, and run the following commands.</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>Here is an explanation of the parameters:</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>tsn<ept id="p1">**</ept> (target server name) – The name of the SQL Azure server to import into.</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>The name can be found in LCS.</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>Add the suffix <bpt id="p1">**</bpt>database.windows.net<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>tdn<ept id="p1">**</ept> (target database name) – The name of the database to import into.</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>The database should <bpt id="p1">**</bpt>not<ept id="p1">**</ept> already exist.</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>The import process will create it.</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>sf<ept id="p1">**</ept> (source file) – The path and file name to import from.</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>tu<ept id="p1">**</ept> (target user) – The SQL user name for the target Azure SQL database instance.</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>We recommend that you use the standard <bpt id="p1">**</bpt>sqladmin<ept id="p1">**</ept> user.</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>You can retrieve the password for this user from your LCS project.</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>tp<ept id="p1">**</ept> (target password) – The password for the target Azure SQL database user.</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>You will receive the following warning message.</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>You can safely ignore it.</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Warning message<ept id="p1">](./media/sqlpackagewarning.png)](./media/sqlpackagewarning.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>Run a script to update the database</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>Run the following script against the imported database.</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>The script performs the following actions:</source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>Recreate database users.</source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>Set the correct performance parameters.</source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>Enable the SQL Query Store feature.</source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> You must add the tenant ID to the last three queries.</source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>You can find this value by querying the SysServiceConfigurationSetting table in an existing database in the target environment.</source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>Synchronize the database</source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>Use Remote Desktop to connect to all the computers in the target environment, and stop the following Windows services by using services.msc.</source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>These services will have open connections to the Finance and Operations database.</source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>After you stop the services, you can replace the existing Finance and Operations database with the newly imported database:</source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>World wide web publishing service (on all AOS computers)</source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>Microsoft Dynamics 365 for Finance and Operations Batch Management Service (on non-private AOS computers only)</source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>Management Reporter 2012 Process Service (on BI computers only)</source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>In Management Studio on the AOS computer where the bacpac import was performed, run the following script to rename the original database and then rename the newly imported database so that it uses the original database name.</source>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>In this example, the original database was named axdb<ph id="ph1">\_</ph>123456789, and the newly imported database was named importeddb.</source>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> Make sure that the you're using the SQL Server 2016 version of Management Studio.</source>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>Synchronize the database.</source>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>Open a <bpt id="p1">**</bpt>Command Prompt<ept id="p1">**</ept> window as an administrator, and run the following commands.</source>
+        </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>Use services.msc to restart the services that you stopped earlier:</source>
+        </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>World wide web publishing service (on all AOS computers)</source>
+        </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>Microsoft Dynamics 365 for Finance and Operations Batch Management Service (on non-private AOS computers only)</source>
+        </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>Management Reporter 2012 Process Service (on BI computers only)</source>
+        </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>At this point, you can open the Finance and Operations application URL and sign in.</source>
+        </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>Verify that the program works as you expected, and then drop the original database by running the following script from Management Studio on the AOS computer where the bacpac import was performed.</source>
+        </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>Reset the Financial Reporting database</source>
+        </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>If using Financial Reporting (formerly Management Reporter) then follow the steps to reset the financial reporting database in <bpt id="p1">[</bpt>Resetting the financial reporting data mart after restoring a database<ept id="p1">](../analytics/reset-financial-reporting-datamart-after-restore.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>If you're using Retail components</source>
+        </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>If you’re using Retail components, you must perform additional steps to re-provision the target environment.</source>
+        </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>Navigate to the Shared asset library.</source>
+        </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Software deployable package<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>Download the Environment reprovisioning tool.</source>
+        </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>Navigate to the asset library for your project</source>
+        </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Software deployable package<ept id="p1">**</ept> and select <bpt id="p2">**</bpt>New<ept id="p2">**</ept> to create a new package.</source>
+        </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>Specify a name and description.</source>
+        </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>You can use "Environment reprovisioning tool" for the package name.</source>
+        </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>Upload the previously downloaded package.</source>
+        </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>Navigate to the Environment details page for your target environment</source>
+        </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Maintain<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Apply updates<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>Select the Environment reprovisioning tool that you previously uploaded and click <bpt id="p1">**</bpt>Apply<ept id="p1">**</ept> to apply the package.</source>
+        </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>Monitor the progress of the package deployment.</source>
+        </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>Learn more about how to apply a deployable package in the topic <bpt id="p1">[</bpt>Apply a deployable package<ept id="p1">](../deployment/create-apply-deployable-package.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>Learn how to apply a deployable package manually in the topic <bpt id="p1">[</bpt>Install a deployable package<ept id="p1">](../deployment/install-deployable-package.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>Raise a service request to copy database</source>
+        </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>To copy the golden database to a production environment, you must submit a service request of the <bpt id="p1">**</bpt>Other request<ept id="p1">**</ept> type through LCS to ask that Microsoft run the copy action.</source>
+        </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> You can't use a request of the <bpt id="p2">**</bpt>Database refresh request<ept id="p2">**</ept> type, because the request involves copying to a production environment.</source>
+        </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>In LCS, click the hamburger icon, and then click <bpt id="p1">**</bpt>Work items<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Work items<ept id="p1">](./media/lcsworkitemsmenu.png)](./media/lcsworkitemsmenu.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Work items<ept id="p1">**</ept> page, click <bpt id="p2">**</bpt>Add<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>Other request<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Other request<ept id="p1">](./media/lcsotherrequest.png)](./media/lcsotherrequest.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Other requests<ept id="p1">**</ept> dialog box, follow these steps:</source>
+        </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Environment name<ept id="p1">**</ept> field, select the production environment.</source>
+        </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>Set the <bpt id="p1">**</bpt>Preferred downtime start date<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Preferred downtime end date<ept id="p2">**</ept> fields.</source>
+        </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>The end date must be at least one hour after the start date.</source>
+        </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>Submit your request at least 24 hours before your preferred downtime window to help guarantee that resources are available to run the request.</source>
+        </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Request<ept id="p1">**</ept> field, enter the following details: <bpt id="p2">**</bpt>This is a request for a golden database copy from the sandbox environment <ph id="ph1">&amp;lt;</ph>source sandbox environment name<ph id="ph2">&amp;gt;</ph> to production. I acknowledge that this will overwrite the database currently in production.<ept id="p2">**</ept></source>
+        </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Other requests dialog box<ept id="p1">](./media/lcsotherrequestform.png)](./media/lcsotherrequestform.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source>Additional steps for Retail environments</source>
+        </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source>If your environment includes Retail components, you must perform additional steps so that the environment will work after the database import.</source>
+        </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source>Re-enter encrypted and environment-specific values in the target database</source>
+        </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>The values in the following forms are encrypted in the database, so all the imported values will be incorrect.</source>
+        </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>In the target system, enter the values that you documented earlier.</source>
+        </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source>Accounts receivable <ph id="ph1">&amp;gt;</ph> Payments setup <ph id="ph2">&amp;gt;</ph> Payments services</source>
+        </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source>Retail and commerce <ph id="ph1">&amp;gt;</ph> Channel setup <ph id="ph2">&amp;gt;</ph> POS setup <ph id="ph3">&amp;gt;</ph> POS profiles <ph id="ph4">&amp;gt;</ph> Hardware profiles</source>
+        </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source>Reenter data from encrypted and environment specific fields in the target database</source>
+        </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source>In the Finance and Operations client, enter the values that you documented for the encrypted and environment-specific fields.</source>
+        </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source>The following fields are affected.</source>
+        </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source>(The field names are given in <bpt id="p1">*</bpt>Table<ept id="p1">*</ept>.<bpt id="p2">*</bpt>Field<ept id="p2">*</ept> format.)</source>
+        </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Table.field name<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Where to set the value<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source>CreditCardAccountSetup.SecureMerchantProperties</source>
+        </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Accounts receivable<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Payments setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Payment services<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source>ExchangeRateProviderConfigurationDetails.Value</source>
+        </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>General ledger<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Currencies<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Configure exchange rate providers<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="298" translate="yes" xml:space="preserve">
+          <source>FiscalEstablishment<ph id="ph1">\_</ph>BR.ConsumerEFDocCsc</source>
+        </trans-unit>
+        <trans-unit id="299" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Organization administration<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Fiscal establishments<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Fiscal establishments<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="300" translate="yes" xml:space="preserve">
+          <source>FiscalEstablishmentStaging.CSC</source>
+        </trans-unit>
+        <trans-unit id="301" translate="yes" xml:space="preserve">
+          <source>This field is used by the Data Import/Export Framework</source>
+        </trans-unit>
+        <trans-unit id="302" translate="yes" xml:space="preserve">
+          <source>HcmPersonIdentificationNumber.PersonIdentificationNumber</source>
+        </trans-unit>
+        <trans-unit id="303" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Human resources<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Workers<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Workers<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="304" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Worker<ept id="p1">**</ept> tab, in the <bpt id="p2">**</bpt>Personal information<ept id="p2">**</ept> group, click <bpt id="p3">**</bpt>Identification numbers<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="305" translate="yes" xml:space="preserve">
+          <source>HcmWorkerActionHire.PersonIdentificationNumber</source>
+        </trans-unit>
+        <trans-unit id="306" translate="yes" xml:space="preserve">
+          <source>This field has been obsolete since the February 2016 release.</source>
+        </trans-unit>
+        <trans-unit id="307" translate="yes" xml:space="preserve">
+          <source>It was previously in the <bpt id="p1">**</bpt>Human resources<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Workers<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Actions<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>All worker actions<ept id="p4">**</ept> form.</source>
+        </trans-unit>
+        <trans-unit id="308" translate="yes" xml:space="preserve">
+          <source>SysEmailSMPTPassword.Password</source>
+        </trans-unit>
+        <trans-unit id="309" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>System administration<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Email<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Email parameters<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="310" translate="yes" xml:space="preserve">
+          <source>SysOAuthUserTokens.EncryptedAccessToken</source>
+        </trans-unit>
+        <trans-unit id="311" translate="yes" xml:space="preserve">
+          <source>This field is used internally by the AOS.</source>
+        </trans-unit>
+        <trans-unit id="312" translate="yes" xml:space="preserve">
+          <source>It can be ignored.</source>
+        </trans-unit>
+        <trans-unit id="313" translate="yes" xml:space="preserve">
+          <source>SysOAuthUserTokens.EncryptedRefr eshToken</source>
+        </trans-unit>
+        <trans-unit id="314" translate="yes" xml:space="preserve">
+          <source>This field is used internally by the AOS.</source>
+        </trans-unit>
+        <trans-unit id="315" translate="yes" xml:space="preserve">
+          <source>It can be ignored.</source>
+        </trans-unit>
+        <trans-unit id="316" translate="yes" xml:space="preserve">
+          <source>Known issues and limitations</source>
+        </trans-unit>
+        <trans-unit id="317" translate="yes" xml:space="preserve">
+          <source>I can't download the Management Studio installer</source>
+        </trans-unit>
+        <trans-unit id="318" translate="yes" xml:space="preserve">
+          <source>When you try to download the Management Studio installer, you might receive the following message: "Your current security settings do not allow this file to be downloaded."</source>
+        </trans-unit>
+        <trans-unit id="319" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Error message<ept id="p1">](./media/securitysettingscannotdownload.png)](./media/securitysettingscannotdownload.png)</ept> To work around this issue, in <bpt id="p2">**</bpt>Internet Options<ept id="p2">**</ept>, on the <bpt id="p3">**</bpt>Security<ept id="p3">**</ept> tab, enable file downloads for the <bpt id="p4">**</bpt>Internet<ept id="p4">**</ept> zone, as shown in the following illustration.</source>
+        </trans-unit>
+        <trans-unit id="320" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Enable file downloads<ept id="p1">](./media/securitysettingsfix.png)](./media/securitysettingsfix.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="321" translate="yes" xml:space="preserve">
+          <source>Performance</source>
+        </trans-unit>
+        <trans-unit id="322" translate="yes" xml:space="preserve">
+          <source>The following guidelines can help you achieve optimal performance:</source>
+        </trans-unit>
+        <trans-unit id="323" translate="yes" xml:space="preserve">
+          <source>Always export from a computer that is located in the same Azure data center as the Azure SQL database instance.</source>
+        </trans-unit>
+        <trans-unit id="324" translate="yes" xml:space="preserve">
+          <source>In practice, this guideline means that, when you export a copy of your sandbox database, you should export it from the sandbox AOS computer.</source>
+        </trans-unit>
+        <trans-unit id="325" translate="yes" xml:space="preserve">
+          <source>Always import the .bacpac file locally on the computer that is running the SQL Server instance.</source>
+        </trans-unit>
+        <trans-unit id="326" translate="yes" xml:space="preserve">
+          <source>Don't import it from Management Studio on a remote computer.</source>
+        </trans-unit>
+        <trans-unit id="327" translate="yes" xml:space="preserve">
+          <source>To help improve performance, in a one-box environment (which is also known as a Tier 1 environment) that is hosted in Azure, put the .bacpac file on drive D when you export it.</source>
+        </trans-unit>
+        <trans-unit id="328" translate="yes" xml:space="preserve">
+          <source>For more information about the temporary drive on Azure computers, see the <bpt id="p1">[</bpt>Understanding the temporary drive on Windows Azure Virtual Machines<ept id="p1">](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/)</ept> post on the Azure Support Team blog.</source>
+        </trans-unit>
+        <trans-unit id="329" translate="yes" xml:space="preserve">
+          <source>To help make the import process faster, and to help improve the speed of restore from a .bak file, grant the account that is running the SQL Server Windows service the <bpt id="p1">[</bpt>Instance File Initialization<ept id="p1">](https://msdn.microsoft.com/en-us/library/ms175935.aspx)</ept> right.</source>
+        </trans-unit>
+        <trans-unit id="330" translate="yes" xml:space="preserve">
+          <source>To easily implement this guideline for a developer environment, set SQL Server to run as the axlocaladmin account.</source>
+        </trans-unit>
+        <trans-unit id="331" translate="yes" xml:space="preserve">
+          <source>We recommend that you not use the option to export and import from SQL Azure in Management Studio.</source>
+        </trans-unit>
+        <trans-unit id="332" translate="yes" xml:space="preserve">
+          <source>(This option is also known as “Export data tier application”).</source>
+        </trans-unit>
+        <trans-unit id="333" translate="yes" xml:space="preserve">
+          <source>We recommend that you not use this approach, because there can be memory limitations for larger databases.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

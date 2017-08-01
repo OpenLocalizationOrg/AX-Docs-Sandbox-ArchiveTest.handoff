@@ -1,0 +1,528 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">e3870f185bed2c8353f0f4f7879685e28d40e336</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\lifecycle-services\ax-2012\security-upgrade-advisor-tool-user-guide.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">9c3bad3c4e48ce6454a2d206f7e08fc2104283bd</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ce893aed48aca4cef2761e9248e6a46e68f5207a</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Security Upgrade Advisor Tool user guide (AX 2012)</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>The Microsoft Dynamics AX Security Upgrade Advisor Tool is intended to help simplify the process of upgrading security settings from earlier versions of Microsoft Dynamics AX to Microsoft Dynamics AX 2012.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Security Upgrade Advisor Tool user guide (AX 2012)</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>The Microsoft Dynamics AX Security Upgrade Advisor Tool is intended to help simplify the process of upgrading security settings from earlier versions of Microsoft Dynamics AX to Microsoft Dynamics AX 2012.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This is pre-release documentation of a preliminary nature and is subject to change at any time without notice.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Microsoft cannot guarantee the accuracy of any information provided herein.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>The Security Upgrade Advisor Tool compares entry points and permissions between systems, and generates a list of matching privileges that can be used for a particular role.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>The role-to-privilege mapping is based on the user group–to–access right mapping in earlier versions of Microsoft Dynamics AX systems.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>The tool is designed as an aid for upgrading security settings and is not a one-click solution.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Developers are advised to review each suggestion carefully before making any changes.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>The list of suggestions generated is based on the following criteria:</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The entry point name, type, and access right are exactly matched between earlier versions of Microsoft Dynamics AX and Microsoft Dynamics AX 2012.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>The entry point name and type are exactly matched.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>However, for an access right, if an exact match is not found, a similar match suggestion is generated.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Any access right that is greater than View in both the earlier versions of Microsoft Dynamics AX and Microsoft Dynamics AX 2012 is considered a potential match.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Assumptions</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Before you use the tool, we assume that you have met the following prerequisites:</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>You are familiar with development environments in earlier versions of Microsoft Dynamics AX and Microsoft Dynamics AX 2012.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>You are familiar with the security model in earlier versions of Microsoft Dynamics AX and Microsoft Dynamics AX 2012.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>You have developer privileges in Microsoft Dynamics AX, so that you can run the tool from the Application Object Tree (AOT).</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>You have completed the code upgrade and data upgrade.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>The Security Upgrade Advisor Tool can be run at any time, but running it after a code upgrade enables artifacts to be carried over from earlier versions of Microsoft Dynamics AX.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Install the tool</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Run <bpt id="p1">**</bpt>SecurityUpgradeAdvisorTool.msi<ept id="p1">**</ept> to open the <bpt id="p2">**</bpt>Installation Wizard<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Accept the License Agreement, and then click <bpt id="p1">**</bpt>Install<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Finish<ept id="p1">**</ept> to complete the installation.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>After the <bpt id="p1">**</bpt>Installation Wizard<ept id="p1">**</ept> has finished running, the files are available at: x64 systems - %ProgramFiles(x86)%MicrosoftSecurity Upgrade Advisor Toolx32 systems - %ProgramFiles%MicrosoftSecurity Upgrade Advisor Tool</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Before running the tool</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Before you run the tool, here are few things that you should consider:</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Source Control – The tool does not support generating roles and privileges when source control is enabled.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Model – Perform all security upgrade tasks in a model.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>This provides the flexibility to export your newly generated settings to new environments.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>It also lets you delete the whole setting if you have to clean up and regenerate settings.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Testing – The tool generates security artifacts based on security settings from earlier versions of Microsoft Dynamics AX.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>We recommend that you iteratively review, fine-tune, and test each setting to make sure that the generated settings are the ones intended.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Running the tool</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>The following procedures describe the process you should follow when running the Security Upgrade Advisor Tool.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Export security settings from an environment running an earlier version of Microsoft Dynamics AX</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>In the environment that is running an earlier version of Microsoft Dynamics AX, import the following XPO: Job<ph id="ph1">\_</ph>ExportSecuritySettingsBulk.xpo.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Execute the X++ job ExportSecuritySettingsBuild.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>When prompted, enter the name of the file to save.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Export the file to a known location for later retrieval.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Run the Security Upgrade Wizard in Microsoft Dynamics AX 2012</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>The outputs of the wizard are custom roles in the AOT, named with a prefix that you specify.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>No users are assigned to these roles automatically.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>After roles are generated, you must manually assign roles to each user.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Clicking <bpt id="p1">**</bpt>Next<ept id="p1">**</ept> runs each step of the wizard.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Clicking <bpt id="p1">**</bpt>Cancel<ept id="p1">**</ept> closes the wizard.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Drain the client connections that are connected to the instance of Application Object Server (AOS) that you are working with.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Drain users from an AOS<ept id="p1">](http://technet.microsoft.com/library/d19bd816-cd9e-423a-94c7-aceb946baa30(AX.60).aspx)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Administrative Tools<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Services<ept id="p2">**</ept>, stop the <bpt id="p3">**</bpt>Microsoft Dynamics AX Object Server 6.0<ept id="p3">**</ept> service.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Use Windows PowerShell or AXUtil to import the model SecurityUpgradeAdvisorTool.axmodel into the Microsoft Dynamics AX 2012 AOT.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>How to: Export and Import a Model<ept id="p1">](http://msdn.microsoft.com/library/c2449a03-7574-4b9d-8518-9005b560209f(AX.60).aspx)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Start the <bpt id="p1">**</bpt>Microsoft Dynamics AX Object Server 6.0<ept id="p1">**</ept> service.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Open the Security Upgrade Advisor project, and open the <bpt id="p1">**</bpt>Forms<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>SecurityUpgradeWizard<ept id="p2">**</ept> form.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>**Important: **Compile the project and synchronize all tables in the object groups <bpt id="p1">**</bpt>UpgradeAdvisorTool<ept id="p1">**</ept> and <bpt id="p2">**</bpt>PrivelegeGenerationTool<ept id="p2">**</ept> in the AOT.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Next<ept id="p1">**</ept> to open the <bpt id="p2">**</bpt>Step 1 Import Settings<ept id="p2">**</ept> page.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>This step imports the .xml file of security information exported from an earlier version of Microsoft Dynamics AX into temp tables in Microsoft Dynamics AX 2012.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>This step uses the file generated in the previous section.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Next<ept id="p1">**</ept> to open the <bpt id="p2">**</bpt>Step 2 Find Privilege Matches<ept id="p2">**</ept> page.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>This step iterates through the existing security settings, and finds matching entry points and permissions in Microsoft Dynamics AX 2012.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Next<ept id="p1">**</ept> to open the <bpt id="p2">**</bpt>Step 3 Map User Groups to Custom Roles<ept id="p2">**</ept> page.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>This step generates new custom role mappings for the privileges that were found.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Next<ept id="p1">**</ept> to open the <bpt id="p2">**</bpt>Step 4 Export Security Upgrade Suggestions<ept id="p2">**</ept> page.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>This step exports all the mappings to a temporary table.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Next<ept id="p1">**</ept> to open the <bpt id="p2">**</bpt>Step 5 Security Upgrade Suggestions<ept id="p2">**</ept> page.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>This page of the wizard displays the suggested security mappings.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>**Important: ** We strongly recommend that you export the upgrade suggestions for additional analysis.You can copy and paste the data into Microsoft Excel for additional analysis by pressing Ctrl+T.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>For more information about how to analyze the suggested settings, see the next section.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>If, during your analysis of the security upgrade suggestions, you notice multiple items that have the <bpt id="p1">**</bpt>NoMatchingPrivilege<ept id="p1">**</ept> status, you may want to run the Privilege Generation Tool.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Generate Privileges<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Next<ept id="p1">**</ept> to open the <bpt id="p2">**</bpt>Step 6 Specify Custom Role Generation Options<ept id="p2">**</ept> page.</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>In this step, you can specify options for generating roles in the AOT:</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Select Include similar matches in the custom role to use privileges that match with <bpt id="p1">**</bpt>Similar<ept id="p1">**</ept> status, and to add them to the custom role.</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Optional prefix for custom role name<ept id="p1">**</ept> field, enter a prefix for the new role.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>We recommend that you use a prefix that helps you easily identify roles in the AOT later.</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>If your Microsoft Dynamics AX 2009 system had domains, you can prefix the domain name to the role to distinguish between similar user group names in different domains.</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Finish<ept id="p1">**</ept> to exit the wizard.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>When the wizard has finished running, custom roles based on the suggested security mappings are available in the AOT.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>We strongly recommend that you review the generated custom roles, and follow an iterative testing and refinement process to fine-tune your security settings.</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Analyzing upgrade suggestions</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>The result generated by step 5 of the Security Upgrade Advisor Tool is a list of all roles, entry points, permissions, and matching privileges.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>It contains the following columns.</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Columns</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;span class="ui"&gt;</bpt>Domain<ept id="p1">&lt;/span&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>The domain names imported from Microsoft Dynamics AX 2009.</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;span class="ui"&gt;</bpt>Role<ept id="p1">&lt;/span&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>The user group names imported from Microsoft Dynamics AX 2009.</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Data in the column has been formatted to remove any special characters.</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;span class="ui"&gt;</bpt>Privilege<ept id="p1">&lt;/span&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>The matching privileges in Microsoft Dynamics AX 2012.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>This column contains values only if the value in the <bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="ui"&gt;</bpt>Status<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept> column is <bpt id="p3">&lt;strong&gt;</bpt><bpt id="p4">&lt;span class="ui"&gt;</bpt>Exact<ept id="p4">&lt;/span&gt;</ept><ept id="p3">&lt;/strong&gt;</ept> or <bpt id="p5">&lt;strong&gt;</bpt><bpt id="p6">&lt;span class="ui"&gt;</bpt>Similar<ept id="p6">&lt;/span&gt;</ept><ept id="p5">&lt;/strong&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;span class="ui"&gt;</bpt>Entry Point Name<ept id="p1">&lt;/span&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>The entry point names imported from Microsoft Dynamics AX 2009.</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;span class="ui"&gt;</bpt>New Entry Point Name<ept id="p1">&lt;/span&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>If entry points were renamed from earlier versions of Microsoft Dynamics AX to Microsoft Dynamics AX 2012, the script automatically maps privileges based on the new entry point names, and populates this column with the new name.</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;span class="ui"&gt;</bpt>Entry Point Type<ept id="p1">&lt;/span&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>The entry point types.</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;span class="ui"&gt;</bpt>Entry Point Access Rights<ept id="p1">&lt;/span&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>The matching entry point permissions in Microsoft Dynamics AX 2012.</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>This column contains values only if the value in the <bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="ui"&gt;</bpt>Status<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept> column is <bpt id="p3">&lt;strong&gt;</bpt><bpt id="p4">&lt;span class="ui"&gt;</bpt>Exact<ept id="p4">&lt;/span&gt;</ept><ept id="p3">&lt;/strong&gt;</ept> or <bpt id="p5">&lt;strong&gt;</bpt><bpt id="p6">&lt;span class="ui"&gt;</bpt>Similar<ept id="p6">&lt;/span&gt;</ept><ept id="p5">&lt;/strong&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;span class="ui"&gt;</bpt>Entry Point Old Access Rights<ept id="p1">&lt;/span&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>The entry point rights that were configured in Microsoft Dynamics AX 2009.</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>This column is added for reference.</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;span class="ui"&gt;</bpt>Status<ept id="p1">&lt;/span&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>The status for each entry point match.</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>The following statuses are generated by the tool:</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;span class="ui"&gt;</bpt>Exact<ept id="p1">&lt;/span&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>The entry point, type, and access right exactly match a privilege in Microsoft Dynamics AX 2012.</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>The suggested privilege can be used in the specified role for similar security settings in Microsoft Dynamics AX 2012.</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;span class="ui"&gt;</bpt>Similar<ept id="p1">&lt;/span&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>The entry point and type match exactly, but no exact match for an access right was found.</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>However, there is a potential match, because both the old and new access rights have permissions greater than <bpt id="p1">&lt;strong&gt;</bpt>View<ept id="p1">&lt;/strong&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Important<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>The developer and administrator should review these rows, and make sure that the suggested privileges match the intended security outcome.</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;span class="ui"&gt;</bpt>NoEntryPoint<ept id="p1">&lt;/span&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>There were no matching entry point and type between earlier versions of Microsoft Dynamics AX and Microsoft Dynamics AX 2012.</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>A manual entry point mapping must be performed for items that are not found.</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;span class="ui"&gt;</bpt>NoMatchingPrivilege<ept id="p1">&lt;/span&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>Even though an entry point was found in Microsoft Dynamics AX 2012, the access right did not match any criteria.</source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>A manual access right mapping might be required, or it may be possible to generate a privilege by using the Privilege Generation Tool.</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;span class="ui"&gt;</bpt>Deprecated<ept id="p1">&lt;/span&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>The entry point has been removed from Microsoft Dynamics AX 2012.</source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>Privilege Generation Tool</source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>The Privilege Generation Tool is included as part of the Security Upgrade Advisor Tool.</source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>There are many scenarios where custom entry points may not have a privilege and associated access right defined.</source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>As a best practice, we recommend that a privilege be associated with an entry point.</source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>In cases where a privilege is not predefined, the Privilege Generation Tool can automatically generate privileges during the upgrade process.</source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>Use the following procedure to generate privileges for all entry points with a status of <bpt id="p1">**</bpt>NoMatchingPrivilege<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>From the Security Upgrade Tool, on the <bpt id="p1">**</bpt>Step 5 Security Upgrade Suggestions page, click Generate Privileges<ept id="p1">**</ept>.–or–Open the Privilege Generation Tool form from the AOT, under <bpt id="p2">**</bpt>PrivilegeGenerationTool<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Forms<ept id="p3">**</ept> <ph id="ph2">&amp;gt;</ph> SecurityUpgradePrivilegeGenerator.</source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Step 1: Privilege Generation Wizard<ept id="p1">**</ept> page, click <bpt id="p2">**</bpt>Next<ept id="p2">**</ept> to start the wizard.</source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>In step 2, specify an optional prefix to add to the names of the generated privileges, and then click <bpt id="p1">**</bpt>Next<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>Step 3 lists all the privileges that can be generated.</source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Create<ept id="p1">**</ept> for each privilege that you want to generate, and then click <bpt id="p2">**</bpt>Next<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>After privilege generation is completed, click <bpt id="p1">**</bpt>Finish<ept id="p1">**</ept> to close the wizard.</source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>In the AOT, verify that the privileges were generated successfully by looking under <bpt id="p1">**</bpt>Security<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Privileges<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>Update the AOT to display the new privileges, and then compile them to make sure that they have been generated correctly.</source>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>Run the Security Upgrade Advisor Tool again.</source>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Important<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>If you have the <bpt id="p1">**</bpt>SysUtilElementsLog<ept id="p1">**</ept> menu item from an earlier version of Microsoft Dynamics AX, it shows compile errors after privileges are generated.</source>
+        </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>The type of the <bpt id="p1">**</bpt>SysUtilElementsLog<ept id="p1">**</ept> menu item has changed to Display in Microsoft Dynamics AX 2012.</source>
+        </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Work Around:<ept id="p1">**</ept> To work around this issue, change the type to <bpt id="p2">**</bpt>Display<ept id="p2">**</ept>, and reassign the name to the privilege.</source>
+        </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>Frequently asked questions</source>
+        </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>Can you automatically generate role definitions from Excel?</source>
+        </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>No.</source>
+        </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>You cannot modify a spreadsheet in Excel and use those settings to generate roles.</source>
+        </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>However, you can generate custom roles and privileges by using the tool.</source>
+        </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>What happens to the custom menu items that were used in the earlier versions of Microsoft Dynamics AX?</source>
+        </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>When you run this tool on a system that has finished a code upgrade, you find a match for the menu items in the Microsoft Dynamics AX 2012 system.</source>
+        </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>However, there are no privileges for them.</source>
+        </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>You must create new privileges if you believe that they are applicable.</source>
+        </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>Does the tool consider other artifacts, such as tables and forms?</source>
+        </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>No, the tool only considers entry points, such as menu items.</source>
+        </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>In the Microsoft Dynamics AX 2012 security model, privileges are used to maintain access to the artifacts.</source>
+        </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>Are the user groups mapped for all the domains?</source>
+        </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>Yes.</source>
+        </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>The results are for each domain and user group.</source>
+        </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>Based on your organizational structure in Microsoft Dynamics AX 2012, decide which user group/domain combinations you want to create roles for in Microsoft Dynamics AX 2012.</source>
+        </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>Are users moved as part of the security upgrade?</source>
+        </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>No user information is stored or moved.</source>
+        </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>After the roles have been created in Microsoft Dynamics AX 2012, the user role mapping must be created manually.</source>
+        </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>Are Record Level Security settings moved as part of the security upgrade?</source>
+        </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>No Record Level Security (RLS) rules are upgraded.</source>
+        </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>In Microsoft Dynamics AX 2012, there is a new and richer data security mechanism called Extensible Data Security (XDS).</source>
+        </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>We recommend that you create new XDS policies based on your business requirements.</source>
+        </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>What are the next steps to complete the security upgrade?</source>
+        </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>After the Excel spreadsheet with the results is generated, you can use the role generation and privilege generation functionality in the tool to create roles and privileges automatically.</source>
+        </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>Then, test the system by assigning users to those roles, and validating that they have access and the exposed functionality is accurate.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

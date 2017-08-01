@@ -1,0 +1,714 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">7f18b9c9315f3c87b549987612929e1ea6a0980a</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\user-interface\general-form-guidelines.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">67189326f5c2a6d6f1f4ef66b7286428eea3b35e</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">4c9c8f4c42ad23acb9a13dc158df8b459032e77e</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>General form guidelines</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic contains the guidelines that apply to all forms, regardless of form pattern.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This checklist must be used in addition to any pattern-specific guidelines.</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>General form guidelines</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>This topic contains the guidelines that apply to all forms, regardless of form pattern.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This checklist must be used in addition to any pattern-specific guidelines.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Verification checklist</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>The verification checklist shows the steps for manually verifying that the form complies with the UX guidelines.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>This checklist doesn't include any guidelines that will be enforced automatically through the development environment.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Open the form in the browser, and walk through these steps.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Standard form guidelines</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Specific form patterns and subpatterns might have exceptions to these guidelines.<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The form layout is responsive when the browser is resized or the app is run on different device sizes.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>In other words, all the fields should be accessible to the user either by reflowing the layout or by scrolling to the fields.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Make sure that the form’s default View/Edit state is correct.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>By default, forms are in View mode.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>If a form should always be in Edit mode, you must explicitly set <bpt id="p1">**</bpt>Form.Design.ViewEditMode<ept id="p1">**</ept><ph id="ph1">=</ph><bpt id="p2">**</bpt>Edit<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>The View/Edit state should be appropriate to the state of the entity.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>For example, if the state of the entity is <bpt id="p1">**</bpt>Posted<ept id="p1">**</ept>, and the form can’t be edited, the default state should be View mode (and Edit mode should be disabled).</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Form captions<ept id="p1">**</ept>:</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Avoid setting the form caption programmatically.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Instead, consider setting the <bpt id="p1">**</bpt>TitleDataSource<ept id="p1">**</ept> property on the form design node to enable the framework to provide the caption dynamically.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>If you can't avoid setting the form caption programmatically, make sure that it's short (no more than 30 characters).</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>This guideline exists because a large font size is used for the form in some form types<bpt id="p1">*</bpt>.<ept id="p1">*</ept></source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Exceptions:<ept id="p1">**</ept> Custom Lookups, FactBoxes</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Form captions should provide the user with the context of the “type” of entity.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>The font size and the position of the form caption will vary, depending on the type of form.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Don't use the form caption to convey contextual information such as the parent record or other status information.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>All labels in the form are in sentence case.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>The framework guarantees consistency by putting some elements, such as Group labels, FactBox captions, Action Pane tab labels, and Button Group labels, in ALL CAPS.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>These strings should still be added in sentence case, but the framework will display them in all caps.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>All labels in the form are spelled correctly and use proper grammar.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Avoid overriding the formatting alignment for extended data types (EDTs).</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>When custom filters are used, no more than five should be specified.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Instead, consider pre-populating the filter pane with fields.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Occasionally, a decision must be made to determine whether a control should be temporarily disabled or hidden.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>The following information can help you make this determination:</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>A control should be temporarily disabled if the specific conditions must be met before the control can be enabled, and the user must first perform some action to meet those conditions.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>A control should be hidden from the user if there is nothing that the user can do to enable or edit the control.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Exception:<ept id="p1">**</ept> The control is used to convey status to the user.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>No UX guidelines are violated when security is applied for the various roles that have access to this form.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Example:<ept id="p1">**</ept> For role A, field A <bpt id="p2">**</bpt>is not<ept id="p2">**</ept> required, but for role B, field A <bpt id="p3">**</bpt>is<ept id="p3">**</ept> required.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>No UX guidelines are violated when country/region codes are applied.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Two fields can share a single label.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Group the fields into a group, and set the <bpt id="p1">**</bpt>FrameType<ept id="p1">**</ept> property of the group to <bpt id="p2">**</bpt>GroupedFieldsLabel<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>GeneralForm(1)<ept id="p1">](./media/generalform1.jpg)](./media/generalform1.jpg)</ept></source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Other form guidelines</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Use a StaticText control instead of StringEdit for multi-line read-only text.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>StringEdit controls are semantically incorrect for informational text, because they can never be edited.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Additionally, StringEdit controls typically have a border and different layout characteristics than StaticText controls, and these differences negatively affect the user experience.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Controls that are always read-only but data-bound should be marked as <bpt id="p1">**</bpt>ViewEdit<ept id="p1">**</ept><ph id="ph1">=</ph><bpt id="p2">**</bpt>View<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>(Dialogs and Drop Dialogs only) The button that is chosen as the default button should be the safest, most secure response to the task that the user is performing.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>For example, the default button should correspond to the main instruction of a Dialog or Drop Dialog.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>If safety and security aren't factors, the button that is most likely to be clicked or that is most convenient for the user should be chosen as the default button.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Exception:<ept id="p1">**</ept> Don't select a destructive response as the default button, unless there is an easy, obvious way to undo the command.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Field state guidelines</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>It's important that the state of a field be set correctly.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>The state of the field communicates key information about what the user can do and how to do it.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>The following table outlines key guidelines about when to use the various field states.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> In the past, field states weren't used correctly.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>People interchangeably used <bpt id="p1">**</bpt>Enabled<ept id="p1">**</ept><ph id="ph1">=</ph><bpt id="p2">**</bpt>No<ept id="p2">**</ept> and <bpt id="p3">**</bpt>Readonly<ept id="p3">**</ept><ph id="ph2">=</ph><bpt id="p4">**</bpt>Yes<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Note the semantic differences between the two states:</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Enabled<ept id="p1">**</ept><ph id="ph1">=</ph><bpt id="p2">**</bpt>No<ept id="p2">**</ept> – The data <bpt id="p3">**</bpt>is not<ept id="p3">**</ept> valid.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Readonly<ept id="p1">**</ept><ph id="ph1">=</ph><bpt id="p2">**</bpt>Yes<ept id="p2">**</ept> – The data <bpt id="p3">**</bpt>is<ept id="p3">**</ept> valid.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>State</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Enabled=No</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Disabled fields tell the user that the field isn't valid in the current state of the entity.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Use the <bpt id="p1">&lt;strong&gt;</bpt>Enabled<ept id="p1">&lt;/strong&gt;</ept> property to disable a field and prevent data input.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>A disabled field (<bpt id="p1">&lt;strong&gt;</bpt>Enabled<ept id="p1">&lt;/strong&gt;</ept><ph id="ph1">=</ph><bpt id="p2">&lt;strong&gt;</bpt>No<ept id="p2">&lt;/strong&gt;</ept>) has these characteristics:</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>The field is visually presented so that it looks unavailable.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>The text will be gray to indicate a “not valid” appearance.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>The field’s value is unimportant and won't be sent to the server for processing.</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>The field is skipped in the tab sequence.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>A disabled field might become enabled by actions that the user takes in the form.</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>If the user can never enable a field, consider hiding the field instead.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Readonly=Yes</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>For read-only fields, the data is valid in the current context but can't be edited.</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>The field isn't skipped in the tab sequence.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>If the value can never be edited, consider using <bpt id="p1">&lt;strong&gt;</bpt>ViewEditMode<ept id="p1">&lt;/strong&gt;</ept><ph id="ph1">=</ph><bpt id="p2">&lt;strong&gt;</bpt>View<ept id="p2">&lt;/strong&gt;</ept> for the field.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>ViewEditMode=View</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Use this state when the value in a field can never be edited by the user and is for informational purposes only.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Secured</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>Fields are typically hidden if they are secured.</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>In grids, each row can define different levels of security for each column.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Therefore, for cells where the user has no access, a padlock appears in the field.</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>This isn't an application-controlled ability and occurs automatically.</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Not available</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Similar to secured fields, data can appear in a grid where each row has a different set of columns.</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>In this case, cells that aren't applicable to a row display a “not” symbol.</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>This isn't an application-controlled ability and occurs automatically.</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Mandatory field guidelines</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>Mandatory fields are fields that the user must supply values for to guarantee database referential integrity and business logic integrity.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>By marking fields as mandatory, you provide an important indicator about what the user must do.</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>All mandatory fields are marked.</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>Mandatory fields should be set on metadata concepts in this order:</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Table</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>Data source</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Form field</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>Mandatory fields should be set programmatically, based on the state of the record.</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>For example, a field that is required in order to post an entity should be marked as mandatory.</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>If the user receives a validation message about an empty field, but that field isn't marked as mandatory, the user experience is negatively affected.</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>FastTabs guidelines</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>The fields in groups should flow across the FastTab.</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>GeneralForm(2)<ept id="p1">](./media/generalform2.jpg)](./media/generalform2.jpg)</ept></source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>The content of the first FastTab should be fully visible without scrolling.</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>FastTabs should never horizontally scroll when the fields are displayed.</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>The first FastTab should contain the most important fields for this entity (the fields that will be edited most often).</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>FastTabs should display summary information.</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Exceptions:<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>FastTabs that contain only a grid aren't expected to display summary fields.</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>Dimensions FastTab pages can't display summary fields, because this functionality isn't currently supported.</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>If the FastTab contains a grid, it should follow the <bpt id="p1">[</bpt>Toolbar and List<ept id="p1">](toolbar-list-subpattern.md)</ept>subpattern guidelines.</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>Radio button guidelines</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>Follow all <bpt id="p1">[</bpt>standard Microsoft guidelines for radio buttons.<ept id="p1">](http://msdn.microsoft.com/en-us/library/windows/desktop/aa511488.aspx)</ept></source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>Specifically, observe these guidelines:</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>The radio button control is used to select one option from a set of mutually exclusive choices.</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>There are between two and seven choices.</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>If there are more than seven choices, use a combo box instead.</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>If none of the options is a valid choice, there is another option to reflect this situation, such as <bpt id="p1">**</bpt>None<ept id="p1">**</ept> or <bpt id="p2">**</bpt>Does not apply<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>Selection of a radio button doesn’t perform commands, display other windows, such as a dialog box, or dynamically show/hide other controls that are related to the selection.</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>One radio button option is always selected by default.</source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>(However, see the exceptions at the MSDN guidelines link.)</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>The default option is the safest (that is, the option prevents loss of data or system access) and most secure and private option that is available.</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>Alternatively, the default option is the most likely and convenient option.</source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>Every radio button has a label.</source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>If subordinate controls are required for the selection of a radio button, follow these guidelines:</source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>The subordinate controls are visible and appear to the right of or below the radio button.</source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>Using the subordinate control selects the radio button.</source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>The subordinate controls aren't nested radio buttons that have other radio buttons or check boxes.</source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>Options are listed in a logical order:</source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>From the most likely to be selected to the least likely to be selected</source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>From the simplest operation to the most complex operation</source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>From the least risk to the most risk</source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>Check box and toggle guidelines</source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>Toggle buttons are typically used instead of traditional check boxes.</source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>checkboxtoggle<ept id="p1">](./media/checkboxtoggle.jpg)](./media/checkboxtoggle.jpg)</ept></source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>Follow all <bpt id="p1">[</bpt>standard Microsoft guidelines for check boxes.<ept id="p1">](http://msdn.microsoft.com/en-us/library/windows/desktop/aa511452.aspx)</ept></source>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>Specifically, observe these guidelines:</source>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>By default, use toggle buttons instead of check boxes in forms.</source>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>The label must follow the Microsoft guidelines for check box labels.</source>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Exceptions:<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>Use a check box when a large number of related options must be set in a group.</source>
+        </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>Use a check box inside <bpt id="p1">[</bpt>Custom Filter Group<ept id="p1">](custom-filter-group-subpattern.md)</ept>subpatterns.</source>
+        </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>Groups where a check box is used on the frame to collect related fields.</source>
+        </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>This exception is currently under review to add clarity.<ept id="p1">*</ept></source>
+        </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>Don't use check boxes/toggle buttons as a progress indicator.</source>
+        </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>Don't use check boxes to initiate a command.</source>
+        </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>However, a message box can be shown to the user to refine or clarify the choice.</source>
+        </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>Write the label so that it describes the selected state of the check box.</source>
+        </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>The meaning of the cleared state must be the unambiguous opposite of the selected state.</source>
+        </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>For a group of check boxes, use similar phrasing, and try to keep the length of all labels about the same.</source>
+        </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>Use positive phrasing.</source>
+        </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>Don't phrase a label so that selection of the check box means that an action is <bpt id="p1">**</bpt>not<ept id="p1">**</ept> performed.</source>
+        </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>Selection panel guidelines</source>
+        </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>Occasionally, you'll require a discrete list of options that the user can select from, where each option presents the same interface.</source>
+        </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>Don't use radio buttons to present the list of options.</source>
+        </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>Instead, use a combo box control inside a <bpt id="p1">[</bpt>Custom Filter Group <ept id="p1">](custom-filter-group-subpattern.md)</ept>group.</source>
+        </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>If the selection list is common to a set of items, the combo box should appear above all the items that are affected.</source>
+        </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>General grid guidelines</source>
+        </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>Grids should be sorted on the first column and in ascending order, unless the scenario requires a different sort order:</source>
+        </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>The identifier (ID) field for documents (Sales Order ID, Purchase Order ID, and so on)</source>
+        </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>The name/description field for entities (Vendor name, Customer name, and so on)</source>
+        </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>Depending on the scenario, sorting can be on another column that makes business sense, such as the sequence number or date.</source>
+        </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Editable grids<ept id="p1">**</ept>:</source>
+        </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>You must show and set the mandatory fields in the grid.</source>
+        </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>It's not acceptable to alert the user to a missing mandatory field only when the record is saved.</source>
+        </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>All editable grids must have a <bpt id="p1">**</bpt>New<ept id="p1">**</ept><ph id="ph1">/</ph><bpt id="p2">**</bpt>Delete<ept id="p2">**</ept> or <bpt id="p3">**</bpt>Add<ept id="p3">**</ept><ph id="ph2">/</ph><bpt id="p4">**</bpt>Remove<ept id="p4">**</ept> button in a toolbar above the grid, or in the global Action Pane.</source>
+        </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>Order the columns so that the most important columns are on the left.</source>
+        </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>Amount columns are most usable for a user when they are placed in the rightmost position in the grid.</source>
+        </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>Image columns can be used to convey state information for an entity or process, such as the workflow status.</source>
+        </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>In general, the image column should be placed on the left side of the grid, and there should not be a column label.</source>
+        </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>The meaning of the image should be indicated by the tooltip.</source>
+        </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>Numeric columns should be right-aligned.</source>
+        </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>All other columns should be left-aligned.</source>
+        </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>If the form can be opened in View mode and can be used to create records in Edit Mode, the property of the root data source that is connected to the grid should be <bpt id="p1">**</bpt>Insert If<ept id="p1">**</ept> <bpt id="p2">**</bpt>Empty<ept id="p2">**</ept><ph id="ph1">=</ph><bpt id="p3">**</bpt>No<ept id="p3">**</ept><bpt id="p4">*</bpt>.<ept id="p4">*</ept></source>
+        </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>This setting will prevent situations where a user sees and selects a blank record when a read-only form is opened.</source>
+        </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>Entity status field guidelines</source>
+        </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>The entity status must appear in the upper-right of the form, to the right of the title fields.</source>
+        </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source>The Details form patterns provide an optional Group where status fields can be defined.</source>
+        </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source>Standard Action Pane guidelines</source>
+        </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source>The Standard Action Pane is at the top of the form and follows the standard Action Pane guidelines.</source>
+        </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Exceptions:<ept id="p1">**</ept> Dialog, Drop Dialog, Lookups</source>
+        </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>For application-added actions, labels for similar actions should be used consistently across all Action Panes.</source>
+        </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>If the name of the button doesn't adequately explain the action, a supplemental description should be shown in the tooltip.</source>
+        </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source>Actions on an Action Pane should apply to the whole entity.</source>
+        </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source>Never put actions that apply only to portions of the entity on the Action Pane.</source>
+        </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source>Instead, use local toolbars that are near the objects that will be acted on.</source>
+        </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source>There should be no more than 10 tabs on a Standard Action Pane.</source>
+        </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source>There should be between one and eight actions per group.</source>
+        </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source>The first tab is the home tab.</source>
+        </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source>It should have the same name as the entity and should be singular.</source>
+        </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Activity tabs<ept id="p1">**</ept>:</source>
+        </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source>Actions that are related to a specific activity should be grouped into an appropriately named Activity tab.</source>
+        </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source>These tabs should be given the names of activities that the user will understand.</source>
+        </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source>The names should consist of action verbs.</source>
+        </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>Remove system-defined actions from Activity tabs.</source>
+        </trans-unit>
+        <trans-unit id="298" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>New<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Maintain<ept id="p2">**</ept> groups group actions, such as <bpt id="p3">**</bpt>New<ept id="p3">**</ept>, <bpt id="p4">**</bpt>Delete<ept id="p4">**</ept>, <bpt id="p5">**</bpt>Edit<ept id="p5">**</ept>, and <bpt id="p6">**</bpt>Save<ept id="p6">**</ept>, that are related to these primary actions.</source>
+        </trans-unit>
+        <trans-unit id="299" translate="yes" xml:space="preserve">
+          <source>The exception is <bpt id="p1">**</bpt>New<ept id="p1">**</ept> actions that are related to secondary types within the entity.</source>
+        </trans-unit>
+        <trans-unit id="300" translate="yes" xml:space="preserve">
+          <source>Remove duplicate <bpt id="p1">**</bpt>Refresh<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Attachments<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Export to Excel<ept id="p3">**</ept>, <bpt id="p4">**</bpt>Restore<ept id="p4">**</ept>, <bpt id="p5">**</bpt>OK<ept id="p5">**</ept>, and <bpt id="p6">**</bpt>Done<ept id="p6">**</ept> buttons.</source>
+        </trans-unit>
+        <trans-unit id="301" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>General tab<ept id="p1">**</ept>:</source>
+        </trans-unit>
+        <trans-unit id="302" translate="yes" xml:space="preserve">
+          <source>If there are common, infrequent actions that aren't related to a specific activity, they should appear on the last tab, which should be named <bpt id="p1">**</bpt>General<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="303" translate="yes" xml:space="preserve">
+          <source>Commands that appear on the <bpt id="p1">**</bpt>General<ept id="p1">**</ept> tab should not be repeated on other tabs.</source>
+        </trans-unit>
+        <trans-unit id="304" translate="yes" xml:space="preserve">
+          <source>Buttons on canvas guidelines</source>
+        </trans-unit>
+        <trans-unit id="305" translate="yes" xml:space="preserve">
+          <source>Buttons in the content area of a form that are related to the form, not to a specific field, should be placed on the standard Action Pane or in a Toolbar.</source>
+        </trans-unit>
+        <trans-unit id="306" translate="yes" xml:space="preserve">
+          <source>Button image guidelines</source>
+        </trans-unit>
+        <trans-unit id="307" translate="yes" xml:space="preserve">
+          <source>Buttons that require images should use symbols for their images.</source>
+        </trans-unit>
+        <trans-unit id="308" translate="yes" xml:space="preserve">
+          <source>If both an image and text are shown on a button, the image must be to the left of the text.</source>
+        </trans-unit>
+        <trans-unit id="309" translate="yes" xml:space="preserve">
+          <source>No other configurations are supported.</source>
+        </trans-unit>
+        <trans-unit id="310" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Standard Action Pane<ept id="p1">**</ept>:</source>
+        </trans-unit>
+        <trans-unit id="311" translate="yes" xml:space="preserve">
+          <source>Buttons that replace the system <bpt id="p1">**</bpt>New<ept id="p1">**</ept><ph id="ph1">/</ph><bpt id="p2">**</bpt>Delete<ept id="p2">**</ept> buttons should use the New/Delete symbols.</source>
+        </trans-unit>
+        <trans-unit id="312" translate="yes" xml:space="preserve">
+          <source>Common actions should have <bpt id="p1">**</bpt>ButtonDisplay<ept id="p1">**</ept><ph id="ph1">=</ph><bpt id="p2">**</bpt>Auto<ept id="p2">**</ept>, unless they have symbols that are used by other system buttons.</source>
+        </trans-unit>
+        <trans-unit id="313" translate="yes" xml:space="preserve">
+          <source>In that case, they should be <bpt id="p1">**</bpt>TextOnly<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="314" translate="yes" xml:space="preserve">
+          <source>Consult UX if there are other common actions that you believe should have symbols assigned.</source>
+        </trans-unit>
+        <trans-unit id="315" translate="yes" xml:space="preserve">
+          <source>Other uncommon actions should be <bpt id="p1">**</bpt>TextOnly<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="316" translate="yes" xml:space="preserve">
+          <source>Images aren't supported on Action Pane tabs.</source>
+        </trans-unit>
+        <trans-unit id="317" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Toolbars<ept id="p1">**</ept>:</source>
+        </trans-unit>
+        <trans-unit id="318" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Add<ept id="p1">**</ept><ph id="ph1">/</ph><bpt id="p2">**</bpt>Remove<ept id="p2">**</ept> (if applicable) should be the first buttons, should use the Add/Remove symbols, and should have both images and text (<bpt id="p3">**</bpt>ButtonDisplay<ept id="p3">**</ept><ph id="ph2">=</ph><bpt id="p4">**</bpt>Auto<ept id="p4">**</ept>).</source>
+        </trans-unit>
+        <trans-unit id="319" translate="yes" xml:space="preserve">
+          <source>Common actions should be moved just to the right of the <bpt id="p1">**</bpt>Add<ept id="p1">**</ept><ph id="ph1">/</ph><bpt id="p2">**</bpt>Remove<ept id="p2">**</ept> buttons.</source>
+        </trans-unit>
+        <trans-unit id="320" translate="yes" xml:space="preserve">
+          <source>These actions can also have both images and text (<bpt id="p1">**</bpt>ButtonDisplay<ept id="p1">**</ept><ph id="ph1">=</ph><bpt id="p2">**</bpt>Auto<ept id="p2">**</ept>).</source>
+        </trans-unit>
+        <trans-unit id="321" translate="yes" xml:space="preserve">
+          <source>If no appropriate image exists, these can be <bpt id="p1">**</bpt>TextOnly<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="322" translate="yes" xml:space="preserve">
+          <source>Subsequent uncommon actions should be <bpt id="p1">**</bpt>TextOnly<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="323" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Inside MenuButtons<ept id="p1">**</ept>:</source>
+        </trans-unit>
+        <trans-unit id="324" translate="yes" xml:space="preserve">
+          <source>Images aren't supported on buttons in MenuButtons.</source>
+        </trans-unit>
+        <trans-unit id="325" translate="yes" xml:space="preserve">
+          <source>Text guidelines</source>
+        </trans-unit>
+        <trans-unit id="326" translate="yes" xml:space="preserve">
+          <source>Wording, punctuation, and abbreviations must follow the iX guidelines.</source>
+        </trans-unit>
+        <trans-unit id="327" translate="yes" xml:space="preserve">
+          <source>Appendix</source>
+        </trans-unit>
+        <trans-unit id="328" translate="yes" xml:space="preserve">
+          <source>Frequently asked questions</source>
+        </trans-unit>
+        <trans-unit id="329" translate="yes" xml:space="preserve">
+          <source>This section will have answers to frequently asked questions that are related to this guideline/pattern.</source>
+        </trans-unit>
+        <trans-unit id="330" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>What types of fields aren't supported as summary fields on Fast Tabs?<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="331" translate="yes" xml:space="preserve">
+          <source>For performance reasons, we don't currently support reference groups and display methods.</source>
+        </trans-unit>
+        <trans-unit id="332" translate="yes" xml:space="preserve">
+          <source>Additionally, unbound fields can't be used as summary fields.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,258 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">790933c9af33cfc60fa69e61802039ae28ee05f4</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\user-interface\gantt-development-guide.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">6f8076438b55d0f36cd55930de9e26a1a3f57b0f</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">56db5ebca80e148cd9fd517e141ad7e142aa29b4</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Gantt development guide</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This article describes how to create new forms by using the Gantt control.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>We highly recommend that you look at the code in the Tutorial_Gantt form.</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This code demonstrates the full capabilities of the Gantt control, and shows how to load data and work with the application programming interface (API).</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Gantt development guide</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This article describes how to create new forms by using the Gantt control.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>We highly recommend that you look at the code in the Tutorial_Gantt form.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>This code demonstrates the full capabilities of the Gantt control, and shows how to load data and work with the application programming interface (API).</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>What’s new for Gantt</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>In Microsoft Dynamics AX 2012, the client was a Win32 application, and extensions used Microsoft ActiveX, WinForm, or Microsoft Windows Presentation Foundation (WPF) controls.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>ActiveX and ManagedHost controls can no longer be used to add custom controls, because they are incompatible with the HTML-based platform.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Instead, a new extensible control framework lets you add controls by using HTML and JavaScript.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The new Gantt control is implemented by using this framework.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Note that, unlike in earlier versions, you don't have to pay an additional license fee to use the control in your own forms or to extend the control.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Highlevel overview of the control</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>The following illustration shows the visual elements of the Gantt control.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Elements of the Gantt<ept id="p1">](./media/ganttchartelements.png)](./media/ganttchartelements.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>To add the control to a new form, just right-click the top node in the form design, and then select <bpt id="p1">**</bpt>Add new<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Gantt<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>After you set the <bpt id="p1">**</bpt>Height<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Width<ept id="p2">**</ept> properties to <bpt id="p3">**</bpt>SizeToAvailable<ept id="p3">**</ept>, there are no other properties that must be set in the designer.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Unlike many other controls, Gantt controls can't be bound to data sources.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Instead, you must add all data to the control from code.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Adding activities, links, and milestone markers</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>The most basic element of a Gantt chart is the task activity.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Each activity is allocated its own row in the chart.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Activities can form a hierarchy, like a tree, by referencing a parent activity.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Additionally, any two activities can be connected to each other through links (across hierarchies).</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>To add data to the control, you build up a list that contains the instances of the element that you want to add.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>You then assign the list to the control by using a <bpt id="p1">**</bpt>parm<ept id="p1">**</ept> method.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Note that, when you modify data, you can't just modify the content of the list.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>To notify the client that data has changed, and to trigger a refresh, you must reassign the list to the control by using the <bpt id="p1">**</bpt>parm<ept id="p1">**</ept> method.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>API for activities and links<ept id="p1">](./media/ganttchartactivitiesapi.png)](./media/ganttchartactivitiesapi.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Each activity must have a unique ID across all activity types.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>This ID is required in order to build the hierarchy and the links.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>The ID is also used to identify the activity when the server is notified after a user interaction.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>There are two types of milestones: the milestone activity is a stand-alone activity that receives its own row in the chart and can be referenced from the links, whereas the milestone markers appear on the same row as the related activity.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Both types of markers are represented by using symbols from the Dynamics Symbol font.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Column headers and content</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>In the “grid” on the left side of the control, you can arrange the data into columns.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>The column definitions are provided through the <bpt id="p1">**</bpt>GanttControl.parmColumns<ept id="p1">**</ept> property, which is a list of <bpt id="p2">**</bpt>GanttControlColumn<ept id="p2">**</ept> objects.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>The content of the columns is given as a simple <bpt id="p1">**</bpt>List<ept id="p1">**</ept> object that contains the text strings for an activity through the <bpt id="p2">**</bpt>GanttControlActivity.parmColumnTexts<ept id="p2">**</ept> property.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Note that the values in the column list must be strings.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Therefore, any formatting of numbers, enumerations, dates, and so on, must occur on the server side.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>The formatting of <bpt id="p1">**</bpt>utcdatetime<ept id="p1">**</ept> must take into account the user's preferred time zone, because that time zone will be used when the Gantt chart is rendered.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>API for configuring the control<ept id="p1">](./media/ganttchartconfigurationapi.png)](./media/ganttchartconfigurationapi.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Working times</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>An activity can reference a calendar.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>A calendar is basically a list of working time intervals.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>A calendar is used to visually separate working time from non-working time by giving the “cells” (intersections of a row and a time scale interval) a different background color.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Note that these working time intervals don't have to come from the standard calendar tables.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>The intervals are just data that you can load from anywhere.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Although calendars are a nice feature that can give you a good overview, there are some performance issues that you must consider.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>When you turn calendars on (by setting <bpt id="p1">**</bpt>GanttControlConfiguration.parmUseCalendars<ept id="p1">**</ept> to <bpt id="p2">**</bpt>true<ept id="p2">**</ept>), each “cell” is rendered in HTML by using a DIV element.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>If a calendar shows lots of activities for a long period at a very granular minor timescale, there will be many DIV elements.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Depending on the browser and hardware, the large number of DIV elements can cause performance issues for the user.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>In this case, you might have to turn calendars off.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>In this way, you significantly reduce the number of DIV elements that must be rendered.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>The control can't turn off calendars by itself to improve performance.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Based on the specific scenario, you must determine what will be best for the user.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Color use</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Elements such as the activities and milestone markers have a color property.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Typically, either the int value for a specific color is calculated by using the <bpt id="p1">**</bpt>WinAPI::RGB2int<ept id="p1">**</ept> method, or the user sets the value by using the color picker (which is opened by calling <bpt id="p2">**</bpt>ColorSelection::selectColor<ept id="p2">**</ept>).</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Instead of controlling the colors yourself, you can specify that the colors should adhere to the current theme.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>When you set the <bpt id="p1">**</bpt>GanttControlConfiguration.parmUseThemeColors<ept id="p1">**</ept> option to <bpt id="p2">**</bpt>true<ept id="p2">**</ept>, if any color values have been set that aren't part of the current theme, they are overridden (no colors have to be specified manually).</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>When theme colors are used, the <bpt id="p1">**</bpt>parmIsActive<ept id="p1">**</ept> flag on an activity is used to determine whether the activity should appear in a dark color or a light color.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Interactions</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Whenever the user interacts with the Gantt, an event is raised to notify the server-side code.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>The following events are currently available:</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>onActivitySelected(str <ph id="ph1">\_</ph>activityId, GanttControlActivityIdCollection <ph id="ph2">\_</ph>allSelectedActivityIds)</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>onActivityDblClick(str <ph id="ph1">\_</ph>activityId)</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>onSummaryActivityExpand(str <ph id="ph1">\_</ph>activityId)</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>onSummaryActivityCollapse(str <ph id="ph1">\_</ph>activityId)</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>onActivityChanged(GanttControlActivityModification <ph id="ph1">\_</ph>modification, GanttControlActivityModificationResponse <ph id="ph2">\_</ph>response)</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>All these events are one-way notifications from the client.</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>However, the <bpt id="p1">**</bpt>onActivityChanged<ept id="p1">**</ept> event is somewhat special, because you can set a response.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Typically, when a user makes a modification (for example, he or she drags an activity to a new time), either other activities must also be updated or some adjustments must be made to the activity itself (for example, the column texts must be changed).</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>GanttControlActivityModificationResponse<ept id="p1">**</ept> response, you can provide a list of activities that must be updated.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>If the change that the user makes is just accepted as is, no response must be set.</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>However, at the very least, the column texts of the current activity must be updated in most cases, to guarantee that the new from and to dates appear.</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>On an activity, the <bpt id="p1">**</bpt>parmAllowMove<ept id="p1">**</ept> flag determines whether the activity can be moved.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>However, higher-level flags on <bpt id="p1">**</bpt>GanttControlConfiguration<ept id="p1">**</ept> determine whether any activity can be moved (<bpt id="p2">**</bpt>parmAllowMoveActivities<ept id="p2">**</ept>) or resized (<bpt id="p3">**</bpt>parmAllowResizeActivities<ept id="p3">**</ept>), or whether the completion percentage for the activity can be changed (<bpt id="p4">**</bpt>parmAllowCompletionChange<ept id="p4">**</ept>).</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

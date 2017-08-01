@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">1d2a7d2645ace2f41bae9fef1efc8e489b5442ae</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">retail\dev-itpro\hardware-station-extensibility.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">d2e54f0d200c90a4cc1a57f80332923949ff0378</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">6bbe5abbef66f299f3774502f90d1fa78fbf8429</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Hardware Station overview and extensibility</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic explains how to extend Hardware Station to add support for new devices and new device types for existing devices.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Hardware Station overview and extensibility</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This topic explains how to extend Hardware Station to add support for new devices and new device types for existing devices.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Retail Hardware Station overview</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Retail Hardware Station is used by Retail Modern POS and Cloud POS to connect to retail hardware peripherals such as printers, cash drawers, scanners, and payment terminals.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>HWS-Local-Traditional<ept id="p1">](./media/hws-local-300x236.png)](./media/hws-local.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>HWS-Shared<ept id="p1">](./media/hws-shared-300x224.png)](./media/hws-shared.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Retail Hardware Station setup</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Before you start, use the information in <bpt id="p1">[</bpt>Retail hardware station configuration and installation<ept id="p1">](..\retail-hardware-station-configuration-installation.md)</ept> to install Hardware Station, and to get a feel of what hardware is and how it's installed.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Retail Hardware Station architecture</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Hardware Station exposes Web API for Hardware Station application programming interfaces (APIs).</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Hardware Station can be extended either by implementing a new controller for a new device (for example, a cash dispenser) or by overriding an existing controller for an existing device type (for example, a new Audio Jack magnetic stripe reader (MSR) implementation).</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Hardware Station Architecture<ept id="p1">](./media/hardware-station-architecture-1024x764.png)](./media/hardware-station-architecture.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Retail Hardware Station extensibility scenarios</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Extensibility in Hardware Station is achieved by using <bpt id="p1">[</bpt>Managed Extensibility Framework (MEF)<ept id="p1">](https://msdn.microsoft.com/en-us/library/dd460648(v=vs.110).aspx)</ept>, which is supported by .NET.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Extensibility guideline:<ept id="p1">**</ept> Always write your extension in your own extension assembly.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>That way, you're writing a true extension, and upgrades will be much easier.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>There are two basic scenarios for extension:</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Adding a new device<ept id="p1">**</ept> – The out-of-box Hardware Station doesn't already support the device (for example, a cash dispenser).</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Therefore, you must add support for the new device in Hardware Station.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Adding a new device type for an existing device<ept id="p1">**</ept> – The out-of-box Hardware Station implementation already supports the device (for example, an MSR), but you must add support for a specific device type (for example, an Audio Jack MSR implementation).</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Scenario 1: Adding a new device</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>For this scenario, we will add support for a cash dispenser device in Hardware Station.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>In our example, we will create a fake cash dispenser that dispenses cash in the Notepad file.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>However, this example will help you understand the end-to-end extensibility of Hardware Station.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>The Retail software development kit (SDK) has a cash dispenser sample.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>See RetailSdk<ph id="ph1">\\</ph>SampleExtensions<ph id="ph2">\\</ph>HardwareStation.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>In this case, we must add a new Web API controller and helper properties/methods.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>The new <bpt id="p1">**</bpt>CashDispender<ept id="p1">**</ept> controller must extend <bpt id="p2">**</bpt>ApiController<ept id="p2">**</ept> and <bpt id="p3">**</bpt>IHardwareStationController<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Export<ept id="p1">**</ept> attribute string here specifies the device that this controller is used for: <ph id="ph1">\[</ph>Export("CASHDISPENSER", typeof(IHardwareStationController))<ph id="ph2">\]</ph></source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Scenario 2: Adding a new device type for an existing device</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>For this scenario, we will add support for a new device type for an existing device (an Audio Jack MSR implementation).</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Export<ept id="p1">**</ept> attribute string specifies the device that this controller is used for: <ph id="ph1">\[</ph>Export("MSR", typeof(IHardwareStationController))<ph id="ph2">\]</ph></source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Because there will be multiple controllers for MSRs, Hardware Station uses the configuration file to determine which implementation to use at run time.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>For more information, see the "Retail Hardware Station extensibility configuration" section later in this article.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Retail Hardware Station extensibility configuration</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Configuration for IIS-hosted Hardware Station</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Before Hardware Station can consume your extension, the <bpt id="p1">**</bpt>composition<ept id="p1">**</ept> section in the Hardware Station Web.config file must be updated so that it includes an entry for your extension.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>The order of the composition targets in the configuration file determines precedence.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Hardware Station Web Config<ept id="p1">](./media/hws-webconfig.png)](./media/hws-webconfig.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Configuration for local IPC-based Hardware Station</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Before local Hardware Station can consume your extension, the <bpt id="p1">**</bpt>composition<ept id="p1">**</ept> section in the Modern POS DLLHost.exe.config file (C:<ph id="ph1">\\</ph>Program Files (x86)<ph id="ph2">\\</ph>Microsoft Dynamics AX<ph id="ph3">\\</ph>70<ph id="ph4">\\</ph>Retail Modern POS<ph id="ph5">\\</ph>ClientBroker) must be updated so that it includes an entry for your extension.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>The order of the composition targets in the configuration file determines precedence.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>[</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Local Hardware station config</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,237 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">eace2232feea44365cce1df5df71e5fda4b050b3</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\lifecycle-services\ax-2012\install-ax-2012-r3.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">5bae3d392c600c3eb1eb636fc02859f917a725e5</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dc5e1714e6df31639325dd8c30b5546ae56c1a28</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Install Data import/export framework for AX 2012 R3</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic describes how to install the Data Import/Export Framework for Microsoft Dynamics AX 2012 R3.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Install the Data import/export framework for AX 2012 R3</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This topic describes how to install the Data Import/Export Framework for Microsoft Dynamics AX 2012 R3.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Before you begin, your environment must include the following components:</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>A running version of AX 2012 R3 that has been configured for your business.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>For more information about how to install AX 2012 R3, see <bpt id="p1">[</bpt>Install Microsoft Dynamics AX 2012<ept id="p1">](https://technet.microsoft.com/en-us/library/dd362138.aspx)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>A running instance of Microsoft SQL Server Integration Services.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>The version of SQL Server must be the same as the version that hosts the Microsoft Dynamics AX business and model store databases.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>The supported versions are SQL Server 2008 R2, SQL Server 2012, and SQL Server 2014.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>For more information about how to install SQL Server Integration Services, see <bpt id="p1">[</bpt>Install Integration Services<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=394975&amp;clcid=0x409)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> If you have previously installed the Data Import/Export Framework from InformationSource, you must fully uninstall it and then reinstall it for AX 2012 R3.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>As part of the uninstallation, you must remove all binary files by using <bpt id="p1">**</bpt>Add/Remove Programs<ept id="p1">**</ept>, and you must also uninstall the Data Import/Export Framework model.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>For more information, see Uninstall Microsoft Dynamics AX and <bpt id="p1">[</bpt>How to: Remove (Uninstall) a Model<ept id="p1">](https://technet.microsoft.com/en-us/library/hh433514.aspx)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Install the version of the Data Import/Export Framework that is available in AX 2012 R3</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Components of the Data Import/Export Framework must be installed as follows:</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The Data Import/Export Framework service must be installed on a computer that is running SQL Server Integration Services.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>The Data Import/Export Framework server must be installed on a computer that is running an instance of Microsoft Dynamics AX Application Object Server (AOS).</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>The Data Import/Export Framework client must be installed on a computer that is running the Microsoft Dynamics AX client.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>These components can be on either the same computer or different computers.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>You must run the installer locally on each computer.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Start <bpt id="p1">**</bpt>Microsoft Dynamics AX Setup<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Under <bpt id="p1">**</bpt>Install<ept id="p1">**</ept>, select <bpt id="p2">**</bpt>Microsoft Dynamics AX components<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Advance through the first wizard pages.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Next<ept id="p1">**</ept> on each page to accept the default settings.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>If the <bpt id="p1">**</bpt>Setup Support files<ept id="p1">**</ept> have not yet been installed on the computer, the <bpt id="p2">**</bpt>Select a file location<ept id="p2">**</ept> page is displayed.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Setup Support files<ept id="p1">**</ept> are required for installation.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Enter a file location or accept the default location, and then click <bpt id="p1">**</bpt>Next<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Select components<ept id="p1">**</ept> page, select the appropriate component for the computer that you are installing to, and then click <bpt id="p2">**</bpt>Next<ept id="p2">**</ept>:</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>On the computer that is running SQL Server Integration Services, select <bpt id="p1">**</bpt>Data Import/Export Framework (DIXF) service<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>On the AOS instance, select AOS component.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>A restart of the AOS service is required as part of the installation.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>On the client computer, select <bpt id="p1">**</bpt>Client component<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>A prerequisite validation check runs.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Address any issues that the prerequisite check finds outside the installer, and then restart the validation check.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>When all prerequisites have been found, click <bpt id="p1">**</bpt>Next<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>If the wizard displays the <bpt id="p1">**</bpt>Configure the Data Import/Export Framework service<ept id="p1">**</ept> page, specify a service account.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>We recommend that you use the same service account as that used for the AOS service.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Next<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>If the wizard displays the <bpt id="p1">**</bpt>Configure the Data Import/Export Framework extensions<ept id="p1">**</ept> page, specify the name of the server that runs the Data Import/Export Framework service.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Next<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Another prerequisite validation check might run.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Address any issues that the prerequisite check finds outside the installer, and then restart the validation check.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>When all prerequisites have been found, click <bpt id="p1">**</bpt>Next<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Ready to install<ept id="p1">**</ept> page, click <bpt id="p2">**</bpt>Install<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Setup was completed successfully<ept id="p1">**</ept> page, click <bpt id="p2">**</bpt>Finish<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Configure the Data Import/Export Framework</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>When you have finished installing the Data Import/Export Framework, follow these steps to configure it.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Add the Data Import/Export Framework service account to the <bpt id="p1">**</bpt>Microsoft Dynamics AX Data Import Export Framework Service Users<ept id="p1">**</ept> local group on the computer that is running the Data Import/Export Framework service.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Then restart that computer.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>**Note: ** For more information about how to add a service account to a group, see <bpt id="p1">[</bpt>Add a member to a local group<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=394060&amp;clcid=0x409)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Add the AOS service account to the <bpt id="p1">**</bpt>Microsoft Dynamics AX Data Import Export Framework Service Users<ept id="p1">**</ept> local group on the computer that is running the AOS instance.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Then restart that computer.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Set the Data Import/Export Framework parameters.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>The Data Import/Export Framework requires a shared directory that the Data Import/Export Framework service account must have read access to.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>The AOS service account must have read and write access to the directory.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>The AOS service writes data to the shared directory, so that the Data Import/Export Framework can use SQL Server Integration Services to read the data.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>For performance reasons, we recommend that the directory be located on the same server as SQL Server Integration Services.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Security Note:<ept id="p1">**</ept> Be aware that the shared directory may contain sensitive data, depending on what you are importing and exporting.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Ensure that as few users as possible have access to the location, in addition to the AOS service account and the Data Import/Export Framework service account.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>In an AX 2012 R3 client, go to <bpt id="p1">**</bpt>Data Import/Export Framework<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Data Import/Export Framework parameters<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Shared working directory<ept id="p1">**</ept> field, enter a shared directory, and then click <bpt id="p2">**</bpt>Validate<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>This step verifies that the AOS account can write to the location, and that the Data Import/Export Framework can read from the location.If both these conditions are true, the validation icon turns green.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>If you want to skip rows that contain errors when data is processed, select <bpt id="p1">**</bpt>Ignore error<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>If you select <bpt id="p1">**</bpt>Ignore error<ept id="p1">**</ept>, you can also select <bpt id="p2">**</bpt>Create error file<ept id="p2">**</ept> to write any errors to a file.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>You can use the <bpt id="p1">**</bpt>Data access mode<ept id="p1">**</ept> field to control the method that SQL Server Integration Services uses to load data.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>You can also use the <bpt id="p1">**</bpt>Maximum insert commit size<ept id="p1">**</ept> field to control the size of the batches that are loaded.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Configure the Data Import/Export Framework for use by external services, such as Lifecycle Services</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>In order to connect to the Data Import/Export Framework from an external service, such as Lifecycle Services, the <bpt id="p1">**</bpt>DMFEntityExecutionService<ept id="p1">**</ept> and <bpt id="p2">**</bpt>DMFService<ept id="p2">**</ept> service groups must be deployed and enabled to provide inbound ports.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>In an AX 2012 R3 client, open a development workspace.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Under <bpt id="p1">**</bpt>Service Groups<ept id="p1">**</ept>, deploy the following two service groups:</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>DMFEntityExecutionService<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>DMFService<ept id="p1">**</ept></source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

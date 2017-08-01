@@ -1,0 +1,234 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">d1cea3b8de927ea795e3ea4608c03f2b48dccf63</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\deployment\arm-onboarding.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">fbbd348a252c2f3ac43256aad864582d56f1e6eb</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2e8a5391dbb1e06b1d80f74585e0cfc961133dc3</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Azure Resource Manager onboarding</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic explains how to complete the Azure Resource Manager (ARM) onboarding process for your connectors.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Azure Resource Manager onboarding</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This topic explains how to complete the Azure Resource Manager (ARM) onboarding process for your connectors.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>To deploy Microsoft Azure Resource Manager (ARM) topologies, which include Microsoft Dynamics 365 for Operations Platform update 2 (August 2016), you must complete the ARM onboarding process for your connectors.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>To start the onboarding process, you must have the following items:</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>The Azure subscription ID that you're deploying to</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Ownership of the Azure subscription, or access to the subscription owner, so that you can add contributor workflows, and the Upload Management certificate</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>The tenant administrator, to work through the admin consent workflow</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>ARM onboarding process</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>You can consider ARM onboarding a two-step procedure, where each step has its own sub-procedures.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>You must complete all these procedures for every subscription that you add to the Microsoft Dynamics Lifecycle Services (LCS) project.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Authorize the LCS Deployment Service (DSU) to work on the Azure subscription.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Authorize the workflow.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Set the contributor workflow.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Enable the Azure subscription to deploy ARM resources.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Enable the Azure connector, and add an LCS user.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Optional: Upload the Management certificate.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Configure deployment settings.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Authorize the LCS DSU to work on the Azure subscription</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Complete the following procedures to authorize the LCS DSU to work on the Azure subscription.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Authorize the workflow</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>The administrator of the tenant must complete the following procedure.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>In LCS, on the <bpt id="p1">**</bpt>Project<ept id="p1">**</ept> page, in the <bpt id="p2">**</bpt>Environments<ept id="p2">**</ept> section, click <bpt id="p3">**</bpt>Microsoft Azure settings<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Project settings<ept id="p1">**</ept> page, on the <bpt id="p2">**</bpt>Azure connectors<ept id="p2">**</ept> tab, in the <bpt id="p3">**</bpt>Organization list<ept id="p3">**</ept> group, click <bpt id="p4">**</bpt>Authorize<ept id="p4">**</ept> to start the ARM Contributor workflow.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>This workflow sets up permissions for the DSU, so that it can deploy to your subscription on your behalf.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Grant admin consent<ept id="p1">**</ept> page, click <bpt id="p2">**</bpt>Authorize<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Then sign in by using the administrator account of the Azure subscription that you must connect to, and click <bpt id="p1">**</bpt>Accept<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>The authorization is now shown as completed.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Set the contributor workflow</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Follow these steps to assign the <bpt id="p1">**</bpt>Contributor<ept id="p1">**</ept> role to the <bpt id="p2">**</bpt>Dynamics Deployment Services <ph id="ph1">\[</ph>wsfed-enabled<ph id="ph2">\]</ph><ept id="p2">**</ept> application.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">[</bpt>Azure portal<ept id="p1">](https://portal.azure.com)</ept>, on the <bpt id="p2">**</bpt>Subscription<ept id="p2">**</ept> tab, select the Azure subscription, and then click the <bpt id="p3">**</bpt>Access Control (IAM)<ept id="p3">**</ept> line item.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept>, select <bpt id="p2">**</bpt>Contributor<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>OK<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> Some Azure subscriptions have a <bpt id="p2">**</bpt>Users<ept id="p2">**</ept> section instead of an <bpt id="p3">**</bpt>Access control (IAM)<ept id="p3">**</ept> section.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>In this case, in the <bpt id="p1">**</bpt>Add users<ept id="p1">**</ept> dialog box, in the <bpt id="p2">**</bpt>Select<ept id="p2">**</ept> field, enter <bpt id="p3">**</bpt>Dynamics Deployment Services <ph id="ph1">\[</ph>wsfed-enabled<ph id="ph2">\]</ph><ept id="p3">**</ept>, and then click <bpt id="p4">**</bpt>Select<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Add access<ept id="p1">**</ept> page, click <bpt id="p2">**</bpt>OK<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Users<ept id="p1">**</ept> page opens, and you can see that the user is assigned as a <bpt id="p2">**</bpt>Contributor<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> If Dynamics Deployment Services <ph id="ph1">\[</ph>wsfed-enabled<ph id="ph2">\]</ph> doesn't appear, the Authorize process hasn't been completed, or it was completed on another Azure subscription.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Dynamics Deployment Services <ph id="ph2">\[</ph>wsfed-enabled<ph id="ph3">\]</ph><ept id="p1">](./media/arm_redo_01-1024x407.png)](./media/arm_redo_01.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Enable the Azure subscription to deploy ARM resources</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Complete the following procedures to enable the Azure subscription to deploy ARM resources.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Enable the Azure connector and add an LCS user</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Follow these steps to enable the Azure Connector and, as required, add an LCS user.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>In LCS, on the <bpt id="p1">**</bpt>Project<ept id="p1">**</ept> page, in the <bpt id="p2">**</bpt>Environments<ept id="p2">**</ept> section, click <bpt id="p3">**</bpt>Microsoft Azure settings<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Project settings<ept id="p1">**</ept> page, on the <bpt id="p2">**</bpt>Azure connectors<ept id="p2">**</ept> tab, under <bpt id="p3">**</bpt>Azure connectors<ept id="p3">**</ept>, click <bpt id="p4">**</bpt>Add<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> If you're enabling ARM for an existing connector, click <bpt id="p2">**</bpt>Edit<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Enter the connector name, enter the Azure subscription ID to deploy to, and set the <bpt id="p1">**</bpt>Configure to use Azure Resource manager<ept id="p1">**</ept> option to <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Azure subscription AAD Tenant domain<ept id="p1">**</ept> field, enter the domain name of the Azure subscription account admin, and then click <bpt id="p2">**</bpt>Next<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Authorize access to the subscription, either by adding the LCS user to the Azure subscription or by using the Management certificate.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Important:<ept id="p1">**</ept> If you're adding an LCS user, continue with step 6.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>If you must upload a Management certificate, don't complete steps 6 through 8 of this procedure.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Instead, complete the next procedure, "Upload the Management certificate."</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">[</bpt>Azure portal<ept id="p1">](https://portal.azure.com)</ept>, on the <bpt id="p2">**</bpt>Subscription<ept id="p2">**</ept> tab, select the Azure subscription, and then click the <bpt id="p3">**</bpt>Access Control (IAM)<ept id="p3">**</ept> line item.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Access Control (IAM)<ept id="p1">**</ept> dialog box, click <bpt id="p2">**</bpt>Add<ept id="p2">**</ept>, select <bpt id="p3">**</bpt>Contributor<ept id="p3">**</ept>, and then click <bpt id="p4">**</bpt>OK<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Add users<ept id="p1">**</ept> dialog box, in the <bpt id="p2">**</bpt>Select<ept id="p2">**</ept> field, enter the LCS user, and then press Enter.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> You must specifically enter a user.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>You can't just add a group that the user is a member of.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>When the <bpt id="p1">**</bpt>Users<ept id="p1">**</ept> page opens, you can see that the user is assigned as a <bpt id="p2">**</bpt>Contributor<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Upload the Management certificate</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Complete this procedure only if you didn't complete steps 6 through 8 of the previous procedure, "Enable the Azure Connector and add an LCS user."</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>In LCS, on the <bpt id="p1">**</bpt>Microsoft Azure setup<ept id="p1">**</ept> page, click <bpt id="p2">**</bpt>Download<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Make a note of the location of the certificate file that is downloaded.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>You will use this information to upload the certificate to the Azure subscription.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">[</bpt>Azure classic portal<ept id="p1">](https://manage.windowsazure.com/)</ept>, in the left pane, click <bpt id="p2">**</bpt>Settings<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Filter to the Azure subscription that is used, and then, on the <bpt id="p1">**</bpt>Management certificates<ept id="p1">**</ept> tab, click <bpt id="p2">**</bpt>Upload<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Select the Management certificate that you downloaded in step 1, and then click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Configure deployment settings</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>In LCS, on the <bpt id="p1">**</bpt>Project<ept id="p1">**</ept> page, in the <bpt id="p2">**</bpt>Environments<ept id="p2">**</ept> section, click <bpt id="p3">**</bpt>Microsoft Azure settings<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Microsoft Azure setup<ept id="p1">**</ept> page, select the region to deploy to, and then click <bpt id="p2">**</bpt>Connect<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>The ARM onboarding flow is now completed.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>You should now see that the subscription has been added to the <bpt id="p1">**</bpt>Azure connectors<ept id="p1">**</ept> list.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Additionally, a check mark should appear under <bpt id="p1">**</bpt>ARM Enabled<ept id="p1">**</ept>.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,394 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">4e2e27452be0587f88a9361d82b5f164b0a169c7</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\lifecycle-services\ax-2012\join-enterprise-portal-servers-single-server-farm.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">6647d55e6c098030aa3f89b7100e16e5cd8cd8c1</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">620e02018b7621758f7e7d9398d6beac3b12fa02</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Join Enterprise Portal servers into a single server farm (AX 2012)</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This article explains how to join Enterprise Portal servers (for Microsoft Dynamics AX 2012) into a single server farm.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Join Enterprise Portal servers into a single server farm (AX 2012)</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This article explains how to join Enterprise Portal servers (for Microsoft Dynamics AX 2012) into a single server farm.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>When Microsoft Dynamics Lifecycle Services (LCS) deploys Enterprise Portal (EP) servers, each EP server is deployed into its own server farm.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>The steps in this article show how to join all EP servers into a single server farm.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>The basic idea is to keep the server farm on one EP server and join all the other EP servers to that farm.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>The information in this article is based on the following assumptions:</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>N<ept id="p1">*</ept> EP servers are deployed by LCS, and these servers are labeled EP-01, EP-02, EP-03...EP-0<bpt id="p2">*</bpt>N<ept id="p2">*</ept>.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>The load balancer is named AzureILB01.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>You're using EP-01 as the single server farm, and all the other EP servers will join that farm.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Overview</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The following image shows the process for joining EP servers into a single server farm.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>ProcessFlow<ph id="ph2">\_</ph>ConfigureEPServersInFarm<ept id="p1">](./media/processflow_configureepserversinfarm.png)](./media/processflow_configureepserversinfarm.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Put EP servers into a single server farm</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Log on to EP-01 by using the Dynamics Installer User service account.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Start Microsoft SharePoint 2013 Central Administration.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Go to <bpt id="p1">**</bpt>System settings<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Configure alternate access mappings<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Add Internal URLs<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>The following screen shot shows how to add a mapping for EP-02 on port 81, which is the port that the EP site is created on.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Repeat this step for every EP server that is deployed by LCS.<bpt id="p1">[</bpt><ph id="ph1">![</ph>AddInternalURLs<ept id="p1">](./media/addinternalurls.png)](./media/addinternalurls.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Edit Public URLs<ept id="p1">**</ept>, and enter appropriate values:</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Default:<ept id="p1">**</ept> Use the load balancer URL + port 81.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Intranet:<ept id="p1">**</ept> Use EP-01 (the SharePoint server farm virtual machine) + port 81.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Internet:<ept id="p1">**</ept> Use the publicly registered URL + port 81.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>EditPublicZoneURLs<ept id="p1">](./media/editpubliczoneurls.png)](./media/editpubliczoneurls.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Open Registry Editor (regedit), and create the following registry key:</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Path:<ept id="p1">**</ept> HKEY<ph id="ph1">\_</ph>LOCAL<ph id="ph2">\_</ph>MACHINE<ph id="ph3">\\</ph>SYSTEM<ph id="ph4">\\</ph>CurrentControlSet<ph id="ph5">\\</ph>Contro<ph id="ph6">\\</ph>Lsa<ph id="ph7">\\</ph>MSV1<ph id="ph8">\_</ph>0</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Key details, key value:<ept id="p1">**</ept> The load balancer name and the fully qualified name</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>EditMultiString<ept id="p1">](./media/editmultistring.png)](./media/editmultistring.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Open a <bpt id="p1">**</bpt>Command Prompt<ept id="p1">**</ept> window, and get the IP address of the local machine by running the <bpt id="p2">**</bpt>ipconfig<ept id="p2">**</ept> command.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>In Notepad, open the C:<ph id="ph1">\\</ph>Windows<ph id="ph2">\\</ph>System32<ph id="ph3">\\</ph>drivers<ph id="ph4">\\</ph>etc<ph id="ph5">\\</ph>hosts file, and map the load balancer name to the local machine IP address.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>This mapping is used to test that the local EP server is working.<bpt id="p1">[</bpt><ph id="ph1">![</ph>NotePad<ept id="p1">](./media/notepad.png)](./media/notepad.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Repeat steps 6 through 8 on every EP server that is deployed by LCS.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Log on to the EP-02 server by using the Dynamics Installer User service account.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Go to the drive where the Dynamics installer is stored (this drive is most likely drive F).</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Right-click <bpt id="p1">**</bpt>Setup<ept id="p1">**</ept>, click <bpt id="p2">**</bpt>Run as administrator<ept id="p2">**</ept>, and then follow these steps:</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Install Microsoft Dynamics AX components<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Welcome<ept id="p1">**</ept> page, click <bpt id="p2">**</bpt>Next<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Add or modify components<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>Next<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Under <bpt id="p1">**</bpt>Web server components<ept id="p1">**</ept>, select the <bpt id="p2">**</bpt>Enterprise Portal<ept id="p2">**</ept> check box.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> to acknowledge that you want to install EP, and then click <bpt id="p2">**</bpt>Next<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Make sure that there are no validation errors, and then click <bpt id="p1">**</bpt>Next<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Enter the BC proxy user password, and then click <bpt id="p1">**</bpt>Next<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>On the **Configure a Web site for Enterprise Portal **page, select the web application.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Select the <bpt id="p1">**</bpt>Configure for Windows SharePoint Services<ept id="p1">**</ept> check box.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Select the <bpt id="p1">**</bpt>Restart IIS after installation is completed<ept id="p1">**</ept> check box, and then click <bpt id="p2">**</bpt>Next<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Configure a Web site for EP<ept id="p1">](./media/configure-a-web-site-for-ep.png)](./media/configure-a-web-site-for-ep.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Next<ept id="p1">**</ept> until the installation is completed.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Repeat steps 10 through 12 on servers EP-03 through EP-0<bpt id="p1">*</bpt>N<ept id="p1">*</ept>.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>(You must re-install EP on every EP server, except the single server where the farm is configured.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>In our example, this server is EP-01.)</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Follow these steps on every EP server, EP-01 through EP-0<bpt id="p1">*</bpt>N<ept id="p1">*</ept>:</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Open the Internet Information Services (IIS) administration console (inetmgr).</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Go to <bpt id="p1">**</bpt>Sites<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>SharePoint – 81<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Right-click, and then click <bpt id="p1">**</bpt>Edit bindings<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Double-click the binding to open the <bpt id="p1">**</bpt>Edit Site Binding<ept id="p1">**</ept> dialog box.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Host name<ept id="p1">**</ept> field, enter the load balancer name.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Edit Site Binding<ept id="p1">](./media/edit-site-binding.png)](./media/edit-site-binding.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Follow these validation steps on every EP server:</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>In a <bpt id="p1">**</bpt>Command Prompt<ept id="p1">**</ept> window, run the <bpt id="p2">**</bpt>iisreset<ept id="p2">**</ept> command.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Start Internet Explorer, and go to <bpt id="p1">**</bpt>http://AzureILB01:81/sites/DynamicsAx<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Make sure that the Role Center page is rendered without error.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Configure AppFabric cache</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Log on to the EP-01 server by using the Dynamics Install User service account.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Open a Microsoft Windows PowerShell <bpt id="p1">**</bpt>Command Prompt<ept id="p1">**</ept> window as an administrator.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Run the <bpt id="p1">**</bpt>Use-CacheCluster<ept id="p1">**</ept> command to set the context of your Windows PowerShell session to a specific cache cluster.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Run the <bpt id="p1">**</bpt>New-Cache<ept id="p1">**</ept> command to create a new named cache.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Make a note of the name that you specify.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>(You'll enter this cache name in the next procedure.)</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Run the <bpt id="p1">**</bpt>Grant-CacheAllowedClientAccount<ept id="p1">**</ept> command, and specify the .NET Business Connector proxy.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>(This is the account that is used by the EP application pool).</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Run the following command: <bpt id="p1">**</bpt>Set-CacheConfig -Secondaries 1<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>When you're prompted for the cache name, enter the name from step 4.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>When you're asked whether you want to continue, enter <bpt id="p1">**</bpt>Y<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>If step 6 causes an error, try to run the commands in the following order:</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>stop-cachecluster</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Set-CacheConfig -Secondaries 1</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Export the configuration by running the <bpt id="p1">**</bpt>Export-CacheClusterConfig<ept id="p1">**</ept> command.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Specify a name for the file.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>This file can be saved anywhere on the local computer.</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Open the file that you just created, and add the following configuration to the <bpt id="p1">**</bpt><ph id="ph1">&amp;lt;</ph>advancedProperties<ph id="ph2">&amp;gt;</ph><ept id="p1">**</ept> section.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Import the configuration by running the following command: <bpt id="p1">**</bpt>Import-CacheClusterConfig c:<ph id="ph1">\\</ph>newConfig.xml<ept id="p1">**</ept> When you're asked whether you want to continue, enter <bpt id="p2">**</bpt>Y<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>Run the <bpt id="p1">**</bpt>Start-CacheCluster<ept id="p1">**</ept> command to start the cache.</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>In Notepad, open the web.config file (C:<ph id="ph1">\\</ph>inetpub<ph id="ph2">\\</ph>wwwroot<ph id="ph3">\\</ph>wss<ph id="ph4">\\</ph>VirtualDirectories<ph id="ph5">\\</ph>81<ph id="ph6">\\</ph>web.config) in admin mode.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Locate the <bpt id="p1">**</bpt><ph id="ph1">&amp;lt;</ph>configSections<ph id="ph2">&amp;gt;</ph><ept id="p1">**</ept> section.</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>Add the following <bpt id="p1">**</bpt>section<ept id="p1">**</ept> element.</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Add the following <bpt id="p1">**</bpt>dataCacheClient<ept id="p1">**</ept> element to the web.config file after the <bpt id="p2">**</bpt><ph id="ph1">&amp;lt;</ph>/configSections<ph id="ph2">&amp;gt;</ph><ept id="p2">**</ept> tag.</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Replace every instance of “Host<ph id="ph1">\_</ph>server<ph id="ph2">\_</ph>name” with the name of an EP server.</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Replace “default” with the name that you specified when you ran the <bpt id="p1">**</bpt>New-Cache<ept id="p1">**</ept> command.</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">&lt;!-- --&gt;
+
+        &lt;!-- velocity --&gt;
+        &lt;dataCacheClient dataCacheServiceAccountType="DomainAccount"&gt;</ph><ph id="ph2">
+        &lt;localCache isEnabled="false" /&gt;</ph><ph id="ph3">
+        &lt;hosts&gt;</ph><ph id="ph4">
+        &lt;!--List of hosts --&gt;
+        &lt;!-- Replace highlighted with your own EP server name --&gt;
+        &lt;host name="EP-01" cachePort="22233" /&gt;</ph> <ph id="ph5">&lt;host name="EP-02" cachePort="22233" /&gt;</ph> <ph id="ph6">&lt;host name="EP-03" cachePort="22233" /&gt;</ph> <ph id="ph7">&lt;host name="EP-0N" cachePort="22233" /&gt;</ph> <ph id="ph8">&lt;/hosts&gt;</ph><ph id="ph9">
+        &lt;/dataCacheClient&gt;</ph><ph id="ph10">
+        &lt;Microsoft.Dynamics&gt;</ph><ph id="ph11">
+        &lt;AppFabricCaching CacheName="default" /&gt;</ph><ph id="ph12">
+        &lt;/Microsoft.Dynamics&gt;</ph><ph id="ph13">
+        &lt;!-- velocity --&gt;</ph></source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Repeat steps 12 through 14 on every EP server that is deployed by LCS.</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>On the EP-01 server, in a Windows PowerShell window, run the <bpt id="p1">**</bpt>stop-cachecluster<ept id="p1">**</ept> command.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>Run the <bpt id="p1">**</bpt>start-cachecluster<ept id="p1">**</ept> command.</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>Validate AppFabric</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>On one of the EP servers, in the Windows Services console, verify that AppFabricCachingService is running.</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Open a Windows PowerShell <bpt id="p1">**</bpt>Command Prompt<ept id="p1">**</ept> window as an administrator.</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>Run the <bpt id="p1">**</bpt>Get-CacheStatistics<ept id="p1">**</ept> default command.</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>The result should show all zeros.</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>Restart the web service on the EP server by running the <bpt id="p1">**</bpt>iisereset<ept id="p1">**</ept> command.</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>Open EP, and go to <bpt id="p1">**</bpt>Sales<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Run the <bpt id="p1">**</bpt>Get-CacheStatistics<ept id="p1">**</ept> default command again, and verify that the cache shows values.</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>This result indicates that cache distribution is working.</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>Clean up</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>Because every EP server was deployed into its own server farm, after you join all the servers into a single farm, the databases that were created for other EP server farms must be removed from SQL.</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>Spfarm<ph id="ph1">\_</ph>admincontent<ph id="ph2">\_</ph>ep-02</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Spfarm<ph id="ph1">\_</ph>admincontent<ph id="ph2">\_</ph>ep-03</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>…</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>Spfarm<ph id="ph1">\_</ph>admincontent<ph id="ph2">\_</ph>ep-0<bpt id="p1">*</bpt>N<ept id="p1">*</ept></source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>Spfarm<ph id="ph1">\_</ph>config<ph id="ph2">\_</ph>ep-02</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>Spfarm<ph id="ph1">\_</ph>config<ph id="ph2">\_</ph> ep-03</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>…</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Spfarm<ph id="ph1">\_</ph>config<ph id="ph2">\_</ph>ep-0<bpt id="p1">*</bpt>N<ept id="p1">*</ept></source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>WSS<ph id="ph1">\_</ph>Content<ph id="ph2">\_</ph><ph id="ph3">\*</ph></source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>To learn the name of the WSS<ph id="ph1">\_</ph>Content<ph id="ph2">\_</ph><ph id="ph3">\*</ph> database for a particular site, follow these steps.</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>Start SharePoint Central Administration.</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>Go to <bpt id="p1">**</bpt>Application management<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>View site collection<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>In the upper-right corner, select the site that is hosted on port 81.</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>The result screen should indicate which database is used for the selected site.</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>Delete all WSS<ph id="ph1">\_</ph>Content<ph id="ph2">\_</ph><ph id="ph3">\*</ph> databases that aren't used by the server that site 81 is created on.</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>In this case, keep the WSS<ph id="ph1">\_</ph>Content<ph id="ph2">\_</ph><ph id="ph3">\*</ph> database that is used by EP-01, and delete every other database that has a name that starts with WSS<ph id="ph4">\_</ph>Content<ph id="ph5">\_</ph><ph id="ph6">\*</ph>.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

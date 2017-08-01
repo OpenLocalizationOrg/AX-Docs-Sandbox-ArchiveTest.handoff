@@ -1,0 +1,366 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">4677741c209e13b3130d1f96edf3f39d6c1036ff</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\lifecycle-services\ax-2012\deploy-retail-essentials-demo-environment-azure.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">0752bc998f27c51c68578ee4592247c1caec6480</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">88bdda2a82c6d2b0492d0391d09888915c11548f</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Deploy a Retail essentials demo environment on Azure (AX 2012)</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Deploy a Retail essentials demo environment on Azure (AX 2012)</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>This article explains how to deploy a Retail essentials demo environment on Microsoft Azure.</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>To deploy the environment, you’ll use the Cloud-hosted environments tool in Microsoft Dynamics Lifecycle Services.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Prerequisites</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Before you complete the procedures in this article, make sure that the following prerequisites are in place.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Category</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Prerequisite</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Required tasks</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Plan your Microsoft Dynamics AX deployment on Azure<ept id="p1">](plan-2012-r3-deployment-azure.md)</ept></source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>1. Log on to Lifecycle Services</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Microsoft Dynamics Lifecycle Services provides a cloud-based collaborative workspace that customers and partners can use to manage Microsoft Dynamics AX projects.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>You’ll use this website to deploy Dynamics AX on Azure.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Lifecycle Services is available to customers and partners as part of their support plans.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>You can access it with your CustomerSource or PartnerSource credentials.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Log on to Lifecycle Services<ept id="p1">](https://lcs.dynamics.com/)</ept></source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>2. Create a project</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>After you log in to Lifecycle Services, open an existing project, or create a new project.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Projects are the key organizer of your experience in Lifecycle Services.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>The methodology associated with a project determines which phases and tasks are included in the project by default.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>3. Connect the project to your Azure subscription</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Connect the Lifecycle Services project to your Azure subscription.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>This will enable Lifecycle Services to deploy a Dynamics AX environment to the subscription.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>To connect the project to your Azure subscription, complete the following procedure.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Keep in mind that a project can be connected to only one Azure subscription.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>If you have multiple Azure subscriptions, be sure to identify which subscription you want to use before you complete this procedure.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Cloud-hosted environments<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Cloud-hosted environments<ept id="p1">**</ept> page is displayed.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Microsoft Azure setup<ept id="p1">**</ept> panel is displayed on the side of the screen.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>If it is not displayed, click <bpt id="p1">**</bpt>Microsoft Azure settings<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Enter your Azure subscription ID.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>If you need to find your subscription ID, complete the following steps:</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Open another instance of your browser.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Log on to the <bpt id="p1">[</bpt>Azure management portal<ept id="p1">](https://manage.windowsazure.com/)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>In the navigation pane on the left, click <bpt id="p1">**</bpt>Settings.<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>(You may have to scroll to the bottom of the navigation pane to see the <bpt id="p1">**</bpt>Settings<ept id="p1">**</ept> link.) The <bpt id="p2">**</bpt>Settings<ept id="p2">**</ept> page is displayed.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Copy your subscription ID, and then paste it into the <bpt id="p1">**</bpt>Azure subscription ID<ept id="p1">**</ept> field in Lifecycle Services (which is currently displayed in another browser instance).</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Next<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Download<ept id="p1">**</ept> to download a management certificate.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>This management certificate enables Lifecycle Services to communicate with Azure on your behalf.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>By default, the management certificate is saved to the <bpt id="p1">**</bpt>Downloads<ept id="p1">**</ept> folder on your computer and is named <bpt id="p2">**</bpt>LifecycleServicesDeployment.cer.<ept id="p2">**</ept></source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Upload the management certificate to Azure.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>To do so, complete the following steps:</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Open another instance of your browser.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>(Or, go to the browser instance that you may have opened in step 3.)</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Log on to the <bpt id="p1">[</bpt>Azure management portal<ept id="p1">](https://manage.windowsazure.com/)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>In the navigation pane on the left, click <bpt id="p1">**</bpt>Settings<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Settings<ept id="p1">**</ept> page is displayed.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Management certificates<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Upload<ept id="p1">**</ept> at the bottom of the page.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Upload a management certificate<ept id="p1">**</ept> window, browse to the management certificate that you downloaded in step 5.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Then click the check mark.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Go back to the browser that displays the <bpt id="p1">**</bpt>Microsoft Azure setup<ept id="p1">**</ept> panel in Lifecycle Services.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Next<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Select the region that is closest to you.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>The AX 2012 R3 environment will be deployed to a datacenter in this region.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Connect<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>The project is now connected to the Azure subscription that you specified.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>If you discover that you connected the project to the wrong Azure subscription (that is, assuming you have multiple Azure subscriptions), you’ll need to delete the project, create a new project, and then repeat this procedure to connect the new project to the appropriate Azure subscription.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>4. Deploy a Retail essentials demo environment on Azure</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Complete the following procedure to deploy a Retail essentials demo environment on Azure.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Cloud-hosted environments<ept id="p1">**</ept> page, click the <bpt id="p2">**</bpt>Add<ept id="p2">**</ept> (+) icon.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Select environment topology<ept id="p1">**</ept> panel, select <bpt id="p2">**</bpt>Demo<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Retail essentials demo.<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Environment name<ept id="p1">**</ept> field, enter a name for the environment that will be deployed.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Advanced settings<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>To customize virtual machine names, click <bpt id="p1">**</bpt>Customize virtual machine names<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>In order to support common IT naming guidelines, the ability to name virtual machines is provided through the <bpt id="p1">**</bpt>Advanced settings<ept id="p1">**</ept> option on most deployment topologies.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>In addition to defining the name, a starting index can be selected for each virtual machine type.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>The index is incremented for each instance of the virtual machine type that is deployed.Virtual machine names must be 13 characters or less.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>The index is separated from the machine name by a hyphen (-), followed by the index that supports a maximum of 2 digits.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Example: ACustomVMName-99.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>When virtual machine instances are added to an environment after the initial deployment, the deployment service will start incrementing the virtual machine name where it left off.</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>For example, if you deployed four AOS virtual machines with a starting index of 2, then the last AOS instance name will be AOS-6.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>If you add two more AOS instances, they will be AOS-7 and AOS-8.If one of the virtual machine types in your deployment is customized, then all of the virtual machine names must be customized.</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>This is done to ensure that a long deployment does not occur because a virtual machine name was accidentally missed.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>To customize virtual network settings, click <bpt id="p1">**</bpt>Customize virtual network<ept id="p1">**</ept> settings.</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Then use the following table to enter information.</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>If you want to:</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Do this:</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Create a new virtual network in Azure for the environment</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="label"&gt;</bpt>New virtual network<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Enter a name for the virtual network.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>Add the environment to an existing virtual network in Azure</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="label"&gt;</bpt>Existing virtual network<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Select the name of the existing virtual network that you want to use.</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">&lt;span class="label"&gt;</bpt><bpt id="p2">&lt;strong&gt;</bpt>Application subnet<ept id="p2">&lt;/strong&gt;</ept> <bpt id="p3">&lt;strong&gt;</bpt>name<ept id="p3">&lt;/strong&gt;</ept><ept id="p1">&lt;/span&gt;</ept> and <bpt id="p4">&lt;strong&gt;</bpt><bpt id="p5">&lt;span class="label"&gt;</bpt>Address space<ept id="p5">&lt;/span&gt;</ept><ept id="p4">&lt;/strong&gt;</ept> fields will automatically display the appropriate information based on the virtual network that you selected.</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>If you want to verify the information in these fields, do this:</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Log on to the <bpt id="p1">&lt;a href="https://manage.windowsazure.com/"&gt;</bpt>Azure management portal<ept id="p1">&lt;/a&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>In the navigation pane on the left, click <bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="label"&gt;</bpt>Networks<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Click the name of the virtual network that you’re going to use.</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="label"&gt;</bpt>Configure<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>Details about the virtual network are listed on the page.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="label"&gt;</bpt>Done<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="label"&gt;</bpt>Deploy environment<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept> panel is redisplayed.</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>The number and size of each virtual machine that will be deployed is listed.</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Change the number and size of the virtual machines, as needed.</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>For information about the software installed on each virtual machine in this environment, see <bpt id="p1">[</bpt>Plan your Microsoft Dynamics AX deployment on Azure<ept id="p1">](plan-2012-r3-deployment-azure.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>For sizing and pricing details about virtual machines, see <bpt id="p1">[</bpt>Virtual machines pricing details<ept id="p1">](http://azure.microsoft.com/en-us/pricing/details/virtual-machines/)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Software License Terms<ept id="p1">**</ept> to review the licensing terms and conditions.</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>Then select the check box to indicate that you agree to the terms.</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Next<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Deploy<ept id="p1">**</ept> to confirm that you’re ready to deploy the environment.</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>The deployment may take a few hours to complete.</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>When the deployment is done, the Deployment Status column on the <bpt id="p1">**</bpt>Cloud-hosted environments<ept id="p1">**</ept> page will display <bpt id="p2">**</bpt>Deployed<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>(You may need to refresh your browser to see this.)If the deployment fails, you may see an error message right away.</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>If the error occurs later in the deployment process, error details will be displayed in the details pane on the right-side of the page.</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>5. Open the Dynamics AX client</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>Complete the following procedure to connect to the virtual machine where the Dynamics AX client is installed.</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Cloud-hosted environments page<ept id="p1">**</ept>, select the Retail essentials environment that you just deployed.</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>Scroll to the right side of the page to view the properties of the environment.</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>Click the <bpt id="p1">**</bpt>DEMO-<ph id="ph1">&amp;lt;</ph>GUID<ph id="ph2">&amp;gt;</ph><ept id="p1">**</ept> link.</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>At the bottom of the page, click <bpt id="p1">**</bpt>Open<ept id="p1">**</ept> to open the .rdp file.</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>When prompted for credentials, enter the user name and password for the <ph id="ph1">&amp;lt;</ph>DomainName<ph id="ph2">&amp;gt;</ph>Administrator account.</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>You can find the password for this account on the <bpt id="p1">**</bpt>Cloud-hosted environments<ept id="p1">**</ept> page for this environment.</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>When the virtual machine’s desktop is displayed, click the <bpt id="p1">**</bpt>Microsoft Dynamics AX<ept id="p1">**</ept> icon to open the Microsoft Dynamics AX client.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

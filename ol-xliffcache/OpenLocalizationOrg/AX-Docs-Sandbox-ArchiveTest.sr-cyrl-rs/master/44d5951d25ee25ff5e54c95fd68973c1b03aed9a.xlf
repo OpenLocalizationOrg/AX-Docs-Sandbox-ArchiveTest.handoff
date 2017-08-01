@@ -1,0 +1,534 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">44d5951d25ee25ff5e54c95fd68973c1b03aed9a</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\dev-tools\write-business-logic.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">074efac8430535db95cb550d209e2f2765115494</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">034e426ad61aee254608008599a3dc4d9964e99b</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Write business logic using C# and X++ source code</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>The primary goal of this tutorial is to illustrate the interoperability between C# and X++ in Microsoft Dynamics AX.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>In this tutorial, you’ll write business logic in C# source code and in X++ source code.</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Write business logic using C# and X++ source code</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>The primary goal of this tutorial is to illustrate the interoperability between C# and X++ in Microsoft Dynamics AX.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>In this tutorial, you’ll write business logic in C# source code and in X++ source code.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>In this tutorial, you’ll write business logic in C<ph id="ph1">\#</ph> source code and in X++ source code.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>You'll get experience with the following:</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>New tools in Visual Studio.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>The handling of events in C<ph id="ph1">\#</ph>.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>The use of Language Integrated Query (LINQ) in C<ph id="ph1">\#</ph> to fetch data.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Prerequisite</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>This tutorial requires that you access the Dynamics AX environment using Remote Desktop, and be provisioned as an administrator on the Dynamics AX instance.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: Debugging support for the C<ph id="ph1">\#</ph> project does not work if the <bpt id="p2">**</bpt>Load symbols only for items in the solution<ept id="p2">**</ept> check box is selected.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Since this option is selected by default, it must be changed prior to running the lab.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>In Visual Studio, click <bpt id="p1">**</bpt>Dynamics AX<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Options<ept id="p2">**</ept>, and clear the <bpt id="p3">**</bpt>Load symbols only for items in the solution<ept id="p3">**</ept> check box.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Scenario</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Too many cars have been rented to drivers who have a history of unsafe driving habits.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>The Fleet Management rental company needs to check driving records from external sources.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Upper management has decided to subscribe to a service that is hosted by the Department of Transportation (DOT), which is the legal entity that manages drivers’ licenses and associated information.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>This service retrieves the number of citations for the given unique license number.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>It’s not easy to call external services directly from X++ source code.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Visual Studio has tools for generating the “code-behind” (in C<ph id="ph1">\#</ph>) that calls the services, and these tools make the development effort easy.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>The obvious choice would be to leverage Visual Studio to write the code.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>However, in this tutorial your code won’t actually call an external service, because the logistics are beyond the scope of the simple lab environment.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Instead, we provide a mock implementation of a service call.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>The goal of this tutorial is to teach an understanding of the current state of C<ph id="ph1">\#</ph> and of interoperability with X++.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Create a C<ph id="ph1">\#</ph> class library</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Dynamics AX enables you to create a reference from a Dynamics AX project to the C<ph id="ph1">\#</ph> class library, or to any other type of C<ph id="ph2">\#</ph> project that generates an assembly.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Such references affect the build order.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>The C<ph id="ph1">\#</ph> project is built before the Dynamics AX project that references and depends on it.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>The Dynamics AX infrastructure understands the references, and will make sure that the C<ph id="ph1">\#</ph> assemblies are deployed correctly to the cloud before execution.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Follow these steps to create a C<ph id="ph1">\#</ph> class library in the Fleet Management solution:</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>In Visual Studio, click <bpt id="p1">**</bpt>File<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Open project/solution<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Open Project<ept id="p1">**</ept> dialog box, in the <bpt id="p2">**</bpt>File name<ept id="p2">**</ept> text box, type the following path, and then press <bpt id="p3">**</bpt>Enter<ept id="p3">**</ept><ph id="ph1"> - </ph><bpt id="p4">*</bpt>C:<ph id="ph2">\\</ph>users<ph id="ph3">\\</ph>public<ph id="ph4">\\</ph>desktop<ph id="ph5">\\</ph>FleetManagement<ept id="p4">*</ept>.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Select the file named FleetManagement.sln, and then click <bpt id="p1">**</bpt>Open<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>If the solution file is not on your computer, the steps to create it are listed in <bpt id="p1">[</bpt>Tutorial: Create a Fleet Management solution file out of the Fleet Management models in the AOT<ept id="p1">](https://community.dynamics.com/ax/b/newdynamicsax/archive/2016/05/19/tutorial-create-a-fleet-management-solution-file-out-of-the-fleet-management-models-in-the-aot)</ept>.<bpt id="p2">[</bpt><ph id="ph1">![</ph>OpenProject<ph id="ph2">\_</ph>LinqC<ept id="p2">](./media/openproject_linqc2.png)](./media/openproject_linqc2.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Right-click the <bpt id="p1">**</bpt>FleetManagement<ept id="p1">**</ept> solution, and then click <bpt id="p2">**</bpt>Add<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>New Project<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Add New Project<ept id="p1">**</ept> dialog is displayed.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>In the left pane, click <bpt id="p1">**</bpt>Visual C<ph id="ph1">\#</ph><ept id="p1">**</ept>, and then in the middle pane, click <bpt id="p2">**</bpt>Class Library<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>At the bottom in the <bpt id="p1">**</bpt>Name<ept id="p1">**</ept> text box, type the name <bpt id="p2">**</bpt>DriversLicenseEvaluator<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Location<ept id="p1">**</ept> text box, type the following directory path: <bpt id="p2">*</bpt>C:<ph id="ph1">\\</ph>users<ph id="ph2">\\</ph>public<ph id="ph3">\\</ph>desktop<ph id="ph4">\\</ph>FleetManagement<ept id="p2">*</ept>.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Verify that your project is set to “.NET Framework 4.5” in the drop-down list at the top.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> to create the project.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>AddNewProject<ph id="ph2">\_</ph>LinqC<ept id="p1">](./media/addnewproject_linqc2.png)](./media/addnewproject_linqc2.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, under the DriversLicenseEvaluator project, right-click the file name Class1.cs and rename it DriversLicenseChecker.cs.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept>, when prompted to rename all references to the class.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>RenameClass<ph id="ph2">\_</ph>LinqC<ept id="p1">](./media/renameclass_linqc1.png)](./media/renameclass_linqc1.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Write a C<ph id="ph1">\#</ph> method named CheckDriversLicense</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>In this section, you add C<ph id="ph1">\#</ph> code for a method named CheckDriversLicense.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>The method must validate the driver’s license.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>To do this, the method must retrieve the driver’s license number, which is stored in the customer table.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>The method is given the RecId value for the customer record that contains the information required by the method.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Your C<ph id="ph1">\#</ph> code uses the Dynamics AX LINQ provider to read from the customer table.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>For LINQ to work, you must first add references pointing to the LINQ assemblies.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>You add these references to the C<ph id="ph1">\#</ph> project named DriversLicenseEvaluator.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, expand the DriversLicenseEvaluator project node, right-click <bpt id="p2">**</bpt>References<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>Add Reference<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Browse<ept id="p1">**</ept> and then enter the following path: C:<ph id="ph1">\\</ph>Packages<ph id="ph2">\\</ph>bin</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>In some environments, the location of the packages folder is not on the c: drive.<ept id="p1">*</ept></source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>File name<ept id="p1">**</ept> field, type the pattern <ph id="ph1">\*</ph>LINQ<ph id="ph2">\*</ph>.dll and then press <bpt id="p2">**</bpt>Enter<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>You'll see a list of assemblies with the name LINQ in them.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>From that list, select the following files, and then click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept>:</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Microsoft.Dynamics.AX.Framework.Linq.Data.dll</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Microsoft.Dynamics.AX.Framework.Linq.Data.Interface.dll</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Microsoft.Dynamics.AX.Frameowrk.Linq.Data.Msil.dll</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>SelectReferences<ph id="ph2">\_</ph>LinqC<ept id="p1">](./media/selectreferences_linqc1.png)](./media/selectreferences_linqc1.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>You must also add the support assemblies that contain the Common type that you'll use in the code below.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Browse<ept id="p1">**</ept> again, and then type the following file name into the field:</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Microsoft.Dynamics.AX.Xpp.Support.dll</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Microsoft.Dynamics.AX.Data.Core.dll</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Click<bpt id="p1">**</bpt>Add<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>OK<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>The assemblies now appear under the references node in the project.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Repeat the <bpt id="p1">**</bpt>Add Reference<ept id="p1">**</ept> process, except this time, add the following DLL file from the indicated path:</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Dynamics.Ax.FleetManagement.dll, in C:<ph id="ph1">\\</ph>Packages<ph id="ph2">\\</ph>FleetManagement<ph id="ph3">\\</ph>bin</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, select the reference Dynamics.Ax.FleetManagement.dll reference and set the property <bpt id="p2">**</bpt>Copy Local = False<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, right-click <bpt id="p2">**</bpt>DriversLicenseChecker.cs<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>View Code<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Add the following three using statements to the <bpt id="p1">**</bpt>DriversLicenseEvaluator<ept id="p1">**</ept> namespace, to reduce the verbosity of code that references external classes.</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>using Dynamics.AX.Application; using Microsoft.Dynamics.AX.Framework.Linq.Data; using Microsoft.Dynamics.AX.Xpp; Your C<ph id="ph1">\#</ph> code should now look something like the following example.</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Replace the class CheckDriversLicense with the following code.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Tip<ept id="p1">**</ept>: If you prefer, you can paste in the code from the DriversLicenseChecker.cs file in the C:<ph id="ph1">\\</ph>FMLab directory.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Understand the LINQ code</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Before proceeding with more C<ph id="ph1">\#</ph> code, verify that you understand the LINQ code you just added.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>More details about LINQ are provided in the <bpt id="p1">[</bpt>Technical Concepts Guide<ept id="p1">](developer-home-page.md)</ept>, so only the basics are described below.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>First, a <bpt id="p1">*</bpt>provider<ept id="p1">*</ept> is created.</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>It provides access to all the Microsoft Dynamics AX tables.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Next, a <bpt id="p1">*</bpt>collection<ept id="p1">*</ept> of all customers is created.</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>The customer of interest is retrieved from this collection.</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Then, a <bpt id="p1">*</bpt>query<ept id="p1">*</ept> is created with a where clause that designates the requested customer by <bpt id="p2">**</bpt>RecId<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>The call to the FirstOrDefault method forces execution of the query.</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>The method assigns the single matching customer to the customer variable.</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>(Null is assigned if the RecId value matches no customer.)</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Finally, the customer data is tested to see if the associated driver's license is valid.</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>(Does the license contain "89"?)</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>Handle the event when a record is added</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>The following subsections provide the following:</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>Explain the upcoming code items and their inter-relationships.</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Show the code for an event handler.</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>Associate the handler with the event occurrences.</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Preparatory overview</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>When an attempt is made to add a record to a table, the OnValidateWrite event is raised by Dynamics AX before the record is written to the database.</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>You want your CheckDriversLicense method to be called each time on the OnValidtaedWrite event is raised for the FMREntal table.</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>To do this, you now need to write a C<ph id="ph1">\#</ph> method that is invoked by the event, and which calls your checkDriversLicense method.</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>In other words, you need to write an event handler that calls your CheckDriversLicense method.</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>The event handler method receives a parameter of the type, DataEventArgs.</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>The event handler can set a value in the DataEventArgs structure to accept or reject the record.</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>After you write your event handler method, you connect it to the event by assigning, or additing it, to the OnValidatedWrite delegate that is a member of the FMRental table.</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>You write this assignment in the init method of the data source of the FMRental form.</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>This assignment to a delegate might seem odd.</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>After all, we're modifying existing code (FMRental) to add handlers, which contradicts the main value proposition of loose coupling that eventing is supposed to offer.</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>This assignment step is temporary.</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>We'll eventually have the same story in C<ph id="ph1">\#</ph> as we do in X++, where an attribute is applied to the C<ph id="ph2">\#</ph> event handler as the mechanism that ties the delegate to the handler.</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: The data source init method is called when the form is opened.</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Technically, the init method is inherited from the FormDataSource class.</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>Write an event handler method</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>In C<ph id="ph1">\#</ph>, write the following event handler method and add it to the DriversLicenseChecker class.</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>Build the DriversLicenseEvaluator project by right-clicking the project node and then clicking <bpt id="p1">**</bpt>Build<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>Add a reference pointing to the DriversLIcenseEvaluator project</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>Create a reference from the X++ project named <bpt id="p1">**</bpt>FleetManagement Migrated<ept id="p1">**</ept> to the C<ph id="ph1">\#</ph> project named <bpt id="p2">**</bpt>DriversLicenseEvaluator<ept id="p2">**</ept>, by completing the following steps.</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>Right-click the FleetManagement Migrated project, click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>Reference<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>Select the row for the DriversLicenseEvaluator project in the <bpt id="p1">**</bpt>Projects<ept id="p1">**</ept> references tab, and then click <bpt id="p2">**</bpt>OK<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>AddReference<ph id="ph2">\_</ph>LinqC<ept id="p1">](./media/addreference_linqc1.png)](./media/addreference_linqc1.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>Under the FleetManagement Migrated project, expand the <bpt id="p1">**</bpt>References<ept id="p1">**</ept> node, and there you see new reference to the <bpt id="p2">**</bpt>DriversLicenseEvaluator<ept id="p2">**</ept> project.</source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>SolutionExplorerReferences<ph id="ph2">\_</ph>LinqC<ept id="p1">](./media/solutionexplorerreferences_linqc2.png)](./media/solutionexplorerreferences_linqc2.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>Build sequence</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>ProjectDependencies1<ph id="ph2">\_</ph>LinqC<ept id="p1">](./media/projectdependencies1_linqc2.png)](./media/projectdependencies1_linqc2.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>ProjectDependencies2<ph id="ph2">\_</ph>LinqC<ept id="p1">](./media/projectdependencies2_linqc1.png)](./media/projectdependencies2_linqc1.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>Add your event handler to a delegate</source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, navigate to <bpt id="p2">**</bpt>FleetManagement Migrated <ph id="ph1">&amp;gt;</ph> User Interface <ph id="ph2">&amp;gt;</ph> Forms <ph id="ph3">&amp;gt;</ph> FMRental<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>Double-click the <bpt id="p1">**</bpt>FMRental<ept id="p1">**</ept> form.</source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>The Visual Studio designer opens to the form.</source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>Expand the <bpt id="p1">**</bpt>Data Sources<ept id="p1">**</ept> node to show the data sources used in the form.</source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>Expand the <bpt id="p1">**</bpt>FMRental<ept id="p1">**</ept> data source, and then the <bpt id="p2">**</bpt>Methods<ept id="p2">**</ept> node to list the methods defined on the data source.</source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>Right-click <bpt id="p1">**</bpt>Methods<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>Override <ph id="ph1">&amp;gt;</ph> init<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>The list displays all of the methods on the data source that haven't yet been overridden.</source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>When you select <bpt id="p1">**</bpt>init<ept id="p1">**</ept>, this opens the file <bpt id="p2">**</bpt>FMRental.xpp<ept id="p2">**</ept> in the X++ code editor with the cursor near the template for the init method.</source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>At the end of the <bpt id="p1">**</bpt>init<ept id="p1">**</ept> method body, use the += operator to add one assignment to a delegate.</source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>Click to save, and then build the entire solution.</source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>Final test</source>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>In this section, you set breakpoints and run the Fleet application under the Visual Studio debugger.</source>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>This enables you to prove the following:</source>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>Your LINQ query runs when the OnValidateWrite event is raised.</source>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>Your LINQ query successfully retrieves the data for one customer.</source>
+        </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>Prepare the test</source>
+        </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, navigate to <bpt id="p2">**</bpt>FleetManagement Migrated <ph id="ph1">&amp;gt;</ph> User Interface <ph id="ph2">&amp;gt;</ph> Forms.<ept id="p2">**</ept></source>
+        </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>Right-click <bpt id="p1">**</bpt>FMRental<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>Set as Startup Object<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>In the code editor for DriversLicenseChecker.cs, find the OnValidateWriteHandler method.</source>
+        </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>Find the following line of code.</source>
+        </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>Set a breakpoint on that line of code.</source>
+        </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>You do this by clicking in the left margin at that line.</source>
+        </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>A red dot displays when the breakpoint is set.</source>
+        </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>In the CheckDriversLicense method, set another breakpoint at the following line.</source>
+        </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>Run the test</source>
+        </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>For this test, we'll be debugging the C<ph id="ph1">\#</ph> code that we've written.</source>
+        </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>To do this, we need to inform Visual Studio to load the symbols for the assembly that contains the C<ph id="ph1">\#</ph> code.</source>
+        </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>Go to <bpt id="p1">**</bpt>Dynamics AX <ph id="ph1">&amp;gt;</ph> Options <ph id="ph2">&amp;gt;</ph> Debugging<ept id="p1">**</ept> and verify that the <bpt id="p2">**</bpt>Load symbols only for items in the solution<ept id="p2">**</ept> check box is not selected.</source>
+        </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Options<ph id="ph2">\_</ph>LinqC<ept id="p1">](./media/options_linqc2.png)](./media/options_linqc2.png)</ept> <bpt id="p2">**</bpt>Tip<ept id="p2">**</ept>: If you're unable to get to the breakpoint in the C<ph id="ph3">\#</ph> code, you may want to open the <bpt id="p3">**</bpt>Modules<ept id="p3">**</ept> window (<bpt id="p4">**</bpt>Debug <ph id="ph4">&amp;gt;</ph> Windows <ph id="ph5">&amp;gt;</ph> Modules<ept id="p4">**</ept>), find the C<ph id="ph6">\#</ph> module and load it explicitly.</source>
+        </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Debug <ph id="ph1">&amp;gt;</ph> Start Debugging<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>This starts the Fleet application, and a browser window with the <bpt id="p1">**</bpt>FMRental<ept id="p1">**</ept> form is displayed.</source>
+        </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>Click on any <bpt id="p1">**</bpt>Vehicle rental ID<ept id="p1">**</ept> to view details.</source>
+        </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>Click the <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept> icon near the top left of the form.</source>
+        </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>The icon looks like a pencil.</source>
+        </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>To<ept id="p1">**</ept> field of the <bpt id="p2">**</bpt>Rental<ept id="p2">**</ept> section, increase the date by one day.<bpt id="p3">[</bpt><ph id="ph1">![</ph>FMRentalDetails<ept id="p3">](./media/fmrental.jpg)](./media/fmrental.jpg)</ept></source>
+        </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>Click the <bpt id="p1">**</bpt>Save<ept id="p1">**</ept> button.</source>
+        </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>This causes the focus to shift to Visual Studio at your highlighted breakpoint.</source>
+        </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>This line shows that the OnValidatedWrite event was raised, and that your handler method was called.</source>
+        </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>Press <bpt id="p1">**</bpt>F5<ept id="p1">**</ept> to continue the run.</source>
+        </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>Instantly, your other breakpoint becomes highlighted.</source>
+        </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>Find the variable customer a few lines above your breakpoint.</source>
+        </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>Right-click the customer variable, and then click <bpt id="p1">**</bpt>QuickWatch<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>Any long integer value proves that your LINQ query worked.</source>
+        </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>QuickWatch<ph id="ph2">\_</ph>LinqC<ept id="p1">](./media/quickwatch_linqc2.png)](./media/quickwatch_linqc2.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>Press <bpt id="p1">**</bpt>F5<ept id="p1">**</ept> to complete the <bpt id="p2">**</bpt>Save<ept id="p2">**</ept> operation.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">e324f0233041afad8337933da9f9c8fd82e37a7d</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\dev-tools\enable-development-machine.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">45dfb801c2e84676afa17d5d6dff3e45a148c0a8</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">07ed2b2085ba30a36d75b86c6fa3daa658f2633e</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Create a new user on a development machine</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>When an environment is first deployed, only one user account is enabled as a developer on the virtual machine (VM).</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This article explains how to enable another user account as a developer on a development VM.</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Create a new user on a development machine</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>When an environment is first deployed, only one user account is enabled as a developer on the virtual machine (VM).</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This article explains how to enable another user account as a developer on a development VM.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>When an environment is first deployed, only one user account is enabled as a developer on the virtual machine (VM).</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>This user is preconfigured by Microsoft Dynamics Lifecycle Services (LCS) or is the local administrator account on downloaded virtual hard disks (VHDs).</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>However, you can enable a new user account to develop on the VM.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Even after you enable a new account, only one developer can develop at a time on the same VM/application.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Prerequisites</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>To enable a new user account to develop on the VM, the user account must be an administrator on the VM.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Additionally, you must log on to the VM by using the credentials of the default developer account.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>If the VM is a Microsoft Azure VM, the account information is available on the environment page in LCS.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>If the VM is a local VM that runs on the downloaded VHD, use the local administrator account.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Access Instances<ept id="p1">](..\dev-tools\access-instances.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Steps</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Download the following script: ProvisionAxDeveloper.ps1, the script is available at <bpt id="p1">&lt;</bpt>https://github.com/Microsoft/Dynamics-AX-Scripts<ept id="p1">&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Open a Microsoft Windows PowerShell <bpt id="p1">**</bpt>Command Prompt<ept id="p1">**</ept> window as an administrator.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Run the ProvisionAxDeveloper.ps1 script.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Specify the following parameters:</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>DatabaseServerName<ept id="p1">**</ept> – Typically, this is the machine name.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Users<ept id="p1">**</ept> – Use the following format: <ph id="ph1">&amp;lt;</ph>domain or machine name<ph id="ph2">&amp;gt;</ph><ph id="ph3">\\</ph>user1, …</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">&amp;lt;</ph>domain or machine name<ph id="ph2">&amp;gt;</ph><ph id="ph3">\\</ph>user n</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Examples<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>If more than one user account will be developing on the same version control workspace, you need to make the workspace public.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>In Visual Studio, open <bpt id="p1">**</bpt>Source Control Explorer<ept id="p1">**</ept>, select the workspace dropdown and select <bpt id="p2">**</bpt>Manage workspaces<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Select the application workspace, click <bpt id="p1">**</bpt>Edit,<ept id="p1">**</ept> then click <bpt id="p2">**</bpt>Advanced<ept id="p2">**</ept> and set the workspace to <bpt id="p3">**</bpt>Public workspace<ept id="p3">**</ept>.<bpt id="p4">[</bpt><ph id="ph1">![</ph>publicworkspace<ept id="p4">](./media/publicworkspace.png)](./media/publicworkspace.png)</ept></source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

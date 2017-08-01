@@ -1,0 +1,258 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">1c3d4fcb84f0694a97ba191112923658e3f73f22</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\migration-upgrade\patch-reporting-service-environment.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">65d1da1e157c392db5f5ff6a833fab9ac787f2a8</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">e577a2c0db3c525933b16fbd30d68e96ebab4e66</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Patch SQL Server Reporting Services in a one-box environment</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Apply SSRS hotfixes to a one-box development environment.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Patch SQL Server Reporting Services in a one-box environment</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>The following procedure is for one-box development environments only.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Patch the Reporting Service</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>The following procedure is for one-box development environments only.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Download the patch .zip file from Lifecycle Services (LCS).</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>If there are any font files in the Reporting Service patch’s data folder, install these to the machine where SQL Server Reporting Services (SSRS) is running.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>For more information about installing fonts on windows, see <bpt id="p1">&lt;</bpt>http://www.microsoft.com/en-us/Typography/TrueTypeInstall.aspx<ept id="p1">&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Any fonts that have already been installed do not need to be installed again.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Copy the files in the Reporting Services patch scripts folder to the Report plug-in folder located under C:<ph id="ph1">\\</ph>Packages<ph id="ph2">\\</ph>Plugins<ph id="ph3">\\</ph>AxReportVmRoleStartupTask.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Change the directory to the Report plug-in folder where you stored the script files.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Using one of the methods listed below, replace the old instance of reporting extensions.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Remove/reinstall the reporting extension.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>The remove/reinstall option requires that redeploy all reports after you have finished the reinstallation..</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Manually copy binaries to the sql server binary folder.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>If you choose to manually copy the files, then you do not need to redeploy reports.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Remove/reinstall the reporting extension</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Complete the following procedure as a user in the administrator group for the machine where SSRS is running.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Using Windows PowerShell, remove the Dynamics SSRS extension by running the following script:</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>PowerShell .<ph id="ph1">\\</ph>DeploySsrsExtension.ps1 –UninstallOnly</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>In PowerShell, reinstall the Dynamics SSRS extension by running the following script:</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>PowerShell .<ph id="ph1">\\</ph>DeploySsrsExtension.ps1</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Removing the reporting extension removes all the reports.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>If you have removed and then reinstalled the reporting extension, it is necessary to re-deploy the reports by running the following script:</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Powershell .<ph id="ph1">\\</ph>DeployAllReportsToSsrs.ps1</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>This task will take 20 to 30 minutes to complete.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Manually copy binaries to the SQL Server binary folder</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Stop SQL Server Reporting Services.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>This can be done either from the <bpt id="p1">**</bpt>Services management<ept id="p1">**</ept> console or from the <bpt id="p2">**</bpt>Reporting Services Configuration Manager<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Configuration<ph id="ph2">\_</ph>RSHotfix<ept id="p1">](./media/configuration_rshotfix.png)](./media/configuration_rshotfix.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Find the SQL Server Reporting Services binary folder.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>This folder is usually located at C:<ph id="ph1">\\</ph>Program Files<ph id="ph2">\\</ph>Microsoft SQL Server<ph id="ph3">\\</ph>MSRS11.MSSQLSERVER<ph id="ph4">\\</ph>Reporting Services<ph id="ph5">\\</ph>ReportServer<ph id="ph6">\\</ph>bin.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>If any of the following files are in the patch, copy them to the SQL Server Reporting Services bin folder.* *</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> Patches can either be full patches, which would contain all of the files used by the service, or incremental patches, which contain only the files that have changed.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>If you have an incremental patch, then some files may not be included.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Files not included in the patch do not need to be replaced.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Microsoft.Dynamics.AX.Framework.Services.Platform.Client.dll</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Microsoft.Dynamics.Framework.ReportsExtensions.dll</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Microsoft.Dynamics.Framework.Reports.dll</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Microsoft.Dynamics.ApplicationPlatform.SSRSReportRuntime.Instrumentation.dll</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Microsoft.Dynamics.ApplicationPlatform.SSRSReportRuntime.man</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Microsoft.Dynamics.Platform.Integration.ClientSdk.Abstraction.dll</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Microsoft.Dynamics.AX.Framework.Reports.Shared.dll</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Microsoft.Dynamics.AX.Framework.EncryptionEngine.dll</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Microsoft.Dynamics.AX.Framework.Utilities.dll</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Microsoft.Dynamics.ApplicationSuite.Reporting.BusinessLogic.dll</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Microsoft.Dynamics.ApplicationPlatform.Environment.dll</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Microsoft.Dynamics.AX.ReportConfiguration.axc</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Microsoft.WindowsAzure.ServiceRuntime.dll</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Microsoft.IdentityModel.dll</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>msshrtmi.dll</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Restart SQL Server Reporting Services.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Reporting service installation</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>The following changes are made with the reporting service installation: The following files will be copied into Reporting service bin folder (C:<ph id="ph1">\\</ph>Program Files<ph id="ph2">\\</ph>Microsoft SQL Server<ph id="ph3">\\</ph>MSRS11.MSSQLSERVER<ph id="ph4">\\</ph>Reporting Services<ph id="ph5">\\</ph>ReportServer<ph id="ph6">\\</ph>bin), and the corresponding SSRS config files will be updated so that SSRS is aware of the extension.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Dynamics.AX.Framework.Services.Platform.Client.dll</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Dynamics.Framework.ReportsExtensions.dll</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Dynamics.Framework.Reports.dll</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Dynamics.ApplicationPlatform.SSRSReportRuntime.Instrumentation.dll</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Dynamics.ApplicationPlatform.SSRSReportRuntime.man</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Dynamics.Platform.Integration.ClientSdk.Abstraction.dll</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Dynamics.AX.Framework.Reports.Shared.dll</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Dynamics.AX.Framework.EncryptionEngine.dll</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Dynamics.AX.Framework.Utilities.dll</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Dynamics.ApplicationSuite.Reporting.BusinessLogic.dll</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Dynamics.ApplicationPlatform.Environment.dll</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Dynamics.AX.ReportConfiguration.axc</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>WindowsAzure.ServiceRuntime.dll</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>IdentityModel.dll</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>msshrtmi.dll</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>An SSRS service account will be updated to use the local system.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>A new SSRS catalog database DynamicsAxReportServer and temp database DynamicsAxReportServerTempDB database will be created, and SSRS will be configured to use these two databases.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>The default catalog database ReportServer and ReportServerTempDBstill exist, but are set to not be used by reporting services.</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>The SSRS service will be updated to use Windows Authentication.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>An xml configuration file ReportPVMConfiguration.xml will be created in the SSRS bin folder for the report runtime.</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>A report root folder named <bpt id="p1">**</bpt>Dynamics<ept id="p1">**</ept> and a new security role named <bpt id="p2">**</bpt>DynamicsBrowser<ept id="p2">**</ept> will be created.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Both AOS Web application AppPool identity and batch service account will be added to this custom role.</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Note that during deployment, the report folder will be deleted and then recreated.</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Therefore all the previously deployed reports will be deleted from the SSRS server.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>After you reinstall the reporting extension, you must redeploy the reports.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

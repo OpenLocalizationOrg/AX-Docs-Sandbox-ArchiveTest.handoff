@@ -1,0 +1,534 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">d921c98352d05256448278daa6c8696e311f512f</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\dev-tools\build-debug-project.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">021a4ae6ed7722f20b13efdd81176455be95dbc7</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">c6d8e6b972d28117f5738d5d7cab49d4dec9b8ed</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Build and debug a project</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>In this tutorial, you’ll learn about using the tools in Visual Studio to analyze and debug code in the Fleet Management application.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>You’ll go through a simple developer scenario in which you will set breakpoints, modify some code, and build the result.</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Build and debug a project</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>In this tutorial, you’ll learn about using the tools in Visual Studio to analyze and debug code in the Fleet Management application.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>You’ll go through a simple developer scenario in which you will set breakpoints, modify some code, and build the result.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Prerequisites</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Previous experience with code and Visual Studio is helpful to get the full benefit of this tutorial.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>This tutorial requires you to access the environment using Remote Desktop and that you be provisioned as an administrator on the instance.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Key concepts</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>The debugger in Visual Studio is used to analyze and debug code for your projects.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>The standard features of the Visual Studio debugger are available to use when you're examining the running application.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>These features include modifying values of variables, setting breakpoints, and so on.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>IntelliSense and other features of Visual Studio are vital to efficient code editing and comprehension.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Development is an iterative process.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>After making modifications to the code, the project will be built, and changes can be tested.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Scenario</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>The rental company has had unfortunate events when customers rent cars using credit cards that are past the expiration dates.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>You, the developer, are tasked with revising the application to help prevent this situation.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>You’ll identify the problem by using the debugger in Visual Studio.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>After the problem is identified, you’ll edit some code to implement a fix.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Finally, you’ll build the project and validate that the fix was successful.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Run to a breakpoint</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>On the desktop, double-click the Visual Studio shortcut to open the development environment.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Open the FleetManagement solution.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>File<ept id="p1">**</ept> menu, point to <bpt id="p2">**</bpt>Open<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>Project/Solution<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Browse to the desktop, and then open the <bpt id="p1">**</bpt>FleetManagement<ept id="p1">**</ept> folder.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>If the solution file is not on your computer, the steps to create it are listed in <bpt id="p1">[</bpt>Tutorial: Create a Fleet Management solution file out of the Fleet Management models in the AOT<ept id="p1">](https://community.dynamics.com/ax/b/newdynamicsax/archive/2016/05/19/tutorial-create-a-fleet-management-solution-file-out-of-the-fleet-management-models-in-the-aot)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Select the file named <bpt id="p1">**</bpt>FleetManagement<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>The file type listed is SLN File.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Open<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Loading the solution may take some time.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Make the <bpt id="p1">**</bpt>FleetManagement Migrated<ept id="p1">**</ept> project the startup project.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, right-click the <bpt id="p2">**</bpt>Fleet Management Migrated<ept id="p2">**</ept> project, and choose <bpt id="p3">**</bpt>Set as StartUp Project<ept id="p3">**</ept> in the context menu.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, double-click the <bpt id="p2">**</bpt>Fleet Management migrated<ept id="p2">**</ept> project to display its content.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Double-click the <bpt id="p1">**</bpt>Code<ept id="p1">**</ept> folder, and then double click the <bpt id="p2">**</bpt>Classes<ept id="p2">**</ept> folder of the Fleet Management migrated project.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Locate the <bpt id="p1">**</bpt>FMRentailCheckoutProcessor<ept id="p1">**</ept> class.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Right-click this class, and then click <bpt id="p1">**</bpt>Open<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Alternatively, you can use the solution explorer search bar at the top of the solution explorer window.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>As you enter the name in the search bar, you'll see the corresponding artifacts selected in the solution explorer.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>You can now see the X++ code for the class.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>This class has a method named</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Place a breakpoint in this method on the line following the first comment.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>To do this, click in the margin to the left of the line of code where you want the debugger to pause execution.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>You can also click anywhere in the line of code, and then press F9.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>The following illustration shows a breakpoint, which is displayed as a red-filled circle in the margin.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>RedCircleMargin<ph id="ph2">\_</ph>BuildDebugProj<ept id="p1">](./media/redcirclemargin_builddebugproj.png)](./media/redcirclemargin_builddebugproj.png)</ept> The FinalizeRentalCheckout method is called when a rental transaction is saved.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>This method calls the delegate named RentalTransactionAboutTobeFinalizedEvent.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>You can implement an event handler method, which is called by this delegate.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>The method that calls the delegate passes a parameter, named RentalConfirmation, which contains a value that indicates whether the rental should be allowed or blocked.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>If the rental is allowed, the value contains "true"; if it's blocked, the value contains "false".</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>An event handler can change this value, based on any test the developer chooses to implement in code.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>In this case, we'll modify the code to test the expiration date of the credit card.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Press F5 to start the application for debugging, or, on the <bpt id="p1">**</bpt>Debug<ept id="p1">**</ept> menu, click <bpt id="p2">**</bpt>Start Debugging<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>It's important that you start the application in one of these ways.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>If you don't, the Visual Studio debugger won't start, so you won't hit any of the breakpoints you've set.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note<ept id="p1">**</ept>:The debugger needs to relate code position to source positions.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>It does this through consuming PDB files produced alongside the assemblies and netmodules.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>The debugger will load symbols from the PDB files as described in the settings in the global tools settings.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>To open the options page containing the setting that controls which symbols load, go to the <bpt id="p1">**</bpt>Tools<ept id="p1">**</ept> menu and choose <bpt id="p2">**</bpt>Options<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Microsoft Dynamics 365 for Finance and Operations<ept id="p1">**</ept> group, select the <bpt id="p2">**</bpt>Debugging<ept id="p2">**</ept> page.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>If this option is selected, the system will load symbols from only the PDB files related to the artifacts in the current solution.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>This reduces the startup time significantly, so be sure it’s selected for this lab.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Be aware that when this option is selected, it won’t be possible to see source code from entities outside of the current solution.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>After a few moments, the browser will start and display the startup object that was selected in the project.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Browse to the <bpt id="p1">**</bpt>Current rentals<ept id="p1">**</ept> page.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Go to the Dynamics <bpt id="p1">**</bpt>Dashboard<ept id="p1">**</ept> by clicking <bpt id="p2">**</bpt>Finance and Operations<ept id="p2">**</ept> in the upper left corner.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Find the Fleet Management module.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>You can use the Navigation (press Alt+F1), expand the Modules heading and find the <bpt id="p1">**</bpt>Fleet Management<ept id="p1">**</ept> module.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Click the <bpt id="p1">**</bpt>Current rentals<ept id="p1">**</ept> item under Rentals.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>In the action pane, click <bpt id="p1">**</bpt>Options <ph id="ph1">&amp;gt;</ph> Change view <ph id="ph2">&amp;gt;</ph> Line view<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>When the page is displayed, click <bpt id="p1">**</bpt>Show list<ept id="p1">**</ept> in the Show/Hide list (or press Ctrl+F8).</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Make a change to any existing rental.</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>For example, click <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept>, and change the time that the rental period started.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Save<ept id="p1">**</ept> to force a validation of the rental record.</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>The method in which you placed a breakpoint is called.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Execution pauses at the line of code that contains the breakpoint.</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>ForceValidation<ph id="ph2">\_</ph>BuildDebugProj<ept id="p1">](./media/forcevalidation_builddebugproj.png)](./media/forcevalidation_builddebugproj.png)</ept> While the application is paused at a breakpoint, you can examine the application state.</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Use the same techniques that you typically would for any application developed with Visual Studio.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>For example, place the cursor over a variable to see its value in a tooltip.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Tooltip<ph id="ph2">\_</ph>BuildDebugProj<ept id="p1">](./media/tooltip_builddebugproj.png)](./media/tooltip_builddebugproj.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>The other debugging tools in Visual Studio are available as well.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>For example, the <bpt id="p1">**</bpt>Locals<ept id="p1">**</ept> window shows all of the local variables for the location where execution has stopped.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>Click the <bpt id="p1">**</bpt>Locals<ept id="p1">**</ept> tab at the bottom of Visual Studio, and expand the <bpt id="p2">**</bpt>fmrentalrecord<ept id="p2">**</ept> variable.</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>You will see the internal state of the record, showing the values of all the fields in the record.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>InternalState<ph id="ph2">\_</ph>BuildDebugProj<ept id="p1">](./media/internalstate_builddebugproj.png)](./media/internalstate_builddebugproj.png)</ept> Notice the value of the <bpt id="p2">**</bpt>Vehicle<ept id="p2">**</ept> property of the <bpt id="p3">**</bpt>fmrentalrecord<ept id="p3">**</ept> variable.</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>This property is a foreign key field in the <bpt id="p1">**</bpt>FMRental<ept id="p1">**</ept> table.</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>The debugger allows us to peek into the related record in the FMVehicle table.</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>It shows values that belong to the <bpt id="p1">**</bpt>AutoIdentification<ept id="p1">**</ept> field group.</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Breakpoints<ept id="p1">**</ept> window lists all of the breakpoints that have been set.</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Click the <bpt id="p1">**</bpt>Breakpoints<ept id="p1">**</ept> tab to see its content.</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Breakpoint<ph id="ph2">\_</ph>BuildDebugProj<ept id="p1">](./media/breakpoint_builddebugproj.png)](./media/breakpoint_builddebugproj.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>Press F10 a few times to step through the code, line-by-line, and use the full complement of debugger features.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>Notice that the <bpt id="p1">**</bpt>Locals<ept id="p1">**</ept> window updates the values of variables immediately with each statement that's executed.</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>On the toolbar, click <bpt id="p1">**</bpt>Continue<ept id="p1">**</ept>, or press F5</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>Close Internet Explorer to close the <bpt id="p1">**</bpt>Fleet Management<ept id="p1">**</ept> application.</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Visual Studio will exit the debugging mode.</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>An alternative is to choose <bpt id="p1">**</bpt>Stop Debugging<ept id="p1">**</ept> from the <bpt id="p2">**</bpt>Debug<ept id="p2">**</ept> menu.</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>This will leave Internet Explorer open, allowing the next debugging session to start faster.</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>Add the validation code</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>FinalizeRentalCheckout<ept id="p1">**</ept> method, you saw that the developer added code to call the delegate that’s used to determine the validity of the rental.</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>To solve the problem of expired credit cards, you’ll add an event handler, which you’ll use to verify that that the credit card isn’t expired.</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>To simplify the lab, the handler will be added in the same file that contains the delegate.</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>Use the following code as inspiration.</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>Rather than copying and pasting the code, type it in manually to see the IntelliSense features in action.</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>These features add to the high level of productivity that Visual Studio users expect.</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>The preceding code is straightforward.</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>The method is marked as handler for the relevant delegate by using the <bpt id="p1">**</bpt>SubscribesTo<ept id="p1">**</ept> attribute, as shown.</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>In the code, the customer record is retrieved, and then the credit card date is compared to today's date.</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>If the expiration date of the credit card is in the past, the event handler sets a value in the <bpt id="p1">**</bpt>RentalConfirmation<ept id="p1">**</ept> structure to signal that the customer isn't eligible to rent a vehicle.</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>The idea is that any number of handlers can subscribe to the delegate.</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>If any handler determines that a rental should not proceed, it sets the <bpt id="p1">**</bpt>OkToRent<ept id="p1">**</ept> flag to false.</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>A superior implementation might refrain from doing any analysis if it determines that the <bpt id="p1">**</bpt>OkToRent<ept id="p1">**</ept> flag has already been set to false.</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>Be sure that you're working in the FMRentalCheckoutProcessor.xpp file.</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>Begin by adding the new event handler definition to the FMRentalCheckoutProcessor class.</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>Add the following code on an empty line just above the brace (}) that marks the end of the class definition.</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>Add the attributes to the beginning of the event handler.</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>These attributes indicate which delegate the event handler is subscribing to.</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>Now, add the code that checks the credit card expiration value.</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>The completed method should look similar to the following code.</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>Make sure the handler and the delegate are separated by exactly one blank line.</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>On the toolbar in Visual Studio, click <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>After you're satisfied with the code, build the code for the Fleet Management Migrated project.</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>To do this, in <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, right-click the <bpt id="p2">**</bpt>FleetManagement Migrated<ept id="p2">**</ept> project name, and then click <bpt id="p3">**</bpt>Build<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>You may see errors or warnings if the code isn't correct.</source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>If so, correct the code, and build again until all warnings and errors have been resolved.</source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>You're now ready to validate that the revision works as intended.</source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Debug<ept id="p1">**</ept> menu, click <bpt id="p2">**</bpt>Delete All Breakpoints<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>Place a new breakpoint in the event-handler method at the line that contains the following statement:</source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>Start the Fleet Management sample with debugging active by pressing F5.</source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>Browse to the <bpt id="p1">**</bpt>Current rentals<ept id="p1">**</ept> page, as described starting in step 11 of the previous section.</source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>Select one of the reservations, and click <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Customer<ept id="p1">**</ept> drop-down list, select Adrian Lannin from the list, and then click <bpt id="p2">**</bpt>Save<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>Execution pauses at the breakpoint that you set in the event-handler method.</source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>Press F10 three times to step through the code block.</source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>StepCodeBlock<ph id="ph2">\_</ph>BuildDebugProj<ept id="p1">](./media/stepcodeblock_builddebugproj.png)](./media/stepcodeblock_builddebugproj.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>To see the code map for the call stacks, right-click in the code editor, and then click <bpt id="p1">**</bpt>Show Call Stack on Code Map<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>You may want to add a comment to the call stack, step through the code, and watch as the code map changes accordingly.</source>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>Press F5 to continue.</source>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>You'll see that the customer has been disallowed.</source>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>In the same rental, change the customer name to Phil Spencer, and then click <bpt id="p1">**</bpt>Update<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>This time, the transaction is allowed.</source>
+        </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>Close Internet Explorer.</source>
+        </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>Comment out the <bpt id="p1">**</bpt>SubscribesTo<ept id="p1">**</ept> attribute on the <bpt id="p2">**</bpt>RentalFinalizedEventHandler<ept id="p2">**</ept> method.</source>
+        </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>This step ensures that the credit card test will no longer run as you work on the remaining tutorials.</source>
+        </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>Best practices</source>
+        </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>Earlier in this tutorial, you had the opportunity to add code to the project and build the solution with your changes.</source>
+        </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>The build process may not have been successful, requiring you to refer to the error window.</source>
+        </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>Using this window, you can get to the error by clicking on the line that describes the error.</source>
+        </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>You may have noticed some diagnostic messages that don’t represent compilation errors.</source>
+        </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>These are diagnostics from the <bpt id="p1">**</bpt>Best Practice<ept id="p1">**</ept> checker.</source>
+        </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>This tool will check for instances where the developer has violated a known best practice, and display a warning when one is found.</source>
+        </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>The Best Practice rules apply to both code constructs and metadata.</source>
+        </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>Each software development organization is likely to have its own set of best practices that they enforce.</source>
+        </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>They may want to disregard some of the existing best practice checks.</source>
+        </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>To support this, the set of reported best practice diagnostics can be modified by the individual developer.</source>
+        </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>To demonstrate this, complete the following steps:</source>
+        </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>View<ept id="p1">**</ept> menu, click <bpt id="p2">**</bpt>Error List<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>You should see a small number of best practice warnings.</source>
+        </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>DYNAMICS AX<ept id="p1">**</ept> menu, click <bpt id="p2">**</bpt>Options<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Finance and Operations<ept id="p1">**</ept> group, choose <bpt id="p2">**</bpt>Best Practices<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Model<ept id="p1">**</ept> drop-down list, make sure that the <bpt id="p2">**</bpt>Fleet Management<ept id="p2">**</ept> model is selected.</source>
+        </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>The best practice rules apply to a particular model.</source>
+        </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>Mark the selections for some of the sets of Best Practice rules.</source>
+        </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>For example, if you select the entry for <bpt id="p1">**</bpt>CodeStyleRules<ept id="p1">**</ept>, best practice guidelines for variables will be examined.</source>
+        </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>After you've updated the selections, click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>Rebuild the Fleet Management Migrated project by right-clicking the project name and then clicking <bpt id="p1">**</bpt>Rebuild<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>You'll notice that the violations of the best practice rules that you specified appear in the <bpt id="p1">**</bpt>Error list<ept id="p1">**</ept> window.</source>
+        </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>Because Microsoft can’t know all of the best practice checks that a development organization wants to use, the <bpt id="p1">**</bpt>Best Practice<ept id="p1">**</ept> system is extensible.</source>
+        </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>You author new best practice rules and add them to the system.</source>
+        </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>This is done by creating a class in C<ph id="ph1">\#</ph> that identifies the problem; the class is compiled, and the assembly is selected in the dialog that appears when you click <bpt id="p1">**</bpt>Install Extension<ept id="p1">**</ept> in the <bpt id="p2">**</bpt>Options<ept id="p2">**</ept> window.</source>
+        </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>An example of how to implement a best practice rule can be found in the <bpt id="p1">**</bpt>C:<ph id="ph1">\\</ph>FMLab<ph id="ph2">\\</ph>Code Best Practice Example<ept id="p1">**</ept> folder.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

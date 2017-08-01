@@ -1,0 +1,906 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">a9ac5a11bbc106769edc5d30c0481e74199b2b9e</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\lifecycle-services\ax-2012\deploy-development-environment-azure.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">bb43bd6bc668003d8cbabc8d05d2c579c1bd16ee</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">bf702300411766afda358d37b90ba0b123abcf2c</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Deploy a development environment on Azure (AX 2012)</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Deploy a development environment on Azure (AX 2012)</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Prerequisites</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Before you complete the procedures in this article, make sure that the following prerequisites are in place.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Category<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Prerequisite<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Required tasks</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure<ept id="p1">](plan-2012-r3-deployment-azure.md)</ept></source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>1. Log on to Lifecycle Services</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Microsoft Dynamics Lifecycle Services provides a cloud-based collaborative workspace that customers and partners can use to manage Microsoft Dynamics AX projects.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>You’ll use this website to deploy AX 2012 R3 on Azure.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Lifecycle Services is available to customers and partners as part of their support plans.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>You can access it with your CustomerSource or PartnerSource credentials.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Log on to Lifecycle Services<ept id="p1">](https://lcs.dynamics.com/en/)</ept></source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>2. Create a project</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>After you log in to Lifecycle Services, open an existing project, or create a new project.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Projects are the key organizer of your experience in Lifecycle Services.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>The methodology associated with a project determines which phases and tasks are included in the project by default.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>3. Connect the project to your Azure subscription</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Connect the Lifecycle Services project to your Azure subscription.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>This will enable Lifecycle Services to deploy an AX 2012 R3 environment to the subscription.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>To connect the project to your Azure subscription, complete the following procedure.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Keep in mind that a project can be connected to only one Azure subscription.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>If you have multiple Azure subscriptions, be sure to identify which subscription you want to use before you complete this procedure.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Cloud-hosted environments<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Cloud-hosted environments<ept id="p1">**</ept> page is displayed.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Microsoft Azure setup<ept id="p1">**</ept> panel is displayed on the side of the screen.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>If it is not displayed, click <bpt id="p1">**</bpt>Microsoft Azure settings<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Enter your Azure subscription ID.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>If you need to find your subscription ID, complete the following steps:</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Open another instance of your browser.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Log on to the <bpt id="p1">**</bpt>Azure management portal<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>In the navigation pane on the left, click <bpt id="p1">**</bpt>Settings<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>(You may have to scroll to the bottom of the navigation pane to see the Settings link.) The <bpt id="p1">**</bpt>Settings<ept id="p1">**</ept> page is displayed.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Copy your subscription ID, and then paste it into the <bpt id="p1">**</bpt>Azure subscription ID<ept id="p1">**</ept> field in Lifecycle Services (which is currently displayed in another browser instance).</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Next<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Download<ept id="p1">**</ept> to download a management certificate.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>This management certificate enables Lifecycle Services to communicate with Azure on your behalf.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>By default, the management certificate is saved to the Downloads folder on your computer and is named LifecycleServicesDeployment.cer.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Upload the management certificate to Azure.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>To do so, complete the following steps:</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Open another instance of your browser.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>(Or, go to the browser instance that you may have opened in step 3.)</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Log on to the <bpt id="p1">**</bpt>Azure management portal<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>In the navigation pane on the left, click <bpt id="p1">**</bpt>Settings<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Settings<ept id="p1">**</ept> page is displayed.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Management certificates<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Upload<ept id="p1">**</ept> at the bottom of the page.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Upload a management certificate<ept id="p1">**</ept> window, browse to the management certificate that you downloaded in step 5.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Then click the check mark.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Go back to the browser that displays the <bpt id="p1">**</bpt>Microsoft Azure setup<ept id="p1">**</ept> panel in Lifecycle Services.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Next<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Select the region that is closest to you.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>The AX 2012 R3 environment will be deployed to a datacenter in this region.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Connect<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>The project is now connected to the Azure subscription that you specified.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>If you discover that you connected the project to the wrong Azure subscription (that is, assuming you have multiple Azure subscriptions), you’ll need to delete the project, create a new project, and then repeat this procedure to connect the new project to the appropriate Azure subscription.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>4. Connect your corporate network to the Azure virtual network</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>The following sections provide information about how to configure the Azure virtual network and domain so that your corporate users can access AX 2012 R3.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>It is recommended that if you require login to these systems using corporate credentials that you set up the connectivity before you deploy the environment.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>This will require using Azure networking capabilities to extend you corporate network to one or more Azure virtual networks.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>It will additionally require you to deploy an Active Directory into the Azure virtual network, which will be set up for trust to your corporate Active Directory.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>This Active Directory will be used to manage VM-related resources in the Azure virtual network.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>This Active Directory will not be used for single sign-on, and should not be set up to sync the corporate directory.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Single sign-on capabilities will be provided through the domain trust.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Create a site-to-site VPN connection</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>To enable corporate users to access resources on the virtual machines in the Azure virtual network, you’ll need to create a site-to-site VPN connection between the Azure virtual network and your on-premises, corporate network.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>For information about how to do this, see:</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Virtual network overview<ept id="p1">](https://msdn.microsoft.com/en-us/library/windowsazure/jj156007.aspx)</ept></source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Virtual network configuration tasks<ept id="p1">](https://msdn.microsoft.com/en-us/library/jj156206.aspx)</ept></source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Set up a simulated hybrid cloud environment for testing<ept id="p1">](http://azure.microsoft.com/en-us/documentation/articles/virtual-networks-setup-simulated-hybrid-cloud-environment-testing/)</ept></source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Site-to-site VPN in Azure virtual network using Windows Server 2012 Routing and Remote Access Service (RRAS)<ept id="p1">](https://msdn.microsoft.com/library/dn636917.aspx)</ept></source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Configure a virtual network gateway in the management portal<ept id="p1">](https://msdn.microsoft.com/en-us/library/azure/jj156210.aspx)</ept></source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Create an active directory in Azure</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>An Active Directory is required in the Azure virtual network.</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>An Active Directory can be deployed to the Azure virtual network.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Please follow <bpt id="p1">[</bpt>Guidelines for Deploying Windows Server Active Directory on Azure Virtual Machines<ept id="p1">](https://msdn.microsoft.com/en-us/library/azure/jj156090.aspx)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Please note that Active Directory Federation Services is not presently supported with AX 2012 R3.</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>If you are providing the Active Directory, you will need to create the following service accounts within it that can be used by LCS deployment services when you deploy the environment.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Account<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Description<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">&amp;lt;</ph>DomainName<ph id="ph2">&amp;gt;</ph>AXServiceUser</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>AX 2012 R3 service account</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">&amp;lt;</ph>DomainName<ph id="ph2">&amp;gt;</ph>AOSServiceUser</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>AOS service account</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">&amp;lt;</ph>DomainName<ph id="ph2">&amp;gt;</ph>BCProxyUser</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>Business Connector proxy account</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">&amp;lt;</ph>DomainName<ph id="ph2">&amp;gt;</ph>SPServiceUser</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>SharePoint service account</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">&amp;lt;</ph>DomainName<ph id="ph2">&amp;gt;</ph>SqlServiceUser</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>SQL Server service account</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">&amp;lt;</ph>DomainName<ph id="ph2">&amp;gt;</ph>DynamicsInstallUser</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>AX 2012 R3 installation accountNote: This account must have permission to join computers to the domain.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>To give this account permission, complete the following steps:</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">&lt;strong&gt;</bpt>Start<ept id="p1">&lt;/strong&gt;</ept>, click <bpt id="p2">&lt;strong&gt;</bpt>Run<ept id="p2">&lt;/strong&gt;</ept>, type dsa.msc, and then click <bpt id="p3">&lt;strong&gt;</bpt>OK<ept id="p3">&lt;/strong&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>In the task pane, expand the domain node.</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Locate and right-click the organizational unit that you want to modify, and then click <bpt id="p1">&lt;strong&gt;</bpt>Delegate Control<ept id="p1">&lt;/strong&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">&lt;strong&gt;</bpt>Delegation of Control<ept id="p1">&lt;/strong&gt;</ept> Wizard, click <bpt id="p2">&lt;strong&gt;</bpt>Next<ept id="p2">&lt;/strong&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">&lt;strong&gt;</bpt>Add<ept id="p1">&lt;/strong&gt;</ept> to add a specific user or a specific group to the list, and then click <bpt id="p2">&lt;strong&gt;</bpt>Next<ept id="p2">&lt;/strong&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">&lt;strong&gt;</bpt>Tasks to Delegate<ept id="p1">&lt;/strong&gt;</ept> page, click <bpt id="p2">&lt;strong&gt;</bpt>Create a custom task to delegate<ept id="p2">&lt;/strong&gt;</ept>, and then click <bpt id="p3">&lt;strong&gt;</bpt>Next<ept id="p3">&lt;/strong&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>Click O<bpt id="p1">&lt;strong&gt;</bpt>nly the following objects in the folder<ept id="p1">&lt;/strong&gt;</ept>, and then from the list, click to select the <bpt id="p2">&lt;strong&gt;</bpt>Computer objects<ept id="p2">&lt;/strong&gt;</ept> check box.</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Then, select the check boxes below the list, <bpt id="p1">&lt;strong&gt;</bpt>Create selected objects in this folder<ept id="p1">&lt;/strong&gt;</ept> and <bpt id="p2">&lt;strong&gt;</bpt>Delete selected objects in this folder<ept id="p2">&lt;/strong&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">&lt;strong&gt;</bpt>Next<ept id="p1">&lt;/strong&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">&lt;strong&gt;</bpt>Permissions<ept id="p1">&lt;/strong&gt;</ept> list, click to select the following check boxes:</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Reset Password<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Read and write Account Restrictions<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Validated write to DNS host name<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Validated write to service principal name<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">&lt;strong&gt;</bpt>Next<ept id="p1">&lt;/strong&gt;</ept>, and then click <bpt id="p2">&lt;strong&gt;</bpt>Finish<ept id="p2">&lt;/strong&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>Close the <bpt id="p1">&lt;strong&gt;</bpt>Active Directory Users and Computers MMC snap-in<ept id="p1">&lt;/strong&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>You will need to provide the passwords for these accounts when you deploy the environment.</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>Create a domain trust</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>To enable corporate users to access resources on the virtual machines in your Azure domain, you must create an Active Directory trust between the domains.</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>For information about how to create a trust, see <bpt id="p1">[</bpt>Create a Forest Trust<ept id="p1">](https://technet.microsoft.com/en-us/library/cc754626.aspx)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>This process is the same process you would use to create a trust between two on-premises domains.</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>Give the Administrators group the right to log on as a batch job</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>Log in to the Active Directory domain controller and complete the following steps to give the built-in Administrators group the right to log on as a batch job.</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Start<ept id="p1">**</ept>, click <bpt id="p2">**</bpt>All Programs<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>Administrative Tools<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Administrative Tools<ept id="p1">**</ept> menu, select <bpt id="p2">**</bpt>Group Policy Management<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Group Policy Management<ept id="p1">**</ept> console tree, click <bpt id="p2">**</bpt>Forest: <ph id="ph1">&amp;lt;</ph>ServerName<ph id="ph2">&amp;gt;</ph><ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>Domains<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>Click the name of your server, expand <bpt id="p1">**</bpt>Domain Controllers<ept id="p1">**</ept>, right-click <bpt id="p2">**</bpt>Default Domain Controllers Policy<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>Edit<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Group Policy Management Editor<ept id="p1">**</ept>, click <bpt id="p2">**</bpt>Default Domain Controllers Policy <ph id="ph1">&amp;lt;</ph>ServerName<ph id="ph2">&amp;gt;</ph> Policy<ept id="p2">**</ept>, expand <bpt id="p3">**</bpt>Computer Configuration<ept id="p3">**</ept>, and then click <bpt id="p4">**</bpt>Policies<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Policies<ept id="p1">**</ept> tree, expand <bpt id="p2">**</bpt>Windows Setting<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>Security Settings<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Security Settings<ept id="p1">**</ept> tree, expand <bpt id="p2">**</bpt>Local Policies<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>User Rights Assignment<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>In the results pane, scroll to and then click <bpt id="p1">**</bpt>Log on as a batch job<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Log on as a batch job Properties<ept id="p1">**</ept> dialog box, click <bpt id="p2">**</bpt>Add User or Group<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Add User or Group<ept id="p1">**</ept> dialog box, click <bpt id="p2">**</bpt>Browse<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Select Users, Computers, or Groups<ept id="p1">**</ept> dialog box, type Administrators.</source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Check Names<ept id="p1">**</ept> to verify that the built-in Administrators account appears, and then click <bpt id="p2">**</bpt>OK<ept id="p2">**</ept> three times.</source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>Change the default organizational unit</source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>If you want virtual machines to be added to Active Directory in a custom organizational unit—versus the default organizational unit—you can change the default organizational unit in your Active Directory prior to starting deployment.</source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>For more information, click <bpt id="p1">[</bpt>here<ept id="p1">](http://pc-addicts.com/server-2012-change-default-ou/)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>5. Deploy a development environment on Azure</source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>Complete the following procedure to deploy a development environment on Azure.</source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Cloud-hosted environments<ept id="p1">**</ept> page, click the Add (+) icon.</source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Select environment topology<ept id="p1">**</ept> panel, select <bpt id="p2">**</bpt>Dev/test<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Development<ept id="p1">**</ept> or <bpt id="p2">**</bpt>Development with shared SQL Server<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Environment name<ept id="p1">**</ept> field, enter a name for the environment that will be deployed.</source>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Advanced settings<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>To customize domain settings, click <bpt id="p1">**</bpt>Customize domain settings<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>Then use the following table to enter information.</source>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>If you want to:<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Do this:<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>Create a new domain in Azure for the environment</source>
+        </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">&lt;strong&gt;</bpt>New domain<ept id="p1">&lt;/strong&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>Enter a name for the domain.</source>
+        </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>By default, the domain is named <bpt id="p1">&lt;em&gt;</bpt>contoso.com<ept id="p1">&lt;/em&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>Add the environment to an existing domain in Azure</source>
+        </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">&lt;strong&gt;</bpt>Existing domain<ept id="p1">&lt;/strong&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>Enter the name of the domain.</source>
+        </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>For example, <bpt id="p1">&lt;em&gt;</bpt>contoso.com<ept id="p1">&lt;/em&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>To customize the service accounts that will be created in the domain, click <bpt id="p1">**</bpt>Customize service accounts<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>Service accounts and/or service account passwords may be specified through the <bpt id="p1">**</bpt>Advanced Settings<ept id="p1">**</ept> option for a deployment.</source>
+        </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>If neither is provided, default accounts are used and random passwords are selected.</source>
+        </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>Use these features when you want to maintain account naming and password rules for your corporation.</source>
+        </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>Account and password rules:</source>
+        </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>A valid service name must be less than 20 characters with no special characters.</source>
+        </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>A valid password must be more than 8 characters and contain uppercase letters, lowercase letters, numbers, and at least one of the following characters: <ph id="ph1">\[</ph>'@', '!', '=', '<ph id="ph2">\*</ph>'<ph id="ph3">\]</ph> You can’t use common passwords, such as: <ph id="ph4">pass@word1</ph></source>
+        </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>To select the version of AX 2012 R3 that you want use, click <bpt id="p1">**</bpt>Supported version<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>By default, the AX 2012 R3 CU8 version of this environment will be deployed.</source>
+        </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>If you don’t want to use the CU8 version, select <bpt id="p1">**</bpt>Dynamics ERP 2012 R3 RTM<ept id="p1">**</ept> from the list.</source>
+        </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>To customize virtual machine names, click <bpt id="p1">**</bpt>Customize virtual machine names<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>In order to support common IT naming guidelines, the ability to name virtual machines is provided through the <bpt id="p1">**</bpt>Advanced settings<ept id="p1">**</ept> option on most deployment topologies.</source>
+        </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>In addition to defining the name, a starting index can be selected for each virtual machine type.</source>
+        </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>The index is incremented for each instance of the virtual machine type that is deployed.</source>
+        </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>Virtual machine names must be 13 characters or less.</source>
+        </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>The index is separated from the machine name by a hyphen (-), followed by the index that supports a maximum of 2 digits.</source>
+        </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>Example: ACustomVMName-99 When virtual machine instances are added to an environment after the initial deployment, the deployment service will start incrementing the virtual machine name where it left off.</source>
+        </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>For example, if you deployed four AOS virtual machines with a starting index of 2, then the last AOS instance name will be AOS-6.If you add two more AOS instances, they will be AOS-7 and AOS-8.</source>
+        </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>If one of the virtual machine types in your deployment is customized, then all of the virtual machine names must be customized.</source>
+        </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>This is done to ensure that a long deployment does not occur because a virtual machine name was accidentally missed.</source>
+        </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>To customize virtual network settings, click <bpt id="p1">**</bpt>Customize virtual network<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>Then use the following table to enter information.</source>
+        </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>If you want to:<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Do this:<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>Create a new virtual network in Azure for the environment</source>
+        </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">&lt;strong&gt;</bpt>New virtual network<ept id="p1">&lt;/strong&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>Enter a name for the virtual network.</source>
+        </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>Add the environment to an existing virtual network in Azure</source>
+        </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">&lt;strong&gt;</bpt>Existing virtual network<ept id="p1">&lt;/strong&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source>Select the name of the existing virtual network that you want to use.</source>
+        </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">&lt;strong&gt;</bpt>Address space<ept id="p1">&lt;/strong&gt;</ept> field will automatically display the appropriate value.</source>
+        </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source>Select the provided value.</source>
+        </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">&lt;strong&gt;</bpt>Application subnet name<ept id="p1">&lt;/strong&gt;</ept> field will display available options.</source>
+        </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>If you are deploying to an AD that was previously deployed through Lifecycle Services, select the <bpt id="p1">*</bpt>APPNET<ept id="p1">*</ept> value.</source>
+        </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source>The Active Directory subnet must be entered and match the Active Directory subnet IP/Range found in the Azure management portal for the AD you desire to target.</source>
+        </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source>Log on to the <bpt id="p1">&lt;a href="https://manage.windowsazure.com/"&gt;</bpt>Azure management portal<ept id="p1">&lt;/a&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source>In the navigation pane on the left, click <bpt id="p1">&lt;strong&gt;</bpt>Networks<ept id="p1">&lt;/strong&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source>Click the name of the virtual network that you’re going to use.</source>
+        </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">&lt;strong&gt;</bpt>Configure<ept id="p1">&lt;/strong&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source>Details about the virtual network are listed on the page.</source>
+        </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Done.<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Deploy environment<ept id="p1">**</ept> panel is redisplayed.</source>
+        </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source>The number and size of each virtual machine that will be deployed is listed.</source>
+        </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source>Change the number and size of the virtual machines, as needed.</source>
+        </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source>For information about the software installed on each virtual machine in this environment, see <bpt id="p1">[</bpt>Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure<ept id="p1">](plan-2012-r3-deployment-azure.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>For sizing and pricing details about virtual machines, see <bpt id="p1">[</bpt>Virtual machines pricing details<ept id="p1">](http://azure.microsoft.com/en-us/pricing/details/virtual-machines/)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="298" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Software License Terms<ept id="p1">**</ept> to review the licensing terms and conditions.</source>
+        </trans-unit>
+        <trans-unit id="299" translate="yes" xml:space="preserve">
+          <source>Then select the check box to indicate that you agree to the terms.</source>
+        </trans-unit>
+        <trans-unit id="300" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Next<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="301" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Deploy<ept id="p1">**</ept> to confirm that you’re ready to deploy the environment.</source>
+        </trans-unit>
+        <trans-unit id="302" translate="yes" xml:space="preserve">
+          <source>The deployment may take a few hours to complete.</source>
+        </trans-unit>
+        <trans-unit id="303" translate="yes" xml:space="preserve">
+          <source>When the deployment is done, the <bpt id="p1">**</bpt>Deployment Status<ept id="p1">**</ept> column on the <bpt id="p2">**</bpt>Cloud-hosted environments<ept id="p2">**</ept> page will display <bpt id="p3">**</bpt>Deployed<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="304" translate="yes" xml:space="preserve">
+          <source>(You may need to refresh your browser to see this.) If the deployment fails, you may see an error message right away.</source>
+        </trans-unit>
+        <trans-unit id="305" translate="yes" xml:space="preserve">
+          <source>If the error occurs later in the deployment process, error details will be displayed in the details pane on the right-side of the page.</source>
+        </trans-unit>
+        <trans-unit id="306" translate="yes" xml:space="preserve">
+          <source>6. Prepare AX 2012 R3 for use</source>
+        </trans-unit>
+        <trans-unit id="307" translate="yes" xml:space="preserve">
+          <source>Now that the environment has been deployed on Azure, you must set up and configure AX 2012 R3 for use.</source>
+        </trans-unit>
+        <trans-unit id="308" translate="yes" xml:space="preserve">
+          <source>See the following sections for more information.</source>
+        </trans-unit>
+        <trans-unit id="309" translate="yes" xml:space="preserve">
+          <source>Log on to the AOS virtual machine</source>
+        </trans-unit>
+        <trans-unit id="310" translate="yes" xml:space="preserve">
+          <source>Log on to the AOS-<ph id="ph1">&amp;lt;</ph>GUID<ph id="ph2">&amp;gt;</ph> virtual machine using the <ph id="ph3">&amp;lt;</ph>DomainName<ph id="ph4">&amp;gt;</ph>DynamicsInstallUser account.</source>
+        </trans-unit>
+        <trans-unit id="311" translate="yes" xml:space="preserve">
+          <source>For instructions, see the “How do I log on to a virtual machine?”</source>
+        </trans-unit>
+        <trans-unit id="312" translate="yes" xml:space="preserve">
+          <source>section of the <bpt id="p1">[</bpt>Manage your Microsoft Dynamics AX 2012 R3 deployment on Azure<ept id="p1">](manage-2012-r3-deployment-azure.md)</ept> article.</source>
+        </trans-unit>
+        <trans-unit id="313" translate="yes" xml:space="preserve">
+          <source>Compile AX 2012 R3</source>
+        </trans-unit>
+        <trans-unit id="314" translate="yes" xml:space="preserve">
+          <source>Compile AX 2012 R3 by using AxBuild.exe.</source>
+        </trans-unit>
+        <trans-unit id="315" translate="yes" xml:space="preserve">
+          <source>For instructions, see <bpt id="p1">[</bpt>AxBuild.exe for Parallel Compile on AOS of X++ to p-code<ept id="p1">](https://technet.microsoft.com/EN-US/library/dn528954.aspx)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="316" translate="yes" xml:space="preserve">
+          <source>Initailize AX 2012 R3</source>
+        </trans-unit>
+        <trans-unit id="317" translate="yes" xml:space="preserve">
+          <source>Open the AX 2012 R3 client and complete the initialization checklists.</source>
+        </trans-unit>
+        <trans-unit id="318" translate="yes" xml:space="preserve">
+          <source>For instructions, see <bpt id="p1">[</bpt>Initialization checklists<ept id="p1">](https://technet.microsoft.com/EN-US/library/aa497061.aspx)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="319" translate="yes" xml:space="preserve">
+          <source>Install sample data</source>
+        </trans-unit>
+        <trans-unit id="320" translate="yes" xml:space="preserve">
+          <source>If you want sample data installed in your environment, complete the following steps.</source>
+        </trans-unit>
+        <trans-unit id="321" translate="yes" xml:space="preserve">
+          <source>Log on to the SQL-<ph id="ph1">&amp;lt;</ph>GUID<ph id="ph2">&amp;gt;</ph> virtual machine.</source>
+        </trans-unit>
+        <trans-unit id="322" translate="yes" xml:space="preserve">
+          <source>Log on to the virtual machine using the DynamicsInstallUser account.</source>
+        </trans-unit>
+        <trans-unit id="323" translate="yes" xml:space="preserve">
+          <source>For instructions, see the “How do I log on to a virtual machine?”</source>
+        </trans-unit>
+        <trans-unit id="324" translate="yes" xml:space="preserve">
+          <source>section of the <bpt id="p1">[</bpt>Manage your Microsoft Dynamics AX 2012 R3 deployment on Azure<ept id="p1">](manage-2012-r3-deployment-azure.md)</ept> article.</source>
+        </trans-unit>
+        <trans-unit id="325" translate="yes" xml:space="preserve">
+          <source>Go to the following location on the virtual machine: F:TestTransferTool</source>
+        </trans-unit>
+        <trans-unit id="326" translate="yes" xml:space="preserve">
+          <source>Install the Test Data Transfer Tool.</source>
+        </trans-unit>
+        <trans-unit id="327" translate="yes" xml:space="preserve">
+          <source>For instructions, see <bpt id="p1">[</bpt>Install the Test Data Transfer Tool (beta) for Microsoft Dynamics AX<ept id="p1">](install-test-data-transfer-tool-beta.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="328" translate="yes" xml:space="preserve">
+          <source>Open a command prompt and navigate to the following location: C:Program Files (x86)Microsoft Dynamics AX 2012 Test Data Transfer Tool (Beta)</source>
+        </trans-unit>
+        <trans-unit id="329" translate="yes" xml:space="preserve">
+          <source>Run the following command: dp.exe import F:DemoData MicrosoftDynamicsAx</source>
+        </trans-unit>
+        <trans-unit id="330" translate="yes" xml:space="preserve">
+          <source>**Note: **The sample data includes trial license keys for AX 2012 R3.</source>
+        </trans-unit>
+        <trans-unit id="331" translate="yes" xml:space="preserve">
+          <source>If you choose not to install the sample data, you can download trial license keys—for development or testing purposes—from <bpt id="p1">[</bpt>CustomerSource<ept id="p1">](https://mbs.microsoft.com/downloads/customer/AX/AXDemoTools/MicrosoftDynamicsAX2012R2v4DemoLicense.zip)</ept> or <bpt id="p2">[</bpt>MSDN<ept id="p2">](https://msdn.microsoft.com/en-us/subscriptions/securedownloads/hh442898#FileId=57028)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="332" translate="yes" xml:space="preserve">
+          <source>Give users access</source>
+        </trans-unit>
+        <trans-unit id="333" translate="yes" xml:space="preserve">
+          <source>To enable your users to access AX 2012 R3, complete the following tasks:</source>
+        </trans-unit>
+        <trans-unit id="334" translate="yes" xml:space="preserve">
+          <source>Add each user’s domain account to the Remote Desktop Users group on the CLI-<ph id="ph1">&amp;lt;</ph>GUID<ph id="ph2">&amp;gt;</ph> virtual machine.</source>
+        </trans-unit>
+        <trans-unit id="335" translate="yes" xml:space="preserve">
+          <source>Give users access to AX 2012 R3.</source>
+        </trans-unit>
+        <trans-unit id="336" translate="yes" xml:space="preserve">
+          <source>For instructions, see <bpt id="p1">[</bpt>Create new users in Microsoft Dynamics AX<ept id="p1">](https://technet.microsoft.com/EN-US/library/aa548139.aspx)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="337" translate="yes" xml:space="preserve">
+          <source>**Note: **If you don’t want to create a VPN connection and a domain trust, you can still give users access to AX 2012 R3.</source>
+        </trans-unit>
+        <trans-unit id="338" translate="yes" xml:space="preserve">
+          <source>To do so, you’ll need to log on to the virtual machine that serves as the domain controller, and create domain accounts for each user.</source>
+        </trans-unit>
+        <trans-unit id="339" translate="yes" xml:space="preserve">
+          <source>Then, you’ll need to complete the two tasks mentioned above.</source>
+        </trans-unit>
+        <trans-unit id="340" translate="yes" xml:space="preserve">
+          <source>Set up and configure AX 2012 R3</source>
+        </trans-unit>
+        <trans-unit id="341" translate="yes" xml:space="preserve">
+          <source>The procedures for setting up and configuring AX 2012 R3 on Azure are the same procedures used for setting up and configuring on-premises deployments.</source>
+        </trans-unit>
+        <trans-unit id="342" translate="yes" xml:space="preserve">
+          <source>See the following resources for more information.</source>
+        </trans-unit>
+        <trans-unit id="343" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Task<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="344" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Resources<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="345" translate="yes" xml:space="preserve">
+          <source>See the instructions on TechNet</source>
+        </trans-unit>
+        <trans-unit id="346" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a href="https://technet.microsoft.com/EN-US/library/gg732218.aspx"&gt;</bpt>System setup for Microsoft Dynamics AX<ept id="p1">&lt;/a&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="347" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a href="https://technet.microsoft.com/EN-US/library/gg732158.aspx"&gt;</bpt>The Microsoft Dynamics AX client<ept id="p1">&lt;/a&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="348" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a href="https://technet.microsoft.com/EN-US/library/gg731868.aspx"&gt;</bpt>Application Object Servers<ept id="p1">&lt;/a&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="349" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a href="https://technet.microsoft.com/EN-US/library/ee873263.aspx"&gt;</bpt>Reporting in Microsoft Dynamics AX<ept id="p1">&lt;/a&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="350" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Note<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="351" translate="yes" xml:space="preserve">
+          <source>Be sure to <bpt id="p1">&lt;a href="https://technet.microsoft.com/EN-US/library/dd309703.aspx"&gt;</bpt>deploy the default reports<ept id="p1">&lt;/a&gt;</ept> and <bpt id="p2">&lt;a href="https://technet.microsoft.com/EN-US/library/aa496432.aspx"&gt;</bpt>grant users access<ept id="p2">&lt;/a&gt;</ept> to them.</source>
+        </trans-unit>
+        <trans-unit id="352" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a href="https://www.microsoft.com/en-us/download/details.aspx?id=5916"&gt;</bpt>Management Reporter 2012<ept id="p1">&lt;/a&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="353" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a href="https://technet.microsoft.com/EN-US/library/ee873272.aspx"&gt;</bpt>Analytics in Microsoft Dynamics AX<ept id="p1">&lt;/a&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="354" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Note<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="355" translate="yes" xml:space="preserve">
+          <source>To process the cubes that are included with AX 2012 R3, we recommend that you increase the ExternalCommandTimeout value to 7200.</source>
+        </trans-unit>
+        <trans-unit id="356" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a href="https://technet.microsoft.com/EN-US/library/gg866975.aspx"&gt;</bpt>Help server<ept id="p1">&lt;/a&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="357" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a href="https://technet.microsoft.com/EN-US/library/gg751374.aspx"&gt;</bpt>Enterprise Portal and Role Centers<ept id="p1">&lt;/a&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="358" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Note<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="359" translate="yes" xml:space="preserve">
+          <source>Enterprise Portal is configured to run on port 81, so be sure to exclude that port in your firewall settings.</source>
+        </trans-unit>
+        <trans-unit id="360" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a href="https://technet.microsoft.com/EN-US/library/gg731850.aspx"&gt;</bpt>Enterprise Search<ept id="p1">&lt;/a&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="361" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a href="https://technet.microsoft.com/EN-US/library/gg731810.aspx"&gt;</bpt>Services and Application Integration Framework (AIF)<ept id="p1">&lt;/a&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="362" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a href="https://technet.microsoft.com/EN-US/library/jj710398.aspx"&gt;</bpt>Microsoft Dynamics AX Retail for IT pros and developers<ept id="p1">&lt;/a&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="363" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a href="https://technet.microsoft.com/EN-US/library/aa834453.aspx"&gt;</bpt>.NET Business Connector<ept id="p1">&lt;/a&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="364" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a href="https://technet.microsoft.com/EN-US/library/gg731779.aspx"&gt;</bpt>Security<ept id="p1">&lt;/a&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="365" translate="yes" xml:space="preserve">
+          <source>View printable guides and white papers</source>
+        </trans-unit>
+        <trans-unit id="366" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a href="https://technet.microsoft.com/EN-US/library/gg732268.aspx"&gt;</bpt>Printable guides<ept id="p1">&lt;/a&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="367" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a href="https://technet.microsoft.com/EN-US/library/gg188985.aspx"&gt;</bpt>White papers for system administrators<ept id="p1">&lt;/a&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="368" translate="yes" xml:space="preserve">
+          <source>Use the Microsoft Dynamics AX web search tool</source>
+        </trans-unit>
+        <trans-unit id="369" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a href="http://go.microsoft.com/fwlink/?LinkID=212924"&gt;</bpt>Web search for developers<ept id="p1">&lt;/a&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="370" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a href="http://go.microsoft.com/fwlink/?LinkID=212925"&gt;</bpt>Web search for system administrators<ept id="p1">&lt;/a&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="371" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a href="http://go.microsoft.com/fwlink/?LinkID=212922"&gt;</bpt>Web search for application users<ept id="p1">&lt;/a&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="372" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a href="http://go.microsoft.com/fwlink/?LinkID=194311"&gt;</bpt>Combined web search<ept id="p1">&lt;/a&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="373" translate="yes" xml:space="preserve">
+          <source>7. Learn about the service accounts for this environment</source>
+        </trans-unit>
+        <trans-unit id="374" translate="yes" xml:space="preserve">
+          <source>The following sections provide information about the service accounts that were created when you deployed the environment.</source>
+        </trans-unit>
+        <trans-unit id="375" translate="yes" xml:space="preserve">
+          <source>Domain accounts</source>
+        </trans-unit>
+        <trans-unit id="376" translate="yes" xml:space="preserve">
+          <source>The following table lists the default names of the domain accounts that are created when you deployed the environment.</source>
+        </trans-unit>
+        <trans-unit id="377" translate="yes" xml:space="preserve">
+          <source>Environment</source>
+        </trans-unit>
+        <trans-unit id="378" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="379" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">&lt;DomainName&gt;</ph>AOSServiceUser</source>
+        </trans-unit>
+        <trans-unit id="380" translate="yes" xml:space="preserve">
+          <source>The account used to run the following services on AOS-<ph id="ph1">&lt;GUID&gt;</ph> virtual machines: Microsoft Dynamics AX Object Server.</source>
+        </trans-unit>
+        <trans-unit id="381" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">&lt;DomainName&gt;</ph>SQLServiceUser</source>
+        </trans-unit>
+        <trans-unit id="382" translate="yes" xml:space="preserve">
+          <source>The account used to run the following services on SQL-<ph id="ph1">&lt;GUID&gt;</ph> virtual machines: SQL Server Analysis Services (MSSQLSERVER).</source>
+        </trans-unit>
+        <trans-unit id="383" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">&lt;DomainName&gt;</ph>DynamicsInstallUser</source>
+        </trans-unit>
+        <trans-unit id="384" translate="yes" xml:space="preserve">
+          <source>The account used to install AX 2012 R3.</source>
+        </trans-unit>
+        <trans-unit id="385" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">&lt;DomainName&gt;</ph>SPServiceUser</source>
+        </trans-unit>
+        <trans-unit id="386" translate="yes" xml:space="preserve">
+          <source>The account used to run the following services on EP-<ph id="ph1">&lt;GUID&gt;</ph> virtual machines: AppFabric Caching Service, SharePoint Search Host Controller, SharePoint Server Search 15, SharePoint Timer Service, and SharePoint User Code Host.</source>
+        </trans-unit>
+        <trans-unit id="387" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">&lt;DomainName&gt;</ph>BCProxyUser</source>
+        </trans-unit>
+        <trans-unit id="388" translate="yes" xml:space="preserve">
+          <source>The account used as the Business Connector proxy.</source>
+        </trans-unit>
+        <trans-unit id="389" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">&lt;DomainName&gt;</ph>AXServiceUser</source>
+        </trans-unit>
+        <trans-unit id="390" translate="yes" xml:space="preserve">
+          <source>The account used to run the following services on AOS-<ph id="ph1">&lt;GUID&gt;</ph> virtual machines: Microsoft Dynamics AX Data Import/Export Framework Service and Microsoft Dynamics ERP RapidStart Connector.</source>
+        </trans-unit>
+        <trans-unit id="391" translate="yes" xml:space="preserve">
+          <source>The account is also used to run the following services on CLI-<ph id="ph1">&lt;GUID&gt;</ph> virtual machines: Microsoft Dynamics AX for Retail Commerce Data Exchange Async Client.</source>
+        </trans-unit>
+        <trans-unit id="392" translate="yes" xml:space="preserve">
+          <source>Note: The passwords are displayed on the Cloud-hosted environments page in <bpt id="p1">[</bpt>Lifecycle Services<ept id="p1">](https://lifecycleservices.dynamics.com/en/)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="393" translate="yes" xml:space="preserve">
+          <source>Local administrator accounts</source>
+        </trans-unit>
+        <trans-unit id="394" translate="yes" xml:space="preserve">
+          <source>Each virtual machine that you deployed has a local administrator account.</source>
+        </trans-unit>
+        <trans-unit id="395" translate="yes" xml:space="preserve">
+          <source>This account is: builtinaxlocaladmin.</source>
+        </trans-unit>
+        <trans-unit id="396" translate="yes" xml:space="preserve">
+          <source>The passwords for the local administrator accounts are displayed on the Cloud-hosted environments page in <bpt id="p1">[</bpt>Lifecycle Services<ept id="p1">](https://lifecycleservices.dynamics.com/en/)</ept>.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

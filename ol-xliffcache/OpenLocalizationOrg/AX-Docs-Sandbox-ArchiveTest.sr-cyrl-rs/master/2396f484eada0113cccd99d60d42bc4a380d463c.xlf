@@ -1,0 +1,237 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2396f484eada0113cccd99d60d42bc4a380d463c</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\migration-upgrade\install-metadata-hotfix-package.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">9dc8c681c83968c69942d9c4f168dd6f10cfa46c</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">fa53fe18e1726284e2305545d1a1f46c5dd8601b</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Install a metadata hotfix</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic will guide you through installing an Application Metadata hotfix on your development environment.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Install a metadata hotfix</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This topic will guide you through installing an Application Metadata hotfix on your development environment.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>A metadata hotfix package contains changes (metadata or X++ source code) to model elements (XML files) in your development environment.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>A hotfix can also contain new model elements.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>A metadata hotfix package is in the form of an SCDP file.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>This article describes the process for installing a metadata hotfix package and explains how to share the package with other developers who are working on the same project.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Overall flow</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>The following diagram shows the overall flow.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Process for installing a metadata hotfix package<ept id="p1">](./media/configureinstallhotfix-1.png)](./media/configureinstallhotfix-1.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Download the hotfix from LCS</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>For instructions about how to download a hotfix, see <bpt id="p1">[</bpt>Download hotfixes from Lifecycle Services<ept id="p1">](download-hotfix-lcs.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>After you download the zip file, extract the SCDP metadata hotfix package from it, and put it in a local folder.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Install the hotfix</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Before you begin</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>This article assumes that your packages folder is located at c:<ph id="ph1">\\</ph>AOSService<ph id="ph2">\\</ph>PackagesLocalDirectory.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>On some virtual machines (VMs), it might be located at c:<ph id="ph1">\\</ph>Packages, i:<ph id="ph2">\\</ph>AOSService<ph id="ph3">\\</ph>PackagesLocalDirectory, or j:<ph id="ph4">\\</ph>AOSService<ph id="ph5">\\</ph>PackagesLocalDirectory.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>If you're not using Microsoft Visual Studio Team Services (VSTS) or another source control system, create a backup of your packages folder (which is also known as the metadata store).</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>We don't recommend that you do development unless you use VSTS.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>If you have VSTS or Microsoft Team Foundation Server (TFS) version control, make sure that there are no files in the <bpt id="p1">**</bpt>Pending Changes<ept id="p1">**</ept> list of your current workspace.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>If you have pending changes, we recommend that you submit them or shelve them before you install the metadata hotfix.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Install the metadata hotfix package</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>To invoke the installation of the metadata hotfix, you can call the SCDPBundleInstall.exe utility from an administrator command prompt.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>SCDPBundleInstall.exe is located in your packages bin folder (c:<ph id="ph1">\\</ph>AOSService<ph id="ph2">\\</ph>PackagesLocalDirectory).</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Without version control (not recommended)</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>If you're not using VSTS or TFS for source control, use the following command.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>With version control (recommended)</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>If you're using VSTS or TFS for source control, follow the steps below: <bpt id="p1">**</bpt>Prepare<ept id="p1">**</ept> the installation of the hotfix package using the command below.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>(This step is not available if you are using a platform that is older than platform update 2 (August 2016))</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>This will create a changeset of all the existing files on your environment that will be modified by the hotfix package, the prepare command will not install the hotfixes.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Here is an example.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Check-in<ept id="p1">**</ept> your pending changes to create a backup of these files in your version control system.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>This will enable rolling back the hotfixes if needed.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Install<ept id="p1">**</ept> the hotfix package using the command below.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>(If you are using a platform that is older than platform update 2 (August 2016), you do not need to specify the <bpt id="p1">**</bpt>-install<ept id="p1">**</ept> option) Here is an example.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>VSTS/TFS parameters let you add the files that are modified by the package to your list of pending changes in Team Explorer.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Required parameters</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>TFS parameters</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>If you're using VSTS or TFS for source control, you should specify the following two parameters.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>After the install command is invoked, the package installation process begins.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>As part of the installation process, some XML files in your metadata store folder will be updated to reflect the changes that were made in the fix itself.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>If you’re using VSTS or TFS, these files will be added to the list of included changes in the <bpt id="p1">**</bpt>Pending Changes<ept id="p1">**</ept> window in Team Explorer.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>List of included changes in the Pending Changes window<ept id="p1">](./media/configureinstallhotfix-2.png)](./media/configureinstallhotfix-2.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Resolve conflicts that are generated by the installation of the hotfix</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Sometimes, a metadata hotfix package contains changes to objects that have been customized in higher-layer models.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>In this case, the installation process automatically generates conflicts that must be resolved after the hotfix has been installed.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>The development tools let you create a project that groups all items that have conflicts.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>For example, if you have a VAR layer model in the Application Suite package that customizes the VendTable form, and you install a hotfix that modifies the VendTable form in the Sys layer model, conflicts might occur in your VAR layer model.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Dynamics 365<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Addins<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Create project from conflicts<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>In the dialog box, select a model to check for conflicts.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Create project<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>A project is generated that contains only those elements in the selected model that were found to have conflicts after the hotfix was applied.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Open the designer for the conflicting element to view conflicts, and resolve them by using the tools that are provided.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>The Office Mix at <bpt id="p1">&lt;</bpt>https://mix.office.com/watch/1rl75ei2cs6d7<ept id="p1">&gt;</ept> provides an introduction to the conflict resolution tools in the development environment.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Build and test on a local VM</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Build all models that are affected by the hotfix, and test your application.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Check pending changes in to version control</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>When you're satisfied with all changes that are related to this update, check in your pending changes to VSTS by using Team Explorer in Microsoft Visual Studio.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Enter a comment in the <bpt id="p1">**</bpt>Comment<ept id="p1">**</ept> field, and then click <bpt id="p2">**</bpt>Check In<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>A history of the changes is preserved in your source code repository.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> If you use a build environment for build and test automation, the build automation process can build metadata hotfix files are in your VSTS project.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>A hotfix can be built only if the descriptor file of the model that it belongs to is checked in to version control.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>For example, if the hotfix installation process modified a file that belongs to the Directory model (this file will appear in your list of pending changes), make sure that the descriptor file of the Directory model (c:<ph id="ph1">\\</ph>AOSService<ph id="ph2">\\</ph>PackagesLocalDirectory<ph id="ph3">\\</ph>Directory<ph id="ph4">\\</ph>Descriptor<ph id="ph5">\\</ph>Directory.xml) is already checked in to your VSTS project.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>If it isn't checked in, manually add it to your list of pending changes before you check in by using Source Control Explorer.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Manually adding the descriptor file to the list of pending changes<ept id="p1">](./media/configureinstallhotfix-8.png)](./media/configureinstallhotfix-8.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Synchronize other development VMs</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>After a hotfix has been installed on a development VM as described in this article, you don't have to reinstall, resolve conflicts, and validate on other development VMs that are connected to the same VSTS project.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Developers and testers who are connected to the same VSTS project can just synchronize the changes into their local VM and then build.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Deploy</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>After you’ve applied a metadata hotfix to your development environment, resolved conflicts, and validated your changes, you must create a deployable package and apply your changes to your test or sandbox environment.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>If you use a build instance for build and test automation, the build process will automatically create the deployable package for you.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Create and apply a deployable package<ept id="p1">](../deployment/create-apply-deployable-package.md)</ept>.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

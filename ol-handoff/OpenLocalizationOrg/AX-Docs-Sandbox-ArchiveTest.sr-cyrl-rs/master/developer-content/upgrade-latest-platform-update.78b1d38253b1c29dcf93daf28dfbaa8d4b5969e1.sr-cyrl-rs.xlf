@@ -1,0 +1,378 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">3e4650c8400bc4548cc748c4e57236be041ed9c1</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\migration-upgrade\upgrade-latest-platform-update.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">53ca51009b83e8d138c02b475837b0654082acbb</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">a89645252b378f0cec20695f8dee7dd835c9e92a</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Upgrade Finance and Operations to the latest platform update</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic explains how to upgrade your Microsoft Dynamics 365 for Finance and Operations platform version to the latest platform release.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Upgrade Finance and Operations to the latest platform update</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This topic explains how to upgrade your Microsoft Dynamics 365 for Finance and Operations platform version to the latest platform release.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Overview</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>The Microsoft Dynamics 365 for Finance and Operations platform consists of the following components:</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Finance and Operations platform binaries such as Application Object Server (AOS), the data management framework, the reporting and business intelligence (BI) framework, development tools, and analytics services.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>The following Application Object Tree (AOT) packages:</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Application Platform</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Application Foundation</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Test Essentials</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>To move to the latest Finance and Operations platform, your Finance and Operations implementation <bpt id="p1">**</bpt>cannot<ept id="p1">**</ept> have any customizations (overlayering) of any of the AOT packages that belong to the platform.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>This restriction was introduced in Platform update 3, so that seamless continuous updates can be made to the platform.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>If you are running on an platform that is older than Platform update 3, see the section <bpt id="p1">[</bpt>Upgrading to Platform update 3 from an earlier build<ept id="p1">](#Upgrading-to-platform-update-3-from-an-earlier-build)</ept> section at the end of this topic.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Overall flow</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>The following illustration shows the overall process for upgrading the Finance and Operations platform to the latest update.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Upgrade process for implementations that have no customization of the platform<ept id="p1">](./media/flownocustomisations.jpg)](./media/flownocustomisations.jpg)</ept></source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Migrate files for Document management</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>After upgrading to Platform update 6 or later, an administrator needs to click the <bpt id="p1">**</bpt>Migrate Files<ept id="p1">**</ept> button on the <bpt id="p2">**</bpt>Document management parameters<ept id="p2">**</ept> page to finish the upgrade process.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>This will migrate any attachments stored in the database to blob storage.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The migration will run as a batch process and could take a long time, depending on the number and size of the files being moved from the database into Azure blob storage.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>The attachments will continue to be available to users while the migration process is running, so there should be no noticeable effects from the migration.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>To check if the batch process is still running, look for the <bpt id="p1">**</bpt>Migrate files stored in the database to blob storage<ept id="p1">**</ept> process on the <bpt id="p2">**</bpt>Batch jobs<ept id="p2">**</ept> page.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>How to get the latest platform package</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>There are 3 ways to get the latest platform update package.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>In Lifecycle Services (LCS), import the platform update package from the Shared Asset Library.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Search for "platform update" in LCS <bpt id="p1">**</bpt>Issue Search<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Click the <bpt id="p1">**</bpt>Binary Updates<ept id="p1">**</ept> tile of your environment's page in LCS (As of Platform update 4, binary updates from LCS include an upgrade to the latest platform).</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Import the platform update package</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Platform update packages are released by Microsoft and can be imported from the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS).</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Dynamics 365 packages are currently prefixed with <bpt id="p1">*</bpt>Finance and Operations Platform Update<ept id="p1">*</ept> (for example, Finance and Operations Platform Update 3)<bpt id="p2">*</bpt>.<ept id="p2">*</ept></source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Use these steps to import the platform update package:</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Go to your LCS project's Asset library.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Software deployable package<ept id="p1">**</ept> tab, click <bpt id="p2">**</bpt>Import<ept id="p2">**</ept> to create a reference to the platform update package.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Import button<ept id="p1">](./media/importupgradepackage.png)](./media/importupgradepackage.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Select the desired platform update package.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Choose the correct package deployment method</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>From a process perspective, deploying a platform upgrade package resembles a binary hotfix deployable package.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>To apply a platform update package to your local development environment or build environment, follow the instructions in this topic.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>To apply a platform update package to your cloud development, demo, tier-2 sandbox, or production environment, update directly from LCS.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Follow the instructions for applying a binary hotfix in <bpt id="p1">[</bpt>Apply a deployable package on a Microsoft Dynamics 365 for Finance and Operations system<ept id="p1">](..\deployment\apply-deployable-package-system.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Apply the platform update package on your development environment</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Delete platform metadata hotfixes from your VSTS project</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Skip this section if you are already on Platform update 3 and updating to a newer platform.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Before you install the new platform update, you must clean up your Microsoft Visual Studio Team Services (VSTS) source control project.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Remove any X++ or metadata hotfixes that you've installed on your existing platform.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>If you have any X++ or metadata hotfixes that are checked in to your VSTS project for any of the following Microsoft models, delete them from your project by using the Microsoft Visual Studio Source Control Explorer.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Application Platform</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Application Foundation</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>TestEssentials</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Directory</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>You can find these hotfixes by browsing the check-in history of these Microsoft models.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>For example, use Source Control Explorer to browse the check-in history of the Trunk<ph id="ph1">\\</ph>Main<ph id="ph2">\\</ph>Metadata<ph id="ph3">\\</ph>ApplicationFoundation<ph id="ph4">\\</ph>ApplicationFoundation folder, and delete all XML files that have been checked in to it.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">![</ph>View History<ph id="ph2">](./media/checkinhistory.png)</ph></source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Install the deployable package</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Download the platform update package (AXPlatformUpdate.zip) to your virtual machine (VM).</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Unzip the contents to a local directory.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Depending on the type of environment that you're upgrading, open the PlatformUpdatePackages.Config file under <ph id="ph1">\\</ph>AOSService<ph id="ph2">\\</ph>Scripts, and change the <bpt id="p1">**</bpt>MetaPackage<ept id="p1">**</ept> value.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>If you're upgrading a development or demo environment that contains source code, change the <bpt id="p1">**</bpt>MetaPackage<ept id="p1">**</ept> value to <bpt id="p2">**</bpt>dynamicsax-meta-platform-development<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>If you're upgrading a runtime environment, such as a tier-2 sandbox environment or another environment that doesn't contain source code, the default value, <bpt id="p1">**</bpt>dynamicsax-meta-platform-runtime<ept id="p1">**</ept>, is correct.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Follow the instructions for installing a deployable package.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>See <bpt id="p1">[</bpt>Install a deployable package<ept id="p1">](../deployment/install-deployable-package.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>If you're working in a development environment, rebuild your application’s code.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Important:<ept id="p1">**</ept> Apply this update in a runtime environment only if you first validate it in a development environment.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Example</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Install the Visual Studio development tools</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Skip this section if you are updating to platform update 4 or newer, development tools are automatically installed as part of installing the deployable package.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Update the Visual Studio development tools as described in <bpt id="p1">[</bpt>Updating the Visual Studio development tools<ept id="p1">](../dev-tools/update-development-tools.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Regenerate form adaptor models</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Form adaptor models are required for test automation.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Regenerate the platform form adaptor models, based on the newly updated platform models.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Use the xppfagen.exe tool to generate the form adaptor models.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>This tool is located in the package's bin folder (typically, j:<ph id="ph1">\\</ph>AosService<ph id="ph2">\\</ph>PackagesLocalDirectory<ph id="ph3">\\</ph>bin).</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Here is a list of the platform form adaptor models:</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>ApplicationPlatformFormAdaptor</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>ApplicationFoundationFormAdaptor</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>DirectoryFormAdaptor</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>The following examples show how to generate the form adaptor models.</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Install the new Data Management service</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Skip this section if you are updating to platform update 4 or newer, the data management service is automatically installed as part of installing the deployable package.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>After the deployable package is installed, follow these instructions to install the new Data Management service.</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Open a <bpt id="p1">**</bpt>Command Prompt<ept id="p1">**</ept> window as an administrator, and run the following commands from the .<ph id="ph1">\\</ph>DIXFService<ph id="ph2">\\</ph>Scripts folder.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>If you're connected to Microsoft SQL Server Integration Services 2016 (13.0), run the following command.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>If you're connected to an earlier release of Microsoft SQL Server Integration Services, run the following command.</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Apply the platform update package on a build environment</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>If the build machine has been used for one or more builds, you should restore the metadata packages folder from the metadata backup folder before you upgrade the VM to a newer Dynamics 365 for Finance and Operations platform.</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>You should then delete the metadata backup.</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>These steps help ensure that the platform update will be applied on a clean environment.</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>The next build process will then detect that no metadata backup exists and will automatically create a new one.</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>This new metadata backup will include the updated platform.</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>To determine whether a complete metadata backup exists, look for a BackupComplete.txt file in I:<ph id="ph1">\\</ph>DynamicsBackup<ph id="ph2">\\</ph>Packages (or C:<ph id="ph3">\\</ph>DynamicsBackup<ph id="ph4">\\</ph>Packages on a downloadable virtual hard disk <ph id="ph5">\[</ph>VHD<ph id="ph6">\]</ph>).</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>If this file is present, a metadata backup exists, and the file will contain a timestamp that indicates when it was created.</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>To restore the deployment's metadata packages folder from the metadata backup, open an elevated Windows PowerShell <bpt id="p1">**</bpt>Command Prompt<ept id="p1">**</ept> window, and run the following command.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>This command will run the same script that is used in the first step of the build process.</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> Run the preceding command only if a complete metadata backup exists.</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>If a complete metadata backup doesn't exist, the command will create a new backup.</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>This command will stop the Finance and Operations deployment services and Internet Information Services (IIS) before it restores the files from the metadata backup to the deployment's metadata packages folder.</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>You should see output that resembles the following example.</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>6:17:52 PM: Preparing build environment...<ept id="p1">*</ept> <bpt id="p2">*</bpt>6:17:53 PM: Updating Dynamics SDK registry key with specified values...<ept id="p2">*</ept> <bpt id="p3">*</bpt>6:17:53 PM: Updating Dynamics SDK registry key with values from AOS web config...<ept id="p3">*</ept> <bpt id="p4">*</bpt>6:17:53 PM: Stopping Finance and Operations deployment...<ept id="p4">*</ept> <bpt id="p5">*</bpt>6:18:06 PM: <bpt id="p6">**</bpt>A backup already exists at: I:<ph id="ph1">\\</ph>DynamicsBackup<ph id="ph2">\\</ph>Packages. No new backup will be created<ept id="p6">**</ept>.<ept id="p5">*</ept></source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>6:18:06 PM: <bpt id="p2">**</bpt>Restoring metadata packages from backup...<ept id="p2">**</ept><ept id="p1">*</ept> <bpt id="p3">*</bpt>6:22:56 PM: <bpt id="p4">**</bpt>Metadata packages successfully restored from backup<ept id="p4">**</ept>.<ept id="p3">*</ept></source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>6:22:57 PM: Preparing build environment complete.<ept id="p1">*</ept></source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>6:22:57 PM: Script completed with exit code: 0<ept id="p1">*</ept></source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>After the metadata backup has been restored, delete (or rename) the metadata backup folder (DynamicsBackup<ph id="ph1">\\</ph>Packages), so that it will no longer be found by the build process.</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>Apply the platform update package</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>After you've prepared your build environment for this update, apply the platform update package by using the same method that you use to apply it on a development environment.</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>See the "Apply the platform update package on your development environment" section earlier in this topic.</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Upgrading to platform update 3 from an earlier build</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>When upgrading to platform update 3 from an earlier build, there are some very important considerations because of two key changes in update 3:</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>It is no longer possible to overlayer platform models (Application Platform, Application Foundation, Test Essentials).</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>The Directory model is no longer in platform, it has moved to the application in Finance and Operations release 1611.</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>This means two things:</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>If taking only platform update 3 and not taking the application update (Finance and Operations version 1611), then you cannot have overlayering on any of the following models.</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>All overlayering on these models must be removed before attempting to install update 3:</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>Application Platform</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>Application Foundation</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>Test Essentials</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>Directory</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>If you cannot remove over-layering from the Directory model, and you still want to upgrade, you will have to do a complete upgrade of the platform and the application (Finance and Operations version 1611) as described in <bpt id="p1">[</bpt>Overview of moving to the latest update of Finance and Operations<ept id="p1">](upgrade-latest-update.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>See also</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Overview of moving to the latest update of Microsoft Dynamics 365 for Finance and Operations<ept id="p1">](upgrade-latest-update.md)</ept></source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

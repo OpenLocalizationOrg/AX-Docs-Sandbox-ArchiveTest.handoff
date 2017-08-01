@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">5406f62535e495af0cd3c37aae48c1054276eec9</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">retail\dev-itpro\commerce-runtime-extensibility-trigger.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">8b81530e3eadd2d331da47d978e3e2dccf6bad2d</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">7c2c2df1de808f90ba5b3efc12e5e2bc7a803779</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Commerce runtime extensibility and triggers</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This article explains trigger support for the Microsoft Dynamics AX commerce runtime (CRT).</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>CRT supports pre-triggers and post-triggers for every request.</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Commerce runtime extensibility and triggers</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>This article explains trigger support for the Dynamics 365 for Retail commerce runtime (CRT).</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>CRT supports pre-triggers and post-triggers for every request.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>CRT trigger overview</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Commerce runtime (CRT) triggers give you a way to extend the CRT workflow, and let you add business logic before and after every CRT request is executed.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>The following two methods are used:</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>OnExecuting<ept id="p1">**</ept> – This method is invoked before a request has been processed by a corresponding <bpt id="p2">**</bpt>IRequestHandler<ept id="p2">**</ept> implementation.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>OnExecuted<ept id="p1">**</ept> – This method is invoked after the request has been processed by a corresponding <bpt id="p2">**</bpt>IRequestHandler<ept id="p2">**</ept> implementation.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>CRT trigger interface</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>To implement a trigger, you must complete these tasks, as shown in the code example that follows:</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Implement <bpt id="p1">**</bpt>IRequestTrigger<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Specify <bpt id="p1">**</bpt>SupportedRequestTypes<ept id="p1">**</ept> to define the request types that the trigger must be executed for.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Write a trigger implementation in the <bpt id="p1">**</bpt>OnExecuting<ept id="p1">**</ept> method if business logic must be run before the request is addressed.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Write a trigger implementation in the <bpt id="p1">**</bpt>OnExecuted<ept id="p1">**</ept> method if business logic must be run after the request is addressed.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Trigger CommerceRunTime.config updates</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>When you extend the CRT, make sure that you always write your extension in your own assembly.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>After you write the trigger extension in your assembly, you must add an entry in the <bpt id="p1">**</bpt>composition<ept id="p1">**</ept> section of the .config file for the CRT, so that the trigger is loaded at run time.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The following example shows a .config file that includes an entry for a trigger implementation in the <bpt id="p1">**</bpt>CRTExtensionTrigger<ept id="p1">**</ept> assembly.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>CRTExtensionTrigger<ept id="p1">](./media/crtextensiontrigger-1024x489.png)](./media/crtextensiontrigger.png)</ept></source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

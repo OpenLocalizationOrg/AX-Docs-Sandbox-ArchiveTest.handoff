@@ -1,0 +1,367 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">d9ccb6670f95d7f8aa1c97e6592fe4a696d96615</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\data-entities\cross-company-behavior.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ccf1969fb7e62afbb151556759dcabcbd7c6068f</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">11d4491f19de328ba103751b2f92f4c90a1acbef</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Cross-company behavior</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic provides information about how data entities interact with the cross-company concept.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>To understand this aspect of data entities, you must understand how tables and views apply the cross-company concept.</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Therefore, this topic begins with a brief review of tables and views, and then explains how data entities are related.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Cross-company behavior</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This topic provides information about how data entities interact with the cross-company concept.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>To understand this aspect of data entities, you must understand how tables and views apply the cross-company concept.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Therefore, this topic begins with a brief review of tables and views, and then explains how data entities are related.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Review of tables and views for cross-company</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Each table has a <bpt id="p1">**</bpt>SaveDataPerCompany<ept id="p1">**</ept> property, and each view has a <bpt id="p2">**</bpt>AllowCrossCompany<ept id="p2">**</ept> property.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>The following table describes these two properties.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Table</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>View</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Property name</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>SaveDataPerCompany</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>AllowCrossCompany</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Relevant CRUD mode</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>CUD</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>R</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Timing of effect</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Run time, Design time</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Run time, mostly.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>At design time, this setting causes the view to have <bpt id="p1">**</bpt>dataAreaId<ept id="p1">**</ept> in its list of selected fields.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>However, the filter for a specific <bpt id="p1">**</bpt>dataAreaId<ept id="p1">**</ept> value is added later, at run time.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Meaning of value = Yes</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>At design time, the system automatically <bpt id="p1">*</bpt>adds<ept id="p1">*</ept> a <bpt id="p2">**</bpt>dataAreaId<ept id="p2">**</ept> field to the table, even though the field isn't displayed in the Application Object Tree (AOT).</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Every record in the table is tagged with the company (or legal entity) that it belongs to.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>The system automatically <bpt id="p1">*</bpt>adds<ept id="p1">*</ept> a filter to the SQL <bpt id="p2">**</bpt>Where<ept id="p2">**</ept> clause to limit the returned set of rows to one <bpt id="p3">**</bpt>dataAreaId<ept id="p3">**</ept> value.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>At run time, the system does <bpt id="p1">*</bpt>not<ept id="p1">*</ept> automatically add a filter for <bpt id="p2">**</bpt>dataAreaId<ept id="p2">**</ept> on the <bpt id="p3">**</bpt>Where<ept id="p3">**</ept> clause of the SQL <bpt id="p4">**</bpt>Select<ept id="p4">**</ept> statement that it sends to the underlying Microsoft SQL Server system.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Therefore, SQL <bpt id="p1">**</bpt>Select<ept id="p1">**</ept> statements from the view can return a set of records that contains records for <bpt id="p2">*</bpt>multiple<ept id="p2">*</ept> companies.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Meaning of value = No</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>The system does <bpt id="p1">*</bpt>not<ept id="p1">*</ept> add a <bpt id="p2">**</bpt>dataAreaId<ept id="p2">**</ept> field to the table.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>The table is said to be a shared table, because none of its records contain any formal company-specific data.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>The system automatically <bpt id="p1">*</bpt>adds<ept id="p1">*</ept> a filter to the SQL <bpt id="p2">**</bpt>Where<ept id="p2">**</ept> clause to limit the returned set of rows to one <bpt id="p3">**</bpt>dataAreaId<ept id="p3">**</ept> value.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>However, the <bpt id="p1">**</bpt>AllowCrossCompany<ept id="p1">**</ept> property is ignored if the <bpt id="p2">*</bpt>root<ept id="p2">*</ept> data source of the view is a shared table.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Comparisons within AllowCrossCompany = No</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>In the following screen shot, the <bpt id="p1">**</bpt>CustomerList<ept id="p1">**</ept> view has two data sources:</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Root<ept id="p1">**</ept> – CustTable, which has its <bpt id="p2">**</bpt>SaveDataPerCompany<ept id="p2">**</ept> property set to <bpt id="p3">**</bpt>Yes<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Non-root<ept id="p1">**</ept> – DirPartyTable, which has its <bpt id="p2">**</bpt>SaveDataPerCompany<ept id="p2">**</ept> property set to <bpt id="p3">**</bpt>No<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>root<ept id="p1">](./media/root.png)](./media/root.png)</ept> The <bpt id="p2">**</bpt>CustomerList<ept id="p2">**</ept> view has its <bpt id="p3">**</bpt>AllowCrossCompany<ept id="p3">**</ept> property set to <bpt id="p4">**</bpt>No<ept id="p4">**</ept>, as shown in the following screen shot.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>crosscomp<ept id="p1">](./media/crosscomp.png)](./media/crosscomp.png)</ept> Given the preceding information about the <bpt id="p2">**</bpt>CustomerList<ept id="p2">**</ept> view, the system creates the view in the underlying SQL Server system by generating and then running the following SQL <bpt id="p3">**</bpt>Create View<ept id="p3">**</ept> statement.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Making DirPartyTable the root data source</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>dirpar<ept id="p1">](./media/dirpar.png)](./media/dirpar.png)</ept> By swapping the positions of the two data source tables in the <bpt id="p2">**</bpt>CustomerList<ept id="p2">**</ept> view, you make the DirPartyTable table the root data source.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>In this case, the SQL <bpt id="p1">**</bpt>Create View<ept id="p1">**</ept> statement is the same, except for the following two differences:</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>FROM<ept id="p1">**</ept> clause mentions DirPartyTable first and CustTable second.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>SELECT<ept id="p1">**</ept> column list does <bpt id="p2">*</bpt>not<ept id="p2">*</ept> include the line for <bpt id="p3">**</bpt>dataAreaId<ept id="p3">**</ept> (because DirPartyTable has its <bpt id="p4">**</bpt>SaveDataPerCompany<ept id="p4">**</ept> property set to <bpt id="p5">**</bpt>No<ept id="p5">**</ept>.)</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Limitations of tables and views</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>In some cases, the cross-company control features of tables and views aren't as granular control as you might require.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Here are the limitations:</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Company or legal entity fields other than the system <bpt id="p1">**</bpt>dataAreaId<ept id="p1">**</ept> field can’t be recognized or treated automatically in the that way <bpt id="p2">**</bpt>dataAreaId<ept id="p2">**</ept> can.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>The cross-company behavior for views is too restricted to the properties of the root data source, even when non-root data sources have a <bpt id="p1">**</bpt>dataAreaId<ept id="p1">**</ept> field.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>For example, this might happen if the legal entity information is in <bpt id="p1">**</bpt>LegalEntityRecId<ept id="p1">**</ept>, or if shared tables don't have a <bpt id="p2">**</bpt>dataAreaId<ept id="p2">**</ept> column.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Design time: Setting the PrimaryCompanyContext property</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Data entities help you overcome the limitations of tables and view where cross-company functionality is concerned.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Data entities have a <bpt id="p1">**</bpt>PrimaryCompanyContext<ept id="p1">**</ept> property, where you can specify the entity field to use for company identification.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>This property provides flexibility and granular control in the following ways:</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>The field can be from any data source of the entity and isn't limited to fields of the root data source.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>The field can be any field that is extended from the <bpt id="p1">**</bpt>DataAreaId<ept id="p1">**</ept> extended data type (EDT), and isn't limited to an underlying system <bpt id="p2">**</bpt>dataAreaId<ept id="p2">**</ept> field.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>You can use the <bpt id="p1">**</bpt>PrimaryCompanyContext<ept id="p1">**</ept> property even when the entity has only shared tables as its data sources, if this makes sense for your specific situation.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>The following screen shot shows the value set for the <bpt id="p1">**</bpt>PrimaryCompanyContext<ept id="p1">**</ept> property on the <bpt id="p2">**</bpt>FMCustGroupEntity<ept id="p2">**</ept> entity.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>prim1<ept id="p1">](./media/prim1.png)](./media/prim1.png)</ept> When the <bpt id="p2">**</bpt>PrimaryCompanyContext<ept id="p2">**</ept> value is set to a non-empty value, the entity can't behave as a shared entity.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>dataAreaId<ept id="p1">**</ept> field is added to the SQL <bpt id="p2">**</bpt>Create View<ept id="p2">**</ept> statement.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Run time: The behavior of data entities for crosscompany</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>In the context of X++ code, the cross-company behavior of data entities resembles the behavior of tables.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>If the <bpt id="p1">**</bpt>PrimaryCompanyContext<ept id="p1">**</ept> property for an entity has no value and is empty, the entity behaves like a shared table.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>X++ when PrimaryCompanyContext is set</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>The following table describes the behavior of a data entity under CRUD access when the <bpt id="p1">**</bpt>PrimaryCompanyContext<ept id="p1">**</ept> property is set to a field value.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Both X++ and OData accesses are described.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>X++</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>OData</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Read (R)</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>By default, results are <bpt id="p1">*</bpt>always<ept id="p1">*</ept> filtered by <bpt id="p2">**</bpt>dataAreaId<ept id="p2">**</ept> = current company, and cross-company data can be fetched by using the <bpt id="p3">**</bpt>crosscompany<ept id="p3">**</ept> option.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Results are <bpt id="p1">*</bpt>not<ept id="p1">*</ept> filtered by <bpt id="p2">**</bpt>dataAreaId<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>The consumer must filter explicitly.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Write (CUD)</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>CUD access to the data entity always occurs in the context of the current company.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>If cross-company CUD access to the entity is required, use the <bpt id="p1">**</bpt>changeCompany<ept id="p1">**</ept> keyword.</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>CUD access to the entity can be accomplished by the consumer for any company by setting the value of the <bpt id="p1">**</bpt>PrimaryCompanyContext(myDataAreaId)<ept id="p1">**</ept> field.</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>The framework handles the necessary <bpt id="p1">**</bpt>ChangeCompany<ept id="p1">**</ept> action.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>The following X++ code example accesses <bpt id="p1">**</bpt>FMCustGroupEntity<ept id="p1">**</ept>, which has its <bpt id="p2">**</bpt>PrimaryCompanyContext<ept id="p2">**</ept> property set to <bpt id="p3">**</bpt>dataAreaId<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>FMCust<ept id="p1">](./media/fmcust.png)](./media/fmcust.png)</ept> <bpt id="p2">[</bpt><ph id="ph2">![</ph>Snip<ept id="p2">](./media/snip-550x1024.png)](./media/snip.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>X++ when PrimaryCompanyContext is empty</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>When the <bpt id="p1">**</bpt>PrimaryCompanyContext<ept id="p1">**</ept> property is set on the data entity, a <bpt id="p2">**</bpt>dataAreaId<ept id="p2">**</ept> field is created in the view schema and mapped to the <bpt id="p3">**</bpt>PrimaryCompanyContext<ept id="p3">**</ept> field.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>The following table describes the behavior of a data entity under CRUD access when the <bpt id="p1">**</bpt>PrimaryCompanyContext<ept id="p1">**</ept> property is empty.</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Both X++ and OData accesses are described.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>X++</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>OData</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Read (R)</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Results aren't filtered, because no system <bpt id="p1">**</bpt>dataAreaId<ept id="p1">**</ept> field is created on the view schema.</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>(The same as for R with X++)</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Write (CUD)</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>There is no primary company context to set.</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>Therefore, CUD access to the entity is always in the context of the current company.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>(The same as for CUD with X++)</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>In the current example, the <bpt id="p1">**</bpt>FMCustomerGroupGlobalEntity<ept id="p1">**</ept> entity has no value assigned to its <bpt id="p2">**</bpt>PrimaryCompanyContext<ept id="p2">**</ept> property.</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>ent1<ept id="p1">](./media/ent1.png)](./media/ent1.png)</ept> However, a <bpt id="p2">**</bpt>dataAreaId<ept id="p2">**</ept> field from the FMCustGroup table is mapped to the <bpt id="p3">**</bpt>FMCustomerGroupGlobalEntity<ept id="p3">**</ept> entity as a regular field that is named <bpt id="p4">**</bpt>LegalEntity<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>In this example, the FMCustGroup table is the root data source for <bpt id="p1">**</bpt>FMCustomerGroupGlobalEntity<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>However, we are using this <bpt id="p1">**</bpt>dataAreaId<ept id="p1">**</ept> field in an informal way that bypasses the automatic mechanisms of the system.</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>All these details are shown in the following screen shot of the <bpt id="p1">**</bpt>LegalEntity<ept id="p1">**</ept> field.</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>ent2<ept id="p1">](./media/ent2.png)](./media/ent2.png)</ept><ph id="ph2">
+</ph><bpt id="p2">**</bpt>Note:<ept id="p2">**</ept> Although the terms <bpt id="p3">*</bpt>legal entity<ept id="p3">*</ept> and <bpt id="p4">*</bpt>data entity<ept id="p4">*</ept> both use the word <bpt id="p5">*</bpt>entity<ept id="p5">*</ept>, don't confuse them.</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>Legal entities and data entities are two entirely different concepts.</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>When the <bpt id="p1">**</bpt>PrimaryCompanyContext<ept id="p1">**</ept> property is empty, the SQL <bpt id="p2">**</bpt>Create View<ept id="p2">**</ept> statement usually contains no mention of a system <bpt id="p3">**</bpt>dataAreaId<ept id="p3">**</ept> column.</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>However, in the current example, <bpt id="p1">**</bpt>dataAreaId<ept id="p1">**</ept> is "half-mentioned" because of the <bpt id="p2">**</bpt>LegalEntity<ept id="p2">**</ept> regular field on the data entity.</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>This field is shown in the following SQL statement.</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>Purpose of this example</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>This example has two purposes:</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Show shared data by default, even though the backing table might be company-specific.</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>Enable the consumer of the data entity to filter on or apply <bpt id="p1">**</bpt>dataAreaId<ept id="p1">**</ept> if this is required, by using the regular field that is named <bpt id="p2">**</bpt>LegalEntity<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>Test data</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>The following screen shot of the <bpt id="p1">**</bpt>Table browser<ept id="p1">**</ept> page shows the test data that is in the <bpt id="p2">**</bpt>FMCustomerGroupGlobalEntity<ept id="p2">**</ept> entity before the X++ test code is run.</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>ent3<ept id="p1">](./media/ent3.png)](./media/ent3.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>X++ code</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Here's how the X++ test code works with the shared entity:</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>It accesses the data entity in shared mode for reads.</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>It accesses the data entity with one specific company when a new record is created.</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>snip2<ept id="p1">](./media/snip2.png)](./media/snip2.png)</ept></source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

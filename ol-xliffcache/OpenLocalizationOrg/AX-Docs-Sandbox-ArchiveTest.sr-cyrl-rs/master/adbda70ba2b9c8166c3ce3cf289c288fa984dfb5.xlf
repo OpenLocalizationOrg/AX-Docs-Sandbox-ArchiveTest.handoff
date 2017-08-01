@@ -1,0 +1,171 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">adbda70ba2b9c8166c3ce3cf289c288fa984dfb5</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\extensibility\naming-guidelines-extensions.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">4ecffe1c23eb2af85caeb2c2c5a74938467223a2</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">346e10a3af7f06968e9586686ee121391a79818e</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Naming guidelines for model extensions</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic describes the naming guidelines for model extensions.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>An element in a model must have a name that is unique across all models at installation time.</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Naming guidelines for model extensions</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Naming model elements</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Every element in a model must have a name that is unique across all models at installation time.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>However, at installation time, you don't know the names of all the models that your model might be installed together with.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>To accommodate this situation, every element name should include a prefix that is specific to your solution.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>By including this prefix when you name elements in your model, you significantly reduce the risk of naming conflicts.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>If a model contains multiple solutions, each solution in the model can be identified by a different prefix.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>You must carefully choose the prefix to minimize the risk that other models from other parties use the same prefix for their elements.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>When you extend functionality in other models, elements that are being extended already contain a prefix.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>However, you should not add your prefix to the extension elements, so that the names include multiple successive prefixes.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Instead, you should include your prefix or another term or abbreviation as an infix when you name extension elements.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Naming extensions</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>An extension element, such as a table extension, view extension, or form extension, must have a unique name that minimizes the risk of conflicts with extensions in other models.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>To minimize the risk of conflicts, the name should include a term, abbreviation, or infix that distinguishes the extension from other extensions to the same element in other models.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Include either the name of the model where the extension element resides or the prefix that the extension is associated with.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>For example, a Warehousing module extends the HCMWorker table and uses the <bpt id="p1">**</bpt>WHS<ept id="p1">**</ept> prefix in the name of all other elements.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>In this case, the extension might be named <bpt id="p1">**</bpt>HCMWorker.WHSExtension<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Notice that the prefix that is used to name other elements in the module is inserted as an infix in the name.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>As another example, an extension of the ContactPerson table in the ApplicationSuite model might be named <bpt id="p1">**</bpt>ContactPerson.ApplicationSuiteExtension<ept id="p1">**</ept> if the extension is intended to contain all extensions to the ContactPerson table from the ApplicationSuite model.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Suffix the name with the term <bpt id="p1">**</bpt>Extension<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>For example, an extension of the InventLocation table should follow the pattern <bpt id="p1">**</bpt>InventLocation.<ph id="ph1">&amp;lt;</ph>Model<ph id="ph2">&amp;gt;</ph>Extension<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Don't name the extension just <bpt id="p1">**</bpt><ph id="ph1">&amp;lt;</ph>Element that is being extended<ph id="ph2">&amp;gt;</ph>.Extension<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>For example, an extension of the InventLocation table must not be named <bpt id="p1">**</bpt>InventLocation.Extension<ept id="p1">**</ept>, because the risk of conflicts is too high.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Naming extension classes</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Extension classes that are used to augment the logic on tables, classes, or other elements must have a name that is unique across all types in all models.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Preferably, the extension class should include the name of the type that is being extended.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>However, the name must also include a term, abbreviation, or prefix that distinguishes the class from other types.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Start the name of the extension class with the name of the type that is being augmented, and end the name with the term <bpt id="p1">**</bpt><ph id="ph1">\_</ph>Extension<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Therefore, an extension class that augments the ContactPerson table should start with the name <bpt id="p1">**</bpt>ContactPerson<ept id="p1">**</ept> and end with <bpt id="p2">**</bpt><ph id="ph1">\_</ph>Extension<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>For example, one extension class might be named <bpt id="p1">**</bpt>ContactPersonWHS<ph id="ph1">\_</ph>Extension<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Include either the name of the model where the extension element resides or the prefix that the extension is associated with.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>For example, a Warehousing module uses an extension class to augment the ContactPerson table and uses the <bpt id="p1">**</bpt>WHS<ept id="p1">**</ept> prefix in the name of all other elements.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>In this case, the extension class might be named <bpt id="p1">**</bpt>ContactPersonWHS<ph id="ph1">\_</ph>Extension<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Notice that the prefix that is used to name other elements in the module is inserted as an infix in the name.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>As another example, an extension class that augments the ContactPerson table in the ApplicationSuite model might be named <bpt id="p1">**</bpt>ContactPersonApplicationSuite<ph id="ph1">\_</ph>Extension<ept id="p1">**</ept> if the extension class is intended to contain all extensions to the ContactPerson table in the ApplicationSuite model.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Don't name the extension just <bpt id="p1">**</bpt><ph id="ph1">&amp;lt;</ph>Element that is being extended<ph id="ph2">&amp;gt;</ph><ph id="ph3">\_</ph>Extension<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>For example, an extension class that augments the InventLocation table must not be named <bpt id="p1">**</bpt>InventLocation<ph id="ph1">\_</ph>Extension<ept id="p1">**</ept>, because the risk of conflicts is too high.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Naming fields, field groups, indexes, relations, and other metadata nodes in extension elements</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Fields, indexes, relations, and other metadata elements on extension elements must have a name that is unique across both the element that is being extended and other extension elements.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Therefore, these metadata nodes must include a term, abbreviation, or prefix that minimizes the risk of conflicts across models.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Include a prefix, term, or abbreviation at the beginning of the name of the metadata node.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>For example, an approving worker foreign key field is added as part of a table extension, and <bpt id="p1">**</bpt>WHS<ept id="p1">**</ept> is one of prefixes that are dedicated to other elements in the hosting model.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>In this case, the field might be named <bpt id="p1">**</bpt>WHSApprovingWorker<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Naming members in extension classes</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Class-level variables, and methods on extension classes, must have a name that is unique across both the type that is being augmented and all other extension classes that augment the same type.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Include a prefix, term, or abbreviation at the beginning of the member name.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>For example, an approving worker class-level variable might be named <bpt id="p1">**</bpt>WHSApprovingWorker<ept id="p1">**</ept> if <bpt id="p2">**</bpt>WHS<ept id="p2">**</ept> is one of the prefixes that are used by other elements in the model.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>An <bpt id="p1">**</bpt>approveWork<ept id="p1">**</ept> method might be named <bpt id="p2">**</bpt>WHSApproveWork<ept id="p2">**</ept> if <bpt id="p3">**</bpt>WHS<ept id="p3">**</ept> is one of the prefixes that are used by other elements in the hosting model.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

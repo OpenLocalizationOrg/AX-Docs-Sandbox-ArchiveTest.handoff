@@ -1,0 +1,996 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">1cebd1f17200b7743d6d0779561c26b64e97dade</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">retail\dev-itpro\retail-store-scale-unit-configuration-installation.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">7a9c892b0ad35cb9b1982de5039c3431acae7dbf</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">bfdcee4a09cdff07e1679e7ace2b37cbefbd7ae8</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Retail Store Scale Unit configuration and installation</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic explains how you can use self-service to configure Retail Store Scale Unit in Microsoft Dynamics 365 for Retail headquarters, download it, and install it on one or more computers in a brick-and-mortar store.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Configure and install Retail Store Scale Unit</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This topic explains how you can use self-service to configure Retail Store Scale Unit in Retail headquarters, download it, and install it on one or more computers in a brick-and-mortar store.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Retail Store Scale Unit combines the Retail channel database, Retail Async Client, Retail Server, and Retail Cloud POS components.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>A Microsoft Dynamics 365 for Retail environment already provides these components.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>However, you can now configure them so that they work locally in a store, in either a single-computer setup (the default option) or a multiple-computer setup.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>This topic also explains how to uninstall and troubleshoot Retail Store Scale Unit.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Before you begin</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>To help maintain a high level of security across the company, we strongly recommend that you create a new application ID (client ID) and secret for each retail store that is created.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>This step requires a new Web App.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Generate a Microsoft Azure Active Directory (Azure AD) app registration to create an application ID (client ID) and secret.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>For instructions, see <bpt id="p1">[</bpt>Create an Azure Active Directory Application<ept id="p1">](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal#create-an-azure-active-directory-application)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>This article reviews Azure user permissions and requirements, and explains how to generate an app registration.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>After an application ID (client ID) and secret are created for Retail Store Scale Unit, the client ID must be accepted in Retail.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Go to <bpt id="p1">**</bpt>System administration<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Azure Active Directory applications<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Enter the application ID (client ID) in the <bpt id="p1">**</bpt>Client ID<ept id="p1">**</ept> column, enter descriptive text in the <bpt id="p2">**</bpt>Name<ept id="p2">**</ept> column, and enter <bpt id="p3">**</bpt>RetailServiceAccount<ept id="p3">**</ept> in the <bpt id="p4">**</bpt>User ID<ept id="p4">**</ept> column.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Configure a new Retail Store Scale Unit</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>To create a functioning Retail Store Scale Unit, complete the procedures in all sections of this topic through the "Running the Retail Store Scale Unit installer" section.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Use your Azure AD credentials to sign in to the Retail headquarters or Retail trial.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Welcome<ept id="p1">**</ept> page, use the menu in the upper left to go to <bpt id="p2">**</bpt>Retail<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Headquarters setup<ept id="p3">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p4">**</bpt>Retail scheduler<ept id="p4">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p5">**</bpt>Channel database<ept id="p5">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Channel database<ept id="p1">**</ept> page, on the Action Pane, select <bpt id="p2">**</bpt>New<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Channel database ID<ept id="p1">**</ept> field, enter a unique value.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Channel data group<ept id="p1">**</ept> field, select the <bpt id="p2">**</bpt>Default<ept id="p2">**</ept> option.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>You can select any other option that you've already created.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Type<ept id="p1">**</ept> field, leave the default value (<bpt id="p2">**</bpt>Channel database<ept id="p2">**</ept>) selected.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>You can leave the <bpt id="p1">**</bpt>Data sync interval<ept id="p1">**</ept> field blank.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Alternatively, you can select a value in this field.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>For example, in the demo data, the value <bpt id="p1">**</bpt>D60-U15<ept id="p1">**</ept> specifies a 15-minute synchronization interval.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Retail channel<ept id="p1">**</ept> FastTab, select <bpt id="p2">**</bpt>Add<ept id="p2">**</ept>, and then, in the <bpt id="p3">**</bpt>Channel<ept id="p3">**</ept> field, select the appropriate Retail store channel.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Repeat this step to add all the channels that use this database.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>You can also add channels that don't use this database.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>In this way, you keep the data for those channels in the Retail Store Scale Unit channel database.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>The Retail store channels that actively use this database can then access that data locally.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Store Scale Unit package<ept id="p1">**</ept> FastTab, in the <bpt id="p2">**</bpt>Name<ept id="p2">**</ept> field, select the appropriate Retail Store Scale Unit package.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Each environment generates a base Retail Store Scale Unit package.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Therefore, this field always contains at least one option.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>On the Action Pane, select <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Go to <bpt id="p1">**</bpt>Retail<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Channel setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Channel profiles<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>On the Action Pane, select <bpt id="p1">**</bpt>New<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Name<ept id="p1">**</ept> field, enter a unique name for the channel profile.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>On the Action Pane, select <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Profile properties<ept id="p1">**</ept> FastTab for the new channel profile, select <bpt id="p2">**</bpt>Add<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Property key<ept id="p1">**</ept> field, select <bpt id="p2">**</bpt>Retail server URL<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Property value<ept id="p1">**</ept> field, enter the URL of the Retail Server that will be installed for Retail Store Scale Unit.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>The standard format for the URL of an on-premises store installation of Retail Store Scale Unit is <bpt id="p1">**</bpt>https://<ph id="ph1">&amp;lt;</ph>Computer Name<ph id="ph2">&amp;gt;</ph>:<ph id="ph3">&amp;lt;</ph>Port<ph id="ph4">&amp;gt;</ph>/RetailServer/Commerce<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>In this format, <bpt id="p1">**</bpt><ph id="ph1">&amp;lt;</ph>Computer Name<ph id="ph2">&amp;gt;</ph><ept id="p1">**</ept> is either the fully qualified domain name (FQDN) of the computer where Retail Store Scale Unit is installed or, for systems that aren't joined to a domain, the full computer name.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt><ph id="ph1">&amp;lt;</ph>Port<ph id="ph2">&amp;gt;</ph><ept id="p1">**</ept> is the port number that will be used in the installation.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>The port number must be a value between 1 and 65535.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>If you're using the default HTTPS port (443), you don't have to specify the port number.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Profile properties<ept id="p1">**</ept> FastTab for the new channel profile, select <bpt id="p2">**</bpt>Add<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Property key<ept id="p1">**</ept> field, select <bpt id="p2">**</bpt>Cloud POS URL<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Property value<ept id="p1">**</ept> field, enter the URL of the Retail Server that will be installed for Retail Store Scale Unit.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>The standard format for the URL of an on-premises store installation of Retail Store Scale Unit is <bpt id="p1">**</bpt>https://<ph id="ph1">&amp;lt;</ph>Computer Name<ph id="ph2">&amp;gt;</ph>:<ph id="ph3">&amp;lt;</ph>Port<ph id="ph4">&amp;gt;</ph>/POS<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>In this format, <bpt id="p1">**</bpt><ph id="ph1">&amp;lt;</ph>Computer Name<ph id="ph2">&amp;gt;</ph><ept id="p1">**</ept> is either the FQDN of the computer where Retail Store Scale Unit is installed or, for systems that aren't joined to a domain, the full computer name.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt><ph id="ph1">&amp;lt;</ph>Port<ph id="ph2">&amp;gt;</ph><ept id="p1">**</ept> is the port number that will be used in the installation.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>The port number must be a value between 1 and 65535.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>If you're using the default HTTPS port (443), you don't have to specify the port number.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>On the Action Pane, select <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Go to <bpt id="p1">**</bpt>Retail<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Channels<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Retail stores<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>All retail stores<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Select the Retail channel ID for the retail store that will use the new channel database.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>On the details page for the selected store, on the Action Pane, select <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>General<ept id="p1">**</ept> FastTab for the store, in the <bpt id="p2">**</bpt>Live channel database<ept id="p2">**</ept> field, select the channel database that you created in step 3.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>On the Action Pane, select <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>General<ept id="p1">**</ept> FastTab for the store, in the <bpt id="p2">**</bpt>Channel profile<ept id="p2">**</ept> field, select the channel profile that you created in step 12.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Go to <bpt id="p1">**</bpt>Retail<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Headquarters setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Retail scheduler<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Channel data group<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Select the <bpt id="p1">**</bpt>Default<ept id="p1">**</ept> data group, and then, on the Action Pane, select <bpt id="p2">**</bpt>Full data sync<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Select a distribution schedule<ept id="p1">**</ept> field, select job <bpt id="p2">**</bpt>9999<ept id="p2">**</ept>, and then select <bpt id="p3">**</bpt>OK<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>In the dialog box that appears, select <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> to confirm the full synchronization.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>All the data in the channel database is prepared for download.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Download the Retail Store Scale Unit installer</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Use your Azure AD credentials to sign in to the Retail headquarters or Retail trial.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Welcome<ept id="p1">**</ept> page, use the menu in the upper left to go to <bpt id="p2">**</bpt>Retail<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Headquarters setup<ept id="p3">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p4">**</bpt>Retail scheduler<ept id="p4">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p5">**</bpt>Channel database<ept id="p5">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>In the list of channel databases on the left, select the channel database that you created earlier.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>On the Action Pane, select <bpt id="p1">**</bpt>Download<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>On the drop-down menu, select <bpt id="p1">**</bpt>Configuration file<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>To help guarantee that the Retail Store Scale Unit installer correctly uses the configuration file (XML file), you must save the configuration file to the same location as the installer.</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>On the Notification bar that appears at the bottom of the Internet Explorer window, select <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>(The Notification bar might appear in a different place in other browsers.)</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Browsers might block the download pop-up that is generated.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Select either <bpt id="p1">**</bpt>Allow once<ept id="p1">**</ept> or <bpt id="p2">**</bpt>Options for this site<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Always allow<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Then select <bpt id="p1">**</bpt>Download<ept id="p1">**</ept> again.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>On the Action Pane, select <bpt id="p1">**</bpt>Download<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>On the drop-down menu, select <bpt id="p1">**</bpt>Retail Store Scale Unit package<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>On the Notification bar that appears at the bottom of the Internet Explorer window, select <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>(The Notification bar might appear in a different place in other browsers.)</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>The correct installation package is automatically selected for download, based on the Retail Store Scale Unit package on the selected channel database.</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>After the setup installer has been saved, on the Notification bar, select <bpt id="p1">**</bpt>Run<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>(This step might differ, depending on the type of browser.)</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Run the Retail Store Scale Unit installer</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>If you will install and use Retail Cloud POS, you must initialize the configuration the first time that you run the installer, as described in the following procedure.</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Before you run the Retail Store Scale Unit installer, make sure that the following requirements are met:</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>The installer requires that the Microsoft .NET Framework version 4.5.1 be installed on the system.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>The installer installs the Retail Store Scale Unit components only on the following operating systems.</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>Before you install any component, you must update the operating system with all service packs and updates that are available for it.</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>Windows 7 Professional, Enterprise, or Ultimate edition (both x86 and x64 architectures).</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Home edition and Embedded edition aren’t supported.</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>Windows 8.1 Update 1 Pro or Enterprise edition (both x86 and x64 architectures).</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Standard edition isn’t supported.</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>Windows 10 Pro or Enterprise edition (both x86 and x64 architectures).</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>Home edition isn’t supported.</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Microsoft Windows Server 2012 or Microsoft Windows Server 2012 R2.</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>The Retail Store Scale Unit installer first extracts the associated files.</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>It then begins the installation.</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>On the first page of the installer, select the components to install.</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>You can install the following components:</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Retail channel database with Async Client</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>Retail Server</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>Retail Cloud POS</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>To install Retail Cloud POS, you must also select and install Retail Server.</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>If you will use only Retail Modern POS in the store, clear the <bpt id="p1">**</bpt>Retail Cloud POS<ept id="p1">**</ept> check box, and continue with installation as it's described here.</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>By default, the installer installs all components on one computer.</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>To install the components across multiple computers, you must complete additional manual steps.</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>For more information, see the "Multiple-computer installation" section.</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>After you've selected all the components to install, select <bpt id="p1">**</bpt>Next<ept id="p1">**</ept> to continue.</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>The installer validates that all prerequisites are met.</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>If a valid version of Microsoft SQL Server isn’t found, the installer downloads and installs Microsoft SQL Server 2014 Express with Service Pack 2.</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>To meet the prerequisites, SQL Server must have Full-text search, and it must support, at a minimum, Transport Layer Security (TLS) 1.2.</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>For Microsoft SQL Server 2012, Service Pack 3 must be installed, at a minimum.</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>For Microsoft SQL Server 2014, Service Pack 2 must be installed.</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>If a system restart is required, the installer shows this requirement.</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>Although the restart is recommended, the installer can continue without it.</source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>Verify the Application Object Server (AOS) URL, and then select <bpt id="p1">**</bpt>Next<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>(The AOS URL is the URL that is used to access Retail headquarters.)</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>The Retail Server URL is automatically entered from the configuration file.</source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>Select a valid Secure Sockets Layer (SSL) certificate to use for HTTPS communication.</source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>The certificate must use private key storage, and server authentication must be listed in the enhanced key usage property.</source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>Additionally, the certificate must be trusted locally, and it can’t be expired.</source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>It must be stored in the personal certificate store location on the local computer.</source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>If a specific user is required, enter the user name and password that the application pool will run under.</source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>By default, the installer automatically generates a service account to use.</source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>This approach is more secure and is recommended.</source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>On the next page, enter the user account and password for the Retail Server application pool and Async Client.</source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>By default, this account is automatically generated.</source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>However, you can manually enter the user account and password.</source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>Enter the HTTPS port to use, and verify that the host name of the computer is correct.</source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Next<ept id="p1">**</ept> to continue.</source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>The HTTPS port is listed in the Store system profile.</source>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>To access the Store system profile, on the <bpt id="p1">**</bpt>Retail store details<ept id="p1">**</ept> page, on the <bpt id="p2">**</bpt>Store systems<ept id="p2">**</ept> FastTab, select the profile ID of the selected Store system.</source>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>The installer automatically enters the host name.</source>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>If, for any reason, the host name must be changed for the installation, change it here.</source>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>The host name must be the FQDN of the system, and it must be entered in the <bpt id="p1">**</bpt>Host name<ept id="p1">**</ept> field for the selected Store system entry.</source>
+        </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>Enter the application ID (client ID) and secret that are associated with this Retail Store Scale Unit installation.</source>
+        </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>Additionally, verify the channel database ID, which is automatically entered from the configuration file.</source>
+        </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>Then select <bpt id="p1">**</bpt>Install<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>If you will use Retail Cloud POS, make sure that the <bpt id="p1">**</bpt>Configure Retail Cloud POS<ept id="p1">**</ept> check box at the bottom of this page is selected.</source>
+        </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>This configuration requests Azure AD sign-in and automatically generates all required information in Azure so that Retail Cloud POS can be used on-premises.</source>
+        </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>For information about the creation of web applications in Azure, see <bpt id="p1">[</bpt>Create an Azure Active Directory Application<ept id="p1">](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal#create-an-azure-active-directory-application)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>When you create the Web App, the initial URI and URL don't have to be any specific value.</source>
+        </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>Only the application ID (client ID) and secret that are created are important.</source>
+        </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>After the application ID (client ID) and secret are created for Retail Store Scale Unit, the application ID (client ID) must be accepted in Retail.</source>
+        </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>In Retail, go to <bpt id="p1">**</bpt>System administration<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Azure Active Directory applications<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>Enter the application ID (client ID) in the <bpt id="p1">**</bpt>Client ID<ept id="p1">**</ept> column, enter descriptive text in the <bpt id="p2">**</bpt>Name<ept id="p2">**</ept> column, and enter <bpt id="p3">**</bpt>RetailServiceAccount<ept id="p3">**</ept> in the <bpt id="p4">**</bpt>User ID<ept id="p4">**</ept> column.</source>
+        </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>After the installation is completed, the final health page appears.</source>
+        </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>This page shows whether the installation was successful.</source>
+        </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>It also shows the health of each component, based on basic connection tests, and the location of this topic.</source>
+        </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>If the installation wasn't successful, the page shows the location of the log files.</source>
+        </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>If Retail Cloud POS is configured for use, a client ID is shown at the end of the installation.</source>
+        </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>You must add this client ID to the <bpt id="p1">**</bpt>Retail shared parameters<ept id="p1">**</ept> page in Retail.</source>
+        </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>In Retail, go to <bpt id="p1">**</bpt>Retail<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Headquarters setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Parameters<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Retail shared parameters<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Identity providers<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Identity providers<ept id="p1">**</ept> FastTab, select the provider that begins with <bpt id="p2">**</bpt>HTTPS://sts.windows.net/<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>The values on the <bpt id="p1">**</bpt>Relying parties<ept id="p1">**</ept> FastTab are set, based on your selection.</source>
+        </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Relying parties<ept id="p1">**</ept> FastTab, select <bpt id="p2">**</bpt>+Add<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>Enter the client ID that is listed in the Retail Store Scale Unit installer.</source>
+        </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>Set the <bpt id="p1">**</bpt>Type<ept id="p1">**</ept> field to <bpt id="p2">**</bpt>Public<ept id="p2">**</ept> and the <bpt id="p3">**</bpt>UserType<ept id="p3">**</ept> field to <bpt id="p4">**</bpt>Worker<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>Then, on the Action Pane, select <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>Select the new relying party, and then, on the <bpt id="p1">**</bpt>Server resource IDs<ept id="p1">**</ept> FastTab, select <bpt id="p2">**</bpt>+Add<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Server Resource ID<ept id="p1">**</ept> column, enter <bpt id="p2">**</bpt>https://retailstorescaleunit.retailserver.com<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>On the Action Pane, select <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>In Retail, go to <bpt id="p1">**</bpt>Retail<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Headquarters setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Parameters<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Retail shared parameters<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Identity providers<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Identity providers<ept id="p1">**</ept> FastTab, select <bpt id="p2">**</bpt>+Add<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>In the new <bpt id="p1">**</bpt>Issuer<ept id="p1">**</ept> row, enter the Retail Server URL of the newly installed Retail Store Scale Unit.</source>
+        </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>At the end of the URL, add <bpt id="p1">**</bpt>/auth<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>The URL will resemble <bpt id="p1">**</bpt>https://MyComputerName/RetailServer/auth<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>There will be a new identity provider line for each Retail Store Scale Unit that is installed.</source>
+        </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>Each Retail Store Scale Unit will have a URL that resembles this URL.</source>
+        </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Name<ept id="p1">**</ept> column, enter a description for the store that the URL belongs to.</source>
+        </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Type<ept id="p1">**</ept> column, select <bpt id="p2">**</bpt>Open ID Connect<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source>This new row must be duplicated for every Retail Store Scale Unit installation (that is, for every unique URL).</source>
+        </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source>On the Action Pane, select <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Identity providers<ept id="p1">**</ept> FastTab, select the newly created line.</source>
+        </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>The values on the <bpt id="p1">**</bpt>Relying parties<ept id="p1">**</ept> FastTab are set, based on your selection.</source>
+        </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Relying parties<ept id="p1">**</ept> FastTab, select <bpt id="p2">**</bpt>+Add<ept id="p2">**</ept>, and add the following two entries:</source>
+        </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>ClientId<ept id="p1">**</ept> column, enter <bpt id="p2">**</bpt>Cloud POS<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source>Set the <bpt id="p1">**</bpt>Type<ept id="p1">**</ept> field to <bpt id="p2">**</bpt>Public<ept id="p2">**</ept> and the <bpt id="p3">**</bpt>UserType<ept id="p3">**</ept> field to <bpt id="p4">**</bpt>Worker<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>ClientId<ept id="p1">**</ept> column, enter <bpt id="p2">**</bpt>Modern POS<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source>Set the <bpt id="p1">**</bpt>Type<ept id="p1">**</ept> field to <bpt id="p2">**</bpt>Public<ept id="p2">**</ept> and the <bpt id="p3">**</bpt>UserType<ept id="p3">**</ept> field to <bpt id="p4">**</bpt>Worker<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source>On the Action Pane, select <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source>When you've finished, return to the installer, and select <bpt id="p1">**</bpt>Finish<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source>The final page of the installer includes valuable information that you can use to test and validate that all components work correctly.</source>
+        </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source>Keep this page open for as long as you require to complete validation.</source>
+        </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source>If the installer doesn't show a check mark for Retail Server, Async Client, or any other component, wait 10 minutes, so that any cached values can be updated in the cloud.</source>
+        </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source>Then check again.</source>
+        </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source>If the installer still isn't fully successful, run a full synchronization on the new channel database that this installation uses.</source>
+        </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>If you followed all the steps correctly, your configuration should have these characteristics:</source>
+        </trans-unit>
+        <trans-unit id="298" translate="yes" xml:space="preserve">
+          <source>In Azure, two web applications have been automatically generated through the installer:</source>
+        </trans-unit>
+        <trans-unit id="299" translate="yes" xml:space="preserve">
+          <source>Retail Store Scale Unit Cloud POS</source>
+        </trans-unit>
+        <trans-unit id="300" translate="yes" xml:space="preserve">
+          <source>Retail Store Scale Unit Retail Server for Cloud POS</source>
+        </trans-unit>
+        <trans-unit id="301" translate="yes" xml:space="preserve">
+          <source>In Azure, a web application (that is, an App registration in the new Azure portal) has been manually created for each Retail Store Scale Unit installation (for example, RetailStoreScaleUnitHouston).</source>
+        </trans-unit>
+        <trans-unit id="302" translate="yes" xml:space="preserve">
+          <source>A key (secret) has been created that can be used in the installer, as described earlier.</source>
+        </trans-unit>
+        <trans-unit id="303" translate="yes" xml:space="preserve">
+          <source>The manually created web application's application ID (client ID) has been added to the <bpt id="p1">**</bpt>Azure Active Directory applications<ept id="p1">**</ept> page in Retail, as explained in step 9 of the preceding procedure.</source>
+        </trans-unit>
+        <trans-unit id="304" translate="yes" xml:space="preserve">
+          <source>The Retail Cloud POS application ID (client ID) that was shown at the end of the Retail Store Scale Unit installer has been added on the <bpt id="p1">**</bpt>Identity providers<ept id="p1">**</ept> tab, as explained in step 11 of the preceding procedure.</source>
+        </trans-unit>
+        <trans-unit id="305" translate="yes" xml:space="preserve">
+          <source>Multiple-computer installation</source>
+        </trans-unit>
+        <trans-unit id="306" translate="yes" xml:space="preserve">
+          <source>Only advanced users should install Retail Store Scale Unit across multiple computers.</source>
+        </trans-unit>
+        <trans-unit id="307" translate="yes" xml:space="preserve">
+          <source>The following set of procedures explains how to install the Retail channel database and Async Client on one computer, and Retail Server and Retail Cloud POS on a second computer.</source>
+        </trans-unit>
+        <trans-unit id="308" translate="yes" xml:space="preserve">
+          <source>The instructions assume that both systems are on the same domain, and that users for the services that will be installed have already been created on both systems.</source>
+        </trans-unit>
+        <trans-unit id="309" translate="yes" xml:space="preserve">
+          <source>It's important that you perform all configuration in Retail headquarters.</source>
+        </trans-unit>
+        <trans-unit id="310" translate="yes" xml:space="preserve">
+          <source>Installation on the first computer</source>
+        </trans-unit>
+        <trans-unit id="311" translate="yes" xml:space="preserve">
+          <source>On the first computer, run the Retail Store Scale Unit self-service installer as described earlier in this topic, but make the following changes.</source>
+        </trans-unit>
+        <trans-unit id="312" translate="yes" xml:space="preserve">
+          <source>Select only Retail Channel Database and Async Client as the components to install.</source>
+        </trans-unit>
+        <trans-unit id="313" translate="yes" xml:space="preserve">
+          <source>Then select <bpt id="p1">**</bpt>Next<ept id="p1">**</ept> to continue with the installation.</source>
+        </trans-unit>
+        <trans-unit id="314" translate="yes" xml:space="preserve">
+          <source>You can use a generated service account for Async Client, because Async Client won't be accessed outside the computer that it's installed on.</source>
+        </trans-unit>
+        <trans-unit id="315" translate="yes" xml:space="preserve">
+          <source>Enter the client ID and secret.</source>
+        </trans-unit>
+        <trans-unit id="316" translate="yes" xml:space="preserve">
+          <source>Keep these details available, so that you can use them again on the second computer.</source>
+        </trans-unit>
+        <trans-unit id="317" translate="yes" xml:space="preserve">
+          <source>After a client ID and secret are created for Retail Store Scale Unit, the client ID must be accepted in Retail.</source>
+        </trans-unit>
+        <trans-unit id="318" translate="yes" xml:space="preserve">
+          <source>Go to <bpt id="p1">**</bpt>System administration<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Azure Active Directory applications<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="319" translate="yes" xml:space="preserve">
+          <source>Enter the client ID in the <bpt id="p1">**</bpt>Client ID<ept id="p1">**</ept> column, enter descriptive text in the <bpt id="p2">**</bpt>Name<ept id="p2">**</ept> column, and enter <bpt id="p3">**</bpt>RetailServiceAccount<ept id="p3">**</ept> in the <bpt id="p4">**</bpt>User ID<ept id="p4">**</ept> column.</source>
+        </trans-unit>
+        <trans-unit id="320" translate="yes" xml:space="preserve">
+          <source>When setup is successful, start SQL Server Configuration Manager.</source>
+        </trans-unit>
+        <trans-unit id="321" translate="yes" xml:space="preserve">
+          <source>Go to <bpt id="p1">**</bpt>SQL Server Network Configuration<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Protocols<ept id="p2">**</ept> for the SQL Server instance.</source>
+        </trans-unit>
+        <trans-unit id="322" translate="yes" xml:space="preserve">
+          <source>Right-click, and then select <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="323" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Flags<ept id="p1">**</ept> section, change the value of <bpt id="p2">**</bpt>Set Force Encryption<ept id="p2">**</ept> to <bpt id="p3">**</bpt>Yes<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="324" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Certificate<ept id="p1">**</ept> section, select the SSL certificate on the drop-down menu.</source>
+        </trans-unit>
+        <trans-unit id="325" translate="yes" xml:space="preserve">
+          <source>This SQL Server SSL certificate is the same certificate that is used in the installer.</source>
+        </trans-unit>
+        <trans-unit id="326" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="327" translate="yes" xml:space="preserve">
+          <source>Go back to <bpt id="p1">**</bpt>Protocols<ept id="p1">**</ept> in SQL Server Configuration Manager, and enable the following protocols:</source>
+        </trans-unit>
+        <trans-unit id="328" translate="yes" xml:space="preserve">
+          <source>Named Pipes</source>
+        </trans-unit>
+        <trans-unit id="329" translate="yes" xml:space="preserve">
+          <source>TCP/IP</source>
+        </trans-unit>
+        <trans-unit id="330" translate="yes" xml:space="preserve">
+          <source>Right-click the <bpt id="p1">**</bpt>TCP/IP<ept id="p1">**</ept> protocol, and then select <bpt id="p2">**</bpt>Properties<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="331" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>IP Address<ept id="p1">**</ept> section, scroll down the list to <bpt id="p2">**</bpt>IPALL<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="332" translate="yes" xml:space="preserve">
+          <source>Enter <bpt id="p1">**</bpt>TCPPort = 1433<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="333" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="334" translate="yes" xml:space="preserve">
+          <source>Start Windows Firewall with Advanced Security.</source>
+        </trans-unit>
+        <trans-unit id="335" translate="yes" xml:space="preserve">
+          <source>In Windows Firewall, create an inbound rule to open TCP port 1433.</source>
+        </trans-unit>
+        <trans-unit id="336" translate="yes" xml:space="preserve">
+          <source>For detailed information about SQL Server and Windows Firewall, see <bpt id="p1">[</bpt>Configure a Windows Firewall for Database Engine Access<ept id="p1">](https://msdn.microsoft.com/en-us/library/ms175043.aspx)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="337" translate="yes" xml:space="preserve">
+          <source>Installation on the second computer</source>
+        </trans-unit>
+        <trans-unit id="338" translate="yes" xml:space="preserve">
+          <source>On the second computer, run the Retail Store Scale Unit Self-service installer as described earlier in this topic, but make the following changes.</source>
+        </trans-unit>
+        <trans-unit id="339" translate="yes" xml:space="preserve">
+          <source>Select only Retail Server and Retail Cloud POS as the components to install.</source>
+        </trans-unit>
+        <trans-unit id="340" translate="yes" xml:space="preserve">
+          <source>If only Retail Server must to be installed, don't select Retail Cloud POS.</source>
+        </trans-unit>
+        <trans-unit id="341" translate="yes" xml:space="preserve">
+          <source>Then select <bpt id="p1">**</bpt>Next<ept id="p1">**</ept> to continue with the installation.</source>
+        </trans-unit>
+        <trans-unit id="342" translate="yes" xml:space="preserve">
+          <source>Enter the domain user credentials (user name and password) that have permission to access SQL Server on the first computer.</source>
+        </trans-unit>
+        <trans-unit id="343" translate="yes" xml:space="preserve">
+          <source>Then select <bpt id="p1">**</bpt>Next<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="344" translate="yes" xml:space="preserve">
+          <source>A generated service account can't be used, because Retail Server requires access to the SQL database on the first computer.</source>
+        </trans-unit>
+        <trans-unit id="345" translate="yes" xml:space="preserve">
+          <source>You must use a domain account.</source>
+        </trans-unit>
+        <trans-unit id="346" translate="yes" xml:space="preserve">
+          <source>Enter the same client ID and secret that are used on the first computer.</source>
+        </trans-unit>
+        <trans-unit id="347" translate="yes" xml:space="preserve">
+          <source>It's critical that you add this client ID to Retail as described earlier.</source>
+        </trans-unit>
+        <trans-unit id="348" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Configure Cloud POS<ept id="p1">**</ept>, and then enter Azure AD credentials that have the correct permissions to create Azure Web Apps.</source>
+        </trans-unit>
+        <trans-unit id="349" translate="yes" xml:space="preserve">
+          <source>For more information about Azure Web Apps, how to create them, and how to generate new secrets, see <bpt id="p1">[</bpt>Use portal to create Active Directory application and service principal that can access resources<ept id="p1">](https://azure.microsoft.com/en-us/documentation/articles/resource-group-create-service-principal-portal/)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="350" translate="yes" xml:space="preserve">
+          <source>Note that the sign-in URL and the App ID URI aren't important.</source>
+        </trans-unit>
+        <trans-unit id="351" translate="yes" xml:space="preserve">
+          <source>When setup is successful, don't exit the installer.</source>
+        </trans-unit>
+        <trans-unit id="352" translate="yes" xml:space="preserve">
+          <source>At first, the healthcheck ping won't be successful, because the database isn't yet set up correctly.</source>
+        </trans-unit>
+        <trans-unit id="353" translate="yes" xml:space="preserve">
+          <source>After you've completed the remaining steps of this procedure, you can test the healthcheck again.</source>
+        </trans-unit>
+        <trans-unit id="354" translate="yes" xml:space="preserve">
+          <source>Go to <bpt id="p1">**</bpt>IIS<ept id="p1">**</ept>, select the <bpt id="p2">**</bpt>Retail Store Scale Unit<ept id="p2">**</ept> website, and select the <bpt id="p3">**</bpt>Retail Server<ept id="p3">**</ept> web application.</source>
+        </trans-unit>
+        <trans-unit id="355" translate="yes" xml:space="preserve">
+          <source>Explore the working directory.</source>
+        </trans-unit>
+        <trans-unit id="356" translate="yes" xml:space="preserve">
+          <source>Open the Web.config file, and then, in the <bpt id="p1">**</bpt>connectionStrings<ept id="p1">**</ept> section, add <bpt id="p2">**</bpt>Server name<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="357" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Server name<ept id="p1">**</ept> is the name of the first computer where you installed components.</source>
+        </trans-unit>
+        <trans-unit id="358" translate="yes" xml:space="preserve">
+          <source>Save the file.</source>
+        </trans-unit>
+        <trans-unit id="359" translate="yes" xml:space="preserve">
+          <source>If the certificate that is used isn't a valid, trusted certificate from a trusted authority, open CERTMGR.MSC, and follow these steps:</source>
+        </trans-unit>
+        <trans-unit id="360" translate="yes" xml:space="preserve">
+          <source>Import the SQL Server SSL certificate that you created earlier, and add it to Trusted Root.</source>
+        </trans-unit>
+        <trans-unit id="361" translate="yes" xml:space="preserve">
+          <source>Open a <bpt id="p1">**</bpt>Command Prompt<ept id="p1">**</ept> window as an administrator, type <bpt id="p2">**</bpt>IISRESET<ept id="p2">**</ept>, and then press Enter.</source>
+        </trans-unit>
+        <trans-unit id="362" translate="yes" xml:space="preserve">
+          <source>If Retail Cloud POS is configured for use, a client ID is shown.</source>
+        </trans-unit>
+        <trans-unit id="363" translate="yes" xml:space="preserve">
+          <source>You must add this client ID to the <bpt id="p1">**</bpt>Retail shared parameters<ept id="p1">**</ept> page in Retail.</source>
+        </trans-unit>
+        <trans-unit id="364" translate="yes" xml:space="preserve">
+          <source>In Retail, go to <bpt id="p1">**</bpt>Retail<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Headquarters setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Parameters<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Retail shared parameters<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="365" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Identity providers<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="366" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Identity providers<ept id="p1">**</ept> FastTab, select the provider that begins with <bpt id="p2">**</bpt>HTTPS://sts.windows.net/<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="367" translate="yes" xml:space="preserve">
+          <source>The values on the <bpt id="p1">**</bpt>Relying parties<ept id="p1">**</ept> FastTab are set, based on your selection.</source>
+        </trans-unit>
+        <trans-unit id="368" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Relying parties<ept id="p1">**</ept> FastTab, select <bpt id="p2">**</bpt>+Add<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="369" translate="yes" xml:space="preserve">
+          <source>Enter the client ID that is listed in the Retail Store Scale Unit installer.</source>
+        </trans-unit>
+        <trans-unit id="370" translate="yes" xml:space="preserve">
+          <source>Set the <bpt id="p1">**</bpt>Type<ept id="p1">**</ept> field to <bpt id="p2">**</bpt>Public<ept id="p2">**</ept> and the <bpt id="p3">**</bpt>UserType<ept id="p3">**</ept> field to <bpt id="p4">**</bpt>Worker<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="371" translate="yes" xml:space="preserve">
+          <source>Then, on the Action Pane, select <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="372" translate="yes" xml:space="preserve">
+          <source>Select the new relying party, and then, on the <bpt id="p1">**</bpt>Server resource IDs<ept id="p1">**</ept> FastTab, select <bpt id="p2">**</bpt>+Add<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="373" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Server Resource ID<ept id="p1">**</ept> column, enter <bpt id="p2">**</bpt>https://retailstorescaleunit.retailserver.com<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="374" translate="yes" xml:space="preserve">
+          <source>On the Action Pane, select <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="375" translate="yes" xml:space="preserve">
+          <source>In Retail, go to <bpt id="p1">**</bpt>Retail<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Headquarters setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Retail scheduler<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Channel database<ept id="p4">**</ept>, and follow these steps:</source>
+        </trans-unit>
+        <trans-unit id="376" translate="yes" xml:space="preserve">
+          <source>Select the channel database that you created at the beginning of this topic.</source>
+        </trans-unit>
+        <trans-unit id="377" translate="yes" xml:space="preserve">
+          <source>On the Action Pane, select <bpt id="p1">**</bpt>Full Sync<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Job 9999<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="378" translate="yes" xml:space="preserve">
+          <source>Full synchronization might require several minutes.</source>
+        </trans-unit>
+        <trans-unit id="379" translate="yes" xml:space="preserve">
+          <source>In the Retail Store Scale Unit installer, retest to verify that all functionality is working correctly.</source>
+        </trans-unit>
+        <trans-unit id="380" translate="yes" xml:space="preserve">
+          <source>Start Retail Cloud POS from the computer that you're using for point of sale (POS) operations.</source>
+        </trans-unit>
+        <trans-unit id="381" translate="yes" xml:space="preserve">
+          <source>(This computer is a third computer that is separate from the Retail Store Scale Unit systems.)</source>
+        </trans-unit>
+        <trans-unit id="382" translate="yes" xml:space="preserve">
+          <source>Activate the Retail Cloud POS device that you're using for this computer.</source>
+        </trans-unit>
+        <trans-unit id="383" translate="yes" xml:space="preserve">
+          <source>Do a simple sale to verify full end-to-end functionality.</source>
+        </trans-unit>
+        <trans-unit id="384" translate="yes" xml:space="preserve">
+          <source>Help secure Retail Store Scale Unit</source>
+        </trans-unit>
+        <trans-unit id="385" translate="yes" xml:space="preserve">
+          <source>According to current security standards, the following options should be set in a production environment:</source>
+        </trans-unit>
+        <trans-unit id="386" translate="yes" xml:space="preserve">
+          <source>You should completely disable SSL (v2 and v3) on the computer.</source>
+        </trans-unit>
+        <trans-unit id="387" translate="yes" xml:space="preserve">
+          <source>You should enable and use only TLS version 1.2 (or the current highest version).</source>
+        </trans-unit>
+        <trans-unit id="388" translate="yes" xml:space="preserve">
+          <source>By default, SSL and all version of TLS except TLS 1.2 are disabled.</source>
+        </trans-unit>
+        <trans-unit id="389" translate="yes" xml:space="preserve">
+          <source>To edit or enable these settings, follow these steps:</source>
+        </trans-unit>
+        <trans-unit id="390" translate="yes" xml:space="preserve">
+          <source>Press the Windows logo key+R to open a <bpt id="p1">**</bpt>Run<ept id="p1">**</ept> window.</source>
+        </trans-unit>
+        <trans-unit id="391" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Open<ept id="p1">**</ept> field, enter <bpt id="p2">**</bpt>Regedit<ept id="p2">**</ept>, and then select <bpt id="p3">**</bpt>OK<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="392" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>User Account Control<ept id="p1">**</ept> window, select <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept> (if this step is required), and then, in the new <bpt id="p3">**</bpt>Registry Editor<ept id="p3">**</ept> window, go to <bpt id="p4">**</bpt>HKEY<ph id="ph1">\_</ph>LOCAL<ph id="ph2">\_</ph>MACHINE<ph id="ph3">\\</ph>System<ph id="ph4">\\</ph>CurrentControlSet<ph id="ph5">\\</ph>SecurityProviders<ph id="ph6">\\</ph>SCHANNEL<ph id="ph7">\\</ph>Protocols<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="393" translate="yes" xml:space="preserve">
+          <source>The following keys have been automatically entered to enabled only TLS 1.2:</source>
+        </trans-unit>
+        <trans-unit id="394" translate="yes" xml:space="preserve">
+          <source>TLS 1.2<ph id="ph1">\\</ph>Server:Enabled=1</source>
+        </trans-unit>
+        <trans-unit id="395" translate="yes" xml:space="preserve">
+          <source>TLS 1.2<ph id="ph1">\\</ph>Server:DisabledByDefault=0</source>
+        </trans-unit>
+        <trans-unit id="396" translate="yes" xml:space="preserve">
+          <source>TLS 1.2<ph id="ph1">\\</ph>Client:Enabled=1</source>
+        </trans-unit>
+        <trans-unit id="397" translate="yes" xml:space="preserve">
+          <source>TLS 1.2<ph id="ph1">\\</ph>Client:DisabledByDefault=0</source>
+        </trans-unit>
+        <trans-unit id="398" translate="yes" xml:space="preserve">
+          <source>TLS 1.1<ph id="ph1">\\</ph>Server:Enabled=0</source>
+        </trans-unit>
+        <trans-unit id="399" translate="yes" xml:space="preserve">
+          <source>TLS 1.1<ph id="ph1">\\</ph>Client:Enabled=0</source>
+        </trans-unit>
+        <trans-unit id="400" translate="yes" xml:space="preserve">
+          <source>TLS 1.0<ph id="ph1">\\</ph>Server:Enabled=0</source>
+        </trans-unit>
+        <trans-unit id="401" translate="yes" xml:space="preserve">
+          <source>TLS 1.0<ph id="ph1">\\</ph>Client:Enabled=0</source>
+        </trans-unit>
+        <trans-unit id="402" translate="yes" xml:space="preserve">
+          <source>SSL 3.0<ph id="ph1">\\</ph>Server:Enabled=0</source>
+        </trans-unit>
+        <trans-unit id="403" translate="yes" xml:space="preserve">
+          <source>SSL 3.0<ph id="ph1">\\</ph>Client:Enabled=0</source>
+        </trans-unit>
+        <trans-unit id="404" translate="yes" xml:space="preserve">
+          <source>SSL 2.0<ph id="ph1">\\</ph>Server:Enabled=0</source>
+        </trans-unit>
+        <trans-unit id="405" translate="yes" xml:space="preserve">
+          <source>SSL 2.0<ph id="ph1">\\</ph>Client:Enabled=0</source>
+        </trans-unit>
+        <trans-unit id="406" translate="yes" xml:space="preserve">
+          <source>No additional network ports should be open, unless they are required for known, specified reasons.</source>
+        </trans-unit>
+        <trans-unit id="407" translate="yes" xml:space="preserve">
+          <source>You must disable cross-origin resource sharing, and you must specify the allowed origins that are accepted.</source>
+        </trans-unit>
+        <trans-unit id="408" translate="yes" xml:space="preserve">
+          <source>You should use only trusted certificate authorities to obtain certificates that will be used on Store system computers.</source>
+        </trans-unit>
+        <trans-unit id="409" translate="yes" xml:space="preserve">
+          <source>It's critical that you review security guidelines for Internet Information Services (IIS) and Payment Card Industry (PCI) requirements.</source>
+        </trans-unit>
+        <trans-unit id="410" translate="yes" xml:space="preserve">
+          <source>Troubleshoot Retail Store Scale Unit</source>
+        </trans-unit>
+        <trans-unit id="411" translate="yes" xml:space="preserve">
+          <source>This section will be more thorough in the future.</source>
+        </trans-unit>
+        <trans-unit id="412" translate="yes" xml:space="preserve">
+          <source>For now, here is a checklist of things to verify.</source>
+        </trans-unit>
+        <trans-unit id="413" translate="yes" xml:space="preserve">
+          <source>In Retail, on the <bpt id="p1">**</bpt>Retail shared parameters<ept id="p1">**</ept> page, verify that the correct client ID has been added to the <bpt id="p2">**</bpt>Relying parties<ept id="p2">**</ept> FastTab.</source>
+        </trans-unit>
+        <trans-unit id="414" translate="yes" xml:space="preserve">
+          <source>Additionally, verify that the correct <bpt id="p1">**</bpt>https://retailstorescaleunit.retailserver.com<ept id="p1">**</ept> entry has been added to the <bpt id="p2">**</bpt>Server resource IDs<ept id="p2">**</ept> FastTab.</source>
+        </trans-unit>
+        <trans-unit id="415" translate="yes" xml:space="preserve">
+          <source>In Retail, verify that every client ID that was generated for each retail store exists on the <bpt id="p1">**</bpt>Azure Active Directory applications<ept id="p1">**</ept> page.</source>
+        </trans-unit>
+        <trans-unit id="416" translate="yes" xml:space="preserve">
+          <source>In Retail, on the <bpt id="p1">**</bpt>Channel profile<ept id="p1">**</ept> page, verify that the URLs are correct.</source>
+        </trans-unit>
+        <trans-unit id="417" translate="yes" xml:space="preserve">
+          <source>(In other words, verify that the computer name in each URL is correct, the URL is correctly formatted, and so on.)</source>
+        </trans-unit>
+        <trans-unit id="418" translate="yes" xml:space="preserve">
+          <source>In Retail, on the <bpt id="p1">**</bpt>Channel database<ept id="p1">**</ept> page, verify that full synchronization correctly occurred for the new channel database.</source>
+        </trans-unit>
+        <trans-unit id="419" translate="yes" xml:space="preserve">
+          <source>Verify that the retail store is correctly configured to use the new channel database.</source>
+        </trans-unit>
+        <trans-unit id="420" translate="yes" xml:space="preserve">
+          <source>Uninstall Retail Store system</source>
+        </trans-unit>
+        <trans-unit id="421" translate="yes" xml:space="preserve">
+          <source>Use Control Panel in Microsoft Windows to uninstall Retail Store system.</source>
+        </trans-unit>
+        <trans-unit id="422" translate="yes" xml:space="preserve">
+          <source>Press the Windows logo key, and then enter <bpt id="p1">**</bpt>Control Panel<ept id="p1">**</ept> in the search box.</source>
+        </trans-unit>
+        <trans-unit id="423" translate="yes" xml:space="preserve">
+          <source>In the search results, select <bpt id="p1">**</bpt>Control Panel<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="424" translate="yes" xml:space="preserve">
+          <source>In Control Panel, select <bpt id="p1">**</bpt>Programs<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Uninstall a program<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="425" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Programs and Features<ept id="p1">**</ept> window, select <bpt id="p2">**</bpt>Microsoft Dynamics 365 for Retail Store system<ept id="p2">**</ept>, and then, above the list of programs, select <bpt id="p3">**</bpt>Uninstall<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="426" translate="yes" xml:space="preserve">
+          <source>Wait for the uninstaller to finish removing the program.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

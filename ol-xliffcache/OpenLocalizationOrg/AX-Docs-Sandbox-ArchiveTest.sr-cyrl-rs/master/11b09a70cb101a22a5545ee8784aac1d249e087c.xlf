@@ -1,0 +1,444 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">11b09a70cb101a22a5545ee8784aac1d249e087c</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\migration-upgrade\data-model-changes-resource-management.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">1b2bfa60f6790b709e1ba2157512fb563b64d935</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">61c45e9ba17987c5ce0533e66fe865ab1c0e9425</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Project resource scheduling data model</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic provides information about the Project resource scheduling data model.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Project resource scheduling data model</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This topic provides information about the Project resource scheduling data model.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Physical data model for Project resource scheduling</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>The following diagram represents the data design structure of the Project resource scheduling physical data model.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Resource management data model<ept id="p1">](./media/resource-management-data-model.jpg)](./media/resource-management-data-model.jpg)</ept></source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Tables</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>The following table provides a list of additional tables that support the Resource management data model.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Table<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Description<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>ResResourceIdentifier</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Stores all resources and a subset of records from the <bpt id="p1">**</bpt>WrkCtrTable<ept id="p1">**</ept> table that are identified as resources.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>When a resource is added, a record will be added to the **WrkCtrTable **table.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>A record will also be added to this table with a Foreign Key reference to the new record in the <bpt id="p1">**</bpt>WrkCtrTable<ept id="p1">**</ept> table.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>ResourceSetup</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Specifies a resource’s property.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>This table replaced the <bpt id="p1">**</bpt>ProjWorkerSetup<ept id="p1">**</ept> table in Dynamics AX 2012.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>ResBooking</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Stores all resource booking type reservations.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>This table replaced some of the information stored in the <bpt id="p1">**</bpt>PSASchedEmplReservation<ept id="p1">**</ept> table in Dynamics AX 2012.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>ResAssignment</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Stores all resource assignment type reservations.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>This table replaced some of the information stored in the <bpt id="p1">**</bpt>PSASchedEmplReservation<ept id="p1">**</ept> table in Dynamics AX 2012.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>ResourceResourceCategorySetup</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Stores the resource default project role association that is validated by a time range.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>This is a time effective table which has a Foreign Key to <bpt id="p1">**</bpt>ResResourceIdentifier.RecId<ept id="p1">**</ept> and a Foreign Key to <bpt id="p2">**</bpt>PSASchedRole.RecId<ept id="p2">**</ept> with <bpt id="p3">**</bpt>ValidFrom<ept id="p3">**</ept> and <bpt id="p4">**</bpt>ValidTo<ept id="p4">**</ept> fields.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>PSASchedRole<ept id="p1">**</ept> table is used to store the project role.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>ResCalendarCapacity</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>This is a data denormalized table based on <bpt id="p1">**</bpt>WorkCalendarTable<ept id="p1">**</ept>, <bpt id="p2">**</bpt>WorkCalendarDate<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>WorkCalendarDateLine<ept id="p3">**</ept> to calculate resource capacity.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>The calculation is based on the resource associated calendar date line definition, which is specified in the <bpt id="p1">**</bpt>WorkCalendarDataLine<ept id="p1">**</ept> table.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>The data in this table can be generated by running the <bpt id="p1">**</bpt>Synchronize resource capacity roll-ups<ept id="p1">**</ept> batch job.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>ResRollUpCalendar</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>This is a data denormalized table based on <bpt id="p1">**</bpt>ResCalendarCapacity<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>The data in this table is used by the <bpt id="p1">**</bpt>ResRollUpWriter<ept id="p1">**</ept> class to speed up the process of adding resource records to the <bpt id="p2">**</bpt>ResRollup<ept id="p2">**</ept> table.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>The data in this table can be generated by running the <bpt id="p1">**</bpt>Synchronize resource capacity roll-ups<ept id="p1">**</ept> batch job.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>ResRollUp</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>This is a data denormalized table based on <bpt id="p1">**</bpt>ResBooking<ept id="p1">**</ept>, <bpt id="p2">**</bpt>ResAssignment<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>ResRollUpCalendar<ept id="p3">**</ept> for performance improvement.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>This table contains all of the capacity and reservation data for time scales, including Day, Week, Month, Quarter, and Half year, for all resources.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>This data is accessed by the <bpt id="p1">**</bpt>AvailabilityView<ept id="p1">**</ept> control, which is included with any resource scheduling X++ form that includes this control, like the <bpt id="p2">**</bpt>Resource availability<ept id="p2">**</ept> form.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>The data in this table can be generated by running the <bpt id="p1">**</bpt>Synchronize resource capacity roll-ups<ept id="p1">**</ept> batch job.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Data is updated for every resource reservation action such as adding a new resource, booking, assignment, and reservation cancellation.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Views</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>The following table provides a list of the most informative views that you can use to access the Resource management data model.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>View<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Description<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>ResResourceWorkCenterView</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>This view is based on <bpt id="p1">**</bpt>ResResourceIdentifier<ept id="p1">**</ept> joining to <bpt id="p2">**</bpt>WrkCtrTable<ept id="p2">**</ept>, which captures only the fields that are required for resource management.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>ResourceView</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>This view is based on <bpt id="p1">**</bpt>ResResourceIdentifier<ept id="p1">**</ept>, which is only based on <bpt id="p2">**</bpt>ResResourceWorkCenterView<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>In a future release it can be extended to more than <bpt id="p1">**</bpt>ResResourceWorkCenterView<ept id="p1">**</ept> if a resource record will be saved on more than just <bpt id="p2">**</bpt>ResResourceWorkCenterView<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>ResourceWorkerView</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>This view replaces the <bpt id="p1">**</bpt>HcmWorker<ept id="p1">**</ept> table, which is based on <bpt id="p2">**</bpt>ResResourceIdentifier<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>WrkCtrTable<ept id="p1">**</ept> has a worker field which is a Foreign Key to <bpt id="p2">**</bpt>HcmWorkerTable<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>This view includes all <bpt id="p1">**</bpt>WrkCtrTable<ept id="p1">**</ept> resource which worker field is not 0.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>ResourceLegalEntityView</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>This view replaces the <bpt id="p1">**</bpt>HcmEmployment<ept id="p1">**</ept> table.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>This is the resource legal entity (LE) view, which is a union of <bpt id="p1">**</bpt>ResourceWorkerLegalEntityView<ept id="p1">**</ept> and <bpt id="p2">**</bpt>ResourceOtherLegalEntityView<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>The purpose of this view is to look up the resource legal entity as well as the associated valid from and valid to date.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>For example, an <bpt id="p1">**</bpt>HcmWorker<ept id="p1">**</ept> resource can be hired by multiple LEs with different ValidFrom and ValidTo dates.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>If the worker is hired by multiple LEs, then this worker resource will have multiple records in this view.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>If the resource is not a <bpt id="p1">**</bpt>HcmWorker<ept id="p1">**</ept>, then this resource will have only one record and <bpt id="p2">**</bpt>validFrom<ept id="p2">**</ept><ph id="ph1"> = </ph><bpt id="p3">**</bpt>minDate<ept id="p3">**</ept> and <bpt id="p4">**</bpt>ValidTo<ept id="p4">**</ept><ph id="ph2"> = </ph><bpt id="p5">**</bpt>maxDate<ept id="p5">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>ResourceCalendarView</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>This view replaces <bpt id="p1">**</bpt>WorkCalendarTable<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>This view contains the calendar <bpt id="p1">**</bpt>RecId<ept id="p1">**</ept> of the resource.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>This is a union view of <bpt id="p1">**</bpt>ResourceWorkerCalendarView<ept id="p1">**</ept>, R<bpt id="p2">**</bpt>esourceOtherCalendarView<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>ResourceGroupResourceCalendarView<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>To look up the resource calendar, users should first look up the <bpt id="p1">**</bpt>ResourceLegalEntityview<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>This is because a resource should have a different calendar depending on the resource’s legal entity.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>First, locate the record from <bpt id="p1">**</bpt>ResourceLegalEntityView<ept id="p1">**</ept> and get the <bpt id="p2">**</bpt>RefRecId<ept id="p2">**</ept> and <bpt id="p3">**</bpt>RefTableId<ept id="p3">**</ept> fields.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Then, look up <bpt id="p1">**</bpt>ResourceCalendarView<ept id="p1">**</ept> by setting <bpt id="p2">**</bpt>ResourceLegalEntityRefRecId<ept id="p2">**</ept><ph id="ph1"> = </ph><bpt id="p3">**</bpt>ResourceLegalView.RefRecId<ept id="p3">**</ept> and R<bpt id="p4">**</bpt>esourceLegalEntityRefTableId<ept id="p4">**</ept><ph id="ph2"> = </ph><bpt id="p5">**</bpt>ResourceLegalView.RefTableId<ept id="p5">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>ResourceCategoryView</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>This view shows the resource category (the resource role for a worker resource), which is based on the <bpt id="p1">**</bpt>PSASchedRole<ept id="p1">**</ept> table.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>ResSkillHcmView</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>This view is based on <bpt id="p1">**</bpt>HcmSkill<ept id="p1">**</ept> to capture all the skills that are defined in the <bpt id="p2">**</bpt>HcmSkills<ept id="p2">**</ept> table.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>ResCertificateHcmView</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>This view is based on <bpt id="p1">**</bpt>HcmCertificateType<ept id="p1">**</ept> to capture all the certificates that are defined on the <bpt id="p2">**</bpt>HcmCertificateType<ept id="p2">**</ept> table.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>ResEducationHcmView</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>This view is based on <bpt id="p1">**</bpt>HcmEducationDiscipline<ept id="p1">**</ept> to capture all the education disciplines that are defined in the <bpt id="p2">**</bpt>HcmEducationDiscipline<ept id="p2">**</ept> table.</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>ResProjectHcmView</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>This view is based on <bpt id="p1">**</bpt>ProjTable<ept id="p1">**</ept> to capture all projects that exist in the <bpt id="p2">**</bpt>ProjTable<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>ResRoleView</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>This view is based on <bpt id="p1">**</bpt>ResourceCategoryView<ept id="p1">**</ept> to capture all resource categories.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>ResCharacteristicView</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>This view is the union view of <bpt id="p1">**</bpt>ResSkillHcmView<ept id="p1">**</ept>, <bpt id="p2">**</bpt>ResCertificateHcmView<ept id="p2">**</ept>, <bpt id="p3">**</bpt>ResEducationHcmView<ept id="p3">**</ept>, <bpt id="p4">**</bpt>ResProjectHcmView<ept id="p4">**</ept>, and <bpt id="p5">**</bpt>ResRoleView<ept id="p5">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>This view is used to gather all the characteristics that are defined as selectable criteria for the resource search feature.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>ResResourceCharacteristicView</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>This view is the union view of <bpt id="p1">**</bpt>ResResourceCharacteristicHcmView<ept id="p1">**</ept>, <bpt id="p2">**</bpt>ResResourceResourceCategoryView<ept id="p2">**</ept>, <bpt id="p3">**</bpt>ResResourceNameView<ept id="p3">**</ept>, and <bpt id="p4">**</bpt>ResResourceRoleCharacteristicView<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>This view is used to identify the characteristics that are associated with a resource for the resource search feature.</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>ResCalendarCapacityView</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>This view is based on <bpt id="p1">**</bpt>ResCalendarCapacity<ept id="p1">**</ept>, which contains calendars that are specified in <bpt id="p2">**</bpt>WorkCalendarTable<ept id="p2">**</ept> with capacity details.</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>ResCapacityView</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>This view shows the resource’s capacity per hour.</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>ResResourceCapacityWorkDaysView</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>This view is based on <bpt id="p1">**</bpt>ResCapacityView<ept id="p1">**</ept>, which shows the resource capacity per day.</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>ResAssignmentView</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>This view is based on the table <bpt id="p1">**</bpt>ResAssignment<ept id="p1">**</ept>, which stores the activity resource assignments to either project or quotation work breakdown structure (WBS) task.</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>ResBookingView</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>This view is based on the table <bpt id="p1">**</bpt>ResBooking<ept id="p1">**</ept>, which stores the activity resource bookings to a project or quotation.</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Changes that will affect tables and fields</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>These sections contain information regarding code changes to tables and fields that are part of the feature implementation related to Project resource scheduling.</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>Resource scheduling</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>The table <bpt id="p1">**</bpt>PSASchedEmplReservation<ept id="p1">**</ept> is no longer used to store a resource’s reservations.</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>Instead, reservations are stored in the <bpt id="p1">**</bpt>ResAssignment<ept id="p1">**</ept> and <bpt id="p2">**</bpt>ResBooking <bpt id="p3">**</bpt>tables. Both tables use the <bpt id="p4">**</bpt>Activity resource<ept id="p4">**</ept> field Foreign Key for <bpt id="p5">**</bpt>PSAProjSchedRole.RecId<ept id="p5">**</ept> to store a resource’s reservation. The <bpt id="p6">**</bpt>PSAProjSchedRole<ept id="p6">**</ept> table is the project team table that has the <bpt id="p7">**</bpt>Resource<ept id="p7">**</ept> field Foreign Key to <bpt id="p8">**</bpt>ResourceView.RecId<ept id="p8">**</ept> and the <bpt id="p9">**</bpt>ResourceLegalEntity<ept id="p9">**</ept> field Foreign Key to <bpt id="p10">**</bpt>CompanyInfo.RecId<ept id="p10">**</ept> to identify which resources are the project’s or quotation’s team members. If the <bpt id="p11">**</bpt>PSAProjSchedRole.Resource<ept id="p11">**</ept> field = 0, then this activity resource is a planned resource. A planned resource is a shadow resource that is not backed by an actual resource. <bpt id="p12">**</bpt>PSAProjSchedRole.ResourceCategory<ept id="p12">**</ept> is a Foreign Key to <bpt id="p13">**</bpt>PSASchedRole<ept id="p13">**</ept> that stores the role of this team member. The <bpt id="p14">**</bpt>ResourceResourceCategorySetup<ept id="p14">**</ept> table stores the default time effective resource/role association. However, the resource can be reserved to any role defined by <bpt id="p15">**</bpt>PSAProjSchedRole.ResourceCategory,<ept id="p15">**</ept> ignoring the default role definition on the <bpt id="p16">**</bpt>ResourceResourceCategorySetup<ept id="p16">**</ept> table. Regarding WBS versioning, the tables <bpt id="p17">**</bpt>ProjPlanVersions<ept id="p17">**</ept> and <bpt id="p18">**</bpt>ProjPlanVersionDetails<ept id="p18">**</ept> store the WBS tasks versions. Initially, all WBS task data will be stored on these tables while the user is editing the WBS tasks content. After the user clicks the <bpt id="p19">**</bpt>Publish<ept id="p19">**</ept> button, the task data will be pushed to the original hierarchy tables (<ept id="p3">**</ept>smmActivities<ept id="p2">**</ept> and <bpt id="p20">**</bpt>PSAActivitySetup<ept id="p20">**</ept>).</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>The resource management feature requires data in the original hierarchy tables and requires a published WBS.</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>Price by resource and resource category</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>The pricing tables, <bpt id="p1">**</bpt>ProjCostPriceExpense<ept id="p1">**</ept>, <bpt id="p2">**</bpt>ProjCostSalesPrice<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>ProjRevenueSalesPrice<ept id="p3">**</ept> have a Foreign Key from <bpt id="p4">**</bpt>ResourceView.RecId<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>The tables <bpt id="p1">**</bpt>ProjHourCostPrice<ept id="p1">**</ept>, <bpt id="p2">**</bpt>ProjHourSalesPrice<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>ProjTransferPrice<ept id="p3">**</ept> have a Foreign Key from <bpt id="p4">**</bpt>ResourceView.RecId<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>The field <bpt id="p1">**</bpt>ResourceCategory<ept id="p1">**</ept> is part of the Foreign Key for <bpt id="p2">**</bpt>ResourceCategoryView.RecId<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>This is done so that pricing is based on a resource instead of a worker and enables pricing setup by resource category.</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>Common methods to get resource field and lookup resources</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>There are several resource methods in the <bpt id="p1">**</bpt>ResourceFacade<ept id="p1">**</ept> class.</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>The following table includes some of the most common methods.</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Class.Method<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Description<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>ResourceFacade.findByWorker()</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>Look up the resource record ID by <bpt id="p1">**</bpt>HcmWorker<ept id="p1">**</ept> record ID.</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>ResourceFacade.findOrCreateByWorker()</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>Look up the resource record ID by <bpt id="p1">**</bpt>HcmWorker<ept id="p1">**</ept> record ID.</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>If the resource record ID is not found, then a resource record ID will be added to the <bpt id="p1">**</bpt>ResResourceIdentifier<ept id="p1">**</ept> table and the resource record ID will be returned.</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>ResourceFacade.findByResourceID()</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>Look up the resource record ID by resource ID.</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>ResourceFacade.get…</source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>There are many get methods supported for the resource in the <bpt id="p1">**</bpt>ResourceFacade<ept id="p1">**</ept> class.</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>Resource related values like <bpt id="p1">**</bpt>Resource ID<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Resource calendar<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Resource legal entity<ept id="p3">**</ept>, and <bpt id="p4">**</bpt>Resource period<ept id="p4">**</ept> can be queried from the <bpt id="p5">**</bpt>ResourceView<ept id="p5">**</ept>, <bpt id="p6">**</bpt>ResourceLegalEntityView<ept id="p6">**</ept>, <bpt id="p7">**</bpt>ResourceCalendarView<ept id="p7">**</ept>, and <bpt id="p8">**</bpt>ResourceSetup<ept id="p8">**</ept> tables.</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>Facade classes</source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>The following table lists the facade classes that you can use as a starting point to interact with the Resource management data model.</source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Class<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Description<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>ActivityFacade</source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>Contains the methods to retrieve an activity’s properties, including <bpt id="p1">**</bpt>ID<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Quotation ID<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Project ID<ept id="p3">**</ept>, <bpt id="p4">**</bpt>Booked/assigned capacity<ept id="p4">**</ept>, <bpt id="p5">**</bpt>Remaining capacity<ept id="p5">**</ept>, <bpt id="p6">**</bpt>Calendar<ept id="p6">**</ept>, <bpt id="p7">**</bpt>Activity number<ept id="p7">**</ept>, and <bpt id="p8">**</bpt>Root project activity<ept id="p8">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>ActivityResourceFacade</source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>Contains the methods to retrieve an activity's resource properties including <bpt id="p1">**</bpt>Calendar<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Name<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Resource category<ept id="p3">**</ept>, <bpt id="p4">**</bpt>Resource legal entity<ept id="p4">**</ept>, <bpt id="p5">**</bpt>Is generic resource<ept id="p5">**</ept>, and <bpt id="p6">**</bpt>Is team member<ept id="p6">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>PeriodFacade</source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>Contains the methods to retrieve period properties including <bpt id="p1">**</bpt>Start and End date<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Period ID<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>Period name<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>ResourceCalendarFacade</source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>Contains the methods to retrieve the resource's calendar properties including <bpt id="p1">**</bpt>Calendar data area ID<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Calendar ID<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Calendar RecID<ept id="p3">**</ept>, <bpt id="p4">**</bpt>Capacity<ept id="p4">**</ept>, and <bpt id="p5">**</bpt>Dates<ept id="p5">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>ResourceCategoryFacade</source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>Contains the methods to retrieve the resource's default resource <bpt id="p1">**</bpt>Category<ept id="p1">**</ept>, <bpt id="p2">**</bpt>ID<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Name<ept id="p3">**</ept>, and <bpt id="p4">**</bpt>Type<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>ResourcePeriodFacade</source>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>Contains the methods to retrieve the resource's period date range and update the period method.</source>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>ResourceWorkerFacade</source>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>Contains the methods to retrieve the <bpt id="p1">**</bpt>Employment<ept id="p1">**</ept> type.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,357 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ef79b1478ca8689db73d5849863dd7e854998155</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">retail\dev-itpro\deploy-payment-connector.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">19c125d3edb6de0b83186bfb68bf57bf2403cf40</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">e747e573a364dfbe83bb65b40fa90b13ac0e327a</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Deploy a payment connector</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic describes how to deploy a payment connector package to the appropriate components.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Deploy a payment connector</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Overview</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>This topic guides retail IT professionals or value-added resellers (VARs) through the process of deploying a payment connector to the appropriate components.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>We assume that the payment connector has been implemented and tested by the payment provider or the payment independent software vendor (ISV), and that it's ready for validation and subsequent production deployment in a customer environment.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>This topic doesn't include information about how to package a payment connector by using the Retail software development kit (SDK).</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>See the <bpt id="p1">[</bpt>Retail SDK overview<ept id="p1">](retail-sdk/retail-sdk-overview.md)</ept> for information about how to download the SDK.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>For guidelines about how to package a payment connector, within the downloaded SDK, review the Retail SDK Handbook section on Adding a payment connector, which became available in the SDK in hotfix KB 3183058.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>This topic also doesn't include information about how to deploy the payment web application, payment front-end processor, or back-end processor, because those applications are managed by payment providers or payment ISVs.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Before you begin</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>A payment provider or a payment ISV creates a payment connector.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The payment connector will include some or all of the following folders:</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>IPaymentProcessor Assemblies<ept id="p1">**</ept> – This folder contains the assembly that implements the IPaymentProcesor interface, and its dependent assemblies.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Payment Web Files<ept id="p1">**</ept> – This folder contains the callback HTML, JavaScript, or CSS files that are required in order to enable the payment accepting page.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Payment connector developers will provide these web files if their payment accepting page requires them.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>IPaymentDevice Assemblies<ept id="p1">**</ept> – This folder contains the assembly that implements the IPaymentDevice interface, and its dependent assemblies.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>These assemblies are used in Retail Hardware station and Retail Modern Point of Sale (Modern POS) to communicate with payment terminal devices, such as VeriFone MX925.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>If you don’t have a payment terminal device, you don't need these files.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>To package the payment connector files that a payment provider or payment ISV provides, you must uptake hotfix KB 3183058 (or later) for the Retail SDK.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>After you build the Retail SDK, you will obtain the following deployable packages:</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Application Object Server (AOS) payment package</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Retail deployable package</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Before you start, you must have these items:</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Payment connector files</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>KB 3183058 for the Retail SDK</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Deployable packages that are built by using the Retail SDK (see the list earlier in this topic)</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Access to your cloud-hosted environment on Microsoft Dynamics Lifecycle Service (LCS)</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Deployable packages (automated deployment)</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>A deployable package is an asset that can be consumed by the LCS deployment service.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>When you package a payment connector as a deployable package, you can install the payment connector as a customization to an existing solution or slipstream it as part of a new deployment.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>The following types of packages can contain payment connectors:</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>AOSPaymentPackage<ept id="p1">**</ept> – This type of package deploys one or more payment connectors to AOS.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>RetailDeployablePackage<ept id="p1">**</ept> – This type of package deploys one or more payment connectors to the following components: .</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>-   Retail Server</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Cloud POS</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Self-service installer, which enables installation of the following:</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Hardware station</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Modern POS</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Upload and deploy deployable packages</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Open your LCS project page.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>More tools<ept id="p1">**</ept> section, click <bpt id="p2">**</bpt>Asset library<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Software package<ept id="p1">**</ept>, and then click the plus sign (<bpt id="p2">**</bpt><ph id="ph1">+</ph><ept id="p2">**</ept>).</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Enter a name and description, and select the correct package type, as described in the following table.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Deployable package</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Deployable package type in LCS</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>AOSPaymentPackage</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Binary hotfix</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>RetailDeployablePackage</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Combined retail package</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Upload<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Select the zipped package, upload it, and then click <bpt id="p1">**</bpt>Confirm<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>After you've uploaded your deployable packages to the LCS asset library, you can deploy them to your environments through the LCS portal.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>After you've validated your deployment in your sandbox environment, you can create a service request to deploy it to your production environment.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Apply a deployable package<ept id="p1">](/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Download and run installers on client computers</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>The self-service package contains the installers for both Hardware station and Modern POS.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>After your deployable packages have been applied to your environment, you can download the updated Hardware station and Modern POS installers.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>For information about how to download Hardware station and Modern POS, and install them on client computers, see <bpt id="p1">[</bpt>Retail Modern POS self-service download/installation, and device activation of Modern POS and Cloud POS<ept id="p1">](../retail-modern-pos-device-activation.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Manual deployment</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>This section describes how to manually deploy a payment connector.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>You can use a manual deployment to test locally in a developer environment.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>This developer environment can be either cloud-hosted or on a downloadable virtual hard disk (VHD).</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Put the payment connector assemblies and files in the correct locations</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Payment connectors are pluggable.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>In a development environment, you can put the correct files in the correct locations on the server.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>The following table shows which files should go in which location.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Contents of the IPaymentProcessor Assemblies folder</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Contents of the Payment Web Files folder</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Contents of the IPaymentDevice Assemblies folder</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Application Object Server (AOS)</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">&amp;lt;</ph><bpt id="p1">*</bpt>Aos.PackageDirectory<ept id="p1">*</ept><ph id="ph2">&amp;gt;</ph>/bin/Connectors/ <ph id="ph3">&amp;lt;</ph><bpt id="p2">*</bpt>Aos.WebRoot<ept id="p2">*</ept><ph id="ph4">&amp;gt;</ph>/bin/</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">&amp;lt;</ph><bpt id="p1">*</bpt>Aos.WebRoot<ept id="p1">*</ept><ph id="ph2">&amp;gt;</ph>/Connectors/</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Not applicable</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Retail Server</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">&amp;lt;</ph><bpt id="p1">*</bpt>RS.WebRoot<ept id="p1">*</ept><ph id="ph2">&amp;gt;</ph>/bin/</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Not applicable</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Not applicable</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Cloud POS</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Not applicable</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">&amp;lt;</ph><bpt id="p1">*</bpt>CPOS.WebRoot<ept id="p1">*</ept><ph id="ph2">&amp;gt;</ph>/Connectors/</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Not applicable</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Remote Hardware Station (Internet Information Services <ph id="ph1">\[</ph>IIS<ph id="ph2">\]</ph>)</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">&amp;lt;</ph><bpt id="p1">*</bpt>HWS.WebRoot<ept id="p1">*</ept><ph id="ph2">&amp;gt;</ph>/bin/</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Not applicable</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">&amp;lt;</ph><bpt id="p1">*</bpt>HWS.WebRoot<ept id="p1">*</ept><ph id="ph2">&amp;gt;</ph>/bin/</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>Modern POS Local Hard Station (Information Protection and Control <ph id="ph1">\[</ph>IPC<ph id="ph2">\]</ph>)</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">&amp;lt;</ph><bpt id="p1">*</bpt>MPOS.AppRoot<ept id="p1">*</ept><ph id="ph2">&amp;gt;</ph>/ClientBroker/</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Not applicable</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">&amp;lt;</ph><bpt id="p1">*</bpt>MPOS.AppRoot<ept id="p1">*</ept><ph id="ph2">&amp;gt;</ph>/ClientBroker/</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>E-commerce</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Not applicable</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">&amp;lt;</ph><bpt id="p1">*</bpt>ECOM.WebRoot<ept id="p1">*</ept><ph id="ph2">&amp;gt;</ph>/Connectors/</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>Not applicable</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>Here is a key to the preceding table:</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">&amp;lt;</ph><bpt id="p1">*</bpt>Aos.PackageDirectory<ept id="p1">*</ept><ph id="ph2">&amp;gt;</ph> is the package directory of AOS.</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>You can find the path from the web.config file for AOS (key = <bpt id="p1">**</bpt>Aos.PackageDirectory<ept id="p1">**</ept>).</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">&amp;lt;</ph><bpt id="p1">*</bpt>Aos.WebRoot<ept id="p1">*</ept><ph id="ph2">&amp;gt;</ph> is the web application root of AOS.</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">&amp;lt;</ph><bpt id="p1">*</bpt>RS.WebRoot<ept id="p1">*</ept><ph id="ph2">&amp;gt;</ph> is the web application root of Retail Server.</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">&amp;lt;</ph><bpt id="p1">*</bpt>HWS.WebRoot<ept id="p1">*</ept><ph id="ph2">&amp;gt;</ph> is the web application root of a remote Hardware Station.</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">&amp;lt;</ph><bpt id="p1">*</bpt>MPOS.AppRoot<ept id="p1">*</ept><ph id="ph2">&amp;gt;</ph> is the app installation folder of Modern POS (for example, C:<ph id="ph3">\\</ph>Program Files (x86)<ph id="ph4">\\</ph>Microsoft Dynamics AX70<ph id="ph5">\\</ph>Retail Modern POS).</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">&amp;lt;</ph><bpt id="p1">*</bpt>ECOM.WebRoot<ept id="p1">*</ept><ph id="ph2">&amp;gt;</ph> is the web application root of an e-commerce website.</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>The Payment Web Files folder usually contains a subfolder.</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>Be sure to copy the whole subfolder to the target locations.</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>Use a payment connector with an ecommerce site</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>E-commerce sites aren't deployed in LCS-managed environments.</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>You should work with your partner to decide how to host an e-commerce site.</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>If the payment connector requires payment web files, you must deploy those web files to your e-commerce site.</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>If your payment connector doesn't require payment web files, no additional steps are required.</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>For information about how to deploy payment web files to an e-commerce site, see the "Put the payment connector assemblies and files in the correct locations" section earlier in this article.</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>See also</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Guide to implementing a payment connector and a payment device<ept id="p1">](http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)</ept></source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Retail SDK packaging<ept id="p1">](retail-sdk/retail-sdk-packaging.md)</ept></source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

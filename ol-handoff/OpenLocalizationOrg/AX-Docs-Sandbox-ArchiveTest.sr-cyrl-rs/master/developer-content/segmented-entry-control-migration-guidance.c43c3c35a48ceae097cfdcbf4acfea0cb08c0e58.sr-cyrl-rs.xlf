@@ -1,0 +1,1075 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">987905af0721c3b50bd3992e65bf47e00dcaee60</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\financial\segmented-entry-control-migration-guidance.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2c5582bdaa12f908ba5ff8a6113ca93b4e828150</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">9ee5b2c5643fb6f0268252b795b65ac0c683e1c6</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Segmented entry control migration guidance</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This article guides you through the process of migrating a Segmented Entry control from the Microsoft Dynamics AX 2012 pattern to the new pattern in Microsoft Dynamics AX.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Segmented entry control migration guidance</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This article guides you through the process of migrating a Segmented Entry control from the Microsoft Dynamics AX 2012 pattern to the new pattern in Microsoft Dynamics AX.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>The goal of the new design is to encapsulate the control implementation and not require that forms interact with the classes that back the control.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Therefore, in Microsoft Dynamics AX, <bpt id="p1">*</bpt>all forms should interact only with the application programming interface (API) of the <bpt id="p2">**</bpt>Segmented Entry<ept id="p2">**</ept> control instance<ept id="p1">*</ept>.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>They should not interact directly with the controller classes (such as <bpt id="p1">**</bpt>LedgerDimensionAccountController<ept id="p1">**</ept> and <bpt id="p2">**</bpt>DimensionDynamicAccountController<ept id="p2">**</ept>).</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Any property that was previously manipulated or called on the controller must now be called on the control.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Notes:<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Some APIs have naming differences between the controller and the control.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>The following table lists these APIs.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Controller Method (old)<ept id="p1">**</ept><ph id="ph1">
+</ph><bpt id="p2">**</bpt>Control Method (new)<ept id="p2">**</ept> parmDate parmControlDate parmFilterLedgerPostingType parmPostingType parmDimensionAccountStorageUsage parmDimensionAccountStorageUsageType</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Example<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Before:<ept id="p1">**</ept> controller.parmDate(systemDateGet())</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>After:<ept id="p1">**</ept> LedgerAccount.parmControlDate(systemDateGet());</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>In this example, <bpt id="p1">**</bpt>controller<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>LedgerDimensionAccountController<ept id="p2">**</ept> instance and <bpt id="p3">**</bpt>LedgerAccount<ept id="p3">**</ept> <ph id="ph2">&amp;gt;</ph> new <bpt id="p4">**</bpt>Segmented Entry<ept id="p4">**</ept> control instance</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>In methods that have been overridden on controls and data fields, the code upgrade rule replaces method calls on the controllers with method calls on each control instance that was using a particular controller.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Example<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Before:<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>After:<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>These changes are made so that it's easier to copy and paste code that must be moved elsewhere (for example, in some instances of <bpt id="p1">**</bpt>loadSegments()<ept id="p1">**</ept> and other such methods).</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>You can ignore this change when you decide whether the method can be deleted.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Your decision should depend on whether the method has any custom logic.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>The code upgrade script does not handle cases where a controller is instantiated within a method.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>These cases must be migrated manually.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>The MRU functionality from Microsoft Dynamics AX 2012 has been removed in Dynamics AX and won't be replaced.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>parmTaxCode<ept id="p1">**</ept> has been removed.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>There is no replacement.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Properties</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>The custom properties for the <bpt id="p1">**</bpt>Segmented Entry<ept id="p1">**</ept> control are found under <bpt id="p2">**</bpt>Controller<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>The following screen shot shows an example.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>111<ept id="p1">](./media/111.png)](./media/111.png)</ept> Not all properties apply to all <bpt id="p2">**</bpt>Controller<ept id="p2">**</ept> class types.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Properties that don't apply to a selected controller class will be disabled.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>The following table provides details about the properties.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Property<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Valid Values<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Usage<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Account Type Field</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>A field from the datasource.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Determines the type of account used.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Typically utilized for journal entry from a multi-segment ledger account to single segment values from other backing tables such as Cust, Vend, Bank, Project and similar.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Controller Class</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>One of 6 Controller classes.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>For example LedgerDimensionDefaultAccountController.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Determines the pattern and behavior of the Segmented Entry control.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>More information about this property is provided below.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Include Financial Accounts</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>NoYes</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Determines if Main accounts that are Financial accounts are valid for use.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Include Total Accounts</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>NoYes</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Determines if Main accounts of type Total are valid for use.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Is Default Account</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>TrueFalse</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>For a Dynamic account, determines if the account should be a default or full account.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Lock Main Account Segment</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>NoYes</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Controls whether the Main account segment is locked.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Typically used in journals and distributions based upon configuration.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Posting Type</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>A value from the LedgerPostingType enumeration.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>The Main account is validated to see if the posting type is allowed to be used with that account.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Validate Blocked For Manual Entry</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>NoYes</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Determines if the 'Blocked for Manual Entry' status on the dimension should be respected or not.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Controller class property</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>The following table provides details about each controller.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Controller<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Details<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>BudgetLedgerDimension</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>This Controller provides budget based support for data entry in the Segmented Entry control.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>When using this controller, an Account Structure must be provided to the Segmented Entry control.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>BudgetPlanningLedgerDimension</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>This Controller provides budget planning based support for data entry in the Segmented Entry control.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>When using this controller, an Account Structure must be provided to the Segmented Entry control.</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>DimensionDynamicAccount</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>This Controller provides support for multiple account types in the Segmented Entry control.</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>LedgerDimensionAccountAlias</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>This Controller provides support for account aliases in the Segmented Entry control</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>LedgerDimensionAccount</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>This Controller provides support for multi-segment data entry in the Segmented Entry control.</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>LedgerDimensionDefaultAccount</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>This Controller provides support for default accounts in the Segmented Entry control.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>Migration steps</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Step 1</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>AX 2012</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>If <bpt id="p1">**</bpt>SegmentedEntry<ept id="p1">**</ept> appears as the type next to any control, change it to <bpt id="p2">**</bpt>SegmentedEntryControl<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>SegmentMigrate01<ept id="p1">](./media/segmentmigrate01.png)](./media/segmentmigrate01.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Dynamics AX</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>An easy method is to append "<ph id="ph1">\_</ph>old" to the name of the old control, add the new control (which should have the original name of the control), migrate all the settings over, and then delete the old control.</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> To prevent tests and other code that references the control from breaking, make sure that the new control has the same name as the old control.</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>To add the new control, right-click the parent control that will contain the <bpt id="p1">**</bpt>Segmented Entry<ept id="p1">**</ept> control, and then select <bpt id="p2">**</bpt>New<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>SegmentedEntryControl<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>SegmentMigrate02<ept id="p1">](./media/segmentmigrate02-623x1024.png)](./media/segmentmigrate02.png)</ept> The following screen shot shows how new control will look.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>SegmentMigrate03<ept id="p1">](./media/segmentmigrate03.png)](./media/segmentmigrate03.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>Step 2</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>AX 2012</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Override the  <bpt id="p1">**</bpt>jumpRef()<ept id="p1">**</ept> control/field method.</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>Dynamics AX</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Remove the <bpt id="p1">**</bpt>jumpRef()<ept id="p1">**</ept> method completely if it contains no other functionality.</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>If there is other custom <bpt id="p1">**</bpt>jumpRef<ept id="p1">**</ept> functionality, leave that.</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>However, <bpt id="p1">**</bpt>jumpRef<ept id="p1">**</ept> is otherwise automatically handled by the control.</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Step 3</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>AX 2012</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>Override the <bpt id="p1">**</bpt>loadAutoCompleteData()<ept id="p1">**</ept> control method.</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>Dynamics AX</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>Remove the <bpt id="p1">**</bpt>loadAutoCompleteData()<ept id="p1">**</ept> method.</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Step 4</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>AX 2012</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>Override the <bpt id="p1">**</bpt>loadSegments()<ept id="p1">**</ept> control method.</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>Dynamics AX</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>If the <bpt id="p1">**</bpt>loadSegments()<ept id="p1">**</ept> method does nothing except call the controller's <bpt id="p2">**</bpt>loadSegments()<ept id="p2">**</ept> and <bpt id="p3">**</bpt>parmControl()<ept id="p3">**</ept> methods, remove it.</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>However, make a note of the SEC control instance that is passed to the <bpt id="p1">**</bpt>parmControl()<ept id="p1">**</ept> call.</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>The methods that were being called will now have to be called on that instance.</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>Step 5</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>AX 2012</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>Override the <bpt id="p1">**</bpt>loadSegments()<ept id="p1">**</ept> control method.</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>Dynamics AX</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>If the <bpt id="p1">**</bpt>loadSegments()<ept id="p1">**</ept> method was used to set parameters on the controller, the calls to <bpt id="p2">**</bpt>parm<ept id="p2">**</ept> method must be moved to every location where the source of the <bpt id="p3">**</bpt>parm<ept id="p3">**</ept> method can change.</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>In most cases, these locations are the <bpt id="p1">**</bpt>modified()<ept id="p1">**</ept> method on the corresponding data field and/or the <bpt id="p2">**</bpt>active()<ept id="p2">**</ept> method on the data source.</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>For example, some of the migrated code for the <bpt id="p1">**</bpt>loadSegments()<ept id="p1">**</ept> override on the left would look like this.</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>Make a note of the SEC control instance that is passed on to the <bpt id="p1">**</bpt>parmControl()<ept id="p1">**</ept> call.</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>The methods that were being called on the controller will now have to be called on that instance.</source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>LedgerJournalTable data source<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> After you've moved all the code out of the <bpt id="p2">**</bpt>loadSegments()<ept id="p2">**</ept> method, you can delete the method.</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>Step 6</source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>AX 2012</source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>Override the <bpt id="p1">**</bpt>loadSegments()<ept id="p1">**</ept> control method.</source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>In some cases, the <bpt id="p1">**</bpt>loadSegments()<ept id="p1">**</ept> method might use a table buffer to set parameters on the controller, but that table buffer isn't a data source on the form.</source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>For example, on the <bpt id="p1">**</bpt>LedgerJournalTransDaily<ept id="p1">**</ept> form, the original implementation of <bpt id="p2">**</bpt>loadSegments()<ept id="p2">**</ept> looked like this.</source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>Note that the <bpt id="p1">**</bpt>JournalName<ept id="p1">**</ept> property is set from the ledgerJournalTable buffer, but the LedgerJournalTable table isn't a data source on the form.</source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>Dynamics AX</source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>In such cases, you can't move that code to either the <bpt id="p1">**</bpt>active()<ept id="p1">**</ept> method of a data source or the <bpt id="p2">**</bpt>modified()<ept id="p2">**</ept> method on the data field.</source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>Instead, you should identify where the table buffer is being set.</source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>For example, in the original implementation of the <bpt id="p1">**</bpt>LedgerJournalTransDaily<ept id="p1">**</ept> form, the ledgerJournalTable buffer was set in the <bpt id="p2">**</bpt>initLedger()<ept id="p2">**</ept> method on the form.</source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>It should be evident that the value that is passed to <bpt id="p1">**</bpt>parmJournalName()<ept id="p1">**</ept> can change only when the buffer is reassigned in the <bpt id="p2">**</bpt>initLedger()<ept id="p2">**</ept> method.</source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>Therefore, code would have to be moved to the <bpt id="p1">**</bpt>initLedger()<ept id="p1">**</ept> method after the assignment of the buffer.</source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>Also, in accordance with the general guidelines, the <bpt id="p1">**</bpt>parmJournalName()<ept id="p1">**</ept> method would be called on the control instance.</source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>Step 7</source>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>AX 2012</source>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>Override the <bpt id="p1">**</bpt>segmentValueChanged()<ept id="p1">**</ept> control method.</source>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>Dynamics AX</source>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>If the implementation of <bpt id="p1">**</bpt>segmentValueChanged()<ept id="p1">**</ept> does nothing except call <bpt id="p2">**</bpt>super()<ept id="p2">**</ept> and the <bpt id="p3">**</bpt>segmentValueChanged()<ept id="p3">**</ept> method on the controller, you can remove the method.</source>
+        </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>Step 8</source>
+        </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>AX 2012</source>
+        </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>Override the <bpt id="p1">**</bpt>segmentValueChanged()<ept id="p1">**</ept> control method.</source>
+        </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>Dynamics AX</source>
+        </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>If the implementation of <bpt id="p1">**</bpt>segmentValueChanged()<ept id="p1">**</ept> has additional logic, you must replace the method with the <bpt id="p2">**</bpt>onSegmentChanged()<ept id="p2">**</ept> method, as shown here.</source>
+        </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Notes:<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>To add the <bpt id="p1">**</bpt>onSegmentChanged()<ept id="p1">**</ept> method, follow these steps:</source>
+        </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>Expand the <bpt id="p1">**</bpt>Segmented Entry<ept id="p1">**</ept> control to add the method to.</source>
+        </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>Right-click the <bpt id="p1">**</bpt>Methods<ept id="p1">**</ept> node, and then select <bpt id="p2">**</bpt>Override<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>onSegmentChanged<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>The new method doesn't have to call <bpt id="p1">**</bpt>super()<ept id="p1">**</ept> or any other method on either the control or the controller.</source>
+        </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>Step 9</source>
+        </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>AX 2012</source>
+        </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>Override the <bpt id="p1">**</bpt>validate()<ept id="p1">**</ept> control method.</source>
+        </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>Dynamics AX</source>
+        </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>Remove the <bpt id="p1">**</bpt>validate()<ept id="p1">**</ept> method, unless you have additional validation.</source>
+        </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>super()<ept id="p1">**</ept> call does everything that this code used to do.</source>
+        </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>Therefore, keep only any new code that you have.</source>
+        </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>Step 10</source>
+        </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>AX 2012</source>
+        </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>Override the <bpt id="p1">**</bpt>lookup()<ept id="p1">**</ept> control method.</source>
+        </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>Dynamics AX</source>
+        </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>Leave the <bpt id="p1">**</bpt>lookup()<ept id="p1">**</ept> method as it is.</source>
+        </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>Step 11</source>
+        </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>AX 2012</source>
+        </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>Override the <bpt id="p1">**</bpt>lookupReference()<ept id="p1">**</ept> control method.</source>
+        </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>Dynamics AX</source>
+        </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>If the <bpt id="p1">**</bpt>lookupReference()<ept id="p1">**</ept> method uses the default implementation, you can delete it.</source>
+        </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>Step 12</source>
+        </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>AX 2012</source>
+        </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>Override the <bpt id="p1">**</bpt>modified()<ept id="p1">**</ept> control method.</source>
+        </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>Dynamics AX</source>
+        </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>Leave the <bpt id="p1">**</bpt>modified()<ept id="p1">**</ept> method as it is.</source>
+        </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>Step 13</source>
+        </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>AX 2012</source>
+        </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>Override the <bpt id="p1">**</bpt>gotFocus()<ept id="p1">**</ept> control method.</source>
+        </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>Dynamics AX</source>
+        </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>The approach is similar to the approach for the <bpt id="p1">**</bpt>loadSegments()<ept id="p1">**</ept> method.</source>
+        </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source>The code must be moved to every location where the source of the <bpt id="p1">**</bpt>parm<ept id="p1">**</ept> method can change.</source>
+        </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source>In most cases, these locations are the <bpt id="p1">**</bpt>modified()<ept id="p1">**</ept> method on the corresponding data field and/or the <bpt id="p2">**</bpt>active()<ept id="p2">**</ept> method on the data source.</source>
+        </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source>For example, for the preceding code, the migrated code would look like this.</source>
+        </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> After all the code has been moved out of the <bpt id="p2">**</bpt>gotFocus()<ept id="p2">**</ept> method, you can delete the method.</source>
+        </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>Step 14</source>
+        </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>AX 2012</source>
+        </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source>In the form <bpt id="p1">**</bpt>init()<ept id="p1">**</ept> method:</source>
+        </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source>Dynamics AX</source>
+        </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source>Set the following properties on the control:</source>
+        </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Data Source<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Reference Field<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Controller Class<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>SegmentMigrate04<ept id="p1">](./media/segmentmigrate04.png)](./media/segmentmigrate04.png)</ept> <bpt id="p2">[</bpt><ph id="ph2">![</ph>SegmentMigrate05<ept id="p2">](./media/segmentmigrate05.png)](./media/segmentmigrate05.png)</ept> <bpt id="p3">**</bpt>Note:<ept id="p3">**</ept> A controller class is required for the control to work.</source>
+        </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source>Therefore, a run-time error will be thrown if the <bpt id="p1">**</bpt>Controller Class<ept id="p1">**</ept> property isn't set.</source>
+        </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source>Step 15</source>
+        </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source>AX 2012</source>
+        </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source>Dynamics AX</source>
+        </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>A map of the dimension specifiers must be created that can then be sent into the <bpt id="p1">**</bpt>Segmented Entry<ept id="p1">**</ept> control's <bpt id="p2">**</bpt>setDimensionSpecifiers<ept id="p2">**</ept> method.</source>
+        </trans-unit>
+        <trans-unit id="298" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> You can add anything to the dimension specifiers map before it's sent to the control.</source>
+        </trans-unit>
+        <trans-unit id="299" translate="yes" xml:space="preserve">
+          <source>You can also create a new map here.</source>
+        </trans-unit>
+        <trans-unit id="300" translate="yes" xml:space="preserve">
+          <source>(See the <bpt id="p1">**</bpt>onSegmentChangedForPrimaryAccount<ept id="p1">**</ept> method in the <bpt id="p2">**</bpt>LedgerJournalEngine<ept id="p2">**</ept> class for similar logic.)</source>
+        </trans-unit>
+        <trans-unit id="301" translate="yes" xml:space="preserve">
+          <source>Step 16</source>
+        </trans-unit>
+        <trans-unit id="302" translate="yes" xml:space="preserve">
+          <source>AX 2012</source>
+        </trans-unit>
+        <trans-unit id="303" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>parmControl()<ept id="p1">**</ept> method calls: (These are typically present in the form's <bpt id="p2">**</bpt>init()<ept id="p2">**</ept> method or one of the methods that are overridden on the control.)</source>
+        </trans-unit>
+        <trans-unit id="304" translate="yes" xml:space="preserve">
+          <source>Dynamics AX</source>
+        </trans-unit>
+        <trans-unit id="305" translate="yes" xml:space="preserve">
+          <source>Remove this line of code, because it's no longer required.</source>
+        </trans-unit>
+        <trans-unit id="306" translate="yes" xml:space="preserve">
+          <source>However, first make a note of which controller is used with which control.</source>
+        </trans-unit>
+        <trans-unit id="307" translate="yes" xml:space="preserve">
+          <source>For example, in this case, ledgerDimensionDefaultAccoutnController is being used with the ClearningAccount SEC.</source>
+        </trans-unit>
+        <trans-unit id="308" translate="yes" xml:space="preserve">
+          <source>A mapping is required when you replace method calls on controller objects with corresponding method calls on the control, and when you set the properties at design time.</source>
+        </trans-unit>
+        <trans-unit id="309" translate="yes" xml:space="preserve">
+          <source>Step 17</source>
+        </trans-unit>
+        <trans-unit id="310" translate="yes" xml:space="preserve">
+          <source>AX 2012</source>
+        </trans-unit>
+        <trans-unit id="311" translate="yes" xml:space="preserve">
+          <source>In the form <bpt id="p1">**</bpt>init()<ept id="p1">**</ept> method:</source>
+        </trans-unit>
+        <trans-unit id="312" translate="yes" xml:space="preserve">
+          <source>Dynamics AX</source>
+        </trans-unit>
+        <trans-unit id="313" translate="yes" xml:space="preserve">
+          <source>This is the <bpt id="p1">**</bpt>Posting Type<ept id="p1">**</ept> property on the control.</source>
+        </trans-unit>
+        <trans-unit id="314" translate="yes" xml:space="preserve">
+          <source>The control that the <bpt id="p1">**</bpt>PostingType<ept id="p1">**</ept> property must be set on can be determined from the mapping details that are derived by looking at the <bpt id="p2">**</bpt>parmControl()<ept id="p2">**</ept> call.</source>
+        </trans-unit>
+        <trans-unit id="315" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>SegmentMigrate06<ept id="p1">](./media/segmentmigrate06.png)](./media/segmentmigrate06.png)</ept> These properties can also be set in code, through corresponding <bpt id="p2">**</bpt>parm<ept id="p2">**</ept> methods on the control instance.</source>
+        </trans-unit>
+        <trans-unit id="316" translate="yes" xml:space="preserve">
+          <source>Here's an example.</source>
+        </trans-unit>
+        <trans-unit id="317" translate="yes" xml:space="preserve">
+          <source>Step 18</source>
+        </trans-unit>
+        <trans-unit id="318" translate="yes" xml:space="preserve">
+          <source>AX 2012</source>
+        </trans-unit>
+        <trans-unit id="319" translate="yes" xml:space="preserve">
+          <source>Override <bpt id="p1">**</bpt>resolveReference()<ept id="p1">**</ept> in the data source field for the ledger dimension.</source>
+        </trans-unit>
+        <trans-unit id="320" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>SegmentMigrate07<ept id="p1">](./media/segmentmigrate07.png)](./media/segmentmigrate07.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="321" translate="yes" xml:space="preserve">
+          <source>Dynamics AX</source>
+        </trans-unit>
+        <trans-unit id="322" translate="yes" xml:space="preserve">
+          <source>Delete this code, because it's no longer required.</source>
+        </trans-unit>
+        <trans-unit id="323" translate="yes" xml:space="preserve">
+          <source>The control handles this automatically.</source>
+        </trans-unit>
+        <trans-unit id="324" translate="yes" xml:space="preserve">
+          <source>Step 19</source>
+        </trans-unit>
+        <trans-unit id="325" translate="yes" xml:space="preserve">
+          <source>AX 2012</source>
+        </trans-unit>
+        <trans-unit id="326" translate="yes" xml:space="preserve">
+          <source>The form sets properties on the controller through <bpt id="p1">**</bpt>parm<ept id="p1">**</ept> methods.</source>
+        </trans-unit>
+        <trans-unit id="327" translate="yes" xml:space="preserve">
+          <source>Dynamics AX</source>
+        </trans-unit>
+        <trans-unit id="328" translate="yes" xml:space="preserve">
+          <source>In general, any property that was previously set on the controller class should now be set directly on the control.</source>
+        </trans-unit>
+        <trans-unit id="329" translate="yes" xml:space="preserve">
+          <source>The control that the property must be set on can be determined from the mapping details that are derived by looking at the <bpt id="p1">**</bpt>parmControl()<ept id="p1">**</ept> call.</source>
+        </trans-unit>
+        <trans-unit id="330" translate="yes" xml:space="preserve">
+          <source>Additionally, for the <bpt id="p1">**</bpt>Segmented Entry<ept id="p1">**</ept> control, any property that is available in the <bpt id="p2">**</bpt>Properties<ept id="p2">**</ept> dialog box in Microsoft Visual Studio can also be set in code, through the corresponding <bpt id="p3">**</bpt>parm<ept id="p3">**</ept> method on the control instance.</source>
+        </trans-unit>
+        <trans-unit id="331" translate="yes" xml:space="preserve">
+          <source>Step 20</source>
+        </trans-unit>
+        <trans-unit id="332" translate="yes" xml:space="preserve">
+          <source>AX 2012</source>
+        </trans-unit>
+        <trans-unit id="333" translate="yes" xml:space="preserve">
+          <source>The form uses the control's <bpt id="p1">**</bpt>currentSegmentIndex()<ept id="p1">**</ept> method.</source>
+        </trans-unit>
+        <trans-unit id="334" translate="yes" xml:space="preserve">
+          <source>Dynamics AX</source>
+        </trans-unit>
+        <trans-unit id="335" translate="yes" xml:space="preserve">
+          <source>In general, any property that was previously set on the controller class should now be set directly on the control.</source>
+        </trans-unit>
+        <trans-unit id="336" translate="yes" xml:space="preserve">
+          <source>The control that the property must be set on can be determined from the mapping details that are derived by looking at the <bpt id="p1">**</bpt>parmControl()<ept id="p1">**</ept> call.</source>
+        </trans-unit>
+        <trans-unit id="337" translate="yes" xml:space="preserve">
+          <source>Additionally, for the <bpt id="p1">**</bpt>Segmented Entry<ept id="p1">**</ept> control, any property that is available in the <bpt id="p2">**</bpt>Properties<ept id="p2">**</ept> dialog box in Visual Studio can also be set in code, through the corresponding <bpt id="p3">**</bpt>parm<ept id="p3">**</ept> method on the control instance.</source>
+        </trans-unit>
+        <trans-unit id="338" translate="yes" xml:space="preserve">
+          <source>Step 21</source>
+        </trans-unit>
+        <trans-unit id="339" translate="yes" xml:space="preserve">
+          <source>AX 2012</source>
+        </trans-unit>
+        <trans-unit id="340" translate="yes" xml:space="preserve">
+          <source>The form calls methods on the controller object.</source>
+        </trans-unit>
+        <trans-unit id="341" translate="yes" xml:space="preserve">
+          <source>Here's an example.</source>
+        </trans-unit>
+        <trans-unit id="342" translate="yes" xml:space="preserve">
+          <source>Dynamics AX</source>
+        </trans-unit>
+        <trans-unit id="343" translate="yes" xml:space="preserve">
+          <source>All method calls on the controller must be replaced with method calls on the control.</source>
+        </trans-unit>
+        <trans-unit id="344" translate="yes" xml:space="preserve">
+          <source>For this example, use the <bpt id="p1">**</bpt>getDimensionAttributeByControlIndex()<ept id="p1">**</ept> method on the control instead.</source>
+        </trans-unit>
+        <trans-unit id="345" translate="yes" xml:space="preserve">
+          <source>Step 22</source>
+        </trans-unit>
+        <trans-unit id="346" translate="yes" xml:space="preserve">
+          <source>AX 2012</source>
+        </trans-unit>
+        <trans-unit id="347" translate="yes" xml:space="preserve">
+          <source>For <bpt id="p1">**</bpt>DimensionDynamicAccountController<ept id="p1">**</ept>, the account type is specified through the constructor.</source>
+        </trans-unit>
+        <trans-unit id="348" translate="yes" xml:space="preserve">
+          <source>Dynamics AX</source>
+        </trans-unit>
+        <trans-unit id="349" translate="yes" xml:space="preserve">
+          <source>There are two methods for implementing this functionality.</source>
+        </trans-unit>
+        <trans-unit id="350" translate="yes" xml:space="preserve">
+          <source>These methods are mutually exclusive, so use only one of them, depending on the situation:</source>
+        </trans-unit>
+        <trans-unit id="351" translate="yes" xml:space="preserve">
+          <source>For the <bpt id="p1">**</bpt>Segmented Entry<ept id="p1">**</ept> control, in the <bpt id="p2">**</bpt>Properties<ept id="p2">**</ept> dialog box, set the <bpt id="p3">**</bpt>Account Type Field<ept id="p3">**</ept> property to the data source field that will provide the account type.</source>
+        </trans-unit>
+        <trans-unit id="352" translate="yes" xml:space="preserve">
+          <source>This is the preferred method.</source>
+        </trans-unit>
+        <trans-unit id="353" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> If the <bpt id="p2">**</bpt>super()<ept id="p2">**</ept> call has been removed from the <bpt id="p3">**</bpt>modified()<ept id="p3">**</ept> method for the field that is bound to the <bpt id="p4">**</bpt>Account Type Field<ept id="p4">**</ept> property, this method won't work.</source>
+        </trans-unit>
+        <trans-unit id="354" translate="yes" xml:space="preserve">
+          <source>We have seen this issue in some journal forms, such as <bpt id="p1">**</bpt>LedgerJournalTransDaily<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="355" translate="yes" xml:space="preserve">
+          <source>In such cases, either add the <bpt id="p1">**</bpt>super()<ept id="p1">**</ept> call back to the <bpt id="p2">**</bpt>modified()<ept id="p2">**</ept> method, or use the second method.</source>
+        </trans-unit>
+        <trans-unit id="356" translate="yes" xml:space="preserve">
+          <source>Set the account type manually by calling the <bpt id="p1">**</bpt>parmAccountTypeEnumValue()<ept id="p1">**</ept> method on the control.</source>
+        </trans-unit>
+        <trans-unit id="357" translate="yes" xml:space="preserve">
+          <source>Here's an example.</source>
+        </trans-unit>
+        <trans-unit id="358" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> The call to <bpt id="p2">**</bpt>parmAccountTypeEnumValue()<ept id="p2">**</ept> must be put in both the data source's <bpt id="p3">**</bpt>active()<ept id="p3">**</ept> method and the <bpt id="p4">**</bpt>modified()<ept id="p4">**</ept> method of the field that will provide the account type.</source>
+        </trans-unit>
+        <trans-unit id="359" translate="yes" xml:space="preserve">
+          <source>Step 23</source>
+        </trans-unit>
+        <trans-unit id="360" translate="yes" xml:space="preserve">
+          <source>AX 2012</source>
+        </trans-unit>
+        <trans-unit id="361" translate="yes" xml:space="preserve">
+          <source>The form has a variable that is defined.</source>
+        </trans-unit>
+        <trans-unit id="362" translate="yes" xml:space="preserve">
+          <source>Dynamics AX</source>
+        </trans-unit>
+        <trans-unit id="363" translate="yes" xml:space="preserve">
+          <source>Remove this, because the controller is no longer required.</source>
+        </trans-unit>
+        <trans-unit id="364" translate="yes" xml:space="preserve">
+          <source>Step 24</source>
+        </trans-unit>
+        <trans-unit id="365" translate="yes" xml:space="preserve">
+          <source>AX 2012</source>
+        </trans-unit>
+        <trans-unit id="366" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>parmCurrentLedgerCOA()<ept id="p1">**</ept> method calls: (These are typically present in the form's <bpt id="p2">**</bpt>init()<ept id="p2">**</ept> method or one of the methods that are overridden on the control.)</source>
+        </trans-unit>
+        <trans-unit id="367" translate="yes" xml:space="preserve">
+          <source>Dynamics AX</source>
+        </trans-unit>
+        <trans-unit id="368" translate="yes" xml:space="preserve">
+          <source>Remove this line of code, because it's no longer required in most cases.</source>
+        </trans-unit>
+        <trans-unit id="369" translate="yes" xml:space="preserve">
+          <source>Before you delete this line, make sure that the data area ID is correctly passed in to the controller as a parameter, because the <bpt id="p1">**</bpt>LedgerCOA<ept id="p1">**</ept> value will be derived from that information.</source>
+        </trans-unit>
+        <trans-unit id="370" translate="yes" xml:space="preserve">
+          <source>If the data area ID is not passed in, replace <bpt id="p1">**</bpt>parmCurrentLedgerCOA(â€¦)<ept id="p1">**</ept> with <bpt id="p2">**</bpt>parmDataAreaId(â€¦)<ept id="p2">**</ept>, and pass the appropriate <bpt id="p3">**</bpt>SelectableDataArea<ept id="p3">**</ept> value, which is usually <bpt id="p4">**</bpt>curext()<ept id="p4">**</ept> or another table field that controls the scope of the company for the account control.</source>
+        </trans-unit>
+        <trans-unit id="371" translate="yes" xml:space="preserve">
+          <source>If the form has no data area context but only a current <bpt id="p1">**</bpt>LedgerCOA<ept id="p1">**</ept> value, it should be working only with the default account controller.</source>
+        </trans-unit>
+        <trans-unit id="372" translate="yes" xml:space="preserve">
+          <source>There are only a few forms that are agnostic of a company, but that are scoped to a specific chart of accounts (COA) (for example, <bpt id="p1">**</bpt>MainAccount<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Allocations<ept id="p2">**</ept>).</source>
+        </trans-unit>
+        <trans-unit id="373" translate="yes" xml:space="preserve">
+          <source>In these cases, <bpt id="p1">**</bpt>parmCurrentLedgerCOA<ept id="p1">**</ept> should be called on the <bpt id="p2">**</bpt>Segmented Entry<ept id="p2">**</ept> control instance that has a default account controller type set.</source>
+        </trans-unit>
+        <trans-unit id="374" translate="yes" xml:space="preserve">
+          <source>Step 25</source>
+        </trans-unit>
+        <trans-unit id="375" translate="yes" xml:space="preserve">
+          <source>AX 2012</source>
+        </trans-unit>
+        <trans-unit id="376" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>parmIncludeFinancialAccounts(NoYes)<ept id="p1">**</ept> method calls:</source>
+        </trans-unit>
+        <trans-unit id="377" translate="yes" xml:space="preserve">
+          <source>Dynamics AX</source>
+        </trans-unit>
+        <trans-unit id="378" translate="yes" xml:space="preserve">
+          <source>This line of code is no longer required and should be set directly via a property on the <bpt id="p1">**</bpt>Segmented Entry<ept id="p1">**</ept> control.</source>
+        </trans-unit>
+        <trans-unit id="379" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> Because of a framework bug, if you don't setting this explicitly, <bpt id="p2">**</bpt>No<ept id="p2">**</ept> will be assigned on a ledger dimension default account controller, whereas the previous behavior was to implicitly assign <bpt id="p3">**</bpt>Yes<ept id="p3">**</ept> during construction.</source>
+        </trans-unit>
+        <trans-unit id="380" translate="yes" xml:space="preserve">
+          <source>You must set this manually as a property.</source>
+        </trans-unit>
+        <trans-unit id="381" translate="yes" xml:space="preserve">
+          <source>Alternatively, for a <bpt id="p1">**</bpt>dialog<ept id="p1">**</ept> class, the <bpt id="p2">**</bpt>parm<ept id="p2">**</ept> method should still be explicitly called.</source>
+        </trans-unit>
+        <trans-unit id="382" translate="yes" xml:space="preserve">
+          <source>Step 26</source>
+        </trans-unit>
+        <trans-unit id="383" translate="yes" xml:space="preserve">
+          <source>AX 2012</source>
+        </trans-unit>
+        <trans-unit id="384" translate="yes" xml:space="preserve">
+          <source>The code for the <bpt id="p1">**</bpt>modified<ept id="p1">**</ept> method of the data field that provides the account type for the <bpt id="p2">**</bpt>Segmented Entry<ept id="p2">**</ept> control might look like this when the control is used as a dynamic account control.</source>
+        </trans-unit>
+        <trans-unit id="385" translate="yes" xml:space="preserve">
+          <source>Dynamics AX</source>
+        </trans-unit>
+        <trans-unit id="386" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>modified<ept id="p1">**</ept> method of this data field must now clear the ledger dimension field that is bound to the <bpt id="p2">**</bpt>Segmented Entry<ept id="p2">**</ept> control as a <bpt id="p3">**</bpt>Reference<ept id="p3">**</ept> field.</source>
+        </trans-unit>
+        <trans-unit id="387" translate="yes" xml:space="preserve">
+          <source>For example, if the name of the <bpt id="p1">**</bpt>Segmented Entry<ept id="p1">**</ept> control is <bpt id="p2">**</bpt>OffsetAccount<ept id="p2">**</ept>, and the <bpt id="p3">**</bpt>Reference<ept id="p3">**</ept> field property for this control is set to <bpt id="p4">**</bpt>LedgerDimension<ept id="p4">**</ept>, the <bpt id="p5">**</bpt>modified<ept id="p5">**</ept> method in the preceding code should be changed as follows.</source>
+        </trans-unit>
+        <trans-unit id="388" translate="yes" xml:space="preserve">
+          <source>The additional line is required to clear the control when the account type is changed.</source>
+        </trans-unit>
+        <trans-unit id="389" translate="yes" xml:space="preserve">
+          <source>Step 27</source>
+        </trans-unit>
+        <trans-unit id="390" translate="yes" xml:space="preserve">
+          <source>AX 2012</source>
+        </trans-unit>
+        <trans-unit id="391" translate="yes" xml:space="preserve">
+          <source>You can call the <bpt id="p1">**</bpt>parmAccountStructure()<ept id="p1">**</ept> method on the controller.</source>
+        </trans-unit>
+        <trans-unit id="392" translate="yes" xml:space="preserve">
+          <source>Dynamics AX</source>
+        </trans-unit>
+        <trans-unit id="393" translate="yes" xml:space="preserve">
+          <source>This method is replaced by two different methods.</source>
+        </trans-unit>
+        <trans-unit id="394" translate="yes" xml:space="preserve">
+          <source>Additionally, the purpose of the new methods is the opposite of the old method: the old method turned validation off, whereas the new methods turn it on.</source>
+        </trans-unit>
+        <trans-unit id="395" translate="yes" xml:space="preserve">
+          <source>Therefore, when you migrate code, you must reverse the Boolean parameter for the new methods.</source>
+        </trans-unit>
+        <trans-unit id="396" translate="yes" xml:space="preserve">
+          <source>For example, for the method call in the preceding code, the new methods would look like this.</source>
+        </trans-unit>
+        <trans-unit id="397" translate="yes" xml:space="preserve">
+          <source>Step 28</source>
+        </trans-unit>
+        <trans-unit id="398" translate="yes" xml:space="preserve">
+          <source>AX 2012</source>
+        </trans-unit>
+        <trans-unit id="399" translate="yes" xml:space="preserve">
+          <source>You can call the <bpt id="p1">**</bpt>parmAccountStructure()<ept id="p1">**</ept> method on the controller:</source>
+        </trans-unit>
+        <trans-unit id="400" translate="yes" xml:space="preserve">
+          <source>Dynamics AX</source>
+        </trans-unit>
+        <trans-unit id="401" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>parmAccountStructureId()<ept id="p1">**</ept> method doesn't exist on the control.</source>
+        </trans-unit>
+        <trans-unit id="402" translate="yes" xml:space="preserve">
+          <source>Instead, separate <bpt id="p1">**</bpt>getAccountStructure()<ept id="p1">**</ept> and <bpt id="p2">**</bpt>setAccountStructure()<ept id="p2">**</ept> methods exist.</source>
+        </trans-unit>
+        <trans-unit id="403" translate="yes" xml:space="preserve">
+          <source>Therefore, the <bpt id="p1">**</bpt>parmAccountStructureId()<ept id="p1">**</ept> call must be replaced by the <bpt id="p2">**</bpt>get<ept id="p2">**</ept> or <bpt id="p3">**</bpt>set<ept id="p3">**</ept> method, depending on how the <bpt id="p4">**</bpt>parm<ept id="p4">**</ept> method was used.</source>
+        </trans-unit>
+        <trans-unit id="404" translate="yes" xml:space="preserve">
+          <source>For example, the <bpt id="p1">**</bpt>parm<ept id="p1">**</ept> method in the preceding code was called as a setter, so the call should be replaced by a call to the <bpt id="p2">**</bpt>set<ept id="p2">**</ept> method.</source>
+        </trans-unit>
+        <trans-unit id="405" translate="yes" xml:space="preserve">
+          <source>Step 29</source>
+        </trans-unit>
+        <trans-unit id="406" translate="yes" xml:space="preserve">
+          <source>AX 2012</source>
+        </trans-unit>
+        <trans-unit id="407" translate="yes" xml:space="preserve">
+          <source>Dynamics AX</source>
+        </trans-unit>
+        <trans-unit id="408" translate="yes" xml:space="preserve">
+          <source>This method is replaced by two different methods.</source>
+        </trans-unit>
+        <trans-unit id="409" translate="yes" xml:space="preserve">
+          <source>Additionally, the purpose of the new methods is opposite of the old method: the old method turned validation off, whereas the new methods turn it on.</source>
+        </trans-unit>
+        <trans-unit id="410" translate="yes" xml:space="preserve">
+          <source>Therefore, when you migrate code, you must reverse the Boolean parameter for the new methods.</source>
+        </trans-unit>
+        <trans-unit id="411" translate="yes" xml:space="preserve">
+          <source>For example, for the method call in the preceding code, the new methods would look like this.</source>
+        </trans-unit>
+        <trans-unit id="412" translate="yes" xml:space="preserve">
+          <source>Step 30</source>
+        </trans-unit>
+        <trans-unit id="413" translate="yes" xml:space="preserve">
+          <source>AX 2012</source>
+        </trans-unit>
+        <trans-unit id="414" translate="yes" xml:space="preserve">
+          <source>Typically, call the <bpt id="p1">**</bpt>loadFromId<ept id="p1">**</ept> method on the controller in the <bpt id="p2">**</bpt>loadSegments()<ept id="p2">**</ept> method.</source>
+        </trans-unit>
+        <trans-unit id="415" translate="yes" xml:space="preserve">
+          <source>Dynamics AX</source>
+        </trans-unit>
+        <trans-unit id="416" translate="yes" xml:space="preserve">
+          <source>This method has been deprecated and must not be used.</source>
+        </trans-unit>
+        <trans-unit id="417" translate="yes" xml:space="preserve">
+          <source>You should delete all calls to this method.</source>
+        </trans-unit>
+        <trans-unit id="418" translate="yes" xml:space="preserve">
+          <source>Migrating a Segmented Entry control on a dialog</source>
+        </trans-unit>
+        <trans-unit id="419" translate="yes" xml:space="preserve">
+          <source>The uptake pattern for the new <bpt id="p1">**</bpt>Segmented Entry<ept id="p1">**</ept> control on a dialog has changed in Dynamics AX.</source>
+        </trans-unit>
+        <trans-unit id="420" translate="yes" xml:space="preserve">
+          <source>Instead of interacting with the controller class API, you must now interact with the <bpt id="p1">**</bpt>SegmentedEntryControlBuild<ept id="p1">**</ept> class to link the SEC with the dialog.</source>
+        </trans-unit>
+        <trans-unit id="421" translate="yes" xml:space="preserve">
+          <source>This section shows the code patterns for using SEC on a dialog with different controller types.</source>
+        </trans-unit>
+        <trans-unit id="422" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> Help text is no longer required in Dynamics AX, so you don't have to set the Help text on dialog fields.</source>
+        </trans-unit>
+        <trans-unit id="423" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Dynamic account:<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="424" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Before:<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="425" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>After:<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="426" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Ledger account:<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="427" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Before:<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="428" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>After:<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="429" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Default account:<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="430" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Before:<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="431" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>After:<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="432" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Budget:<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="433" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Before:<ept id="p1">**</ept> No uptake of the <bpt id="p2">**</bpt>Budget<ept id="p2">**</ept> controller (<bpt id="p3">**</bpt>BudgetLedgerDimensionController<ept id="p3">**</ept>) for a dialog scenario was found in the existing program source code.</source>
+        </trans-unit>
+        <trans-unit id="434" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>After:<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="435" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Notes:<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="436" translate="yes" xml:space="preserve">
+          <source>The new API lets you specify the label (<bpt id="p1">**</bpt>Budget<ept id="p1">**</ept> in the preceding example) while you set up the dialog field.</source>
+        </trans-unit>
+        <trans-unit id="437" translate="yes" xml:space="preserve">
+          <source>The default value for the control is specified via the <bpt id="p1">**</bpt>ledgerDimensionBudget<ept id="p1">**</ept> variable.</source>
+        </trans-unit>
+        <trans-unit id="438" translate="yes" xml:space="preserve">
+          <source>You must specify the account structure that should be used with the <bpt id="p1">**</bpt>Budget<ept id="p1">**</ept> controller.</source>
+        </trans-unit>
+        <trans-unit id="439" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Dialog<ept id="p1">**</ept> class must implement a way for the user to select the account structure (outside of the SEC) and set the selected account structure on the SEC.</source>
+        </trans-unit>
+        <trans-unit id="440" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Budget planning:<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="441" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Before:<ept id="p1">**</ept> No uptake of the <bpt id="p2">**</bpt>Budget planning<ept id="p2">**</ept> controller (<bpt id="p3">**</bpt>BudgetPlanningLedgerDimensionController<ept id="p3">**</ept>) for a dialog scenario was found in the existing program source code.</source>
+        </trans-unit>
+        <trans-unit id="442" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>After:<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="443" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Notes:<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="444" translate="yes" xml:space="preserve">
+          <source>The new API lets you specify the label (<bpt id="p1">**</bpt>Budget planning<ept id="p1">**</ept> in the preceding example) while you set up the dialog field.</source>
+        </trans-unit>
+        <trans-unit id="445" translate="yes" xml:space="preserve">
+          <source>The default value for the control is specified via the <bpt id="p1">**</bpt>ledgerDimensionBudgetPlanning<ept id="p1">**</ept> variable.</source>
+        </trans-unit>
+        <trans-unit id="446" translate="yes" xml:space="preserve">
+          <source>You must specify the account structure that should be used with the <bpt id="p1">**</bpt>Budget planning<ept id="p1">**</ept> controller.</source>
+        </trans-unit>
+        <trans-unit id="447" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Dialog<ept id="p1">**</ept> class must implement a way for the user to select the account structure (outside of the SEC) and set the selected account structure on the SEC.</source>
+        </trans-unit>
+        <trans-unit id="448" translate="yes" xml:space="preserve">
+          <source>See also</source>
+        </trans-unit>
+        <trans-unit id="449" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Segmented Entry control dialog support<ept id="p1">](segmented-entry-control-dialog-support.md)</ept></source>
+        </trans-unit>
+        <trans-unit id="450" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Segmented Entry control Metadata Specification<ept id="p1">](segmented-entry-control-metadata-specification.md)</ept></source>
+        </trans-unit>
+        <trans-unit id="451" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Segmented Entry control Parm method Specification<ept id="p1">](segmented-entry-control-parm-method-specification.md)</ept></source>
+        </trans-unit>
+        <trans-unit id="452" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Segmented Entry control migration<ept id="p1">](segmented-entry-control-conversion.md)</ept></source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,513 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">c2542131a786c98fc9e69ab336505f4c7395d443</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\dev-tools\author-best-practice-rules.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">e8a073cd801307fc3fdec235c6ce032cd5a1a1cc</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">fc40a253fd5b87f9cf16b86a3bc9643a302b7cec</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Authoring best practices</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic describes how you can author best practice rules in C#, for both metadata and X++ code.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Best practice checks are run by the compiler and in daily builds to catch objectionable practices that are unacceptable in shipping code.</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>The features can also be used to author simple one-of tools to gather information about the application.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Authoring best practices</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This topic describes how you can author best practice rules in C#, for both metadata and X++ code.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Best practice checks are run by the compiler and in daily builds to catch objectionable practices that are unacceptable in shipping code.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>The features can also be used to author simple one-of tools to gather information about the application.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>This topic shows you how to author new best practice rules using the best practices framework.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Best practice checks are run during development and in daily builds to catch coding practices that are deemed unacceptable in shipping code.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Best practice rules are not restricted to this usage however; they can also be used to author simple one-of tools to gather information about the application.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>The framework is built on top of a managed framework called XLNT (shorthand for X++ LaNguage Toolkit) that can be used to build custom tools that extract information from, and modify, X++ code.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>There are two types of best practice rules: those that deal with metadata and those that deal with source code.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Code Best Practice framework</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>The Code Best Practice Framework (CBPF) enables you to write your own tools for analyzing X++ source code.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>These rules diagnose things that you consider to be problems with X++ source code.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>This section describes the foundation of the Best Practice functionality.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>This information is helpful for understanding the later sections that describe creating your own rules in greater detail.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>It is also helpful to developers who want to code rules that are more complex than those demonstrated in this document.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>The CBPF API is designed to allow you to focus on the rule you are expressing, without having to deal with infrastructure issues; you will not need to read tokens and piece them together to create something intelligible from them.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Instead, the CBPF provides the following parts:</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>A parser that builds an Abstract Syntax Tree (AST) from X++ source code.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>A pipeline that runs a sequence of passes over the X++ code.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>A number of prebuilt passes.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>The first pass is the parsing of the source code.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Infrastructure to read metadata.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Because rules are based on ASTs, it is important to understand that concept before starting to write rules.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>The parser and ASTs</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>The parser reads  X++ code and produces an AST from it if it does not contain egregious syntax errors.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>The parser has a built-in error recovery scheme, so it can recover from most syntax errors reasonably well.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>When a syntax error happens, the parser will read symbols until it encounters a semicolon, and then try to building the AST by unstacking its state until it reaches a state where a semicolon is a correct symbol.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>In addition, the parser is able to suggest the correct set of symbols when a syntax error occurs.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>The parser is not intended to be directly interacted with by consumers of the API, but should be considered a black box that works without user intervention.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>As the parser recognizes the language constructs in the source code, it builds an AST.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>The AST consists of nodes that are abstractions of the X++ artifact they represent.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>We will illustrate the concept by showing a few AST nodes below:</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>The Statement class is abstract; it does not make sense to instantiate a ”statement”; only concrete derived classes (like if statements, while statements etc.) can be instantiated.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Since the Comments property is placed on this base class, it applies to all derived classes; in other words: all statements can have comments preceding the statement, which are accessible through the given property.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>There are many different kinds of statement in X++ and each one is described by a class derived in one or more steps from the abstract Statement class shown above.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>The following example shows the definition of a <bpt id="p1">**</bpt>while<ept id="p1">**</ept> statement.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>while<ept id="p1">**</ept> statement consists of the condition (an expression) and the constituent statement, that is executed as long as the condition evaluates to true.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>The parser will maintain the source code positions where the represented artifact starts and ends (i.e. its extent).</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>As the ASTs are traversed it may be useful to add information to the individual nodes.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>For example, every expression has a type.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>As the tree is traversed to diagnose type compatibility problems it becomes useful to be able to place that information on the individual node.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Rather than having to modify the AST nodes for each requirement, there is a property collection that can be used to provide name/value pairs to each node.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Each AST node has a <bpt id="p1">**</bpt>ToString<ept id="p1">**</ept> method that will return a high fidelity string representation of the node, which is useful in debugging scenarios.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>The AstSweeper class</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>The AstSweeper applies a visitor pattern to the AST instance that it is given.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>The visitor pattern allows the programmer to separate the underlying data structure (i.e. the AST) from the operations that the user wants to perform on the nodes (i.e. the logic reasoning about the code).</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>AstSweeper<ept id="p1">**</ept> class has a virtual method for each of the AST node types, and it will call them as directed by the structure of the AST.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>The following examples shows how the sweeper works.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Some details have been omitted for clarity.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>The name of the virtual method handling a particular AST node is the name of the AST class prepended with Visit.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>The parameters are the node to visit and a payload that may be passed to all the visitors as they are called.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>In this way, the sweeper will call the virtual method once for each and every one of the nodes in the AST that is passed to it in a depth-first traversal.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>The payload parameter can be used to pass information (e.g. a symbol table) to each node as required.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Developers will build classes derived from the AstSweeper class, overriding the methods of particular interest to them.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Example</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Suppose you need to determine the percentage of parameter names starting with an underscore character, thus conforming to the X++ coding guidelines.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>You would then write a class deriving from the <bpt id="p1">**</bpt>AstSweeper<ept id="p1">**</ept> class with logic that calculated the number of parameters and the number of parameters starting with underscore.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>The following example shows this code.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>In this case, the tally is maintained in the <bpt id="p1">**</bpt>ParametersCount<ept id="p1">**</ept> and <bpt id="p2">**</bpt>UnderscoredParameters<ept id="p2">**</ept> properties that are defined in the class scope.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Another equally valid approach would be to pass this information into the payload that is passed to all the <bpt id="p1">**</bpt>Visit<ept id="p1">**</ept> methods.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>In most cases, the user should unconditionally call super() from the overridden method to make sure that the Visit methods are called for all nodes below the one being visited.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>In the case above it does not make a difference so we opt to improve performance by pruning the AST tree traversal.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Writing code for Best Practice rules</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Now that the concepts have been introduced, we are ready to author business rules.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Basically you need to:</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Define the situation you want to diagnose in terms of properties of the AST.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>You will write <bpt id="p1">**</bpt>Visit<ph id="ph1">\*</ph><ept id="p1">**</ept> methods that can do the analysis.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>When the error condition has been found, a diagnostic message must be generated.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>There is an API that is used for this purpose; basically you need to write some boilerplate code for each diagnostic message.</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>You need to hook your new best practice rule into the rest of the framework, so the user can decide whether or not to include your rule in his work and to actually run it if so directed.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Create a best practice rules project in Visual Studio</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>In this walkthrough we imagine the following scenario:</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Some methods are adorned with an Author attribute, that provides the name of the individual who wrote the code.</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>This is useful when finding who to point the finger at when stack traces containing that method appear.</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Since we have a significant turnaround of developers, the names of the developers listed cannot be static.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>We want to check which names are used in the Author attributes, and match them against a list of names of current developers.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>The author attribute class is simply defined as:</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>In production code we would put in documentation comments and assertions to validate key assumptions about parameter values etc. For the sake of clarity, we omit these steps in this walkthrough, where the code is written for clarity.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Now that we have set the stage for what we want to achieve, we can start up Visual Studio and create a best practice rules project.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>Provide a meaningful name that properly conveys what the rules are intended to do: Visual Studio creates a project with some source code snippets and project references set up.</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>You can save considerable time by using this source code as a starting point for your own code.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>The pre-canned example contains rules that prohibits the word “Microsoft” in any method names (presumably for copyright reasons) and a metadata based rule prohibiting certain characters in names.</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>Since we are not concerned with the metadata checks for now, you can delete the InvalidCharactersDiagnosticItem.cs and DemoMetadataCheck.cs files from the project.</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Also, since we are not interested in the Microsoft name check, go ahead and delete the content of the VisitMethod method in the DemoAST class.</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>The first thing we need to do is to find out if there are one or more Author attributes for a particular method.</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>You will notice that the Method type (that is passed as a parameter to the VisitMethod method) has an Attributes property of type AttributeList.</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Let's use it to see if any Author attributes are defined on this method:</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>At this point we have looped through any attributes, and collected a list of author names, i.e. names that are provided as the first parameters to the Author attributes.</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>Now we need to compare the list against a list of acceptable authors, that we maintain in a static list.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>Whenever an author is provided that is not mentioned in the list we need to issue an appropriate diagnostic message.</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>At this time, we have something like:</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>In other words, we need to create an diagnostic message to let the user know about the transgression of the rule.</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>As noted before, it is important to call the base implementation of your visitor, which will then call visitor methods for all the nodes that are contained in the method.</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>However, in this case, we do not want to do any further processing once we have determined if the author attribute is on the list.</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Add a class for the diagnostic message</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>The project already includes boilerplate code for an error message, so we will use that as our starting point to create the diagnostic message that will be returned if the rule is violated.</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>Each message is implemented as a class of its own.</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Each error message may have any amount of contextual information encoded into it.</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>In this case, the contextual information is the name of the author that is not found in the list.</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>We will start by adding the message to the messages resource file: Open that file in the project and add a string to it.</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>We will use the name (also known as the error moniker) AuthorNotCurrent.</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>The ‘{0}’ string is a placeholder for the contextual information, in this case the name of the author who is not in the list.</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>In addition to the actual text that will appear in the error message, there is also a string containing a description of the rule; this information is shown in the best practice dialog within Visual Studio and is designed to help the user decide which rules he wants to enable on his system.</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>Create a class for the diagnostic message, and call it AuthorNotCurrentDiagnosticItem.cs.</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>Add the following code inspired from the NotAllowedWordDiagnosticItem class.</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>The diagnostic message is ready for consumption.</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>There is just one piece of bookkeeping that needs to be done; the rule needs to publish declaratively which diagnostics it potentially issues.</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>Go back to your rule and modify the BestPracticeRule attribute to reflect the new diagnostic message:</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>As you can see, there are four parameters specified for the <bpt id="p1">**</bpt>BestPracticeRule<ept id="p1">**</ept> attribute:</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>The rule moniker.</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>The type of the resource file holding the rule description.</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>In this example we are using the default resource file named Messages, which created a class called Messages.</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>We want the type of this class as the second argument.</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>The name of the string resource that contains the description of the rule.</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>This is the string called <bpt id="p1">**</bpt>AuthorNotCurrentDescription<ept id="p1">**</ept> that we added to the resource file above; it contains a human legible string to describe the rule.</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>This string is used to describe the rule to the user in a best practice dialog within Visual Studio.</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>In Visual Studio, select <bpt id="p1">**</bpt>Dynamics 365 <ph id="ph1">&amp;gt;</ph> Best Practices Configuration<ept id="p1">**</ept> to view the dialog.</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>A description of the artifacts to check.</source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>In our case the value specifies that the rule should only be applied to classes.</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>Feel free to modify this to your needs by using one of the other literals in the BestPracticeCheckerTargets enumeration.</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>We still need to fill out the pending TODO item, that is now reduced to instantiating the class that describes the diagnostic message and adding it to the set of diagnostics:</source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>At this point you have a complete best practice rule, ready to provide value in your organization.</source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>Go ahead and build it and fix any errors that may have crept in.</source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>Metadata based Best Practice rules</source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>Until now we have been describing how to write rules that deal with code.</source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>In this section we show how to author rules that apply to metadata, not code.</source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>Classes that deal with metadata rules are derived from <bpt id="p1">**</bpt>BestPracticeMetadataChecker.<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>The derived instance receives an instance of the metadata describing the artifact that must be checked.</source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>You then use the APIs in the Microsoft.Dynamics.AX.Metadata.Metamodel to fetch further metadata as needed, and use LINQ queries over the metadata graphs.</source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>The template for best practice checks contains a class performing metadata checks as well as a code based one we discussed in the previous section.</source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>The mechanics involved in issuing diagnostic messages is the same as we covered above.</source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>Install, run, and test your rule</source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>When your code compiles cleanly, a DLL will be created.</source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>In order for the tooling to be able to pick up the new rule, this DLL must be installed before running it.</source>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>Installing the DLL can be done in two ways:</source>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>By using the button on the Best Practice configuration dialog.</source>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>Click the <bpt id="p1">**</bpt>Install extension...<ept id="p1">**</ept> button.</source>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>You will be asked to point to the assembly file that contains your rule (i.e. the DLL generated when you build the rule).</source>
+        </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>Press OK, and the system will copy the DLL where it needs to be (see below).</source>
+        </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>By manually installing the DLL into the C:<ph id="ph1">\\</ph>Packages<ph id="ph2">\\</ph>bin<ph id="ph3">\\</ph>BPExtensions folder.</source>
+        </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>If you want to debug your rule, you will find it useful to copy the .pdb file to the same directory as the assembly After the DLL has been deployed to the target directory, Visual Studio needs to be restarted.</source>
+        </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>After that, the rule is available for use.</source>
+        </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>You may have to debug your rule to iron out any remaining kinks.</source>
+        </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>In fact stepping through your rule and inspecting the ASTs is valuable when you are learning the ropes.</source>
+        </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>To debug a rule you need to know that the best practice rule is actually executed by the xppAgent process; it is therefore not run within the context of VS itself.</source>
+        </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>Make sure you have selected <bpt id="p1">**</bpt>Run best practice checks<ept id="p1">**</ept> in the Visual Studio Options dialog, in the <bpt id="p2">**</bpt>Finance and Operations<ept id="p2">**</ept> page.</source>
+        </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>Otherwise, your check will not run.</source>
+        </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>Set a breakpoint in the <bpt id="p1">**</bpt>VisitMethod<ept id="p1">**</ept> method, and then do a build of a model that has the new rule switched on as shown above for the Fleet management model.</source>
+        </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>Attach your VS instance to the xppcAgent process.</source>
+        </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>When you do a build your breakpoint will be hit, and you can start drilling into your code.</source>
+        </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>You can see all the properties, the list of declarations and statements, and find out all the details about them.</source>
+        </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>Running rules in XppBp.exe</source>
+        </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>As described above the best practice rules are often run as part of the build of a project from Visual Studio, but there is also a dedicated command line tool to run them.</source>
+        </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>This is the xppbp.exe tool, and it is intended mainly for nightly build scenarios.</source>
+        </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>Invoking it from the command line yields a useful overview of the command line switches and arguments.</source>
+        </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>Here are some useful examples:</source>
+        </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>Run BP on all forms in a module: <ph id="ph1">`xppbp -module:FleetManagement form:*`</ph></source>
+        </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>Run BP on specific elements: <ph id="ph1">`xppbp -module:FleetManagement class:MyClass form:MyForm`</ph></source>
+        </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>Run BP on all items in the model (and only for this one model in the module): <ph id="ph1">`xppbp -module:FleetManagement -model:FleetManagement –all`</ph></source>
+        </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>Run BP on all items in all models in the module: <ph id="ph1">`xppbp -module:FleetManagement –all`</ph></source>
+        </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>Write the output to log files: <ph id="ph1">`xppbp -module:FleetManagement -all -xmllog=Log.xml -log=Log.txt`</ph></source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

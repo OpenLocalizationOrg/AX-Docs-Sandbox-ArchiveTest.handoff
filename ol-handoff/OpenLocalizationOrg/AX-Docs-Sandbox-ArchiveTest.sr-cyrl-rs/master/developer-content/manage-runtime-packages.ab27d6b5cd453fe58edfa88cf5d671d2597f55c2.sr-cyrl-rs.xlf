@@ -1,0 +1,198 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">d70e59d3597de9d722880891fcad56b8a7eb76e3</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\dev-tools\manage-runtime-packages.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">50d1348a28b7278a315949ec34bfbaa2eaa4146f</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">68b2791f3a6f218f6fcd5810dc6ed6df96da7fa9</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Manage third-party models and runtime packages using source control</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic outlines a recommended strategy for managing, distributing, and deploying third-party solutions.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Manage third-party models and runtime packages by using source control</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Customers that work with solutions from third parties might receive different solution artifacts to use in their solution.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Typically, these artifacts are distributed as code (in the form of models) or binaries (in the form of deployable packages).</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>In some cases, third parties might provide some parts of their solution as code and other parts as a binary.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>This topic outlines a recommended strategy for managing, distributing, and deploying these third-party solutions.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Models from third parties</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Any source code that is received from third parties must be compiled into a binary and included in a deployable package.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Models should be installed on a development virtual machine (VM) and added to source control.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>From there, the build VM can pick up the source code, build it, and include it in a deployable package.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Other developers can just synchronize the model from Microsoft Visual Studio Team Services (VSTS) to their development VMs.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>They don't have to manually install it.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>For information about how to install a model on a development VM, see <bpt id="p1">[</bpt>Export and import a model<ept id="p1">](models-export-import.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>After you install the model, follow these steps to add the new model to source control.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>In Microsoft Visual Studio, on the <bpt id="p1">**</bpt>Dynamics 365<ept id="p1">**</ept> menu, click <bpt id="p2">**</bpt>Model Management<ept id="p2">**</ept><ph id="ph1"> &gt; </ph><bpt id="p3">**</bpt>Refresh Models<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Open Application Explorer by clicking <bpt id="p1">**</bpt>View<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Application Explorer<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Right-click the <bpt id="p1">**</bpt>AOT<ept id="p1">**</ept> root node, and then click <bpt id="p2">**</bpt>Model view<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>In the list of models, find the new model that you installed.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Make a note of the name of the package that contains the model.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The package name appears in parentheses after the model name.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>For example, in the following illustration, the <bpt id="p1">**</bpt>Tax Books<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Tax Engine Configuration<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>Tax Engine Interface<ept id="p3">**</ept> models all belong to the package that is named <bpt id="p4">**</bpt>TaxEngine<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Package name for each model</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Open Source Control Explorer by clicking <bpt id="p1">**</bpt>View<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Other Windows<ept id="p2">**</ept><ph id="ph2"> &gt; </ph><bpt id="p3">**</bpt>Source Control Explorer<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Navigate to the metadata folder that is mapped on this development VM, such as <bpt id="p1">**</bpt>MyProject/Trunk/Main/Metadata<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>In the metadata folder, find the folder for the package that contains the new model.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Right-click the package folder, and then click <bpt id="p1">**</bpt>Add Items to Folder<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Add to Source Control<ept id="p1">**</ept> dialog box, select the <bpt id="p2">**</bpt>Descriptor<ept id="p2">**</ept> folder and the folder that has the name of the model, and then click <bpt id="p3">**</bpt>Next<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Review the items that will be added, and then, when you're ready, click <bpt id="p1">**</bpt>Finish<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Open the <bpt id="p1">**</bpt>Pending Changes<ept id="p1">**</ept> window from the <bpt id="p2">**</bpt>Team Explorer<ept id="p2">**</ept> pane or by clicking <bpt id="p3">**</bpt>View<ept id="p3">**</ept><ph id="ph1"> &gt; </ph><bpt id="p4">**</bpt>Other Windows<ept id="p4">**</ept><ph id="ph2"> &gt; </ph><bpt id="p5">**</bpt>Pending Changes<ept id="p5">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Review the changes, enter a check-in comment, and then click <bpt id="p1">**</bpt>Check In<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Deployable packages from third parties</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Deployable packages from third parties can be manually installed on a development VM, and the installed artifacts can then be added to source control.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Then, by synchronizing their local workspace, other developers can receive the runtime package on their VMs without having to install the deployable package.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>The build process on the build VM will help guarantee that the runtime packages for any extensions or other dependencies are available on the build VM.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>In Platform update 6 and later, by default, these runtime packages will be included in the final deployable package that is created from the build VM.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>For more information, see the  <bpt id="p1">[</bpt>Deploying third-party code<ept id="p1">](#deploying-third-party-code)</ept> section later in this topic.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>For information about how to install a deployable package on a development VM, see <bpt id="p1">[</bpt>Install a deployable package<ept id="p1">](../deployment/install-deployable-package.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Don't install a software deployable package directly on the build VM.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Use source control as described in this topic.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Only binary updates should be installed on build VMs.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>After you install the deployable package on a development VM, follow these steps to add the runtime package to source control.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Open Source Control Explorer by clicking <bpt id="p1">**</bpt>View<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Other Windows<ept id="p2">**</ept><ph id="ph2"> &gt; </ph><bpt id="p3">**</bpt>Source Control Explorer<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Navigate to the metadata folder that is mapped on this development VM, such as <bpt id="p1">**</bpt>MyProject/Trunk/Main/Metadata<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Right-click the <bpt id="p1">**</bpt>Metadata<ept id="p1">**</ept> folder, and then click <bpt id="p2">**</bpt>Add Items to Folder<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Add to Source Control<ept id="p1">**</ept> dialog box, double-click the folder that has the package name that you want to add to source control.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Select all the folders except <bpt id="p1">**</bpt>XppMetadata<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Descriptor<ept id="p2">**</ept>, if they exist, and then click <bpt id="p3">**</bpt>Next<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>On the next page, on the <bpt id="p1">**</bpt>Excluded items<ept id="p1">**</ept> tab, select all files by clicking one of the files and then pressing Ctrl+A.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>At the bottom of the selection window, click <bpt id="p1">**</bpt>Include item(s)<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>When you're ready, click <bpt id="p1">**</bpt>Finish<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Open the <bpt id="p1">**</bpt>Pending Changes<ept id="p1">**</ept> window from the <bpt id="p2">**</bpt>Team Explorer<ept id="p2">**</ept> pane or by clicking <bpt id="p3">**</bpt>View<ept id="p3">**</ept><ph id="ph1"> &gt; </ph><bpt id="p4">**</bpt>Other Windows<ept id="p4">**</ept><ph id="ph2"> &gt; </ph><bpt id="p5">**</bpt>Pending Changes<ept id="p5">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Review the changes, enter a check-in comment, and then click <bpt id="p1">**</bpt>Check In<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Deploying third-party code</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Because the models and runtime packages are in source control, other developers who use other development environments can just synchronize the models and packages to their workspace by using the <bpt id="p1">**</bpt>Get latest<ept id="p1">**</ept> feature of source control.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>As of Platform update 4, the automated build process will also pick up the runtime packages.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Therefore, dependencies in packages that are built will be resolved correctly.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>This feature is also available for Platform update 3 and Platform update 2 through a hotfix.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>In Platform update 6, the build process will include this runtime package in the final deployable package.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>This allows customers to take the deployable package from the build and have one package to deploy to their environments.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>The one package includes both custom solutions and all the third party solutions.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

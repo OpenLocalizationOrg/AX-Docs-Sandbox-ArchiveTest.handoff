@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">18a5e176c3e0e6653d0db201c9bb8d1c3d532c03</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\dev-tools\event-handler-result-class.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">241e7f1db5a5490122d4d532bba6e414d46bfac8</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">e3eb5b0edc943009f6d5b195f89aacfaac233b29</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>EventHandlerResult classes in request or response scenarios</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic describes how to use EventHandlerResult classes with delegate methods.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>EventHandlerResult classes in request or response scenarios</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Delegate methods and delegate handler methods can be declared to support a request/response scenario, where the delegate calling logic requests the subscribers to provide a response.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>To support this scenario the <bpt id="p1">**</bpt>EventHandlerResult<ept id="p1">**</ept> class is most often passed as a parameter, and the delegate handler methods provide their result using one of the result methods on the class.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>However, the <bpt id="p1">**</bpt>EventHandlerResult<ept id="p1">**</ept> class can only contain a single result, so if multiple subscribers provide their individual result, the last respondent wins, and the results from the previous subscribers are overwritten.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Before the functionality described in this topic was introduced (platform update 5), there was no mechanism to ensure that, at most, a single subscriber provided a result, and that no results were lost if there were multiple subscribers.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Ensuring, at most, one response</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>In platform update 5, the <bpt id="p1">**</bpt>EventHandlerResult<ept id="p1">**</ept> class has an additional static constructor which ensures that the logic fails if more than one subscriber provides a result.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>The new constructor is named <bpt id="p1">**</bpt>newSingleResponse<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>When instantiating an <bpt id="p1">**</bpt>EventHandlerResult<ept id="p1">**</ept> object using this method, the framework will throw an exception as soon as a second delegate handler method attempts to provide a result.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>IEventHandlerResultValidator interface</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The validation in the <bpt id="p1">**</bpt>EventHandlerResult<ept id="p1">**</ept> class is handled by injecting an object of a type that implements the <bpt id="p2">**</bpt>IEventHandlerResultValidator<ept id="p2">**</ept> interface.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>When instantiating the <bpt id="p1">**</bpt>EventHandlerResult<ept id="p1">**</ept> object using the <bpt id="p2">**</bpt>newSingleResponse<ept id="p2">**</ept> static constructor, an <bpt id="p3">**</bpt>EventHandlerSingleResponseValidator<ept id="p3">**</ept> object is instantiated and injected into the <bpt id="p4">**</bpt>EventHandlerResult<ept id="p4">**</ept> object, and the injected object becomes responsible for validating any result provided to the <bpt id="p5">**</bpt>EventhandlerResult<ept id="p5">**</ept> object.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Other validation classes can be implemented by having the class implement the **IEventHandlerResultValidator **interface, and injecting it into the <bpt id="p1">**</bpt>EventHandlerResult<ept id="p1">**</ept> class by instantiating the <bpt id="p2">**</bpt>EventHandlerResult<ept id="p2">**</ept> object using another new static constructor named <bpt id="p3">**</bpt>newWithResultValidator<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>The constructor takes an argument of type <bpt id="p1">**</bpt>IEventHandlerResultValidator<ept id="p1">**</ept>, which makes it possible to inject any validator object as long as it implements the <bpt id="p2">**</bpt>IEventHandlerResultValidator <bpt id="p3">**</bpt>interface<ept id="p3">**</ept>.<ept id="p2">**</ept></source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>For example, the <bpt id="p1">&lt;strong&gt;</bpt>newSingleResponse<ept id="p1">&lt;/strong&gt;</ept> static constructor simply delegates the instantiation to the <bpt id="p2">**</bpt>newWithResultValidator<ept id="p2">**</ept> static constructor like this.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Accept and reject request/response scenarios</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>In certain request/response scenarios, the subscriber is only expected to provide their acceptance or rejection.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Using the <bpt id="p1">**</bpt>EventHandlerResult<ept id="p1">**</ept> class to request acceptance/rejection can be confusing, if the subscriber is only expected to respond with a Boolean value.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>In a validation scenario, for example, should the subscriber only respond with Boolean false, when validation fails, or should the subscriber also respond with Boolean true, if validation succeeds?</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>If the response is gathered using an <bpt id="p1">**</bpt>EventHandlerResult<ept id="p1">**</ept> object, then the second subscriber that validates and replies with Boolean true, might overwrite the Boolean false from the first subscriber.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>To mitigate this confusion, two new result type classes have been introduced in platform update 5: <bpt id="p1">**</bpt>EventHandlerAcceptResult<ept id="p1">**</ept> and <bpt id="p2">**</bpt>EventHandlerRejectResult<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>When using the <bpt id="p1">**</bpt>EventHandlerAcceptResult<ept id="p1">**</ept> class, the delegate handler method can only respond by calling the <bpt id="p2">**</bpt>accept<ept id="p2">**</ept> method.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>When using the <bpt id="p1">**</bpt>EventHandlerRejectResult<ept id="p1">**</ept> class, only the <bpt id="p2">**</bpt>reject<ept id="p2">**</ept> method can be called.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>The two new classes also contain a <bpt id="p1">**</bpt>newSingleResponse<ept id="p1">**</ept> static constructor for use in scenarios where, at most, one subscriber is allowed to respond with their rejection or acceptance.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Whether any subscriber has responded can still be answered by querying the <bpt id="p1">&lt;strong&gt;</bpt>hasResult<ept id="p1">&lt;/strong&gt;</ept> method, and the acceptance/rejection is queried by calling either the <bpt id="p2">**</bpt>isAccepted<ept id="p2">**</ept> or <bpt id="p3">**</bpt>isRejected<ept id="p3">**</ept> methods for the **EventHandlerAcceptResult <bpt id="p4">**</bpt>and<ept id="p4">**</ept> EventHandlerRejectResult **classes, respectively.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

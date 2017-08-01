@@ -1,0 +1,399 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">c31f7e3c8a0b77d1dcd2486dadab47a4bdac91e1</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">retail\dev-itpro\retail-component-events-diagnostics-troubleshooting.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">d720fdbc2d3aa74b3fee06a35c7818d835458c7e</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">31d895323ef96376dedfe4228a951c574fec5d67</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Retail component events for diagnostics and troubleshooting</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>To enable diagnostics and troubleshooting, all Retail components, which include clients such as the Retail Modern POS and server components such as Retail Server, log their events locally to Event Viewer (or to the browser developer tools console, in case of Retail Cloud POS).</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This article explains where to find events from Retail-specific components.</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Retail component events for diagnostics and troubleshooting</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>To enable diagnostics and troubleshooting, all Retail components, which include clients such as the Retail Modern POS and server components such as Retail Server, log their events locally to Event Viewer (or to the browser developer tools console, in case of Retail Cloud POS).</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This article explains where to find events from Retail-specific components.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Viewing events in Event Viewer</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>You can use Event Viewer to view events for components that are installed on computers that run Microsoft Windows, if you have physical access to the computer where the events are logged.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>For more information about Event Viewer, see <bpt id="p1">[</bpt>Event Viewer<ept id="p1">](https://technet.microsoft.com/en-us/library/4229f239-16a6-4ecd-b3cf-aec03dc08cd5)</ept> on TechNet.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>You can also use Event Viewer to view events remotely from computers that you have access to.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>For more information about how to use Event Viewer to view events remotely, see <bpt id="p1">[</bpt>Work with Event Logs on a Remote Computer<ept id="p1">](https://technet.microsoft.com/en-us/library/cc766438.aspx)</ept> on TechNet.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Typically, Event Viewer is used for troubleshooting in the following use cases:</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Development on a developer topology or on a downloadable virtual hard disk (VHD) that provides access to Event Viewer</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Client components, when you're running a conference room pilot and have access to Event Viewer for that computer</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>However, for most other cases, and especially when you don't have access to Event Viewer for the computer, you can use Log Search on Microsoft Dynamics Lifecycle Services (LCS).</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Log Search is discussed later in this article.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>This section applies to the following components:</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Retail Server</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Retail Modern POS</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Retail Hardware Station</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Find Retail-specific events in Event Viewer</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>To start Event Viewer on a computer, right-click the <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> button, and then click <bpt id="p2">**</bpt>Event Viewer<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Event Viewer command on the shortcut menu for the Start button<ept id="p1">](./media/launch-event-viewer.png)](./media/launch-event-viewer.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>All Retail-specific event logs can be found under the following path in Event Viewer: Application and Services Logs<ph id="ph1">\\</ph>Microsoft<ph id="ph2">\\</ph>Dynamics We provide the following Retail-specific event logs:</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Commerce-RetailServer<ept id="p1">**</ept> – This log contains events that are logged by the Retail Server components.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Commerce-ModernPos<ept id="p1">**</ept> – This log contains events that are logged by Retail Modern POS.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>These events include events from the TypeScript and C<ph id="ph1">\#</ph> (CRT) layer.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Commerce-LoggingProvider<ept id="p1">**</ept> – This log contains events that are logged by all other Retail components that aren't included in the list earlier in this article.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Enable debug event logs</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Currently, some of the events that are logged by various Retail components are sent to debug event logs.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>These events are verbose events that are logged at very high rates and are useful only for detailed debugging scenarios.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Follow this step to enable the debug event logs in Event Viewer.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Right-click a debug log, and then click <bpt id="p1">**</bpt>Enable Log<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Enable Log command on the shortcut menu for a debug log<ept id="p1">](./media/enable-debugging-log.png)](./media/enable-debugging-log.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Viewing events by using the (F12) browser developer tools console</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Because Retail Cloud POS is a browser-based component, you can use the browser developer tools console to view events for it.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>For information about the Microsoft browser developer tools console, see <bpt id="p1">[</bpt>Using the Console to view errors and debug<ept id="p1">](https://msdn.microsoft.com/en-us/library/dn255006(v=vs.85).aspx)</ept> on MSDN.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>To use the browser developer tools for Retail Cloud POS, you must use a supported browser version.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>View events in the browser developer tools console</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Start Internet Explorer or Microsoft Edge, and go to Retail Cloud POS.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Press F12, and then click the <bpt id="p1">**</bpt>Console<ept id="p1">**</ept> tab.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>As you perform operations on Retail Cloud POS, events are logged in the console.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>You can filter by event severity to view events that have different severity levels.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Console tab in the browser developer tools<ept id="p1">](./media/browser-console-1024x522.png)](./media/browser-console.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Correlating events</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>This sections explains how to correlate events from various Retail components.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Data flow between a POS client and Retail Server</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>The diagram that follows shows the data flow between a point of sale (POS) client and the Retail Server.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>POS client startup</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>When a user starts a POS client, a new AppSessionID is generated.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>The AppSessionID is used to log every event that is instrumented in the POS client.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>All events that are logged to Event Viewer and App Insights have this ID.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>User sign-in</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>When a user signs in to a POS client, a new UserSessionID is generated.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>The UserSessionID is used to log every event that is instrumented in the POS client.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>All user events that are logged to Event Viewer have this ID.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>This ID is maintained for as long as the user is signed in.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>When the current user signs out and a new user sign in, a new UserSessionID is generated.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>POS client calls to Retail Server</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Whenever a POS client makes a call to the Retail Server, the AppSessionID and UserSessionID are sent as headers.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>The Retail Server then logs an event for the incoming request (Event ID 5000).</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>This event includes those two IDs and also an ActivityID.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>The ActivityID is then also used for all related Retail Server events.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>The AppSessionID, UserSessionID, and ActivityID are available in the event log where Retail Server is hosted.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>They are also available in LCS Log Search.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Request activity on Retail Server</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Every event that is logged as part of a Retail Server request has the same ActivityID as the initial event that was logged for the initial incoming request event (Event ID 5000).</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>These events are available in both Event Viewer and LCS Log Search.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Data flow between a POS client and Retail Server<ept id="p1">](./media/event-log-data-flow1-1018x1024.png)](./media/event-log-data-flow1.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Finding Retail Modern POS events in Event Viewer</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Every event that is logged by Retail Modern POS includes the following data points:</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>AppSessionID<ept id="p1">**</ept> – A unique ID that is generated when the app is first started.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>It's included with every event that is logged from Retail Modern POS.</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>UserSessionID<ept id="p1">**</ept> – A unique ID that is generated when a user signs in to Retail Modern POS.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>It's included with every event that is logged from Retail Modern POS, for as long as the user remains signed in.</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>When a new user signs in, a new UserSessionID is created.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>You can find the AppSessionID and UserSessionID values on the <bpt id="p1">**</bpt>Details<ept id="p1">**</ept> tab in Event Viewer on the machine where Retail Modern POS is installed.</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Details tab in Event Viewer<ept id="p1">](./media/correlation-1024x672.png)](./media/correlation.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Finding incoming Retail Server request events in Event Viewer</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>To correlate data for incoming Retail Server requests in Event Viewer, you must first enable the <bpt id="p1">**</bpt>Analytic<ept id="p1">**</ept> channel.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>To enable the Analytic channel, follow these steps.</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>In Event Viewer, in the left pane, select <bpt id="p1">**</bpt>Commerce-RetailServer<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>View<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Enable Analytic and Debug log<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>A new node for the Analytic channel appears under the <bpt id="p1">**</bpt>Commerce-RetailServer<ept id="p1">**</ept> logging provider.</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Right-click the <bpt id="p1">**</bpt>Analytic<ept id="p1">**</ept> node, and then click <bpt id="p2">**</bpt>Enable log<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>In Event Viewer, all incoming Retail Server requests are logged to the Analytic channel of the Commerce-RetailServer source as event 5000.</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>These events also have the AppSessionID and UserSessionID that were described earlier.</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Every event also has a unique ActivityID that is instrumented for every logged event for the same Retail Server request.</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Using LCS Log Search</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>LCS Log Search lets you view data from all the components from a single portal.</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>You can access events from both cloud-hosted components (such as Retail Server) and in-store components (such as Retail Modern POS and Retail Hardware Station).</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Event data from all cloud-hosted and in-store components flows to LCS Log Search, where it's indexed and made searchable.</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>Data is typically available within 5 minutes after it's logged.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>For POS clients and Retail Hardware Station, all events are locally queued in persistent storage and then uploaded in batches after the queue is filled.</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>This behavior enables network traffic to be optimized.</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>It also enables events to be saved even when there is no Internet connectivity.</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>After connectivity is restored, all pending events are uploaded.</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>LCS Log Search is available for the HA production topology.</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>It can be used for the following Retail components:</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>Retail Modern POS</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>Retail Cloud POS</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Retail Hardware Station</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>Retail Server</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>LCS Log Search does <bpt id="p1">**</bpt>not<ept id="p1">**</ept> include logs from the following Retail components:</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>Retail layout designer</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>Retail receipt designer</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Self-service installer for Retail Modern POS</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>Self-service installer for Retail Hardware Station</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>Access LCS Log Search</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>To access LCS Log Search, follow these steps.</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>Go to <bpt id="p1">[</bpt>Lifecycle Services<ept id="p1">](https://lcs.dynamics.com/)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>Sign in by using the credentials that are associated with your project.</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>On the project page, select the correct project.</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Project details<ept id="p1">**</ept> page, select the correct environment.</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Environment details<ept id="p1">**</ept> page, click <bpt id="p2">**</bpt>Environment Monitoring<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Environment monitoring<ept id="p1">**</ept> page, click <bpt id="p2">**</bpt>View raw logs<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Log Search<ept id="p1">**</ept> page, select one of the following queries:</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Retail error events<ept id="p1">**</ept> query, which includes events from Retail Modern POS, Retail Cloud POS, and Retail Hardware Station</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>All logs<ept id="p1">**</ept> query, which includes data from Retail Server, Commerce Data Exchange, and Commerce Data Exchange: Real-time Service</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>You can filter by the following criteria to refine your query:</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>Start and end dates and times (in Coordinated Universal Time <ph id="ph1">\[</ph>UTC<ph id="ph2">\]</ph>)</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>Device ID</source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>POS user</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>POS application session ID</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>POS user session ID</source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>Severity level</source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Search results on the Environment monitoring page<ept id="p1">](./media/log-search-results.png)](./media/log-search-results.png)</ept></source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

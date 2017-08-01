@@ -1,0 +1,255 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">117cb005c7e92d6bd02798c914dae7b0d3138c9a</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\database\copy-operations-database.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ebabea949b3a59cdcd1e436f417d00f6ff0da6a8</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">fbfc03e06d5044ef313c6ea5c3d9840b22a0eab7</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Create a copy of a Finance and Operations database to restore later</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic provides instructions for exporting a Microsoft Dynamics 365 for Finance and Operations database to a file and then reimporting that file to the same instance or another instance of the application.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This procedure can only be used in non-production environments.</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Create a copy of a Finance and Operations database to restore later</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>This topic provides instructions for exporting a Microsoft Dynamics 365 for Finance and Operations database to a file and then reimporting that file to the same instance or another instance of the application.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This procedure can only be used in non-production environments.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>You might want to retain a copy of a Finance and Operations database process in several situations:</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>To take strategic backups to restore to in the future.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>For example, before or after a major code update you might want copies to use for reference later.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>To back up a database before destructive testing and then restore it afterward.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>When upgrading to a new major release of Microsoft Dynamics 365 for Finance and Operations, this process can be used to export your old test database and bring it forward to the new version.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Be aware that Microsoft also provides a standard feature which provides the ability to restore an Azure SQL database environment to a point-in-time within the last 35 days via a service request.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Request a point-in-time database restore on a non-production environment<ept id="p1">](request-point-in-time-restore.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Prerequisites</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>To export a database from a sandbox environment you must install the latest SQL Server 2016 Management Studio to the AOS machine in that environment and perform the export on that AOS machine.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>This is for two reasons.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>First, there is an IP access restriction on the sandbox SQL Server instance, which only allows a connection from a machine within that environment.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Second, the version of SQL Server Management Studio installed by default is for a previous version of SQL Server and can’t complete the tasks required.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Export the Finance and Operations database</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Stop services</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Use Remote Desktop to connect to all the computers in the environment and stop the following Windows services by using services.msc.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>These services will have open connections to the Finance and Operations database.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>World wide web publishing service (on all AOS computers)</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Microsoft Dynamics 365 for Finance and Operations Batch Management Service (on non-private AOS computers only)</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Management Reporter 2012 Process Service (on BI computers only)</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Execute sqlpackage to export the Finance and Operations database</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Open a command prompt as an Administrator, and then execute the following commands.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>The parameters include:</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>ssn<ept id="p1">**</ept> (source server name) - The name of the SQL Azure server from which you will export.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>sdn<ept id="p1">**</ept> (source database name) - The name of the database that you will export.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>tf<ept id="p1">**</ept> (target file) - The path and file name that you will export to.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>sp<ept id="p1">**</ept> (source password) - The SQL password for the source SQL Server.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>su<ept id="p1">**</ept> (source user) - The SQL user name for the source SQL Server.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>We recommend that you use the <bpt id="p1">**</bpt>sqladmin<ept id="p1">**</ept> user, which the deployment will have created on every Dynamics SQL instance.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>You can retrieve the password for this user from your Lifecycle Services (LCS) project.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Running this command creates a .bacpac file on the D:<ph id="ph1">\\</ph>Exportedbacpac folder.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>You can take this file and copy or upload it to secure location so that it can be imported into a different environment at another time.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>You can use the AzCopy command line utility to upload the file to an Azure storage account<bpt id="p1">[</bpt>,<ept id="p1">](https://azure.microsoft.com/en-gb/documentation/articles/storage-use-azcopy/)</ept> and then download it to the target AOS computer.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Copy or upload the file to an Azure storage account<ept id="p1">](https://docs.microsoft.com/en-gb/azure/storage/storage-use-azcopy)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> Microsoft doesn’t provide a storage account as part of your Finance and Operations agreement.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>You must either purchase a storage account or use a storage account from a separate Azure subscription.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Important:<ept id="p1">**</ept> Be aware of the behavior of the D drive on Azure Virtual Machines, do not keep your exported database files here permanently unless you are prepared to lose them.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>For details, see <bpt id="p1">[</bpt>Understanding the temporary drive on Windows Azure virtual machines (blog post)<ept id="p1">](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Start services</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Use services.msc to restart the services that you stopped earlier:</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>World wide web publishing service (on all AOS computers)</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Microsoft Dynamics 365 for Finance and Operations Batch Management Service (on non-private AOS computers only)</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Management Reporter 2012 Process Service (on BI computers only)</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Import the Finance and Operations database</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Stop services</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Use Remote Desktop to connect to all the computers in the environment and stop the following Windows services by using services.msc.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>These services will have open connections to the Finance and Operations database.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>World wide web publishing service (on all AOS computers)</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Microsoft Dynamics 365 for Finance and Operations Batch Management Service (on non-private AOS computers only)</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Management Reporter 2012 Process Service (on BI computers only)</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Import the bacpac file</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Copy the .bacpac file that was generated in the export step to the AOS computer in the target environment.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>For performance reasons, we recommend that you place the .bacpac file on the drive D on the AOS computer.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Open a <bpt id="p1">**</bpt>Command Prompt<ept id="p1">**</ept> window as an administrator, and run the following commands.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>The parameters include:</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>tsn<ept id="p1">**</ept> (target server name) – The name of the SQL Azure server to import into.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>The name can be found in LCS.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Add the suffix <bpt id="p1">**</bpt>database.windows.net<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>tdn<ept id="p1">**</ept> (target database name) – The name of the database to import into.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>The database should <bpt id="p1">**</bpt>not<ept id="p1">**</ept> already exist.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>The import process will create it.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>sf<ept id="p1">**</ept> (source file) – The path and file name to import from.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>tu<ept id="p1">**</ept> (target user) – The SQL user name for the target Azure SQL database instance.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>We recommend that you use the standard <bpt id="p1">**</bpt>sqladmin<ept id="p1">**</ept> user.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>You can retrieve the password for this user from your LCS project.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>tp<ept id="p1">**</ept> (target password) – The password for the target Azure SQL database user.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Run a script to update the Finance and Operations database</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>If the source and target environments have different SQL user passwords, then you will need to run this script.</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>If you are not sure if the passwords are different, you need to run this script.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Run the following script against the imported database.</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>The script will drop the database users and recreate them with the correct passwords for the target environment.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Limitations</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>The link between the database and document handling documents that are stored in Azure blob storage might be broken after importing a database.</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>If you have custom code that utilizes the X++ class FileUpload to place files in blob storage, the links to these files might also be broken.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

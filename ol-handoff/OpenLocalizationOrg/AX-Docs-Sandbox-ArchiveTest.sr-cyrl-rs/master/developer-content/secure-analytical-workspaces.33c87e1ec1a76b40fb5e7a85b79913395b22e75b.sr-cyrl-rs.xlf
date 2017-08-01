@@ -1,0 +1,234 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">64e9c663ab518f1edfa970d60471f07b6b241921</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\analytics\secure-analytical-workspaces.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">6e22803b7ac74196d7200bc88dc6059a02c7964e</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">72241b9d698c3ea356baa0edaba222beb20c7b07</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Help secure analytical workspaces and reports by using Power BI Embedded</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic describes the recommended strategies for securing access to both the reports that are delivered by using Power BI Embedded and the data set, based on viewer access rights.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Help secure analytical workspaces and reports by using Power BI Embedded</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This feature is supported in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update (version 7.2) and later releases.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Introduction</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This topic provides a walk-through for application developers who want to help secure analytical workspaces and reports that are delivered by using Microsoft Power BI Embedded.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>It describes the recommended strategies for securing access to both the reports and the data set, based on viewer access rights.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>By using the techniques that are described in this topic, you can hide reports from users and filter reports to show the data set that is appropriate for a specific user, based on the active company context.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Prerequisites</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Access to a developer environment that runs Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 with Platform update 8 or later</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>An analytical report (.pbix file) that was created by using Microsoft Power BI Desktop, and that has a data model that is sourced from the Entity store database</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Overview</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Whether you're extending an existing application workspace or adding your own workspace, you can use embedded analytical views to deliver insightful and interactive views of your business data.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Before you add new analytical workspaces and reports, it’s important that you establish a strategy to help secure the content.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>There are several considerations that you should be aware of when you develop analytical solutions by using Power BI Embedded.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Analytical reports are secured by using menu items.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>After they have access to a report, all viewers can access the underlying data model that is defined in the report.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Although service options are available that automatically hide the fields that back a report data set, all viewers of the report have effective access to the fields in the data model.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Additionally, X++ extensions are available that influence the way that the report is presented in the client.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Both the <bpt id="p1">**</bpt>Filter<ept id="p1">**</ept> pane and the <bpt id="p2">**</bpt>Report<ept id="p2">**</ept> tabs can be hidden.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>However, Microsoft Power BI filters can be modified by using client-side script injections.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Recommendation</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Create scenario-specific .pbix files to deliver analytical views:</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Area overviews that are delivered by using workspaces</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Subject matter–specific analytical reports</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>These analytical reports are often used to deliver reports that contain medium-business-impact and high-business-impact data.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>For more information about how to create analytical reports, see <bpt id="p1">[</bpt>Getting started with Power BI Desktop<ept id="p1">](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>This page is a great source for insights that can help you create compelling analytical reporting solutions.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Help secure analytical views that are provided through embedded Power BI reports</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Power BI report filters and the <bpt id="p1">**</bpt>Filter<ept id="p1">**</ept> pane serve as a mechanism for passing session context into the report that is embedded on the <bpt id="p2">**</bpt>Analytics<ept id="p2">**</ept> tab.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>The capability to turn the visibility of the <bpt id="p1">**</bpt>Filter<ept id="p1">**</ept> pane on and off isn't a security feature.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Power BI report filters and the capability to hide and show the <bpt id="p1">**</bpt>Filter<ept id="p1">**</ept> pane are user experience (UX) decisions that the application designer makes.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Row-level security that is defined in Finance and Operations isn't inherited by Power BI reports.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Instead, application developers can help secure the workspace or the report.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Help secure analytical workspaces on the Analytics tab</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Analytical workspaces are embedded Power BI reports that are shown in a form control.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Unless you complete the following procedure, anyone who has access to the workspace can see the <bpt id="p1">**</bpt>Analytics<ept id="p1">**</ept> tab and access the Power BI reports.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Add a menu item for the analytical workspace.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Verify that the form initialization uses the <bpt id="p1">**</bpt>hasMenuItemAccess<ept id="p1">**</ept> application programming interface (API) to verify that the user has access to the menu item.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>The preceding logic will prevent the Power BI Viewer control from being initialized.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Therefore, an empty tab will appear on the page.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>By default, the framework automatically hides empty tabs.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Therefore, the <bpt id="p1">**</bpt>Analytics<ept id="p1">**</ept> tab is hidden and can't be access if the user doesn't have access to the menu item that is associated with the analytical workspace.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Help secure analytical reports</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Embedded Power BI reports in the application are secured by using menu items.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Users who try to access a Power BI report directly, by using a menu item in Finance and Operations, will receive an error.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Follow these steps to help secure the analytical reports.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Add a menu item for the report or the appropriate tab.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>By default, the first tab of the report will be shown if no other tab is selected.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Link the menu item to the <bpt id="p1">**</bpt>PowerBIEmbedded_App<ept id="p1">**</ept> configuration key.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Link the menu item to the PowerBIEmbedded_App configuration key</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>The menu item is now associated with the availability of the Power BI Embedded service.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>If the service is unavailable, the links for the menu items will be removed from the application.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Help secure analytical workspaces and reports by company</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Power BI workspaces and reports can be secured by company (for example, <bpt id="p1">**</bpt>DataAreaID<ept id="p1">**</ept> value).</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Application solutions must apply the following steps for company-level security in analytical workspaces and reports.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>In this scenario, the workspaces and reports that the sales manager from Contoso USA sees are limited to data that is related to Contoso USA.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>The report viewer must not have access to data that associated with any other company, unless the company context is changed.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Open the analytical report in Power BI Desktop by double-clicking the resource in a Microsoft Visual Studio project.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Modeling<ept id="p1">**</ept> tab, click <bpt id="p2">**</bpt>Manage Roles<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Create a new role against a column in the data model that contains the <bpt id="p1">**</bpt>Company<ept id="p1">**</ept> field.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Name the new role <bpt id="p1">**</bpt>CompanyFilter<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">**</bpt>COMPANY<ept id="p1">**</ept> field must be present in the data model to restrict access by company.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Create a new role</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Table filter DAX expression<ept id="p1">**</ept> field, enter <bpt id="p2">**</bpt>[COMPANY]=username()<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>To make sure that the rules work, on the <bpt id="p1">**</bpt>Modeling<ept id="p1">**</ept> tab, click <bpt id="p2">**</bpt>View as Roles<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>In the dialog box, set the following fields:</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Clear the <bpt id="p1">**</bpt>None<ept id="p1">**</ept> check box.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Select the <bpt id="p1">**</bpt>Other user<ept id="p1">**</ept> check box, and then enter <bpt id="p2">**</bpt>USMF<ept id="p2">**</ept> in the text box.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Select the <bpt id="p1">**</bpt>CompanyFilter<ept id="p1">**</ept> check box.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>The reports will now show data as if you're running the USMF company.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Row level security with Power BI Embedded<ept id="p1">](https://docs.microsoft.com/en-us/azure/power-bi-embedded/power-bi-embedded-rls)</ept>.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

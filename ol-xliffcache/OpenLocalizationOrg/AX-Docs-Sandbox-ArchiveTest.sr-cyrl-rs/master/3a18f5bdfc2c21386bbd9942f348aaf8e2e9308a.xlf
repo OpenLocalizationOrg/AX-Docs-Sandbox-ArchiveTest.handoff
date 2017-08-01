@@ -1,0 +1,1590 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">3a18f5bdfc2c21386bbd9942f348aaf8e2e9308a</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\lifecycle-services\ax-2012\migrate-data-dixf.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">80288a28a7ecaa037f59e57d1e4fe435650ffde9</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">fff5d5a191fa86616f3e0517317ed1e3ac325760</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Migrate data</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic describes how to use the Data Import/Export Framework for Microsoft Dynamics AX 2012 to migrate data.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Migrate data using the Data import/export framework (AX 2012)</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This topic describes how to use the Data Import/Export Framework for Microsoft Dynamics AX 2012 to migrate data.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> This topic includes information about features that were added or changed for cumulative update 7 or later for Microsoft Dynamics AX 2012 R2.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This information also applies to AX 2012 R3.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>This topic includes the following processes:</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Determine which Microsoft Dynamics AX entities to use</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Using the Data Import and Export Framework:</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Define your source data formats</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Identify entities to add to a processing group</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Create a new target entity</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Modify an entity’s target mapping</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Define a processing group</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Optional: Change the source to staging mapping for an entity</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Optional: Change the staging to target mapping for an entity</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Define security for a processing group</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Preview errors before processing</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Process export data</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Process import data</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Plan to migrate data</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Data import is a complex process that usually requires several iterations.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>The import process includes the following general steps:</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Identify the data in your existing system that must be imported.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Consider cleaning up the data in your existing system.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>For example, determine whether old records can be deleted or archived, whether the current database contains duplicate records, and whether you want to change numbering schemes.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Become familiar with the relevant data structures in Microsoft Dynamics AX that the data from your existing system must be moved to.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> Data from one table in another system might have to be moved into multiple tables in Microsoft Dynamics AX.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Determine the appropriate tools and techniques to use for the data that you must import.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>For a list of the tools that can be used, see <bpt id="p1">[</bpt>Plan data import, export, and migration<ept id="p1">](http://technet.microsoft.com/library/a05289fb-0f8f-4563-be3c-7c840bfea7e1(AX.60).aspx)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Prepare a test Microsoft Dynamics AX environment.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Required configuration for master records must be completed before you import data.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Create a backup of your existing system and your Microsoft Dynamics AX environment before you import any data.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Perform a trial import of all types of data that are required.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> Expect to encounter errors the first time that you perform an import.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Review the errors that you encounter, make any fixes that are required, and perform the import again.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>If you are moving from another ERP system to Microsoft Dynamics AX, you must import master and reference data.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> We recommend that you not import transactional data or historical data into Microsoft Dynamics AX.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Instead, close all open transactions before import, if these transactions can be closed.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Maintain the database that contained your previous transactional data, for reporting and compliance purposes.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Data export is usually less complex but might still require some planning.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>The export process includes the following general steps:</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Identify the data in your existing system that must be exported.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Consider cleaning up the data in your existing system.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>For example, determine whether old records can be deleted or archived, whether the current database contains duplicate records, and whether you want to change numbering schemes.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Become familiar with the relevant data structures in the system that the data must be exported to.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Determine the export format.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>The format can be AX if you are moving data to another Microsoft Dynamics AX instance or File if you are moving data to any other kind of system.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Determine whether any of the data has to be transformed or cleaned in the staging table before export.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Determine which Microsoft Dynamics AX entities to use</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>For a list of the predefined target entities that the Data Import/Export Framework includes, see <bpt id="p1">[</bpt>Data import/export framework entities (DIXF, DMF)<ept id="p1">](entities-dixf.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Each entity must be associated with an entity class, a staging table, and a target table.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>For predefined entities, these values are pre-populated.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>The staging table is the table that the data is written to before it is transformed when this entity is used for import procedures.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>The entity class is where X++ transformation logic is stored.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>You can create a copy of an entity class and modify the transformation logic.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>The target table is the table that data is pulled from for export procedures, or the table that fully modified data is written to for import procedures.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>**Important: **The mapping from the staging table schema to the target table schema is automatically generated.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Unless you have customized your target Microsoft Dynamics AX system, you should not have to modify the staging-to-target mapping.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>For details about each target entity, you can review the information in <bpt id="p1">**</bpt>Data Import/Export Framework<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Target entities<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>If no default target entity suits your purposes, you can create a new target entity by using an entity that is already present in the system.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>If no entity that is already present in the system is appropriate, you can create a custom entity.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>For more information about how to create a custom entity, see <bpt id="p1">[</bpt>Create a custom target entity for the Data import/export framework (DIXF, DMF)<ept id="p1">](create-custom-target-entity-dixf.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Using the Data Import/Export Framework</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>This section provides information about how to use the Data Import/Export Framework to import or export data.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>This section contains the following subsections:</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Define your source data formats</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Identify entities to add to a processing group</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Create a new target entity</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Modify an entity’s target mapping</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Define a processing group</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Optional: Change the source to staging mapping for an entity</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Optional: Change the staging to target mapping for an entity</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Define security for a processing group</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Preview errors before processing</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Process export data</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Process import data</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Define your source data formats</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>You must create source data formats for data that you want to export or import.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Review the data that you plan to migrate to or from Microsoft Dynamics AX.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Determine whether that data is in files, in data stores that can be accessed through Open Database Connectivity (ODBC) connections, or in existing AX 2012 installations.</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Create a source data format for each type of data that you are migrating.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Configure a source data format for data from a CSV or fixed-width file</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>For files, you must define whether the data comes from a list that consists of comma-separated values, a fixed-width file, a Microsoft Excel file, or an XML file.</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Source files can contain default values for a column.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Open <bpt id="p1">**</bpt>Data import export framework<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Source data formats<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>New<ept id="p1">**</ept>, and then provide a name and description for the source.</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Verify that the type is <bpt id="p1">**</bpt>File<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>General<ept id="p1">**</ept> tab, select values for the following options if you are using a delimited or fixed-width file.</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Option</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>File format<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">&lt;strong&gt;</bpt>Delimited<ept id="p1">&lt;/strong&gt;</ept> or <bpt id="p2">&lt;strong&gt;</bpt>Fixed width<ept id="p2">&lt;/strong&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>Delimited formats use a specific character to separate fields.</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>Fixed-width formats set aside a specific number of characters for each field.</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Note:<ept id="p1">&lt;/strong&gt;</ept> Field widths are defined for each entity, not in the data format.</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>First row header<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>Select this option if the first row of your data files contains header information.For fixed-width formats, you can specify delimiter characters to define the values in the header row, if there is a header row.</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Row delimiter<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>Select the delimiter for rows.</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>Value</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>{CR}{LF}</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>The header row is delimited by a carriage return/line feed combination.</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>{CR}</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>The header row is delimited by a carriage return.</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>{LF}</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>The header row is delimited by a line feed.</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>Semicolon {;}</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>The header row is delimited by a semicolon.</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>Colon {:}</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>The header row is delimited by a colon.</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Comma {,}</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>The header row is delimited by a comma.</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>Tab {t}</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>The header row is delimited by a tab.</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>Vertical bar {|}</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>The header row is delimited by a vertical bar.</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Column delimiter<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>Select the delimiter for columns.</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>For a list of the available values, see the description of the Row delimiter parameter.</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Text qualifier<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>Enter the delimiter that is used if the text values in a row contain the character that you are using as a row or column delimiter.</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>For example, if your organization names include commas, but you are using commas as column delimiters, you should enter another delimiter to use for text values.</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>In this example, you might want to use a double quotation mark (<ph id="ph1">&amp;quot;</ph>).</source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Skip row<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>Select this option to leave rows that contain errors unprocessed and continue with the processing.</source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>If this option is selected, errors are written to the log.</source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>Set the following general parameters for regional settings.</source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>Option</source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Code page<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>Specify the code page for non-Unicode text.</source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Unicode<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>Select this option to use Unicode.</source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Language locale<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>Specify the locale to provide language-specific information for ordering, and for date and time formats.</source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>Set the following general parameters for multiple value separators.</source>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>Parameter</source>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Multiple value separator<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>Optional: Enter the delimiter to use for fields that contain multiple values that are associated with a single record, such as email addresses, telephone numbers, or URLs.</source>
+        </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Application<ept id="p1">**</ept> to set the parameter values to <bpt id="p2">**</bpt>Dimensions<ept id="p2">**</ept> and <bpt id="p3">**</bpt>Name sequence<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>Set the following general parameters for dimensions.</source>
+        </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>Parameter</source>
+        </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Dimension code<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>Optional: Specify the list of financial dimensions that are part of the source file.</source>
+        </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>The codes for the financial dimensions are pulled from Microsoft Dynamics AX.</source>
+        </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Chart of accounts delimiter<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>The delimiter between financial dimension values.</source>
+        </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Dimension format<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>The predefined format of the dimension, based on the financial dimensions and delimiter that you selected.</source>
+        </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>Set the following value for name sequences.</source>
+        </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>Parameter</source>
+        </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Name sequence<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>Specify the default name sequence for parties that are created during migration.</source>
+        </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>Close the form.</source>
+        </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>Configure a source data format for data from an XML file</source>
+        </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>This section describes how to create a source data format for data from an XML file.</source>
+        </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>Open <bpt id="p1">**</bpt>Data import export framework<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Source data formats<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>New<ept id="p1">**</ept>, and then provide a name and description for the source.</source>
+        </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>Verify that the type is <bpt id="p1">**</bpt>XML<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>General<ept id="p1">**</ept> tab, select values for the following options:</source>
+        </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>File format<ept id="p1">**</ept> field, select <bpt id="p2">**</bpt>XML<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Language locale<ept id="p1">**</ept> field, select a language locale.</source>
+        </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>Optional: Under <bpt id="p1">**</bpt>Multiple value separator<ept id="p1">**</ept>, select a role separator to use to delimit fields that contain multiple values that are associated with a single record, such as email addresses, telephone numbers, or URLs.</source>
+        </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Application<ept id="p1">**</ept> to set the parameter values to <bpt id="p2">**</bpt>Dimensions<ept id="p2">**</ept> and <bpt id="p3">**</bpt>Name sequence<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>Set the following general parameters for dimensions.</source>
+        </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>Parameter</source>
+        </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Dimension code<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>Optional: Specify the list of financial dimensions that are part of the source file.</source>
+        </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>The codes for the financial dimensions are pulled from Microsoft Dynamics AX.</source>
+        </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Chart of accounts delimiter<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>The delimiter between financial dimension values.</source>
+        </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Dimension format<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>The predefined format of the dimension, based on the financial dimensions and delimiter that you selected.</source>
+        </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source>Set the following value for name sequences.</source>
+        </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source>Parameter</source>
+        </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Name sequence<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>Specify the default name sequence for parties that are created during migration.</source>
+        </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>Close the form.</source>
+        </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source>Configure a source data format for data from an Excel file</source>
+        </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source>This section describes how to create a source data format for data from an Excel file.</source>
+        </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source>Open <bpt id="p1">**</bpt>Data import export framework<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Source data formats<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>New<ept id="p1">**</ept>, and then provide a name and description for the source.</source>
+        </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source>Verify that the type is <bpt id="p1">**</bpt>Excel<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>General<ept id="p1">**</ept> tab, select values for the following options:</source>
+        </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>File format<ept id="p1">**</ept> field, select <bpt id="p2">**</bpt>Excel<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Language locale<ept id="p1">**</ept> field, select a language locale.</source>
+        </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source>Optional: Under <bpt id="p1">**</bpt>Multiple value separator<ept id="p1">**</ept>, select a role separator to use to delimit fields that contain multiple values that are associated with a single record, such as email addresses, telephone numbers, or URLs.</source>
+        </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Application<ept id="p1">**</ept> to set the parameter values to <bpt id="p2">**</bpt>Dimensions<ept id="p2">**</ept> and <bpt id="p3">**</bpt>Name sequence<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source>Set the following general parameters for dimensions.</source>
+        </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>Parameter</source>
+        </trans-unit>
+        <trans-unit id="298" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="299" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Dimension code<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="300" translate="yes" xml:space="preserve">
+          <source>Optional: Specify the list of financial dimensions that are part of the source file.</source>
+        </trans-unit>
+        <trans-unit id="301" translate="yes" xml:space="preserve">
+          <source>The codes for the financial dimensions are pulled from Microsoft Dynamics AX.</source>
+        </trans-unit>
+        <trans-unit id="302" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Chart of accounts delimiter<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="303" translate="yes" xml:space="preserve">
+          <source>The delimiter between financial dimension values.</source>
+        </trans-unit>
+        <trans-unit id="304" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Dimension format<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="305" translate="yes" xml:space="preserve">
+          <source>The predefined format of the dimension, based on the financial dimensions and delimiter that you selected.</source>
+        </trans-unit>
+        <trans-unit id="306" translate="yes" xml:space="preserve">
+          <source>Set the following value for name sequences.</source>
+        </trans-unit>
+        <trans-unit id="307" translate="yes" xml:space="preserve">
+          <source>Parameter</source>
+        </trans-unit>
+        <trans-unit id="308" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="309" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Name sequence<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="310" translate="yes" xml:space="preserve">
+          <source>Specify the default name sequence for parties that are created during migration.</source>
+        </trans-unit>
+        <trans-unit id="311" translate="yes" xml:space="preserve">
+          <source>Close the form.</source>
+        </trans-unit>
+        <trans-unit id="312" translate="yes" xml:space="preserve">
+          <source>Configure a source data format for data from an ODBC connection</source>
+        </trans-unit>
+        <trans-unit id="313" translate="yes" xml:space="preserve">
+          <source>This section describes how to configure a source data format for data from an ODBC connection.</source>
+        </trans-unit>
+        <trans-unit id="314" translate="yes" xml:space="preserve">
+          <source>Open <bpt id="p1">**</bpt>Data Import/Export Framework<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Source data formats<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="315" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>New<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="316" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Type<ept id="p1">**</ept>, and then select <bpt id="p2">**</bpt>ODBC<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="317" translate="yes" xml:space="preserve">
+          <source>The Data Import/Export Framework connects to ODBC by using a data source name (DSN) type.</source>
+        </trans-unit>
+        <trans-unit id="318" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>DSN<ept id="p1">**</ept> section, define which type of DSN you are using to connect, and where the DSN is located.If you have not yet defined a DSN for your ODBC connection, determine which type of DSN to use.</source>
+        </trans-unit>
+        <trans-unit id="319" translate="yes" xml:space="preserve">
+          <source>For more information about DSNs, see <bpt id="p1">[</bpt>Using the ODBC Data Source Administrator<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=269895)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="320" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>User DSN<ept id="p1">**</ept> – This type is available only to the person who created the DSN.</source>
+        </trans-unit>
+        <trans-unit id="321" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>System DSN<ept id="p1">**</ept> – This type is available to all users of a computer.</source>
+        </trans-unit>
+        <trans-unit id="322" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>File DSN<ept id="p1">**</ept> – This type lets you connect to a data provider.</source>
+        </trans-unit>
+        <trans-unit id="323" translate="yes" xml:space="preserve">
+          <source>File DSNs can be shared by users who have the same drivers installed.</source>
+        </trans-unit>
+        <trans-unit id="324" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Validate<ept id="p1">**</ept> to make sure that the account that is used by the Data Import/Export Framework can connect to the DSN.</source>
+        </trans-unit>
+        <trans-unit id="325" translate="yes" xml:space="preserve">
+          <source>If the Data Import/Export Framework service account can connect, the validation icon turns green.</source>
+        </trans-unit>
+        <trans-unit id="326" translate="yes" xml:space="preserve">
+          <source>Close the form.</source>
+        </trans-unit>
+        <trans-unit id="327" translate="yes" xml:space="preserve">
+          <source>Configure a source data format for data from Microsoft Dynamics AX</source>
+        </trans-unit>
+        <trans-unit id="328" translate="yes" xml:space="preserve">
+          <source>This section describes how to configure a source data format for data from Microsoft Dynamics AX.</source>
+        </trans-unit>
+        <trans-unit id="329" translate="yes" xml:space="preserve">
+          <source>Open <bpt id="p1">**</bpt>Data Import/Export Framework<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Source data formats<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="330" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>New<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="331" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Type<ept id="p1">**</ept>, and then select <bpt id="p2">**</bpt>AX<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="332" translate="yes" xml:space="preserve">
+          <source>You must set the parameter values for <bpt id="p1">**</bpt>Dimensions<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Name sequence<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="333" translate="yes" xml:space="preserve">
+          <source>Set the following general parameters for dimensions.</source>
+        </trans-unit>
+        <trans-unit id="334" translate="yes" xml:space="preserve">
+          <source>Parameter</source>
+        </trans-unit>
+        <trans-unit id="335" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="336" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Dimension code<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="337" translate="yes" xml:space="preserve">
+          <source>Optional: Specify the list of financial dimensions that are part of the source file.</source>
+        </trans-unit>
+        <trans-unit id="338" translate="yes" xml:space="preserve">
+          <source>The codes for the financial dimensions are pulled from Microsoft Dynamics AX.</source>
+        </trans-unit>
+        <trans-unit id="339" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Chart of accounts delimiter<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="340" translate="yes" xml:space="preserve">
+          <source>The delimiter between financial dimension values.</source>
+        </trans-unit>
+        <trans-unit id="341" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Dimension format<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="342" translate="yes" xml:space="preserve">
+          <source>The predefined format of the dimension, based on the financial dimensions and delimiter that you selected.</source>
+        </trans-unit>
+        <trans-unit id="343" translate="yes" xml:space="preserve">
+          <source>Set the following value for name sequences.</source>
+        </trans-unit>
+        <trans-unit id="344" translate="yes" xml:space="preserve">
+          <source>Parameter</source>
+        </trans-unit>
+        <trans-unit id="345" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="346" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Name sequence<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="347" translate="yes" xml:space="preserve">
+          <source>Specify the default name sequence for parties that are created during migration.</source>
+        </trans-unit>
+        <trans-unit id="348" translate="yes" xml:space="preserve">
+          <source>Close the form.</source>
+        </trans-unit>
+        <trans-unit id="349" translate="yes" xml:space="preserve">
+          <source>Identify entities to add to a processing group</source>
+        </trans-unit>
+        <trans-unit id="350" translate="yes" xml:space="preserve">
+          <source>The entities that are included in a processing group are processed together.</source>
+        </trans-unit>
+        <trans-unit id="351" translate="yes" xml:space="preserve">
+          <source>You should include the following types of entities in a processing group:</source>
+        </trans-unit>
+        <trans-unit id="352" translate="yes" xml:space="preserve">
+          <source>Related entities that must be processed together</source>
+        </trans-unit>
+        <trans-unit id="353" translate="yes" xml:space="preserve">
+          <source>Entities that require that processing be performed in a specific sequence</source>
+        </trans-unit>
+        <trans-unit id="354" translate="yes" xml:space="preserve">
+          <source>Examples of entities that you might want to migrate together include <bpt id="p1">**</bpt>Customer<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Customer Address<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="355" translate="yes" xml:space="preserve">
+          <source>Create a new target entity</source>
+        </trans-unit>
+        <trans-unit id="356" translate="yes" xml:space="preserve">
+          <source>If data that you want to migrate does not map to one of the default target entities, you can create a new entity.</source>
+        </trans-unit>
+        <trans-unit id="357" translate="yes" xml:space="preserve">
+          <source>There are three types of entities that you can create:</source>
+        </trans-unit>
+        <trans-unit id="358" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Entity<ept id="p1">**</ept> – Maps a single entity to a staging table and a target table.</source>
+        </trans-unit>
+        <trans-unit id="359" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Table<ept id="p1">**</ept> – Lets you import data from a source to a target Microsoft Dynamics AX table directly, without using a staging table or applying any business logic.</source>
+        </trans-unit>
+        <trans-unit id="360" translate="yes" xml:space="preserve">
+          <source>For table entities, unlike other types of entities, data cannot be pushed from one source table to multiple target tables.</source>
+        </trans-unit>
+        <trans-unit id="361" translate="yes" xml:space="preserve">
+          <source>A table entity must be a one-to-one mapping from source to target.</source>
+        </trans-unit>
+        <trans-unit id="362" translate="yes" xml:space="preserve">
+          <source>Table entities should be used only with fairly simple reference data that requires no modification and is easily mapped to the target table.</source>
+        </trans-unit>
+        <trans-unit id="363" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Composite entity<ept id="p1">**</ept> – Lets you create one entity that is composed of several related entities.</source>
+        </trans-unit>
+        <trans-unit id="364" translate="yes" xml:space="preserve">
+          <source>An example of a composite entity is a combination of a sales order entity and a sales line entity.</source>
+        </trans-unit>
+        <trans-unit id="365" translate="yes" xml:space="preserve">
+          <source>You use a composite entity when you import from a source that contains data from multiple related tables in a single file.</source>
+        </trans-unit>
+        <trans-unit id="366" translate="yes" xml:space="preserve">
+          <source>Composite entities support only file data sources.</source>
+        </trans-unit>
+        <trans-unit id="367" translate="yes" xml:space="preserve">
+          <source>To add a new target entity, follow these steps.</source>
+        </trans-unit>
+        <trans-unit id="368" translate="yes" xml:space="preserve">
+          <source>Open <bpt id="p1">**</bpt>Data Import/Export Framework<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Target entities<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="369" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>New<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="370" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Entity type<ept id="p1">**</ept> field, select the type of entity to add.</source>
+        </trans-unit>
+        <trans-unit id="371" translate="yes" xml:space="preserve">
+          <source>For an entity of the entity type, select the entity in the first <bpt id="p1">**</bpt>Entity<ept id="p1">**</ept> field, select the application module that the entity belongs to in the <bpt id="p2">**</bpt>Application module<ept id="p2">**</ept> field, and provide a unique name in the second <bpt id="p3">**</bpt>Entity<ept id="p3">**</ept> field.</source>
+        </trans-unit>
+        <trans-unit id="372" translate="yes" xml:space="preserve">
+          <source>The other fields are populated automatically.</source>
+        </trans-unit>
+        <trans-unit id="373" translate="yes" xml:space="preserve">
+          <source>For an entity of the table type, select the application module that the entity belongs to in the <bpt id="p1">**</bpt>Application module<ept id="p1">**</ept> field, provide a unique name in the second <bpt id="p2">**</bpt>Entity<ept id="p2">**</ept> field, and specify the target table in the <bpt id="p3">**</bpt>Staging table<ept id="p3">**</ept> field.</source>
+        </trans-unit>
+        <trans-unit id="374" translate="yes" xml:space="preserve">
+          <source>Leave the <bpt id="p1">**</bpt>Entity class<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Target entity<ept id="p2">**</ept> fields blank.</source>
+        </trans-unit>
+        <trans-unit id="375" translate="yes" xml:space="preserve">
+          <source>For an entity of the composite entity type, select the application module that the entity belongs to in the <bpt id="p1">**</bpt>Application module<ept id="p1">**</ept> field, and provide a unique name in the second <bpt id="p2">**</bpt>Entity<ept id="p2">**</ept> field.</source>
+        </trans-unit>
+        <trans-unit id="376" translate="yes" xml:space="preserve">
+          <source>Leave the <bpt id="p1">**</bpt>Staging table<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Entity class<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>Target entity<ept id="p3">**</ept> fields blank.</source>
+        </trans-unit>
+        <trans-unit id="377" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Child entities<ept id="p1">**</ept> to identify the entities that make up the composite entity.You add one child entity for each entity in the system that should be the target for part of the composite data.</source>
+        </trans-unit>
+        <trans-unit id="378" translate="yes" xml:space="preserve">
+          <source>For example, you are importing composite sales information that contains both sales header data and sales line item data.</source>
+        </trans-unit>
+        <trans-unit id="379" translate="yes" xml:space="preserve">
+          <source>In this case, you add one child entity for <bpt id="p1">**</bpt>DMFSalesTableEntity<ept id="p1">**</ept> and one child entity for <bpt id="p2">**</bpt>DMFSalesLineEntity<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="380" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Target entities<ept id="p1">**</ept> form, click <bpt id="p2">**</bpt>New<ept id="p2">**</ept> to add the first child entity.</source>
+        </trans-unit>
+        <trans-unit id="381" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Application module<ept id="p1">**</ept> field, select the application module that the entity belongs to.</source>
+        </trans-unit>
+        <trans-unit id="382" translate="yes" xml:space="preserve">
+          <source>In the second <bpt id="p1">**</bpt>Entity<ept id="p1">**</ept> field, provide a unique name.</source>
+        </trans-unit>
+        <trans-unit id="383" translate="yes" xml:space="preserve">
+          <source>Select the related <bpt id="p1">**</bpt>Staging<ept id="p1">**</ept> table, <bpt id="p2">**</bpt>Entity<ept id="p2">**</ept> class, and <bpt id="p3">**</bpt>Target<ept id="p3">**</ept> entity values that belong to the target entity for part of the composite data.</source>
+        </trans-unit>
+        <trans-unit id="384" translate="yes" xml:space="preserve">
+          <source>Repeat steps 1 and 2 until you have added child entities for all targets of the composite data.</source>
+        </trans-unit>
+        <trans-unit id="385" translate="yes" xml:space="preserve">
+          <source>Then click <bpt id="p1">**</bpt>Close<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="386" translate="yes" xml:space="preserve">
+          <source>All child entities in each composite entity must include a <bpt id="p1">**</bpt>RowID<ept id="p1">**</ept> field.</source>
+        </trans-unit>
+        <trans-unit id="387" translate="yes" xml:space="preserve">
+          <source>By default, the following entities in the Data Import/Export Framework include a <bpt id="p1">**</bpt>RowID<ept id="p1">**</ept> field and can be used in composite entities: <bpt id="p2">**</bpt>DMFSalesTableEntity<ept id="p2">**</ept>, <bpt id="p3">**</bpt>DMFSalesLineEntity<ept id="p3">**</ept>, <bpt id="p4">**</bpt>DMFPurchTableEntity<ept id="p4">**</ept>, <bpt id="p5">**</bpt>DMFPurchLineEntity<ept id="p5">**</ept>, <bpt id="p6">**</bpt>DMFBOMEntity<ept id="p6">**</ept>, and <bpt id="p7">**</bpt>DMFBOMVersionEntity<ept id="p7">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="388" translate="yes" xml:space="preserve">
+          <source>Modify an entity’s target mapping</source>
+        </trans-unit>
+        <trans-unit id="389" translate="yes" xml:space="preserve">
+          <source>You can change the sequence in which fields in an entity are processed.</source>
+        </trans-unit>
+        <trans-unit id="390" translate="yes" xml:space="preserve">
+          <source>You can also enable a field to call the <bpt id="p1">**</bpt>validateField<ept id="p1">**</ept> method or the <bpt id="p2">**</bpt>modifiedField<ept id="p2">**</ept> method to check business logic when the field is processed.</source>
+        </trans-unit>
+        <trans-unit id="391" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Important:<ept id="p1">**</ept> Even if you set the <bpt id="p2">**</bpt>Call validate<ept id="p2">**</ept> field method or <bpt id="p3">**</bpt>Call modified<ept id="p3">**</ept> field method value for a field, you do not guarantee that a method will be run.</source>
+        </trans-unit>
+        <trans-unit id="392" translate="yes" xml:space="preserve">
+          <source>These values only <bpt id="p1">*</bpt>enable<ept id="p1">*</ept> the methods to be run.</source>
+        </trans-unit>
+        <trans-unit id="393" translate="yes" xml:space="preserve">
+          <source>However, the settings for the processing group determine whether a method is actually run for a specific operation.</source>
+        </trans-unit>
+        <trans-unit id="394" translate="yes" xml:space="preserve">
+          <source>Open <bpt id="p1">**</bpt>Data import export framework<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Target entities<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="395" translate="yes" xml:space="preserve">
+          <source>Select the target entity to modify, and then click <bpt id="p1">**</bpt>Modify target mapping<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="396" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Map staging to target<ept id="p1">**</ept> form opens.The default <bpt id="p2">**</bpt>Mapping visualization view<ept id="p2">**</ept> shows the staging fields, functions (entity classes that contain transformations), and target fields that are associated with the target entity.</source>
+        </trans-unit>
+        <trans-unit id="397" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Mapping details<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="398" translate="yes" xml:space="preserve">
+          <source>To modify the order in which a field is processed, change the <bpt id="p1">**</bpt>Sequence<ept id="p1">**</ept> value.</source>
+        </trans-unit>
+        <trans-unit id="399" translate="yes" xml:space="preserve">
+          <source>To enable a field to be run together with any business logic in the <bpt id="p1">**</bpt>validateField<ept id="p1">**</ept> method, select <bpt id="p2">**</bpt>Call validate Field method<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="400" translate="yes" xml:space="preserve">
+          <source>To enable a field to be run together with any business logic in the <bpt id="p1">**</bpt>modifiedField<ept id="p1">**</ept> method, select <bpt id="p2">**</bpt>Call modified Field method<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="401" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>Close<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="402" translate="yes" xml:space="preserve">
+          <source>Define a processing group</source>
+        </trans-unit>
+        <trans-unit id="403" translate="yes" xml:space="preserve">
+          <source>When you import data, we recommend that you have a sample data file for any entity that uses a file-based data source.</source>
+        </trans-unit>
+        <trans-unit id="404" translate="yes" xml:space="preserve">
+          <source>If you do not already have a sample file, you can create one when you add the entity to the processing group.</source>
+        </trans-unit>
+        <trans-unit id="405" translate="yes" xml:space="preserve">
+          <source>Open <bpt id="p1">**</bpt>Data import export framework<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Common<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Processing group<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="406" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>New<ept id="p1">**</ept> to create a new processing group, and then enter a name and description.</source>
+        </trans-unit>
+        <trans-unit id="407" translate="yes" xml:space="preserve">
+          <source>Select the processing group, and then click <bpt id="p1">**</bpt>Entities<ept id="p1">**</ept> to add entities to it.</source>
+        </trans-unit>
+        <trans-unit id="408" translate="yes" xml:space="preserve">
+          <source>If you are adding an entity for import, the entity uses a file-based data source, and you have sample data, follow these steps:</source>
+        </trans-unit>
+        <trans-unit id="409" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>New<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="410" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Entity<ept id="p1">**</ept> list, select an entity.</source>
+        </trans-unit>
+        <trans-unit id="411" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Source data format<ept id="p1">**</ept> field, select the format of the source file.</source>
+        </trans-unit>
+        <trans-unit id="412" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Sample file path<ept id="p1">**</ept> field, enter the location of the sample file.</source>
+        </trans-unit>
+        <trans-unit id="413" translate="yes" xml:space="preserve">
+          <source>Optional: If the source file is in Excel format, in the <bpt id="p1">**</bpt>Sample file path<ept id="p1">**</ept> field, specify the worksheet that contains the sample data.</source>
+        </trans-unit>
+        <trans-unit id="414" translate="yes" xml:space="preserve">
+          <source>If you are adding an entity for import and the entity uses a file-based data source, but you do not have sample data, follow these steps:</source>
+        </trans-unit>
+        <trans-unit id="415" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>New<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="416" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Entity<ept id="p1">**</ept> list, select an entity.</source>
+        </trans-unit>
+        <trans-unit id="417" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Source data format<ept id="p1">**</ept> field, select the format of the source file.</source>
+        </trans-unit>
+        <trans-unit id="418" translate="yes" xml:space="preserve">
+          <source>If you are working with a fixed-width format, click <bpt id="p1">**</bpt>Specify file format<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="419" translate="yes" xml:space="preserve">
+          <source>If you are working with any other file-based format, click <bpt id="p1">**</bpt>Generate source file<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="420" translate="yes" xml:space="preserve">
+          <source>On the second page of the wizard, select the fields that must be in the data source file.</source>
+        </trans-unit>
+        <trans-unit id="421" translate="yes" xml:space="preserve">
+          <source>If you are using an XML data source, in the <bpt id="p1">**</bpt>XML type<ept id="p1">**</ept> field, select <bpt id="p2">**</bpt>XML<ept id="p2">**</ept> or <bpt id="p3">**</bpt>XSD<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="422" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Generate sample file<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="423" translate="yes" xml:space="preserve">
+          <source>If you are using an XML data source and selected an XSD XML type, a schema file is generated but not opened, and the path is displayed.</source>
+        </trans-unit>
+        <trans-unit id="424" translate="yes" xml:space="preserve">
+          <source>Otherwise, the sample file is opened in Notepad or Excel, depending on the source data format, and contains the appropriate structure.</source>
+        </trans-unit>
+        <trans-unit id="425" translate="yes" xml:space="preserve">
+          <source>Add some sample data.</source>
+        </trans-unit>
+        <trans-unit id="426" translate="yes" xml:space="preserve">
+          <source>To save the sample file, click <bpt id="p1">**</bpt>File<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Save as<ept id="p2">**</ept>, and save the file to a location of your choice.</source>
+        </trans-unit>
+        <trans-unit id="427" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Finish<ept id="p1">**</ept> to close the wizard.</source>
+        </trans-unit>
+        <trans-unit id="428" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Sample file path<ept id="p1">**</ept> field, enter the location of the sample file that you just created.</source>
+        </trans-unit>
+        <trans-unit id="429" translate="yes" xml:space="preserve">
+          <source>If you are adding an entity for export to a file, follow these steps:</source>
+        </trans-unit>
+        <trans-unit id="430" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>New<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="431" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Entity list<ept id="p1">**</ept>, select an entity.</source>
+        </trans-unit>
+        <trans-unit id="432" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Source data format<ept id="p1">**</ept> field, select the format of the source file.</source>
+        </trans-unit>
+        <trans-unit id="433" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Sample file path<ept id="p1">**</ept> field, enter the location of a sample file.</source>
+        </trans-unit>
+        <trans-unit id="434" translate="yes" xml:space="preserve">
+          <source>This file is used to determine the format of the exported data.</source>
+        </trans-unit>
+        <trans-unit id="435" translate="yes" xml:space="preserve">
+          <source>Only the structure of the file is used.</source>
+        </trans-unit>
+        <trans-unit id="436" translate="yes" xml:space="preserve">
+          <source>Any data that the file contains is ignored.</source>
+        </trans-unit>
+        <trans-unit id="437" translate="yes" xml:space="preserve">
+          <source>If you are adding an entity for import that uses an ODBC data source, follow these steps:</source>
+        </trans-unit>
+        <trans-unit id="438" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>New<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="439" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Entity<ept id="p1">**</ept> list, select an entity.</source>
+        </trans-unit>
+        <trans-unit id="440" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Source data format<ept id="p1">**</ept> field, select the format of the source file.</source>
+        </trans-unit>
+        <trans-unit id="441" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Sample file path<ept id="p1">**</ept> field, enter a SQL query to select the data that you want from the data source.</source>
+        </trans-unit>
+        <trans-unit id="442" translate="yes" xml:space="preserve">
+          <source>For example, to retrieve customer data from another database, enter <bpt id="p1">**</bpt>select <ph id="ph1">\*</ph> from Customers<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="443" translate="yes" xml:space="preserve">
+          <source>If you are adding an entity for import or export that uses a Microsoft Dynamics AX data source, follow these steps:</source>
+        </trans-unit>
+        <trans-unit id="444" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>New<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="445" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Entity<ept id="p1">**</ept> list, select an entity.</source>
+        </trans-unit>
+        <trans-unit id="446" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Source data format<ept id="p1">**</ept> field, select the format of the source file.</source>
+        </trans-unit>
+        <trans-unit id="447" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Generate source mapping<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="448" translate="yes" xml:space="preserve">
+          <source>Optional: For entities where you want to enable data conversion logic to run in those methods, select <bpt id="p1">**</bpt>Sample file path<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="449" translate="yes" xml:space="preserve">
+          <source>Optional: For entities where you want to enable data validation, select <bpt id="p1">**</bpt>Sample file path<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="450" translate="yes" xml:space="preserve">
+          <source>Optional: To change the order in which entities are processed, modify the Sequence values.</source>
+        </trans-unit>
+        <trans-unit id="451" translate="yes" xml:space="preserve">
+          <source>Typically, you change the processing order only when one entity depends on another.</source>
+        </trans-unit>
+        <trans-unit id="452" translate="yes" xml:space="preserve">
+          <source>For example, Customers should be processed before Customer Addresses.</source>
+        </trans-unit>
+        <trans-unit id="453" translate="yes" xml:space="preserve">
+          <source>When you have finished, click <bpt id="p1">**</bpt>Close<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="454" translate="yes" xml:space="preserve">
+          <source>Optional: Change the source-to-staging mapping for an entity</source>
+        </trans-unit>
+        <trans-unit id="455" translate="yes" xml:space="preserve">
+          <source>After you have associated an entity with a processing group, you should validate that the entity is mapped correctly to the staging tables.</source>
+        </trans-unit>
+        <trans-unit id="456" translate="yes" xml:space="preserve">
+          <source>Make any changes that are required.</source>
+        </trans-unit>
+        <trans-unit id="457" translate="yes" xml:space="preserve">
+          <source>The following changes are typically made to a source-to-staging mapping:</source>
+        </trans-unit>
+        <trans-unit id="458" translate="yes" xml:space="preserve">
+          <source>Add default strings or numbers as new column values when data is imported.</source>
+        </trans-unit>
+        <trans-unit id="459" translate="yes" xml:space="preserve">
+          <source>Convert values during import.</source>
+        </trans-unit>
+        <trans-unit id="460" translate="yes" xml:space="preserve">
+          <source>Add default strings and numbers during the source-to-staging mapping</source>
+        </trans-unit>
+        <trans-unit id="461" translate="yes" xml:space="preserve">
+          <source>Open <bpt id="p1">**</bpt>Data import export framework<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Common<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Processing group<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Entities<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="462" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Modify source mapping<ept id="p1">**</ept>.The default Mapping visualization view lets you quickly see which source fields are mapped to which staging fields.</source>
+        </trans-unit>
+        <trans-unit id="463" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Mapping details<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="464" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Source field<ept id="p1">**</ept> field, select a field, and then select the staging field that the field applies to.</source>
+        </trans-unit>
+        <trans-unit id="465" translate="yes" xml:space="preserve">
+          <source>To add a default value for the field, follow these steps:</source>
+        </trans-unit>
+        <trans-unit id="466" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Auto default<ept id="p1">**</ept> for the field.</source>
+        </trans-unit>
+        <trans-unit id="467" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Default value<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="468" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Staging value<ept id="p1">**</ept> field, enter a value, and then click <bpt id="p2">**</bpt>OK<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="469" translate="yes" xml:space="preserve">
+          <source>To automatically generate a value for a field, based on a defined number sequence, select <bpt id="p1">**</bpt>Auto generate<ept id="p1">**</ept> for the field.</source>
+        </trans-unit>
+        <trans-unit id="470" translate="yes" xml:space="preserve">
+          <source>You can also use a query to set criteria that are used to assign numbers to groups of values.</source>
+        </trans-unit>
+        <trans-unit id="471" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Query criteria<ept id="p1">**</ept>, select the field to use to create groups that numbers can be assigned numbers to, and then close the <bpt id="p2">**</bpt>Query criteria<ept id="p2">**</ept> form.</source>
+        </trans-unit>
+        <trans-unit id="472" translate="yes" xml:space="preserve">
+          <source>Close the <bpt id="p1">**</bpt>Map source to staging<ept id="p1">**</ept> form.</source>
+        </trans-unit>
+        <trans-unit id="473" translate="yes" xml:space="preserve">
+          <source>Convert values during source-to-staging mapping</source>
+        </trans-unit>
+        <trans-unit id="474" translate="yes" xml:space="preserve">
+          <source>Open <bpt id="p1">**</bpt>Data import export framework<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Common<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Processing group<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Entities<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="475" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Modify source mapping<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="476" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Mapping details<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="477" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Source field<ept id="p1">**</ept> field, select a field, and then select the staging field that the field applies to.</source>
+        </trans-unit>
+        <trans-unit id="478" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Conversion<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="479" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Define Conversion values<ept id="p1">**</ept> form, in the <bpt id="p2">**</bpt>Source value<ept id="p2">**</ept> and <bpt id="p3">**</bpt>Staging value<ept id="p3">**</ept> fields, enter values, and then click <bpt id="p4">**</bpt>Close<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="480" translate="yes" xml:space="preserve">
+          <source>Close the <bpt id="p1">**</bpt>Map source to staging<ept id="p1">**</ept> form.</source>
+        </trans-unit>
+        <trans-unit id="481" translate="yes" xml:space="preserve">
+          <source>Optional: Change the staging-to-target mapping for an entity</source>
+        </trans-unit>
+        <trans-unit id="482" translate="yes" xml:space="preserve">
+          <source>By default, a staging-to-target mapping is generated.</source>
+        </trans-unit>
+        <trans-unit id="483" translate="yes" xml:space="preserve">
+          <source>If you determine that the staging-to-target mapping is incorrect, you can manually update it in the <bpt id="p1">**</bpt>Mapping details<ept id="p1">**</ept> form.</source>
+        </trans-unit>
+        <trans-unit id="484" translate="yes" xml:space="preserve">
+          <source>Define security for processing groups</source>
+        </trans-unit>
+        <trans-unit id="485" translate="yes" xml:space="preserve">
+          <source>You can set security for processing groups to define which users or roles can run a processing group.</source>
+        </trans-unit>
+        <trans-unit id="486" translate="yes" xml:space="preserve">
+          <source>You can set a processing group to work for a single company instead of all companies.</source>
+        </trans-unit>
+        <trans-unit id="487" translate="yes" xml:space="preserve">
+          <source>You can also disable a processing group from being run, without deleting it.</source>
+        </trans-unit>
+        <trans-unit id="488" translate="yes" xml:space="preserve">
+          <source>You do not have to set security for processing groups.</source>
+        </trans-unit>
+        <trans-unit id="489" translate="yes" xml:space="preserve">
+          <source>However, by default, all users have access to the data in processing groups.</source>
+        </trans-unit>
+        <trans-unit id="490" translate="yes" xml:space="preserve">
+          <source>Set security for a processing group</source>
+        </trans-unit>
+        <trans-unit id="491" translate="yes" xml:space="preserve">
+          <source>After you have created your processing group, open <bpt id="p1">**</bpt>Data import export framework<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Setup of roles for processing group<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="492" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>New<ept id="p1">**</ept> to set security.</source>
+        </trans-unit>
+        <trans-unit id="493" translate="yes" xml:space="preserve">
+          <source>Enter values for the following fields:</source>
+        </trans-unit>
+        <trans-unit id="494" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Apply processing group to<ept id="p1">**</ept> field, select <bpt id="p2">**</bpt>All<ept id="p2">**</ept> to apply security to all processing groups or <bpt id="p3">**</bpt>Table<ept id="p3">**</ept> to apply security to a single processing group.</source>
+        </trans-unit>
+        <trans-unit id="495" translate="yes" xml:space="preserve">
+          <source>If you selected <bpt id="p1">**</bpt>Table<ept id="p1">**</ept>, under <bpt id="p2">**</bpt>Processing group<ept id="p2">**</ept>, select the processing group to help secure.</source>
+        </trans-unit>
+        <trans-unit id="496" translate="yes" xml:space="preserve">
+          <source>Optional: To help secure a specific entity, in the <bpt id="p1">**</bpt>Entity<ept id="p1">**</ept> field, select the entity.</source>
+        </trans-unit>
+        <trans-unit id="497" translate="yes" xml:space="preserve">
+          <source>This option is useful if you want different levels of security for entities in the same processing group.</source>
+        </trans-unit>
+        <trans-unit id="498" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Grant access to<ept id="p1">**</ept> field, select whether to grant access to a role, a user, or all users.</source>
+        </trans-unit>
+        <trans-unit id="499" translate="yes" xml:space="preserve">
+          <source>If you selected to grant access by role, in the <bpt id="p1">**</bpt>Role name<ept id="p1">**</ept> field, select the role to which to grant access to run the processing group.</source>
+        </trans-unit>
+        <trans-unit id="500" translate="yes" xml:space="preserve">
+          <source>If you selected to grant access by user, in the <bpt id="p1">**</bpt>User name<ept id="p1">**</ept> field, select the user to which to grant access to run the processing group.</source>
+        </trans-unit>
+        <trans-unit id="501" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Close<ept id="p1">**</ept> to save your changes.</source>
+        </trans-unit>
+        <trans-unit id="502" translate="yes" xml:space="preserve">
+          <source>Disable a processing group</source>
+        </trans-unit>
+        <trans-unit id="503" translate="yes" xml:space="preserve">
+          <source>Open <bpt id="p1">**</bpt>Data import export framework<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Setup of roles for processing group<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="504" translate="yes" xml:space="preserve">
+          <source>Select a processing group, click <bpt id="p1">**</bpt>Disable<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>Close<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="505" translate="yes" xml:space="preserve">
+          <source>Set a processing group to run against a single company</source>
+        </trans-unit>
+        <trans-unit id="506" translate="yes" xml:space="preserve">
+          <source>By default, all processing groups can be run against all companies.</source>
+        </trans-unit>
+        <trans-unit id="507" translate="yes" xml:space="preserve">
+          <source>To restrict a processing group so that it runs on a single company, follow these steps.</source>
+        </trans-unit>
+        <trans-unit id="508" translate="yes" xml:space="preserve">
+          <source>Open <bpt id="p1">**</bpt>Data import export framework<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Common<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Processing group<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="509" translate="yes" xml:space="preserve">
+          <source>Select a processing group, expand the menu, and then click <bpt id="p1">**</bpt>Company<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="510" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Company<ept id="p1">**</ept> form, select the first row, click <bpt id="p2">**</bpt>Delete<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>New<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="511" translate="yes" xml:space="preserve">
+          <source>Select the company to restrict the processing group to, and then click <bpt id="p1">**</bpt>Close<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="512" translate="yes" xml:space="preserve">
+          <source>Preview errors before processing</source>
+        </trans-unit>
+        <trans-unit id="513" translate="yes" xml:space="preserve">
+          <source>Before you run a job to copy data from source to staging, you can preview the process to determine whether errors will be generated.</source>
+        </trans-unit>
+        <trans-unit id="514" translate="yes" xml:space="preserve">
+          <source>Open <bpt id="p1">**</bpt>Data import export framework<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Common<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Processing group<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Entities<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="515" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Select entities for processing group<ept id="p1">**</ept> form, click <bpt id="p2">**</bpt>Preview source file<ept id="p2">**</ept>.The <bpt id="p3">**</bpt>Preview<ept id="p3">**</ept> field lists the rows that can be processed.</source>
+        </trans-unit>
+        <trans-unit id="516" translate="yes" xml:space="preserve">
+          <source>An Infolog displays the number of rows that have errors.</source>
+        </trans-unit>
+        <trans-unit id="517" translate="yes" xml:space="preserve">
+          <source>To view the errors, either click <bpt id="p1">**</bpt>Log<ept id="p1">**</ept> in the Infolog, or click <bpt id="p2">**</bpt>Preview error details<ept id="p2">**</ept> in the <bpt id="p3">**</bpt>Select entities for processing group<ept id="p3">**</ept> form.The <bpt id="p4">**</bpt>Log text<ept id="p4">**</ept> field lists any rows that could not be processed.</source>
+        </trans-unit>
+        <trans-unit id="518" translate="yes" xml:space="preserve">
+          <source>Process export data</source>
+        </trans-unit>
+        <trans-unit id="519" translate="yes" xml:space="preserve">
+          <source>You can export data so that it can be used in another Microsoft Dynamics AX instance.</source>
+        </trans-unit>
+        <trans-unit id="520" translate="yes" xml:space="preserve">
+          <source>Alternatively, you can export data to a flat file so that it can be imported into another system.</source>
+        </trans-unit>
+        <trans-unit id="521" translate="yes" xml:space="preserve">
+          <source>You can also export a processing group or the staging data from a processing group.</source>
+        </trans-unit>
+        <trans-unit id="522" translate="yes" xml:space="preserve">
+          <source>Export to Microsoft Dynamics AX</source>
+        </trans-unit>
+        <trans-unit id="523" translate="yes" xml:space="preserve">
+          <source>To export data to Microsoft Dynamics AX, follow these steps.</source>
+        </trans-unit>
+        <trans-unit id="524" translate="yes" xml:space="preserve">
+          <source>Open <bpt id="p1">**</bpt>Data import export framework<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Common<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Processing group<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="525" translate="yes" xml:space="preserve">
+          <source>Select the processing group to work with.</source>
+        </trans-unit>
+        <trans-unit id="526" translate="yes" xml:space="preserve">
+          <source>The processing group must contain only entities that have a source data format type of <bpt id="p1">**</bpt>AX<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="527" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Get staging data<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="528" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Create a job ID for staging data job<ept id="p1">**</ept> form, click <bpt id="p2">**</bpt>OK<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="529" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Staging data execution<ept id="p1">**</ept> form, click <bpt id="p2">**</bpt>Run<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="530" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Staging<ept id="p1">**</ept> form, change any job execution parameters that require changes, and then click <bpt id="p2">**</bpt>OK<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="531" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Export to AX<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="532" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Export options<ept id="p1">**</ept> form, enter the path and name of the .dat file to create, and then click <bpt id="p2">**</bpt>OK<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="533" translate="yes" xml:space="preserve">
+          <source>Export to a file</source>
+        </trans-unit>
+        <trans-unit id="534" translate="yes" xml:space="preserve">
+          <source>To export data to a file, follow these steps.</source>
+        </trans-unit>
+        <trans-unit id="535" translate="yes" xml:space="preserve">
+          <source>Open <bpt id="p1">**</bpt>Data import export framework<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Common<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Processing group<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="536" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>New<ept id="p1">**</ept> to create a new processing group.</source>
+        </trans-unit>
+        <trans-unit id="537" translate="yes" xml:space="preserve">
+          <source>Select the new processing group, and then click <bpt id="p1">**</bpt>Entities<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="538" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Select entities for processing group<ept id="p1">**</ept> form, add an entity that have a source data format type of text file.</source>
+        </trans-unit>
+        <trans-unit id="539" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Sample file path<ept id="p1">**</ept> field, enter the location of a sample file.</source>
+        </trans-unit>
+        <trans-unit id="540" translate="yes" xml:space="preserve">
+          <source>This file is used to determine the format of the exported data.</source>
+        </trans-unit>
+        <trans-unit id="541" translate="yes" xml:space="preserve">
+          <source>Only the structure of the file is used.</source>
+        </trans-unit>
+        <trans-unit id="542" translate="yes" xml:space="preserve">
+          <source>Any data that the file contains is ignored.</source>
+        </trans-unit>
+        <trans-unit id="543" translate="yes" xml:space="preserve">
+          <source>The format of this file must match the structure of the Microsoft Dynamics AX data that you are exporting.</source>
+        </trans-unit>
+        <trans-unit id="544" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> You can use the demo files that are provided with the Data Import/Export Framework as sample files.</source>
+        </trans-unit>
+        <trans-unit id="545" translate="yes" xml:space="preserve">
+          <source>For example, to export the <bpt id="p1">**</bpt>Barcode setup entity<ept id="p1">**</ept> to a file, you can use the <bpt id="p2">**</bpt>BarcodeSetupEntity.txt<ept id="p2">**</ept> file to provide the format for the export data file.</source>
+        </trans-unit>
+        <trans-unit id="546" translate="yes" xml:space="preserve">
+          <source>For more information about the demo files, see <bpt id="p1">[</bpt>Demo files for the Data import/export framework (DIXF, DMF)<ept id="p1">](demo-files-dixf.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="547" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Generate source mapping<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="548" translate="yes" xml:space="preserve">
+          <source>Repeat steps 3 through 5 to add other entities as required.</source>
+        </trans-unit>
+        <trans-unit id="549" translate="yes" xml:space="preserve">
+          <source>When you have finished, click <bpt id="p1">**</bpt>Close<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="550" translate="yes" xml:space="preserve">
+          <source>Open <bpt id="p1">**</bpt>Data import export framework<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Common<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Processing group<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="551" translate="yes" xml:space="preserve">
+          <source>Select the processing group that should provide Microsoft Dynamics AX data.</source>
+        </trans-unit>
+        <trans-unit id="552" translate="yes" xml:space="preserve">
+          <source>All entities in the processing group must map to the file formats that you created in the other processing group and must have a source data format type of <bpt id="p1">**</bpt>AX<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="553" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Get staging data<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="554" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Create a job ID for staging data job<ept id="p1">**</ept> form, record the job ID, and then click <bpt id="p2">**</bpt>OK<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="555" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Staging data execution<ept id="p1">**</ept> form, click <bpt id="p2">**</bpt>Run<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="556" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Staging<ept id="p1">**</ept> form, change any job execution parameters that you want to change, and then click <bpt id="p2">**</bpt>OK<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="557" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Export to file<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="558" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Create a job ID for staging data job<ept id="p1">**</ept> form, select the job ID of the staging data job, and then click <bpt id="p2">**</bpt>OK<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="559" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Entity export details<ept id="p1">**</ept> form, in the <bpt id="p2">**</bpt>Processing group<ept id="p2">**</ept> field, select the processing group that contains the text file formats.</source>
+        </trans-unit>
+        <trans-unit id="560" translate="yes" xml:space="preserve">
+          <source>(You created this processing group in steps 1 through 6 of this procedure.)</source>
+        </trans-unit>
+        <trans-unit id="561" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Run<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="562" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Export to flat file<ept id="p1">**</ept> form, change any job execution parameters that you want to change, and then click <bpt id="p2">**</bpt>OK<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="563" translate="yes" xml:space="preserve">
+          <source>Export a processing group</source>
+        </trans-unit>
+        <trans-unit id="564" translate="yes" xml:space="preserve">
+          <source>If you run the Data Import/Export Framework in multiple environments, you might want to export a processing group.</source>
+        </trans-unit>
+        <trans-unit id="565" translate="yes" xml:space="preserve">
+          <source>When you export a processing group, you export the entities in the group, the mappings that you have set for the entities, and the staging data.</source>
+        </trans-unit>
+        <trans-unit id="566" translate="yes" xml:space="preserve">
+          <source>Open <bpt id="p1">**</bpt>Data import export framework<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Common<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Processing group<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="567" translate="yes" xml:space="preserve">
+          <source>Select a processing group, and then click <bpt id="p1">**</bpt>Export to AX<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="568" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Export options<ept id="p1">**</ept> form, enter the path and name of the .dat file to create, and then click <bpt id="p2">**</bpt>OK<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="569" translate="yes" xml:space="preserve">
+          <source>Export staging data</source>
+        </trans-unit>
+        <trans-unit id="570" translate="yes" xml:space="preserve">
+          <source>If you run the Data Import/Export Framework in multiple environments, you might want to export staging data.</source>
+        </trans-unit>
+        <trans-unit id="571" translate="yes" xml:space="preserve">
+          <source>When you export staging data, you create a file of staging data that you can import into another environment.</source>
+        </trans-unit>
+        <trans-unit id="572" translate="yes" xml:space="preserve">
+          <source>Open <bpt id="p1">**</bpt>Data import export framework<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Common<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Processing group<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="573" translate="yes" xml:space="preserve">
+          <source>Select a processing group.</source>
+        </trans-unit>
+        <trans-unit id="574" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Execution history<ept id="p1">**</ept>, click <bpt id="p2">**</bpt>View staging data<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>Export to file<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="575" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Export to flat file<ept id="p1">**</ept> form, on the <bpt id="p2">**</bpt>General<ept id="p2">**</ept> tab, select a processing group.</source>
+        </trans-unit>
+        <trans-unit id="576" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Batch<ept id="p1">**</ept> tab, change any job execution parameters that you want to change, and then click <bpt id="p2">**</bpt>OK<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="577" translate="yes" xml:space="preserve">
+          <source>Process import data</source>
+        </trans-unit>
+        <trans-unit id="578" translate="yes" xml:space="preserve">
+          <source>This section describes how to import data by copying it from source to staging and then from staging to target.</source>
+        </trans-unit>
+        <trans-unit id="579" translate="yes" xml:space="preserve">
+          <source>Copy data from source to staging</source>
+        </trans-unit>
+        <trans-unit id="580" translate="yes" xml:space="preserve">
+          <source>You can copy data from source to staging, one processing group at a time.</source>
+        </trans-unit>
+        <trans-unit id="581" translate="yes" xml:space="preserve">
+          <source>Open <bpt id="p1">**</bpt>Data import export framework<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Common<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Processing group<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="582" translate="yes" xml:space="preserve">
+          <source>Select the processing group to work with.</source>
+        </trans-unit>
+        <trans-unit id="583" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Get staging data<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="584" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Create a job ID for the staging data job<ept id="p1">**</ept> dialog box opens.</source>
+        </trans-unit>
+        <trans-unit id="585" translate="yes" xml:space="preserve">
+          <source>By default, an ID is generated for the job.</source>
+        </trans-unit>
+        <trans-unit id="586" translate="yes" xml:space="preserve">
+          <source>You can optionally modify the ID and add a description.</source>
+        </trans-unit>
+        <trans-unit id="587" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="588" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Staging data execution<ept id="p1">**</ept> dialog box opens.</source>
+        </trans-unit>
+        <trans-unit id="589" translate="yes" xml:space="preserve">
+          <source>Under <bpt id="p1">**</bpt>Entity details<ept id="p1">**</ept>, enter the path of the file that contains all the source data, not just sample data.</source>
+        </trans-unit>
+        <trans-unit id="590" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Run<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="591" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Get data from source to staging<ept id="p1">**</ept> dialog box, select <bpt id="p2">**</bpt>Batch processing<ept id="p2">**</ept> to run the job as part of a batch, or click <bpt id="p3">**</bpt>OK<ept id="p3">**</ept> to run the job immediately.</source>
+        </trans-unit>
+        <trans-unit id="592" translate="yes" xml:space="preserve">
+          <source>The source data is copied to the staging tables.</source>
+        </trans-unit>
+        <trans-unit id="593" translate="yes" xml:space="preserve">
+          <source>Validate the data in staging</source>
+        </trans-unit>
+        <trans-unit id="594" translate="yes" xml:space="preserve">
+          <source>After the job has finished running, follow these steps to validate the data in staging.</source>
+        </trans-unit>
+        <trans-unit id="595" translate="yes" xml:space="preserve">
+          <source>Open <bpt id="p1">**</bpt>Data import export framework<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Common<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Processing group<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="596" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Execution history<ept id="p1">**</ept>, and then select the job that ran.</source>
+        </trans-unit>
+        <trans-unit id="597" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>View staging data<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="598" translate="yes" xml:space="preserve">
+          <source>Review the staging data to validate that it matches the source file.</source>
+        </trans-unit>
+        <trans-unit id="599" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Validate<ept id="p1">**</ept> to verify that all the related reference data is correct and present in the system.</source>
+        </trans-unit>
+        <trans-unit id="600" translate="yes" xml:space="preserve">
+          <source>Optional: Modify the staging data if changes are required.</source>
+        </trans-unit>
+        <trans-unit id="601" translate="yes" xml:space="preserve">
+          <source>Process data from staging to target</source>
+        </trans-unit>
+        <trans-unit id="602" translate="yes" xml:space="preserve">
+          <source>You can copy data from staging to target, one processing group at a time.</source>
+        </trans-unit>
+        <trans-unit id="603" translate="yes" xml:space="preserve">
+          <source>Open <bpt id="p1">**</bpt>Data import export framework<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Common<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Processing group<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="604" translate="yes" xml:space="preserve">
+          <source>Select the processing group to work with.</source>
+        </trans-unit>
+        <trans-unit id="605" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Copy data to target<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="606" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Select a job ID to run<ept id="p1">**</ept> dialog box opens.</source>
+        </trans-unit>
+        <trans-unit id="607" translate="yes" xml:space="preserve">
+          <source>Select a job.</source>
+        </trans-unit>
+        <trans-unit id="608" translate="yes" xml:space="preserve">
+          <source>By default, the processing group is run for all rows.</source>
+        </trans-unit>
+        <trans-unit id="609" translate="yes" xml:space="preserve">
+          <source>To limit the rows, in the <bpt id="p1">**</bpt>Run for<ept id="p1">**</ept> field, select <bpt id="p2">**</bpt>Criteria<ept id="p2">**</ept>, and then select which rows to run the job for.</source>
+        </trans-unit>
+        <trans-unit id="610" translate="yes" xml:space="preserve">
+          <source>You can select <bpt id="p1">**</bpt>Rows with previous errors<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Rows selected by the user<ept id="p2">**</ept>, or both.</source>
+        </trans-unit>
+        <trans-unit id="611" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="612" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Target data execution<ept id="p1">**</ept> form opens.</source>
+        </trans-unit>
+        <trans-unit id="613" translate="yes" xml:space="preserve">
+          <source>To improve performance, consider setting the <bpt id="p1">**</bpt>Number of batch tasks<ept id="p1">**</ept> field.</source>
+        </trans-unit>
+        <trans-unit id="614" translate="yes" xml:space="preserve">
+          <source>The total number of records is then split into the specified number of batch tasks, and those tasks are run at the same time, if resources are available.</source>
+        </trans-unit>
+        <trans-unit id="615" translate="yes" xml:space="preserve">
+          <source>To run the job immediately, click <bpt id="p1">**</bpt>Run<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="616" translate="yes" xml:space="preserve">
+          <source>To run the job as part of a batch, click <bpt id="p1">**</bpt>Batch processing<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="617" translate="yes" xml:space="preserve">
+          <source>The data is copied to the target entities.</source>
+        </trans-unit>
+        <trans-unit id="618" translate="yes" xml:space="preserve">
+          <source>Validate the data in target</source>
+        </trans-unit>
+        <trans-unit id="619" translate="yes" xml:space="preserve">
+          <source>After the job has finished running, follow these steps to validate the data in target.</source>
+        </trans-unit>
+        <trans-unit id="620" translate="yes" xml:space="preserve">
+          <source>Open <bpt id="p1">**</bpt>Data import export framework<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Common<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Processing group<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="621" translate="yes" xml:space="preserve">
+          <source>Click **Execution history **and review the status of the job.</source>
+        </trans-unit>
+        <trans-unit id="622" translate="yes" xml:space="preserve">
+          <source>Clean up staging data</source>
+        </trans-unit>
+        <trans-unit id="623" translate="yes" xml:space="preserve">
+          <source>After you have finished migrating your data, you should clean up the staging tables.</source>
+        </trans-unit>
+        <trans-unit id="624" translate="yes" xml:space="preserve">
+          <source>Open <bpt id="p1">**</bpt>Data import export framework<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Periodic<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Staging cleanup<ept id="p3">**</ept> to identify data that you no longer require.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

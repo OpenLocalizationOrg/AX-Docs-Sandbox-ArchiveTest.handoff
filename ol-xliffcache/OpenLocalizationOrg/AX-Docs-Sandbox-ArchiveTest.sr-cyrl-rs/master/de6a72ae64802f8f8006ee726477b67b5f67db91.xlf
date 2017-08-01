@@ -1,0 +1,480 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">de6a72ae64802f8f8006ee726477b67b5f67db91</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\analytics\configure-power-bi-integration.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">0b082e01e6469e1c4d18a90970b7d07093e47dcc</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ec730f5cdd7f4ac4570ac3d6fd52614a1f848ccd</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Configure Power BI integration for workspaces</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This tutorial describes how to configure a new Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, environment to support integration with PowerBI.com.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This configuration enables workspaces to show the Power BI control and lets users pin visualizations to a workspace.</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Configure Power BI integration for workspaces</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Overview</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, lets users pin tiles and reports from their own PowerBI.com account to workspaces.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>This functionality requires a one-time configuration of your environment.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>An administrator must do this step to enable Finance and Operations and Microsoft Power BI to communicate and authenticate correctly.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Both Finance and Operations and PowerBI.com are cloud-based services.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>For a Finance and Operations workspace to show a Power BI tile, the Finance and Operations server must contact the Power BI service on behalf of a user and access the visualization.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>It must then redraw the visualization in the Finance and Operations workspace.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>The fact that the Finance and Operations server contacts the Power BI service “on behalf of a user” is important.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>When a user, such as <ph id="ph1">`Tim@ContosoAX7.onmicrosoft.com`</ph>, contacts the PowerBI.com service, Power BI should show only tiles and reports from Tim’s own PowerBI.com account.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>By completing this configuration step, you enable Finance and Operations to contact the PowerBI.com service on behalf of a user.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>The flow between Finance and Operations and the Power BI service is based on the OAuth 2.0 Authorization Code Grant Flow, which is discussed later in this topic.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Things you must know before you start</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>You must be a system administrator in Finance and Operations.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>This option is available on the <bpt id="p1">**</bpt>System administration<ept id="p1">**</ept> menu.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>You must have a PowerBI.com account.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>You can create a trial account if you don't have an account.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>(A Pro license isn't required for this configuration step.)</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>You must have at least one dashboard and one report in your Power BI account.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Although the dashboard and report aren't required for this configuration step, you might not be able to validate the configuration if you don't have any content in your PowerBI.com account.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>You must be an administrator for your Microsoft Azure Active Directory (Azure AD) account.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>If you aren't the administrator, an administrative user must perform this configuration step for you.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>The Azure AD domain that is configured for Finance and Operations must be the same domain that you used for your PowerBI.com account.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>For an example, if you provisioned Finance and Operations in the Contoso.com domain, you must have Power BI accounts in that domain, such as <ph id="ph1">`Tim@ContosoAX7.onmicrosoft.com`</ph>.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Registration process</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Open a new browser session, and start the Power BI app registration at <bpt id="p1">[</bpt>https://dev.powerbi.com/apps<ept id="p1">](https://dev.powerbi.com/apps)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>A page that resembles the following illustration appears.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Register an Application for Power BI page</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Sign in with your existing account<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Make sure that your browser signed you in by using the same Azure AD account that you use for Finance and Operations.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>After sign-in, the user’s name should appear on the page.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>User's name on the page after sign-in</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>App name<ept id="p1">**</ept> field, enter a name, such as <bpt id="p2">**</bpt>Contoso Dyn365 for Operations<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Redirect URL<ept id="p1">**</ept> field, copy and paste the base URL of your Finance and Operations client, and then add the OAuth suffix.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Here is an example: <ph id="ph1">`http://contosoax7.cloud.dynamics.com/oauth`</ph></source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Home page URL<ept id="p1">**</ept> field, enter your home page URL, and add a mock extension.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Here is an example: <ph id="ph1">`http://contosoax7.cloud.dynamics.com/testenv/`</ph></source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>This value is mandatory, but it isn't required for the workspace integration.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Make sure that the App ID URI is a mock URL.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>If you use the real URL of your deployment, you might cause sign-in issues in other Azure AD applications, such as the Microsoft Excel Add-in.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Here is an example: <ph id="ph1">`http://contosoax7.cloud.dynamics.com/testenv/`</ph></source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Under <bpt id="p1">**</bpt>Step 3 Choose APIs to access<ept id="p1">**</ept>, select all the check boxes.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Register App<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Make a note of the values in the <bpt id="p1">**</bpt>Client ID<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Client secret<ept id="p2">**</ept> fields.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>You will use these values in the next procedure.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Client ID and Client secret fields</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Specify Power BI settings in Finance and Operations</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>In the Finance and Operations client, open the <bpt id="p1">**</bpt>Power BI configuration<ept id="p1">**</ept> page.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Power BI configuration page before editing</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Set the <bpt id="p1">**</bpt>Enabled<ept id="p1">**</ept> option to <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Azure AD Tenant<ept id="p1">**</ept> field should show your tenant (or domain name).</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>For example, if you provisioned Finance and Operations with the ContosoAX7.onmicrosoft.com tenant, the field should have the value that is shown in the previous illustration.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>If the field is blank, you can enter the correct tenant.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Note that the Power BI integration feature doesn’t work on pre-production and test Azure AD domains.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>You must change to a production Azure AD domain by running the Admin user tool.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Client ID<ept id="p1">**</ept> field, enter the <bpt id="p2">**</bpt>Client ID<ept id="p2">**</ept> value that you got from Power BI in the previous procedure.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Application Key<ept id="p1">**</ept> field, enter the <bpt id="p2">**</bpt>Client Secret<ept id="p2">**</ept> value that you got from Power BI in the previous procedure.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Make sure that the <bpt id="p1">**</bpt>Redirect URL<ept id="p1">**</ept> field is set to the same redirect URL that you entered in Power BI in the previous procedure.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>For example, copy and paste the base URL of your Finance and Operations client, and then add the OAuth suffix.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Here is an example: <ph id="ph1">`http://contosoax7.cloud.dynamics.com/oauth`</ph></source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Tile filter table<ept id="p1">**</ept> field, enter <bpt id="p2">**</bpt>Company<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Tile filter column<ept id="p1">**</ept> field, enter <bpt id="p2">**</bpt>ID<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>These two values enable filtering of Power BI tiles that are pinned to a workspace.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>For an example, if the company context of a workspace is <bpt id="p1">**</bpt>USMF<ept id="p1">**</ept>, the data on the Power BI tile will be filtered for the USMF company.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>You can apply the company filter only if your Power BI content has a table that is named <bpt id="p1">**</bpt>Company<ept id="p1">**</ept> and a column that is named <bpt id="p2">**</bpt>ID<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Ready-made Power BI content that is released with Finance and Operations uses this convention.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>If the Power BI content (that you wish to pin) doesn't have a table and a field that are named <bpt id="p1">**</bpt>Company<ept id="p1">**</ept> and <bpt id="p2">**</bpt>ID<ept id="p2">**</ept> respectively, the filter is ignored, and the tile will show unfiltered data.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Tile filter table and Tile filter column fields</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>, and close the page.</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Pin tiles to a workspace</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>To validate the configuration, open a workspace, such as <bpt id="p1">**</bpt>Ledger budgets and forecasts<ept id="p1">**</ept> or <bpt id="p2">**</bpt>Reservation management<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>For this example, we will use the <bpt id="p1">**</bpt>Ledger budgets and forecasts<ept id="p1">**</ept> workspace.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>You should see the <bpt id="p1">**</bpt>Power BI<ept id="p1">**</ept> section and a banner.</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>You might have to scroll to the right.</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Power BI section and banner in the Ledger budgets and forecasts workspace</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>In the banner, select <bpt id="p1">**</bpt>Get started<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>If you're starting Power BI from Finance and Operations for the first time, you're prompted to authorize sign-in to Power BI from the Finance and Operations client.</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Click here to provide authorization to Power BI<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Your users will have to complete this step the first time that they pin Power BI content.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>Authorize Power BI</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>The Azure AD consent page asks for your consent.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>User consent is required for Finance and Operations to access PowerBI.com on behalf of the user.</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Accept<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Consent page</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Because you're already signed in to Azure AD in Finance and Operations, you don't have to enter your credentials again.</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>A new tab appears, where you're prompted to authorize the connection between Finance and Operations and Power BI.</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Authorize the connection, and then return to the original tab.</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>A list of tiles from your PowerBI.com account appears.</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>Select one or more tiles to pin to the selected workspace.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>Troubleshooting common errors</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>After you select <bpt id="p1">**</bpt>Accept<ept id="p1">**</ept> in the previous procedure, you might receive the following error message if the process is unsuccessful.</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>Notice that details of the error appear at the bottom of the message.</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Additional technical information provide clues that can help you determine what went wrong (values are obscured in the following illustration).</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>Error message</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Some common issues and the resolution steps</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>Error</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>Resolution</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>The reply address didn't match because of case-sensitivity.</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>The URL that you entered in Power BI might not match the application ID.</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>Start Power BI, and rerun the registration process.</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>The Power BI service is unavailable.</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>This issue doesn't occur very often, but the Power BI service might sometimes be unreachable.</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>You don't have to re-register.</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>Try to pin a tile to a workspace later.</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>You can’t access the application.</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>You probably didn't select all the check boxes under <bpt id="p1">**</bpt>Step 3 Choose APIs to access<ept id="p1">**</ept> during the registration process.</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>Start Power BI, and rerun the registration process.</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>The Power BI tiles page is empty (no content is shown).</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Your PowerBI.com account might not have a dashboard or any tiles.</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>Add a dashboard, such as a sample dashboard, and try to pin a tile again.</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>Technical details about OAuth 2.0 Authorization Code Grant Flow</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>This section describes the authorization flow between Finance and Operations and the PowerBI.com service just before the list of tiles is shown to the user during the authentication phase.</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>The Azure AD service runs this flow to enable two services to securely communicate on behalf of a user.</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>The following illustration shows the authorization flow.</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>Authorization flow</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>When a user visits a workspace in Finance and Operations for the first time, the Power BI banner prompts the user to start the first-time connection.</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>If the user agrees to start the first-time connection, an OAuth 2.0 Authorization Code Grant Flow is started.</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>Finance and Operations redirects the user agent to the Azure AD authorization endpoint.</source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>The user is authenticated and consents, if consent is required.</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>Because the user is running Finance and Operations, he or she is already signed in to Azure AD.</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>Therefore, the user doesn't have to enter her or his credentials again.</source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>The Azure AD authorization endpoint redirects the Azure AD agent back to the client application together with an authorization code.</source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>The user agent returns the authorization code to the client application’s redirect URL.</source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>The application redirect URL is a parameter that is maintained in your Power BI configuration, as described in this topic.</source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>Now that Finance and Operations has an authorization code on behalf of the user, it requests an access token from the Azure AD token issuance endpoint.</source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>Finance and Operations presents the authorization code to prove that the user has consented.</source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>The Azure AD token issuance endpoint returns an access token and a refresh token.</source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>Finance and Operations must have the access token to request a visualization from Power BI.</source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>Access tokens expire after a short time.</source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>The refresh token can be used to request a new token.</source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>Finance and Operations uses the access token to authenticate to the Web API that is provided by Power BI.</source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>Finance and Operations uses the Web API to request that Power BI visualizations be shown on behalf of the user.</source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>After the client application is authenticated, the Power BI Web API returns the requested visualization to the user.</source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>Note that Power BI returns only the data that the user is allowed to see.</source>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>Because the Power BI Web API detects that the user is connecting via Finance and Operations, it can correctly resolve the user.</source>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>The user sees Power BI tiles in the Finance and Operations workspace.</source>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>For subsequent visits, this whole flow doesn't occur.</source>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>Because Finance and Operations has the access token on behalf of the user, steps 1 through 4 don't have to be repeated.</source>
+        </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>What’s next</source>
+        </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>Now that you've enabled the PowerBI.com integration feature, you might want to perform the following steps:</source>
+        </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>If your organization uses PowerBI.com, you can invite users to pin tiles and reports from their own PowerBI.com account to workspaces for easy access.</source>
+        </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>If you're using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update or later, ready-made analytical workspaces might be built into your workspaces.</source>
+        </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>Currently, this feature is available only in multi-box environments.</source>
+        </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>If you're using a previous version, you can deploy the ready-made reports to your PowerBI.com account.</source>
+        </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>The reports are distributed in Microsoft Dynamics Lifecycle Services (LCS).</source>
+        </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Power BI content in LCS from Microsoft and your partners<ept id="p1">](power-bi-content-microsoft-partners.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>You might want to create your own Power BI content by using data that is available in Entity store.</source>
+        </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>(Entity store is the operational data warehouse that is included with Finance and Operations.) For more information, see <bpt id="p1">[</bpt>Overview of Power BI integration with Entity store<ept id="p1">](power-bi-integration-entity-store.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>You might want to mash up external data with ready-made Power BI content that is provided with Finance and Operations.</source>
+        </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>You can do this data mash-up by using Power BI solution templates.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

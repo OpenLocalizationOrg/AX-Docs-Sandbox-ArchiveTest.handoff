@@ -1,0 +1,1818 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">837d43628b93c0fc156f5a2032fe9279c0a63fd5</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\dev-ref\xpp-variables-data-types.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">da1e6d4cbd034375741fe4f1239dd7c152fc1dbf</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">f6fac8748266defac3e7dda108cae7828831e7c0</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>X++ variables and data types</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic describes variables and data types in X++.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>X++ variables and data types</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This topic describes variables and data types in X++.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Variables</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">*</bpt>variable<ept id="p1">*</ept> is an identifier that points to a memory location where information of a specific data type is stored.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>The size, precision, default value, implicit and explicit <bpt id="p1">[</bpt>conversion<ept id="p1">](xpp-conversion-run-time-functions.md)</ept> functions, and range depend on the variable's data type.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">*</bpt>scope<ept id="p1">*</ept> of a variable defines the area in the code where an item can be accessed.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>Instance variables<ept id="p1">*</ept> are declared in class declarations, and can be accessed from any methods in the class or from methods that extend the class.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>Local variables<ept id="p1">*</ept> can be accessed only in the block where they were defined.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>When a variable is declared, memory is allocated, and the variable is initialized to the default value.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>You can assign values to both static fields and instance fields as part of the declaration statement.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Variables can be declared anywhere in a code block in a method.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>They don't have to be declared at the beginning of a method.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>Constants<ept id="p1">*</ept> are variables where the value can't be changed when the variable is declared.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>They use the <bpt id="p1">**</bpt>const<ept id="p1">**</ept> or <bpt id="p2">**</bpt>readonly<ept id="p2">**</ept> keyword.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Constants differ from <bpt id="p1">*</bpt>read-only fields<ept id="p1">*</ept> in only one way.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Read-only fields can be assigned a value only one time, and that value never changes.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>The field can be assigned its value either inline, at the place where the field is declared, or in the constructor.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>When you declare variables of managed types that aren't authored in X++, you have two options.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>You can fully qualify the type names in the declaration by including the full namespace, or you can add a <bpt id="p1">**</bpt>using<ept id="p1">**</ept> statement to your file and then omit the namespace from the type name.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Variable examples</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>var</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>You can declare a variable without explicitly providing the type of the variable, if the compiler can determine the type from the initialization expression.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>The variable is still strongly-typed into one, unambiguous type.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>You can use <bpt id="p1">**</bpt>var<ept id="p1">**</ept> only on declarations where initialization expressions are provided.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>(The compiler will infer the type from the initialization expression.) In some cases, this approach can make code easier to read.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>You should use <bpt id="p1">**</bpt>var<ept id="p1">**</ept> to declare local variables in these situations:</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>When the type of the variable is obvious from the right side of the assignment</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>When the exact type isn't important</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>For the declarations of <bpt id="p1">**</bpt>for<ept id="p1">**</ept> loop counters</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>For disposable objects inside <bpt id="p1">**</bpt>using<ept id="p1">**</ept> statements</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Don't use <bpt id="p1">**</bpt>var<ept id="p1">**</ept> when the type isn't clear from the initialization expression.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>var examples</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Declare anywhere</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Declarations can now be provided wherever statements can be provided.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>A declaration is syntactically a statement, a <bpt id="p1">*</bpt>declaration statement<ept id="p1">*</ept>.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>You can provide declarations immediately before the variable is used, and you don’t have to declare all the variables in one place.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Therefore, you have precise control over the scope of your variables.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>You can give variables smaller scopes, outside which the variables can’t be referenced.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>The lifetime of the variable is the scope that it’s declared in.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Scopes can be started at the block level (inside compound statements), in <bpt id="p1">**</bpt>for<ept id="p1">**</ept> statements, and in <bpt id="p2">**</bpt>using<ept id="p2">**</ept> statements.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>There are several advantages to making scopes small:</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Readability is enhanced.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>You reduce the risk that a variable will be reused in an inappropriate manner during long-term maintenance of the code.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>It's easier to refactor code.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>You can copy in code without having to worry that variables might be reused in contexts where they shouldn’t be reused.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>In the following example, we declare the loop counter inside the <bpt id="p1">**</bpt>for<ept id="p1">**</ept> statement that it's used in.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>The scope of the variable is the <bpt id="p1">**</bpt>for<ept id="p1">**</ept> statement itself, and includes the condition expression and the loop update parts.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>The value can’t be used outside this scope.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>In the following example, when the compiler reaches the <bpt id="p1">**</bpt>info<ept id="p1">**</ept> statement, it will issue the following error message: "'i' isn't declared."</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>You can also scope variables to a <bpt id="p1">**</bpt>using<ept id="p1">**</ept> statement, as shown in the following example.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>When you use an object that implements <bpt id="p1">**</bpt>IDisposable<ept id="p1">**</ept>, you should declare and instantiate that object in a <bpt id="p2">**</bpt>using<ept id="p2">**</ept> statement.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>using<ept id="p1">**</ept> statement calls the <bpt id="p2">**</bpt>Dispose<ept id="p2">**</ept> method on the object correctly, even if an exception occurs while you're calling methods on the object.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>You can achieve the same result by putting the object inside a <bpt id="p1">**</bpt>try<ept id="p1">**</ept> block and then explicitly calling <bpt id="p2">**</bpt>Dispose<ept id="p2">**</ept> in a <bpt id="p3">**</bpt>finally<ept id="p3">**</ept> block.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>In fact, the compiler translates the <bpt id="p1">**</bpt>using<ept id="p1">**</ept> statement in just this manner.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>The following example shows some of the features that we have been describing.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>To prevent confusion, the compiler issues an error message if you try to introduce a variable that will hide another variable in an enclosing scope, or even in the same scope.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>For example, the following code will cause the compiler to issue the following diagnostic message: "A local variable named 'i' can't be declared in this scope because it would give a different meaning to 'i', which is already used in a parent or current scope to denote something else."</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Constants, read-only variables, and macros</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>The concept of macros is fully supported.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>However, constants have the following advantages over macros:</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>You can add a documentation comment to a constant but not to the value of a macro.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Eventually, the language service will pick up this comment and provide useful information to the user.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>A constant is known by IntelliSense.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>A constant is cross-referenced.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Therefore, you can find all references for a specific constant but not for a macro.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>A constant is subject to access modifiers.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>You can use the <bpt id="p1">**</bpt>private<ept id="p1">**</ept>, <bpt id="p2">**</bpt>protected<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>public<ept id="p3">**</ept> modifiers.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>The accessibility of macros isn't rigorously defined.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Constant variables have scope, whereas macros don't have scope.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>You can see the value of a constant or a read-only variable in the debugger.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Macros that are defined in class scopes (that is, in class declarations) are effectively available in all methods of all derived classes.</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>This feature was originally a bug in the implementation of the legacy compiler macro.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>However, many application programmers often take advantage of it now.</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>The X++ compiler still honors this feature, but no new code that uses it should be written.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>This feature also has a significant effect on the performance of the compiler.</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Constants can be declared at the class level, as shown in the following example.</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>The constants can then be referenced by using the double colon (::) syntax.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>If you're in the scope of the class where the constant (<bpt id="p1">**</bpt>const<ept id="p1">**</ept>) is defined, you can omit the type name prefix (<bpt id="p2">**</bpt>MyClass<ept id="p2">**</ept> in the preceding example).</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Therefore, you can easily implement the concept of a macro library.</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>The list of macro symbols becomes a class that has public <bpt id="p1">**</bpt>const<ept id="p1">**</ept> definitions.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>You can also define constants as variables only.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>The compiler will maintain the invariant so that the value can't be modified.</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Primitive data types</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>The primitive data types in X++ are <bpt id="p1">**</bpt>anytype<ept id="p1">**</ept>, <bpt id="p2">**</bpt>boolean<ept id="p2">**</ept>, <bpt id="p3">**</bpt>date<ept id="p3">**</ept>, <bpt id="p4">**</bpt>enum<ept id="p4">**</ept>, <bpt id="p5">**</bpt>guid<ept id="p5">**</ept>, <bpt id="p6">**</bpt>int<ept id="p6">**</ept>, <bpt id="p7">**</bpt>int64<ept id="p7">**</ept>, <bpt id="p8">**</bpt>real<ept id="p8">**</ept>, <bpt id="p9">**</bpt>str<ept id="p9">**</ept>, <bpt id="p10">**</bpt>timeOfDay<ept id="p10">**</ept>, and <bpt id="p11">**</bpt>utcdatetime<ept id="p11">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>anytype</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>anytype<ept id="p1">**</ept> data type is a placeholder for any data type.</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>You should use variables of this type only as arguments and return values.</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>To use <bpt id="p1">**</bpt>anytype<ept id="p1">**</ept> as a variable, you must first assign a value to it.</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Otherwise, a run-time error occurs.</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>After you've assigned a value to <bpt id="p1">**</bpt>anytype<ept id="p1">**</ept>, you can't convert it to another data type.</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>Although you can use <bpt id="p1">**</bpt>anytype<ept id="p1">**</ept> variables in expressions, they're usually used as arguments and return types.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>The size, precision, scope, default value, and range of <bpt id="p1">**</bpt>anytype<ept id="p1">**</ept> depend on the conversion type that you assign to it.</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>You can use <bpt id="p1">**</bpt>anytype<ept id="p1">**</ept> just as you use the data type that you convert it to.</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>For example, if you assign an integer, you can then apply relational and arithmetic operators to the variable.</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>An <bpt id="p1">**</bpt>anytype<ept id="p1">**</ept> variable is automatically converted to a date, enumeration (enum), integer, real, string, extended data type (EDT) (record), class, or container when a value is assigned to the type.</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>Additionally, the following explicit <bpt id="p1">[</bpt>conversion functions<ept id="p1">](xpp-conversion-run-time-functions.md)</ept> can be used: <bpt id="p2">**</bpt>any2date<ept id="p2">**</ept>, <bpt id="p3">**</bpt>any2enum<ept id="p3">**</ept>, <bpt id="p4">**</bpt>any2int<ept id="p4">**</ept>, <bpt id="p5">**</bpt>any2real<ept id="p5">**</ept>, and <bpt id="p6">**</bpt>any2str<ept id="p6">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>You can't change the variable to another data type after you've converted it to <bpt id="p1">**</bpt>anytype<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>anytype examples</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>boolean</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>boolean<ept id="p1">**</ept> data type contains a value that is evaluated as either <bpt id="p2">**</bpt>true<ept id="p2">**</ept> or <bpt id="p3">**</bpt>false<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>You can use the reserved literal keywords <bpt id="p1">**</bpt>true<ept id="p1">**</ept> and <bpt id="p2">**</bpt>false<ept id="p2">**</ept> wherever a <bpt id="p3">**</bpt>boolean<ept id="p3">**</ept> expression is expected.</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>The size of a <bpt id="p1">**</bpt>boolean<ept id="p1">**</ept> is 1 byte.</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>The default value is <bpt id="p1">**</bpt>false<ept id="p1">**</ept>, and the internal representation is a short number.</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">**</bpt>boolean<ept id="p1">**</ept> is automatically converted to an <bpt id="p2">**</bpt>int<ept id="p2">**</ept>, <bpt id="p3">**</bpt>date<ept id="p3">**</ept>, or <bpt id="p4">**</bpt>real<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>It has no explicit conversion functions.</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>The internal representation of a <bpt id="p1">**</bpt>boolean<ept id="p1">**</ept> is an integer.</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>You can assign any integer value to a variable that is declared as the <bpt id="p1">**</bpt>boolean<ept id="p1">**</ept> type.</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>The integer value <bpt id="p1">**</bpt>0<ept id="p1">**</ept> (zero) is evaluated as <bpt id="p2">**</bpt>false<ept id="p2">**</ept>, and all other integer values are evaluated as <bpt id="p3">**</bpt>true<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>Because the internal representation of a <bpt id="p1">**</bpt>boolean<ept id="p1">**</ept> is an integer, <bpt id="p2">**</bpt>boolean<ept id="p2">**</ept> values are automatically converted to integers and reals.</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>boolean examples</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>date</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>date<ept id="p1">**</ept> data type contains the day, month, and year.</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>Dates can be written as literals by using the following syntax: <bpt id="p1">**</bpt>Date literal = day <ph id="ph1">\\</ph> month <ph id="ph2">\\</ph> year<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>You must use four digits for the year.</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>date<ept id="p1">**</ept> data type can hold dates between January 1, 1900, and December 31, 2154.</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>The size of a <bpt id="p1">**</bpt>date<ept id="p1">**</ept> is 32 bits.</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>The default value is <bpt id="p1">**</bpt>null<ept id="p1">**</ept>, and the internal representation is a date.</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">**</bpt>date<ept id="p1">**</ept> has no implicit conversions.</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>However, the following explicit <bpt id="p1">[</bpt>conversion functions<ept id="p1">](xpp-conversion-run-time-functions.md)</ept> can used: <bpt id="p2">**</bpt>str2date<ept id="p2">**</ept>, <bpt id="p3">**</bpt>date2str<ept id="p3">**</ept>, <bpt id="p4">**</bpt>date2num<ept id="p4">**</ept>, and <bpt id="p5">**</bpt>int2date<ept id="p5">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>You can add and subtract integers from dates, but you can't add or subtract two dates from each other.</source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>If you try, a compiler error occurs.</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>date examples</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>enum</source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>An <bpt id="p1">**</bpt>enum<ept id="p1">**</ept> is a list of literals.</source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>Before you can use an <bpt id="p1">**</bpt>enum<ept id="p1">**</ept>, you must declare it in Application Explorer.</source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>The literal values are represented internally as integers.</source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>The first literal has the number 0, the next literal has the number 1, the next literal has the number 2, and so on.</source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>You can use <bpt id="p1">**</bpt>enum<ept id="p1">**</ept> values as integers in expressions.</source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>The default value for the first entry is <bpt id="p1">**</bpt>0<ept id="p1">**</ept>, and the internal representation is a short number.</source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>An <bpt id="p1">**</bpt>enum<ept id="p1">**</ept> value is automatically converted to a <bpt id="p2">**</bpt>boolean<ept id="p2">**</ept>, <bpt id="p3">**</bpt>int<ept id="p3">**</ept>, or <bpt id="p4">**</bpt>real<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>Additionally, the following explicit <bpt id="p1">[</bpt>conversion functions<ept id="p1">](xpp-conversion-run-time-functions.md)</ept> can be used: <bpt id="p2">**</bpt>enum2str<ept id="p2">**</ept> and <bpt id="p3">**</bpt>str2enum<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>Hundreds of enumerable types are built into the standard application.</source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>For example, the <bpt id="p1">**</bpt>NoYes<ept id="p1">**</ept> enum has two associated literals: <bpt id="p2">**</bpt>No<ept id="p2">**</ept> has the value <bpt id="p3">**</bpt>0<ept id="p3">**</ept>, and <bpt id="p4">**</bpt>Yes<ept id="p4">**</ept> has the value <bpt id="p5">**</bpt>1<ept id="p5">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>You can create as many enum types as you want, and you can declare up to 251 (0 to 250) literals in a single enum type.</source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>To reference an <bpt id="p1">**</bpt>enum<ept id="p1">**</ept> value, enter the name of the enum, two colons, and then the name of the literal.</source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>For example, to use the literal <bpt id="p1">**</bpt>No<ept id="p1">**</ept> in the <bpt id="p2">**</bpt>NoYes<ept id="p2">**</ept> enum, enter <bpt id="p3">**</bpt>NoYes::No<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>Create an enum</source>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>In Solution Explorer, right-click the project, point to <bpt id="p1">**</bpt>Add<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>New Item<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>Under <bpt id="p1">**</bpt>Artifacts<ept id="p1">**</ept>, select <bpt id="p2">**</bpt>Data Types<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Base Enum<ept id="p1">**</ept> to select the new item type.</source>
+        </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Name<ept id="p1">**</ept> field, enter a name for the enum, and then click <bpt id="p2">**</bpt>Add<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>A new enum is added to the project, and the enum designer for the new element is opened.</source>
+        </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>In the enum designer, right-click the enum name, and then click <bpt id="p1">**</bpt>New Element<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept> window, enter the name of the enum element.</source>
+        </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>enum examples</source>
+        </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>guid</source>
+        </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>guid<ept id="p1">**</ept> data type holds a <bpt id="p2">*</bpt>globally unique identifier<ept id="p2">*</ept> (GUID) value.</source>
+        </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>A GUID is an integer that can be used across all computers and networks, wherever a unique identifier is required.</source>
+        </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>It's unlikely that the number will be duplicated.</source>
+        </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>A valid GUID meets all the following specifications:</source>
+        </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>It must have 32 hexadecimal digits.</source>
+        </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>It must have four dash characters that are embedded at the following locations: 8-4-4-4-12.</source>
+        </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>Braces ({}) at the beginning and end of a string are optional.</source>
+        </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>For example, both "12345678-BBBb-cCCCC-0000-123456789012" and "{12345678-BBBb-cCCCC-0000-123456789012}" are valid GUID strings.</source>
+        </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>It must have a total of either 36 or 38 characters, depending on whether braces are added.</source>
+        </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>The hexadecimal digits a–f (or A–F) can be uppercase, lowercase, or mixed.</source>
+        </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>The size of a <bpt id="p1">**</bpt>guid<ept id="p1">**</ept> is 16 bytes or 128 bits.</source>
+        </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>The following explicit <bpt id="p1">[</bpt>conversion functions<ept id="p1">](xpp-conversion-run-time-functions.md)</ept> can be used: <bpt id="p2">**</bpt>any2guid<ept id="p2">**</ept>, <bpt id="p3">**</bpt>guid2str<ept id="p3">**</ept>, <bpt id="p4">**</bpt>newGuid<ept id="p4">**</ept>, <bpt id="p5">**</bpt>str2guid<ept id="p5">**</ept>, <bpt id="p6">**</bpt>Global::guidFromString<ept id="p6">**</ept>, and <bpt id="p7">**</bpt>Global::stringFromGuid<ept id="p7">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>guid examples</source>
+        </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>The following set of examples shows how to use the <bpt id="p1">**</bpt>guid<ept id="p1">**</ept> functions.</source>
+        </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>The code output of these examples follows.</source>
+        </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>guid code output</source>
+        </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>The following output appears in the Infolog.</source>
+        </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>Note that the string includes the optional braces.</source>
+        </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>int and int64</source>
+        </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>Integers<ept id="p1">*</ept> are numbers that have no decimal places.</source>
+        </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>There are two integer types: <bpt id="p1">**</bpt>int<ept id="p1">**</ept> and <bpt id="p2">**</bpt>int64<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>Integers are used as control variables in repetitive statements or as indexes in arrays.</source>
+        </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>You can also use <bpt id="p1">*</bpt>integer literals<ept id="p1">*</ept> anywhere that an integer expression is expected, and both relational and arithmetic operators can be applied.</source>
+        </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>An integer literal is the integer as it's entered directly in the code, such as <bpt id="p1">**</bpt>32768<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>An <bpt id="p1">**</bpt>int<ept id="p1">**</ept> is 32 bits wide, and an <bpt id="p2">**</bpt>int64<ept id="p2">**</ept> is 64 bits wide.</source>
+        </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>The default value is <bpt id="p1">**</bpt>0<ept id="p1">**</ept>, and the internal representation is a long number.</source>
+        </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>An integer is automatically converted to a <bpt id="p1">**</bpt>boolean<ept id="p1">**</ept>, <bpt id="p2">**</bpt>enum<ept id="p2">**</ept>, or <bpt id="p3">**</bpt>real<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>Additionally, the following explicit <bpt id="p1">[</bpt>conversion functions<ept id="p1">](xpp-conversion-run-time-functions.md)</ept> can be used: <bpt id="p2">**</bpt>str2int<ept id="p2">**</ept>, <bpt id="p3">**</bpt>int2str<ept id="p3">**</ept>, <bpt id="p4">**</bpt>str2int64<ept id="p4">**</ept>, and <bpt id="p5">**</bpt>int642str<ept id="p5">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>The range of an <bpt id="p1">**</bpt>int<ept id="p1">**</ept> is <ph id="ph1">\[</ph>-2,147,483,647 : 2,147,483,647<ph id="ph2">\]</ph>, and the range of an <bpt id="p2">**</bpt>int64<ept id="p2">**</ept> is <ph id="ph3">\[</ph>-9,223,372,036,854,775,808 : 9,223,372,036,854,775,808<ph id="ph4">\]</ph>.</source>
+        </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>All integers in either of these ranges can be used as literals.</source>
+        </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>int and int64 examples</source>
+        </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source>The following example shows how to declare integers and use them in expressions.</source>
+        </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source>If you try to assign the largest integer plus 1 to an <bpt id="p1">**</bpt>int64<ept id="p1">**</ept>, you get the wrong result, because the number is interpreted as a 32-bit number.</source>
+        </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source>Therefore, the number is wrapped around and stored as -2,147,483,647 instead.</source>
+        </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source>To prevent this behavior, add "u" to the end of the number.</source>
+        </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>For example, enter <bpt id="p1">**</bpt>int64 i = 0x8000 0000u<ept id="p1">**</ept> (0x8000 0000 is 2,147,483,648).</source>
+        </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>real</source>
+        </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">**</bpt>real<ept id="p1">**</ept> variable can hold decimal values in addition to integers.</source>
+        </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source>You can use <bpt id="p1">*</bpt>decimal literals<ept id="p1">*</ept> anywhere that a <bpt id="p2">**</bpt>real<ept id="p2">**</ept> is expected.</source>
+        </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source>A decimal literal is the decimal as it's entered directly in the code, such as <bpt id="p1">**</bpt>2.123876<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source>Real literals can also be written by using exponential notation, such as <bpt id="p1">**</bpt>1.0e3<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source>Reals can be used in all expressions, and they can be used with both relational and arithmetic operators.</source>
+        </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">**</bpt>real<ept id="p1">**</ept> has a precision of 16 significant digits.</source>
+        </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source>The default value for a <bpt id="p1">**</bpt>real<ept id="p1">**</ept> is <bpt id="p2">**</bpt>0.0<ept id="p2">**</ept>, and the internal representation is a binary-coded digital (BCD) number.</source>
+        </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source>The BCD encoding enables exact representations of values that are multiples of 0.1.</source>
+        </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source>The range of a <bpt id="p1">**</bpt>real<ept id="p1">**</ept> variable is -(10)¹²⁷ through (10)¹²⁷.</source>
+        </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source>All reals in this range can be used as literals in X++.</source>
+        </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">**</bpt>real<ept id="p1">**</ept> variable is automatically converted to a <bpt id="p2">**</bpt>boolean<ept id="p2">**</ept>, <bpt id="p3">**</bpt>enum<ept id="p3">**</ept>, or <bpt id="p4">**</bpt>int<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>If the result is an integer, or if the operator is an integer operator, the <bpt id="p1">**</bpt>real<ept id="p1">**</ept> is converted to an integer.</source>
+        </trans-unit>
+        <trans-unit id="298" translate="yes" xml:space="preserve">
+          <source>If the result is a <bpt id="p1">**</bpt>boolean<ept id="p1">**</ept>, the <bpt id="p2">**</bpt>real<ept id="p2">**</ept> is converted to a <bpt id="p3">**</bpt>boolean<ept id="p3">**</ept>, and so on.</source>
+        </trans-unit>
+        <trans-unit id="299" translate="yes" xml:space="preserve">
+          <source>Additionally, the following explicit <bpt id="p1">[</bpt>conversion functions<ept id="p1">](xpp-conversion-run-time-functions.md)</ept> can be used: <bpt id="p2">**</bpt>str2num<ept id="p2">**</ept> and <bpt id="p3">**</bpt>num2str<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="300" translate="yes" xml:space="preserve">
+          <source>Direct assignments between X++ <bpt id="p1">**</bpt>real<ept id="p1">**</ept> and Microsoft .NET Framework <bpt id="p2">**</bpt>System.Decimal<ept id="p2">**</ept> convert the value correctly.</source>
+        </trans-unit>
+        <trans-unit id="301" translate="yes" xml:space="preserve">
+          <source>A call to a conversion function isn't required.</source>
+        </trans-unit>
+        <trans-unit id="302" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">*</bpt>decimal number<ept id="p1">*</ept> is a floating-point value that consists of a sign, a numeric value where each digit is in the range 0 through 9, and a scaling factor that indicates the position of a floating decimal point that separates the integral and fractional parts of the numeric value.</source>
+        </trans-unit>
+        <trans-unit id="303" translate="yes" xml:space="preserve">
+          <source>The binary representation of a <bpt id="p1">**</bpt>real<ept id="p1">**</ept> value consists of a 1-bit sign, a 96-bit integer number, and a scaling factor.</source>
+        </trans-unit>
+        <trans-unit id="304" translate="yes" xml:space="preserve">
+          <source>The scaling factor is used to divide the 96-bit integer and specify what part of it is a decimal fraction.</source>
+        </trans-unit>
+        <trans-unit id="305" translate="yes" xml:space="preserve">
+          <source>The scaling factor is implicitly the number 10 raised to an exponent in the range 0 through 28.</source>
+        </trans-unit>
+        <trans-unit id="306" translate="yes" xml:space="preserve">
+          <source>Therefore, the binary representation of a decimal value represents (<ph id="ph1">\[</ph>-2⁹⁶ through 2⁹⁶<ph id="ph2">\]</ph> ÷ 10(0<ph id="ph3">\\</ph> through<ph id="ph4">\\</ph> 28)), where -(2⁹⁶-1) is the minimum value that can be expressed and 2⁹⁶-1 is the maximum value.</source>
+        </trans-unit>
+        <trans-unit id="307" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> The type that is used to represent <bpt id="p2">**</bpt>real<ept id="p2">**</ept> values in Microsoft Dynamics 365 for Finance and Operations has changed from the interpreted X++ of Microsoft Dynamics AX 2012.</source>
+        </trans-unit>
+        <trans-unit id="308" translate="yes" xml:space="preserve">
+          <source>However, you don't have to rewrite any code, because the new type can express all the values that the old type could express.</source>
+        </trans-unit>
+        <trans-unit id="309" translate="yes" xml:space="preserve">
+          <source>We provide this material in the interest of full disclosure only.</source>
+        </trans-unit>
+        <trans-unit id="310" translate="yes" xml:space="preserve">
+          <source>All instances of the <bpt id="p1">**</bpt>real<ept id="p1">**</ept> type are now implemented as instances of the .NET decimal type (<bpt id="p2">**</bpt>System.Decimal<ept id="p2">**</ept>).</source>
+        </trans-unit>
+        <trans-unit id="311" translate="yes" xml:space="preserve">
+          <source>Just as the <bpt id="p1">**</bpt>real<ept id="p1">**</ept> type in previous versions, the decimal type in a binary-coded decimal type is resilient to rounding errors.</source>
+        </trans-unit>
+        <trans-unit id="312" translate="yes" xml:space="preserve">
+          <source>The range and resolution of the decimal type differ from previous versions.</source>
+        </trans-unit>
+        <trans-unit id="313" translate="yes" xml:space="preserve">
+          <source>The original X++ <bpt id="p1">**</bpt>real<ept id="p1">**</ept> type supported 16 digits and an exponent that defined the position of the decimal point.</source>
+        </trans-unit>
+        <trans-unit id="314" translate="yes" xml:space="preserve">
+          <source>However, the X++ <bpt id="p1">**</bpt>real<ept id="p1">**</ept> type for Microsoft Dynamics 365 for Finance and Operations and later can represent decimal numbers in the range 79,228,162,514,264,337,593,543,950,335 (2⁹⁶-1) through -79,228,162,514,264,337,593,543,950,335 (-<ph id="ph1">\[</ph>2⁹⁶-1<ph id="ph2">\]</ph>).</source>
+        </trans-unit>
+        <trans-unit id="315" translate="yes" xml:space="preserve">
+          <source>Rounding is still required for the new <bpt id="p1">**</bpt>real<ept id="p1">**</ept> type.</source>
+        </trans-unit>
+        <trans-unit id="316" translate="yes" xml:space="preserve">
+          <source>For example, the following code produces a result of 0.9999999999999999999999999999 instead of 1.</source>
+        </trans-unit>
+        <trans-unit id="317" translate="yes" xml:space="preserve">
+          <source>No number of decimals will suffice to represent the value of 1/3 accurately.</source>
+        </trans-unit>
+        <trans-unit id="318" translate="yes" xml:space="preserve">
+          <source>The discrepancy obtained here is due to the fact that only a finite number of decimals are provided.</source>
+        </trans-unit>
+        <trans-unit id="319" translate="yes" xml:space="preserve">
+          <source>You should use the <bpt id="p1">**</bpt>round<ept id="p1">**</ept> function to round to the number of decimals required.</source>
+        </trans-unit>
+        <trans-unit id="320" translate="yes" xml:space="preserve">
+          <source>real examples</source>
+        </trans-unit>
+        <trans-unit id="321" translate="yes" xml:space="preserve">
+          <source>str</source>
+        </trans-unit>
+        <trans-unit id="322" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">**</bpt>str<ept id="p1">**</ept> variable (a <bpt id="p2">*</bpt>string<ept id="p2">*</ept>) is a sequence of characters that are used as texts, help lines, addresses, telephone numbers, and so on.</source>
+        </trans-unit>
+        <trans-unit id="323" translate="yes" xml:space="preserve">
+          <source>To declare a string, use the <bpt id="p1">**</bpt>str<ept id="p1">**</ept> keyword.</source>
+        </trans-unit>
+        <trans-unit id="324" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>String literals<ept id="p1">*</ept> are characters that are enclosed in quotation marks ("").</source>
+        </trans-unit>
+        <trans-unit id="325" translate="yes" xml:space="preserve">
+          <source>String literals can be used wherever string expressions are expected.</source>
+        </trans-unit>
+        <trans-unit id="326" translate="yes" xml:space="preserve">
+          <source>Examples of string literals include "StringLit" and "Hello World".</source>
+        </trans-unit>
+        <trans-unit id="327" translate="yes" xml:space="preserve">
+          <source>If you want the string to span more than one line, precede it with an at sign (@).</source>
+        </trans-unit>
+        <trans-unit id="328" translate="yes" xml:space="preserve">
+          <source>You can use strings in logical expressions, such as comparisons.</source>
+        </trans-unit>
+        <trans-unit id="329" translate="yes" xml:space="preserve">
+          <source>You can also concatenate strings by using the + operator.</source>
+        </trans-unit>
+        <trans-unit id="330" translate="yes" xml:space="preserve">
+          <source>The default value for a string is <bpt id="p1">**</bpt>empty<ept id="p1">**</ept>, and the internal representation is a list of characters.</source>
+        </trans-unit>
+        <trans-unit id="331" translate="yes" xml:space="preserve">
+          <source>There are no automatic conversions for strings.</source>
+        </trans-unit>
+        <trans-unit id="332" translate="yes" xml:space="preserve">
+          <source>However, the following explicit <bpt id="p1">[</bpt>conversion functions<ept id="p1">](xpp-conversion-run-time-functions.md)</ept> can be used: <bpt id="p2">**</bpt>str2int<ept id="p2">**</ept>, <bpt id="p3">**</bpt>str2int64<ept id="p3">**</ept>, <bpt id="p4">**</bpt>int2str<ept id="p4">**</ept>, <bpt id="p5">**</bpt>str2num<ept id="p5">**</ept>, <bpt id="p6">**</bpt>num2str<ept id="p6">**</ept>, <bpt id="p7">**</bpt>str2date<ept id="p7">**</ept>, and <bpt id="p8">**</bpt>date2str<ept id="p8">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="333" translate="yes" xml:space="preserve">
+          <source>A string can hold an unlimited number of characters.</source>
+        </trans-unit>
+        <trans-unit id="334" translate="yes" xml:space="preserve">
+          <source>However, you can specify the maximum length of a string in the variable declaration.</source>
+        </trans-unit>
+        <trans-unit id="335" translate="yes" xml:space="preserve">
+          <source>The string is then truncated to that maximum length.</source>
+        </trans-unit>
+        <trans-unit id="336" translate="yes" xml:space="preserve">
+          <source>An example is shown in the next section.</source>
+        </trans-unit>
+        <trans-unit id="337" translate="yes" xml:space="preserve">
+          <source>str examples</source>
+        </trans-unit>
+        <trans-unit id="338" translate="yes" xml:space="preserve">
+          <source>timeOfDay</source>
+        </trans-unit>
+        <trans-unit id="339" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>timeOfDay<ept id="p1">**</ept> (time) data type is an integer value that represents the number of seconds that have passed since midnight.</source>
+        </trans-unit>
+        <trans-unit id="340" translate="yes" xml:space="preserve">
+          <source>Like integers, <bpt id="p1">**</bpt>timeOfDay<ept id="p1">**</ept> variables can be used as literals.</source>
+        </trans-unit>
+        <trans-unit id="341" translate="yes" xml:space="preserve">
+          <source>Relational and arithmetic operators can be applied to <bpt id="p1">**</bpt>timeOfDay<ept id="p1">**</ept> variables.</source>
+        </trans-unit>
+        <trans-unit id="342" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">**</bpt>timeOfDay<ept id="p1">**</ept> variable can also be used in expressions.</source>
+        </trans-unit>
+        <trans-unit id="343" translate="yes" xml:space="preserve">
+          <source>The range of a <bpt id="p1">**</bpt>timeOfDay<ept id="p1">**</ept> data type is in the closed interval <ph id="ph1">\[</ph>0; 86,400<ph id="ph2">\]</ph>.</source>
+        </trans-unit>
+        <trans-unit id="344" translate="yes" xml:space="preserve">
+          <source>Values above 86,400 (23:59:59) can't be interpreted.</source>
+        </trans-unit>
+        <trans-unit id="345" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">**</bpt>timeOfDay<ept id="p1">**</ept> variable is automatically converted to a <bpt id="p2">**</bpt>boolean<ept id="p2">**</ept>, <bpt id="p3">**</bpt>enum<ept id="p3">**</ept>, or <bpt id="p4">**</bpt>real<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="346" translate="yes" xml:space="preserve">
+          <source>Additionally, the following explicit <bpt id="p1">[</bpt>conversion functions<ept id="p1">](xpp-conversion-run-time-functions.md)</ept> can be used: <bpt id="p2">**</bpt>str2time<ept id="p2">**</ept> and <bpt id="p3">**</bpt>time2str<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="347" translate="yes" xml:space="preserve">
+          <source>timeOfDay examples</source>
+        </trans-unit>
+        <trans-unit id="348" translate="yes" xml:space="preserve">
+          <source>utcdatetime</source>
+        </trans-unit>
+        <trans-unit id="349" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>utcdatetime<ept id="p1">**</ept> data type combines the <bpt id="p2">**</bpt>date<ept id="p2">**</ept> type and the <bpt id="p3">**</bpt>timeOfDay<ept id="p3">**</ept> type.</source>
+        </trans-unit>
+        <trans-unit id="350" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">**</bpt>utcdatetime<ept id="p1">**</ept> variable also holds information about the time zone.</source>
+        </trans-unit>
+        <trans-unit id="351" translate="yes" xml:space="preserve">
+          <source>However, this information can't be accessed in code.</source>
+        </trans-unit>
+        <trans-unit id="352" translate="yes" xml:space="preserve">
+          <source>The format for a <bpt id="p1">**</bpt>utcdatetime<ept id="p1">**</ept> literal is <bpt id="p2">**</bpt>yyyy-mm-ddThh:mm:ss<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="353" translate="yes" xml:space="preserve">
+          <source>The uppercase "T" is required.</source>
+        </trans-unit>
+        <trans-unit id="354" translate="yes" xml:space="preserve">
+          <source>This format can be written without quotation marks.</source>
+        </trans-unit>
+        <trans-unit id="355" translate="yes" xml:space="preserve">
+          <source>The minimum value is <bpt id="p1">**</bpt>1900-01-01T00:00:00<ept id="p1">**</ept>, and the maximum value is <bpt id="p2">**</bpt>1900-01-01T00:00:00<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="356" translate="yes" xml:space="preserve">
+          <source>This maximum value matches the upper range of <bpt id="p1">**</bpt>date<ept id="p1">**</ept> and <bpt id="p2">**</bpt>timeOfDay<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="357" translate="yes" xml:space="preserve">
+          <source>The smallest unit of time in <bpt id="p1">**</bpt>utcdatetime<ept id="p1">**</ept> is one second.</source>
+        </trans-unit>
+        <trans-unit id="358" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">**</bpt>utcdatetime<ept id="p1">**</ept> variable that has been declared but hasn't been initialized has the default value <bpt id="p2">**</bpt>1900-01-01T00:00:00<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="359" translate="yes" xml:space="preserve">
+          <source>This value is the value that is returned by <bpt id="p1">**</bpt>DateTimeUtil::minValue()<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="360" translate="yes" xml:space="preserve">
+          <source>Some functions treat an input parameter of this minimum value as <bpt id="p1">**</bpt>null<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="361" translate="yes" xml:space="preserve">
+          <source>For example, the <bpt id="p1">**</bpt>DateTimeUtil::toStr<ept id="p1">**</ept> method returns an empty string.</source>
+        </trans-unit>
+        <trans-unit id="362" translate="yes" xml:space="preserve">
+          <source>However, the <bpt id="p1">**</bpt>DateTimeUtil::addSeconds<ept id="p1">**</ept> method returns a usable <bpt id="p2">**</bpt>utcdatetime<ept id="p2">**</ept> value.</source>
+        </trans-unit>
+        <trans-unit id="363" translate="yes" xml:space="preserve">
+          <source>There are no implicit conversions for the <bpt id="p1">**</bpt>utcdatetime<ept id="p1">**</ept> data type.</source>
+        </trans-unit>
+        <trans-unit id="364" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>DateTimeUtil<ept id="p1">**</ept> class provides many methods that you can use to manipulate <bpt id="p2">**</bpt>utcdatetime<ept id="p2">**</ept> values.</source>
+        </trans-unit>
+        <trans-unit id="365" translate="yes" xml:space="preserve">
+          <source>The following explicit <bpt id="p1">[</bpt>conversion functions<ept id="p1">](xpp-conversion-run-time-functions.md)</ept> can also be used: <bpt id="p2">**</bpt>str2datetime<ept id="p2">**</ept> and <bpt id="p3">**</bpt>datetime2str<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="366" translate="yes" xml:space="preserve">
+          <source>Additionally, the <bpt id="p1">**</bpt>Global<ept id="p1">**</ept> class provides the <bpt id="p2">**</bpt>utcDateTime2SystemDateTime<ept id="p2">**</ept> and <bpt id="p3">**</bpt>CLRSystemDateTime2UtcDateTime<ept id="p3">**</ept> conversion methods to support common language runtime (CLR) interop.</source>
+        </trans-unit>
+        <trans-unit id="367" translate="yes" xml:space="preserve">
+          <source>Comparison operators are the only type of operators that can be used with the <bpt id="p1">**</bpt>utcdatetime<ept id="p1">**</ept> data type.</source>
+        </trans-unit>
+        <trans-unit id="368" translate="yes" xml:space="preserve">
+          <source>The following operators can be used to compare two <bpt id="p1">**</bpt>utcdatetime<ept id="p1">**</ept> values: !=, <ph id="ph1">&amp;lt;</ph>, <ph id="ph2">&amp;lt;</ph>=, ==, <ph id="ph3">&amp;gt;</ph>, and <ph id="ph4">&amp;gt;</ph>=.</source>
+        </trans-unit>
+        <trans-unit id="369" translate="yes" xml:space="preserve">
+          <source>When you add a <bpt id="p1">**</bpt>utcdatetime<ept id="p1">**</ept> field to a table, we recommend that you base the field on an EDT.</source>
+        </trans-unit>
+        <trans-unit id="370" translate="yes" xml:space="preserve">
+          <source>utcdatetime examples</source>
+        </trans-unit>
+        <trans-unit id="371" translate="yes" xml:space="preserve">
+          <source>Composite data types</source>
+        </trans-unit>
+        <trans-unit id="372" translate="yes" xml:space="preserve">
+          <source>The composite data types in X++ are arrays, containers, classes as data types, delegates as data types, and tables as data types.</source>
+        </trans-unit>
+        <trans-unit id="373" translate="yes" xml:space="preserve">
+          <source>Array</source>
+        </trans-unit>
+        <trans-unit id="374" translate="yes" xml:space="preserve">
+          <source>An <bpt id="p1">*</bpt>array<ept id="p1">*</ept> is a variable that contains a list of items that have the same data type.</source>
+        </trans-unit>
+        <trans-unit id="375" translate="yes" xml:space="preserve">
+          <source>The elements of an array are accessed by using integer indexes.</source>
+        </trans-unit>
+        <trans-unit id="376" translate="yes" xml:space="preserve">
+          <source>You use a separate statement to initialize each element in an array.</source>
+        </trans-unit>
+        <trans-unit id="377" translate="yes" xml:space="preserve">
+          <source>When you use a container data type or an array object to create a collection, you can initialize multiple elements by using a single statement.</source>
+        </trans-unit>
+        <trans-unit id="378" translate="yes" xml:space="preserve">
+          <source>By default, all the items in an array have the default value of the data type in the array.</source>
+        </trans-unit>
+        <trans-unit id="379" translate="yes" xml:space="preserve">
+          <source>There are three kinds of arrays: <bpt id="p1">*</bpt>dynamic arrays<ept id="p1">*</ept>, <bpt id="p2">*</bpt>fixed-length arrays<ept id="p2">*</ept>, and <bpt id="p3">*</bpt>partly on disk arrays<ept id="p3">*</ept>.</source>
+        </trans-unit>
+        <trans-unit id="380" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Dynamic arrays<ept id="p1">**</ept> – These arrays are declared by using an empty array option.</source>
+        </trans-unit>
+        <trans-unit id="381" translate="yes" xml:space="preserve">
+          <source>In other word, they have only brackets (<ph id="ph1">\[</ph><ph id="ph2">\]</ph>).</source>
+        </trans-unit>
+        <trans-unit id="382" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Fixed-length arrays<ept id="p1">**</ept> – These arrays can hold the number of items that is specified in the declaration.</source>
+        </trans-unit>
+        <trans-unit id="383" translate="yes" xml:space="preserve">
+          <source>Fixed-length arrays are declared like dynamic arrays, but a length option is included in the brackets.</source>
+        </trans-unit>
+        <trans-unit id="384" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Partly on disk arrays<ept id="p1">**</ept> – These arrays are declared as either dynamic arrays or fixed-length arrays that have an extra option that declares how many items should be held in memory.</source>
+        </trans-unit>
+        <trans-unit id="385" translate="yes" xml:space="preserve">
+          <source>The other items are stored on disk and are automatically loaded when they are referenced.</source>
+        </trans-unit>
+        <trans-unit id="386" translate="yes" xml:space="preserve">
+          <source>X++ supports only one-dimensional arrays.</source>
+        </trans-unit>
+        <trans-unit id="387" translate="yes" xml:space="preserve">
+          <source>However, you can mimic the behavior of multiple array indexes.</source>
+        </trans-unit>
+        <trans-unit id="388" translate="yes" xml:space="preserve">
+          <source>(For more information, see the "Multiple array indexes" section).</source>
+        </trans-unit>
+        <trans-unit id="389" translate="yes" xml:space="preserve">
+          <source>Variables in objects and tables can be declared as arrays.</source>
+        </trans-unit>
+        <trans-unit id="390" translate="yes" xml:space="preserve">
+          <source>For example, this functionality is used in address lines in the standard application.</source>
+        </trans-unit>
+        <trans-unit id="391" translate="yes" xml:space="preserve">
+          <source>An array collection class lets you store objects in an array.</source>
+        </trans-unit>
+        <trans-unit id="392" translate="yes" xml:space="preserve">
+          <source>Array indexes begin at 1.</source>
+        </trans-unit>
+        <trans-unit id="393" translate="yes" xml:space="preserve">
+          <source>The first item in the array is referenced as <ph id="ph1">\[</ph>1<ph id="ph2">\]</ph>, the second item is referenced as <ph id="ph3">\[</ph>2<ph id="ph4">\]</ph>, and so on.</source>
+        </trans-unit>
+        <trans-unit id="394" translate="yes" xml:space="preserve">
+          <source>The following syntax is used to access an array element: <bpt id="p1">**</bpt>ArrayItemReference = ArrayVariable <ph id="ph1">\[</ph> Index <ph id="ph2">\]</ph><ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="395" translate="yes" xml:space="preserve">
+          <source>In this syntax, <bpt id="p1">**</bpt>ArrayVariable<ept id="p1">**</ept> is the identifier of the array, and <bpt id="p2">**</bpt>Index<ept id="p2">**</ept> is the number of the array element.</source>
+        </trans-unit>
+        <trans-unit id="396" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Index<ept id="p1">**</ept> can be an integer expression.</source>
+        </trans-unit>
+        <trans-unit id="397" translate="yes" xml:space="preserve">
+          <source>Item zero <ph id="ph1">\[</ph>0<ph id="ph2">\]</ph> is used to clear the array.</source>
+        </trans-unit>
+        <trans-unit id="398" translate="yes" xml:space="preserve">
+          <source>If a value is assigned to index 0 in an array, all elements in the array are reset to their default value.</source>
+        </trans-unit>
+        <trans-unit id="399" translate="yes" xml:space="preserve">
+          <source>Array examples</source>
+        </trans-unit>
+        <trans-unit id="400" translate="yes" xml:space="preserve">
+          <source>Multiple array indexes</source>
+        </trans-unit>
+        <trans-unit id="401" translate="yes" xml:space="preserve">
+          <source>Some languages, such as C++ and C<ph id="ph1">\#</ph>, let you declare arrays that have more than one index.</source>
+        </trans-unit>
+        <trans-unit id="402" translate="yes" xml:space="preserve">
+          <source>In other words, you can define "arrays of arrays."</source>
+        </trans-unit>
+        <trans-unit id="403" translate="yes" xml:space="preserve">
+          <source>In X++, you can't directly create multiple array indexes, because only one-dimensional arrays are supported.</source>
+        </trans-unit>
+        <trans-unit id="404" translate="yes" xml:space="preserve">
+          <source>However, you can implement multiple indexes by using the method that is described in this section.</source>
+        </trans-unit>
+        <trans-unit id="405" translate="yes" xml:space="preserve">
+          <source>For example, you want to declare an array that has two dimensions, to hold an amount that is earned by country by dimension.</source>
+        </trans-unit>
+        <trans-unit id="406" translate="yes" xml:space="preserve">
+          <source>There are 10 countries and three dimensions.</source>
+        </trans-unit>
+        <trans-unit id="407" translate="yes" xml:space="preserve">
+          <source>In C++ and C<ph id="ph1">\#</ph>, you declare the following array.</source>
+        </trans-unit>
+        <trans-unit id="408" translate="yes" xml:space="preserve">
+          <source>However, X++ doesn't support this declaration.</source>
+        </trans-unit>
+        <trans-unit id="409" translate="yes" xml:space="preserve">
+          <source>Instead, you can define a one-dimensional array where the number of elements is the product of the elements in each dimension.</source>
+        </trans-unit>
+        <trans-unit id="410" translate="yes" xml:space="preserve">
+          <source>Here is an example.</source>
+        </trans-unit>
+        <trans-unit id="411" translate="yes" xml:space="preserve">
+          <source>Container</source>
+        </trans-unit>
+        <trans-unit id="412" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">*</bpt>container<ept id="p1">*</ept> object is a dynamic list of items that contain primitive data types or composite data types.</source>
+        </trans-unit>
+        <trans-unit id="413" translate="yes" xml:space="preserve">
+          <source>A container is useful when you must pass various types of values between the client and server tiers.</source>
+        </trans-unit>
+        <trans-unit id="414" translate="yes" xml:space="preserve">
+          <source>However, if you plan to repeatedly add to a list in a loop, a container isn't a good choice.</source>
+        </trans-unit>
+        <trans-unit id="415" translate="yes" xml:space="preserve">
+          <source>Containers are most suitable for processes that don't involve excessive modification to the size or contents of the container.</source>
+        </trans-unit>
+        <trans-unit id="416" translate="yes" xml:space="preserve">
+          <source>When a container undergoes excessive additions of data, overall system performance can decrease, because container data must be repeatedly copied, and new space must be repeatedly allocated.</source>
+        </trans-unit>
+        <trans-unit id="417" translate="yes" xml:space="preserve">
+          <source>A container isn't a class.</source>
+        </trans-unit>
+        <trans-unit id="418" translate="yes" xml:space="preserve">
+          <source>A container contains an ordered sequence of primitive values or other containers.</source>
+        </trans-unit>
+        <trans-unit id="419" translate="yes" xml:space="preserve">
+          <source>Because of the flexibility of <bpt id="p1">**</bpt>anytype<ept id="p1">**</ept>, a container offers a good way to store values of different types together.</source>
+        </trans-unit>
+        <trans-unit id="420" translate="yes" xml:space="preserve">
+          <source>A container can be stored in the database.</source>
+        </trans-unit>
+        <trans-unit id="421" translate="yes" xml:space="preserve">
+          <source>A container is one of the column types that you can select when you use Application Explorer to add a column to a table.</source>
+        </trans-unit>
+        <trans-unit id="422" translate="yes" xml:space="preserve">
+          <source>A container slightly resembles an array, or collections such as the <bpt id="p1">**</bpt>List<ept id="p1">**</ept> or <bpt id="p2">**</bpt>Stack<ept id="p2">**</ept> classes.</source>
+        </trans-unit>
+        <trans-unit id="423" translate="yes" xml:space="preserve">
+          <source>However, you can never change the size or content of a container after the container is created.</source>
+        </trans-unit>
+        <trans-unit id="424" translate="yes" xml:space="preserve">
+          <source>X++ statements that appear to modify a container are internally building a new container and copying values as required.</source>
+        </trans-unit>
+        <trans-unit id="425" translate="yes" xml:space="preserve">
+          <source>Even an assignment of a container to another container variable creates a new copy of the container.</source>
+        </trans-unit>
+        <trans-unit id="426" translate="yes" xml:space="preserve">
+          <source>All these operations can affect performance.</source>
+        </trans-unit>
+        <trans-unit id="427" translate="yes" xml:space="preserve">
+          <source>In the functions that provide access to a container (such as <bpt id="p1">**</bpt>conPeek<ept id="p1">**</ept>), the container is 1-based, not 0-based.</source>
+        </trans-unit>
+        <trans-unit id="428" translate="yes" xml:space="preserve">
+          <source>Indexing is 1-based for arrays.</source>
+        </trans-unit>
+        <trans-unit id="429" translate="yes" xml:space="preserve">
+          <source>The default value of a container is <bpt id="p1">**</bpt>empty<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="430" translate="yes" xml:space="preserve">
+          <source>The container doesn't contain any values.</source>
+        </trans-unit>
+        <trans-unit id="431" translate="yes" xml:space="preserve">
+          <source>Some statements that use containers might appear to modify a container.</source>
+        </trans-unit>
+        <trans-unit id="432" translate="yes" xml:space="preserve">
+          <source>However, inside the system, containers are never modified.</source>
+        </trans-unit>
+        <trans-unit id="433" translate="yes" xml:space="preserve">
+          <source>Instead, the data from the original container is combined with data from the command to build a new container.</source>
+        </trans-unit>
+        <trans-unit id="434" translate="yes" xml:space="preserve">
+          <source>You can create a new container by using one of the following functions: <bpt id="p1">**</bpt>conDel<ept id="p1">**</ept>, <bpt id="p2">**</bpt>conIns<ept id="p2">**</ept>, or <bpt id="p3">**</bpt>conPoke<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="435" translate="yes" xml:space="preserve">
+          <source>Additionally, the <bpt id="p1">**</bpt>Global<ept id="p1">**</ept> class has static methods for handling containers.</source>
+        </trans-unit>
+        <trans-unit id="436" translate="yes" xml:space="preserve">
+          <source>These methods include <bpt id="p1">**</bpt>con2ArraySource<ept id="p1">**</ept>, <bpt id="p2">**</bpt>con2Buf<ept id="p2">**</ept>, <bpt id="p3">**</bpt>con2List<ept id="p3">**</ept>, <bpt id="p4">**</bpt>con2Str<ept id="p4">**</ept>, <bpt id="p5">**</bpt>containerFromXmlNode<ept id="p5">**</ept>, <bpt id="p6">**</bpt>conView<ept id="p6">**</ept>, and <bpt id="p7">**</bpt>str2Con<ept id="p7">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="437" translate="yes" xml:space="preserve">
+          <source>There are several intrinsic functions for handling a container, such as <bpt id="p1">**</bpt>conIns<ept id="p1">**</ept> and <bpt id="p2">**</bpt>conPeek<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="438" translate="yes" xml:space="preserve">
+          <source>The X++ <bpt id="p1">**</bpt>conPeek<ept id="p1">**</ept> function returns an <bpt id="p2">**</bpt>anytype<ept id="p2">**</ept> type.</source>
+        </trans-unit>
+        <trans-unit id="439" translate="yes" xml:space="preserve">
+          <source>Therefore, it's easier to read the values from a container when you don't know the type of each value.</source>
+        </trans-unit>
+        <trans-unit id="440" translate="yes" xml:space="preserve">
+          <source>An <bpt id="p1">**</bpt>anytype<ept id="p1">**</ept> can be assigned to any X++ value type, provided that the value can be converted.</source>
+        </trans-unit>
+        <trans-unit id="441" translate="yes" xml:space="preserve">
+          <source>Your code is easier to read when it avoids explicit data type conversions.</source>
+        </trans-unit>
+        <trans-unit id="442" translate="yes" xml:space="preserve">
+          <source>Therefore, assign values from a container to the same data type that was used to put the value into the container.</source>
+        </trans-unit>
+        <trans-unit id="443" translate="yes" xml:space="preserve">
+          <source>You must not assign a container to an <bpt id="p1">**</bpt>anytype<ept id="p1">**</ept>, because the system might not be able to determine the correct conversions.</source>
+        </trans-unit>
+        <trans-unit id="444" translate="yes" xml:space="preserve">
+          <source>In these cases, unexpected behavior or errors might occur.</source>
+        </trans-unit>
+        <trans-unit id="445" translate="yes" xml:space="preserve">
+          <source>Comparing container to other options</source>
+        </trans-unit>
+        <trans-unit id="446" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>container<ept id="p1">**</ept> type resembles other constructs, such as arrays and collection classes such as <bpt id="p2">**</bpt>List<ept id="p2">**</ept> and <bpt id="p3">**</bpt>Stack<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="447" translate="yes" xml:space="preserve">
+          <source>The difference between a container and <bpt id="p1">**</bpt>List<ept id="p1">**</ept> is that an instance of the <bpt id="p2">**</bpt>List<ept id="p2">**</ept> class is mutable.</source>
+        </trans-unit>
+        <trans-unit id="448" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">**</bpt>List<ept id="p1">**</ept> object first allocates more space than its data consumes.</source>
+        </trans-unit>
+        <trans-unit id="449" translate="yes" xml:space="preserve">
+          <source>Then, as data is added, the space is filled.</source>
+        </trans-unit>
+        <trans-unit id="450" translate="yes" xml:space="preserve">
+          <source>This behavior is more efficient than allocating more space every time that an element is added.</source>
+        </trans-unit>
+        <trans-unit id="451" translate="yes" xml:space="preserve">
+          <source>An update of a <bpt id="p1">**</bpt>List<ept id="p1">**</ept> performs faster than similar operations on a container.</source>
+        </trans-unit>
+        <trans-unit id="452" translate="yes" xml:space="preserve">
+          <source>When you construct a <bpt id="p1">**</bpt>List<ept id="p1">**</ept> object, you determine the one type of data that the <bpt id="p2">**</bpt>List<ept id="p2">**</ept> object can store.</source>
+        </trans-unit>
+        <trans-unit id="453" translate="yes" xml:space="preserve">
+          <source>This restriction is less flexible for a <bpt id="p1">**</bpt>List<ept id="p1">**</ept> than it is for a container.</source>
+        </trans-unit>
+        <trans-unit id="454" translate="yes" xml:space="preserve">
+          <source>However, you can store objects in a <bpt id="p1">**</bpt>List<ept id="p1">**</ept>, whereas a container can store only value types.</source>
+        </trans-unit>
+        <trans-unit id="455" translate="yes" xml:space="preserve">
+          <source>The difference between a container and an array is that an array can hold only items of its declared type.</source>
+        </trans-unit>
+        <trans-unit id="456" translate="yes" xml:space="preserve">
+          <source>You can allocate memory space for an array and fill that space with values later.</source>
+        </trans-unit>
+        <trans-unit id="457" translate="yes" xml:space="preserve">
+          <source>For example, you can fill in values in a loop.</source>
+        </trans-unit>
+        <trans-unit id="458" translate="yes" xml:space="preserve">
+          <source>This behavior is efficient and performs well.</source>
+        </trans-unit>
+        <trans-unit id="459" translate="yes" xml:space="preserve">
+          <source>When you want to build a new container by appending new data, you can use either the <bpt id="p1">**</bpt><ph id="ph1">+=</ph><ept id="p1">**</ept> operator or the <bpt id="p2">**</bpt>conIns<ept id="p2">**</ept> function.</source>
+        </trans-unit>
+        <trans-unit id="460" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt><ph id="ph1">+=</ph><ept id="p1">**</ept> operator is the faster alternative.</source>
+        </trans-unit>
+        <trans-unit id="461" translate="yes" xml:space="preserve">
+          <source>Use the <bpt id="p1">**</bpt>conIns<ept id="p1">**</ept> function only when you want to add new data before the last index of the original data.</source>
+        </trans-unit>
+        <trans-unit id="462" translate="yes" xml:space="preserve">
+          <source>In Dynamics AX 2012, although you could use the X++ compiler to store object references in containers, the result would fail at run time.</source>
+        </trans-unit>
+        <trans-unit id="463" translate="yes" xml:space="preserve">
+          <source>However, in Microsoft Dynamics 365 for Finance and Operations, when the compiler sees an attempt to store an object reference in a container, it issues an error message.</source>
+        </trans-unit>
+        <trans-unit id="464" translate="yes" xml:space="preserve">
+          <source>If the type of the element that is added to the container is <bpt id="p1">**</bpt>anytype<ept id="p1">**</ept>, the compiler can’t determine whether the value is a reference type.</source>
+        </trans-unit>
+        <trans-unit id="465" translate="yes" xml:space="preserve">
+          <source>In this case, the compiler allows the attempt.</source>
+        </trans-unit>
+        <trans-unit id="466" translate="yes" xml:space="preserve">
+          <source>It's assumed that the user knows what he or she is doing.</source>
+        </trans-unit>
+        <trans-unit id="467" translate="yes" xml:space="preserve">
+          <source>Although the compiler doesn't diagnose the code as erroneous, an error will be thrown at run time.</source>
+        </trans-unit>
+        <trans-unit id="468" translate="yes" xml:space="preserve">
+          <source>Container examples</source>
+        </trans-unit>
+        <trans-unit id="469" translate="yes" xml:space="preserve">
+          <source>Classes as data types</source>
+        </trans-unit>
+        <trans-unit id="470" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">*</bpt>class<ept id="p1">*</ept> is a type definition that describes both variables and methods for instances of the class.</source>
+        </trans-unit>
+        <trans-unit id="471" translate="yes" xml:space="preserve">
+          <source>(The instances of a class are also known as <bpt id="p1">*</bpt>objects<ept id="p1">*</ept>.) A class is only a definition for objects, and all objects are <bpt id="p2">**</bpt>null<ept id="p2">**</ept> when they are declared.</source>
+        </trans-unit>
+        <trans-unit id="472" translate="yes" xml:space="preserve">
+          <source>In Application Explorer, every application class under the <bpt id="p1">**</bpt>Classes<ept id="p1">**</ept> node is a data type.</source>
+        </trans-unit>
+        <trans-unit id="473" translate="yes" xml:space="preserve">
+          <source>You can declare variables of these types in your code.</source>
+        </trans-unit>
+        <trans-unit id="474" translate="yes" xml:space="preserve">
+          <source>You can construct instances of a class and assign the instances to variables.</source>
+        </trans-unit>
+        <trans-unit id="475" translate="yes" xml:space="preserve">
+          <source>Classes can be nested in source code.</source>
+        </trans-unit>
+        <trans-unit id="476" translate="yes" xml:space="preserve">
+          <source>Nested classes are available only inside forms (such as a class that extends <bpt id="p1">**</bpt>FormRun<ept id="p1">**</ept>), and are used to represent controls, data sources, or data fields.</source>
+        </trans-unit>
+        <trans-unit id="477" translate="yes" xml:space="preserve">
+          <source>An attribute decoration, such as the attribute decoration on a class or a method, can omit the suffix of the attribute name if the suffix is <bpt id="p1">**</bpt>Attribute<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="478" translate="yes" xml:space="preserve">
+          <source>Therefore, X++ allows <bpt id="p1">**</bpt><ph id="ph1">\[</ph>MyFavorite<ph id="ph2">\]</ph><ept id="p1">**</ept> instead of requiring <bpt id="p2">**</bpt><ph id="ph3">\[</ph>MyFavoriteAttribute<ph id="ph4">\]</ph><ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="479" translate="yes" xml:space="preserve">
+          <source>Additionally, attributes are now applied to the handlers of delegates and methods, to map the handlers to those targets.</source>
+        </trans-unit>
+        <trans-unit id="480" translate="yes" xml:space="preserve">
+          <source>In AX 2012 and earlier versions, you could designate a method to run on either the client or the server.</source>
+        </trans-unit>
+        <trans-unit id="481" translate="yes" xml:space="preserve">
+          <source>However, in Microsoft Dynamics 365 for Finance and Operations and later versions, all compiled X++ code is run as .NET Common Intermediate Language (CIL) on the server.</source>
+        </trans-unit>
+        <trans-unit id="482" translate="yes" xml:space="preserve">
+          <source>There is no longer any code that is evaluated at the client site or in the browser.</source>
+        </trans-unit>
+        <trans-unit id="483" translate="yes" xml:space="preserve">
+          <source>Therefore, the <bpt id="p1">**</bpt>client<ept id="p1">**</ept> and <bpt id="p2">**</bpt>server<ept id="p2">**</ept> keywords are now ignored.</source>
+        </trans-unit>
+        <trans-unit id="484" translate="yes" xml:space="preserve">
+          <source>Although these keywords don't cause a compile error if they are used, they should not be used in any new code.</source>
+        </trans-unit>
+        <trans-unit id="485" translate="yes" xml:space="preserve">
+          <source>Private and protected member variables</source>
+        </trans-unit>
+        <trans-unit id="486" translate="yes" xml:space="preserve">
+          <source>Previously, all member variables that were defined in a class were protected.</source>
+        </trans-unit>
+        <trans-unit id="487" translate="yes" xml:space="preserve">
+          <source>You can now make the visibility of member variables explicit by adding the <bpt id="p1">**</bpt>private<ept id="p1">**</ept>, <bpt id="p2">**</bpt>protected<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>public<ept id="p3">**</ept> keywords.</source>
+        </trans-unit>
+        <trans-unit id="488" translate="yes" xml:space="preserve">
+          <source>The interpretation of these modifiers is obvious and is aligned with the semantics for methods:</source>
+        </trans-unit>
+        <trans-unit id="489" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>private<ept id="p1">**</ept> – The member variable can be used only within the class where it’s defined.</source>
+        </trans-unit>
+        <trans-unit id="490" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>protected<ept id="p1">**</ept> – The member variable can be used in the class where it’s defined and all subclasses of that class.</source>
+        </trans-unit>
+        <trans-unit id="491" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>public<ept id="p1">**</ept> – The member variable can be used anywhere.</source>
+        </trans-unit>
+        <trans-unit id="492" translate="yes" xml:space="preserve">
+          <source>It’s visible outside the confines of the class hierarchy where it’s defined.</source>
+        </trans-unit>
+        <trans-unit id="493" translate="yes" xml:space="preserve">
+          <source>By default, member variables that aren’t adorned with an explicit modifier are still protected.</source>
+        </trans-unit>
+        <trans-unit id="494" translate="yes" xml:space="preserve">
+          <source>However, as a best practice, you should explicitly specify the visibility.</source>
+        </trans-unit>
+        <trans-unit id="495" translate="yes" xml:space="preserve">
+          <source>As we described earlier, when a member variable is defined as <bpt id="p1">**</bpt>public<ept id="p1">**</ept>, it can be accessed outside the class where it’s defined.</source>
+        </trans-unit>
+        <trans-unit id="496" translate="yes" xml:space="preserve">
+          <source>In this case, you must specify a qualifier that designates the object that is hosting the variable.</source>
+        </trans-unit>
+        <trans-unit id="497" translate="yes" xml:space="preserve">
+          <source>To specify the qualifier, use the dot notation, as you do for method calls.</source>
+        </trans-unit>
+        <trans-unit id="498" translate="yes" xml:space="preserve">
+          <source>In the following example, <bpt id="p1">**</bpt>field1<ept id="p1">**</ept> is accessed by using the explicit <bpt id="p2">**</bpt>this<ept id="p2">**</ept> qualifier.</source>
+        </trans-unit>
+        <trans-unit id="499" translate="yes" xml:space="preserve">
+          <source>In this case, it might not be a good idea to make a member variable public, because that approach exposes the internal workings of the class to its consumers, and therefore creates a strong dependency between the class implementation and its consumers.</source>
+        </trans-unit>
+        <trans-unit id="500" translate="yes" xml:space="preserve">
+          <source>You should always try to depend only on a contract, not an implementation.</source>
+        </trans-unit>
+        <trans-unit id="501" translate="yes" xml:space="preserve">
+          <source>Static constructors and static fields</source>
+        </trans-unit>
+        <trans-unit id="502" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>Static fields<ept id="p1">*</ept> are fields that are declared by using the <bpt id="p2">**</bpt>static<ept id="p2">**</ept> keyword.</source>
+        </trans-unit>
+        <trans-unit id="503" translate="yes" xml:space="preserve">
+          <source>Conceptually, static fields apply to the class, not to instances of the class.</source>
+        </trans-unit>
+        <trans-unit id="504" translate="yes" xml:space="preserve">
+          <source>Static constructors are guaranteed to run before any static calls or instance calls are made to the class.</source>
+        </trans-unit>
+        <trans-unit id="505" translate="yes" xml:space="preserve">
+          <source>The execution of the static constructor is relative to the user’s session.</source>
+        </trans-unit>
+        <trans-unit id="506" translate="yes" xml:space="preserve">
+          <source>You never call the static constructor explicitly.</source>
+        </trans-unit>
+        <trans-unit id="507" translate="yes" xml:space="preserve">
+          <source>Instead, the compiler will generate code to make sure that the constructor is called exactly one time, before any other method on the class is called.</source>
+        </trans-unit>
+        <trans-unit id="508" translate="yes" xml:space="preserve">
+          <source>A static constructor is used to initialize any static data or perform an action that must be performed only one time.</source>
+        </trans-unit>
+        <trans-unit id="509" translate="yes" xml:space="preserve">
+          <source>You can't provide parameters for the static constructor, and it must be marked with the <bpt id="p1">**</bpt>static<ept id="p1">**</ept> keyword.</source>
+        </trans-unit>
+        <trans-unit id="510" translate="yes" xml:space="preserve">
+          <source>Class elements in Application Explorer</source>
+        </trans-unit>
+        <trans-unit id="511" translate="yes" xml:space="preserve">
+          <source>Under most class nodes in Application Explorer, there are two special nodes: a <bpt id="p1">**</bpt>classDeclaration<ept id="p1">**</ept> node and a <bpt id="p2">**</bpt>new<ept id="p2">**</ept> node.</source>
+        </trans-unit>
+        <trans-unit id="512" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">**</bpt>classDeclaration<ept id="p1">**</ept> always contains the X++ <bpt id="p2">**</bpt>class<ept id="p2">**</ept> keyword.</source>
+        </trans-unit>
+        <trans-unit id="513" translate="yes" xml:space="preserve">
+          <source>Additional keywords, such as <bpt id="p1">**</bpt>extends<ept id="p1">**</ept>, can be included to modify the class.</source>
+        </trans-unit>
+        <trans-unit id="514" translate="yes" xml:space="preserve">
+          <source>This node can also contain declarations of member variables.</source>
+        </trans-unit>
+        <trans-unit id="515" translate="yes" xml:space="preserve">
+          <source>The member variables can't be initialized to a value in <bpt id="p1">**</bpt>classDeclaration<ept id="p1">**</ept>, and they can't be static.</source>
+        </trans-unit>
+        <trans-unit id="516" translate="yes" xml:space="preserve">
+          <source>In the following example, the variables <bpt id="p1">**</bpt>m<ph id="ph1">\_</ph>priority<ept id="p1">**</ept> and <bpt id="p2">**</bpt>m<ph id="ph2">\_</ph>rectangle<ept id="p2">**</ept> are members of the class.</source>
+        </trans-unit>
+        <trans-unit id="517" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">**</bpt>new<ept id="p1">**</ept> operator contains logic that is run when the <bpt id="p2">**</bpt>new<ept id="p2">**</ept> operator is used to create an instance of the class.</source>
+        </trans-unit>
+        <trans-unit id="518" translate="yes" xml:space="preserve">
+          <source>The logic in the <bpt id="p1">**</bpt>new<ept id="p1">**</ept> method might construct an object and assign that object to a variable that is declared in the <bpt id="p2">**</bpt>classDeclaration<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="519" translate="yes" xml:space="preserve">
+          <source>Each class can have only one <bpt id="p1">**</bpt>new<ept id="p1">**</ept> method.</source>
+        </trans-unit>
+        <trans-unit id="520" translate="yes" xml:space="preserve">
+          <source>However, in the <bpt id="p1">**</bpt>new<ept id="p1">**</ept> method, you often should call the <bpt id="p2">**</bpt>new<ept id="p2">**</ept> method of the base class.</source>
+        </trans-unit>
+        <trans-unit id="521" translate="yes" xml:space="preserve">
+          <source>To call the <bpt id="p1">**</bpt>new<ept id="p1">**</ept> method of the base class, call <bpt id="p2">**</bpt>super()<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="522" translate="yes" xml:space="preserve">
+          <source>The following example shows the <bpt id="p1">**</bpt>new<ept id="p1">**</ept> method for the <bpt id="p2">**</bpt>YourDerivedClass<ept id="p2">**</ept> class in the previous <bpt id="p3">**</bpt>classDeclaration<ept id="p3">**</ept> example.</source>
+        </trans-unit>
+        <trans-unit id="523" translate="yes" xml:space="preserve">
+          <source>In this <bpt id="p1">**</bpt>new<ept id="p1">**</ept> method, the code constructs an instance of the <bpt id="p2">**</bpt>Rectangle<ept id="p2">**</ept> class.</source>
+        </trans-unit>
+        <trans-unit id="524" translate="yes" xml:space="preserve">
+          <source>The instance is assigned to the <bpt id="p1">**</bpt>m<ph id="ph1">\_</ph>rectangle<ept id="p1">**</ept> variable.</source>
+        </trans-unit>
+        <trans-unit id="525" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>this<ept id="p1">**</ept> keyword that is used in the example is optional.</source>
+        </trans-unit>
+        <trans-unit id="526" translate="yes" xml:space="preserve">
+          <source>However, if you include it, IntelliSense might be more helpful.</source>
+        </trans-unit>
+        <trans-unit id="527" translate="yes" xml:space="preserve">
+          <source>Garbage collection</source>
+        </trans-unit>
+        <trans-unit id="528" translate="yes" xml:space="preserve">
+          <source>Eventually during run time, most objects no longer have any variable that points to them.</source>
+        </trans-unit>
+        <trans-unit id="529" translate="yes" xml:space="preserve">
+          <source>The system scans for these objects and erases them from memory.</source>
+        </trans-unit>
+        <trans-unit id="530" translate="yes" xml:space="preserve">
+          <source>The memory space then becomes available for other uses.</source>
+        </trans-unit>
+        <trans-unit id="531" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Object<ept id="p1">**</ept> class has a method that is named <bpt id="p2">**</bpt>finalize<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="532" translate="yes" xml:space="preserve">
+          <source>However, the <bpt id="p1">**</bpt>finalize<ept id="p1">**</ept> method isn't a destructor.</source>
+        </trans-unit>
+        <trans-unit id="533" translate="yes" xml:space="preserve">
+          <source>The runtime never calls the <bpt id="p1">**</bpt>finalize<ept id="p1">**</ept> method, even when an object is collected as garbage.</source>
+        </trans-unit>
+        <trans-unit id="534" translate="yes" xml:space="preserve">
+          <source>System classes</source>
+        </trans-unit>
+        <trans-unit id="535" translate="yes" xml:space="preserve">
+          <source>In Application Explorer, under <bpt id="p1">**</bpt>System Documentation<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Classes<ept id="p2">**</ept>, there is a list of the kernel classes or system classes.</source>
+        </trans-unit>
+        <trans-unit id="536" translate="yes" xml:space="preserve">
+          <source>System classes aren't written in X++, and you can't see their source code.</source>
+        </trans-unit>
+        <trans-unit id="537" translate="yes" xml:space="preserve">
+          <source>You can't add system classes.</source>
+        </trans-unit>
+        <trans-unit id="538" translate="yes" xml:space="preserve">
+          <source>System classes usually have a <bpt id="p1">**</bpt>new<ept id="p1">**</ept> method, but they don't have a <bpt id="p2">**</bpt>classDeclaration<ept id="p2">**</ept> node.</source>
+        </trans-unit>
+        <trans-unit id="539" translate="yes" xml:space="preserve">
+          <source>Every application class implicitly extends the <bpt id="p1">**</bpt>Object<ept id="p1">**</ept> system class.</source>
+        </trans-unit>
+        <trans-unit id="540" translate="yes" xml:space="preserve">
+          <source>Some system classes are extended by an application class that has a similar name.</source>
+        </trans-unit>
+        <trans-unit id="541" translate="yes" xml:space="preserve">
+          <source>For instance, <bpt id="p1">**</bpt>xClassFactory<ept id="p1">**</ept> is extended by <bpt id="p2">**</bpt>ClassFactory<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="542" translate="yes" xml:space="preserve">
+          <source>In these cases, you should not use the system class.</source>
+        </trans-unit>
+        <trans-unit id="543" translate="yes" xml:space="preserve">
+          <source>For more information, see "Substitute application classes for system classes" in <bpt id="p1">[</bpt>X++ classes and methods<ept id="p1">](xpp-classes-methods.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="544" translate="yes" xml:space="preserve">
+          <source>Extension methods</source>
+        </trans-unit>
+        <trans-unit id="545" translate="yes" xml:space="preserve">
+          <source>The extension method feature lets you add extension methods to a target class by writing the methods in a separate extension class.</source>
+        </trans-unit>
+        <trans-unit id="546" translate="yes" xml:space="preserve">
+          <source>The following rules apply:</source>
+        </trans-unit>
+        <trans-unit id="547" translate="yes" xml:space="preserve">
+          <source>The extension class must be static.</source>
+        </trans-unit>
+        <trans-unit id="548" translate="yes" xml:space="preserve">
+          <source>The name of the extension class must end with the ten-character suffix <bpt id="p1">**</bpt><ph id="ph1">\_</ph>Extension<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="549" translate="yes" xml:space="preserve">
+          <source>However, there’s no restriction on the part of the name that precedes the suffix.</source>
+        </trans-unit>
+        <trans-unit id="550" translate="yes" xml:space="preserve">
+          <source>Every extension method in the extension class must be declared as <bpt id="p1">**</bpt>public static<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="551" translate="yes" xml:space="preserve">
+          <source>The first parameter in every extension method is the type that the extension method extends.</source>
+        </trans-unit>
+        <trans-unit id="552" translate="yes" xml:space="preserve">
+          <source>However, when the extension method is called, the caller must not pass in anything for the first parameter.</source>
+        </trans-unit>
+        <trans-unit id="553" translate="yes" xml:space="preserve">
+          <source>Instead, the system automatically passes in the required object for the first parameter.</source>
+        </trans-unit>
+        <trans-unit id="554" translate="yes" xml:space="preserve">
+          <source>The target of an extension method must be a class, table, view, or map application object type.</source>
+        </trans-unit>
+        <trans-unit id="555" translate="yes" xml:space="preserve">
+          <source>An extension class can contain private or protected static methods.</source>
+        </trans-unit>
+        <trans-unit id="556" translate="yes" xml:space="preserve">
+          <source>These methods are typically used for implementation details and aren't exposed as extensions.</source>
+        </trans-unit>
+        <trans-unit id="557" translate="yes" xml:space="preserve">
+          <source>The extension method technique doesn’t affect the source code of the class that it extends.</source>
+        </trans-unit>
+        <trans-unit id="558" translate="yes" xml:space="preserve">
+          <source>Therefore, the addition to the class doesn't require over-layering.</source>
+        </trans-unit>
+        <trans-unit id="559" translate="yes" xml:space="preserve">
+          <source>Upgrades to the target class are never affected by any existing extension methods.</source>
+        </trans-unit>
+        <trans-unit id="560" translate="yes" xml:space="preserve">
+          <source>However, if an upgrade to the target class adds a method that has the same name as your extension method, your extension method can no longer be reached through objects of the target class.</source>
+        </trans-unit>
+        <trans-unit id="561" translate="yes" xml:space="preserve">
+          <source>The extension method technique uses the same dot-delimited syntax that you often use to call regular instance methods.</source>
+        </trans-unit>
+        <trans-unit id="562" translate="yes" xml:space="preserve">
+          <source>Extension methods can access all public artifacts of the target class, but they can’t access anything that is protected or private.</source>
+        </trans-unit>
+        <trans-unit id="563" translate="yes" xml:space="preserve">
+          <source>Therefore, extension methods can be considered a type of syntactic sugar.</source>
+        </trans-unit>
+        <trans-unit id="564" translate="yes" xml:space="preserve">
+          <source>Regardless of the target type, an extension class is used to add extension methods to the type.</source>
+        </trans-unit>
+        <trans-unit id="565" translate="yes" xml:space="preserve">
+          <source>For example, an extension table isn't used to add methods to a table, and there’s no such thing as an extension table.</source>
+        </trans-unit>
+        <trans-unit id="566" translate="yes" xml:space="preserve">
+          <source>Delegates as data types</source>
+        </trans-unit>
+        <trans-unit id="567" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">*</bpt>delegate<ept id="p1">*</ept> collects methods that subscribe to it.</source>
+        </trans-unit>
+        <trans-unit id="568" translate="yes" xml:space="preserve">
+          <source>The delegate specifies the parameter signature that all its subscriber methods must share.</source>
+        </trans-unit>
+        <trans-unit id="569" translate="yes" xml:space="preserve">
+          <source>When the delegate is called, the delegate calls each of its subscribers.</source>
+        </trans-unit>
+        <trans-unit id="570" translate="yes" xml:space="preserve">
+          <source>A delegate never returns a value and <bpt id="p1">**</bpt>can't have a default value<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="571" translate="yes" xml:space="preserve">
+          <source>At first, every delegate has no subscribed methods.</source>
+        </trans-unit>
+        <trans-unit id="572" translate="yes" xml:space="preserve">
+          <source>There is no limit on the number of parameters that a delegate can declare, and there is no limitation on the type of those parameters.</source>
+        </trans-unit>
+        <trans-unit id="573" translate="yes" xml:space="preserve">
+          <source>The delegate body is always empty, because the delegate's only purpose is to define the contract that subscribers must conform to.</source>
+        </trans-unit>
+        <trans-unit id="574" translate="yes" xml:space="preserve">
+          <source>A delegate doesn't have to be defined in a class.</source>
+        </trans-unit>
+        <trans-unit id="575" translate="yes" xml:space="preserve">
+          <source>Delegates can also be defined in a table, form, or query.</source>
+        </trans-unit>
+        <trans-unit id="576" translate="yes" xml:space="preserve">
+          <source>Delegate examples</source>
+        </trans-unit>
+        <trans-unit id="577" translate="yes" xml:space="preserve">
+          <source>Tables as data types</source>
+        </trans-unit>
+        <trans-unit id="578" translate="yes" xml:space="preserve">
+          <source>All tables can be treated as class definitions.</source>
+        </trans-unit>
+        <trans-unit id="579" translate="yes" xml:space="preserve">
+          <source>A table variable can be considered an instance (object) of the table (class) definition.</source>
+        </trans-unit>
+        <trans-unit id="580" translate="yes" xml:space="preserve">
+          <source>For every field in a table variable, the default value is <bpt id="p1">**</bpt>empty<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="581" translate="yes" xml:space="preserve">
+          <source>You can address fields and create methods on tables.</source>
+        </trans-unit>
+        <trans-unit id="582" translate="yes" xml:space="preserve">
+          <source>The methods can be invoked on instances of the table.</source>
+        </trans-unit>
+        <trans-unit id="583" translate="yes" xml:space="preserve">
+          <source>To manipulate (that is, read, update, insert, and delete) records in tables, you must declare at least one table variable that can hold the record in focus.</source>
+        </trans-unit>
+        <trans-unit id="584" translate="yes" xml:space="preserve">
+          <source>As a best practice, you should use the name of the table as the name of the variable but use an initial lowercase letter.</source>
+        </trans-unit>
+        <trans-unit id="585" translate="yes" xml:space="preserve">
+          <source>Here are a few important differences between tables and objects:</source>
+        </trans-unit>
+        <trans-unit id="586" translate="yes" xml:space="preserve">
+          <source>You can't allocate space for table variables.</source>
+        </trans-unit>
+        <trans-unit id="587" translate="yes" xml:space="preserve">
+          <source>Allocation is done implicitly.</source>
+        </trans-unit>
+        <trans-unit id="588" translate="yes" xml:space="preserve">
+          <source>Fields in table variables are public.</source>
+        </trans-unit>
+        <trans-unit id="589" translate="yes" xml:space="preserve">
+          <source>You can reference them anywhere.</source>
+        </trans-unit>
+        <trans-unit id="590" translate="yes" xml:space="preserve">
+          <source>Fields in table variables can be referenced by using expressions.</source>
+        </trans-unit>
+        <trans-unit id="591" translate="yes" xml:space="preserve">
+          <source>There is no automatic conversion, but table variables that are declared as <bpt id="p1">**</bpt>Common<ept id="p1">**</ept> can hold data from any table.</source>
+        </trans-unit>
+        <trans-unit id="592" translate="yes" xml:space="preserve">
+          <source>Scope of table variables</source>
+        </trans-unit>
+        <trans-unit id="593" translate="yes" xml:space="preserve">
+          <source>In most respects, table variables can be considered objects.</source>
+        </trans-unit>
+        <trans-unit id="594" translate="yes" xml:space="preserve">
+          <source>However, unlike objects, they aren't explicitly allocated.</source>
+        </trans-unit>
+        <trans-unit id="595" translate="yes" xml:space="preserve">
+          <source>Only a variable declaration is required.</source>
+        </trans-unit>
+        <trans-unit id="596" translate="yes" xml:space="preserve">
+          <source>All tables are compatible with the Common table, just as all objects are compatible with the <bpt id="p1">**</bpt>Object<ept id="p1">**</ept> class.</source>
+        </trans-unit>
+        <trans-unit id="597" translate="yes" xml:space="preserve">
+          <source>Table variables are declared as common buffers and can be used to hold data from any table.</source>
+        </trans-unit>
+        <trans-unit id="598" translate="yes" xml:space="preserve">
+          <source>You can't access tables that don't have table variables.</source>
+        </trans-unit>
+        <trans-unit id="599" translate="yes" xml:space="preserve">
+          <source>The principles for declaring table variables and objects are the same, except with regard to the allocation of space.</source>
+        </trans-unit>
+        <trans-unit id="600" translate="yes" xml:space="preserve">
+          <source>Table examples</source>
+        </trans-unit>
+        <trans-unit id="601" translate="yes" xml:space="preserve">
+          <source>The syntax enables various possibilities for referencing fields in records.</source>
+        </trans-unit>
+        <trans-unit id="602" translate="yes" xml:space="preserve">
+          <source>For example, you can use the <bpt id="p1">**</bpt>TableName.(FieldId)<ept id="p1">**</ept> syntax.</source>
+        </trans-unit>
+        <trans-unit id="603" translate="yes" xml:space="preserve">
+          <source>The following example prints the contents of the fields in the current record in the Customer table.</source>
+        </trans-unit>
+        <trans-unit id="604" translate="yes" xml:space="preserve">
+          <source>The following example uses the <bpt id="p1">**</bpt>fieldCnt<ept id="p1">**</ept> and <bpt id="p2">**</bpt>fieldCnt2Id<ept id="p2">**</ept> methods.</source>
+        </trans-unit>
+        <trans-unit id="605" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>fieldCnt<ept id="p1">**</ept> method counts the number of fields in a table, whereas <bpt id="p2">**</bpt>fieldCnt2Id<ept id="p2">**</ept> returns the ID for a field number.</source>
+        </trans-unit>
+        <trans-unit id="606" translate="yes" xml:space="preserve">
+          <source>For example, you can use the <bpt id="p1">**</bpt>fieldCnt2Id<ept id="p1">**</ept> method to learn that field number 6 in a table has the ID 54.</source>
+        </trans-unit>
+        <trans-unit id="607" translate="yes" xml:space="preserve">
+          <source>This conversion is required, because there is no guarantee that the IDs of the fields in a table are consecutive.</source>
+        </trans-unit>
+        <trans-unit id="608" translate="yes" xml:space="preserve">
+          <source>Collection classes</source>
+        </trans-unit>
+        <trans-unit id="609" translate="yes" xml:space="preserve">
+          <source>The X++ language syntax provides two composite types: arrays and containers.</source>
+        </trans-unit>
+        <trans-unit id="610" translate="yes" xml:space="preserve">
+          <source>These composite types are useful for aggregating values of primitive types.</source>
+        </trans-unit>
+        <trans-unit id="611" translate="yes" xml:space="preserve">
+          <source>However, you can't store class objects in arrays or containers.</source>
+        </trans-unit>
+        <trans-unit id="612" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>Collection classes<ept id="p1">*</ept> are used to store objects.</source>
+        </trans-unit>
+        <trans-unit id="613" translate="yes" xml:space="preserve">
+          <source>They let you create arrays, lists, sets, maps, and structs that can hold any data type, even objects.</source>
+        </trans-unit>
+        <trans-unit id="614" translate="yes" xml:space="preserve">
+          <source>For maximum performance, the classes are implemented in C++ (they are system classes).</source>
+        </trans-unit>
+        <trans-unit id="615" translate="yes" xml:space="preserve">
+          <source>Collection classes were previously known as <bpt id="p1">*</bpt>foundation classes<ept id="p1">*</ept>.</source>
+        </trans-unit>
+        <trans-unit id="616" translate="yes" xml:space="preserve">
+          <source>The collection classes are <bpt id="p1">**</bpt>Array<ept id="p1">**</ept>, <bpt id="p2">**</bpt>List<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Map<ept id="p3">**</ept>, <bpt id="p4">**</bpt>Set<ept id="p4">**</ept>, and <bpt id="p5">**</bpt>Struct<ept id="p5">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="617" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Array<ept id="p1">**</ept> – This class resembles the <bpt id="p2">**</bpt>array<ept id="p2">**</ept> type in the X++ language, but it can hold values of any single type, even objects and records.</source>
+        </trans-unit>
+        <trans-unit id="618" translate="yes" xml:space="preserve">
+          <source>Objects are accessed in a specific order.</source>
+        </trans-unit>
+        <trans-unit id="619" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>List<ept id="p1">**</ept> – This class contains elements that are accessed sequentially.</source>
+        </trans-unit>
+        <trans-unit id="620" translate="yes" xml:space="preserve">
+          <source>Unlike an array, the <bpt id="p1">**</bpt>List<ept id="p1">**</ept> class provides an <bpt id="p2">**</bpt>addStart<ept id="p2">**</ept> method.</source>
+        </trans-unit>
+        <trans-unit id="621" translate="yes" xml:space="preserve">
+          <source>Like the <bpt id="p1">**</bpt>Set<ept id="p1">**</ept> class, the <bpt id="p2">**</bpt>List<ept id="p2">**</ept> class provides the <bpt id="p3">**</bpt>getEnumerator<ept id="p3">**</ept> and <bpt id="p4">**</bpt>getIterator<ept id="p4">**</ept> methods.</source>
+        </trans-unit>
+        <trans-unit id="622" translate="yes" xml:space="preserve">
+          <source>You can use an iterator to insert and delete items from a <bpt id="p1">**</bpt>List<ept id="p1">**</ept> object.</source>
+        </trans-unit>
+        <trans-unit id="623" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Map<ept id="p1">**</ept> – This class associates a key value with another value.</source>
+        </trans-unit>
+        <trans-unit id="624" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Set<ept id="p1">**</ept> – This class holds values of any single type.</source>
+        </trans-unit>
+        <trans-unit id="625" translate="yes" xml:space="preserve">
+          <source>Values aren't stored in the sequence in which they are added.</source>
+        </trans-unit>
+        <trans-unit id="626" translate="yes" xml:space="preserve">
+          <source>Instead, the <bpt id="p1">**</bpt>Set<ept id="p1">**</ept> object stores the value in a manner that optimizes performance for the <bpt id="p2">**</bpt>in<ept id="p2">**</ept> method.</source>
+        </trans-unit>
+        <trans-unit id="627" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">**</bpt>Set<ept id="p1">**</ept> object ignores any attempt to add a value that the <bpt id="p2">**</bpt>Set<ept id="p2">**</ept> object is already storing.</source>
+        </trans-unit>
+        <trans-unit id="628" translate="yes" xml:space="preserve">
+          <source>Unlike the <bpt id="p1">**</bpt>Array<ept id="p1">**</ept> class, the <bpt id="p2">**</bpt>Set<ept id="p2">**</ept> class provides the <bpt id="p3">**</bpt>in<ept id="p3">**</ept> and <bpt id="p4">**</bpt>remove<ept id="p4">**</ept> methods.</source>
+        </trans-unit>
+        <trans-unit id="629" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Struct<ept id="p1">**</ept> – This class can contain values of more than one type.</source>
+        </trans-unit>
+        <trans-unit id="630" translate="yes" xml:space="preserve">
+          <source>It's used to group information about a specific entity.</source>
+        </trans-unit>
+        <trans-unit id="631" translate="yes" xml:space="preserve">
+          <source>The constructor for every collection class except <bpt id="p1">**</bpt>Struct<ept id="p1">**</ept> takes a type parameter that is an element of the <bpt id="p2">**</bpt>Types<ept id="p2">**</ept> system enum.</source>
+        </trans-unit>
+        <trans-unit id="632" translate="yes" xml:space="preserve">
+          <source>The collection instance can store items of that type only.</source>
+        </trans-unit>
+        <trans-unit id="633" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Types::AnyType<ept id="p1">**</ept> enum element is a special case that can't be used to construct a collection object, such as a <bpt id="p2">**</bpt>Set<ept id="p2">**</ept> object.</source>
+        </trans-unit>
+        <trans-unit id="634" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>null<ept id="p1">**</ept> value can't be stored as an element in a <bpt id="p2">**</bpt>Set<ept id="p2">**</ept> object.</source>
+        </trans-unit>
+        <trans-unit id="635" translate="yes" xml:space="preserve">
+          <source>Additionally, <bpt id="p1">**</bpt>null<ept id="p1">**</ept> can't be a key in a <bpt id="p2">**</bpt>Map<ept id="p2">**</ept> object.</source>
+        </trans-unit>
+        <trans-unit id="636" translate="yes" xml:space="preserve">
+          <source>You can iterate through a collection object by using an iterator or enumerator.</source>
+        </trans-unit>
+        <trans-unit id="637" translate="yes" xml:space="preserve">
+          <source>Here are typical examples that show how you can obtain an iterator.</source>
+        </trans-unit>
+        <trans-unit id="638" translate="yes" xml:space="preserve">
+          <source>For <bpt id="p1">**</bpt>Set<ept id="p1">**</ept> objects, if any elements are added or removed after an iterator is created, the iterator instance can no longer be used to read from or step through the collection.</source>
+        </trans-unit>
+        <trans-unit id="639" translate="yes" xml:space="preserve">
+          <source>For <bpt id="p1">**</bpt>Map<ept id="p1">**</ept> objects, as for <bpt id="p2">**</bpt>Set<ept id="p2">**</ept> objects, if any elements are removed, the iterator is no longer valid.</source>
+        </trans-unit>
+        <trans-unit id="640" translate="yes" xml:space="preserve">
+          <source>However, a <bpt id="p1">**</bpt>MapIterator<ept id="p1">**</ept> object remains valid even after a call to the <bpt id="p2">**</bpt>Map.insert<ept id="p2">**</ept> method, regardless of whether the key is new, or whether the key already exists and only the value is being updated in the <bpt id="p3">**</bpt>Map<ept id="p3">**</ept> element.</source>
+        </trans-unit>
+        <trans-unit id="641" translate="yes" xml:space="preserve">
+          <source>Code that calls <bpt id="p1">**</bpt>Map.insert<ept id="p1">**</ept> and depends on the iterator object remaining valid might fail if it's run as .NET Framework CIL.</source>
+        </trans-unit>
+        <trans-unit id="642" translate="yes" xml:space="preserve">
+          <source>You can use the collection classes to form more complex classes.</source>
+        </trans-unit>
+        <trans-unit id="643" translate="yes" xml:space="preserve">
+          <source>For example, you can easily implement a stack by using a list where elements are always added to the beginning of the list.</source>
+        </trans-unit>
+        <trans-unit id="644" translate="yes" xml:space="preserve">
+          <source>The newest element then occupies the top of the stack.</source>
+        </trans-unit>
+        <trans-unit id="645" translate="yes" xml:space="preserve">
+          <source>You can also extend the collection classes.</source>
+        </trans-unit>
+        <trans-unit id="646" translate="yes" xml:space="preserve">
+          <source>For example, you can extend the <bpt id="p1">**</bpt>List<ept id="p1">**</ept> class to create a list of customer records where the operations are type-safe.</source>
+        </trans-unit>
+        <trans-unit id="647" translate="yes" xml:space="preserve">
+          <source>In this case, the derived collection class will accept only customer records.</source>
+        </trans-unit>
+        <trans-unit id="648" translate="yes" xml:space="preserve">
+          <source>Extended data types</source>
+        </trans-unit>
+        <trans-unit id="649" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>Extended data types<ept id="p1">*</ept> are user-defined types that are based on the <bpt id="p2">**</bpt>boolean<ept id="p2">**</ept>, <bpt id="p3">**</bpt>int<ept id="p3">**</ept>, <bpt id="p4">**</bpt>int64<ept id="p4">**</ept>, <bpt id="p5">**</bpt>real<ept id="p5">**</ept>, <bpt id="p6">**</bpt>str<ept id="p6">**</ept>, and <bpt id="p7">**</bpt>date<ept id="p7">**</ept> primitive data types, and on the <bpt id="p8">**</bpt>container<ept id="p8">**</ept> composite type.</source>
+        </trans-unit>
+        <trans-unit id="650" translate="yes" xml:space="preserve">
+          <source>An EDT is a primitive data type or container that has a supplementary name and additional properties.</source>
+        </trans-unit>
+        <trans-unit id="651" translate="yes" xml:space="preserve">
+          <source>For example, you can create a new EDT that is named <bpt id="p1">**</bpt>Name<ept id="p1">**</ept> and base it on a string.</source>
+        </trans-unit>
+        <trans-unit id="652" translate="yes" xml:space="preserve">
+          <source>You can then use the new EDT in variable and field declarations in the development environment.</source>
+        </trans-unit>
+        <trans-unit id="653" translate="yes" xml:space="preserve">
+          <source>You can also base EDTs on other EDTs.</source>
+        </trans-unit>
+        <trans-unit id="654" translate="yes" xml:space="preserve">
+          <source>EDTs are standard data types, but they have a specific name and additional properties.</source>
+        </trans-unit>
+        <trans-unit id="655" translate="yes" xml:space="preserve">
+          <source>EDTs undergo the same value and type <bpt id="p1">[</bpt>conversions<ept id="p1">](xpp-conversion-run-time-functions.md)</ept> as the standard data types that they are based on.</source>
+        </trans-unit>
+        <trans-unit id="656" translate="yes" xml:space="preserve">
+          <source>Here are the benefits of EDTs:</source>
+        </trans-unit>
+        <trans-unit id="657" translate="yes" xml:space="preserve">
+          <source>Code is easier to read, because variables have a meaningful data type.</source>
+        </trans-unit>
+        <trans-unit id="658" translate="yes" xml:space="preserve">
+          <source>For example, the data type is <bpt id="p1">**</bpt>Name<ept id="p1">**</ept> instead of <bpt id="p2">**</bpt>str<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="659" translate="yes" xml:space="preserve">
+          <source>The properties that you set for an EDT are used by all instances of that type.</source>
+        </trans-unit>
+        <trans-unit id="660" translate="yes" xml:space="preserve">
+          <source>Therefore, EDTs help reduce work and promote consistency.</source>
+        </trans-unit>
+        <trans-unit id="661" translate="yes" xml:space="preserve">
+          <source>For example, account numbers (<bpt id="p1">**</bpt>AccountNum<ept id="p1">**</ept> data type) have the same properties throughout the system.</source>
+        </trans-unit>
+        <trans-unit id="662" translate="yes" xml:space="preserve">
+          <source>You can create hierarchies of EDTs.</source>
+        </trans-unit>
+        <trans-unit id="663" translate="yes" xml:space="preserve">
+          <source>The EDTs can inherit the appropriate properties from the parent, and you can change other properties.</source>
+        </trans-unit>
+        <trans-unit id="664" translate="yes" xml:space="preserve">
+          <source>For example, the <bpt id="p1">**</bpt>ItemCode<ept id="p1">**</ept> data type is used as the basis for the <bpt id="p2">**</bpt>MarkupItemCode<ept id="p2">**</ept> and <bpt id="p3">**</bpt>PriceDiscItemCode<ept id="p3">**</ept> data types.</source>
+        </trans-unit>
+        <trans-unit id="665" translate="yes" xml:space="preserve">
+          <source>Create an EDT</source>
+        </trans-unit>
+        <trans-unit id="666" translate="yes" xml:space="preserve">
+          <source>This feature isn't implemented as a language construct.</source>
+        </trans-unit>
+        <trans-unit id="667" translate="yes" xml:space="preserve">
+          <source>To create an EDT, follow these steps.</source>
+        </trans-unit>
+        <trans-unit id="668" translate="yes" xml:space="preserve">
+          <source>In Solution Explorer, right-click on the project, point to <bpt id="p1">**</bpt>Add<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>New item<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="669" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Add New Item<ept id="p1">**</ept> dialog box, select <bpt id="p2">**</bpt>Installed<ept id="p2">**</ept> and then <bpt id="p3">**</bpt>Artifacts<ept id="p3">**</ept> in the left pane.</source>
+        </trans-unit>
+        <trans-unit id="670" translate="yes" xml:space="preserve">
+          <source>In the middle pane, select the EDT type to create.</source>
+        </trans-unit>
+        <trans-unit id="671" translate="yes" xml:space="preserve">
+          <source>Enter a name, and then click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="672" translate="yes" xml:space="preserve">
+          <source>EDT example</source>
+        </trans-unit>
+        <trans-unit id="673" translate="yes" xml:space="preserve">
+          <source>Null values for data types</source>
+        </trans-unit>
+        <trans-unit id="674" translate="yes" xml:space="preserve">
+          <source>Microsoft Dynamics 365 for Finance and Operations doesn't support the concept of <bpt id="p1">**</bpt>null<ept id="p1">**</ept> values that is available in many other database management systems (DBMSs).</source>
+        </trans-unit>
+        <trans-unit id="675" translate="yes" xml:space="preserve">
+          <source>A variable in X++ always has a type and a value.</source>
+        </trans-unit>
+        <trans-unit id="676" translate="yes" xml:space="preserve">
+          <source>However, for each data type, one value is considered <bpt id="p1">**</bpt>null<ept id="p1">**</ept> (for example, when the <bpt id="p2">**</bpt>validateField<ept id="p2">**</ept> table method is run).</source>
+        </trans-unit>
+        <trans-unit id="677" translate="yes" xml:space="preserve">
+          <source>Type</source>
+        </trans-unit>
+        <trans-unit id="678" translate="yes" xml:space="preserve">
+          <source>Value that is treated as null</source>
+        </trans-unit>
+        <trans-unit id="679" translate="yes" xml:space="preserve">
+          <source>Date</source>
+        </trans-unit>
+        <trans-unit id="680" translate="yes" xml:space="preserve">
+          <source>1900-01-01</source>
+        </trans-unit>
+        <trans-unit id="681" translate="yes" xml:space="preserve">
+          <source>Enum</source>
+        </trans-unit>
+        <trans-unit id="682" translate="yes" xml:space="preserve">
+          <source>An element that has its value set to <bpt id="p1">**</bpt>0<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="683" translate="yes" xml:space="preserve">
+          <source>Integer</source>
+        </trans-unit>
+        <trans-unit id="684" translate="yes" xml:space="preserve">
+          <source>0</source>
+        </trans-unit>
+        <trans-unit id="685" translate="yes" xml:space="preserve">
+          <source>Real</source>
+        </trans-unit>
+        <trans-unit id="686" translate="yes" xml:space="preserve">
+          <source>0.0</source>
+        </trans-unit>
+        <trans-unit id="687" translate="yes" xml:space="preserve">
+          <source>String</source>
+        </trans-unit>
+        <trans-unit id="688" translate="yes" xml:space="preserve">
+          <source>An empty string</source>
+        </trans-unit>
+        <trans-unit id="689" translate="yes" xml:space="preserve">
+          <source>Time</source>
+        </trans-unit>
+        <trans-unit id="690" translate="yes" xml:space="preserve">
+          <source>00:00:00</source>
+        </trans-unit>
+        <trans-unit id="691" translate="yes" xml:space="preserve">
+          <source>Utcdatetime</source>
+        </trans-unit>
+        <trans-unit id="692" translate="yes" xml:space="preserve">
+          <source>Any value that has its date portion set to <bpt id="p1">**</bpt>1900-01-01<ept id="p1">**</ept>, regardless of the value of the time portion For example, the value <bpt id="p2">**</bpt>1900-01-01T22:33:44<ept id="p2">**</ept> is treated as <bpt id="p3">**</bpt>null<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="693" translate="yes" xml:space="preserve">
+          <source>Note that any <bpt id="p1">**</bpt>utcDateTime<ept id="p1">**</ept> value that has its date portion set to <bpt id="p2">**</bpt>1900-01-01<ept id="p2">**</ept> is shown as blank by the X++ <bpt id="p3">**</bpt>print<ept id="p3">**</ept> statement.</source>
+        </trans-unit>
+        <trans-unit id="694" translate="yes" xml:space="preserve">
+          <source>Only the value <bpt id="p1">**</bpt>1900-01-01T00:00:00<ept id="p1">**</ept> is shown as blank by the <bpt id="p2">**</bpt>Global::info<ept id="p2">**</ept> method.</source>
+        </trans-unit>
+        <trans-unit id="695" translate="yes" xml:space="preserve">
+          <source>That value is the value from the <bpt id="p1">**</bpt>DateTimeUtil::MinValue<ept id="p1">**</ept> method.</source>
+        </trans-unit>
+        <trans-unit id="696" translate="yes" xml:space="preserve">
+          <source>Therefore, when the <bpt id="p1">**</bpt>validateField<ept id="p1">**</ept> method checks whether a user has entered a value in a mandatory field, <bpt id="p2">**</bpt>0<ept id="p2">**</ept> isn't accepted in an <bpt id="p3">**</bpt>integer<ept id="p3">**</ept> type field, the first entry isn't accepted in an <bpt id="p4">**</bpt>enum<ept id="p4">**</ept> type field, and so on.</source>
+        </trans-unit>
+        <trans-unit id="697" translate="yes" xml:space="preserve">
+          <source>Additionally, in SQL X++ statements, the values that are listed in the previous table yield <bpt id="p1">**</bpt>false<ept id="p1">**</ept> in a Boolean comparison.</source>
+        </trans-unit>
+        <trans-unit id="698" translate="yes" xml:space="preserve">
+          <source>However, In non-SQL X++ statements, the equal and relational operators work with these values, just as they work with other values.</source>
+        </trans-unit>
+        <trans-unit id="699" translate="yes" xml:space="preserve">
+          <source>Variables of the <bpt id="p1">**</bpt>container<ept id="p1">**</ept> type, and classes and variables of the <bpt id="p2">**</bpt>table<ept id="p2">**</ept> type can be <bpt id="p3">**</bpt>null<ept id="p3">**</ept> in the traditional DBMS sense.</source>
+        </trans-unit>
+        <trans-unit id="700" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">**</bpt>table<ept id="p1">**</ept> type is <bpt id="p2">**</bpt>null<ept id="p2">**</ept> if all its fields have their <bpt id="p3">**</bpt>null<ept id="p3">**</ept> value.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

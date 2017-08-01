@@ -1,0 +1,816 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">aec9204aacd6a27072a9a0e87c81e5aa8209ca7c</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\extensibility\customize-model-elements-extensions.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">942251aa89ff2b7ce120f4a99304e94511dc958a</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">b201dbe5218be2558cac944453e3d623a5707e74</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Customize model elements using extensions</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>In this tutorial, you’ll become familiar with the Fleet Management Extension model.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>To demonstrate the extension capabilities of Dynamics AX, this model contains elements that extend the functionality of the Fleet Management application.</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Customize model elements using extensions</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>In this tutorial, you’ll become familiar with the Fleet Management Extension model.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This model contains elements that extend the functionality of the Fleet Management application.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>You can customize model elements by creating <bpt id="p1">*</bpt>extensions<ept id="p1">*</ept>.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Unlike the overlayering capabilities of Microsoft Dynamics AX 2012, extensions don’t overlay the baseline model elements.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Instead, extensions are compiled as a separate assembly that adds to or customizes the model and the associated business logic.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>You can extend metadata, for example, by adding a field to a table or adding a control to a form, and also extend or customize business logic by defining event handlers and plug-in classes.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>You can now author event handlers on several pre-defined events on tables, forms, form data sources, form controls, and others.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Plug-ins are also a new extensibility concept that enables replacing or extending the business logic of the application.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Prerequisites</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>This tutorial requires you to access the environment using Remote Desktop, and that you be provisioned as an administrator on the instance.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Understanding the Fleet Management model</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>The Fleet Management application provides a rental car company a system for managing vehicles, customers and vehicle reservations.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The application is designed for use by the Fleet Clerk and Fleet Manager personas.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Fleet Clerk</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>The Clerk is the front desk employee who handles the face-to-face and over-the-phone interactions with customers.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>The Clerk is primarily concerned with entering customer information into the application, creating vehicle reservations for customers, upselling the reservation by offering vehicle accessories, and processing vehicle returns upon completion of a vehicle rental.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The Clerk spends the vast majority of their time using the <bpt id="p1">**</bpt>Fleet Management Workspace<ept id="p1">**</ept> to prepare for interactions with customers by anticipating their needs and providing a pleasant and memorable experience, while interacting with the customer.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Fleet Manager</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>The Manager is the back office employee who handles setting business requirements and processes.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>The Manager is primarily concerned with entering vehicle information, defining the available vehicle accessories, vehicle maintenance, determining pricing, and analyzing business performance measures such as revenue, upsell success, and so on.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>The application's business logic revolves around the following three primary entities and the relationships between them.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Customers</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Customers contact the Fleet Clerk to make vehicle reservations, choose vehicle accessories, check out and return vehicles, and pay for vehicle rentals.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Customer-related information is stored in the table named <bpt id="p1">**</bpt>FMCustomer<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Vehicles</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Vehicles vary primarily in their price, which is proportional to the vehicle <bpt id="p1">*</bpt>class<ept id="p1">*</ept>.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>The names of tables that store information about vehicles begin with "FMVehicle".**</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Reservations and rentals</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Reservations handle the relationship between customers and vehicles.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Reservation information includes reservation dates, customer information, vehicle selection and price, and additional charges such as accessories or fees.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Reservation and rental information is stored in the <bpt id="p1">**</bpt>FMRental<ept id="p1">**</ept> and <bpt id="p2">**</bpt>FMRentalCharge<ept id="p2">**</ept> tables.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>A calculation engine handles the transactional information related to the pricing of vehicle reservations.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Using this data model the Fleet Management application provides a basic car rental experience.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Extending the Fleet Management model</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>The basic Fleet Management application has been customized with additional capabilities that enable a rental car company to provide pricing incentives to its customers through discounts.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>The additional business logic and data that enables these discount capabilities is stored in the Fleet Management Extension model.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>The discount capabilities add value to the Fleet management application through three primary customizations.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>The Fleet Management Extension data model</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Two new tables have been added that store discount-related information.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>FEDiscounts<ept id="p1">**</ept> stores the list of all discounts and their rates.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>FERentalDiscountRelationTable<ept id="p1">**</ept> keeps track of the reservations that the discounts are applied to.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Existing tables have been extended to account for the addition of discounts to the pricing scheme.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>The table that keeps track of the vehicle rate for a particular reservation, named <bpt id="p1">**</bpt>FMRental<ept id="p1">**</ept>, has been extended to accommodate discounts to the vehicle rate.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>The table that keeps track of the accessories for a reservation, named <bpt id="p1">**</bpt>FMRentalCharge<ept id="p1">**</ept>, has been extended to accommodate discounts applied to accessories.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>The Fleet Management Extension Calculation Engine</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>The basic calculation engine has been customized to add the various pricing schemes defined by the new discounts.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>A plug-in class has replaced the functionality of the base calculation engine.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>When a vehicle is reserved for more than 7 days, the vehicle Fleet Management model calculates savings based on the difference between a vehicle's daily rate and a lower weekly rate.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>The plug-in removes the weekly-rate calculation because this same behavior can be accomplished by using discounts.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>The Fleet Management User Interface Extensions</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>The Rental, which is contained by the form named <bpt id="p1">**</bpt>FMRental<ept id="p1">**</ept>, has been extended to enable the Clerk to apply discounts to a reservation.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>The on-screen price summary is updated in real time with savings information related to discounts that can be applied to vehicles and accessories related to the reservation.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>In the following steps, you'll explore the customizations that have been made in the Fleet management Extension model, as well as re-implement a portion of the customizations for yourself.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Setup</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>If you haven't opened the Fleet Management Solution in a previous tutorial, follow these steps.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>The fleet management solution file is available on the Dynamics AX downloadable VM.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Desktop<ept id="p1">**</ept>, double-click the <bpt id="p2">**</bpt>Visual Studio<ept id="p2">**</ept> shortcut to open the development environment.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Open the <bpt id="p1">**</bpt>FleetManagement<ept id="p1">**</ept> solution.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>File<ept id="p1">**</ept> menu, point to <bpt id="p2">**</bpt>Open<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>Project/Solution<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Browse to the desktop and open the <bpt id="p1">**</bpt>FleetManagement<ept id="p1">**</ept> folder.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>If the solution file is not on your computer, the steps to create it are listed in <bpt id="p1">[</bpt>Tutorial: Create a Fleet Management solution file out of the Fleet Management models in the AOT<ept id="p1">](https://community.dynamics.com/ax/b/newdynamicsax/archive/2016/05/19/tutorial-create-a-fleet-management-solution-file-out-of-the-fleet-management-models-in-the-aot)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Select the solution file named <bpt id="p1">**</bpt>FleetManagement<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>The file type listed is Microsoft Visual Studio Solution.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Open<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>The solution may take some time to open.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Installing the demo data</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>If you've already installed the demo data, you can skip to the next section.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>In the VM, open Internet Explorer and navigate to the application's base URL.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Sign in.</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>On the dashboard, open the navigation pane and navigate to <bpt id="p1">**</bpt>Fleet Management <ph id="ph1">&amp;gt;</ph> Setup <ph id="ph2">&amp;gt;</ph> Fleet Setup<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Fleet setup &gt; Customize model<ept id="p1">](./media/fleetsetup_customizemodel.png)](./media/fleetsetup_customizemodel.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Setup Demo Data<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Configuration &gt; Customize Model<ept id="p1">](./media/configuration_customizemodel.png)](./media/configuration_customizemodel.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>If you're prompted to reload the demo data, click <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>When the data is finished loading, click <bpt id="p1">**</bpt>Close<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>On the dashboard, open the navigation bar and navigate to <bpt id="p1">**</bpt>System Administration <ph id="ph1">&amp;gt;</ph> Common <ph id="ph2">&amp;gt;</ph> Maintain aggregate measurements<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>(Steps 7 to 9 are not applicable on newer releases)</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>FMAggregateMeasurements<ept id="p1">**</ept>, and on the Action Pane, click <bpt id="p2">**</bpt>Refresh now<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Wait until the processing completes.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>The ongoing processing is indicated at the top of the page by a series of moving dots.</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>The processing is completed when the indicator disappears and the <bpt id="p1">**</bpt>Time Last Processed<ept id="p1">**</ept> field is updated.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Open the FMRental form on the onebox environment</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>In the VM, open Internet Explorer and navigate to the base URL of your Dynamics AX application.</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Access Microsoft Dynamics AX Instances<ept id="p1">](..\dev-tools\access-instances.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Sign in, if prompted.</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Find the <bpt id="p1">**</bpt>Reservation Management<ept id="p1">**</ept> tile and click to open the Reservation Management workspace.</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Reservation management tile<ept id="p1">](./media/reservationmanagementtile.jpg)](./media/reservationmanagementtile.jpg)</ept></source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>When the <bpt id="p1">**</bpt>Reservation Management<ept id="p1">**</ept> workspace opens, click <bpt id="p2">**</bpt>Current rentals<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Current rentals<ept id="p1">](./media/reservationmanagementworkspace.jpg)](./media/reservationmanagementworkspace.jpg)</ept></source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>This will open the <bpt id="p1">**</bpt>Rental<ept id="p1">**</ept> form in grid view.</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Rental form<ept id="p1">](./media/rentalform_customizemodel.png)](./media/rentalform_customizemodel.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>After the <bpt id="p1">**</bpt>Rental<ept id="p1">**</ept> form loads, click <bpt id="p2">**</bpt>Options <ph id="ph1">&amp;gt;</ph> Change view <ph id="ph2">&amp;gt;</ph> Header<ept id="p2">**</ept> to open the <bpt id="p3">**</bpt>Header view<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Header view<ept id="p1">](./media/headerview_customizemodel.png)](./media/headerview_customizemodel.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>When the <bpt id="p1">**</bpt>Header view<ept id="p1">**</ept> form loads, scroll to the bottom and expand the <bpt id="p2">**</bpt>Discounts<ept id="p2">**</ept> tab.</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>This tab isn't part of the Fleet Management model.</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>It has been modeled in the Fleet Management Extension Model as an extension to the <bpt id="p1">**</bpt>FMRental<ept id="p1">**</ept> form.</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Discounts<ept id="p1">](./media/discounts_customizemodel.png)](./media/discounts_customizemodel.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept> to add a discount.</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>Select the <bpt id="p1">**</bpt>Frequent Customer<ept id="p1">**</ept> discount, and then click <bpt id="p2">**</bpt>OK<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>The selected discount is added to the <bpt id="p1">**</bpt>Discounts<ept id="p1">**</ept> grid.</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Frequent customer discount<ept id="p1">](./media/fcdiscount_customizemodel.png)](./media/fcdiscount_customizemodel.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>Use the shortcut key, <bpt id="p1">**</bpt>Alt+F2<ept id="p1">**</ept> to open the FactBox.</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Expand the <bpt id="p1">**</bpt>Rental total<ept id="p1">**</ept> FactBox on the right and view the discount savings that are applied.</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Rental total<ept id="p1">](./media/rentaltotal_customizemodel.png)](./media/rentaltotal_customizemodel.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>Overview of the Fleet management discount extension project</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>In this tutorial, the <bpt id="p1">**</bpt>FleetManagementDiscounts<ept id="p1">**</ept> Project contains the model elements that belong to the model named <bpt id="p2">**</bpt>Fleet Management Extension<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>Here, you'll explore and learn about the project elements.</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>Navigate to FMRental.Extension in the Tree Designer</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>In the Visual Studio, in <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, in the <bpt id="p2">**</bpt>FleetManagement Discounts<ept id="p2">**</ept> project, expand <bpt id="p3">**</bpt>User Interface <ph id="ph1">&amp;gt;</ph> Form Extensions<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Solution explorer<ept id="p1">](./media/solutionexplorer1_customizemodel.png)](./media/solutionexplorer1_customizemodel.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>FMRental.Extension<ept id="p1">**</ept> element is an extension element that extends the functionality of the <bpt id="p2">**</bpt>FMRental<ept id="p2">**</ept> form by adding two new data sources and a new tab control.</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, double-click <bpt id="p2">**</bpt>FMRental.Extension<ept id="p2">**</ept> to open the designer.</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>As the following image shows:</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>The data sources shown in <bpt id="p1">*</bpt>italic<ept id="p1">*</ept> text are data sources defined in the baseline form.</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>The data sources shown in <bpt id="p1">**</bpt>bold<ept id="p1">**</ept> are the ones defined in the current extension.</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>The designer presents an integrated view of the model element, including its extensions.</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>Read-only nodes are shown in italic text, while nodes that belong to the current extension are shown in bold, with other visual cues that indicate the type of customization.</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>FMRentalExt<ph id="ph2">\_</ph>CustomizeModel<ept id="p1">](./media/fmrentalext_customizemodel.png)](./media/fmrentalext_customizemodel.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>In the designer's search box, type 'e:' as shown in the image below.</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>This filters the current designer to only show nodes that belong to the current extension.</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Current extension<ept id="p1">](./media/rentalext-e_customizemodel.png)](./media/rentalext-e_customizemodel.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>You can also type 'e:LineViewDiscounts' to filter the designer to show nodes that match the name <bpt id="p1">**</bpt>LineViewDiscounts<ept id="p1">**</ept> and that belong to the current extension.</source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>LineViewDiscounts<ept id="p1">](./media/lineviewdiscounts_customizemodel.png)](./media/lineviewdiscounts_customizemodel.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>Expand the <bpt id="p1">**</bpt>LineViewDiscounts<ept id="p1">**</ept> node to see its contents.</source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Expand LineViewDiscounts node<ept id="p1">](./media/expandlvdnode_customizemodel.png)](./media/expandlvdnode_customizemodel.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>Open the FMRental.Extension XML file to view the metadata</source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, right-click FMRental.Extension form extension, and then click <bpt id="p2">**</bpt>Open with<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Open with<ept id="p1">**</ept> dialog box, select <bpt id="p2">**</bpt>XML (Text) Editor<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>OK<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>When prompted to close the designer, click <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>Click the corresponding minus signs to collapse the child nodes of the <bpt id="p1">**</bpt>Controls<ept id="p1">**</ept> and <bpt id="p2">**</bpt>DataSources<ept id="p2">**</ept> nodes.</source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>Refer to the following image for the correct result.</source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Rental code<ept id="p1">](./media/fmrentalcode_customizemodel.png)](./media/fmrentalcode_customizemodel.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>The XML file contains the metadata associated with the <bpt id="p1">**</bpt>FMRental.Extension<ept id="p1">**</ept> element.</source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>You can see that this file contains metadata that describes only one tab page control and two data sources that are part of the extension.</source>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>You can also see that it doesn't contain any metadata from the base form.</source>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>View other elements in the Fleet Management discount extension project</source>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>FleetManagement Discounts<ept id="p1">**</ept> project contains two new tables, <bpt id="p2">**</bpt>FEDiscount<ept id="p2">**</ept> and <bpt id="p3">**</bpt>FERentalDiscountRelationTable<ept id="p3">**</ept>, and two extensions to existing Fleet Management tables, <bpt id="p4">**</bpt>FMRental<ept id="p4">**</ept> and <bpt id="p5">**</bpt>FMRentalCharge<ept id="p5">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, in FleetManagement Discounts, double-click <bpt id="p2">**</bpt>Data Model <ph id="ph1">&amp;gt;</ph> Table Extensions <ph id="ph2">&amp;gt;</ph> FMRental.Extension<ept id="p2">**</ept> to open the designer.</source>
+        </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>Expand the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> node to see that this extension contains one added field, FEVehicleRateDiscount, to the base FMRental table.</source>
+        </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>FEVehicleRateDiscount<ept id="p1">](./media/nodes_customizemodel.png)](./media/nodes_customizemodel.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>Similarly, open the <bpt id="p1">**</bpt>FMRentalChange.Extension<ept id="p1">**</ept> element in the designer to explore its contents.</source>
+        </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>Inspect the data event handlers</source>
+        </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, in the FleetManagement Discounts project, double-click <bpt id="p2">**</bpt>Code <ph id="ph1">&amp;gt;</ph> Classes <ph id="ph2">&amp;gt;</ph> FMRentalCharge<ph id="ph3">\_</ph>Extension<ept id="p2">**</ept> to open the code editor.</source>
+        </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>FMRentalChargeCode<ept id="p1">](./media/fmrentalchargecode_customizemodel.png)](./media/fmrentalchargecode_customizemodel.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>This class contains event handler implementations that subscribe to the <bpt id="p1">**</bpt>Updating<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Inserting<ept id="p2">**</ept> events of the <bpt id="p3">**</bpt>FMRentalCharge<ept id="p3">**</ept> table.</source>
+        </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>Microsoft Dynamics AX introduces data events that can occur on tables and other types.</source>
+        </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>You can subscribe to data events of a table, enabling your application to extend business logic without overlayering base X++ code.</source>
+        </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>Later in this tutorial, you'll see how easy it is to subscribe to table events.</source>
+        </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> Notice that this class is an extension class (indicated by the <ph id="ph1">\_</ph>Extension suffix).</source>
+        </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>You can author event handlers in any class, this class does not need to be an extension class.</source>
+        </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>Extension classes are needed in order to create extension methods.</source>
+        </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>For more details on extension methods, refer to the "Extension methods" section of <bpt id="p1">[</bpt>X++ debugger features<ept id="p1">](..\dev-tools\new-x-debugger-features.md)</ept>article.</source>
+        </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>View the plug-in classes</source>
+        </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>In the event handler code of the <bpt id="p1">**</bpt>FMRentalCharge<ph id="ph1">\_</ph>Extension<ept id="p1">**</ept> class shown in the previous section, notice that both event handlers call <bpt id="p2">**</bpt>FMTotalsEngineBase::GetInstance<ept id="p2">**</ept> to retrieve the current instance of the Fleet Management calculation engine.</source>
+        </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>The calculation engines are implemented by using plug-in classes.</source>
+        </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>A class factory creates the appropriate instances of a plug-in class based on configuration or business data.</source>
+        </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>In the code editor window that displays FMRentalCharge<ph id="ph1">\_</ph>Extension.xpp, right-click <bpt id="p1">**</bpt>GetInstance<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>Go To Definition<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>This will open the code of the abstract class <bpt id="p1">**</bpt>FMTotalsEngineBase<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>This abstract class is called a <bpt id="p1">**</bpt>plugin point<ept id="p1">**</ept> and it's associated with the following attribute: <ph id="ph1">\[</ph>Microsoft.Dynamics.AX.Platform.Extensibility.ExportInterfaceAttribute()<ph id="ph2">\]</ph></source>
+        </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Go to Definition<ept id="p1">](./media/godefinition_customizemodel.png)](./media/godefinition_customizemodel.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>Plug-in classes represent extensions or implementations of abstract classes or interfaces.</source>
+        </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>Plug-in classes are associated with attributes defining their metadata and the plug-in point.</source>
+        </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>In this example, there are two plug-in classes associated with the <bpt id="p1">**</bpt>FMTotalsEngineBase<ept id="p1">**</ept> plug-in point.</source>
+        </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>The base calculation engine is defined by the plug-in class <bpt id="p1">**</bpt>FMTotalsEngine<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>You can find it in the project <bpt id="p1">**</bpt>FleetManagement Migrated <ph id="ph1">&amp;gt;</ph> Code <ph id="ph2">&amp;gt;</ph> Classes<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>FMTotalsEngineBase<ept id="p1">](./media/code1_customizemodel.png)](./media/code1_customizemodel.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>The discount calculation engine is defined by the plug-in class <bpt id="p1">**</bpt>FEDiscountEngine<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>You can find it in the project <bpt id="p1">**</bpt>FleetManagement Discounts <ph id="ph1">&amp;gt;</ph> Code <ph id="ph2">&amp;gt;</ph> Classes<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>FEDiscountEngine<ept id="p1">](./media/code2_customizemodel.png)](./media/code2_customizemodel.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>Look at the <bpt id="p1">**</bpt>GetInstance<ept id="p1">**</ept> method.</source>
+        </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>It uses the plug-in factory <bpt id="p1">**</bpt>SysPluginFactory::Instance<ept id="p1">**</ept> to instantiate the current calculation engine based on current plug-in metadata.</source>
+        </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>The plug-in metadata is specified in the global configuration table, <bpt id="p1">**</bpt>FMParameters<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>FMParameters<ept id="p1">](./media/code3_customizemodel.png)](./media/code3_customizemodel.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>Dynamics AX also supports configurable plug-in classes where the plug-in metadata associate with the class isn't known at development time and is configurable at runtime by an administrator.</source>
+        </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>This isn't in the scope of this tutorial.</source>
+        </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source>Create additional Fleet Management extensions</source>
+        </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source>This section shows how you can use the Visual Studio tools to create and interact with extensions.</source>
+        </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source>Extend the FMVehicle Table</source>
+        </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, select the <bpt id="p2">**</bpt>FleetManagement Discounts<ept id="p2">**</ept> project.</source>
+        </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>In Visual studio, in <bpt id="p1">**</bpt>Application Explorer,<ept id="p1">**</ept> click <bpt id="p2">**</bpt>View <ph id="ph1">&amp;gt;</ph> Application Explorer<ept id="p2">**</ept>, and search for the table named FMVehicle.</source>
+        </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>Type "FMVehicle type:Table" in the filter bar and press <bpt id="p1">**</bpt>Enter<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>AppExplorer search for FMVehicle<ept id="p1">](./media/appexplorersmall_customizemodel.png)](./media/appexplorersmall_customizemodel.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source>Right-click <bpt id="p1">**</bpt>FMVehicle<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>Create extension<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>AppExplorer Create extension<ept id="p1">](./media/appexplorerlarge1_customizemodel.png)](./media/appexplorerlarge1_customizemodel.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source>This will create an extension of the <bpt id="p1">**</bpt>FMVehicle<ept id="p1">**</ept> table in the <bpt id="p2">**</bpt>FleetManagement Discounts<ept id="p2">**</ept> project named <bpt id="p3">**</bpt>FMVehicle.Extension<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>FMVehicle.Extension<ept id="p1">](./media/expanddiscountsnode2_customizemodel.png)](./media/expanddiscountsnode2_customizemodel.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, right-click <bpt id="p2">**</bpt>FMVehicle.Extension<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>Open with<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source>In the dialog box, select <bpt id="p1">**</bpt>XML (Text) Editor<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>OK<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: This extension file is simply a template that doesn't contain metadata from the base <bpt id="p2">**</bpt>FMVehicle<ept id="p2">**</ept> table.</source>
+        </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source>An extension file will always contain only the metadata that defines the extension and nothing from the base model element.</source>
+        </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>FMVehicle<ept id="p1">](./media/code4_customizemodel.png)](./media/code4_customizemodel.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source>Close the XML editor.</source>
+        </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, double-click <bpt id="p2">**</bpt>FMVehicle.Extension<ept id="p2">**</ept> to open the designer.</source>
+        </trans-unit>
+        <trans-unit id="298" translate="yes" xml:space="preserve">
+          <source>Right-click <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> and add a new integer field.</source>
+        </trans-unit>
+        <trans-unit id="299" translate="yes" xml:space="preserve">
+          <source>Change the name of the field to <bpt id="p1">**</bpt>NumberOfCyclinders<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="300" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept> window, set the <bpt id="p2">**</bpt>Label<ept id="p2">**</ept> property of the new field to <bpt id="p3">**</bpt>NumberofCylinders<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="301" translate="yes" xml:space="preserve">
+          <source>Drag-and-drop the <bpt id="p1">**</bpt>NumberOfCylinders<ept id="p1">**</ept> field into the <bpt id="p2">**</bpt>AutoReport<ept id="p2">**</ept> field group to entend the field group of the base table.</source>
+        </trans-unit>
+        <trans-unit id="302" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>NumberOfCylinders<ph id="ph2">\_</ph>CustomizeModel<ept id="p1">](./media/numberofcylinders_customizemodel.png)](./media/numberofcylinders_customizemodel.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="303" translate="yes" xml:space="preserve">
+          <source>Save FMVehicle.Extension.</source>
+        </trans-unit>
+        <trans-unit id="304" translate="yes" xml:space="preserve">
+          <source>Expand the <bpt id="p1">**</bpt>Events<ept id="p1">**</ept> node.</source>
+        </trans-unit>
+        <trans-unit id="305" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Events<ept id="p1">**</ept> node lists all events that the table exposes.</source>
+        </trans-unit>
+        <trans-unit id="306" translate="yes" xml:space="preserve">
+          <source>This includes events that are defined by the framework, and delegate methods that are defined by application developers.</source>
+        </trans-unit>
+        <trans-unit id="307" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Events node<ept id="p1">](./media/eventsnode_customizemodel.png)](./media/eventsnode_customizemodel.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="308" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: Different framework events are exposed on the designers of many types of element and sub-elements, like table events, form events, form data source events, and form control events.</source>
+        </trans-unit>
+        <trans-unit id="309" translate="yes" xml:space="preserve">
+          <source>Right-click onValidatedWrite, and then select <bpt id="p1">**</bpt>Copy event handler method<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="310" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>onValidateWrite<ept id="p1">](./media/onvalidatewrite_customizemodel.png)](./media/onvalidatewrite_customizemodel.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="311" translate="yes" xml:space="preserve">
+          <source>This step copies the event handler method signature to the clipboard.</source>
+        </trans-unit>
+        <trans-unit id="312" translate="yes" xml:space="preserve">
+          <source>Add a new class named <bpt id="p1">**</bpt>FMVehicleEventHandlers<ept id="p1">**</ept> to the <bpt id="p2">**</bpt>FleetManagement Discounts<ept id="p2">**</ept> project.</source>
+        </trans-unit>
+        <trans-unit id="313" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, double-click <bpt id="p2">**</bpt>FEVehicleEventHandlers<ept id="p2">**</ept> to open the code editor.</source>
+        </trans-unit>
+        <trans-unit id="314" translate="yes" xml:space="preserve">
+          <source>Right-click and paste the event handler method that you copied in step 12.</source>
+        </trans-unit>
+        <trans-unit id="315" translate="yes" xml:space="preserve">
+          <source>Insert the following code into the <bpt id="p1">**</bpt>FMVehicle<ph id="ph1">\_</ph>onValidatedWrite<ept id="p1">**</ept> event handler.</source>
+        </trans-unit>
+        <trans-unit id="316" translate="yes" xml:space="preserve">
+          <source>This code validates that the number of cylinders can't be greater than 8.</source>
+        </trans-unit>
+        <trans-unit id="317" translate="yes" xml:space="preserve">
+          <source>Save FMVehicleEventHandlers class <bpt id="p1">**</bpt>Tip<ept id="p1">**</ept>: You can paste and define your event handlers in any class of your model.</source>
+        </trans-unit>
+        <trans-unit id="318" translate="yes" xml:space="preserve">
+          <source>The class FMVehicleEventHandlers is used only as an example.</source>
+        </trans-unit>
+        <trans-unit id="319" translate="yes" xml:space="preserve">
+          <source>Extend the FMVehicle Form</source>
+        </trans-unit>
+        <trans-unit id="320" translate="yes" xml:space="preserve">
+          <source>Next, add an extension to the <bpt id="p1">**</bpt>FMVehicle<ept id="p1">**</ept> form in the <bpt id="p2">**</bpt>FleetManagement Discounts<ept id="p2">**</ept> project.</source>
+        </trans-unit>
+        <trans-unit id="321" translate="yes" xml:space="preserve">
+          <source>First, be sure to select this project in <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="322" translate="yes" xml:space="preserve">
+          <source>Use <bpt id="p1">**</bpt>Application Explorer<ept id="p1">**</ept> to find the form named <bpt id="p2">**</bpt>FMVehicle<ept id="p2">**</ept>, and in the <bpt id="p3">**</bpt>Application Explorer<ept id="p3">**</ept> filter bar, enter the <bpt id="p4">*</bpt>FMVehicle type:form<ept id="p4">*</ept>.</source>
+        </trans-unit>
+        <trans-unit id="323" translate="yes" xml:space="preserve">
+          <source>Right-click the form, and then click <bpt id="p1">**</bpt>Create extension<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="324" translate="yes" xml:space="preserve">
+          <source>Add a new integer control named <bpt id="p1">**</bpt>NumberOfCylinders<ept id="p1">**</ept> to the <bpt id="p2">**</bpt>Attributes2<ept id="p2">**</ept> group control as shown below.</source>
+        </trans-unit>
+        <trans-unit id="325" translate="yes" xml:space="preserve">
+          <source>You can find this control by expanding <bpt id="p1">**</bpt>Design <ph id="ph1">&amp;gt;</ph> Tab <ph id="ph2">&amp;gt;</ph> TabPageDetails <ph id="ph3">&amp;gt;</ph> TabHeader <ph id="ph4">&amp;gt;</ph> DetailsDetails <ph id="ph5">&amp;gt;</ph> Attributes2<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="326" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Number of Cylinders<ept id="p1">](./media/numcylinteger_customizemodel.png)](./media/numcylinteger_customizemodel.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="327" translate="yes" xml:space="preserve">
+          <source>Bind the new control to the <bpt id="p1">**</bpt>NumberOfCylinders<ept id="p1">**</ept> data field in the properties window as follows.</source>
+        </trans-unit>
+        <trans-unit id="328" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Bind control<ept id="p1">](./media/datafield_customizemodel.png)](./media/datafield_customizemodel.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="329" translate="yes" xml:space="preserve">
+          <source>Save FMVehicle.Extension and build the project.</source>
+        </trans-unit>
+        <trans-unit id="330" translate="yes" xml:space="preserve">
+          <source>Test your extensions</source>
+        </trans-unit>
+        <trans-unit id="331" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, right-click <bpt id="p2">**</bpt>FleetManagement Discounts<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>Set as StartUp project<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="332" translate="yes" xml:space="preserve">
+          <source>Similarly, in FleetManagement Discounts, set the <bpt id="p1">**</bpt>FMVehicle.Extension<ept id="p1">**</ept> form as the startup object.</source>
+        </trans-unit>
+        <trans-unit id="333" translate="yes" xml:space="preserve">
+          <source>Press <bpt id="p1">**</bpt>Ctrl+F5<ept id="p1">**</ept> to start without debugging, or use the <bpt id="p2">**</bpt>Debug<ept id="p2">**</ept> menu.</source>
+        </trans-unit>
+        <trans-unit id="334" translate="yes" xml:space="preserve">
+          <source>After the <bpt id="p1">**</bpt>Vehicles<ept id="p1">**</ept> form opens, select a vehicle to view its details.</source>
+        </trans-unit>
+        <trans-unit id="335" translate="yes" xml:space="preserve">
+          <source>Expand the <bpt id="p1">**</bpt>Details<ept id="p1">**</ept> tab and notice the new <bpt id="p2">**</bpt>Number of Cylinders<ept id="p2">**</ept> field.</source>
+        </trans-unit>
+        <trans-unit id="336" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Details with number of cylinders<ept id="p1">](./media/nbofcyls.jpg)](./media/nbofcyls.jpg)</ept></source>
+        </trans-unit>
+        <trans-unit id="337" translate="yes" xml:space="preserve">
+          <source>In the Action Pane, click <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept>, and change the value in the <bpt id="p2">**</bpt>Number of cylinders<ept id="p2">**</ept> field to 12.</source>
+        </trans-unit>
+        <trans-unit id="338" translate="yes" xml:space="preserve">
+          <source>In the Action Pane, click <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="339" translate="yes" xml:space="preserve">
+          <source>Notice the validation error.</source>
+        </trans-unit>
+        <trans-unit id="340" translate="yes" xml:space="preserve">
+          <source>Enter a valid number of cylinders, less than 9, and then save the new value.</source>
+        </trans-unit>
+        <trans-unit id="341" translate="yes" xml:space="preserve">
+          <source>Experiment with event handlers on form controls</source>
+        </trans-unit>
+        <trans-unit id="342" translate="yes" xml:space="preserve">
+          <source>This is an example of adding event handler methods on existing controls.</source>
+        </trans-unit>
+        <trans-unit id="343" translate="yes" xml:space="preserve">
+          <source>Find the <bpt id="p1">**</bpt>AddLine<ept id="p1">**</ept> command button control in the <bpt id="p2">**</bpt>FMRental<ept id="p2">**</ept> form designer, right-click the <bpt id="p3">**</bpt>OnClicked<ept id="p3">**</ept> event, and select <bpt id="p4">**</bpt>Copy event handler method<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="344" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Add line OnClicked event<ept id="p1">](./media/addlineonclickedevent.jpg)](./media/addlineonclickedevent.jpg)</ept></source>
+        </trans-unit>
+        <trans-unit id="345" translate="yes" xml:space="preserve">
+          <source>Paste the event handler method in a class of the Fleet Management Extension model and add X++ code to implement it.</source>
+        </trans-unit>
+        <trans-unit id="346" translate="yes" xml:space="preserve">
+          <source>When implementing the AddLine<ph id="ph1">\_</ph>OnClicked event handler, you can access the button control instance using the <bpt id="p1">**</bpt>sender<ept id="p1">**</ept> parameter.</source>
+        </trans-unit>
+        <trans-unit id="347" translate="yes" xml:space="preserve">
+          <source>If you need to access the parent form or any of its variables, this example shows how to access the <bpt id="p1">**</bpt>FormRun<ept id="p1">**</ept> instance and one of its data sources.</source>
+        </trans-unit>
+        <trans-unit id="348" translate="yes" xml:space="preserve">
+          <source>Experiment with event handlers on form data sources</source>
+        </trans-unit>
+        <trans-unit id="349" translate="yes" xml:space="preserve">
+          <source>Just like tables, form controls and other element types, form data sources and form data source fields provide framework-level events.</source>
+        </trans-unit>
+        <trans-unit id="350" translate="yes" xml:space="preserve">
+          <source>The following example shows how you can use the ValidatingWrite event on a form data source or the Validating event on a form data source field to validate user input on the FMRental form.</source>
+        </trans-unit>
+        <trans-unit id="351" translate="yes" xml:space="preserve">
+          <source>This functionality is available as of Platform Update 7.</source>
+        </trans-unit>
+        <trans-unit id="352" translate="yes" xml:space="preserve">
+          <source>Experiment with table extension display and edit methods</source>
+        </trans-unit>
+        <trans-unit id="353" translate="yes" xml:space="preserve">
+          <source>Extension methods enable you to extend tables by creating new display and edit methods on these tables without over-layering X++ code (Extension method must belong to a class named with an <ph id="ph1">\_</ph>Extension suffix).</source>
+        </trans-unit>
+        <trans-unit id="354" translate="yes" xml:space="preserve">
+          <source>For example, this class shows how you can extend the FMVehicle table with an extension display method named CupHoldersDisplay.</source>
+        </trans-unit>
+        <trans-unit id="355" translate="yes" xml:space="preserve">
+          <source>On a form or form extension, you can bind a control to this display method by setting "Data Source = FMVehicle" and "Data method = "FMVehicle<ph id="ph1">\_</ph>Extension::CupHoldersDisplay" as the image below shows.</source>
+        </trans-unit>
+        <trans-unit id="356" translate="yes" xml:space="preserve">
+          <source>Extension display method</source>
+        </trans-unit>
+        <trans-unit id="357" translate="yes" xml:space="preserve">
+          <source>Create a Fleet extension package for deployment</source>
+        </trans-unit>
+        <trans-unit id="358" translate="yes" xml:space="preserve">
+          <source>To deploy your extension to another environment, for example, a test, pre-production or production environment, you must create a deployment package.</source>
+        </trans-unit>
+        <trans-unit id="359" translate="yes" xml:space="preserve">
+          <source>In Visual Studio, on the <bpt id="p1">**</bpt>Dynamics AX<ept id="p1">**</ept> menu, point to <bpt id="p2">**</bpt>Deploy<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>Create Deployment Package<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="360" translate="yes" xml:space="preserve">
+          <source>Create deployment package</source>
+        </trans-unit>
+        <trans-unit id="361" translate="yes" xml:space="preserve">
+          <source>Select the <bpt id="p1">**</bpt>Fleet Management Extension<ept id="p1">**</ept> check box.</source>
+        </trans-unit>
+        <trans-unit id="362" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Package file location<ept id="p1">**</ept> text box, enter "c:FMLab".</source>
+        </trans-unit>
+        <trans-unit id="363" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Create<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="364" translate="yes" xml:space="preserve">
+          <source>This will create a deployment package that contains the Fleet management Extension package.</source>
+        </trans-unit>
+        <trans-unit id="365" translate="yes" xml:space="preserve">
+          <source>See also</source>
+        </trans-unit>
+        <trans-unit id="366" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Download FMLab sample code<ept id="p1">](https://github.com/Microsoft/FMLab)</ept></source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,849 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">1d9978e57ff133b0a9951831c97a6fd810a3d81a</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">retail\retail-modern-pos-device-activation.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2a466b054ffa25717cd3d11fab27a84e8f5f7051</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">7aebbdb8fda6b8eb702dc0c8d314e2d67dd5e854</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Retail Modern POS installation and updates</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic describes how to configure, download, and install Retail Modern POS on various platforms.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>It then describes how to activate Retail Modern POS through device activation.</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Retail Modern POS configuration and installation</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>This topic describes how to configure, download, and install Retail Modern POS on various platforms.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>It then describes how to activate Retail Modern POS through device activation.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Technology</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>The self-service process lets you download the appropriate version of the Retail Modern POS installer and install it on the physical device that you want to use as the point of sale (POS) register.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Device activation is the main onboarding step that ties the physical device to a register in Retail headquarters.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Here are the main technical functions of this feature:</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Tie a physical device to a business entity (register).</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Provide enhanced security through Microsoft Azure Active Directory (Azure AD) and a device token/ID.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Stop unauthorized remote use of Retail Modern POS.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>(In other words, deactivate a device remotely.)</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Initialize settings for easy Retail Modern POS functioning (number sequence, hardware profile, merchant information) as the first touchpoint of the POS.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Comply with payment card industry (PCI) standards, and report on device information from Retail headquarters.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Setup</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Before you start the steps that are outlined in this topic, follow these steps.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Verify that you have Azure AD credentials that you can use to sign in to Retail headquarters.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Verify that you have administrative or root access to install Retail Modern POS on a device.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Verify that you can access the Retail Server from the device.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Verify that the Microsoft Dynamics 365 for Retail, Enterprise edition, environment contains the Retail permission groups and jobs in the <bpt id="p1">**</bpt>Human resources<ept id="p1">**</ept> module.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>These permission groups and jobs should have been installed as part of the demo data.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a id="Install"&gt;</bpt> <ept id="p1">&lt;/a&gt;</ept>Download and install Retail Modern POS</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Verify that the device is correctly configured</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Use your Azure AD credentials to sign in to the Retail trial.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Welcome<ept id="p1">**</ept> page, use the menu in the upper left to go to <bpt id="p2">**</bpt>Retail<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Channels<ept id="p3">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p4">**</bpt>Channel deployment<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Channel deployment<ept id="p1">**</ept> page, select the <bpt id="p2">**</bpt>Registers<ept id="p2">**</ept> tile.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Registers<ept id="p1">**</ept> page, select a store register.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>The demo data thoroughly defines the Houston store and registers for self-service.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>To find the Houston registers, enter <bpt id="p1">**</bpt>Houston<ept id="p1">**</ept> in the filter at the top of the list of devices.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Select a register by selecting the register number in the <bpt id="p1">**</bpt>Register number<ept id="p1">**</ept> column.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>In the Houston store, register Houston-3 is well defined and is therefore useful as an example.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>On the page for the register, under <bpt id="p1">**</bpt>General<ept id="p1">**</ept>, verify that the <bpt id="p2">**</bpt>Support offline<ept id="p2">**</ept> option is set to <bpt id="p3">**</bpt>No<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>To use offline support, on the Action Pane, select <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept>, and then set <bpt id="p2">**</bpt>Support offline<ept id="p2">**</ept> option to <bpt id="p3">**</bpt>Yes<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Download the Retail Modern POS installer</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Welcome<ept id="p1">**</ept> page, use the menu in the upper left to go to <bpt id="p2">**</bpt>Retail<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Channels<ept id="p3">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p4">**</bpt>Channel deployment<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Channel deployment<ept id="p1">**</ept> page, select the <bpt id="p2">**</bpt>Devices<ept id="p2">**</ept> tile.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Select a device.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>The Houston devices are well defined.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Houston-3 is useful as an example for a Microsoft Windows desktop or tablet.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Houston-21 is useful as an example for a Windows Phone.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>When you select a device, the <bpt id="p1">**</bpt>Download<ept id="p1">**</ept> button on the Action Pane becomes available.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Download<ept id="p1">**</ept>, and then select <bpt id="p2">**</bpt>Configuration file<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Browsers might block the download pop-up that is generated.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>You must select either <bpt id="p1">**</bpt>Allow once<ept id="p1">**</ept> or <bpt id="p2">**</bpt>Options for this site<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Always allow<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Then, while the device is still selected, select <bpt id="p1">**</bpt>Download<ept id="p1">**</ept> again.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>The configuration file must be saved to the same location as the Retail Modern POS installer.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>For security reasons, delete this file after installation is completed.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>On the Notification bar that appears at the bottom of the Internet Explorer window, select <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>(The Notification bar might appear in a different place in other browsers.)</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Download<ept id="p1">**</ept>, and then select <bpt id="p2">**</bpt>Retail Modern POS<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Browsers might block the download pop-up that is generated.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>You must select either <bpt id="p1">**</bpt>Allow once<ept id="p1">**</ept> or <bpt id="p2">**</bpt>Options for this site<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Always allow<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Then, while the device is still selected, select <bpt id="p1">**</bpt>Download<ept id="p1">**</ept> again.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>The installation package that you must use varies, depending on whether you require offline support, and whether the device that Retail Modern POS will be installed on is a Windows tablet or a phone device (such as a Windows Phone, an Android device, or an iOS device).</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>The correct package is automatically selected for download, based on the register settings and the application type that is set for the device in Retail.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>If the offline package is selected for a Windows tablet, but Microsoft SQL Server isn't already installed (or if it doesn't meet the requirements for the offline package), SQL Server is downloaded and installed silently.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>On the Notification bar that appears at the bottom of the Internet Explorer window, select <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>(The Notification bar might appear in a different place in other browsers.)</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>After the setup installer has been saved, on the Notification bar, select <bpt id="p1">**</bpt>Run<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>(This step might differ, depending on your browser.)</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Run the installer on a Windows computer</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Before you run the Retail Modern POS installer, make sure that the following requirements are met:</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>The installer requires that the Microsoft .NET Framework version 4.5.1 or above be installed on the system.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>The installer installs Retail Modern POS only on the following operating systems:</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Windows 10 Pro, Enterprise, or Enterprise Long Term Servicing Branch (LTSB) edition with Anniversary Update (both x86 and x64 architectures).</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>The installer will sideload a modern application.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Therefore, a Group Policy entry must be set to allow for sideloaded applications.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>The installer will change the associated registry key as follows to allow for this installation:</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Path:<ept id="p1">**</ept> HKLM:SoftwarePoliciesMicrosoftWindowsAppx</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Property:<ept id="p1">**</ept> AllowAllTrustedApps</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Value:<ept id="p1">**</ept> 1</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>The Retail Modern POS installer first extracts the associated files and then starts the installation.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>The installer validates that all prerequisites are met.</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>If a system restart is required, the installer informs you about this requirement, but the installation can typically continue.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>A sideloaded installation of Retail Modern POS requires a Group Policy change.</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>The installer informs you if this change is required and then makes the change automatically.</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>If you selected offline support, but a valid version of SQL Server isn't found, the installer downloads and installs Microsoft SQL Server 2014 Express with Service Pack 2 (SP2).</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>To meet the prerequisites, SQL Server must have Full-text search installed.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Additionally, a minimum of SP2 must be installed for Microsoft SQL Server 2014, or a minimum of Service Pack 3 (SP3) must be installed for Microsoft SQL Server 2012.</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>The installer tries to download the correct language.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>However, if you require a specific language, we highly recommend that you manually install SQL Server.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>If the installer can't correctly determine the language, it installs the English version of SQL Server 2014 Express with SP2 by default.</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Typically, after the SQL installation is completed, the system requires a restart before the installation of Retail Modern POS can continue.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>This process might require a long time, depending on the speed of the computer and the Internet connection.</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>If a prerequisite fails during this step, first retry the installer.</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>If the installer continues to fail, see the “Troubleshooting” section of this topic.</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>The installer installs Retail Modern POS.</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>On the page that states that installation was successful, select <bpt id="p1">**</bpt>Close<ept id="p1">**</ept> to exit the installer.</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>You can now start the program.</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>This installation occurs only for the administrator user who ran the installer.</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>For all other users, a desktop icon to install Retail Modern POS is created.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>Every time that a user signs in, he or she must double-click this icon.</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>The program will then be installed or updated, as required.</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>If a user doesn't use the desktop icon after an update, the POS client will request that the user run from the desktop icon instead to update correctly prior to running.</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Run the installer on any other device (Windows Phone, Google Android device, or Apple iOS device)</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>If the application wasn't downloaded directly to the device, transfer the downloaded app file and the associated configuration file to the same folder on the device.</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Depending on the type of device, the app file will be an APPX, APK, or IPA file.</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>This step can be done in various ways.</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>For example, the files can be accessed through a shared folder, transferred via USB cable, or securely mailed to the user's device.</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Use a file explorer on the device to browse to the app directory.</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>Tap the app to begin application installation.</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>(If the configuration file was saved to the same location, the Retail Server URL will be automatically entered when you start the application and begin device activation.)</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>Some devices require that you double-tap the file to begin application installation.</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>Some devices might not notify you that an application has been installed.</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>On those devices, we recommend that you look at the application list to verify that the application was correctly installed.</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>When the installation is completed, you should be able to start the application from the application list on the device.</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>For example, after you install the application on a Windows Phone, you can start it from the home screen tiles list.</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>You can now start the program.</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>Create a worker</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>For this topic, we have already created workers and assigned them to the Houston address book in the demo data that is provided.</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Therefore, this topic will use pre-generated data.</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>Create a worker</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>Go to <bpt id="p1">**</bpt>Retail<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Employees<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Workers<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>On the Action Pane, select <bpt id="p1">**</bpt>+New<ept id="p1">**</ept> to create a new employee.</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>Enter the first and last name.</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>For example, enter <bpt id="p1">**</bpt>John<ept id="p1">**</ept> as the first name and <bpt id="p2">**</bpt>Smith<ept id="p2">**</ept> as the last name.</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>Verify that the <bpt id="p1">**</bpt>Legal entity<ept id="p1">**</ept> field is set to <bpt id="p2">**</bpt>USRT<ept id="p2">**</ept>, the <bpt id="p3">**</bpt>Worker type<ept id="p3">**</ept> field is set to <bpt id="p4">**</bpt>Employee<ept id="p4">**</ept>, and the <bpt id="p5">**</bpt>Employment start date<ept id="p5">**</ept> field is set to the current date at 12 AM, so that the worker's employment starts immediately.</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>Select the <bpt id="p1">**</bpt>Assign a position<ept id="p1">**</ept> check box.</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>Select position number <bpt id="p1">**</bpt>000544<ept id="p1">**</ept>, which is the Store manager position.</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>Set the <bpt id="p1">**</bpt>Personnel action type<ept id="p1">**</ept> field to <bpt id="p2">**</bpt>Hire Action<ept id="p2">**</ept> to hire a new employee immediately.</source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Continue<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>On the Action Pane, select <bpt id="p1">**</bpt>Complete<ept id="p1">**</ept> to finish creating the new worker.</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>Return to the worker list.</source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>Search for the newly created worker (for example, John Smith).</source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>Select the worker's name to see the details of the new worker.</source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>On the Action Pane, select  <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>Verify that the language for the worker is <bpt id="p1">**</bpt>en-us<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>Under <bpt id="p1">**</bpt>Worker summary<ept id="p1">**</ept>, in the <bpt id="p2">**</bpt>Address books<ept id="p2">**</ept> field, select the <bpt id="p3">**</bpt>Houston<ept id="p3">**</ept> store.</source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Retail<ept id="p1">**</ept> tab, you can reset the POS password.</source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>For this tutorial, reset the password to <bpt id="p1">**</bpt>123<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Retail<ept id="p1">**</ept> tab, under <bpt id="p2">**</bpt>Screen layout<ept id="p2">**</ept>, assign a screen layout.</source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>For example, select <bpt id="p1">**</bpt>F2MP16:9M<ept id="p1">**</ept> (<bpt id="p2">**</bpt>Fabrikam MPOS Manager (16:9)<ept id="p2">**</ept>).</source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>On the Action Pane, select <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>Go to <bpt id="p1">**</bpt>Retail<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Periodic<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Distribution schedule<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>Select the <bpt id="p1">**</bpt>1060 – Staff<ept id="p1">**</ept> job, and then, on the Action Pane, select <bpt id="p2">**</bpt>Run now<ept id="p2">**</ept> to sync the worker data to the channel database.</source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>After the new worker has been created and synced to stores, worker John Smith can sign in to any POS device that is used in the HOUSTON store that he is assigned to, and he can perform transactions on that device.</source>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>However, the device must be activated first.</source>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>The following section explains how to activate a device for a new worker.</source>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>Map an Azure AD account to a worker who has POS permissions for device activation</source>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>You must complete this procedure before you activate Retail Modern POS for a new worker.</source>
+        </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>In Retail, from the <bpt id="p1">**</bpt>Worker<ept id="p1">**</ept> page, open the <bpt id="p2">**</bpt>Worker details<ept id="p2">**</ept> page for the worker that you created in the previous procedure.</source>
+        </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>On the Action Pane, select <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Retail<ept id="p1">**</ept> tab, select the <bpt id="p2">**</bpt>POS permissions<ept id="p2">**</ept> link.</source>
+        </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>Under <bpt id="p1">**</bpt>POS permission group<ept id="p1">**</ept>, verify that the value is <bpt id="p2">**</bpt>Manager<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>When you've finished, return to the <bpt id="p1">**</bpt>Worker details<ept id="p1">**</ept> page for the new worker.</source>
+        </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>To return to the <bpt id="p1">**</bpt>Worker details<ept id="p1">**</ept> page, select the <bpt id="p2">**</bpt>Close<ept id="p2">**</ept> button (<bpt id="p3">**</bpt>X<ept id="p3">**</ept>) on the right side of the Action Pane.</source>
+        </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>On the Action Pane, select <bpt id="p1">**</bpt>Retail<ept id="p1">**</ept>, and then select <bpt id="p2">**</bpt>Associate existing identity<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>In the dialog box that appears, select the Azure AD account that is named <bpt id="p1">**</bpt>admin AX Admin<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>(If an alternative administrator Azure AD account has been created, select that account instead.)</source>
+        </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>In the demo data, the Azure AD account that is associated with the administrator account in Retail headquarters is your administrator Azure AD account.</source>
+        </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>On the Action Pane, select <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>, and then refresh the page.</source>
+        </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>External identity<ept id="p1">**</ept> section should be now updated with the new information.</source>
+        </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>External identifier<ept id="p1">**</ept> field will remain empty.</source>
+        </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>This behavior is expected.</source>
+        </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>Therefore, you can ignore it.</source>
+        </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>This procedure should be completed before you activate Retail Cloud POS or Retail Modern POS.</source>
+        </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Manage Retail accounts and devices from headquarters<ept id="p1">](set-up-activation-accounts-validate-devices-hq.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>Run the Validate Devices for Activation check</source>
+        </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>In Retail headquarters, open the <bpt id="p1">**</bpt>Device<ept id="p1">**</ept> page (<bpt id="p2">**</bpt>Retail<ept id="p2">**</ept> <bpt id="p3">**</bpt>and commerce<ept id="p3">**</ept><ph id="ph1">&amp;gt;</ph> <bpt id="p4">**</bpt>Setup POS<ept id="p4">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p5">**</bpt>Devices<ept id="p5">**</ept>).</source>
+        </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>Select the device to validate for device activation, and then select <bpt id="p1">**</bpt>Validate Devices for Activation<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>For example, select device <bpt id="p1">**</bpt>HOUSTON-3<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>In the dialog box that appears, select the worker to validate the device for (that is, the worker that you mapped to the Azure AD account in the previous procedure).</source>
+        </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>For example, select worker <bpt id="p1">**</bpt>000160<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>, and make sure that you receive the following message: "Pre-Activation validation completed for Device HOUSTON-3 and Staff 000160.</source>
+        </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>Validation: Passed"</source>
+        </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>Activate a device</source>
+        </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>Start Retail Modern POS on your computer.</source>
+        </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>Read the instructions on the <bpt id="p1">**</bpt>Before you start<ept id="p1">**</ept> page, and make sure that they are completed.</source>
+        </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>Then select <bpt id="p1">**</bpt>Next<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Activate<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>You're redirected to the Azure AD sign-in page.</source>
+        </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>Enter the Azure AD account that you mapped earlier, such as <bpt id="p1">**</bpt>admin@<ph id="ph1">&amp;lt;</ph>MyCompany<ph id="ph2">&amp;gt;</ph>.onmicrosoft.com<ept id="p1">**</ept>, and the password.</source>
+        </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>When activation is completed, select <bpt id="p1">**</bpt>Get Started<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>Sign in to Retail Modern POS by using worker account <bpt id="p1">**</bpt>000160<ept id="p1">**</ept> and the password <bpt id="p2">**</bpt>123<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>The device should now be activated and ready to use.</source>
+        </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>Update the Retail Modern POS application</source>
+        </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> To learn more about deployable packages, see the article <bpt id="p2">[</bpt>Apply a deployable package<ept id="p2">](/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source>After a Retail Modern POS application is uploaded into the environment, the version of the package can be selected on the device.</source>
+        </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source>The package listings should include the new uploaded application.</source>
+        </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source>To update the Retail Modern POS application, follow the steps in the <bpt id="p1">[</bpt>Download and install Retail Modern POS<ept id="p1">](#Install)</ept> section.</source>
+        </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>To do an in-place update, just run the newer version of the self-service installer.</source>
+        </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>Uninstallation isn't required or recommended.</source>
+        </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source>Device activation status will be maintained after the update.</source>
+        </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source>The installer will use the currently installed configuration settings.</source>
+        </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source>If the configuration file has changed, because of various configuration changes in Retail, an update won't change the Retail Modern POS application settings.</source>
+        </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source>Troubleshooting</source>
+        </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source>Troubleshoot installation</source>
+        </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source>Your browser blocks the download pop-up that is generated.</source>
+        </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Solution:<ept id="p1">**</ept> Select either <bpt id="p2">**</bpt>Allow once<ept id="p2">**</ept> or <bpt id="p3">**</bpt>Options for this site<ept id="p3">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p4">**</bpt>Always allow<ept id="p4">**</ept> (or the equivalent commands in the browser that you're using).</source>
+        </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source>Then, while the correct register is still selected, select <bpt id="p1">**</bpt>Download<ept id="p1">**</ept> again.</source>
+        </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source>The installation package that you must use depends on whether you require offline support.</source>
+        </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source>The correct package is automatically selected for download.</source>
+        </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source>For the offline package, SQL Server must be installed and must meet the requirements for the offline package.</source>
+        </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Solution:<ept id="p1">**</ept> No action is required.</source>
+        </trans-unit>
+        <trans-unit id="298" translate="yes" xml:space="preserve">
+          <source>If SQL Server isn't already installed (or if it doesn't meet the requirements), it's downloaded and installed.</source>
+        </trans-unit>
+        <trans-unit id="299" translate="yes" xml:space="preserve">
+          <source>The installer gives generic information about the download and installation of SQL Server Express 2014.</source>
+        </trans-unit>
+        <trans-unit id="300" translate="yes" xml:space="preserve">
+          <source>This installation might require a long time.</source>
+        </trans-unit>
+        <trans-unit id="301" translate="yes" xml:space="preserve">
+          <source>The installation occurs only for the administrator user who ran the installer, but not for any other users.</source>
+        </trans-unit>
+        <trans-unit id="302" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Solution:<ept id="p1">**</ept> The installer generates a desktop icon that is used to install, upgrade, and run Retail Modern POS.</source>
+        </trans-unit>
+        <trans-unit id="303" translate="yes" xml:space="preserve">
+          <source>This icon is generated for every user on the computer.</source>
+        </trans-unit>
+        <trans-unit id="304" translate="yes" xml:space="preserve">
+          <source>When a user who must install Retail Modern POS double-clicks this icon, the program is installed.</source>
+        </trans-unit>
+        <trans-unit id="305" translate="yes" xml:space="preserve">
+          <source>The user can then start to use Retail Modern POS.</source>
+        </trans-unit>
+        <trans-unit id="306" translate="yes" xml:space="preserve">
+          <source>SQL Server isn't successfully downloaded and installed through the self-service Retail Modern POS installer.</source>
+        </trans-unit>
+        <trans-unit id="307" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Solution 1:<ept id="p1">**</ept> A list of reasons shows the prerequisites that failed.</source>
+        </trans-unit>
+        <trans-unit id="308" translate="yes" xml:space="preserve">
+          <source>If the list includes <bpt id="p1">**</bpt>SMO<ept id="p1">**</ept> or <bpt id="p2">**</bpt>SQL Management Objects<ept id="p2">**</ept>, first try to run the installer again.</source>
+        </trans-unit>
+        <trans-unit id="309" translate="yes" xml:space="preserve">
+          <source>SQL Server Management Objects (SMO) are installed during SQL Server installation.</source>
+        </trans-unit>
+        <trans-unit id="310" translate="yes" xml:space="preserve">
+          <source>Therefore, it's possible that the operating system didn't pick up the registration of the executable program that you used.</source>
+        </trans-unit>
+        <trans-unit id="311" translate="yes" xml:space="preserve">
+          <source>When you run the installer a second time, the prerequisites are retested, and the prerequisite check should correctly verify the required executable program.</source>
+        </trans-unit>
+        <trans-unit id="312" translate="yes" xml:space="preserve">
+          <source>If the installer continues to fail, restart the system to fully complete the registration of SQL Server, and then rerun the installer.</source>
+        </trans-unit>
+        <trans-unit id="313" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Solution 2:<ept id="p1">**</ept> Manually download and install SQL Server (Microsoft SQL Server Express or another version) by using Advanced Tools.</source>
+        </trans-unit>
+        <trans-unit id="314" translate="yes" xml:space="preserve">
+          <source>During installation, select <bpt id="p1">**</bpt>Full-text search<ept id="p1">**</ept> as an additional feature.</source>
+        </trans-unit>
+        <trans-unit id="315" translate="yes" xml:space="preserve">
+          <source>The installation of Retail Modern POS fails, because the registration of performance (perf) counters failed.</source>
+        </trans-unit>
+        <trans-unit id="316" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Solution:<ept id="p1">**</ept> Follow these steps to fix this issue:</source>
+        </trans-unit>
+        <trans-unit id="317" translate="yes" xml:space="preserve">
+          <source>Open a <bpt id="p1">**</bpt>Command Prompt<ept id="p1">**</ept> window as an administrator.</source>
+        </trans-unit>
+        <trans-unit id="318" translate="yes" xml:space="preserve">
+          <source>Enter the following command.</source>
+        </trans-unit>
+        <trans-unit id="319" translate="yes" xml:space="preserve">
+          <source>Enter the following command.</source>
+        </trans-unit>
+        <trans-unit id="320" translate="yes" xml:space="preserve">
+          <source>If the system doesn't rebuild the performance counter settings from the system backup, rerun the <bpt id="p1">**</bpt>lodctr /R<ept id="p1">**</ept> command.</source>
+        </trans-unit>
+        <trans-unit id="321" translate="yes" xml:space="preserve">
+          <source>Rerun the Retail Modern POS installer.</source>
+        </trans-unit>
+        <trans-unit id="322" translate="yes" xml:space="preserve">
+          <source>If you're using a downloaded virtual hard disk (VHD) instead of a cloud-hosted environment, the downloader might fail.</source>
+        </trans-unit>
+        <trans-unit id="323" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Solution 1:<ept id="p1">**</ept> In a downloaded VHD, the Azure storage emulator must be installed and must be running correctly.</source>
+        </trans-unit>
+        <trans-unit id="324" translate="yes" xml:space="preserve">
+          <source>Otherwise, the self-service packages can't be downloaded correctly.</source>
+        </trans-unit>
+        <trans-unit id="325" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Solution 2:<ept id="p1">**</ept> A failure might have occurred during the process of integrating the VHD into Microsoft Hyper-V.</source>
+        </trans-unit>
+        <trans-unit id="326" translate="yes" xml:space="preserve">
+          <source>You must manually edit permissions before the packages can be downloaded correctly.</source>
+        </trans-unit>
+        <trans-unit id="327" translate="yes" xml:space="preserve">
+          <source>Follow these steps:</source>
+        </trans-unit>
+        <trans-unit id="328" translate="yes" xml:space="preserve">
+          <source>In File Explorer, browse to <bpt id="p1">**</bpt>C:Microsoft Dynamics 36570Retail Server<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="329" translate="yes" xml:space="preserve">
+          <source>Right-click the <bpt id="p1">**</bpt>SelfServicePackages<ept id="p1">**</ept> folder, and then select <bpt id="p2">**</bpt>Properties<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="330" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Security<ept id="p1">**</ept> tab, select <bpt id="p2">**</bpt>Edit<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="331" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Permissions for SelfServiceDeployment<ept id="p1">**</ept> dialog box, select <bpt id="p2">**</bpt>Add<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="332" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Select Users, Computers, Service Accounts, or Groups<ept id="p1">**</ept> dialog box, select <bpt id="p2">**</bpt>Locations<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="333" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Locations<ept id="p1">**</ept> dialog box, select the first entry in the list (the local computer), and then select <bpt id="p2">**</bpt>OK<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="334" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Select Users, Computers, Service Accounts, or Groups<ept id="p1">**</ept> dialog box, enter the name <bpt id="p2">**</bpt>IIS<ph id="ph1">\_</ph>IUSRS<ept id="p2">**</ept>, and then select <bpt id="p3">**</bpt>Check names<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="335" translate="yes" xml:space="preserve">
+          <source>The object name should be changed to <bpt id="p1">**</bpt>IIS<ph id="ph1">\_</ph>IUSRS<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="336" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="337" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Permissions for SelfServiceDeployment<ept id="p1">**</ept> dialog box, select the new <bpt id="p2">**</bpt>IIS<ph id="ph1">\_</ph>ISURS<ept id="p2">**</ept> user.</source>
+        </trans-unit>
+        <trans-unit id="338" translate="yes" xml:space="preserve">
+          <source>Under <bpt id="p1">**</bpt>Permissions for IIS<ph id="ph1">\_</ph>IUSRS<ept id="p1">**</ept>, select <bpt id="p2">**</bpt>Allow<ept id="p2">**</ept> for the <bpt id="p3">**</bpt>Full control<ept id="p3">**</ept> permission.</source>
+        </trans-unit>
+        <trans-unit id="339" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="340" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Open permission<ept id="p1">**</ept> dialog box, select <bpt id="p2">**</bpt>OK<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="341" translate="yes" xml:space="preserve">
+          <source>Troubleshoot device activation for Retail Modern POS</source>
+        </trans-unit>
+        <trans-unit id="342" translate="yes" xml:space="preserve">
+          <source>The Microsoft account (Azure AD) sign-in page doesn't open.</source>
+        </trans-unit>
+        <trans-unit id="343" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Solution:<ept id="p1">**</ept> The Azure AD endpoint might be unreachable.</source>
+        </trans-unit>
+        <trans-unit id="344" translate="yes" xml:space="preserve">
+          <source>Wait a few minutes, and then try again.</source>
+        </trans-unit>
+        <trans-unit id="345" translate="yes" xml:space="preserve">
+          <source>After you enter the Azure AD account, you receive an error message that states that the user isn't authorized.</source>
+        </trans-unit>
+        <trans-unit id="346" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Solution:<ept id="p1">**</ept> Verify that the Azure AD user is mapped to a worker who has POS permission to activate devices.</source>
+        </trans-unit>
+        <trans-unit id="347" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Manage device<ept id="p1">**</ept> permission for the worker should be set to <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="348" translate="yes" xml:space="preserve">
+          <source>Device activation isn't completed.</source>
+        </trans-unit>
+        <trans-unit id="349" translate="yes" xml:space="preserve">
+          <source>It fails during one of the steps.</source>
+        </trans-unit>
+        <trans-unit id="350" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Solution:<ept id="p1">**</ept> Follow this checklist to verify that all data is correct:</source>
+        </trans-unit>
+        <trans-unit id="351" translate="yes" xml:space="preserve">
+          <source>Complete the Validate Devices for Activation check in Retail headquarters, and make sure that the device passes validation.</source>
+        </trans-unit>
+        <trans-unit id="352" translate="yes" xml:space="preserve">
+          <source>On the client computer where you're activating the device, access the Retail Server URL health check, and make sure that the health check is passed.</source>
+        </trans-unit>
+        <trans-unit id="353" translate="yes" xml:space="preserve">
+          <source>Use the following format for the URL: https://MyCompanyNameret.axcloud.dynamics.com/commerce/healthcheck?testname=ping</source>
+        </trans-unit>
+        <trans-unit id="354" translate="yes" xml:space="preserve">
+          <source>The worker must be mapped to an Azure AD account (under <bpt id="p1">**</bpt>External identity<ept id="p1">**</ept>).</source>
+        </trans-unit>
+        <trans-unit id="355" translate="yes" xml:space="preserve">
+          <source>The Azure AD account that is mapped must belong to the same tenant.</source>
+        </trans-unit>
+        <trans-unit id="356" translate="yes" xml:space="preserve">
+          <source>To map the worker to the Azure AD account, sign in to Retail headquarters by using the Admin account for Microsoft Dynamics Lifecycle Services (LCS).</source>
+        </trans-unit>
+        <trans-unit id="357" translate="yes" xml:space="preserve">
+          <source>Make sure that the worker is set up as a Retail user in the Manager role.</source>
+        </trans-unit>
+        <trans-unit id="358" translate="yes" xml:space="preserve">
+          <source>(This item is checked by validation.)</source>
+        </trans-unit>
+        <trans-unit id="359" translate="yes" xml:space="preserve">
+          <source>Make sure that the channel is published.</source>
+        </trans-unit>
+        <trans-unit id="360" translate="yes" xml:space="preserve">
+          <source>(This item is checked by validation.)</source>
+        </trans-unit>
+        <trans-unit id="361" translate="yes" xml:space="preserve">
+          <source>Make sure that the channel database has the synced data from Retail headquarters, and that download jobs are running.</source>
+        </trans-unit>
+        <trans-unit id="362" translate="yes" xml:space="preserve">
+          <source>Set up the hardware profile under <bpt id="p1">**</bpt>Registers<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="363" translate="yes" xml:space="preserve">
+          <source>(This item is checked by validation.)</source>
+        </trans-unit>
+        <trans-unit id="364" translate="yes" xml:space="preserve">
+          <source>Make sure that the register and store have a screen layout.</source>
+        </trans-unit>
+        <trans-unit id="365" translate="yes" xml:space="preserve">
+          <source>(This item is checked by validation.)</source>
+        </trans-unit>
+        <trans-unit id="366" translate="yes" xml:space="preserve">
+          <source>Make sure that a primary address is set up for the legal entity.</source>
+        </trans-unit>
+        <trans-unit id="367" translate="yes" xml:space="preserve">
+          <source>Make sure that the language is set up for the Commerce Data Exchange: Real-time Service user profile (JBB in the demo data).</source>
+        </trans-unit>
+        <trans-unit id="368" translate="yes" xml:space="preserve">
+          <source>Make sure that the Real-time Service profile has the correct access.</source>
+        </trans-unit>
+        <trans-unit id="369" translate="yes" xml:space="preserve">
+          <source>Make sure that the electronic funds transfer (EFT) configuration value is present.</source>
+        </trans-unit>
+        <trans-unit id="370" translate="yes" xml:space="preserve">
+          <source>Troubleshoot Retail Modern POS connectivity</source>
+        </trans-unit>
+        <trans-unit id="371" translate="yes" xml:space="preserve">
+          <source>On a single-computer system, such as a developer topology or a demo environment, or when Retail Store Scale Unit and Retail Modern POS are installed on the same computer, Retail Modern POS can't complete device activation.</source>
+        </trans-unit>
+        <trans-unit id="372" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Solution:<ept id="p1">**</ept> This issue occurs because Retail Modern POS can't make network calls to the same computer (that is, calls to itself).</source>
+        </trans-unit>
+        <trans-unit id="373" translate="yes" xml:space="preserve">
+          <source>To mitigate this issue, you must enable an AppContainer loopback exception so that communications can occur to the same computer.</source>
+        </trans-unit>
+        <trans-unit id="374" translate="yes" xml:space="preserve">
+          <source>Various applications will help enabling this loopback for Retail Modern POS.</source>
+        </trans-unit>
+        <trans-unit id="375" translate="yes" xml:space="preserve">
+          <source>For more information about loopback, see <bpt id="p1">[</bpt>How to enable loopback and troubleshoot network isolation<ept id="p1">](https://msdn.microsoft.com/en-us/library/windows/apps/hh780593.aspx)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="376" translate="yes" xml:space="preserve">
+          <source>See also</source>
+        </trans-unit>
+        <trans-unit id="377" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Install the POS Layout designer<ept id="p1">](install-pos-layout-designer.md)</ept></source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

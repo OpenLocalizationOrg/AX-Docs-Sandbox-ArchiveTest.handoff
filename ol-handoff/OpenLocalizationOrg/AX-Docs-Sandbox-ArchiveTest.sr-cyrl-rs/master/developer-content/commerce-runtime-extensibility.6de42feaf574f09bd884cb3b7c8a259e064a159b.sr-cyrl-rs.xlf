@@ -1,0 +1,375 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">78e50c3b1a61e4c6c84abb645f2c76b083b6f35f</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">retail\dev-itpro\commerce-runtime-extensibility.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2ba77def06f408d8ccfb66c1d75d4a729dbc41e4</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2bedfd99944d3467f044edad6eaf396fa5c36ffb</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Commerce runtime and Retail Server extensibility</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This article describes various ways that you can extend the commerce runtime (CRT) and Retail Server.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>It explains the concept of extension properties, and shows how to add them to a CRT entity both with and without persistence.</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>It also shows how to add an action to a Retail Server controller and add a controller for an entity.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Commerce runtime and Retail Server extensibility</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This article describes various ways that you can extend the commerce runtime (CRT) and Retail Server.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>It explains the concept of extension properties, and shows how to add them to a CRT entity both with and without persistence.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>It also shows how to add an action to a Retail Server controller and add a controller for an entity.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Using extension properties on CRT entities</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>One way to add new data to an existing commerce runtime (CRT) entity is to use extension properties.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Extension properties are key-value pairs on the entity.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>By default, these key-value pairs aren't persisted into the database.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Extension properties provide the easiest and, it can be argued, the most useful way to extend entities.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>You should always try to use this pattern first, unless something prevents you from using it.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Although you can use polymorphism/inheritance to add simple data members to entities, this approach usually causes more issues than it solves.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>(Nevertheless, this approach might be required for specific cases.) To add an extension property, you must use this syntax.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>To enable the property to be read later, you can use this syntax.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Using extension properties on CRT entities with persistence</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Any extension property that you add to an entity stays in memory for the lifetime of the object.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Additionally, the extension property travels across application boundaries.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>For example, if you add an extension property in Retail Modern POS and then call Retail Server/the CRT, the key-value pair is also available in that process.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Additionally, if that entity is sent to during a Commerce Data Exchange: Real-time Service (RTS) call, the key-value pair is also available in the process.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>However, as we mentioned earlier, it isn't persisted by default.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>If you must persist an extension property, you must do data modeling to help guarantee that you make the right design choices about where the data should reside.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>You can use a new column in the same table, you can use a new table and a join, or you can use another approach.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>The recommended approach is to use a new table and a join.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>This approach fits most requirements well.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>For this approach, the customizer must learn where all “writes” occur and update the SQL code (stored procedures), and must also learn where all the “reads” occur and update that SQL code (SQL view).</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>The EmailPreference sample provides a good end-to-end example.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>In that sample, a single SQL view and a single SQL stored procedure are changed via customization.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>It's important to note that new SQL objects must have the correct role permissions granted.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>For example, a new table that must be included in Commerce Data Exchange (CDX) synchronization jobs must be granted access by DataSyncUsersRole.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>For other roles that are available, inspect the main SQL script in the Retail Sdk<ph id="ph1">\\</ph>Database folder.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Finally, the SQL update script for your customization must be registered in the Customization.settings file for the Retail software development kit (SDK).</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Using extension properties on CRT request and response types</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Like entities, request and response types can be extended.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Implementing a new CRT service that handles multiple new requests</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>It's a typical case to implement a new CRT service.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>First, you must create new request and response classes.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Creating the request and response classes</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>For serialization to work, the new request type must implement the <bpt id="p1">**</bpt><ph id="ph1">\[</ph>DataContract<ph id="ph2">\]</ph><ept id="p1">**</ept> and <bpt id="p2">**</bpt><ph id="ph3">\[</ph>DataMember<ph id="ph4">\]</ph><ept id="p2">**</ept> attributes.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>The new response type resembles the request type.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Next, you must create a new CRT service that uses the request and response types.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Creating a new CRT service</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Implement the new service.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Implement two members of the interface.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>SupportedRequestTypes<ept id="p1">**</ept> member returns a list of all requests that this service can handle.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>The execute method is the method that the CRT calls for you if a request for this service is run.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>In the commerceRuntime.Config file, update the <bpt id="p1">**</bpt>composition<ept id="p1">**</ept> section (or the equivalent section) to register this service.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Note that you can register single types or all types from an assembly.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>The CommerceRuntime engine will find all IRequestHandler derived types.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Optional: Use the CommerceRuntime Test Host to do a test run of your service.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Implementing a new CRT service that handles a single new request</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>It’s slightly easier to create a single-request service.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Registration is done as described in the previous procedure.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Implementing a new CRT service that overrides the functionality of an existing request</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>In some cases, the request and response types are sufficient, but the service implementation must be changed.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>If some new data must be transmitted, you can also extend entity, request, or response objects by using extension properties.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>In this scenario, you can create the service as described earlier and use the existing IRequestHandler types.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Additionally, registration in the commerceRuntime.Config file must precede registration of the service that should be overridden.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>This registration order is important because of the way that the Managed Extensibility Framework (MEF) loads the extension dynamic-link libraries (DLLs).</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>The types that are higher in the file win.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Implementing a new CRT entity and using it in new CRT service</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Any new entity must be of the <bpt id="p1">**</bpt>CommerceEntity<ept id="p1">**</ept> type.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>When you use this type, lots of low-level functionality is automatically handled for you.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>The following example, which is taken from the StoreHours sample, shows how to create an entity that is bound to the database table.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>This is the usual case.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>When you want to use the new entity in a service, the process is straightforward.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>As described earlier, you create a new service as a derived IRequestHandler.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Then either use or return the new entity.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>The following example shows how to read the entity from the database and return it as part of the response.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>For the preceding example, the CRT runtime engine automatically makes a query to the channel database via the registered data adapter.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>It queries a type that has the name <bpt id="p1">**</bpt>crt.ISVRetailStoreHoursView<ept id="p1">**</ept>, and generates a <bpt id="p2">**</bpt>where<ept id="p2">**</ept> clause and columns as specified in the code.</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>The customizer is responsible for providing the SQL objects as part of the customization.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Adding pre-triggers and post-triggers for a specific request</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>In some cases, some processing must be done before or after a request is handled.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>There are two hooks that can be used to run additional code.</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>These hooks are called pre-triggers and post-triggers.</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Follow these steps to create new triggers and associate them with a request.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Create a new trigger class that implements IRequestTrigger.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>IRequest.SupportedRequestTypes<ept id="p1">**</ept> property, return the list of requests that this trigger should be run for.</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Implement the functions that are called before and after the request.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Register the class in the commerceRuntime.Config file.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>Retail Server extensibility scenarios</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Adding a new ODATA action to an existing controller</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>In the easiest scenario, you must add a new application programming interface (API) for a slightly different use case.</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>To make this scenario work, you can add the new action through inheritance.</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>For any changes to the APIs to Retail Server, you must follow these steps.</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Implement the new action or controller.</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Override the requirements of the model factory to add the new corresponding metadata.</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>The following example, which is taken from the Retail SDK, shows how to extend an existing controller so that it has a POST action.</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Next, override the model factory.</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>Before clients can use this new customization, you must adjust the build system to generate the Retail Server proxy code for the new model factory.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>This configuration step is done in the build system.</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>Finally, you must adjust the web.config file.</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>You must complete this step in the packaging project for Retail Server in the SDK.</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>If local tests will be done, you can also optionally complete this step on the local development topology machine that is used for testing.</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>Adding a new simple controller for an entity</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Suppose that you have a simple entity and require a controller to fetch the data.</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>For an example, see the StoreHours sample in the Retail SDK.</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>A new Retail Server controller makes sense, and all the low-level work is done in the CRT (new entity, request, response, and service).</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>To create a new controller, you derive from CommerceController.</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>An example is shown here.</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>The controller name is important and must match the name of the entity.</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>For new entities, you must also override the factory’s <bpt id="p1">**</bpt>BuildEntitySets()<ept id="p1">**</ept> method, as shown in the following example.</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>How to call the new retail server API from MPOS/Cloud POS:</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Before calling the new retail server API please make sure you have performed the below steps:</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>Register your new retail server extension in Retail server web.config file:  <ph id="ph1">&amp;lt;</ph>add source="assembly" value="<bpt id="p1">**</bpt>Your assembly name<ept id="p1">**</ept>" /<ph id="ph2">&amp;gt;</ph></source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>Add the new retail server extension in the Customization.settings file.</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>You can find this file in RetailSdk<ph id="ph1">\\</ph>BuildTools<ph id="ph2">&amp;lt;</ph>RetailServerLibraryPathForProxyGeneration Condition="'$(RetailServerLibraryPathForProxyGeneration)' == ''"<ph id="ph3">&amp;gt;</ph>$(SdkReferencesPath)<ph id="ph4">\\</ph><bpt id="p1">**</bpt>Your assembly name.dll<ept id="p1">**</ept><ph id="ph5">&amp;lt;</ph>/RetailServerLibraryPathForProxyGeneration<ph id="ph6">&amp;gt;</ph> <ph id="ph7">&amp;lt;</ph>/PropertyGroup<ph id="ph8">&amp;gt;</ph></source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>Drop both the CRT and Retail server extension dlls into the retail server bin folder.</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>If you have any CRT extension releated to the new retail server api then update that information in commerceRuntime configuration file under retail server bin folder.</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">&amp;lt;</ph>add source="assembly" value="<bpt id="p1">**</bpt>Your assembly name<ept id="p1">**</ept>" /<ph id="ph2">&amp;gt;</ph></source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>Use inetmgr to browse to the retail server metadata and verify whether your entity is exposed in the xml.</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>Compile and build the mpos/Cloud POS to regenerate the proxy.</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>During compile mpos regenerates all the entities defined in the retail server metadata, so that you can call the new entities using the commerce context like below:</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>Cross loyalty sample:</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>Store hours sample:</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>Please refer the retail SDK POS.Extension.CrossloaylySample and POS.Extension.SToreHoursSample sample projects for more details on how to call the new retail server api in mpos.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

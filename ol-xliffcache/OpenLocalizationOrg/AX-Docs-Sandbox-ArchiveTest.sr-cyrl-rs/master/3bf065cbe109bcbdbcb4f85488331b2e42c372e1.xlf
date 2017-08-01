@@ -1,0 +1,192 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">3bf065cbe109bcbdbcb4f85488331b2e42c372e1</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\analytics\author-distribute-power-bi-reports.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">f0772c24a625d62ea053a46c49754c9682c251e2</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">3e28696b7d10b2e4e5b87ef399e098494a2f80a1</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Author analytical reports by using Power BI Desktop</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic walks you through the process of authoring Power BI reports by using the local Entity Store database.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Author analytical reports by using Power BI Desktop</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>If you're a power user or a business analyst, you probably create many reports for your organization.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>You might create these reports in Microsoft Excel by formatting and relating data before you share it with other people.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>People in your organization might even come to you when they require modifications to the report.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>This solution offers an easy way to create rich, interactive reports.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>As a report writer, you can use Microsoft Power BI Desktop as the reporting tool.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>The reports that you create can then be published to PowerBI.com.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>For more information about Power BI Desktop, see <bpt id="p1">[</bpt>Create stunning reports and visualizations with Power BI Desktop<ept id="p1">](https://powerbi.microsoft.com/en-us/desktop)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Accessing the local Entity Store by using DirectQuery</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, you can create Microsoft Power BI reports by using Open Data Protocol (OData) endpoints that are exposed via data entities.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Despite the limitations of this approach, the Entity Store still supports it for legacy solutions.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>However, DirectQuery is now the preferred method for sourcing data for analytical solutions.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>For more information about the benefits and limitations of DirectQuery, see <bpt id="p1">[</bpt>Use DirectQuery in Power BI Desktop<ept id="p1">](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-use-directquery/)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>When you use Power BI Desktop, you can create a report in your development or test environment by connecting directly to the local Entity Store database.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>When you're satisfied with the report, your administrator can help you migrate it to your production environment.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>The rest of this section walks you through this process.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Step 1: Populate the local Entity Store database</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>For this example, we will stage the aggregate models that the Retail analytical solution consumes in the local Entity Store.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The models that the Retail application uses are defined in the RetailCube aggregate measurement.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>In the Finance and Operations client, open the <bpt id="p1">**</bpt>Entity Store<ept id="p1">**</ept> page.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>(Select <bpt id="p1">**</bpt>System administration<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Setup<ept id="p2">**</ept><ph id="ph2"> &gt; </ph><bpt id="p3">**</bpt>Entity Store<ept id="p3">**</ept>.)</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Select the <bpt id="p1">**</bpt>RetailCube<ept id="p1">**</ept> aggregate measurement, and then select <bpt id="p2">**</bpt>Refresh<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Enter a name for the job that will be run in the background, and then select <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>The following illustration shows the administrator dialog box that is used to configure the frequency of updates for the aggregate model.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Configure refresh dialog box</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>To monitor the progress of the job that stages the data, you can use the batch job monitoring page.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>(Select <bpt id="p1">**</bpt>System administration<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Database<ept id="p2">**</ept><ph id="ph2"> &gt; </ph><bpt id="p3">**</bpt>Batch jobs<ept id="p3">**</ept>.) If you're using demo data, the job should take about a minute.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>After the data is in the Entity Store, you can write reports.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Step 2: Connect to the local Entity Store database</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Start Power BI Desktop.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>If any updates are available for Power BI Desktop, you might have to download and apply them.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>On the Power BI <bpt id="p1">**</bpt>Welcome<ept id="p1">**</ept> page, select <bpt id="p2">**</bpt>Get data<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Alternatively, when Power BI Desktop starts, you can select <bpt id="p1">**</bpt>Get Data<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>SQL Server<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Get Data menu in Power BI Desktop</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>SQL Server Database<ept id="p1">**</ept> dialog box, enter <bpt id="p2">**</bpt>.<ept id="p2">**</ept></source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>as the server name and <bpt id="p1">**</bpt>AxDW<ept id="p1">**</ept> as the database name.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Then select the <bpt id="p1">**</bpt>DirectQuery<ept id="p1">**</ept> option.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>The following illustration shows the settings that enable Power BI Desktop to access the local Entity Store database.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Settings for accessing the local Entity Store database</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Import<ept id="p1">**</ept> option isn't currently supported.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Navigator<ept id="p1">**</ept> dialog box appears.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>You use this dialog box to select which tables and views from the Entity Store you want to report on.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>In the search box, enter <bpt id="p1">**</bpt>Retail<ept id="p1">**</ept> to filter for entities that are related to the RetailCube aggregate measurement.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Select the <bpt id="p1">**</bpt>RetailCube_RetailTransDetailsView<ept id="p1">**</ept> table that is shown in the navigator, and then select <bpt id="p2">**</bpt>Load<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>You can now create a report.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>You can drag measures and fields to the canvas, and can explore data and trends interactively.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>The following illustration shows a basic report that uses the local Entity Store database as its source.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Power BI Desktop report</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Power BI Desktop also supports the creation of calculations and lets you combine data from multiple aggregate measurements.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Within minutes, you can create analytical reports by using data in the local development environment.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>When you're satisfied with the report, you can migrate it to the production environment, so that users can use the report to interact with production data.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Validating reports in a demo environment</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>The report shows the demo or test data in your developer environment.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>If you want to integrate the report into a demo environment, you can continue to publish this report to your PowerBI.com account and pin it to the Finance and Operations client.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>If you want a preview of the report that contains demo data, see the "Publish a report from your demo environment to your PowerBI.com account" section in <bpt id="p1">[</bpt>Power BI content in LCS from Microsoft and your partners<ept id="p1">](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/power-bi-content-microsoft-partners)</ept>.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

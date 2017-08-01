@@ -1,0 +1,639 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ab695bb1734a491c506b210ddeb0ffe6d8a05c96</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\migration-upgrade\migrate-upgraded-cube-entity-store.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">118385249efd7f44e8929ecb90f936ef01491a06</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">c415c384d34687faff9bb49b13548f751bbdfa31</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Migrate an upgraded Dynamics AX 2012 R3 sales cube to the entity store</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>In this tutorial, you'll migrate an upgraded Microsoft Dynamics AX 2012 R3 cube schema to the entity store in Microsoft Dynamics 365 for Finance and Operations.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>You'll use the sales cube that was included in Dynamics AX 2012 R3 as an example.</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Migrate an upgraded Dynamics AX 2012 R3 sales cube to the entity store</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>In this tutorial, you'll migrate an upgraded Microsoft Dynamics AX 2012 R3 cube schema to the entity store in Microsoft Dynamics 365 for Finance and Operations.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>You'll use the sales cube that was included in Dynamics AX 2012 R3 as an example.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>The entity store will support near real-time Microsoft Power BI integration scenarios, as shown in the following diagram.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>For an overview of Power BI integration with entity store, see <bpt id="p1">[</bpt>Power BI integration with entity store<ept id="p1">](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Power BI Architecture diagram<ept id="p1">](./media/powerbiarchitecture.png)](./media/powerbiarchitecture.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>New Power BI features included in the May 2016 and November 2016 updates</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>This tutorial requires the Dynamics 365 for Operations May 2016 update or later.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>You will use the following new capabilities in this tutorial:</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Stage an aggregate measurement in the entity store and refresh the data from Dynamics AX.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>You might prefer this option over in-memory real time aggregate measurements when:</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>You upgrade a Dynamics AX 2012 cube.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Your aggregate measurements are very large.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Data freshness (latency) from a few minutes up to a few hours is acceptable for reporting.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Use the batch framework to schedule a recurring refresh.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>For this release, only a full refresh is enabled.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Create reports using Power BI desktop in a developer/test environment.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Leverage the direct query option when creating Power BI content.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>For example, you can create larger models without relying on OData as the data refresh mechanism.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Migrate reports from your development environment to a production environment using Lifecycle Services (LCS).</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>As a partner or an ISV you can distribute Power BI content as part of an LCS solution to your customers.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>If you're using the November update (platform release 1611)<ept id="p1">**</ept> or later, some steps in this document are part of the process to refresh the entity store - you do not need to perform them manually.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Change upgraded aggregate measurement properties</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>As part of the code upgrade process, analysis services projects from the Application Object Tree (AOT) in Dynamics AX 2012 can be migrated to the new aggregate measurements metadata format.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Launch Visual Studio and create a new project in Application Suite.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: You can create a model and include the customized aggregate measurement within that model.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Customization: Overlayering and extensions<ept id="p1">](..\extensibility\customization-overlayering-extensions.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Open Application Explorer.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Navigate to <bpt id="p1">**</bpt>Analytics<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Perspectives<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Aggregate measurements<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>You will notice a set of aggregate measurements that were upgraded from Dynamics AX 2012 R3, as well as the measurements that ship in the current version of Finance and Operations.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>SalesCube<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Right-click and select <bpt id="p1">**</bpt>Duplicate in project<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>An aggregate measurement with the name <bpt id="p1">**</bpt>SalesCubeCopy<ept id="p1">**</ept> will be added to the project.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Rename this measurement.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>SalesCubeCopy<ept id="p1">**</ept> in Solution Explorer.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Right-click and select <bpt id="p1">**</bpt>Rename<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Enter <bpt id="p1">**</bpt>SalesCubeV2<ept id="p1">**</ept> as the new name.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Double-click <bpt id="p1">**</bpt>SalesCubeV2<ept id="p1">**</ept> to launch the Aggregate measurement designer.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Notice the structure of the aggregate measurement that was migrated from Dynamics AX 2012.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>The Sales cube in Dynamics AX 2012 encompassed a broad subject area related to Sales.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>In this case, let’s create a smaller, more focused Power BI model using the metadata that was upgraded.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Expand the <bpt id="p1">**</bpt>Sales Order Lines<ept id="p1">**</ept> measure group and review the list of measures and dimension references.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> Leveraging the modeling capabilities you can quickly make a few enhancements to this model.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Suggestions for improvements:</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Replace views/tables that have been used to model the measure group (and/or dimensions) with an entity.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>You can model an entity using the underlying view and replace the view with the corresponding entity.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>This will enable you to leverage upcoming features such as incremental refresh and security.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Remove unwanted dimension references by adding the corresponding field to the attributes node.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>For example, the Sizes dimension reference can be removed because the <bpt id="p1">**</bpt>Size<ept id="p1">**</ept> field in the measure group is sufficiently descriptive.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>This will improve the runtime performance of queries as well as refresh times.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Select the <bpt id="p1">**</bpt>SalesCubeV2<ept id="p1">**</ept> root node in the Aggregate measurement designer.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Right-click and select <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>During upgrade, aggregate measurements are set to the legacy property flag, <bpt id="p1">**</bpt>SSASCube<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>You need to change this property to one of two supported usage types.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Previously, <bpt id="p1">**</bpt>InMemoryRealTime<ept id="p1">**</ept> was supported as usage for aggregate measurements.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>StagedEntityStore<ept id="p1">**</ept> is supported as a new usage type.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> Modify the usage property to InMemoryRealTime if you plan to use the Aggregate measurement for embedded BI scenarios as well as Power BI integration.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>If you are using the Aggregate measurement only for Power BI or Cortana Intelligence Suite integration, select <bpt id="p1">**</bpt>StagedEntityStore<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Save the project.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Right-click the project in Solution Explorer and select <bpt id="p1">**</bpt>Rebuild<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>After the rebuild operation is finished, save the project, and then close Visual Studio.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>This completes the development work.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>You will author reports as a report developer or a power user.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Refresh the entity store</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>As an administrator you can configure the refresh of the aggregate measurement using the client.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Launch the Dynamics AX client and navigate to <bpt id="p1">**</bpt>System Administration<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Entity Store<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Entity Store<ept id="p1">**</ept> form shows a list of aggregate measurements that are available for deployment to the entity store.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Notice that <bpt id="p1">**</bpt>Sales Cube<ept id="p1">**</ept> (which was upgraded from Dynamics AX 2012) is not available for deployment to the entity store.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>SalesCubeV2<ept id="p1">**</ept>, which you created in the previous step, can be deployed to the entity store.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>SalesCubeV2<ept id="p1">**</ept> from the list, and click the <bpt id="p2">**</bpt>Refresh<ept id="p2">**</ept> button.</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Refresh<ept id="p1">**</ept> dialog box will display.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Expand the <bpt id="p1">**</bpt>Run in the background<ept id="p1">**</ept> tab.</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Provide a descriptive name in the <bpt id="p1">**</bpt>Task description<ept id="p1">**</ept> field.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Optionally, you can select the <bpt id="p1">**</bpt>Recurrence<ept id="p1">**</ept> tab and create a recurring schedule instead of a one-time refresh.</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>The system will create a batch job for refresh of the aggregate measurement in the entity store.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Authoring a report on Sales by State with Power BI desktop</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>This step requires that you the install Power BI desktop tool that can be downloaded from <bpt id="p1">[</bpt>Microsoft Power BI Desktop<ept id="p1">](http://www.microsoft.com/en-us/download/details.aspx?id=45331)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Launch Power BI desktop.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>You may need to apply updates.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>A welcome page will display.</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Get data<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Alternatively, when Power BI desktop launches, on the <bpt id="p1">**</bpt>Home<ept id="p1">**</ept> tab select <bpt id="p2">**</bpt>Get Data<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>SQL Server<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>SQL Server Database<ept id="p1">**</ept> dialog box, enter the server name and the name of the entity store database.</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>If you deployed a developer environment, you can enter “.”</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>as the server name and <bpt id="p1">**</bpt>AxDW<ept id="p1">**</ept> as the database name.</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>If you are working in a test environment, you need to get these parameters from your system administrator</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Select the <bpt id="p1">**</bpt>DirectQuery<ept id="p1">**</ept> option.</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>In this exercise, you will create Power BI reports that are executed directly on the entity store.</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>If you had used the <bpt id="p1">**</bpt>Import<ept id="p1">**</ept> option, Power BI would cache data from the entity store and you would need to periodically refresh the Power BI model.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Import mode is currently not supported with reports written using entity store<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>Next you will see the <bpt id="p1">**</bpt>Navigator<ept id="p1">**</ept> dialog box.</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Navigator enables you to select tables and views from the entity store that you want to report on.</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>Enter <bpt id="p1">**</bpt>Sales<ept id="p1">**</ept> in the search box.</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>The system will filter entities that are related to the <bpt id="p1">**</bpt>SalesCubeV2<ept id="p1">**</ept> aggregate measurement that was previously created.</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> The entity store stages the aggregate measurements that have been created.</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>While entities within each aggregate measurement are prefixed and stored as individual tables, Power BI desktop enables you to combine data from multiple aggregate measurements.</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>You will create a report that shows sales by state.</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>SalesCubeV2<ph id="ph1">\_</ph>Customer<ept id="p1">**</ept> and <bpt id="p2">**</bpt>SalesCubeV2<ph id="ph2">\_</ph>CustomerInvoices<ept id="p2">**</ept> from Navigator and click <bpt id="p3">**</bpt>Load<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>You will notice Power BI designer with <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> present in the entities that you have chosen (on the far right), as well as available visualization.</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>Create a surrogate key that links customers and invoices (applies to platform versions before November 2016 update)</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> You do not need to perform this step if you are working on the November 2016 release of the platform or later.</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Surrogate keys are generated in aggregate measurements staged into entity store.</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>Power BI desktop does not enable you to relate table joins using multiple fields (also known as, composite keys).</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>SalesCubeV2<ph id="ph1">\_</ph>Customer<ept id="p1">**</ept> entity does not have a surrogate key (such as AX RecID) defined in it.</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>Next, you will create a surrogate key that enables relating a customer entity to invoices.</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>Select the ellipsis (…) icon next to the <bpt id="p1">**</bpt>SalesCubeV2<ph id="ph1">\_</ph>CustomerInvoices<ept id="p1">**</ept> entity.</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>Right-click and select <bpt id="p1">**</bpt>New Column<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Enter the following expression in the <bpt id="p1">**</bpt>Formula editor<ept id="p1">**</ept> window.</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> When you enter the first few letters of the field name or function, the editor will display a list of candidate fields.</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>This is called a type-ahead feature.</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>You can either copy and paste this expression or use the type-ahead feature.</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>When completed, your formula should look similar to the following.</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Power BI Formula<ept id="p1">](./media/powerbiformula.png)](./media/powerbiformula.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>Notice that a new field, <bpt id="p1">**</bpt>FKCustomer<ept id="p1">**</ept>, is shown in the list of fields for the <bpt id="p2">**</bpt>SalesCubeV2<ph id="ph1">\_</ph>CustomerInvoices<ept id="p2">**</ept> table.</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>Because this field is used to relate two tables, you can hide it from end users by right-clicking the field and selecting the <bpt id="p1">**</bpt>Hide<ept id="p1">**</ept> option.</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>Next, create a similar field in the <bpt id="p1">**</bpt>SalesCubeV2<ph id="ph1">\_</ph>Customer<ept id="p1">**</ept> table.</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>Select the ellipsis (…) icon next to <bpt id="p1">**</bpt>SalesCubeV2<ph id="ph1">\_</ph>Customer<ept id="p1">**</ept> entity.</source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>Right-click and select <bpt id="p1">**</bpt>New Column<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>Enter the following expression in the <bpt id="p1">**</bpt>Formula editor<ept id="p1">**</ept> window.</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>Notice that the field <bpt id="p1">**</bpt>FKCustomer<ept id="p1">**</ept> is shown in the list of fields for the <bpt id="p2">**</bpt>SalesCubeV2<ph id="ph1">\_</ph>Customer<ept id="p2">**</ept> table.</source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>Because this field is used for relating two tables, you can hide it from end users by right-clicking the field and selecting the <bpt id="p1">**</bpt>Hide<ept id="p1">**</ept> option.</source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>Relate invoices and customers</source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> If you are on the November 2016 version of the platform or later, you can relate the surrogate keys already created within entity store.</source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>If not, you must relate the surrogate keys that you created manually.</source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>Next you will create a relationship between <bpt id="p1">**</bpt>SalesCubeV2<ph id="ph1">\_</ph>CustomerInvoices<ept id="p1">**</ept> and <bpt id="p2">**</bpt>SalesCubeV2<ph id="ph2">\_</ph>Customers<ept id="p2">**</ept> entities.</source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>Click the <bpt id="p1">**</bpt>Manage Relationships<ept id="p1">**</ept> button on the Power BI ribbon.</source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>You will see the <bpt id="p1">**</bpt>Manage Relationships<ept id="p1">**</ept> dialog box.</source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>Click the <bpt id="p1">**</bpt>New<ept id="p1">**</ept> button.</source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Create Relationship<ept id="p1">**</ept> dialog box, select <bpt id="p2">**</bpt>SalesCubeV2CustomerInvoices<ept id="p2">**</ept> as the first table in the drop-down list.</source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>Scroll to the right and select the <bpt id="p1">**</bpt>FKCustomer<ept id="p1">**</ept> field as the column to relate to.</source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>In the second drop-down list select <bpt id="p1">**</bpt>SalesCubeV2Customer<ept id="p1">**</ept> as the table.</source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>Scroll to the right and select <bpt id="p1">**</bpt>FKCustomer<ept id="p1">**</ept> as the column to relate to.</source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>Select the <bpt id="p1">**</bpt>Make this relationship active<ept id="p1">**</ept> option if it is not already selected.</source>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> to continue.</source>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>You will notice the newly created relationship in the <bpt id="p1">**</bpt>Manage Relationships<ept id="p1">**</ept> dialog box.</source>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>Click the <bpt id="p1">**</bpt>Close<ept id="p1">**</ept> button.</source>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>Create a Sales by state report</source>
+        </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>To create a report that shows sales by customer group, drag the <bpt id="p1">**</bpt>CustomerInvoiceAmountAccountingCurrency<ept id="p1">**</ept> field from the <bpt id="p2">**</bpt>SalesCubeV2<ph id="ph1">\_</ph>CustomerIncoices<ept id="p2">**</ept> table and drop it on the Power BI desktop canvas.</source>
+        </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>Next, drag the <bpt id="p1">**</bpt>CustomerGroupName<ept id="p1">**</ept> field in the <bpt id="p2">**</bpt>SalesCubeV2<ph id="ph1">\_</ph>Customer<ept id="p2">**</ept> table to the same grid.</source>
+        </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>Change the chart type to a doughnut chart.</source>
+        </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>You should see a report similar to the following.</source>
+        </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Power BI Doughnut Chart<ept id="p1">](./media/doughnut-chart-1024x733.png)](./media/doughnut-chart.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>You can create additional visuals using the Power BI desktop.</source>
+        </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>When you save, you will notice that the file has a <bpt id="p1">**</bpt>PBIX<ept id="p1">**</ept> extension.</source>
+        </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>Save the report to your desktop.</source>
+        </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>At this point the report is fully functional (with data from your environment) and you can continue to use the Power BI desktop or upload this report to PowerBI.com and continue with data exploration.</source>
+        </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>Next, you will migrate this report to a production environment using LCS so that you can see this report with production data and share it with other users.</source>
+        </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>Publish the report and the model</source>
+        </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>Publishing a report and model requires uploading the report to Lifecycle Services, migrating the aggregate measurement to your production environment, configuring the client to point to the correct LCS library, and publishing your reports in your production environment.</source>
+        </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>Upload the report to Lifecycle Services</source>
+        </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>Microsoft Dynamics Lifecycle Services (LCS) is the tool used to migrate development artifacts from developer to production environments.</source>
+        </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>In the May 2016 update, LCS supports migrating PBIX files (authored using the entity store) between environments.</source>
+        </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>Launch LCS (<bpt id="p1">[</bpt>http://lcs.dynamics.com<ept id="p1">](http://lcs.dynamics.com/)</ept>) from the developer environment.</source>
+        </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>If you haven’t created a project in the LCS environment, create a project.</source>
+        </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>Scroll to the right and you will notice the <bpt id="p1">**</bpt>Asset Library<ept id="p1">**</ept> icon.</source>
+        </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>Click the icon and launch <bpt id="p1">**</bpt>Asset Library<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>Notice that the asset library enables adding <bpt id="p1">**</bpt>PowerBI report models<ept id="p1">**</ept> (PBIX files) as implementation artifacts to a project.</source>
+        </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>Select the plus (+) icon to add a new asset.</source>
+        </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>Provide a name and a description.</source>
+        </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Upload<ept id="p1">**</ept> and then locate the file that you saved in an earlier step.</source>
+        </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>After you successfully upload the file, click <bpt id="p1">**</bpt>Confirm<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>Notice that the file is uploaded into LCS as an implementation asset.</source>
+        </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>LCS supports managing versions and releases for Power BI reports.</source>
+        </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>You can maintain several versions and publish reports to other environments, just as you would for other implementation artifacts.</source>
+        </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>Because you added the PBIX files as an asset within an LCS project, environments that you deployed using that project will have access to this report.</source>
+        </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>Optionally, you can publish this report so that all of your projects can access the shared assets.</source>
+        </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>If you are a partner or an ISV, and want to share this report with your customers, you would share this asset to your global library and enable your customers to import the asset into their respective LCS projects.</source>
+        </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>To do this, select the <bpt id="p1">**</bpt>Save to my library<ept id="p1">**</ept> option.</source>
+        </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>Migrate the aggregate measurement to a production environment</source>
+        </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>You need to migrate the aggregate measurement that you modified in the developer environment to the production environment.</source>
+        </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>You can follow the instructions in Generate a deployable package.</source>
+        </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>create-apply-deployable-package.md.</source>
+        </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>After you successfully publish the model, perform the steps outlined in the <bpt id="p1">**</bpt>Refresh the entity store<ept id="p1">**</ept> section of this tutorial, so that the entity store is updated with data.</source>
+        </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>Configure an LCS project</source>
+        </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source>If you haven’t already done so, associate your environment with an LCS project so that Finance and Operations is able to consume assets within the project.</source>
+        </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source>Launch the client from the instance that you want to use to deploy the Power BI reports.</source>
+        </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source>Typically this is the test or a production instance where you want to see a report with a different set of data than what you worked with as a report developer.</source>
+        </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source>Open <bpt id="p1">**</bpt>System Administration<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>System parameters<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>Select the <bpt id="p1">**</bpt>Help<ept id="p1">**</ept> tab.</source>
+        </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>Using the <bpt id="p1">**</bpt>Lifecycle services help configuration<ept id="p1">**</ept> list box, select the LCS project that you uploaded the PBIX file to.</source>
+        </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> This form will only show the LCS projects that the current user has access to.</source>
+        </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source>If this step is being performed by an administrator, either the administrator needs to have access to the project, or the PBIX artifacts need to be imported into a project that the administrator has access to.</source>
+        </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source>Publish Power BI reports to a production environment</source>
+        </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source>Open <bpt id="p1">**</bpt>System Administration<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Deploy PowerBI<ept id="p3">**</ept> from the client.</source>
+        </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source>You will see the file that you uploaded to LCS.</source>
+        </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source>Select the <bpt id="p1">**</bpt>Sales Report<ept id="p1">**</ept> file and select the <bpt id="p2">**</bpt>Deploy Power BI files<ept id="p2">**</ept> option on the menu bar.</source>
+        </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> You may be asked to consent publishing to the PowerBI.com service.</source>
+        </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source>Click the link to provide consent.</source>
+        </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source>When consent is complete, you need to go back to the original browser window and click the <bpt id="p1">**</bpt>Close<ept id="p1">**</ept> button.</source>
+        </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source>After you successfully publish the file, the Power BI report will appear in your PowerBI.com subscription.</source>
+        </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>You will notice that the report now points to the entity store in the production environment.</source>
+        </trans-unit>
+        <trans-unit id="298" translate="yes" xml:space="preserve">
+          <source>Continuing with PowerBI.com</source>
+        </trans-unit>
+        <trans-unit id="299" translate="yes" xml:space="preserve">
+          <source>As an administrator or a power user, you have successfully authored and published a Power BI report to the production environment using the entity store.</source>
+        </trans-unit>
+        <trans-unit id="300" translate="yes" xml:space="preserve">
+          <source>You can perform several additional steps using Power BI functionality.</source>
+        </trans-unit>
+        <trans-unit id="301" translate="yes" xml:space="preserve">
+          <source>Optionally, you can apply record-level security to the dataset to restrict users from seeing data they are not allowed to view in Power BI.</source>
+        </trans-unit>
+        <trans-unit id="302" translate="yes" xml:space="preserve">
+          <source>You can create an organizational content pack and share it among users in a group.</source>
+        </trans-unit>
+        <trans-unit id="303" translate="yes" xml:space="preserve">
+          <source>You can export datasets, reports, and dashboards from your PowerBI.com instance as a new content pack to a selected group of users.</source>
+        </trans-unit>
+        <trans-unit id="304" translate="yes" xml:space="preserve">
+          <source>Note that organizational content packs adhere to any record-level security rules that you defined at the dataset level.</source>
+        </trans-unit>
+        <trans-unit id="305" translate="yes" xml:space="preserve">
+          <source>Users can personalize their workspaces by adding Power BI tiles or reports.</source>
+        </trans-unit>
+        <trans-unit id="306" translate="yes" xml:space="preserve">
+          <source>See also</source>
+        </trans-unit>
+        <trans-unit id="307" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Modeling and using aggregate data<ept id="p1">](../analytics/model-aggregate-data.md)</ept></source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,375 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">80102a9de11ac44beb7ee992f35f4280b5a48c5a</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\financial\dimensions.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">044dd350757ff41d5e7743b1bbbd10e5afeb7332</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">7f9ce0507a42ab8986ba4edda4eea8e71e5f685c</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Dimensions</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>To support different dimension patterns, a set of framework data entities has been created that can be used as data sources in other entities that involve dimensions.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Dimensions</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>To support different dimension patterns, a set of framework data entities has been created that can be used as data sources in other entities that involve dimensions.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>The SFK and the Natural key</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>To support different dimension patterns, a set of framework data entities has been created that can be used as data sources in other entities that involve dimensions.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>When this nesting of data entities occurs, the surrogate foreign key (SFK) and natural key of the dimensions data entity are treated differently.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>The following table describes the differences.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Key type</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Access modifier</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Description, when the dimension entity is a data source on another entity</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>SFK</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>private</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>As with any SFK, the SFK of the dimension is defined on the outer data entity as a private field.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Natural key</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>public</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The natural key of the dimension entity is exposed as a public string of dimension attribute values.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>The values are concatenated together but are separated by the account delimiter.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>The account delimiter is defined per partition.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>The concatenated string is used as a display value.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The phrase “DisplayValue” is appended as a suffix to some fields of an entity, as explained later in this document.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Reads and writes</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Read:<ept id="p1">**</ept> On a read of the outer data entity, the public display value will be retrieved from a computed column by using the dimension entity of the framework.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Because the read uses a computed column, it doesn't require any X++ logic for export scenarios.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Write:<ept id="p1">**</ept> On the creation or update of entity instance values, the public display value is resolved to the SFK to match the private field.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Examples</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>DimensionEntityTestEntity<ept id="p1">**</ept> is a test entity that has more than one dimension pattern.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>For the default dimension, you can focus on the <bpt id="p1">**</bpt>DimensionDefault<ept id="p1">**</ept> and <bpt id="p2">**</bpt>DimensionDefaultDisplayValue<ept id="p2">**</ept> fields, and ignore the rest.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Read example</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Read example<ept id="p1">](./media/suba.png)](./media/suba.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Write example</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>The entity exposes a default dimension field, <bpt id="p1">**</bpt>DimensionDefaultDisplayValue<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>This is a display value field.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>You can set this field to a concatenated string value that is similar to the segmented entry control of the user interface.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Write example<ept id="p1">](./media/subb.png)](./media/subb.png)</ept> <bpt id="p2">**</bpt>DisplayValue<ept id="p2">**</ept> resolves to <bpt id="p3">**</bpt>DefaultDimension<ept id="p3">**</ept> at run time.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Create an entity by using a wizard</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>This section describes how to create a data entity by using a wizard.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>We recommend that you use the wizard.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>It requires only that you select the SFK field of the dimension.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>The wizard creates the required data source, fields, and relations that have all the correct settings.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>File<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>New<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Project<ept id="p3">**</ept> to create a new Microsoft Dynamics 365 for Finance and Operations project.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>In Solution Explorer, right-click your project, and then click <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Property Pages<ept id="p1">**</ept> dialog box for your project opens.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Property Pages<ept id="p1">**</ept> dialog box, follow these steps:</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Change the value of the <bpt id="p1">**</bpt>Model<ept id="p1">**</ept> property to <bpt id="p2">**</bpt>Application Suite Unit tests<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>OK<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>You must set this property only one time per project.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Change the value of the <bpt id="p1">**</bpt>Synchronize database on build<ept id="p1">**</ept> property to <bpt id="p2">**</bpt>True<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>OK<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>You must set this property only one time per project.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Setting the project properties<ept id="p1">](./media/dim2.png)](./media/dim2.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Create a new entity that is named <bpt id="p1">**</bpt>DimensionTestEntity<ept id="p1">**</ept>, and add it to the project.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>When you click the <bpt id="p1">**</bpt>Add<ept id="p1">**</ept> button, the <bpt id="p2">**</bpt>Data Entity View<ept id="p2">**</ept> wizard starts.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Under <bpt id="p1">**</bpt>Installed<ept id="p1">**</ept>, then select <bpt id="p2">**</bpt>Dynamics 365 Artifacts<ept id="p2">**</ept>, then select select <bpt id="p3">**</bpt>Data Model<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Data Entity<ept id="p1">**</ept> from the list.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> A naming convention document is evolving that covers data entities and other items.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Specify the property values for the data entity that you're creating, as shown in the following screen shot.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> The most important field is <bpt id="p2">**</bpt>Primary data source<ept id="p2">**</ept>, where you select <bpt id="p3">**</bpt>DimensionEntityTestTable<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Setting the entity properties<ept id="p1">](./media/dim4.png)](./media/dim4.png)</ept> Click <bpt id="p2">**</bpt>Next<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Add fields to the entity from the primary data source, <bpt id="p1">**</bpt>DimensionEntityTestTable<ept id="p1">**</ept>:</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Clear the <bpt id="p1">**</bpt>Select all<ept id="p1">**</ept> check box to deselect all fields.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Deselecting all fields<ept id="p1">](./media/dim5.png)](./media/dim5.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Manually select the check box for each of the following fields:</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>FieldDimensionDefault</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>FieldAlternativeKey</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Selecting fields for the entity<ept id="p1">](./media/dim6.png)](./media/dim6.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Finish<ept id="p1">**</ept> to add the new data entity to your project.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>A node for the entity appears in Solution Explorer.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>The entity node in Solution Explorer<ept id="p1">](./media/dim7.png)](./media/dim7.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Build<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Build Solution<ept id="p2">**</ept> to build your project.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Errors<ept id="p1">**</ept> pane, verify that the build was completed without any errors.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>At this stage in the process, warnings are tolerated.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Validate the properties of <bpt id="p1">**</bpt>DimensionTestEntity<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>In Solution Explorer, select the <bpt id="p1">**</bpt>DimensionTestEntity<ept id="p1">**</ept> node, and compare the values in the <bpt id="p2">**</bpt>Properties<ept id="p2">**</ept> pane values to the values in the following screen shot.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Properties<ept id="p1">](./media/dim8.png)](./media/dim8.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>In Solution Explorer, right-click the <bpt id="p1">**</bpt>DimensionTestEntity<ept id="p1">**</ept> node, and then click <bpt id="p2">**</bpt>Open<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>The designer for the entity opens in the middle pane.</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Entity designer<ept id="p1">](./media/dim9.png)](./media/dim9.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>In the designer for <bpt id="p1">**</bpt>DimensionTestEntity<ept id="p1">**</ept>, expand <bpt id="p2">**</bpt>Fields<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>FieldDimensionDefaultDisplayValue<ept id="p3">**</ept>, and select the node for the <bpt id="p4">**</bpt>FieldDimensionDefaultDisplayValue<ept id="p4">**</ept> field.</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept> pane, change the value of the <bpt id="p2">**</bpt>AccessModifier<ept id="p2">**</ept> property from <bpt id="p3">**</bpt>Private<ept id="p3">**</ept> to <bpt id="p4">**</bpt>Public<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Setting the AccessModifier property<ept id="p1">](./media/dim10.png)](./media/dim10.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Override the <bpt id="p1">**</bpt>persistEntity<ept id="p1">**</ept> method on the data entity, and enter the following X++ code.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Overriding the persistEntity method<ept id="p1">](./media/dim11.png)](./media/dim11.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>For testing, see the existing unit test class, <bpt id="p1">**</bpt>DimensionEntityTest<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Manually configure and understand default dimensions</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>This section describes how to add a dimension data source to a new entity.</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>The new entity requires the dimension display value from the dimension tables.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>On a new entity, create a data source that has the property values that are shown in the following screen shot.</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>In particular, notice the settings for the properties that are described in the following table.</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Property name</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Property value</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Allow Add</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>Is Read Only</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>Yes</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>Join Mode</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>OuterJoin</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Name</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>FieldDimensionDefaultDAVS</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>The value is derived by appending the four-character literal "DAVS" to the name of the SFK field from the data source.</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>Table</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>DimensionSetEntity</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>The name that you chose for the data entity for the data source.</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>The value that is shown here, <bpt id="p1">**</bpt>DimensionSetEntity<ept id="p1">**</ept>, is a framework dimension data entity for the DefaultDimension pattern.</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Data source properties<ept id="p1">](./media/dim12.png)](./media/dim12.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>Create a private field for the dimension SFK.</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>For this entity field, the source field is the <bpt id="p1">**</bpt>FieldDimensionDefault<ept id="p1">**</ept> SFK field.</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>dim13fixed<ept id="p1">](./media/dim13fixed.png)](./media/dim13fixed.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>Create a public field for the dimension display value, and bind it to the data source that you created in a previous step.</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>The name of the dimension display value field must be the private field name, to which the twelve-character literal “DisplayValue” is appended.</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>dim14fixed<ept id="p1">](./media/dim14fixed.png)](./media/dim14fixed.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>Add an entity relation.</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>An entity relation will enable OData navigation between entities.</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>The name of the relation should be the name of the private dimension field name, to which “DimensionSet” is appended.</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>The public name for <bpt id="p1">**</bpt>DimensionSetEntity<ept id="p1">**</ept> is <bpt id="p2">**</bpt>DimensionSet<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>Therefore, the navigation to that entity should have a meaningful name.</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>A good choice is the name of the dimension SFK plus “DimensionSet.”</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>dim15fixed<ept id="p1">](./media/dim15fixed.png)](./media/dim15fixed.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>Override the <bpt id="p1">**</bpt>persistEntity<ept id="p1">**</ept> method, and enter the following X++ code.</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Overriding the persistEntity method<ept id="p1">](./media/dim16.png)](./media/dim16.png)</ept></source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,249 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">9f168d55ce1569a5811c67639c3a9482cbd2d587</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">retail\dev-itpro\retail-sdk\retail-sdk-control-unit-sample.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">daa99650f16c5c3b95397b87c45f4eb045940b99</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">31acc5038493296382253273d7dfff7ee96dce43</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Control unit sample for Sweden</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic is the building and installation guide for the sample for control unit integration for Sweden</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Sample for Retail POS integration with control units for Sweden</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>SAMPLE CODE NOTICE<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>THIS SAMPLE CODE IS MADE AVAILABLE AS IS.  MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED, OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OR CONDITIONS OF MERCHANTABILITY.  THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>NO TECHNICAL SUPPORT IS PROVIDED.  YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>This sample shows how to create Microsoft Dynamics 365 for Retail extensions to integrate Retail Modern POS or Cloud POS with a fiscal register.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Specifically, this sample includes the code for integrating Microsoft Dynamics for Retail POS with control units for Sweden.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>As an example, this sample uses the application programming interface (API) of the CleanCash® Type A control unit by Retail Innovation HTT AB.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Version 1.1.4 of the CleanCash® API is used.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>For the integration package that includes the API and documentation, contact the manufacturer of the device.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>This sample is a part of the Retail software development kit (SDK).</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>For information about how to install and use the Retail SDK, see the <bpt id="p1">[</bpt>Retail SDK documentation<ept id="p1">](./retail-sdk-overview.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>This sample consists of extensions for the Hardware station, commerce runtime (CRT), and point of sale (POS).</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>To run this sample, you must modify and build the Hardware station, CRT, and POS projects.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>We recommend that use you an unmodified Retail SDK to make the changes that are described in this topic.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>We also recommend that you use a source control system, such as Microsoft Visual Studio Online (VSO), where no files have been changed yet.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Development environment</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Follow these steps to set up a development environment so that you can test and extend the sample.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Extend the Hardware station component:</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Open the Hardware station solution under <bpt id="p1">**</bpt>RetailSDK\SampleExtensions\HardwareStation<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Find the <bpt id="p1">**</bpt>HardwareStation.Extension.FiscalRegisterSample.csproj<ept id="p1">**</ept> extension project, and compile it.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Find the following files in <bpt id="p1">**</bpt>Extension.FiscalRegisterSample\bin\Debug<ept id="p1">**</ept>:</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Contoso.Commerce.HardwareStation.FiscalRegisterSample.dll<ept id="p1">**</ept> assembly</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Contoso.Commerce.HardwareStation.FiscalRegisterSample.dll.config<ept id="p1">**</ept> configuration</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Interop.CleanCash_1_1.dll<ept id="p1">**</ept> assembly</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Copy the files to a deployed Hardware station box:</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Remote Hardware station:<ept id="p1">**</ept> Copy the files to the <bpt id="p2">**</bpt>bin<ept id="p2">**</ept> folder under the Internet Information Services (IIS) Hardware station site location.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Local Hardware station:<ept id="p1">**</ept> Copy the files to the Modern POS client broker location.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Find the web config file for Hardware station:</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Remote Hardware station:<ept id="p1">**</ept> The file is named <bpt id="p2">**</bpt>hardwarestation.shared.config<ept id="p2">**</ept>, and it's under the IIS Hardware station site location.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Local Hardware station:<ept id="p1">**</ept> The file is named <bpt id="p2">**</bpt>HardwareStation.Dedicated.config<ept id="p2">**</ept>, and it's under the Modern POS client broker location.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Add the following section to the <bpt id="p1">**</bpt>composition<ept id="p1">**</ept> section of the config file.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Restart the Hardware station service:</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Remote Hardware station:<ept id="p1">**</ept> Restart the Hardware station site from IIS Manager.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Local Hardware station:<ept id="p1">**</ept> End the <bpt id="p2">**</bpt>dllhost.exe<ept id="p2">**</ept> process from Task Manager, and restart Modern POS.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Extend the CRT component:</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Open the CRT solution, <bpt id="p1">**</bpt>CommerceRuntimeSamples.sln<ept id="p1">**</ept>, under <bpt id="p2">**</bpt>RetailSdk\SampleExtensions\CommerceRuntime<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Find the <bpt id="p1">**</bpt>Runtime.Extensions.FiscalRegisterReceiptSample<ept id="p1">**</ept> project, and build it.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Locate the ext.config file for CRT:</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Retail Server:<ept id="p1">**</ept> The file is named <bpt id="p2">**</bpt>commerceruntime.ext.config<ept id="p2">**</ept>, and it's under the IIS Retail server site location.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Local CRT on Modern POS:<ept id="p1">**</ept> The file is named <bpt id="p2">**</bpt>CommerceRuntime.MPOSOffline.Ext.config<ept id="p2">**</ept>, and it's under the local CRT client broker location.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Register the CRT change in the config file.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Do <bpt id="p1">**</bpt>not<ept id="p1">**</ept> edit the commerceruntime.config and CommerceRuntime.MPOSOffline.config files.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>These files are not intended for any customizations.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Locate the <bpt id="p1">**</bpt>Contoso.Commerce.Runtime.FiscalRegisterReceiptSample.dll<ept id="p1">**</ept> assembly file in <bpt id="p2">**</bpt>Extensions.FiscalRegisterReceiptSample\bin\Debug<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Copy the assembly to the CRT extensions folder:</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Retail Server:<ept id="p1">**</ept> Copy the assembly to the <bpt id="p2">**</bpt>\bin\ext<ept id="p2">**</ept> folder under the IIS Retail server site location.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Local CRT on Modern POS:<ept id="p1">**</ept> Copy the assembly to the <bpt id="p2">**</bpt>\ext<ept id="p2">**</ept> folder under the local CRT client broker location.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>The CRT and Retail Server code changes are all part of RetailSdk\SampleExtensions.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Therefore, the preceding steps refer to how to build, deploy, and test these code changes.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Extend the Modern POS component:</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Open the solution at <bpt id="p1">**</bpt>RetailSdk\POS\ModernPOS.sln<ept id="p1">**</ept>, and make sure that it can be compiled without errors.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Also make sure that Modern POS can be run from Microsoft Visual Studio using the <bpt id="p1">**</bpt>Run<ept id="p1">**</ept> command.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>(Modern POS must not be customized.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>You must enable User Account Control [UAC], and you must uninstall previously installed instances of Modern POS as required.)</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Include <bpt id="p1">**</bpt>FiscalRegisterSample<ept id="p1">**</ept> in the <bpt id="p2">**</bpt>Pos.Extensions<ept id="p2">**</ept> project.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Enable the extension in <bpt id="p1">**</bpt>InternalExtensions\extensions.json<ept id="p1">**</ept> by adding the following lines in the appropriate place.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Rebuild the solutions.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Run Modern POS in the debugger, and test the functionality.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Extend the Cloud POS component:</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Open the solution at <bpt id="p1">**</bpt>RetailSdk\POS\CloudPOS.sln<ept id="p1">**</ept>, and make sure it can be compiled without errors.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Include <bpt id="p1">**</bpt>FiscalRegisterSample<ept id="p1">**</ept> in the <bpt id="p2">**</bpt>Pos.Extensions<ept id="p2">**</ept> project.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Enable the extension in <bpt id="p1">**</bpt>InternalExtensions\extensions.json<ept id="p1">**</ept> by adding the following lines in the appropriate place.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Rebuild the solutions.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Run the solution using the <bpt id="p1">**</bpt>Run<ept id="p1">**</ept> command and following the steps in the Retail SDK handbook.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Test the functionality.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Set up the fiscal register configuration and other required parameters in Retail headquarters.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Cash registers for Sweden<ept id="p1">](../../localizations/emea-swe-cash-registers.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Production environment</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Follow these steps to create and apply deployable packages that contain Retail components in a production environment.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Make the following changes in the package config files under the <bpt id="p1">**</bpt>RetailSdk\Assets<ept id="p1">**</ept> folder:</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Add the following section to the <bpt id="p1">**</bpt>composition<ept id="p1">**</ept> section of the <bpt id="p2">**</bpt>commerceruntime.ext.config<ept id="p2">**</ept> and <bpt id="p3">**</bpt>CommerceRuntime.MPOSOffline.Ext.config<ept id="p3">**</ept> config files.</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Add the following section to the <bpt id="p1">**</bpt>composition<ept id="p1">**</ept> section of the <bpt id="p2">**</bpt>HardwareStation.Shared.config<ept id="p2">**</ept> and <bpt id="p3">**</bpt>HardwareStation.Dedicated.config<ept id="p3">**</ept> config files.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Run <bpt id="p1">**</bpt>msbuild<ept id="p1">**</ept> for the whole Retail SDK to create deployable packages.</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Retail SDK packaging<ept id="p1">](../../dev-itpro/retail-sdk/retail-sdk-packaging.md)</ept>.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

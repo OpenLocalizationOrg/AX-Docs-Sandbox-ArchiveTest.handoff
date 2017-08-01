@@ -1,0 +1,654 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">cf9cbad66d10eb1aeb7bb6e37d7bbdb803e9b228</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\analytics\create-nextgen-reporting-solutions.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">082af4ddea2a3ecfea4520dbefd9a6bf251a5566</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">f0670ec0c6e736cdc886b9abc0581039af91b70d</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Create reporting solutions</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This tutorial shows how to export data and create a report, expand predefined views and add navigation to charts, use the free-form report designer, and customize the parameter experience.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Create reporting solutions</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This tutorial shows how to export data and create a report, expand predefined views and add navigation to charts, use the free-form report designer, and customize the parameter experience.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Prerequisites</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>For this tutorial, you must access the Microsoft Dynamics 365 for Finance and Operations environment, and you must be provisioned as an administrator on the instance.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Key concepts</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Describe the various ways reports can be created and consumed in Finance and Operations</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Add interactivity to embedded aggregate reports in forms and workspaces</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Use framework extensions to customize the parameter experience for SSRS based business documents</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Export List Page data to create reports with external tools including Microsoft Excel</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Author modern report designs using enhanced developer tooling in Visual Studio 2015</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>What's new in Reporting?</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Embedded report drill-through navigations to AX forms and reports</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Navigate between reports using embedded report drill-through links</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Several Document Routing Service enhancements including support for custom print settings</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Introduced Document Brand Management administrative tools</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Additional visualizations available through the Embedded Charting Control</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Dates and Amounts in the report body are formatted based on the "Date, time, and number format" user setting</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Network Print monitoring form</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Table extensions need to be supported through the VS Query picker</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>What is a report in the Finance and Operations?</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Reports can be defined simply as any visualization of a structured data set.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>This may include transactional data presented in a tabular layout and advanced graphical views of aggregate information.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>To account for this broad definition, Finance and Operations offers several tools to produce reports to satisfy complex business requirements.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Some common applications of reports in an ERP include:</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Creating and archiving transactional documents as part of a posting process</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Producing packing slips for tracking orders from Manufacturing to Warehousing to Sales</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Monitoring key performance metrics and surfacing trends in data</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Navigating the client through filtered searches</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Distributing heavily branded documents to customers and employees</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Extracting data in such a way that it articulates the health of a business</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>The most difficult task for developers is selecting the <bpt id="p1">*</bpt>right<ept id="p1">*</ept> Business Intelligence visualization tool for the job, given a customer’s requirements.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>To accomplish this, it’s important to understand the capabilities offered through the tools that are available for creating reports.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>In the Finance and Operations, we offer tooling to support the following basic reporting requirements:</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Excel Integration<ept id="p1">**</ept> - Allows data management and analysis using Microsoft Excel</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Embedded Analytics<ept id="p1">**</ept> - Add aggregate data to a Workspaces using native controls like charts and grids</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Reporting Services<ept id="p1">**</ept> - Create business documents that require precision using SSRS-based solutions</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Power BI Integration<ept id="p1">**</ept> - Author and share reports that can be accessed anywhere</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Management Reporter<ept id="p1">**</ept> – Designed to help users create financial reports</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>The following table can be used to compare the basic characteristics of these reporting tools:</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>TOOL</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>AUTHOR</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>TARGET</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>DATA</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>CONSUMPTION</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>DESIGNER</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Excel</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Power User</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Power User</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Transactional</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>External</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Free form</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Embedded BI</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Developer</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>All users</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Aggregates</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Internal</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Modeled</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>SSRS Report</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Developer</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>All users</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Transactional and Aggregates</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Internal/External</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Free form</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Power BI</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Power User</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>All users</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Aggregates</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Internal/External</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Free form</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Management Reporter</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Power User</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Power User</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Transactional</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>External</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Modeled</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Create a report using List Pages</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>In this section, we'll walk you through the process of exporting Finance and Operations data displayed in an entity details form.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Here we’ll demonstrate how every form in Finance and Operations can be viewed as a source of data for management and analysis using the power of Excel.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Create an analysis report based on all rentals in Fleet Management that are marked as complete</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Open Internet Explorer, and navigate to your Finance and Operations instance base URL and sign in.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>On the cloud environment, the base URL is obtained from LCS</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>On a local VM, the base URL is https://usnconeboxax1aos.cloud.onebox.dynamics.com</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>On the Dashboard, scroll to the far right, and click the <bpt id="p1">**</bpt>Reservation management<ept id="p1">**</ept> tile.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Under the <bpt id="p1">**</bpt>Summary<ept id="p1">**</ept> section, click on the <bpt id="p2">**</bpt>All rentals<ept id="p2">**</ept> tile.</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>Expand the <bpt id="p1">**</bpt>Filters<ept id="p1">**</ept> pane by clicking on the Filters icon next to the main grid.</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Add a filter field<ept id="p1">**</ept>, and then select <bpt id="p2">**</bpt>Status<ept id="p2">**</ept> in the drop-down list.</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Enter <bpt id="p1">**</bpt>Complete<ept id="p1">**</ept> in the Status filter field, and then click <bpt id="p2">**</bpt>Apply<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Expand the page action bar, click <bpt id="p1">**</bpt>Open in Office<ept id="p1">**</ept>, and then select <bpt id="p2">**</bpt>Rentals<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>FMRentals export<ept id="p1">](./media/fmrentals-export.png)](./media/fmrentals-export.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>After the data has been exported, you can use the power and flexibility of the Excel tools to create reports for presentation or additional analysis.</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>The following is an example of a self-service report authored with Excel.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>FMRentals analysis<ept id="p1">](./media/fmrentals-analysis-1024x775.png)](./media/fmrentals-analysis.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>Close the browser session and the exported Excel file.</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>Advantages of List Pages</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Flexible source for accessing transactional business data using external reporting and analytical tools like Excel</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>Allows end-users to model the data sets they need without requiring a developer</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Direct access to real-time business information** **</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>Expand predefined views and add navigation to charts</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>Business Intelligence can be useful at every level of an organization.</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Use embedded controls to elevate the most relevant information based on the target persona.</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>Native controls in Microsoft Dynamics 365 for Finance and Operations offer users an intuitive and convenient way of interacting with aggregate data allowing for informed decision making.</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>Create development project</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>On the Desktop, right-click the <bpt id="p1">**</bpt>Visual Studio 2015<ept id="p1">**</ept> shortcut, and select <bpt id="p2">**</bpt>Run as administrator<ept id="p2">**</ept> to open the development environment.</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>On the toolbar, click <bpt id="p1">**</bpt>View<ept id="p1">**</ept>, and then select <bpt id="p2">**</bpt>Application Explorer<ept id="p2">**</ept></source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Use the <bpt id="p1">**</bpt>Application Explorer<ept id="p1">**</ept> to search for the <bpt id="p2">**</bpt>FMReservationsReport<ept id="p2">**</ept> form in the <bpt id="p3">**</bpt>Fleet Management<ept id="p3">**</ept> module.</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Application Explorer’s<ept id="p1">**</ept> search results, right-click <bpt id="p2">**</bpt>FMReservationsReport<ept id="p2">**</ept> form, and then select <bpt id="p3">**</bpt>Add to new project<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>Select the <bpt id="p1">**</bpt>Finance and Operations Project<ept id="p1">**</ept> template, and then click <bpt id="p2">**</bpt>OK<ept id="p2">**</ept> to create the project.</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, right-click <bpt id="p2">**</bpt>FMReservationsReport<ept id="p2">**</ept> menu item, and then select <bpt id="p3">**</bpt>Set as startup object.<ept id="p3">**</ept></source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>Press <bpt id="p1">**</bpt>Ctrl+Shift+B<ept id="p1">**</ept> to save and build the project.</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>Press <bpt id="p1">**</bpt>Ctrl + F5<ept id="p1">**</ept> to load the form containing the report.</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>FMCustomer activity<ept id="p1">](./media/fmcustomer-activity-300x224.png)](./media/fmcustomer-activity.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>At this point, you have a collection of pre-defined chart visualizations of Aggregate data.</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>The controls offer basic interactive features like hover text, series filtering, and touch expansion.</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>However, it is often appropriate that a greater degree of user interactivity is required.</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>Change the default chart type for the visualization</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>Close the browser session and return to the Visual Studio project.</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>Open the <bpt id="p1">**</bpt>Application Explorer<ept id="p1">**</ept>, locate the <bpt id="p2">**</bpt>FMReservationsByCustPart<ept id="p2">**</ept> form, right-click, and then select <bpt id="p3">**</bpt>Add to project<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>Open the <bpt id="p1">**</bpt>FMReservationsByCustPart<ept id="p1">**</ept> form designer.</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>Access the <bpt id="p1">**</bpt>Series<ept id="p1">**</ept> collection in the <bpt id="p2">**</bpt>ReservationsByCust<ept id="p2">**</ept> chart definition.</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>Select the <bpt id="p1">**</bpt>SysBuildChatMeasure1<ept id="p1">**</ept> series definition</source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>Locate the <bpt id="p1">**</bpt>Appearance<ept id="p1">**</ept> section in the <bpt id="p2">**</bpt>Properties<ept id="p2">**</ept> window.</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>Update the <bpt id="p1">**</bpt>Chart type<ept id="p1">**</ept> value and select <bpt id="p2">**</bpt>Pie<ept id="p2">**</ept></source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>Press Ctrl+Shift+B to save and rebuild the project.</source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>Press Ctrl + F5 to run the report.</source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Reservations by customer<ept id="p1">**</ept> view now visualizes the aggregate data set using a Pie chart to simplify the task of comparing rental activity across customers.</source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>FMCustomer activity 2<ept id="p1">](./media/fmcustomer-activity-2-1024x733.png)](./media/fmcustomer-activity-2.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>Additional functions include:</source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>Define contextual drill-through navigations using modeled properties</source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>Manage drill-through links using X++ form logic</source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>Advantages of embedded aggregate visualizations</source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>Designed to be simple and intuitive to promote informed decisions at every level of the organization</source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>Pre-defined views tailored to meet the needs of the consumer</source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>Augments the user’s ability to recognize key performance trends in the data</source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>Using the freeform report designer</source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>SSRS continues to be the platform for producing advanced Business Document solutions for your ERP application.</source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>The hosted service is designed for high volume and heavily transactional reports with an integrated parameter experience.</source>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>Backed by the Document Printing &amp; Distribution Services, these solutions are ideal for producing precision documents which are intended for email, printing, archive, and bulk distribution.</source>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>Open the Precision Designer</source>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>Close the browser session and return to the Visual Studio project.</source>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>File<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Close Solution<ept id="p2">**</ept>, to close the active project.</source>
+        </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>Use the <bpt id="p1">**</bpt>Application Explorer<ept id="p1">**</ept> to search for objects with <bpt id="p2">**</bpt>FMRentalsByCust<ept id="p2">**</ept> in the name</source>
+        </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Application Explorer’s<ept id="p1">**</ept> search results, select all <bpt id="p2">**</bpt>Classes<ept id="p2">**</ept>, the <bpt id="p3">**</bpt>Output Menu Item<ept id="p3">**</ept>, and the <bpt id="p4">**</bpt>FMRentalsByCustomer<ept id="p4">**</ept> report</source>
+        </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>Right-click and then select <bpt id="p1">**</bpt>Add to new project<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>Select the <bpt id="p1">**</bpt>Dynamics 365<ept id="p1">**</ept> template, and then click <bpt id="p2">**</bpt>OK<ept id="p2">**</ept> to create the project.</source>
+        </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, double-click on the <bpt id="p2">**</bpt>FMRentalsByCustomer<ept id="p2">**</ept> report to open the designer.</source>
+        </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>Expand the <bpt id="p1">**</bpt>Designs<ept id="p1">**</ept> collection in the designer to view the list of design definitions</source>
+        </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>Double-click on the <bpt id="p1">**</bpt>Report<ept id="p1">**</ept> design to view the report definition using the Precision Designer</source>
+        </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Report designer<ept id="p1">](./media/report-designer-1024x665.png)](./media/report-designer.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>The above is a screen-shot of the FMRentalsByCustomer report design definition as viewed using the Visual Studio 2015 Precision Designer.</source>
+        </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>The Precision Designer offers a free-form design surface with built-in tools that allow you to customize the content and layout of the report.</source>
+        </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>You can also take advantage of embedded VB code to create run-time design manipulations and support user interactions.</source>
+        </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>As an integrated tool, developers are able to reference AX labels and public APIs to format data in the report body based on AX EDTs.</source>
+        </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>MSDN offers a rich collection of developer documentation related to SSRS formatting capabilities.</source>
+        </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>See the article <bpt id="p1">[</bpt>Reporting Services Reports (SSRS)<ept id="p1">](https://msdn.microsoft.com/en-us/library/bb522712.aspx)</ept> on for a good primer on designing effective SSRS reports.</source>
+        </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>Customizing the parameter experience</source>
+        </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>The Reporting Framework offers flexibility through service extensions to facilitate advanced solutions with requirements that cannot be addressed using a modeled solution.</source>
+        </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>Use the VS designer to add basic parameter formatting, grouping, and input validation.</source>
+        </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>X++ based data contract validation is available for more advanced scenarios.</source>
+        </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>Consider adding User Interface (UI) Builder Classes to customize the parameter pane used to prompt for session inputs before running a report.</source>
+        </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>These custom extensions are effective for addressing the following functions:</source>
+        </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>Overriding dialog field events</source>
+        </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>Validating report parameters inline</source>
+        </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>Adding customized lookups to dialog fields</source>
+        </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>Changing the layout of the dialog controls</source>
+        </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>Adding custom controls including images</source>
+        </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>Defining parameters defaulting using code</source>
+        </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, double-click on the <bpt id="p2">**</bpt>FMRentalsByCustUIBuilder<ept id="p2">**</ept> class to open the designer.</source>
+        </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>Locate the class <bpt id="p1">**</bpt>build<ept id="p1">**</ept> method and update the initialization code as follows</source>
+        </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>Press Ctrl+Shift+B to save and rebuild the project.</source>
+        </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>Press Ctrl + F5 to run the report.</source>
+        </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>FMRentalsByCust controls<ept id="p1">](./media/fmrentalsbycust-controls-1024x691.png)](./media/fmrentalsbycust-controls.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>The parameter initialization code above sets the default values of the report execution relative to today’s date.</source>
+        </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>Use the classes UIBuilder to override the framework’s default handling of report parameters.</source>
+        </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>Additional extension scenarios supported:</source>
+        </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>Automatically set query ranges based on session context using Controller classes</source>
+        </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>Select report designs at runtime using a shared menu item</source>
+        </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>Modify report data contract values using business logic</source>
+        </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> This example demonstrates a UIBuilder extension with an RDP-based based report.</source>
+        </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source>For a Query based example that includes a UIBuilder extension, view the <bpt id="p1">**</bpt>FMCustomerList<ept id="p1">**</ept> report.</source>
+        </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source>Using VB code to manage running balances</source>
+        </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source>The Reporting Framework offers flexibility through service extensions to facilitate advanced solutions with requirements that cannot be addressed using a modeled solution.</source>
+        </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>Use the VS designer to add basic parameter formatting, grouping, and input validation.</source>
+        </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>X++ based data contract validation is available for more advanced scenarios.</source>
+        </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source>Consider adding User Interface (UI) Builder Classes to customize the parameter pane used to prompt for session inputs before running a report.</source>
+        </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source>These custom extensions are effective for addressing the following functions:</source>
+        </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source>Overriding dialog field events</source>
+        </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source>Validating report parameters inline</source>
+        </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source>Adding customized lookups to dialog fields</source>
+        </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source>Changing the layout of the dialog controls</source>
+        </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source>Adding custom controls including images</source>
+        </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source>Import the section resources</source>
+        </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source>Close the browser session and return to the Visual Studio project.</source>
+        </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source>On the toolbar, click <bpt id="p1">**</bpt>DYNAMICS AX<ept id="p1">**</ept>, and then select <bpt id="p2">**</bpt>Import Project…<ept id="p2">**</ept></source>
+        </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source>In the File name window, browse to C:<ph id="ph1">\\</ph>FmLab<ph id="ph2">\\</ph>Lab10-3, select <bpt id="p1">**</bpt>FMRentalDetailsReport.axpp<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>Open<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>In the Project file location text box, enter C:<ph id="ph1">\\</ph>FmLab<ph id="ph2">\\</ph>Lab10-3.</source>
+        </trans-unit>
+        <trans-unit id="298" translate="yes" xml:space="preserve">
+          <source>Select the <bpt id="p1">**</bpt>Current solution<ept id="p1">**</ept> radio button.</source>
+        </trans-unit>
+        <trans-unit id="299" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> to close.</source>
+        </trans-unit>
+        <trans-unit id="300" translate="yes" xml:space="preserve">
+          <source>Wait for the project to be imported and opened.</source>
+        </trans-unit>
+        <trans-unit id="301" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, select the new project, right-click, and then select <bpt id="p2">**</bpt>Set as startup project.<ept id="p2">**</ept></source>
+        </trans-unit>
+        <trans-unit id="302" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, right-click <bpt id="p2">**</bpt>FMRentalDetails<ept id="p2">**</ept> menu item, and then select <bpt id="p3">**</bpt>Set as startup object.<ept id="p3">**</ept></source>
+        </trans-unit>
+        <trans-unit id="303" translate="yes" xml:space="preserve">
+          <source>Select the Project in Solution Explorer, right-click, and then select <bpt id="p1">**</bpt>Deploy Reports<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="304" translate="yes" xml:space="preserve">
+          <source>Press <bpt id="p1">**</bpt>Ctrl + F5<ept id="p1">**</ept> to view the report.</source>
+        </trans-unit>
+        <trans-unit id="305" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>FMRentalDetails report<ept id="p1">](./media/fmrentaldetails-report.png)](./media/fmrentaldetails-report.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="306" translate="yes" xml:space="preserve">
+          <source>This report uses embedded VB script to keep track of running totals so that the balances from the previous page can be referenced on the active page.</source>
+        </trans-unit>
+        <trans-unit id="307" translate="yes" xml:space="preserve">
+          <source>To inspect report’s VB code, load the report design in the Precision Designer, access the <bpt id="p1">**</bpt>Report Properties<ept id="p1">**</ept>, and then select the <bpt id="p2">**</bpt>Code<ept id="p2">**</ept> section.</source>
+        </trans-unit>
+        <trans-unit id="308" translate="yes" xml:space="preserve">
+          <source>Here you’ll see several functions referenced by the report designs to surface running balances within the report headers and footers.</source>
+        </trans-unit>
+        <trans-unit id="309" translate="yes" xml:space="preserve">
+          <source>Advantages of SSRS reports</source>
+        </trans-unit>
+        <trans-unit id="310" translate="yes" xml:space="preserve">
+          <source>Built-in back office document management capabilities including email support, scheduled executions via Batch, and Print Archive</source>
+        </trans-unit>
+        <trans-unit id="311" translate="yes" xml:space="preserve">
+          <source>Parameterized views with drill-through navigations to Finance and Operations forms and other reports</source>
+        </trans-unit>
+        <trans-unit id="312" translate="yes" xml:space="preserve">
+          <source>Used to produce precision documents for compliance with local regulatory business practices</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,3201 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">0d1ac36f89252a3e2cf9a3cf5dfe0feded43877d</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">retail\dev-itpro\secure-retail-cloud-pos.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">77f423c6f90397112d55be684445b640e8947e14</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">381daf3ee98004d766e39f789adc5c7cbb5f5816</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Security best practices for Retail Cloud POS in a shared environment</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Retail Cloud POS is a web application that runs in the context of a browser.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic provides recommendations that can help secure Retail Cloud POS in a shared environment.</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Security best practices for Retail Cloud POS in a shared environment</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Retail Cloud POS is a web application that runs in the context of a browser.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This topic provides recommendations that can help secure Retail Cloud POS in a shared environment.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Background</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Retail Cloud POS is a web application that runs in the context of a web browser.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Therefore, it's vulnerable to attack when a user can run any script in the context of the web application.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>One requirement for such attacks is that the user must have physical access to the computer, either in person or by using Remote Desktop Connection.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Vulnerability to attack is an existing issue in most browsers that provide developer tools, and that enable scripts to be run without sufficient privilege control.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Because the web application will have little influence over its hosting environment, one way to mitigate security issues is to add defense-in-depth.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The defense-in-depth can be built by taking advantage of the restrictive policies of both the browser and the operating system.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Hardening instructions for a Retail Cloud POS computer</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Here are some of the defense-in-depth recommendations for the operating system and/or browser that will have an activated instance of Retail Cloud POS.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>The settings should be enabled or set by a high-privileged account for the operating system.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Retail Cloud POS should be used by a low-privileged account that can't override those settings.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>We recommend that you enable all the following settings.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Otherwise, you could create a security loophole that will be prone to security exploitation.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Required<ept id="p1">**</ept> - Disable script execution in the browser's address bar.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Required<ept id="p1">**</ept> - Disable the browser's developer console.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Required<ept id="p1">**</ept> - Retail Cloud POS should be accessed by a low-privileged user.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Required<ept id="p1">**</ept> - Set up group policies to enable a kiosk session.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Recommended<ept id="p1">**</ept> - Set up a proxy to access only whitelisted websites.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Disable script execution in the address bar of the browser that runs Retail Cloud POS</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Internet Explorer</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>There is no option to disable script execution in the address bar in Internet Explorer.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>One alternative is to hide the address bar itself.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Create a shortcut for the Retail Cloud POS URL, and copy it to each store worker's Microsoft Windows desktop.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Run <bpt id="p1">**</bpt>regedit.exe<ept id="p1">**</ept> to change the registry to disable the Internet Explorer address bar.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\[</ph>HKEY<ph id="ph2">\_</ph>LOCAL<ph id="ph3">\_</ph>MACHINE<ph id="ph4">\\</ph>SOFTWARE<ph id="ph5">\\</ph>Policies<ph id="ph6">\\</ph>Microsoft<ph id="ph7">\\</ph>Internet Explorer<ph id="ph8">\\</ph>ToolBars<ph id="ph9">\\</ph>Restrictions<ph id="ph10">\]</ph> "NoNavBar"=dword:00000001</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Microsoft Edge</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>By design, Microsoft Edge prevents script execution in the address bar.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Therefore, no action is required.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Disable the developer console in the browser that runs Retail Cloud POS</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Internet Explorer</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Use Group Policy Editor to enable the following group policy to disable the Internet Explorer developer console: <ph id="ph1">\\</ph>Administrative Templates<ph id="ph2">\\</ph>Windows Components<ph id="ph3">\\</ph>Internet Explorer<ph id="ph4">\\</ph>Toolbars<ph id="ph5">\\</ph>Turn off Developer Tools="Enabled"</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Microsoft Edge</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Run <bpt id="p1">**</bpt>regedit.exe<ept id="p1">**</ept> to change the registry to disable the developer console.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\[</ph>HKEY<ph id="ph2">\_</ph>LOCAL<ph id="ph3">\_</ph>MACHINE<ph id="ph4">\\</ph>SOFTWARE<ph id="ph5">\\</ph>Policies<ph id="ph6">\\</ph>Microsoft<ph id="ph7">\\</ph>MicrosoftEdge<ph id="ph8">\\</ph>F12<ph id="ph9">\]</ph> "AllowDeveloperTools"=dword:00000000</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Retail Cloud POS should be accessed by a lowprivileged user</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>A point of sale (POS) user must be a non-administrative account that doesn't have privileges to change applied policies.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Set up group policies to enable a kiosk session</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>We recommend that you apply the following restrictions for Retail Cloud POS users:</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Restrict access to the file system.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Restrict access to Control Panel.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Restrict access to removable drives.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Restrict access to shells that run commands.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Restrict access to the registry.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Restrict access to application management.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>The following table lists the group policies to enable kiosk mode.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>The set of policies requires that you start your browser at the sign-in script.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>These policies can be adjusted to your requirements.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>You should always assess any security implications or talk to a specialist.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Setting</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>State</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Comment</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Path</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Enable screen saver</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Disabled</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Personalization</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Allow DFS roots to be published</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Disabled</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Shared Folders</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Allow shared folders to be published</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Disabled</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Shared Folders</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Add Search Internet link to Start Menu</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Disabled</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Show Quick Launch on Taskbar</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Disabled</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Show the Apps view automatically when the user goes to Start</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Disabled</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Show "Run as different user" command on Start</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>Disabled</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>Add the Run command to the Start Menu</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Disabled</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Show Start on the display the user is using when they press the Windows logo key</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Disabled</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>Show Windows Store apps on the taskbar</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>Disabled</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Turn off shell protocol protected mode</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>Disabled</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>File Explorer</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>Turn on menu bar by default</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>Disabled</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Turn on Script Execution</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>Disabled</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Windows PowerShell</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>Hide the "Add a program from CD-ROM or floppy disk" option</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Add or Remove Programs</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>Hide the "Add programs from Microsoft" option</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Add or Remove Programs</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>Hide the "Add programs from your network" option</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Add or Remove Programs</source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>Hide Add New Programs page</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Add or Remove Programs</source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>Remove Add or Remove Programs</source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Add or Remove Programs</source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>Hide the Set Program Access and Defaults page</source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Add or Remove Programs</source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>Hide Change or Remove Programs page</source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Add or Remove Programs</source>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>Go directly to Components Wizard</source>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Add or Remove Programs</source>
+        </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>Remove Support Information</source>
+        </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Add or Remove Programs</source>
+        </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>Hide Add/Remove Windows Components page</source>
+        </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Add or Remove Programs</source>
+        </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>Disable the Display Control Panel</source>
+        </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Display</source>
+        </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>Hide Settings tab</source>
+        </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Display</source>
+        </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>Prevent changing color scheme</source>
+        </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Personalization</source>
+        </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>Prevent changing theme</source>
+        </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Personalization</source>
+        </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>Prevent changing visual style for windows and buttons</source>
+        </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Personalization</source>
+        </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>Prohibit selection of visual style font size</source>
+        </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Personalization</source>
+        </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>Prevent changing color and appearance</source>
+        </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Personalization</source>
+        </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>Prevent changing desktop background</source>
+        </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Personalization</source>
+        </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source>Prevent changing desktop icons</source>
+        </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Personalization</source>
+        </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source>Prevent changing mouse pointers</source>
+        </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Personalization</source>
+        </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source>Prevent changing screen saver</source>
+        </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Personalization</source>
+        </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source>Prevent changing sounds</source>
+        </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="298" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Personalization</source>
+        </trans-unit>
+        <trans-unit id="299" translate="yes" xml:space="preserve">
+          <source>Prevent addition of printers</source>
+        </trans-unit>
+        <trans-unit id="300" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="301" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="302" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Printers</source>
+        </trans-unit>
+        <trans-unit id="303" translate="yes" xml:space="preserve">
+          <source>Prevent deletion of printers</source>
+        </trans-unit>
+        <trans-unit id="304" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="305" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="306" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Printers</source>
+        </trans-unit>
+        <trans-unit id="307" translate="yes" xml:space="preserve">
+          <source>Hide "Set Program Access and Computer Defaults" page</source>
+        </trans-unit>
+        <trans-unit id="308" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="309" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="310" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Programs</source>
+        </trans-unit>
+        <trans-unit id="311" translate="yes" xml:space="preserve">
+          <source>Hide "Get Programs" page</source>
+        </trans-unit>
+        <trans-unit id="312" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="313" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="314" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Programs</source>
+        </trans-unit>
+        <trans-unit id="315" translate="yes" xml:space="preserve">
+          <source>Hide "Installed Updates" page</source>
+        </trans-unit>
+        <trans-unit id="316" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="317" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="318" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Programs</source>
+        </trans-unit>
+        <trans-unit id="319" translate="yes" xml:space="preserve">
+          <source>Hide "Programs and Features" page</source>
+        </trans-unit>
+        <trans-unit id="320" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="321" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="322" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Programs</source>
+        </trans-unit>
+        <trans-unit id="323" translate="yes" xml:space="preserve">
+          <source>Hide the Programs Control Panel</source>
+        </trans-unit>
+        <trans-unit id="324" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="325" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="326" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Programs</source>
+        </trans-unit>
+        <trans-unit id="327" translate="yes" xml:space="preserve">
+          <source>Hide "Windows Features"</source>
+        </trans-unit>
+        <trans-unit id="328" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="329" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="330" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Programs</source>
+        </trans-unit>
+        <trans-unit id="331" translate="yes" xml:space="preserve">
+          <source>Hide "Windows Marketplace"</source>
+        </trans-unit>
+        <trans-unit id="332" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="333" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="334" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Programs</source>
+        </trans-unit>
+        <trans-unit id="335" translate="yes" xml:space="preserve">
+          <source>Turn off automatic learning</source>
+        </trans-unit>
+        <trans-unit id="336" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="337" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="338" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Regional and Language Options<ph id="ph3">\\</ph>Handwriting personalization</source>
+        </trans-unit>
+        <trans-unit id="339" translate="yes" xml:space="preserve">
+          <source>Hide Regional and Language Options administrative options</source>
+        </trans-unit>
+        <trans-unit id="340" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="341" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="342" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Regional and Language Options</source>
+        </trans-unit>
+        <trans-unit id="343" translate="yes" xml:space="preserve">
+          <source>Hide and disable all items on the desktop</source>
+        </trans-unit>
+        <trans-unit id="344" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="345" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="346" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Desktop</source>
+        </trans-unit>
+        <trans-unit id="347" translate="yes" xml:space="preserve">
+          <source>Remove the Desktop Cleanup Wizard</source>
+        </trans-unit>
+        <trans-unit id="348" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="349" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="350" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Desktop</source>
+        </trans-unit>
+        <trans-unit id="351" translate="yes" xml:space="preserve">
+          <source>Hide Internet Explorer icon on desktop</source>
+        </trans-unit>
+        <trans-unit id="352" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="353" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="354" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Desktop</source>
+        </trans-unit>
+        <trans-unit id="355" translate="yes" xml:space="preserve">
+          <source>Remove Computer icon on the desktop</source>
+        </trans-unit>
+        <trans-unit id="356" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="357" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="358" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Desktop</source>
+        </trans-unit>
+        <trans-unit id="359" translate="yes" xml:space="preserve">
+          <source>Remove My Documents icon on the desktop</source>
+        </trans-unit>
+        <trans-unit id="360" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="361" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="362" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Desktop</source>
+        </trans-unit>
+        <trans-unit id="363" translate="yes" xml:space="preserve">
+          <source>Hide Network Locations icon on desktop</source>
+        </trans-unit>
+        <trans-unit id="364" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="365" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="366" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Desktop</source>
+        </trans-unit>
+        <trans-unit id="367" translate="yes" xml:space="preserve">
+          <source>Remove Properties from the Computer icon context menu</source>
+        </trans-unit>
+        <trans-unit id="368" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="369" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="370" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Desktop</source>
+        </trans-unit>
+        <trans-unit id="371" translate="yes" xml:space="preserve">
+          <source>Remove Properties from the Documents icon context menu</source>
+        </trans-unit>
+        <trans-unit id="372" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="373" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="374" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Desktop</source>
+        </trans-unit>
+        <trans-unit id="375" translate="yes" xml:space="preserve">
+          <source>Do not add shares of recently opened documents to Network Locations</source>
+        </trans-unit>
+        <trans-unit id="376" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="377" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="378" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Desktop</source>
+        </trans-unit>
+        <trans-unit id="379" translate="yes" xml:space="preserve">
+          <source>Remove Recycle Bin icon from desktop</source>
+        </trans-unit>
+        <trans-unit id="380" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="381" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="382" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Desktop</source>
+        </trans-unit>
+        <trans-unit id="383" translate="yes" xml:space="preserve">
+          <source>Remove Properties from the Recycle Bin context menu</source>
+        </trans-unit>
+        <trans-unit id="384" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="385" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="386" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Desktop</source>
+        </trans-unit>
+        <trans-unit id="387" translate="yes" xml:space="preserve">
+          <source>Do not save settings at exit</source>
+        </trans-unit>
+        <trans-unit id="388" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="389" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="390" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Desktop</source>
+        </trans-unit>
+        <trans-unit id="391" translate="yes" xml:space="preserve">
+          <source>Turn off Aero Shake window minimizing mouse gesture</source>
+        </trans-unit>
+        <trans-unit id="392" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="393" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="394" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Desktop</source>
+        </trans-unit>
+        <trans-unit id="395" translate="yes" xml:space="preserve">
+          <source>Prevent adding, dragging dropping and closing the Taskbar's toolbars</source>
+        </trans-unit>
+        <trans-unit id="396" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="397" translate="yes" xml:space="preserve">
+          <source>Prohibit adjusting desktop toolbars</source>
+        </trans-unit>
+        <trans-unit id="398" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="399" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="400" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Desktop</source>
+        </trans-unit>
+        <trans-unit id="401" translate="yes" xml:space="preserve">
+          <source>Force Start to be either full screen size or menu size</source>
+        </trans-unit>
+        <trans-unit id="402" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="403" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="404" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="405" translate="yes" xml:space="preserve">
+          <source>Go to the desktop instead of Start when signing in</source>
+        </trans-unit>
+        <trans-unit id="406" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="407" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="408" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="409" translate="yes" xml:space="preserve">
+          <source>Turn off personalized menus</source>
+        </trans-unit>
+        <trans-unit id="410" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="411" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="412" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="413" translate="yes" xml:space="preserve">
+          <source>Lock the Taskbar</source>
+        </trans-unit>
+        <trans-unit id="414" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="415" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="416" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="417" translate="yes" xml:space="preserve">
+          <source>Turn off notification area cleanup</source>
+        </trans-unit>
+        <trans-unit id="418" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="419" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="420" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="421" translate="yes" xml:space="preserve">
+          <source>Remove Balloon Tips on Start Menu items</source>
+        </trans-unit>
+        <trans-unit id="422" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="423" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="424" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="425" translate="yes" xml:space="preserve">
+          <source>Prevent users from customizing their Start Screen</source>
+        </trans-unit>
+        <trans-unit id="426" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="427" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="428" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="429" translate="yes" xml:space="preserve">
+          <source>Remove common program groups from Start Menu</source>
+        </trans-unit>
+        <trans-unit id="430" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="431" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="432" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="433" translate="yes" xml:space="preserve">
+          <source>Remove Favorites menu from Start Menu</source>
+        </trans-unit>
+        <trans-unit id="434" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="435" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="436" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="437" translate="yes" xml:space="preserve">
+          <source>Remove Search link from Start Menu</source>
+        </trans-unit>
+        <trans-unit id="438" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="439" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="440" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="441" translate="yes" xml:space="preserve">
+          <source>Remove frequent programs list from the Start Menu</source>
+        </trans-unit>
+        <trans-unit id="442" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="443" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="444" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="445" translate="yes" xml:space="preserve">
+          <source>Remove Games link from Start Menu</source>
+        </trans-unit>
+        <trans-unit id="446" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="447" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="448" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="449" translate="yes" xml:space="preserve">
+          <source>Remove Help menu from Start Menu</source>
+        </trans-unit>
+        <trans-unit id="450" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="451" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="452" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="453" translate="yes" xml:space="preserve">
+          <source>Turn off user tracking</source>
+        </trans-unit>
+        <trans-unit id="454" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="455" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="456" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="457" translate="yes" xml:space="preserve">
+          <source>Remove All Programs list from the Start menu</source>
+        </trans-unit>
+        <trans-unit id="458" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="459" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="460" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="461" translate="yes" xml:space="preserve">
+          <source>Remove Network Connections from Start Menu</source>
+        </trans-unit>
+        <trans-unit id="462" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="463" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="464" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="465" translate="yes" xml:space="preserve">
+          <source>Remove pinned programs list from the Start Menu</source>
+        </trans-unit>
+        <trans-unit id="466" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="467" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="468" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="469" translate="yes" xml:space="preserve">
+          <source>Do not keep history of recently opened documents</source>
+        </trans-unit>
+        <trans-unit id="470" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="471" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="472" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="473" translate="yes" xml:space="preserve">
+          <source>Remove Recent Items menu from Start Menu</source>
+        </trans-unit>
+        <trans-unit id="474" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="475" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="476" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="477" translate="yes" xml:space="preserve">
+          <source>Do not use the search-based method when resolving shell shortcuts</source>
+        </trans-unit>
+        <trans-unit id="478" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="479" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="480" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="481" translate="yes" xml:space="preserve">
+          <source>Do not use the tracking-based method when resolving shell shortcuts</source>
+        </trans-unit>
+        <trans-unit id="482" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="483" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="484" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="485" translate="yes" xml:space="preserve">
+          <source>Remove Run menu from Start Menu</source>
+        </trans-unit>
+        <trans-unit id="486" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="487" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="488" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="489" translate="yes" xml:space="preserve">
+          <source>Remove Default Programs link from the Start menu.</source>
+        </trans-unit>
+        <trans-unit id="490" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="491" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="492" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="493" translate="yes" xml:space="preserve">
+          <source>Remove Documents icon from Start Menu</source>
+        </trans-unit>
+        <trans-unit id="494" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="495" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="496" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="497" translate="yes" xml:space="preserve">
+          <source>Remove Music icon from Start Menu</source>
+        </trans-unit>
+        <trans-unit id="498" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="499" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="500" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="501" translate="yes" xml:space="preserve">
+          <source>Remove Network icon from Start Menu</source>
+        </trans-unit>
+        <trans-unit id="502" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="503" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="504" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="505" translate="yes" xml:space="preserve">
+          <source>Remove Pictures icon from Start Menu</source>
+        </trans-unit>
+        <trans-unit id="506" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="507" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="508" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="509" translate="yes" xml:space="preserve">
+          <source>Do not search communications</source>
+        </trans-unit>
+        <trans-unit id="510" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="511" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="512" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="513" translate="yes" xml:space="preserve">
+          <source>Remove Search Computer link</source>
+        </trans-unit>
+        <trans-unit id="514" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="515" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="516" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="517" translate="yes" xml:space="preserve">
+          <source>Remove See More Results / Search Everywhere link</source>
+        </trans-unit>
+        <trans-unit id="518" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="519" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="520" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="521" translate="yes" xml:space="preserve">
+          <source>Do not search for files</source>
+        </trans-unit>
+        <trans-unit id="522" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="523" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="524" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="525" translate="yes" xml:space="preserve">
+          <source>Do not search Internet</source>
+        </trans-unit>
+        <trans-unit id="526" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="527" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="528" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="529" translate="yes" xml:space="preserve">
+          <source>Do not search programs and Control Panel items</source>
+        </trans-unit>
+        <trans-unit id="530" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="531" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="532" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="533" translate="yes" xml:space="preserve">
+          <source>Remove programs on Settings menu</source>
+        </trans-unit>
+        <trans-unit id="534" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="535" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="536" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="537" translate="yes" xml:space="preserve">
+          <source>Prevent changes to Taskbar and Start Menu Settings</source>
+        </trans-unit>
+        <trans-unit id="538" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="539" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="540" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="541" translate="yes" xml:space="preserve">
+          <source>Remove Downloads link from Start Menu</source>
+        </trans-unit>
+        <trans-unit id="542" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="543" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="544" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="545" translate="yes" xml:space="preserve">
+          <source>Remove Homegroup link from Start Menu</source>
+        </trans-unit>
+        <trans-unit id="546" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="547" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="548" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="549" translate="yes" xml:space="preserve">
+          <source>Remove Recorded TV link from Start Menu</source>
+        </trans-unit>
+        <trans-unit id="550" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="551" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="552" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="553" translate="yes" xml:space="preserve">
+          <source>Remove user's folders from the Start Menu</source>
+        </trans-unit>
+        <trans-unit id="554" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="555" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="556" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="557" translate="yes" xml:space="preserve">
+          <source>Remove Videos link from Start Menu</source>
+        </trans-unit>
+        <trans-unit id="558" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="559" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="560" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="561" translate="yes" xml:space="preserve">
+          <source>Force classic Start Menu</source>
+        </trans-unit>
+        <trans-unit id="562" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="563" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="564" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="565" translate="yes" xml:space="preserve">
+          <source>Remove Clock from the system notification area</source>
+        </trans-unit>
+        <trans-unit id="566" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="567" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="568" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="569" translate="yes" xml:space="preserve">
+          <source>Prevent grouping of taskbar items</source>
+        </trans-unit>
+        <trans-unit id="570" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="571" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="572" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="573" translate="yes" xml:space="preserve">
+          <source>Do not display any custom toolbars in the taskbar</source>
+        </trans-unit>
+        <trans-unit id="574" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="575" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="576" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="577" translate="yes" xml:space="preserve">
+          <source>Remove access to the context menus for the taskbar</source>
+        </trans-unit>
+        <trans-unit id="578" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="579" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="580" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="581" translate="yes" xml:space="preserve">
+          <source>Hide the notification area</source>
+        </trans-unit>
+        <trans-unit id="582" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="583" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="584" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="585" translate="yes" xml:space="preserve">
+          <source>Prevent users from uninstalling applications from Start</source>
+        </trans-unit>
+        <trans-unit id="586" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="587" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="588" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="589" translate="yes" xml:space="preserve">
+          <source>Remove user folder link from Start Menu</source>
+        </trans-unit>
+        <trans-unit id="590" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="591" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="592" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="593" translate="yes" xml:space="preserve">
+          <source>Remove user name from Start Menu</source>
+        </trans-unit>
+        <trans-unit id="594" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="595" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="596" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="597" translate="yes" xml:space="preserve">
+          <source>Remove links and access to Windows Update</source>
+        </trans-unit>
+        <trans-unit id="598" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="599" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="600" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="601" translate="yes" xml:space="preserve">
+          <source>Remove the "Undock PC" button from the Start Menu</source>
+        </trans-unit>
+        <trans-unit id="602" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="603" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="604" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="605" translate="yes" xml:space="preserve">
+          <source>Remove Notifications and Action Center</source>
+        </trans-unit>
+        <trans-unit id="606" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="607" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="608" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="609" translate="yes" xml:space="preserve">
+          <source>Disable showing balloon notifications as toasts.</source>
+        </trans-unit>
+        <trans-unit id="610" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="611" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="612" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="613" translate="yes" xml:space="preserve">
+          <source>Remove the Security and Maintenance icon</source>
+        </trans-unit>
+        <trans-unit id="614" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="615" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="616" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="617" translate="yes" xml:space="preserve">
+          <source>Remove the networking icon</source>
+        </trans-unit>
+        <trans-unit id="618" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="619" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="620" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="621" translate="yes" xml:space="preserve">
+          <source>Remove the battery meter</source>
+        </trans-unit>
+        <trans-unit id="622" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="623" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="624" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="625" translate="yes" xml:space="preserve">
+          <source>Remove the volume control icon</source>
+        </trans-unit>
+        <trans-unit id="626" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="627" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="628" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="629" translate="yes" xml:space="preserve">
+          <source>Turn off feature advertisement balloon notifications</source>
+        </trans-unit>
+        <trans-unit id="630" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="631" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="632" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="633" translate="yes" xml:space="preserve">
+          <source>Do not allow pinning Store app to the Taskbar</source>
+        </trans-unit>
+        <trans-unit id="634" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="635" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="636" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="637" translate="yes" xml:space="preserve">
+          <source>Do not allow pinning items in Jump Lists</source>
+        </trans-unit>
+        <trans-unit id="638" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="639" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="640" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="641" translate="yes" xml:space="preserve">
+          <source>Do not allow pinning programs to the Taskbar</source>
+        </trans-unit>
+        <trans-unit id="642" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="643" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="644" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="645" translate="yes" xml:space="preserve">
+          <source>Do not display or track items in Jump Lists from remote locations</source>
+        </trans-unit>
+        <trans-unit id="646" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="647" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="648" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="649" translate="yes" xml:space="preserve">
+          <source>Turn off automatic promotion of notification icons to the taskbar</source>
+        </trans-unit>
+        <trans-unit id="650" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="651" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="652" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="653" translate="yes" xml:space="preserve">
+          <source>Lock all taskbar settings</source>
+        </trans-unit>
+        <trans-unit id="654" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="655" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="656" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="657" translate="yes" xml:space="preserve">
+          <source>Prevent users from adding or removing toolbars</source>
+        </trans-unit>
+        <trans-unit id="658" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="659" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="660" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="661" translate="yes" xml:space="preserve">
+          <source>Prevent users from rearranging toolbars</source>
+        </trans-unit>
+        <trans-unit id="662" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="663" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="664" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="665" translate="yes" xml:space="preserve">
+          <source>Do not allow taskbars on more than one display</source>
+        </trans-unit>
+        <trans-unit id="666" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="667" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="668" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="669" translate="yes" xml:space="preserve">
+          <source>Turn off all balloon notifications</source>
+        </trans-unit>
+        <trans-unit id="670" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="671" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="672" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="673" translate="yes" xml:space="preserve">
+          <source>Remove pinned programs from the Taskbar</source>
+        </trans-unit>
+        <trans-unit id="674" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="675" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="676" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="677" translate="yes" xml:space="preserve">
+          <source>Prevent users from moving taskbar to another screen dock location</source>
+        </trans-unit>
+        <trans-unit id="678" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="679" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="680" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="681" translate="yes" xml:space="preserve">
+          <source>Prevent users from resizing the taskbar</source>
+        </trans-unit>
+        <trans-unit id="682" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="683" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="684" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="685" translate="yes" xml:space="preserve">
+          <source>Turn off taskbar thumbnails</source>
+        </trans-unit>
+        <trans-unit id="686" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="687" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="688" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        </trans-unit>
+        <trans-unit id="689" translate="yes" xml:space="preserve">
+          <source>Remove Task Manager</source>
+        </trans-unit>
+        <trans-unit id="690" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="691" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="692" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>System<ph id="ph2">\\</ph>Ctrl+Alt+Del Options</source>
+        </trans-unit>
+        <trans-unit id="693" translate="yes" xml:space="preserve">
+          <source>Code signing for device drivers</source>
+        </trans-unit>
+        <trans-unit id="694" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="695" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="696" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>System<ph id="ph2">\\</ph>Driver Installation</source>
+        </trans-unit>
+        <trans-unit id="697" translate="yes" xml:space="preserve">
+          <source>Turn off Windows Update device driver search prompt</source>
+        </trans-unit>
+        <trans-unit id="698" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="699" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="700" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>System<ph id="ph2">\\</ph>Driver Installation</source>
+        </trans-unit>
+        <trans-unit id="701" translate="yes" xml:space="preserve">
+          <source>Disallow selection of Custom Locales</source>
+        </trans-unit>
+        <trans-unit id="702" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="703" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="704" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>System<ph id="ph2">\\</ph>Locale Services</source>
+        </trans-unit>
+        <trans-unit id="705" translate="yes" xml:space="preserve">
+          <source>Disallow changing of geographic location</source>
+        </trans-unit>
+        <trans-unit id="706" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="707" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="708" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>System<ph id="ph2">\\</ph>Locale Services</source>
+        </trans-unit>
+        <trans-unit id="709" translate="yes" xml:space="preserve">
+          <source>Disallow user override of locale settings</source>
+        </trans-unit>
+        <trans-unit id="710" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="711" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="712" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>System<ph id="ph2">\\</ph>Locale Services</source>
+        </trans-unit>
+        <trans-unit id="713" translate="yes" xml:space="preserve">
+          <source>CD and DVD: Deny read access</source>
+        </trans-unit>
+        <trans-unit id="714" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="715" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="716" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>System<ph id="ph2">\\</ph>Removable Storage Access</source>
+        </trans-unit>
+        <trans-unit id="717" translate="yes" xml:space="preserve">
+          <source>CD and DVD: Deny write access</source>
+        </trans-unit>
+        <trans-unit id="718" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="719" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="720" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>System<ph id="ph2">\\</ph>Removable Storage Access</source>
+        </trans-unit>
+        <trans-unit id="721" translate="yes" xml:space="preserve">
+          <source>Floppy Drives: Deny read access</source>
+        </trans-unit>
+        <trans-unit id="722" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="723" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="724" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>System<ph id="ph2">\\</ph>Removable Storage Access</source>
+        </trans-unit>
+        <trans-unit id="725" translate="yes" xml:space="preserve">
+          <source>Floppy Drives: Deny write access</source>
+        </trans-unit>
+        <trans-unit id="726" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="727" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="728" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>System<ph id="ph2">\\</ph>Removable Storage Access</source>
+        </trans-unit>
+        <trans-unit id="729" translate="yes" xml:space="preserve">
+          <source>Removable Disks: Deny read access</source>
+        </trans-unit>
+        <trans-unit id="730" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="731" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="732" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>System<ph id="ph2">\\</ph>Removable Storage Access</source>
+        </trans-unit>
+        <trans-unit id="733" translate="yes" xml:space="preserve">
+          <source>Removable Disks: Deny write access</source>
+        </trans-unit>
+        <trans-unit id="734" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="735" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="736" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>System<ph id="ph2">\\</ph>Removable Storage Access</source>
+        </trans-unit>
+        <trans-unit id="737" translate="yes" xml:space="preserve">
+          <source>All Removable Storage classes: Deny all access</source>
+        </trans-unit>
+        <trans-unit id="738" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="739" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="740" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>System<ph id="ph2">\\</ph>Removable Storage Access</source>
+        </trans-unit>
+        <trans-unit id="741" translate="yes" xml:space="preserve">
+          <source>Tape Drives: Deny read access</source>
+        </trans-unit>
+        <trans-unit id="742" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="743" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="744" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>System<ph id="ph2">\\</ph>Removable Storage Access</source>
+        </trans-unit>
+        <trans-unit id="745" translate="yes" xml:space="preserve">
+          <source>Tape Drives: Deny write access</source>
+        </trans-unit>
+        <trans-unit id="746" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="747" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="748" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>System<ph id="ph2">\\</ph>Removable Storage Access</source>
+        </trans-unit>
+        <trans-unit id="749" translate="yes" xml:space="preserve">
+          <source>WPD Devices: Deny read access</source>
+        </trans-unit>
+        <trans-unit id="750" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="751" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="752" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>System<ph id="ph2">\\</ph>Removable Storage Access</source>
+        </trans-unit>
+        <trans-unit id="753" translate="yes" xml:space="preserve">
+          <source>WPD Devices: Deny write access</source>
+        </trans-unit>
+        <trans-unit id="754" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="755" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="756" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>System<ph id="ph2">\\</ph>Removable Storage Access</source>
+        </trans-unit>
+        <trans-unit id="757" translate="yes" xml:space="preserve">
+          <source>Prevent access to the command prompt</source>
+        </trans-unit>
+        <trans-unit id="758" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="759" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="760" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>System</source>
+        </trans-unit>
+        <trans-unit id="761" translate="yes" xml:space="preserve">
+          <source>Prevent access to registry editing tools</source>
+        </trans-unit>
+        <trans-unit id="762" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="763" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="764" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>System</source>
+        </trans-unit>
+        <trans-unit id="765" translate="yes" xml:space="preserve">
+          <source>Prevent the wizard from running.</source>
+        </trans-unit>
+        <trans-unit id="766" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="767" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="768" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Add features to Windows 10</source>
+        </trans-unit>
+        <trans-unit id="769" translate="yes" xml:space="preserve">
+          <source>Turn off Program Compatibility Assistant</source>
+        </trans-unit>
+        <trans-unit id="770" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="771" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="772" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Application Compatibility</source>
+        </trans-unit>
+        <trans-unit id="773" translate="yes" xml:space="preserve">
+          <source>Search, Share, Start, Devices and Settings don't appear when the mouse is pointing to the upper-right corner of the screen</source>
+        </trans-unit>
+        <trans-unit id="774" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="775" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="776" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Edge UI</source>
+        </trans-unit>
+        <trans-unit id="777" translate="yes" xml:space="preserve">
+          <source>Disable help tips</source>
+        </trans-unit>
+        <trans-unit id="778" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="779" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="780" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Edge UI</source>
+        </trans-unit>
+        <trans-unit id="781" translate="yes" xml:space="preserve">
+          <source>Turn off tracking of app usage</source>
+        </trans-unit>
+        <trans-unit id="782" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="783" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="784" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Edge UI</source>
+        </trans-unit>
+        <trans-unit id="785" translate="yes" xml:space="preserve">
+          <source>Do not show recent apps when the mouse is pointing to the upper-left corner of the screen</source>
+        </trans-unit>
+        <trans-unit id="786" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="787" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="788" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Edge UI</source>
+        </trans-unit>
+        <trans-unit id="789" translate="yes" xml:space="preserve">
+          <source>Prevent users from replacing the Command Prompt with Windows PowerShell in the menu they see when they right-click the lower-left corner or press the Windows logo key+X</source>
+        </trans-unit>
+        <trans-unit id="790" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="791" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="792" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Edge UI</source>
+        </trans-unit>
+        <trans-unit id="793" translate="yes" xml:space="preserve">
+          <source>Turn off switching between recent apps</source>
+        </trans-unit>
+        <trans-unit id="794" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="795" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="796" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Edge UI</source>
+        </trans-unit>
+        <trans-unit id="797" translate="yes" xml:space="preserve">
+          <source>Turn on or off details pane</source>
+        </trans-unit>
+        <trans-unit id="798" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="799" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="800" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>File Explorer<ph id="ph3">\\</ph>Explorer Frame Pane</source>
+        </trans-unit>
+        <trans-unit id="801" translate="yes" xml:space="preserve">
+          <source>Turn off Preview Pane</source>
+        </trans-unit>
+        <trans-unit id="802" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="803" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="804" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>File Explorer<ph id="ph3">\\</ph>Explorer Frame Pane</source>
+        </trans-unit>
+        <trans-unit id="805" translate="yes" xml:space="preserve">
+          <source>Do not display the Welcome Center at user logon</source>
+        </trans-unit>
+        <trans-unit id="806" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="807" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="808" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>File Explorer</source>
+        </trans-unit>
+        <trans-unit id="809" translate="yes" xml:space="preserve">
+          <source>Turn on Classic Shell</source>
+        </trans-unit>
+        <trans-unit id="810" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="811" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="812" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>File Explorer</source>
+        </trans-unit>
+        <trans-unit id="813" translate="yes" xml:space="preserve">
+          <source>Remove CD Burning features</source>
+        </trans-unit>
+        <trans-unit id="814" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="815" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="816" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>File Explorer</source>
+        </trans-unit>
+        <trans-unit id="817" translate="yes" xml:space="preserve">
+          <source>Remove DFS tab</source>
+        </trans-unit>
+        <trans-unit id="818" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="819" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="820" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>File Explorer</source>
+        </trans-unit>
+        <trans-unit id="821" translate="yes" xml:space="preserve">
+          <source>Hide these specified drives in My Computer</source>
+        </trans-unit>
+        <trans-unit id="822" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="823" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="824" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>File Explorer</source>
+        </trans-unit>
+        <trans-unit id="825" translate="yes" xml:space="preserve">
+          <source>No Entire Network in Network Locations</source>
+        </trans-unit>
+        <trans-unit id="826" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="827" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="828" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>File Explorer</source>
+        </trans-unit>
+        <trans-unit id="829" translate="yes" xml:space="preserve">
+          <source>Remove File menu from File Explorer</source>
+        </trans-unit>
+        <trans-unit id="830" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="831" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="832" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>File Explorer</source>
+        </trans-unit>
+        <trans-unit id="833" translate="yes" xml:space="preserve">
+          <source>Do not allow Folder Options to be opened from the Options button on the View tab of the ribbon</source>
+        </trans-unit>
+        <trans-unit id="834" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="835" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="836" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>File Explorer</source>
+        </trans-unit>
+        <trans-unit id="837" translate="yes" xml:space="preserve">
+          <source>Remove Hardware tab</source>
+        </trans-unit>
+        <trans-unit id="838" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="839" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="840" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>File Explorer</source>
+        </trans-unit>
+        <trans-unit id="841" translate="yes" xml:space="preserve">
+          <source>Hide the Manage item on the File Explorer context menu</source>
+        </trans-unit>
+        <trans-unit id="842" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="843" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="844" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>File Explorer</source>
+        </trans-unit>
+        <trans-unit id="845" translate="yes" xml:space="preserve">
+          <source>Remove Shared Documents from My Computer</source>
+        </trans-unit>
+        <trans-unit id="846" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="847" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="848" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>File Explorer</source>
+        </trans-unit>
+        <trans-unit id="849" translate="yes" xml:space="preserve">
+          <source>Remove "Map Network Drive" and "Disconnect Network Drive"</source>
+        </trans-unit>
+        <trans-unit id="850" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="851" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="852" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>File Explorer</source>
+        </trans-unit>
+        <trans-unit id="853" translate="yes" xml:space="preserve">
+          <source>Remove the Search the Internet "Search again" link</source>
+        </trans-unit>
+        <trans-unit id="854" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="855" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="856" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>File Explorer</source>
+        </trans-unit>
+        <trans-unit id="857" translate="yes" xml:space="preserve">
+          <source>Remove Security tab</source>
+        </trans-unit>
+        <trans-unit id="858" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="859" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="860" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>File Explorer</source>
+        </trans-unit>
+        <trans-unit id="861" translate="yes" xml:space="preserve">
+          <source>Remove Search button from File Explorer</source>
+        </trans-unit>
+        <trans-unit id="862" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="863" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="864" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>File Explorer</source>
+        </trans-unit>
+        <trans-unit id="865" translate="yes" xml:space="preserve">
+          <source>Remove File Explorer's default context menu</source>
+        </trans-unit>
+        <trans-unit id="866" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="867" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="868" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>File Explorer</source>
+        </trans-unit>
+        <trans-unit id="869" translate="yes" xml:space="preserve">
+          <source>Prevent access to drives from My Computer</source>
+        </trans-unit>
+        <trans-unit id="870" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="871" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="872" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>File Explorer</source>
+        </trans-unit>
+        <trans-unit id="873" translate="yes" xml:space="preserve">
+          <source>Turn off Windows+X hotkeys</source>
+        </trans-unit>
+        <trans-unit id="874" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="875" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="876" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>File Explorer</source>
+        </trans-unit>
+        <trans-unit id="877" translate="yes" xml:space="preserve">
+          <source>No Computers Near Me in Network Locations</source>
+        </trans-unit>
+        <trans-unit id="878" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="879" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="880" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>File Explorer</source>
+        </trans-unit>
+        <trans-unit id="881" translate="yes" xml:space="preserve">
+          <source>Request credentials for network installations</source>
+        </trans-unit>
+        <trans-unit id="882" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="883" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="884" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>File Explorer</source>
+        </trans-unit>
+        <trans-unit id="885" translate="yes" xml:space="preserve">
+          <source>Prevent users from adding files to the root of their Users Files folder.</source>
+        </trans-unit>
+        <trans-unit id="886" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="887" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="888" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>File Explorer</source>
+        </trans-unit>
+        <trans-unit id="889" translate="yes" xml:space="preserve">
+          <source>Turn off Accelerators</source>
+        </trans-unit>
+        <trans-unit id="890" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="891" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="892" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>Accelerators</source>
+        </trans-unit>
+        <trans-unit id="893" translate="yes" xml:space="preserve">
+          <source>File menu: Disable closing the browser and Explorer windows</source>
+        </trans-unit>
+        <trans-unit id="894" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="895" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="896" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>Browser menus</source>
+        </trans-unit>
+        <trans-unit id="897" translate="yes" xml:space="preserve">
+          <source>File menu: Disable Save As... menu option</source>
+        </trans-unit>
+        <trans-unit id="898" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="899" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="900" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>Browser menus</source>
+        </trans-unit>
+        <trans-unit id="901" translate="yes" xml:space="preserve">
+          <source>File menu: Disable Save As Web Page Complete</source>
+        </trans-unit>
+        <trans-unit id="902" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="903" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="904" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>Browser menus</source>
+        </trans-unit>
+        <trans-unit id="905" translate="yes" xml:space="preserve">
+          <source>File menu: Disable New menu option</source>
+        </trans-unit>
+        <trans-unit id="906" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="907" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="908" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>Browser menus</source>
+        </trans-unit>
+        <trans-unit id="909" translate="yes" xml:space="preserve">
+          <source>File menu: Disable Open menu option</source>
+        </trans-unit>
+        <trans-unit id="910" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="911" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="912" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>Browser menus</source>
+        </trans-unit>
+        <trans-unit id="913" translate="yes" xml:space="preserve">
+          <source>Help menu: Remove 'Send Feedback' menu option</source>
+        </trans-unit>
+        <trans-unit id="914" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="915" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="916" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>Browser menus</source>
+        </trans-unit>
+        <trans-unit id="917" translate="yes" xml:space="preserve">
+          <source>Help menu: Remove 'For Netscape Users' menu option</source>
+        </trans-unit>
+        <trans-unit id="918" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="919" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="920" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>Browser menus</source>
+        </trans-unit>
+        <trans-unit id="921" translate="yes" xml:space="preserve">
+          <source>Help menu: Remove 'Tip of the Day' menu option</source>
+        </trans-unit>
+        <trans-unit id="922" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="923" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="924" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>Browser menus</source>
+        </trans-unit>
+        <trans-unit id="925" translate="yes" xml:space="preserve">
+          <source>Help menu: Remove 'Tour' menu option</source>
+        </trans-unit>
+        <trans-unit id="926" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="927" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="928" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>Browser menus</source>
+        </trans-unit>
+        <trans-unit id="929" translate="yes" xml:space="preserve">
+          <source>Turn off Shortcut Menu</source>
+        </trans-unit>
+        <trans-unit id="930" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="931" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="932" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>Browser menus</source>
+        </trans-unit>
+        <trans-unit id="933" translate="yes" xml:space="preserve">
+          <source>Hide Favorites menu</source>
+        </trans-unit>
+        <trans-unit id="934" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="935" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="936" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>Browser menus</source>
+        </trans-unit>
+        <trans-unit id="937" translate="yes" xml:space="preserve">
+          <source>Disable Open in New Window menu option</source>
+        </trans-unit>
+        <trans-unit id="938" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="939" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="940" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>Browser menus</source>
+        </trans-unit>
+        <trans-unit id="941" translate="yes" xml:space="preserve">
+          <source>Turn off Print Menu</source>
+        </trans-unit>
+        <trans-unit id="942" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="943" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="944" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>Browser menus</source>
+        </trans-unit>
+        <trans-unit id="945" translate="yes" xml:space="preserve">
+          <source>Turn off the ability to launch report site problems using a menu option</source>
+        </trans-unit>
+        <trans-unit id="946" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="947" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="948" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>Browser menus</source>
+        </trans-unit>
+        <trans-unit id="949" translate="yes" xml:space="preserve">
+          <source>Disable Save this program to disk option</source>
+        </trans-unit>
+        <trans-unit id="950" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="951" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="952" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>Browser menus</source>
+        </trans-unit>
+        <trans-unit id="953" translate="yes" xml:space="preserve">
+          <source>Tools menu: Disable Internet Options... menu option</source>
+        </trans-unit>
+        <trans-unit id="954" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="955" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="956" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>Browser menus</source>
+        </trans-unit>
+        <trans-unit id="957" translate="yes" xml:space="preserve">
+          <source>View menu: Disable Full Screen menu option</source>
+        </trans-unit>
+        <trans-unit id="958" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="959" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="960" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>Browser menus</source>
+        </trans-unit>
+        <trans-unit id="961" translate="yes" xml:space="preserve">
+          <source>View menu: Disable Source menu option</source>
+        </trans-unit>
+        <trans-unit id="962" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="963" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="964" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>Browser menus</source>
+        </trans-unit>
+        <trans-unit id="965" translate="yes" xml:space="preserve">
+          <source>Turn off Developer Tools</source>
+        </trans-unit>
+        <trans-unit id="966" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="967" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="968" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>Toolbars</source>
+        </trans-unit>
+        <trans-unit id="969" translate="yes" xml:space="preserve">
+          <source>Turn off toolbar upgrade tool</source>
+        </trans-unit>
+        <trans-unit id="970" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="971" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="972" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>Toolbars</source>
+        </trans-unit>
+        <trans-unit id="973" translate="yes" xml:space="preserve">
+          <source>Hide the Command bar</source>
+        </trans-unit>
+        <trans-unit id="974" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="975" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="976" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>Toolbars</source>
+        </trans-unit>
+        <trans-unit id="977" translate="yes" xml:space="preserve">
+          <source>Hide the status bar</source>
+        </trans-unit>
+        <trans-unit id="978" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="979" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="980" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>Toolbars</source>
+        </trans-unit>
+        <trans-unit id="981" translate="yes" xml:space="preserve">
+          <source>Disable customizing browser toolbars</source>
+        </trans-unit>
+        <trans-unit id="982" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="983" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="984" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>Toolbars</source>
+        </trans-unit>
+        <trans-unit id="985" translate="yes" xml:space="preserve">
+          <source>Disable customizing browser toolbar buttons</source>
+        </trans-unit>
+        <trans-unit id="986" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="987" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="988" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>Toolbars</source>
+        </trans-unit>
+        <trans-unit id="989" translate="yes" xml:space="preserve">
+          <source>Turn off add-on performance notifications</source>
+        </trans-unit>
+        <trans-unit id="990" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="991" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="992" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        </trans-unit>
+        <trans-unit id="993" translate="yes" xml:space="preserve">
+          <source>Do not allow users to enable or disable add-ons</source>
+        </trans-unit>
+        <trans-unit id="994" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="995" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="996" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        </trans-unit>
+        <trans-unit id="997" translate="yes" xml:space="preserve">
+          <source>Disable changing Advanced page settings</source>
+        </trans-unit>
+        <trans-unit id="998" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="999" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="1000" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        </trans-unit>
+        <trans-unit id="1001" translate="yes" xml:space="preserve">
+          <source>Turn off Favorites bar</source>
+        </trans-unit>
+        <trans-unit id="1002" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="1003" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="1004" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        </trans-unit>
+        <trans-unit id="1005" translate="yes" xml:space="preserve">
+          <source>Prevent per-user installation of ActiveX controls</source>
+        </trans-unit>
+        <trans-unit id="1006" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="1007" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="1008" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        </trans-unit>
+        <trans-unit id="1009" translate="yes" xml:space="preserve">
+          <source>Turn off Reopen Last Browsing Session</source>
+        </trans-unit>
+        <trans-unit id="1010" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="1011" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="1012" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        </trans-unit>
+        <trans-unit id="1013" translate="yes" xml:space="preserve">
+          <source>Turn off Tab Grouping</source>
+        </trans-unit>
+        <trans-unit id="1014" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="1015" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="1016" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        </trans-unit>
+        <trans-unit id="1017" translate="yes" xml:space="preserve">
+          <source>Prevent managing the phishing filter</source>
+        </trans-unit>
+        <trans-unit id="1018" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="1019" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="1020" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        </trans-unit>
+        <trans-unit id="1021" translate="yes" xml:space="preserve">
+          <source>Turn off Managing SmartScreen Filter for Internet Explorer 8</source>
+        </trans-unit>
+        <trans-unit id="1022" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="1023" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="1024" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        </trans-unit>
+        <trans-unit id="1025" translate="yes" xml:space="preserve">
+          <source>Prevent managing SmartScreen Filter</source>
+        </trans-unit>
+        <trans-unit id="1026" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="1027" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="1028" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        </trans-unit>
+        <trans-unit id="1029" translate="yes" xml:space="preserve">
+          <source>Turn off the Security Settings Check feature</source>
+        </trans-unit>
+        <trans-unit id="1030" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="1031" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="1032" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        </trans-unit>
+        <trans-unit id="1033" translate="yes" xml:space="preserve">
+          <source>Enforce full-screen mode</source>
+        </trans-unit>
+        <trans-unit id="1034" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="1035" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="1036" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        </trans-unit>
+        <trans-unit id="1037" translate="yes" xml:space="preserve">
+          <source>Disable Import/Export Settings wizard</source>
+        </trans-unit>
+        <trans-unit id="1038" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="1039" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="1040" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        </trans-unit>
+        <trans-unit id="1041" translate="yes" xml:space="preserve">
+          <source>Prevent Internet Explorer Search box from appearing</source>
+        </trans-unit>
+        <trans-unit id="1042" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="1043" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="1044" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        </trans-unit>
+        <trans-unit id="1045" translate="yes" xml:space="preserve">
+          <source>Turn off Quick Tabs functionality</source>
+        </trans-unit>
+        <trans-unit id="1046" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="1047" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="1048" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        </trans-unit>
+        <trans-unit id="1049" translate="yes" xml:space="preserve">
+          <source>Turn off tabbed browsing</source>
+        </trans-unit>
+        <trans-unit id="1050" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="1051" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="1052" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        </trans-unit>
+        <trans-unit id="1053" translate="yes" xml:space="preserve">
+          <source>Disable changing Automatic Configuration settings</source>
+        </trans-unit>
+        <trans-unit id="1054" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="1055" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="1056" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        </trans-unit>
+        <trans-unit id="1057" translate="yes" xml:space="preserve">
+          <source>Disable changing Temporary Internet files settings</source>
+        </trans-unit>
+        <trans-unit id="1058" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="1059" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="1060" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        </trans-unit>
+        <trans-unit id="1061" translate="yes" xml:space="preserve">
+          <source>Disable changing Calendar and Contact settings</source>
+        </trans-unit>
+        <trans-unit id="1062" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="1063" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="1064" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        </trans-unit>
+        <trans-unit id="1065" translate="yes" xml:space="preserve">
+          <source>Disable changing certificate settings</source>
+        </trans-unit>
+        <trans-unit id="1066" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="1067" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="1068" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        </trans-unit>
+        <trans-unit id="1069" translate="yes" xml:space="preserve">
+          <source>Disable changing default browser check</source>
+        </trans-unit>
+        <trans-unit id="1070" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="1071" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="1072" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        </trans-unit>
+        <trans-unit id="1073" translate="yes" xml:space="preserve">
+          <source>Disable changing color settings</source>
+        </trans-unit>
+        <trans-unit id="1074" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="1075" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="1076" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        </trans-unit>
+        <trans-unit id="1077" translate="yes" xml:space="preserve">
+          <source>Disable changing connection settings</source>
+        </trans-unit>
+        <trans-unit id="1078" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="1079" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="1080" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        </trans-unit>
+        <trans-unit id="1081" translate="yes" xml:space="preserve">
+          <source>Disable changing font settings</source>
+        </trans-unit>
+        <trans-unit id="1082" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="1083" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="1084" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        </trans-unit>
+        <trans-unit id="1085" translate="yes" xml:space="preserve">
+          <source>Disable changing language settings</source>
+        </trans-unit>
+        <trans-unit id="1086" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="1087" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="1088" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        </trans-unit>
+        <trans-unit id="1089" translate="yes" xml:space="preserve">
+          <source>Disable changing link color settings</source>
+        </trans-unit>
+        <trans-unit id="1090" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="1091" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="1092" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        </trans-unit>
+        <trans-unit id="1093" translate="yes" xml:space="preserve">
+          <source>Disable changing Messaging settings</source>
+        </trans-unit>
+        <trans-unit id="1094" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="1095" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="1096" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        </trans-unit>
+        <trans-unit id="1097" translate="yes" xml:space="preserve">
+          <source>Prevent managing pop-up exception list</source>
+        </trans-unit>
+        <trans-unit id="1098" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="1099" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="1100" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        </trans-unit>
+        <trans-unit id="1101" translate="yes" xml:space="preserve">
+          <source>Turn off pop-up management</source>
+        </trans-unit>
+        <trans-unit id="1102" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="1103" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="1104" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        </trans-unit>
+        <trans-unit id="1105" translate="yes" xml:space="preserve">
+          <source>Disable changing Profile Assistant settings</source>
+        </trans-unit>
+        <trans-unit id="1106" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="1107" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="1108" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        </trans-unit>
+        <trans-unit id="1109" translate="yes" xml:space="preserve">
+          <source>Prevent changing proxy settings</source>
+        </trans-unit>
+        <trans-unit id="1110" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="1111" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="1112" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        </trans-unit>
+        <trans-unit id="1113" translate="yes" xml:space="preserve">
+          <source>Disable changing ratings settings</source>
+        </trans-unit>
+        <trans-unit id="1114" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="1115" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="1116" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        </trans-unit>
+        <trans-unit id="1117" translate="yes" xml:space="preserve">
+          <source>Turn off the auto-complete feature for web addresses</source>
+        </trans-unit>
+        <trans-unit id="1118" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="1119" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="1120" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        </trans-unit>
+        <trans-unit id="1121" translate="yes" xml:space="preserve">
+          <source>Turn off suggestions for all user-installed providers</source>
+        </trans-unit>
+        <trans-unit id="1122" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="1123" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="1124" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        </trans-unit>
+        <trans-unit id="1125" translate="yes" xml:space="preserve">
+          <source>Turn off the quick pick menu</source>
+        </trans-unit>
+        <trans-unit id="1126" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="1127" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="1128" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        </trans-unit>
+        <trans-unit id="1129" translate="yes" xml:space="preserve">
+          <source>Search: Disable Find Files via F3 within the browser</source>
+        </trans-unit>
+        <trans-unit id="1130" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="1131" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="1132" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        </trans-unit>
+        <trans-unit id="1133" translate="yes" xml:space="preserve">
+          <source>Search: Disable Search Customization</source>
+        </trans-unit>
+        <trans-unit id="1134" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="1135" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="1136" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        </trans-unit>
+        <trans-unit id="1137" translate="yes" xml:space="preserve">
+          <source>Turn off ability to pin sites in Internet Explorer on the desktop</source>
+        </trans-unit>
+        <trans-unit id="1138" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="1139" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="1140" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        </trans-unit>
+        <trans-unit id="1141" translate="yes" xml:space="preserve">
+          <source>Turn off the offer to update to the latest version of Windows</source>
+        </trans-unit>
+        <trans-unit id="1142" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="1143" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="1144" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Store</source>
+        </trans-unit>
+        <trans-unit id="1145" translate="yes" xml:space="preserve">
+          <source>Turn off the Store application</source>
+        </trans-unit>
+        <trans-unit id="1146" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="1147" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="1148" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Store</source>
+        </trans-unit>
+        <trans-unit id="1149" translate="yes" xml:space="preserve">
+          <source>Prohibit New Task Creation</source>
+        </trans-unit>
+        <trans-unit id="1150" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+        </trans-unit>
+        <trans-unit id="1151" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="1152" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Task Scheduler</source>
+        </trans-unit>
+        <trans-unit id="1153" translate="yes" xml:space="preserve">
+          <source>Set up a proxy to access only whitelisted websites</source>
+        </trans-unit>
+        <trans-unit id="1154" translate="yes" xml:space="preserve">
+          <source>You can define a list of websites that a store worker (cashier) requires for normal operations, and set up an administrator-controlled proxy that has access only to these websites.</source>
+        </trans-unit>
+        <trans-unit id="1155" translate="yes" xml:space="preserve">
+          <source>Retail Cloud POS requires access to the following websites:</source>
+        </trans-unit>
+        <trans-unit id="1156" translate="yes" xml:space="preserve">
+          <source>Retail Cloud POS website</source>
+        </trans-unit>
+        <trans-unit id="1157" translate="yes" xml:space="preserve">
+          <source>Microsoft Azure Active Directory sign-in page</source>
+        </trans-unit>
+        <trans-unit id="1158" translate="yes" xml:space="preserve">
+          <source>Retail Server website</source>
+        </trans-unit>
+        <trans-unit id="1159" translate="yes" xml:space="preserve">
+          <source>Bing Maps resources</source>
+        </trans-unit>
+        <trans-unit id="1160" translate="yes" xml:space="preserve">
+          <source>Media resources</source>
+        </trans-unit>
+        <trans-unit id="1161" translate="yes" xml:space="preserve">
+          <source>Credit Card Payment acceptance page (optional)</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

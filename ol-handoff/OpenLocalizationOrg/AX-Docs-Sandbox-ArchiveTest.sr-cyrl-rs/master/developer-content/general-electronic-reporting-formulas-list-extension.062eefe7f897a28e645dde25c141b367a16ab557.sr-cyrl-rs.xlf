@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">49d44b55d657f2f7259f0aafcc707d41cb18368f</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\analytics\general-electronic-reporting-formulas-list-extension.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">8d80b888df45e866b9728f70bdef3ebac7c8c924</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">87e9af11613280ed8dc127aa640180d21aee2fc0</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Extend the list of Electronic reporting functions</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Various types of functions are supported in Electronic reporting expressions for data transformation -  text, date and time, mathematical logical, information, data type conversion, and other (business domain–specific functions).</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>In addition to built-in functions, Electronic reporting lets you extend the list of available functions.</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This article includes an overview of key tasks that you must complete to introduce a new function.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Extend the list of Electronic reporting functions</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Various types of functions are supported in Electronic reporting expressions for data transformation -  text, date and time, mathematical logical, information, data type conversion, and other (business domain–specific functions).</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>In addition to built-in functions, Electronic reporting lets you extend the list of available functions.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>This article includes an overview of key tasks that you must complete to introduce a new function.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>All Electronic reporting functions in Microsoft Dynamics 365 for Finance and Operations code are represented as classes that extend the <bpt id="p1">**</bpt>ERExpression<ept id="p1">**</ept> class.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Two types of functions are recognized:</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Fixed number of arguments<ept id="p1">**</ept> – These functions are represented by classes that include methods that have the prefix <bpt id="p2">**</bpt>parm<ept id="p2">**</ept> (see <bpt id="p3">**</bpt>parmInput<ept id="p3">**</ept>, <bpt id="p4">**</bpt>parmStartNum<ept id="p4">**</ept> in the sample code the follows).</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>The order of arguments is set by the <bpt id="p1">**</bpt>SysOperationDisplayOrderAttribute<ept id="p1">**</ept> attribute.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Variable number of arguments<ept id="p1">**</ept> – These functions (see the <bpt id="p2">**</bpt>ERExpressionGenericCase<ept id="p2">**</ept> class) are represented by classes that implement the <bpt id="p3">**</bpt>ERIObjectContainer<ept id="p3">**</ept> interface.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>An additional <bpt id="p1">**</bpt>Add<ept id="p1">**</ept> method is used to declare the types that a function accepts.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Here are the recommended steps for introducing a new function for Electronic reporting expressions:</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Select a base class for your function, based on the return value type (see <bpt id="p1">**</bpt>ERExpressionString<ept id="p1">**</ept> in the sample code that follows).</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Create a new class that extends the selected class (see <bpt id="p1">**</bpt>ERExpressionStringMid<ept id="p1">**</ept> in the sample code the follows).</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Provide required attributes:</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>SysOperationLabelAttribute<ept id="p1">**</ept> – This attribute defines the function’s name.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>SysOperationHelpTextAttribute<ept id="p1">**</ept> – This attribute defines the function’s Help text.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>ERComponentGroupAttribute<ept id="p1">**</ept> – This attribute defines the group that the function belongs to.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>(For more information, see <bpt id="p1">[</bpt>Formula designer in Electronic reporting<ept id="p1">](general-electronic-reporting-formula-designer.md)</ept>.)</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Provide arguments:</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>For a fixed number of arguments function, provide methods that have the prefix <bpt id="p1">**</bpt>parm<ept id="p1">**</ept>, and use the <bpt id="p2">**</bpt>SysOperationDisplayOrderAttribute<ept id="p2">**</ept> attribute to set the order of the arguments.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>For a variable number of argument function, implement the <bpt id="p1">**</bpt>ERIObjectContainer<ept id="p1">**</ept> interface.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Provide an evaluation method.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Here is an example.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Suggested guidance</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>The following guidance is intended to help you design your custom Electronic reporting functions:</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Reuse the names of Microsoft Excel functions whenever you can, so that Electronic reporting formulas remain Excel-like.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>In this way, you will keep Electronic reporting formulas intelligible for end users.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Electronic reporting doesn't support list types for primitive data types.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Therefore, we have decided to use a data container list that has a single <bpt id="p1">**</bpt>Value<ept id="p1">**</ept> item in it.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Release a new function's list extension as a new Finance and Operations hotfix.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Electronic reporting designers will refer to the hotfix number in Electronic reporting configurations that use that new custom function.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Whenever a configuration of this type is imported into a new instance of Finance and Operations, Electronic reporting will evaluate whether the required hotfix has been installed, to maintain compliance between the Electronic reporting configuration and the Finance and Operations version that configuration is imported into.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>See also</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Electronic reporting overview<ept id="p1">](general-electronic-reporting.md)</ept></source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Formula designer in Electronic reporting<ept id="p1">](general-electronic-reporting-formula-designer.md)</ept></source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,780 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">017985645e0f77e7f269fce2932c0ec0f6eaaa1c</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scm\production-control\routes-operations.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">basic</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ea452a6abe8fcc8ce4dc75bca248468f5ef2e9cf</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">7bc53f1a03c5956407a33e021eb8473f632de324</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Routes and operations</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic provides information about routes and operations.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>A route defines the process for producing a product or product variant.</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>It describes each step (operation) in the production process and the order that these steps must be performed in.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>For each step, the route also defines the required operations resources, the required setup time and run time, and how the cost should be calculated.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Routes and operations</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>This topic provides information about routes and operations.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>A route defines the process for producing a product or product variant.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>It describes each step (operation) in the production process and the order that these steps must be performed in.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>For each step, the route also defines the required operations resources, the required setup time and run time, and how the cost should be calculated.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Overview</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>A route describes the order of operations that is required in order to produce a product or product variant.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>For each operation, the route also defines the operations resources that are required, the time that is required in order to set up and perform the operation, and how the cost should be calculated.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>You can use the same route to produce multiple products, or you can define a unique route for each product or product variant.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>You can even have multiple routes for the same product.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>In this case, the route that is used varies, depending on factors such as the quantity that must be produced.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The definition of a route in Microsoft Dynamics 365 for Finance and Operations consists of four separate elements that, together, describe the production process:</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Route<ept id="p1">**</ept> – A route defines the structure of the production process.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>In other words, it defines the order of operations.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Operation<ept id="p1">**</ept> – An operation identifies a named step in a route, such as <bpt id="p2">**</bpt>Assembly<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The same operation can occur in multiple routes and can have different operation numbers.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Operation relation<ept id="p1">**</ept> – An operation relation defines the operational properties of an operation, such as the setup time and run time, cost categories, consumption parameters, and resource requirements.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>The operation relation enables the operational properties of an operation to vary, depending on the route that the operation is used in or the products that are being produced.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Route version<ept id="p1">**</ept> – A route version defines the route that is used to produce a product or product variant.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Route versions enable routes to be reused across products or changed over time.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>They also enable different routes to be used to produce the same product.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>In this case, the route that is used depends on factors such as the location or the quantity that must be produced.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Routes</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>A route describes the order of operations that is used to produce a product or product variant.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Each operation is assigned an operation number and a successor operation.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>The order of operations forms a route network that can be represented by a directed chart that has one or more starting points and a single end point.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>In Finance and Operations, routes are distinguished based on the type of structure.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>The two types of routes are simple routes and route networks.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>In the Production control parameters, you can specify whether only simple routes can be used, or whether the more complex route networks can be used.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Simple routes</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>A simple route is sequential, and there is only one starting point for the route.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Simple route<ept id="p1">](./media/routes-and-operations-1-simple-route.png)](./media/routes-and-operations-1-simple-route.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>If you enable only simple routes in the Production control parameters, Finance and Operations automatically generates the operation numbers (10, 20, 30, and so on) when you define the route.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Route networks</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>If you enable the more complex route networks in the Production control parameters, you can define routes that have multiple starting points and operations that can be run in parallel.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Route network<ept id="p1">](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Notes:<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Each operation can have only one successor operation, and the whole route must end in a single operation.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>There is no guarantee that multiple operations that have the same successor operation (for example, operations 30 and 40 in the preceding illustration) will actually be run in parallel.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>The availability and capacity of resources might put constraints on the way that operations are scheduled.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>You can't use 0 (zero) as the operation number.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>That number is reserved and is used to specify that the last operation in the route has no successor operation.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Parallel operations</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Sometimes, a combination of multiple operations resources that have different characteristics is required in order to perform an operation.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>For example, an assembly operation might require a machine, a tool, and one worker for every two machines to oversee the operation.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>This example can be modeled by using parallel operations, where one operation is designated as the primary operation and the others are secondary.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Route that has primary and secondary operations<ept id="p1">](./media/routes-and-operations-3-parallel-operations.png)](./media/routes-and-operations-3-parallel-operations.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Typically, the primary operation represents the bottleneck resource and dictates the run time for the secondary operations.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>However, during scheduling that involves finite capacity, the resources that are scheduled for both the primary operation and the secondary operations must be available and have free capacity at the same time.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Both the primary operation and the secondary operations must have the same operation number (30 in the preceding illustration).</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>In the preceding example, the resource requirement for the primary operation (30) is the machine, whereas the resource requirements for the secondary operations (30' and 30'') are the tool and the worker.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>A fifty-percent load helps guarantee that the scheduled worker can oversee two machines at the same time.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Approval of routes</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>A route must be approved before it can be used in the planning or manufacturing process.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Approval indicates that the route design has been completed.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>The same released product or released product variant can have multiple approved routes.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Typically, approval of a route occurs when the first relevant route version is approved.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>However, in some business scenarios, the approval of the route and the route version are separate activities that might involve different process owners.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Each route can be approved or unapproved separately.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>However, note that, when a route is unapproved, all related route versions are also unapproved.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>In the Production control parameters, you can specify whether routes can be unapproved, and whether approved routes can be changed.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>If you must keep a log that records who approves each route, you can require electronic signatures for route approval.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Users will then have to confirm their identity by using an <bpt id="p1">[</bpt>electronic signature<ept id="p1">](/dynamics365/unified-operations/fin-and-ops/organization-administration/electronic-signature-overview)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Operations</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>An operation is a step in the production process.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>In Finance and Operations, each operation has an ID and a simple description.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>The following tables shows typical examples of operations from a machine shop.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Operation</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>PipeCut</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Pipe cutting</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>TIGweld</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>TIG welding</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>JigAssy</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Jig assembly</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Inspection</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Quality inspection</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>The operational properties of the operation, such as the setup time and run time, resource requirements, costing information, and consumption calculation, are specified on the operation relation.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>(For more information about operation relations, see the next section.)</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Operation relations</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>The following operational properties of an operation are maintained on the operation relation:</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>Cost categories</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Consumption parameters</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Processing times</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Processing quantities</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Resource requirements</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Notes and instructions</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>You can define multiple operation relations for the same operation.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>However, each operation relation is specific to one operation, and stores properties that are specific to a route, a released product, or a set of released products that are related to an item group.</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>Therefore, the same operation can be used in multiple routes that have different operational properties.</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>In addition, you can more easily maintain your master data if you use standard operations that have the same operational properties, regardless of the route that is used and product that is produced.</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>The scope of the operation relation is defined through the <bpt id="p1">**</bpt>Item code<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Item relation<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Route code<ept id="p3">**</ept> and <bpt id="p4">**</bpt>Route relation<ept id="p4">**</ept> properties, as shown in the following table.</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>Item code</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Item relation</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>Route code</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>Route relation</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Scope of the operation relation</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>Table</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">&amp;lt;</ph>Item ID<ph id="ph2">&amp;gt;</ph></source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>Route</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">&amp;lt;</ph>Route ID<ph id="ph2">&amp;gt;</ph></source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>The operational properties of an operation when it's used in the route where <bpt id="p1">**</bpt>Route number<ept id="p1">**</ept><ph id="ph1">=</ph><ph id="ph2">&amp;lt;</ph>route ID<ph id="ph3">&amp;gt;</ph> to produce the released product where <bpt id="p2">**</bpt>Item number<ept id="p2">**</ept><ph id="ph4">=</ph><ph id="ph5">&amp;lt;</ph>item ID<ph id="ph6">&amp;gt;</ph>.</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>Table</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">&amp;lt;</ph>Item ID<ph id="ph2">&amp;gt;</ph></source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>All</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>The default operational properties of an operation when it's used to produce the released product where <bpt id="p1">**</bpt>Item number<ept id="p1">**</ept><ph id="ph1">=</ph><ph id="ph2">&amp;lt;</ph>item ID<ph id="ph3">&amp;gt;</ph>.</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>In other words, these operational properties apply when there is no route-specific operation relation for the released product.</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Group</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">&amp;lt;</ph>Item group ID<ph id="ph2">&amp;gt;</ph></source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>Route</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">&amp;lt;</ph>Route ID<ph id="ph2">&amp;gt;</ph></source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>The operational properties of an operation when it's used in the route where <bpt id="p1">**</bpt>Route number<ept id="p1">**</ept><ph id="ph1">=</ph><ph id="ph2">&amp;lt;</ph>route ID<ph id="ph3">&amp;gt;</ph> to produce released products that are associated with item group <ph id="ph4">&amp;lt;</ph>item group ID<ph id="ph5">&amp;gt;</ph>, unless there is a route-specific operation relation for the released product.</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>Group</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">&amp;lt;</ph>Item group ID<ph id="ph2">&amp;gt;</ph></source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>All</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>The default operational properties of an operation when it's used to produce released products that are associated with item group <ph id="ph1">&amp;lt;</ph>item group ID<ph id="ph2">&amp;gt;</ph>, unless a more specific operation relation exists.</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>All</source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>Route</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">&amp;lt;</ph>Route ID<ph id="ph2">&amp;gt;</ph></source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>The default operational properties of the operation when it's used in the route where <bpt id="p1">**</bpt>Route number<ept id="p1">**</ept><ph id="ph1">=</ph><ph id="ph2">&amp;lt;</ph>route ID<ph id="ph3">&amp;gt;</ph>.</source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>In other words, these operational properties apply when there is no operation relation for this route that is specific to either the released product or its associated item group.</source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>All</source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>All</source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>The default operational properties of an operation.</source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>These operational properties apply when a more specific operation relation doesn't exist.</source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>You can also specify that an operation relation is specific to a site.</source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>In this way, the operational properties of an operation can vary, depending on the location (that is, the site) where the operation is performed.</source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>For configured products, you can also specify different operational properties for each product configuration.</source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>Operation relations give you lots of flexibility when you define your routes.</source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>Additionally, the ability to define default properties helps reduce the amount of master data that you must maintain.</source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>However, this flexibility also means that you must be aware of the context that you modify an operation relation in.</source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> Because the operational properties are stored in operation relations per operation per route, all occurrences of the same operation (for example, Assembly) have the same setup time, run time, resource requirements, and so on.</source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>Therefore, if two occurrences of an operation must occur in the same route but have different run times, you must create two distinct operations, such as Assembly1 and Assembly2.</source>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>Modifying product-specific routes</source>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>When you open the <bpt id="p1">**</bpt>Route<ept id="p1">**</ept> page from the <bpt id="p2">**</bpt>Released product details<ept id="p2">**</ept> page, the route versions that are associated with the selected released product are shown.</source>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>In this context, for each operation, Finance and Operations shows the operational properties from the operation relation that best matches the route version.</source>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>You will notice that the list of operations includes the <bpt id="p1">**</bpt>Item code<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Route code<ept id="p2">**</ept> properties from the operation relation.</source>
+        </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>Therefore, you can determine which operation relation is shown.</source>
+        </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Route<ept id="p1">**</ept> page, you can modify the operational properties of the operation, such as the run time or the cost categories.</source>
+        </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>Your changes are stored on the operation relation that is specific to the route and released product that are referenced in the current route version.</source>
+        </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>If the operation relation that is shown isn't specific to the route and the released product, before your changes are stored, the system creates a copy of the operation relation.</source>
+        </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>This copy <bpt id="p1">*</bpt>is<ept id="p1">*</ept> specific to the route and released product.</source>
+        </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>Therefore, your changes won't affect other routes or released products.</source>
+        </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>To verify which operation relation is being modified on the <bpt id="p1">**</bpt>Route<ept id="p1">**</ept> page, look at the <bpt id="p2">**</bpt>Item code<ept id="p2">**</ept> and <bpt id="p3">**</bpt>Route code<ept id="p3">**</ept> fields.</source>
+        </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>You can also manually create an operation that is specific to a route and released product by using the <bpt id="p1">**</bpt>Copy and edit relation<ept id="p1">**</ept> function.</source>
+        </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> If you add a new operation to a route on the <bpt id="p2">**</bpt>Route<ept id="p2">**</ept> page, an operation relation is created only for the current released product.</source>
+        </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>Therefore, if the route is also used to produce other released products, no applicable operation relation will exist for those released products, and the route can no longer be used for those released products.</source>
+        </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>Maintaining operation relations per route</source>
+        </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>When you open the <bpt id="p1">**</bpt>Route details<ept id="p1">**</ept> page from the <bpt id="p2">**</bpt>Routes<ept id="p2">**</ept> list page, a list of all the operation relations that apply to the selected route is shown.</source>
+        </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>Therefore, you can easily verify which operational properties are used for which products.</source>
+        </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>You can modify both default property values and product-specific property values.</source>
+        </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>If you add a new operation relation on the <bpt id="p1">**</bpt>Route details<ept id="p1">**</ept> page, the <bpt id="p2">**</bpt>Route code<ept id="p2">**</ept> field is automatically set to <bpt id="p3">**</bpt>Route<ept id="p3">**</ept>, and the <bpt id="p4">**</bpt>Route relation<ept id="p4">**</ept> field is set to the route number of the current route.</source>
+        </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>Maintaining operation relations per operation</source>
+        </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>From the <bpt id="p1">**</bpt>Operations<ept id="p1">**</ept> page, you can open the <bpt id="p2">**</bpt>Operation relations<ept id="p2">**</ept> page.</source>
+        </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>On this page, you can modify all operation relations for a specific operation.</source>
+        </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>You can even modify operation relations that contain default values.</source>
+        </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>If your business uses standard operations, and if the operational parameters are the same across all products and processes, the <bpt id="p1">**</bpt>Operation relations<ept id="p1">**</ept> page provides a convenient way to maintain the default operational properties of those operations.</source>
+        </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>Applying operation relations</source>
+        </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>In some cases, Finance and Operations must find the operational properties for an operation.</source>
+        </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>For example, when a purchase order is created, the operational properties of each operation must be copied from the operation relations to the production route.</source>
+        </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>In these situations, Finance and Operations searches the relevant operation relations from the most specific combination to the least specific combination.</source>
+        </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>When Finance and Operations searches for the most relevant operation relation for a released product, an operation relation that matches the item ID of the released product is preferred over an operation relation that matches the item group ID.</source>
+        </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>In turn, an operation relation that matches the item group ID is preferred over the default operation relation.</source>
+        </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>The search is done in the following order:</source>
+        </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Item code<ept id="p1">**</ept><ph id="ph1">=</ph><bpt id="p2">**</bpt>Table<ept id="p2">**</ept> and <bpt id="p3">**</bpt>Item relation<ept id="p3">**</ept><ph id="ph2">=</ph><ph id="ph3">&amp;lt;</ph>item ID<ph id="ph4">&amp;gt;</ph></source>
+        </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Item code<ept id="p1">**</ept><ph id="ph1">=</ph><bpt id="p2">**</bpt>Group<ept id="p2">**</ept> and <bpt id="p3">**</bpt>Item relation<ept id="p3">**</ept><ph id="ph2">=</ph><ph id="ph3">&amp;lt;</ph>item group ID<ph id="ph4">&amp;gt;</ph></source>
+        </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Item code<ept id="p1">**</ept><ph id="ph1">=</ph><bpt id="p2">**</bpt>All<ept id="p2">**</ept></source>
+        </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Route code<ept id="p1">**</ept><ph id="ph1">=</ph><bpt id="p2">**</bpt>Route<ept id="p2">**</ept> and <bpt id="p3">**</bpt>Route relation<ept id="p3">**</ept><ph id="ph2">=</ph><ph id="ph3">&amp;lt;</ph>route ID<ph id="ph4">&amp;gt;</ph></source>
+        </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Route code<ept id="p1">**</ept><ph id="ph1">=</ph><bpt id="p2">**</bpt>All<ept id="p2">**</ept></source>
+        </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Configuration<ept id="p1">**</ept><ph id="ph1">=</ph><ph id="ph2">&amp;lt;</ph>configuration ID<ph id="ph3">&amp;gt;</ph></source>
+        </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Configuration<ept id="p1">**</ept><ph id="ph1">=</ph></source>
+        </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Site<ept id="p1">**</ept><ph id="ph1">=</ph><ph id="ph2">&amp;lt;</ph>site ID<ph id="ph3">&amp;gt;</ph></source>
+        </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Site<ept id="p1">**</ept><ph id="ph1">=</ph></source>
+        </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>Therefore, an operation should be used only one time for each route.</source>
+        </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source>If the operation occurs multiple times in the same route, all occurrences of that operation will have the same operation relation, and you won't be able to have different properties (for example, run times) for each occurrence.</source>
+        </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source>Route versions</source>
+        </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source>Route versions are used to accommodate variations in the production of products or provide greater control over the production process.</source>
+        </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source>They define which route should be used when a specific released product or released product variant is produced.</source>
+        </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>You can use the following constraints to define which route is used for a released product:</source>
+        </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>Product dimensions (size, color, style, or configuration)</source>
+        </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source>Production quantity</source>
+        </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source>Production site</source>
+        </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source>Production date</source>
+        </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source>When you're producing the product at a specific site, in a specific quantity, or in a specific period, you can designate a specific route version as the default route version.</source>
+        </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source>However, note that only one active route is allowed for a given released product and a given set of constraints.</source>
+        </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source>In the Production control parameters, you can require that the validity period of a route version always be specified.</source>
+        </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source>Approval of route versions</source>
+        </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source>Before a route version can be used in the planning or manufacturing process, it must be approved.</source>
+        </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source>When you approve a route version, you can also approve the related route.</source>
+        </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source>However, note that a route version can be approved only if the related route is also approved.</source>
+        </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source>Activating the default route version</source>
+        </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>When you activate a route version, you designate it as the default route version that master planning will use, or that will be used to create production orders.</source>
+        </trans-unit>
+        <trans-unit id="298" translate="yes" xml:space="preserve">
+          <source>You can have only one active route version for a given set of constraints (for example, period, site, or quantity).</source>
+        </trans-unit>
+        <trans-unit id="299" translate="yes" xml:space="preserve">
+          <source>If the version that you’re trying to activate conflicts with a version that is already active, you receive an error message.</source>
+        </trans-unit>
+        <trans-unit id="300" translate="yes" xml:space="preserve">
+          <source>To prevent an ambiguous activation, you must then either inactivate the conflicting version or modify the constraints (usually the period) on the route version.</source>
+        </trans-unit>
+        <trans-unit id="301" translate="yes" xml:space="preserve">
+          <source>Electronic signatures</source>
+        </trans-unit>
+        <trans-unit id="302" translate="yes" xml:space="preserve">
+          <source>If you must keep a log that records who approves and activates each route version, you can require electronic signatures for these tasks.</source>
+        </trans-unit>
+        <trans-unit id="303" translate="yes" xml:space="preserve">
+          <source>Users who approve and activate route versions will then have to confirm their identity by using an <bpt id="p1">[</bpt>electronic signature<ept id="p1">](/dynamics365/unified-operations/fin-and-ops/organization-administration/electronic-signature-overview)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="304" translate="yes" xml:space="preserve">
+          <source>Product change that uses case management</source>
+        </trans-unit>
+        <trans-unit id="305" translate="yes" xml:space="preserve">
+          <source>The product change case for the approval and activation of new or changed routes and route versions gives you an easy way to see an overview of the route version constraints.</source>
+        </trans-unit>
+        <trans-unit id="306" translate="yes" xml:space="preserve">
+          <source>You can also approve and activate all routes that are related to a specific change in one operation and document the results in the product change case.</source>
+        </trans-unit>
+        <trans-unit id="307" translate="yes" xml:space="preserve">
+          <source>Maintaining routes</source>
+        </trans-unit>
+        <trans-unit id="308" translate="yes" xml:space="preserve">
+          <source>Depending on your business requirements, you might be able to reduce the effort that is required in order to maintain your process definitions.</source>
+        </trans-unit>
+        <trans-unit id="309" translate="yes" xml:space="preserve">
+          <source>Making routes independent of resources</source>
+        </trans-unit>
+        <trans-unit id="310" translate="yes" xml:space="preserve">
+          <source>In many systems, the operations resource or resource group that should perform an operation must be specified in the route.</source>
+        </trans-unit>
+        <trans-unit id="311" translate="yes" xml:space="preserve">
+          <source>However, in Finance and Operations, you can define a set of requirements that an operations resource must meet to be applicable for the operation.</source>
+        </trans-unit>
+        <trans-unit id="312" translate="yes" xml:space="preserve">
+          <source>Therefore, the specific operations resource or resource group that should be used doesn't have to be determined until the operation is actually scheduled.</source>
+        </trans-unit>
+        <trans-unit id="313" translate="yes" xml:space="preserve">
+          <source>This functionality is especially useful when you have many workers or machines that can perform the same operation.</source>
+        </trans-unit>
+        <trans-unit id="314" translate="yes" xml:space="preserve">
+          <source>For example, you specify that an operation requires an operations resource of the <bpt id="p1">**</bpt>Machine<ept id="p1">**</ept> type that has a <bpt id="p2">**</bpt>Stamping<ept id="p2">**</ept> capability of 20 tons.</source>
+        </trans-unit>
+        <trans-unit id="315" translate="yes" xml:space="preserve">
+          <source>The scheduling engine will then resolve these requirements to a specific operations resource or resource group when the operation is scheduled.</source>
+        </trans-unit>
+        <trans-unit id="316" translate="yes" xml:space="preserve">
+          <source>Because you can just specify these requirements instead of binding the operation to a specific machine, you have much more flexibility.</source>
+        </trans-unit>
+        <trans-unit id="317" translate="yes" xml:space="preserve">
+          <source>Additionally, maintenance is easier when resources are moved or new resources are added.</source>
+        </trans-unit>
+        <trans-unit id="318" translate="yes" xml:space="preserve">
+          <source>For more information about the various types of resource requirements and how to use them, see Operations resource requirements and <bpt id="p1">[</bpt>Resource capabilities<ept id="p1">](resource-capabilities.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="319" translate="yes" xml:space="preserve">
+          <source>Sharing routes across sites</source>
+        </trans-unit>
+        <trans-unit id="320" translate="yes" xml:space="preserve">
+          <source>If you produce the same product at more than one production site, and if the steps for producing the product are the same at all sites, you can often design a shared route that is used across all production sites.</source>
+        </trans-unit>
+        <trans-unit id="321" translate="yes" xml:space="preserve">
+          <source>To create a shared route, don't specify a site on the route itself.</source>
+        </trans-unit>
+        <trans-unit id="322" translate="yes" xml:space="preserve">
+          <source>However, you must still create a route version that associates the shared route with the product at each site.</source>
+        </trans-unit>
+        <trans-unit id="323" translate="yes" xml:space="preserve">
+          <source>You must also make sure that the resource requirements for each operation in the route don't call for specific operations resources or resource groups, but are instead expressed in terms of the characteristics of the required resources.</source>
+        </trans-unit>
+        <trans-unit id="324" translate="yes" xml:space="preserve">
+          <source>The scheduling engine will then be able to assign the appropriate operations resources from the site that the production is scheduled on.</source>
+        </trans-unit>
+        <trans-unit id="325" translate="yes" xml:space="preserve">
+          <source>For example, if there are small differences in the run time, or if the setup time for a certain operation is site-specific, you can specify this information by adding an additional operation relation for that site.</source>
+        </trans-unit>
+        <trans-unit id="326" translate="yes" xml:space="preserve">
+          <source>To take full advantage of the benefits of shared routes, you should also use resource consumption on the corresponding bill of materials (BOM).</source>
+        </trans-unit>
+        <trans-unit id="327" translate="yes" xml:space="preserve">
+          <source>When you set the flag for resource consumption on the BOM line, the warehouse and location that raw materials should be consumed from is inferred from the operations resource that the operation is scheduled on.</source>
+        </trans-unit>
+        <trans-unit id="328" translate="yes" xml:space="preserve">
+          <source>Therefore, the warehouse and location don't have to be determined until the production is actually scheduled.</source>
+        </trans-unit>
+        <trans-unit id="329" translate="yes" xml:space="preserve">
+          <source>In this way, you can make both the BOM and the route independent of the physical location where the product is produced.</source>
+        </trans-unit>
+        <trans-unit id="330" translate="yes" xml:space="preserve">
+          <source>Standard operation relations</source>
+        </trans-unit>
+        <trans-unit id="331" translate="yes" xml:space="preserve">
+          <source>If your business uses standardized operations throughout production, and if there is little or no variation in the setup time, run time, consumption calculation, cost calculation, and so on, you might benefit from creating default operation relations for all operations.</source>
+        </trans-unit>
+        <trans-unit id="332" translate="yes" xml:space="preserve">
+          <source>In this case, avoid creating operation relations that are specific to any route or released product.</source>
+        </trans-unit>
+        <trans-unit id="333" translate="yes" xml:space="preserve">
+          <source>If you also express resource requirements in terms of skills and capabilities, and make your routes site-independent, you can help keep the ongoing maintenance of your business processes to a minimum.</source>
+        </trans-unit>
+        <trans-unit id="334" translate="yes" xml:space="preserve">
+          <source>When you use this approach, the <bpt id="p1">**</bpt>Operation relations<ept id="p1">**</ept> page becomes your primary destination for maintaining run times and other properties.</source>
+        </trans-unit>
+        <trans-unit id="335" translate="yes" xml:space="preserve">
+          <source>Resource-specific process times</source>
+        </trans-unit>
+        <trans-unit id="336" translate="yes" xml:space="preserve">
+          <source>If you don't specify an operations resource or resource group as part of the resource requirements for an operation, the applicable resources might operate at different speeds.</source>
+        </trans-unit>
+        <trans-unit id="337" translate="yes" xml:space="preserve">
+          <source>Therefore, the time that is required in order to process an operation might vary.</source>
+        </trans-unit>
+        <trans-unit id="338" translate="yes" xml:space="preserve">
+          <source>To resolve this issue, you can use the <bpt id="p1">**</bpt>Formula<ept id="p1">**</ept> field on the operation relation to specify how the process time is calculated.</source>
+        </trans-unit>
+        <trans-unit id="339" translate="yes" xml:space="preserve">
+          <source>The following options are available:</source>
+        </trans-unit>
+        <trans-unit id="340" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Standard<ept id="p1">**</ept> – (Default option) The calculation uses only the fields from the operation relation and multiplies the specified run time by the order quantity.</source>
+        </trans-unit>
+        <trans-unit id="341" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Capacity<ept id="p1">**</ept> – The calculation includes the <bpt id="p2">**</bpt>Capacity<ept id="p2">**</ept> field from the operations resource.</source>
+        </trans-unit>
+        <trans-unit id="342" translate="yes" xml:space="preserve">
+          <source>Therefore, the time is resource-dependent.</source>
+        </trans-unit>
+        <trans-unit id="343" translate="yes" xml:space="preserve">
+          <source>The value that is specified on the operations resource is capacity per hour.</source>
+        </trans-unit>
+        <trans-unit id="344" translate="yes" xml:space="preserve">
+          <source>This value is multiplied by the order quantity and the <bpt id="p1">**</bpt>Factor<ept id="p1">**</ept> value from the operation relation.</source>
+        </trans-unit>
+        <trans-unit id="345" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Batch<ept id="p1">**</ept> – A batch capacity is calculated by using information from the operation relation.</source>
+        </trans-unit>
+        <trans-unit id="346" translate="yes" xml:space="preserve">
+          <source>The number of batches and, therefore, the process time can then be calculated based on the order quantity.</source>
+        </trans-unit>
+        <trans-unit id="347" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Resource batch<ept id="p1">**</ept> – This option is basically the same as the <bpt id="p2">**</bpt>Batch<ept id="p2">**</ept> option.</source>
+        </trans-unit>
+        <trans-unit id="348" translate="yes" xml:space="preserve">
+          <source>However, the calculation includes the <bpt id="p1">**</bpt>Batch capacity<ept id="p1">**</ept> field from the operations resource.</source>
+        </trans-unit>
+        <trans-unit id="349" translate="yes" xml:space="preserve">
+          <source>Therefore, the time is resource-dependent.</source>
+        </trans-unit>
+        <trans-unit id="350" translate="yes" xml:space="preserve">
+          <source>See also</source>
+        </trans-unit>
+        <trans-unit id="351" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Bills of materials and formulas<ept id="p1">](bill-of-material-bom.md)</ept></source>
+        </trans-unit>
+        <trans-unit id="352" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Cost categories used in production routing<ept id="p1">](../cost-management/cost-categories-used-production-routings.md)</ept></source>
+        </trans-unit>
+        <trans-unit id="353" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Resource capabilities<ept id="p1">](resource-capabilities.md)</ept></source>
+        </trans-unit>
+        <trans-unit id="354" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Electronic signature overview<ept id="p1">](/dynamics365/unified-operations/fin-and-ops/organization-administration/electronic-signature-overview)</ept></source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

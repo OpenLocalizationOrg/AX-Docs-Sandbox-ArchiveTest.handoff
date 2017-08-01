@@ -1,0 +1,1608 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">a037644d68d1064748983b0739fda3b34ca7b025</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\dev-ref\xpp-classes-methods.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">a2c97db9d9c0f3b38dbcd8fa99d4151e0d06fe56</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">b96fd15766466acea6a018a5baf8dc3d19a55ade</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>X++ classes and methods</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic describes how to create and use classes and interfaces in X++.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>X++ classes and methods</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This topic describes how to create and use classes and interfaces in X++.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Classes in X++</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">*</bpt>class<ept id="p1">*</ept> is a software construct that defines the data and methods of the objects that are later constructed from that class.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>The objects that are constructed are known as <bpt id="p1">*</bpt>instances<ept id="p1">*</ept> or <bpt id="p2">*</bpt>objects<ept id="p2">*</ept>.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>(This topic uses the two terms interchangeably.) The data represents the state of the object, whereas the methods represent the behavior of the object.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>Variables<ept id="p1">*</ept> contain the data for the class.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Variables in a class are specific to objects that are constructed from that class.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Every object that is constructed from the class declaration has its own copy of the variables.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>These variables are known as <bpt id="p1">*</bpt>instance variables<ept id="p1">*</ept>.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Methods define the behavior of a class.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>They are the sequences of statements that operate on the data.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Typically, methods are declared to operate on the instance variables of the class.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>These methods are known as <bpt id="p1">*</bpt>instance methods<ept id="p1">*</ept> or <bpt id="p2">*</bpt>object methods<ept id="p2">*</ept>.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>You can also declare <bpt id="p1">*</bpt>static methods<ept id="p1">*</ept> and <bpt id="p2">*</bpt>static fields<ept id="p2">*</ept>.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Declaration of classes</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Create a class in Visual Studio</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Follow these steps to create a class in Microsoft Visual Studio.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>In Server Explorer, right-click the project, and then click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>New Item<ept id="p1">**</ept> dialog box, select <bpt id="p2">**</bpt>Class<ept id="p2">**</ept>, and then enter a name for the class.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>All classes are public.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>If you remove the <bpt id="p1">**</bpt>public<ept id="p1">**</ept> modifier, the system still treats the class as public.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>You can specify other modifiers on the class declaration, such as <bpt id="p1">**</bpt>final<ept id="p1">**</ept> and <bpt id="p2">**</bpt>extends<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Creating variables in a class</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>All classes are public, but all member variables are implicitly private.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>However, even though all member variables are private, you can't decorate a member variable with the <bpt id="p1">**</bpt>private<ept id="p1">**</ept> keyword.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>All member variables belong to only object instances of the class.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>The following example shows how to use accessor methods to make the variable data public.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Constructors</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>To create an instance of a class, you must instantiate it by using a <bpt id="p1">*</bpt>constructor<ept id="p1">*</ept>.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>The default constructor is the <bpt id="p1">**</bpt>new<ept id="p1">**</ept> method.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>As a best practice, you should make the <bpt id="p1">**</bpt>new<ept id="p1">**</ept> method protected.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Instead, if initialization isn't required, you should use a <bpt id="p1">**</bpt>static construct<ept id="p1">**</ept> method as the public constructor for the class.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Otherwise, you should use a <bpt id="p1">**</bpt>static new<ept id="p1">**</ept> method.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Creating other objects in a constructor</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>A class constructor can instantiate other objects in addition to creating an instance of the class.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>For example, the following code declares a <bpt id="p1">**</bpt>Rectangle<ept id="p1">**</ept> class that uses two <bpt id="p2">**</bpt>Point<ept id="p2">**</ept> objects to define its bounds.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Destructors</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">*</bpt>destructor<ept id="p1">*</ept> is used to explicitly destroy a class object.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Objects are automatically destroyed when there are no references to them.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>However, you can destroy objects explicitly in the following ways:</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Use the <bpt id="p1">**</bpt>finalize<ept id="p1">**</ept> method.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Set the object handle to <bpt id="p1">**</bpt>null<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Using the finalize method</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Use the <bpt id="p1">**</bpt>finalize<ept id="p1">**</ept> method to explicitly destroy an object.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>There are no implicit calls to the <bpt id="p1">**</bpt>finalize<ept id="p1">**</ept> method.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>You must call the method to run the statements in it.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>The following example shows the basic structure for a call to the <bpt id="p1">**</bpt>finalize<ept id="p1">**</ept> method.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>finalize<ept id="p1">**</ept> method, you should also put any clean-up code that is required.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>For example, if your class uses a dynamic-link library (DLL) module, you can use the <bpt id="p1">**</bpt>finalize<ept id="p1">**</ept> method to release the DLL when you no longer require it.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Use the <bpt id="p1">**</bpt>finalize<ept id="p1">**</ept> method carefully.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>It will destroy an object even if there are references to it.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Setting an object handle to null</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Set the object handle to <bpt id="p1">**</bpt>null<ept id="p1">**</ept> to terminate an object.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>This approach destroys an object only if no other object handles point to that object.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>You should verify that other code isn't using the object handle.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>The following example creates an object handle and then sets it to <bpt id="p1">**</bpt>null<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Creating a subclass</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>Subclasses<ept id="p1">*</ept> are classes that extend or inherit from other classes.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>A class can extend only one other class.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Multiple inheritance isn't supported.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>If you extend a class, the subclass inherits all the methods and variables in the parent class (the <bpt id="p1">*</bpt>superclass<ept id="p1">*</ept>).</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Subclasses let you reuse existing code for a more specific purpose.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Therefore, they help save you time during design, development, and testing.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>To customize the behavior of a superclass, override the methods in a subclass.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>A superclass is often known as a <bpt id="p1">*</bpt>base class<ept id="p1">*</ept>, and a subclass is often known as a <bpt id="p2">*</bpt>derived class<ept id="p2">*</ept>.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Subclass example</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>The following example first creates a class that is named <bpt id="p1">**</bpt>Point<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>It then extends the <bpt id="p1">**</bpt>Point<ept id="p1">**</ept> class to create a new class that is named <bpt id="p2">**</bpt>ThreePoint<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Preventing class inheritance</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>You can prevent classes from being inherited by using the <bpt id="p1">**</bpt>final<ept id="p1">**</ept> modifier.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Methods</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>The following code block types are standard for application classes:</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>****classDescription** declaration block** – This declaration block contains class modifiers such as <bpt id="p1">**</bpt>public<ept id="p1">**</ept>, <bpt id="p2">**</bpt>private<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>extends<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>It also contains the field members for objects that are constructed from the class.</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>When you type the keyword <bpt id="p1">**</bpt>this<ept id="p1">**</ept>, IntelliSense can show a list of the members.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>****new** method** – This method creates an instance of the class.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>The constructor can be called only by using the <bpt id="p1">**</bpt>new<ept id="p1">**</ept> keyword.</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Derived classes can call the <bpt id="p1">**</bpt>new<ept id="p1">**</ept> method of their constructor by calling the <bpt id="p2">**</bpt>super<ept id="p2">**</ept> method reference.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>****finalize** method** – This method finalizes an instance of the class.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>This method is the destructor method.</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>However, it's a destructor by convention only.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>The system doesn't automatically call the <bpt id="p1">**</bpt>finalize<ept id="p1">**</ept> method during garbage collection.</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>Additional methods for a class have the following types:</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Instance methods</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Static methods</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Main methods</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Methods can be created on many kinds of items.</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Here are some examples:</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>Classes</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>Maps</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>Views</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>Data Sets</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Forms</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>Queries</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Instance methods</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>Instance methods, or object methods, are embedded in each object that is created from the class.</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>You must instantiate the object before you can use the method.</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>If you later convert an instance method to a static method, you must restart the client.</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>Otherwise, the compiler doesn't detect the change.</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>After you've converted an instance method to a static method, you can no longer call the method from the instance of the class.</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>Instead, you must call the method from the class itself.</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>Static methods are discussed in the next section.</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>You use the following syntax to call instance methods.</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>Static methods</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>Static methods, which are also known as <bpt id="p1">*</bpt>class methods<ept id="p1">*</ept>, belong to a class and are created by using the keyword <bpt id="p2">**</bpt>static<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>You don't have to instantiate an object before you use static methods.</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>Static methods are often used to work with data that is stored in tables.</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>Member variables can't be used in a static method.</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>You use the following syntax to call static methods.</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>Main methods</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">**</bpt>main<ept id="p1">**</ept> method is a class method that is run directly from a menu option.</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>The method should only create an instance of the object and then call the required member methods.</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt><ph id="ph1">\_</ph>args<ept id="p1">**</ept> parameter lets you transfer data to the method.</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>Declaration of methods</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>Method declarations consist of a header and a body.</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>The method header declares the method's name and return type), the method modifiers, and parameters.</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>(The return type might be <bpt id="p1">**</bpt>void<ept id="p1">**</ept>.) The method body consists of variable declarations, method declarations, and statements.</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>Return type</source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>If a method doesn't return anything, you must use the <bpt id="p1">**</bpt>void<ept id="p1">**</ept> keyword.</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>The following example shows two methods.</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>One method has a return type, but the other method doesn't have a return type.</source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>Syntax</source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>Method declaration = <bpt id="p1">*</bpt>Heading<ept id="p1">*</ept>  <bpt id="p2">*</bpt>Body<ept id="p2">*</ept> Heading = <bpt id="p3">**</bpt><ph id="ph1">\[</ph><ept id="p3">**</ept> <bpt id="p4">*</bpt>Modifiers<ept id="p4">*</ept> <bpt id="p5">**</bpt><ph id="ph2">\]</ph><ept id="p5">**</ept>  <bpt id="p6">*</bpt>ReturnType<ept id="p6">*</ept>  <bpt id="p7">*</bpt>MethodName<ept id="p7">*</ept>  <bpt id="p8">**</bpt>(<ept id="p8">**</ept>  <bpt id="p9">*</bpt>ParameterList<ept id="p9">*</ept>  <bpt id="p10">**</bpt>)<ept id="p10">**</ept> Modifiers = <bpt id="p11">**</bpt><ph id="ph3">\[</ph>client<ph id="ph4">\]</ph> <ph id="ph5">\[</ph>server<ph id="ph6">\]</ph> <ph id="ph7">\[</ph>edit | display | public | protected | private<ph id="ph8">\]</ph> <ph id="ph9">\[</ph>static | abstract | final <ph id="ph10">\]</ph><ept id="p11">**</ept> ReturnType = <bpt id="p12">*</bpt>Datatype<ept id="p12">*</ept>  <bpt id="p13">**</bpt>| void | anytype<ept id="p13">**</ept> MethodName = <bpt id="p14">*</bpt>Identifier<ept id="p14">*</ept> ParameterList = <bpt id="p15">**</bpt><ph id="ph11">\[</ph><ept id="p15">**</ept> <bpt id="p16">*</bpt>Parameter<ept id="p16">*</ept>  <bpt id="p17">**</bpt>{ ,<ept id="p17">**</ept>  <bpt id="p18">*</bpt>Parameter<ept id="p18">*</ept>  <bpt id="p19">**</bpt>}<ph id="ph12">\]</ph><ept id="p19">**</ept> Parameter = <bpt id="p20">*</bpt>Datatype<ept id="p20">*</ept>  <bpt id="p21">*</bpt>Variableidentifier<ept id="p21">*</ept>  <bpt id="p22">**</bpt><ph id="ph13">\[</ph><ph id="ph14"> =</ph><ept id="p22">**</ept>  <bpt id="p23">*</bpt>Expression<ept id="p23">*</ept>  <bpt id="p24">**</bpt><ph id="ph15">\]</ph><ept id="p24">**</ept> Body = <bpt id="p25">**</bpt>{ <ph id="ph16">\[</ph><ept id="p25">**</ept>  <bpt id="p26">*</bpt>VariableDeclarations<ept id="p26">*</ept>  <bpt id="p27">**</bpt><ph id="ph17">\]</ph> <ph id="ph18">\[</ph><ept id="p27">**</ept>  <bpt id="p28">*</bpt>EmbeddedFunctionDeclarations<ept id="p28">*</ept>  <bpt id="p29">**</bpt><ph id="ph19">\]</ph> <ph id="ph20">\[</ph><ept id="p29">**</ept>  <bpt id="p30">*</bpt>Statements<ept id="p30">*</ept>  <bpt id="p31">**</bpt><ph id="ph21">\]</ph> }<ept id="p31">**</ept> EmbeddedFunctionDeclaration = <bpt id="p32">*</bpt>Heading<ept id="p32">*</ept>  <bpt id="p33">**</bpt>{<ph id="ph22">\[</ph><ept id="p33">**</ept>  <bpt id="p34">*</bpt>VariableDeclarations<ept id="p34">*</ept>  <bpt id="p35">**</bpt><ph id="ph23">\]</ph> <ph id="ph24">\[</ph><ept id="p35">**</ept>  <bpt id="p36">*</bpt>Statements<ept id="p36">*</ept>  <bpt id="p37">**</bpt><ph id="ph25">\]</ph>}<ept id="p37">**</ept> If you use the <bpt id="p38">**</bpt>anytype<ept id="p38">**</ept> return type, the method can return any data type.</source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>Example of a method that doesn't have a return type</source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>Example of a method that has parameters</source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>In the following example, the <bpt id="p1">**</bpt>checkAccountBlocked<ept id="p1">**</ept> method returns a Boolean value and acts on the <bpt id="p2">**</bpt>amountCur<ept id="p2">**</ept> parameter.</source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>Method modifiers</source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>Several modifiers can be applied to method declarations.</source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>Some of the modifiers can be combined (for example, <bpt id="p1">**</bpt>final static<ept id="p1">**</ept>).</source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>Here are the method modifier keywords:</source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>abstract<ept id="p1">**</ept> – The method is declared but isn't implemented in a parent class.</source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>The method must be overridden in subclasses.</source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>If you try to create an object from a subclass where one or more abstract methods that belong to the parent class haven't been overridden, you receive a compiler error.</source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>Classes can also be abstract.</source>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>Sometimes, a class should not be instantiated even though it represents an abstract concept.</source>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>Only subclasses should be instantiated.</source>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>Base classes of this type can be declared as <bpt id="p1">**</bpt>abstract<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>For example, you want to model the concept of an account.</source>
+        </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>Accounts are abstract, because only derived classes (ledger accounts and so on) exist in the real world.</source>
+        </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>This examples describes a clear case where you should declare the <bpt id="p1">**</bpt>Account<ept id="p1">**</ept> class as <bpt id="p2">**</bpt>abstract<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>display<ept id="p1">**</ept> – The method's return value should be shown on a page or a report.</source>
+        </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>The value can't be modified on the page or report.</source>
+        </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>Typically, the return value is a calculated value, such as a sum.</source>
+        </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>edit<ept id="p1">**</ept> – The method's return type should be used to provide information for a field that is used on a page.</source>
+        </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>The value in the field can be modified.</source>
+        </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>final<ept id="p1">**</ept> – The method can't be overridden in any class that derives from its class.</source>
+        </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>public<ept id="p1">**</ept> – Methods that are declared as <bpt id="p2">**</bpt>public<ept id="p2">**</ept> can be accessed anywhere that the class is accessible, and they can be overridden by subclasses.</source>
+        </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>Methods that have no access modifier are implicitly public.</source>
+        </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>protected<ept id="p1">**</ept> – Methods that are declared as <bpt id="p2">**</bpt>protected<ept id="p2">**</ept> can be called only from methods in the class and in subclasses that extend the class where the method is declared.</source>
+        </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>private<ept id="p1">**</ept> – Methods that are declared as <bpt id="p2">**</bpt>private<ept id="p2">**</ept> can be called only from methods in the class where the private method is declared.</source>
+        </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>static<ept id="p1">**</ept> – The method is a class method and doesn't act on an instance.</source>
+        </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>Static methods can't refer to instance variables.</source>
+        </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>They aren't invoked on an instance of the class.</source>
+        </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>Instead, the are invoked by using the class name (for example, <bpt id="p1">**</bpt>MyClass::aStaticProcedure()<ept id="p1">**</ept>).</source>
+        </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>Methods that have modifiers</source>
+        </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> The following examples show only the method headers.</source>
+        </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>Static class members</source>
+        </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>You declare static class members by using the <bpt id="p1">**</bpt>static<ept id="p1">**</ept> keyword.</source>
+        </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>static<ept id="p1">**</ept> keyword instructs the system to create only one instance of the method, regardless of the number of times that you call <bpt id="p2">**</bpt>new<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>This one instance is used throughout your session.</source>
+        </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>In general, static methods are intended for cases where the following criteria are met:</source>
+        </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>The method has no reason to access the member variables that are declared in the class.</source>
+        </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>The method has no reason to call any instance (non-static) methods of the class.</source>
+        </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>Static methods</source>
+        </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>This section describes a scenario where a software key type is used to help prevent piracy.</source>
+        </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>Each instance of a software key can have its own unique value.</source>
+        </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>However, because all software keys must conform to the rules of software key design, the logic that tests for software key conformance is the same for all software keys.</source>
+        </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>Therefore, the method that contains the conformance validation logic should be static.</source>
+        </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>Here is an example of a method that is declared by using the <bpt id="p1">**</bpt>static<ept id="p1">**</ept> keyword.</source>
+        </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>In the following example, you don't have to construct an instance of the <bpt id="p1">**</bpt>SoftwareKey<ept id="p1">**</ept> class before you call a static method on the class.</source>
+        </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>When you want to call the static <bpt id="p1">**</bpt>validateSoftwareKey<ept id="p1">**</ept> method, the syntax starts with the name of the class that contains the method.</source>
+        </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>A pair of colons (::) is used to connect the class name to the static method name.</source>
+        </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>Static fields</source>
+        </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>Static fields are fields that are declared by using the <bpt id="p1">**</bpt>static<ept id="p1">**</ept> keyword.</source>
+        </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>Conceptually, they apply to the class, not to instances of the class.</source>
+        </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source>Static constructors</source>
+        </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source>Static constructors are guaranteed to run before any static or instance calls are made to the class.</source>
+        </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source>In C<ph id="ph1">\#</ph>, the <bpt id="p1">*</bpt>static<ept id="p1">*</ept> concept is related to the whole executing application domain.</source>
+        </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source>However, in X++, the execution of the static constructor is relative to the user’s session.</source>
+        </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>The static constructor has the following syntax.</source>
+        </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>You never explicitly call the static constructor.</source>
+        </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source>The compiler will generate code to make sure that the constructor is called exactly one time before any other method on the class.</source>
+        </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source>A static constructor is used to initialize any static data or perform a particular action that must be performed only one time.</source>
+        </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source>No parameters can be provided for the static constructor, and it must be marked as <bpt id="p1">**</bpt>static<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source>The following example shows how to create a singleton instance by using a static constructor.</source>
+        </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source>The singleton guarantees that only one instance of the class will ever be called.</source>
+        </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source>The following example shows how to instantiate the singleton.</source>
+        </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source>Method access control</source>
+        </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source>You use the accessor keywords <bpt id="p1">**</bpt>public<ept id="p1">**</ept>, <bpt id="p2">**</bpt>protected<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>private<ept id="p3">**</ept> to control whether the methods in other classes can call the methods on your class.</source>
+        </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source>The accessor keywords on methods also interact with the rules for class inheritance.</source>
+        </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source>Here are the accessor keywords that you use with methods:</source>
+        </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>public<ept id="p1">**</ept> – Methods that are declared as <bpt id="p2">**</bpt>public<ept id="p2">**</ept> can be called from anywhere that the class is accessible.</source>
+        </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>In addition, a public method can be overridden by a subclass, unless the method is declared as <bpt id="p1">**</bpt>final<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="298" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>protected<ept id="p1">**</ept> – Methods that are declared as <bpt id="p2">**</bpt>protected<ept id="p2">**</ept> can be called only from the following methods:</source>
+        </trans-unit>
+        <trans-unit id="299" translate="yes" xml:space="preserve">
+          <source>Methods in the class.</source>
+        </trans-unit>
+        <trans-unit id="300" translate="yes" xml:space="preserve">
+          <source>Methods in a subclass of the class that contains the protected method.</source>
+        </trans-unit>
+        <trans-unit id="301" translate="yes" xml:space="preserve">
+          <source>Methods that are protected can be overridden in subclasses.</source>
+        </trans-unit>
+        <trans-unit id="302" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>private<ept id="p1">**</ept> – Methods that are declared as <bpt id="p2">**</bpt>private<ept id="p2">**</ept> can be called only from methods in the class where the private method is declared.</source>
+        </trans-unit>
+        <trans-unit id="303" translate="yes" xml:space="preserve">
+          <source>No private method can be overridden in a subclass.</source>
+        </trans-unit>
+        <trans-unit id="304" translate="yes" xml:space="preserve">
+          <source>By default, when you create a new method, the <bpt id="p1">**</bpt>private<ept id="p1">**</ept> accessor keyword appears in the code editor.</source>
+        </trans-unit>
+        <trans-unit id="305" translate="yes" xml:space="preserve">
+          <source>For maximum security, <bpt id="p1">**</bpt>private<ept id="p1">**</ept> is the most conservative default accessor keyword.</source>
+        </trans-unit>
+        <trans-unit id="306" translate="yes" xml:space="preserve">
+          <source>Static and instance methods</source>
+        </trans-unit>
+        <trans-unit id="307" translate="yes" xml:space="preserve">
+          <source>The accessor keywords on methods never restrict calls between two methods that are in the same class, regardless of which method is static or non-static.</source>
+        </trans-unit>
+        <trans-unit id="308" translate="yes" xml:space="preserve">
+          <source>In a static method, calls to the <bpt id="p1">**</bpt>new<ept id="p1">**</ept> constructor method are valid even if the <bpt id="p2">**</bpt>new<ept id="p2">**</ept> constructor method is decorated with the <bpt id="p3">**</bpt>private<ept id="p3">**</ept> modifier.</source>
+        </trans-unit>
+        <trans-unit id="309" translate="yes" xml:space="preserve">
+          <source>The syntax for these calls requires that the <bpt id="p1">**</bpt>new<ept id="p1">**</ept> keyword be used.</source>
+        </trans-unit>
+        <trans-unit id="310" translate="yes" xml:space="preserve">
+          <source>The code in a static method must construct an instance object of its own class before it can call any instance methods on the class.</source>
+        </trans-unit>
+        <trans-unit id="311" translate="yes" xml:space="preserve">
+          <source>Increasing access during overrides</source>
+        </trans-unit>
+        <trans-unit id="312" translate="yes" xml:space="preserve">
+          <source>When a method is overridden in a subclass, the overriding method must be at least as accessible as the overridden method.</source>
+        </trans-unit>
+        <trans-unit id="313" translate="yes" xml:space="preserve">
+          <source>For example, the following compiler rules apply when a protected method is overridden in a subclass:</source>
+        </trans-unit>
+        <trans-unit id="314" translate="yes" xml:space="preserve">
+          <source>A public method in a superclass can be overridden only by a public method in the subclass.</source>
+        </trans-unit>
+        <trans-unit id="315" translate="yes" xml:space="preserve">
+          <source>In a subclass, a public or protected method can override a protected method of the superclass.</source>
+        </trans-unit>
+        <trans-unit id="316" translate="yes" xml:space="preserve">
+          <source>In a subclass, a private method can't override a protected method of the superclass.</source>
+        </trans-unit>
+        <trans-unit id="317" translate="yes" xml:space="preserve">
+          <source>Optional parameters</source>
+        </trans-unit>
+        <trans-unit id="318" translate="yes" xml:space="preserve">
+          <source>Parameters can be initialized in the method declaration.</source>
+        </trans-unit>
+        <trans-unit id="319" translate="yes" xml:space="preserve">
+          <source>In this case, the parameter becomes an <bpt id="p1">*</bpt>optional parameter<ept id="p1">*</ept>.</source>
+        </trans-unit>
+        <trans-unit id="320" translate="yes" xml:space="preserve">
+          <source>If no value is supplied in the method call, the default value is used.</source>
+        </trans-unit>
+        <trans-unit id="321" translate="yes" xml:space="preserve">
+          <source>All required parameters must be listed before the first optional parameter.</source>
+        </trans-unit>
+        <trans-unit id="322" translate="yes" xml:space="preserve">
+          <source>The following examples show how to create and call a method that has optional parameters.</source>
+        </trans-unit>
+        <trans-unit id="323" translate="yes" xml:space="preserve">
+          <source>The example of the <bpt id="p1">**</bpt>AddThreeInts<ept id="p1">**</ept> method shows that you can't skip default parameters when you call a method.</source>
+        </trans-unit>
+        <trans-unit id="324" translate="yes" xml:space="preserve">
+          <source>Examples of optional parameters</source>
+        </trans-unit>
+        <trans-unit id="325" translate="yes" xml:space="preserve">
+          <source>Accessor methods</source>
+        </trans-unit>
+        <trans-unit id="326" translate="yes" xml:space="preserve">
+          <source>Class variables are private.</source>
+        </trans-unit>
+        <trans-unit id="327" translate="yes" xml:space="preserve">
+          <source>By hiding details of the internal implementation of a class, you can change the implementation of the class later without breaking any code that uses that class.</source>
+        </trans-unit>
+        <trans-unit id="328" translate="yes" xml:space="preserve">
+          <source>To access the data from reference variables, you must create accessor methods.</source>
+        </trans-unit>
+        <trans-unit id="329" translate="yes" xml:space="preserve">
+          <source>The following example defines a <bpt id="p1">**</bpt>Point<ept id="p1">**</ept> class that uses accessor methods to access the variables <bpt id="p2">**</bpt>x<ept id="p2">**</ept> and <bpt id="p3">**</bpt>y<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="330" translate="yes" xml:space="preserve">
+          <source>These method declarations show how the <bpt id="p1">**</bpt>Point<ept id="p1">**</ept> class provides access to its variables from the outside world.</source>
+        </trans-unit>
+        <trans-unit id="331" translate="yes" xml:space="preserve">
+          <source>Other objects can manipulate the instance variables of <bpt id="p1">**</bpt>Point<ept id="p1">**</ept> objects by using the accessor methods.</source>
+        </trans-unit>
+        <trans-unit id="332" translate="yes" xml:space="preserve">
+          <source>The depth of the call stack is limited to 100.</source>
+        </trans-unit>
+        <trans-unit id="333" translate="yes" xml:space="preserve">
+          <source>Overriding a method</source>
+        </trans-unit>
+        <trans-unit id="334" translate="yes" xml:space="preserve">
+          <source>The methods in a class are inherited by any class that extends it.</source>
+        </trans-unit>
+        <trans-unit id="335" translate="yes" xml:space="preserve">
+          <source>To change the functionality of an inherited method, you can create a method in the subclass, and then give that method the same name and parameters as the method in the superclass.</source>
+        </trans-unit>
+        <trans-unit id="336" translate="yes" xml:space="preserve">
+          <source>This process is known as <bpt id="p1">*</bpt>overriding<ept id="p1">*</ept> the method.</source>
+        </trans-unit>
+        <trans-unit id="337" translate="yes" xml:space="preserve">
+          <source>In the following example, <bpt id="p1">**</bpt>ColorAttribute<ept id="p1">**</ept> is a subclass of <bpt id="p2">**</bpt>Attribute<ept id="p2">**</ept> and therefore inherits the <bpt id="p3">**</bpt>methodAttr<ept id="p3">**</ept> method.</source>
+        </trans-unit>
+        <trans-unit id="338" translate="yes" xml:space="preserve">
+          <source>However, because <bpt id="p1">**</bpt>ColorAttribute<ept id="p1">**</ept> defines a method that has the same name and the same number of arguments, the method in the superclass is overridden.</source>
+        </trans-unit>
+        <trans-unit id="339" translate="yes" xml:space="preserve">
+          <source>Preventing method overrides</source>
+        </trans-unit>
+        <trans-unit id="340" translate="yes" xml:space="preserve">
+          <source>Static methods can't be overridden, because they exist per class.</source>
+        </trans-unit>
+        <trans-unit id="341" translate="yes" xml:space="preserve">
+          <source>To protect other sensitive methods, or core methods, from being overridden, use the <bpt id="p1">**</bpt>final<ept id="p1">**</ept> modifier.</source>
+        </trans-unit>
+        <trans-unit id="342" translate="yes" xml:space="preserve">
+          <source>In the following example, because <bpt id="p1">**</bpt>methodAtt<ept id="p1">**</ept> is declared as <bpt id="p2">**</bpt>final<ept id="p2">**</ept>, it can't be overridden in any class that extends <bpt id="p3">**</bpt>Attribute<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="343" translate="yes" xml:space="preserve">
+          <source>You should not specify <bpt id="p1">**</bpt>new<ept id="p1">**</ept> or <bpt id="p2">**</bpt>finalize<ept id="p2">**</ept> methods as <bpt id="p3">**</bpt>final<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="344" translate="yes" xml:space="preserve">
+          <source>The following example shows how to use the <bpt id="p1">**</bpt>final<ept id="p1">**</ept> keyword.</source>
+        </trans-unit>
+        <trans-unit id="345" translate="yes" xml:space="preserve">
+          <source>Overriding vs. overloading</source>
+        </trans-unit>
+        <trans-unit id="346" translate="yes" xml:space="preserve">
+          <source>Overriding occurs when the superclass's implementation of a method is changed by the subclass's implementation of that method, but the signatures of both methods are the same.</source>
+        </trans-unit>
+        <trans-unit id="347" translate="yes" xml:space="preserve">
+          <source>By contrast, <bpt id="p1">*</bpt>overloading<ept id="p1">*</ept> occurs when more than one method has the same name, but the methods have different signatures (return types, parameter lists, or both).</source>
+        </trans-unit>
+        <trans-unit id="348" translate="yes" xml:space="preserve">
+          <source>X++ supports overriding, but it doesn't support overloading.</source>
+        </trans-unit>
+        <trans-unit id="349" translate="yes" xml:space="preserve">
+          <source>Parameters</source>
+        </trans-unit>
+        <trans-unit id="350" translate="yes" xml:space="preserve">
+          <source>All methods have their own <bpt id="p1">*</bpt>scope<ept id="p1">*</ept>.</source>
+        </trans-unit>
+        <trans-unit id="351" translate="yes" xml:space="preserve">
+          <source>A method can take one or more parameters.</source>
+        </trans-unit>
+        <trans-unit id="352" translate="yes" xml:space="preserve">
+          <source>Within the scope of the method, these parameters are treated as local variables and are initialized with a value from the parameter in the method call.</source>
+        </trans-unit>
+        <trans-unit id="353" translate="yes" xml:space="preserve">
+          <source>All parameters are passed by value.</source>
+        </trans-unit>
+        <trans-unit id="354" translate="yes" xml:space="preserve">
+          <source>You can't change the value of the original variable.</source>
+        </trans-unit>
+        <trans-unit id="355" translate="yes" xml:space="preserve">
+          <source>You can change only the local variable in the method.</source>
+        </trans-unit>
+        <trans-unit id="356" translate="yes" xml:space="preserve">
+          <source>This local variable is a copy of the original variable.</source>
+        </trans-unit>
+        <trans-unit id="357" translate="yes" xml:space="preserve">
+          <source>Scope of variables in methods</source>
+        </trans-unit>
+        <trans-unit id="358" translate="yes" xml:space="preserve">
+          <source>A scope defines the area in which an item can be accessed.</source>
+        </trans-unit>
+        <trans-unit id="359" translate="yes" xml:space="preserve">
+          <source>Variables that are defined in a class are available to the methods within that class.</source>
+        </trans-unit>
+        <trans-unit id="360" translate="yes" xml:space="preserve">
+          <source>Variables in methods can be accessed only within the current block.</source>
+        </trans-unit>
+        <trans-unit id="361" translate="yes" xml:space="preserve">
+          <source>Local functions</source>
+        </trans-unit>
+        <trans-unit id="362" translate="yes" xml:space="preserve">
+          <source>You can declare local functions inside a method.</source>
+        </trans-unit>
+        <trans-unit id="363" translate="yes" xml:space="preserve">
+          <source>However, as a best practice, you shouldn't add local functions inside the method.</source>
+        </trans-unit>
+        <trans-unit id="364" translate="yes" xml:space="preserve">
+          <source>Instead, you should add private methods to the class.</source>
+        </trans-unit>
+        <trans-unit id="365" translate="yes" xml:space="preserve">
+          <source>The following example shows valid declarations of two local functions, <bpt id="p1">**</bpt>localFunc55b<ept id="p1">**</ept> and <bpt id="p2">**</bpt>localFunc66c<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="366" translate="yes" xml:space="preserve">
+          <source>Calls to the local functions occur after the function declarations in the example, as is required.</source>
+        </trans-unit>
+        <trans-unit id="367" translate="yes" xml:space="preserve">
+          <source>Declaration of local functions</source>
+        </trans-unit>
+        <trans-unit id="368" translate="yes" xml:space="preserve">
+          <source>The declarations of local functions must physically precede any non-declaration statements in the method.</source>
+        </trans-unit>
+        <trans-unit id="369" translate="yes" xml:space="preserve">
+          <source>You can declare more than one local function in your method.</source>
+        </trans-unit>
+        <trans-unit id="370" translate="yes" xml:space="preserve">
+          <source>However, all local functions must be declared in an uninterrupted series, and the set must be terminated by one semicolon (;).</source>
+        </trans-unit>
+        <trans-unit id="371" translate="yes" xml:space="preserve">
+          <source>Variable scope</source>
+        </trans-unit>
+        <trans-unit id="372" translate="yes" xml:space="preserve">
+          <source>Code that is inside the local function can access variables that are declared in the method that contains the local function.</source>
+        </trans-unit>
+        <trans-unit id="373" translate="yes" xml:space="preserve">
+          <source>Code that is outside the local function can't access variables that are declared in the local function.</source>
+        </trans-unit>
+        <trans-unit id="374" translate="yes" xml:space="preserve">
+          <source>Calls to local functions</source>
+        </trans-unit>
+        <trans-unit id="375" translate="yes" xml:space="preserve">
+          <source>A local function can be called only by code in the same method where the local function is declared.</source>
+        </trans-unit>
+        <trans-unit id="376" translate="yes" xml:space="preserve">
+          <source>A local function should never call itself.</source>
+        </trans-unit>
+        <trans-unit id="377" translate="yes" xml:space="preserve">
+          <source>Such recursion can prevent successful compilation.</source>
+        </trans-unit>
+        <trans-unit id="378" translate="yes" xml:space="preserve">
+          <source>The this keyword</source>
+        </trans-unit>
+        <trans-unit id="379" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>this<ept id="p1">**</ept> keyword is a reference to the instance of the class or table where the <bpt id="p2">**</bpt>this<ept id="p2">**</ept> keyword is used.</source>
+        </trans-unit>
+        <trans-unit id="380" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>this<ept id="p1">**</ept> reference is never required, but it can clarify your code and enhances the behavior of IntelliSense in the code editor.</source>
+        </trans-unit>
+        <trans-unit id="381" translate="yes" xml:space="preserve">
+          <source>All calls to instance methods must be qualified by either the <bpt id="p1">**</bpt>this<ept id="p1">**</ept> reference or a variable.</source>
+        </trans-unit>
+        <trans-unit id="382" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>this<ept id="p1">**</ept> reference can be used to qualify the following information:</source>
+        </trans-unit>
+        <trans-unit id="383" translate="yes" xml:space="preserve">
+          <source>The names of other instance (non-static) methods in the same class where the <bpt id="p1">**</bpt>this<ept id="p1">**</ept> reference is used.</source>
+        </trans-unit>
+        <trans-unit id="384" translate="yes" xml:space="preserve">
+          <source>Here is an example: <bpt id="p1">**</bpt>boolColorChanged = this.colorItOrange();<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="385" translate="yes" xml:space="preserve">
+          <source>The names of methods that are inherited by the <bpt id="p1">**</bpt>this<ept id="p1">**</ept> object.</source>
+        </trans-unit>
+        <trans-unit id="386" translate="yes" xml:space="preserve">
+          <source>The names of fields on the table that contains the method that the <bpt id="p1">**</bpt>this<ept id="p1">**</ept> keyword is used in.</source>
+        </trans-unit>
+        <trans-unit id="387" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>this<ept id="p1">**</ept> reference can't be used in the following ways:</source>
+        </trans-unit>
+        <trans-unit id="388" translate="yes" xml:space="preserve">
+          <source>It can't qualify the names of member variables that are declared in the <bpt id="p1">**</bpt>classDeclaration<ept id="p1">**</ept> code.</source>
+        </trans-unit>
+        <trans-unit id="389" translate="yes" xml:space="preserve">
+          <source>It can't be used in a static method.</source>
+        </trans-unit>
+        <trans-unit id="390" translate="yes" xml:space="preserve">
+          <source>It can't qualify the names of static methods of the class or table.</source>
+        </trans-unit>
+        <trans-unit id="391" translate="yes" xml:space="preserve">
+          <source>Interfaces</source>
+        </trans-unit>
+        <trans-unit id="392" translate="yes" xml:space="preserve">
+          <source>An <bpt id="p1">*</bpt>interface<ept id="p1">*</ept> is a specification for a set of public instance methods.</source>
+        </trans-unit>
+        <trans-unit id="393" translate="yes" xml:space="preserve">
+          <source>An interface defines and enforces similarities between unrelated classes without having to derive one class from the other.</source>
+        </trans-unit>
+        <trans-unit id="394" translate="yes" xml:space="preserve">
+          <source>All interfaces are public, even if you don't explicitly add the <bpt id="p1">**</bpt>public<ept id="p1">**</ept> keyword ****in front of the <bpt id="p2">**</bpt>interface<ept id="p2">**</ept> keyword ****in the <bpt id="p3">**</bpt>classDeclaration<ept id="p3">**</ept> code.</source>
+        </trans-unit>
+        <trans-unit id="395" translate="yes" xml:space="preserve">
+          <source>The methods on an interface are also public.</source>
+        </trans-unit>
+        <trans-unit id="396" translate="yes" xml:space="preserve">
+          <source>Once again, explicit inclusion of the keyword <bpt id="p1">**</bpt>public<ept id="p1">**</ept> is optional.</source>
+        </trans-unit>
+        <trans-unit id="397" translate="yes" xml:space="preserve">
+          <source>To create an interface, follow these steps.</source>
+        </trans-unit>
+        <trans-unit id="398" translate="yes" xml:space="preserve">
+          <source>In Server Explorer, right-click the project, and then click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="399" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>New Item<ept id="p1">**</ept> dialog box, select <bpt id="p2">**</bpt>Interface<ept id="p2">**</ept>, and then enter a name for the interface.</source>
+        </trans-unit>
+        <trans-unit id="400" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="401" translate="yes" xml:space="preserve">
+          <source>When you add the <bpt id="p1">**</bpt>implements<ept id="p1">**</ept> keyword on a class declaration, the class must declare the methods that are specified by the interface.</source>
+        </trans-unit>
+        <trans-unit id="402" translate="yes" xml:space="preserve">
+          <source>A class declaration can implement multiple interfaces.</source>
+        </trans-unit>
+        <trans-unit id="403" translate="yes" xml:space="preserve">
+          <source>Just list the interfaces after the single occurrence of the <bpt id="p1">**</bpt>implements<ept id="p1">**</ept> keyword, and separate the interface names by using commas.</source>
+        </trans-unit>
+        <trans-unit id="404" translate="yes" xml:space="preserve">
+          <source>All interface methods that a class implements must be explicitly declared as <bpt id="p1">**</bpt>public<ept id="p1">**</ept> by using the <bpt id="p2">**</bpt>public<ept id="p2">**</ept> keyword in the class.</source>
+        </trans-unit>
+        <trans-unit id="405" translate="yes" xml:space="preserve">
+          <source>A class that implements an interface must also be declared as <bpt id="p1">**</bpt>public<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="406" translate="yes" xml:space="preserve">
+          <source>An interface can extend another interface by using the <bpt id="p1">**</bpt>extends<ept id="p1">**</ept> keyword.</source>
+        </trans-unit>
+        <trans-unit id="407" translate="yes" xml:space="preserve">
+          <source>However, an interface can't extend more than one interface.</source>
+        </trans-unit>
+        <trans-unit id="408" translate="yes" xml:space="preserve">
+          <source>Interface example</source>
+        </trans-unit>
+        <trans-unit id="409" translate="yes" xml:space="preserve">
+          <source>In the following example, an <bpt id="p1">**</bpt>Automobile<ept id="p1">**</ept> class implements an <bpt id="p2">**</bpt>IDrivable<ept id="p2">**</ept> interface.</source>
+        </trans-unit>
+        <trans-unit id="410" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>is<ept id="p1">**</ept> keyword is supported and lets you test whether a class implements an interface.</source>
+        </trans-unit>
+        <trans-unit id="411" translate="yes" xml:space="preserve">
+          <source>Class library overview</source>
+        </trans-unit>
+        <trans-unit id="412" translate="yes" xml:space="preserve">
+          <source>There are two kinds of classes: <bpt id="p1">*</bpt>application classes<ept id="p1">*</ept> and <bpt id="p2">*</bpt>system classes<ept id="p2">*</ept>.</source>
+        </trans-unit>
+        <trans-unit id="413" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Application classes<ept id="p1">**</ept> – These classes are implemented in X++.</source>
+        </trans-unit>
+        <trans-unit id="414" translate="yes" xml:space="preserve">
+          <source>They are available in the <bpt id="p1">**</bpt>Classes<ept id="p1">**</ept> node in Application Explorer.</source>
+        </trans-unit>
+        <trans-unit id="415" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>System classes<ept id="p1">**</ept> – These classes are sometimes known as <bpt id="p2">*</bpt>kernel classes<ept id="p2">*</ept> and are implemented in C++.</source>
+        </trans-unit>
+        <trans-unit id="416" translate="yes" xml:space="preserve">
+          <source>They are listed under the <bpt id="p1">**</bpt>System Documentation<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Classes<ept id="p2">**</ept> node in Application Explorer.</source>
+        </trans-unit>
+        <trans-unit id="417" translate="yes" xml:space="preserve">
+          <source>However, the source code for these classes isn't available.</source>
+        </trans-unit>
+        <trans-unit id="418" translate="yes" xml:space="preserve">
+          <source>For a list of these classes, see <bpt id="p1">[</bpt>API, class, and table reference<ept id="p1">](api-reference.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="419" translate="yes" xml:space="preserve">
+          <source>Substituting application classes for system classes</source>
+        </trans-unit>
+        <trans-unit id="420" translate="yes" xml:space="preserve">
+          <source>You should call the <bpt id="p1">*</bpt>substitute application classes<ept id="p1">*</ept> instead of the system classes that they extend.</source>
+        </trans-unit>
+        <trans-unit id="421" translate="yes" xml:space="preserve">
+          <source>In Application Explorer, under <bpt id="p1">**</bpt>System Documentation<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Classes<ept id="p2">**</ept>, several kernel or system classes have names that begin with a lowercase <bpt id="p3">*</bpt>x<ept id="p3">*</ept>.</source>
+        </trans-unit>
+        <trans-unit id="422" translate="yes" xml:space="preserve">
+          <source>These classes are known as <bpt id="p1">*</bpt>x-system classes<ept id="p1">*</ept>.</source>
+        </trans-unit>
+        <trans-unit id="423" translate="yes" xml:space="preserve">
+          <source>Examples of these system classes are <bpt id="p1">**</bpt>xApplication<ept id="p1">**</ept> and <bpt id="p2">**</bpt>xVersionControl<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="424" translate="yes" xml:space="preserve">
+          <source>Some of these classes are extended by application classes.</source>
+        </trans-unit>
+        <trans-unit id="425" translate="yes" xml:space="preserve">
+          <source>For example, the <bpt id="p1">**</bpt>Application<ept id="p1">**</ept> class extends the <bpt id="p2">**</bpt>xApplication<ept id="p2">**</ept> system class.</source>
+        </trans-unit>
+        <trans-unit id="426" translate="yes" xml:space="preserve">
+          <source>The classes that derive from x-system classes are known as substitute application classes.</source>
+        </trans-unit>
+        <trans-unit id="427" translate="yes" xml:space="preserve">
+          <source>In Application Explorer, under the <bpt id="p1">**</bpt>Classes<ept id="p1">**</ept> node, the icon next to the substitute application classes differs from the standard icon.</source>
+        </trans-unit>
+        <trans-unit id="428" translate="yes" xml:space="preserve">
+          <source>x-system classes</source>
+        </trans-unit>
+        <trans-unit id="429" translate="yes" xml:space="preserve">
+          <source>Some of the substitute application classes are associated with a special global variable that represents an instance of the class.</source>
+        </trans-unit>
+        <trans-unit id="430" translate="yes" xml:space="preserve">
+          <source>For example, the <bpt id="p1">**</bpt>appl<ept id="p1">**</ept> variable references a pre-instantiated object from the <bpt id="p2">**</bpt>Application<ept id="p2">**</ept> class.</source>
+        </trans-unit>
+        <trans-unit id="431" translate="yes" xml:space="preserve">
+          <source>The advantage of the <bpt id="p1">**</bpt>appl<ept id="p1">**</ept> variable is that the system maintains the object throughout the scope of your session.</source>
+        </trans-unit>
+        <trans-unit id="432" translate="yes" xml:space="preserve">
+          <source>Your code would be less efficient if it repeatedly used the <bpt id="p1">**</bpt>new Application()<ept id="p1">**</ept> syntax to obtain an instance of the <bpt id="p2">**</bpt>Application<ept id="p2">**</ept> class.</source>
+        </trans-unit>
+        <trans-unit id="433" translate="yes" xml:space="preserve">
+          <source>You should not use the <bpt id="p1">**</bpt>xApplication<ept id="p1">**</ept> system class.</source>
+        </trans-unit>
+        <trans-unit id="434" translate="yes" xml:space="preserve">
+          <source>Instead, use the <bpt id="p1">**</bpt>Application<ept id="p1">**</ept> substitute application class.</source>
+        </trans-unit>
+        <trans-unit id="435" translate="yes" xml:space="preserve">
+          <source>You can reference the static members of the <bpt id="p1">**</bpt>Application<ept id="p1">**</ept> class by using the following standard syntax: <bpt id="p2">**</bpt>Application::checkForNewBatchJobs()<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="436" translate="yes" xml:space="preserve">
+          <source>However, to reference the instance members of the <bpt id="p1">**</bpt>Application<ept id="p1">**</ept> class, you should use that class's <bpt id="p2">**</bpt>appl<ept id="p2">**</ept> variable, if it exists.</source>
+        </trans-unit>
+        <trans-unit id="437" translate="yes" xml:space="preserve">
+          <source>This pattern applies to most of the x-system classes.</source>
+        </trans-unit>
+        <trans-unit id="438" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Session<ept id="p1">**</ept> substitute application class is one exception, because there is no special global variable for <bpt id="p2">**</bpt>Session<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="439" translate="yes" xml:space="preserve">
+          <source>The following table lists the x-system classes that have a corresponding substitute application class.</source>
+        </trans-unit>
+        <trans-unit id="440" translate="yes" xml:space="preserve">
+          <source>The special global variables are also shown for those classes that have one.</source>
+        </trans-unit>
+        <trans-unit id="441" translate="yes" xml:space="preserve">
+          <source>Application class</source>
+        </trans-unit>
+        <trans-unit id="442" translate="yes" xml:space="preserve">
+          <source>x-system class</source>
+        </trans-unit>
+        <trans-unit id="443" translate="yes" xml:space="preserve">
+          <source>Global variable</source>
+        </trans-unit>
+        <trans-unit id="444" translate="yes" xml:space="preserve">
+          <source>Args</source>
+        </trans-unit>
+        <trans-unit id="445" translate="yes" xml:space="preserve">
+          <source>xArgs</source>
+        </trans-unit>
+        <trans-unit id="446" translate="yes" xml:space="preserve">
+          <source>Not applicable</source>
+        </trans-unit>
+        <trans-unit id="447" translate="yes" xml:space="preserve">
+          <source>Application</source>
+        </trans-unit>
+        <trans-unit id="448" translate="yes" xml:space="preserve">
+          <source>xApplication</source>
+        </trans-unit>
+        <trans-unit id="449" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>appl<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="450" translate="yes" xml:space="preserve">
+          <source>ClassFactory</source>
+        </trans-unit>
+        <trans-unit id="451" translate="yes" xml:space="preserve">
+          <source>xClassFactory</source>
+        </trans-unit>
+        <trans-unit id="452" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>classFactory<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="453" translate="yes" xml:space="preserve">
+          <source>Company</source>
+        </trans-unit>
+        <trans-unit id="454" translate="yes" xml:space="preserve">
+          <source>xCompany</source>
+        </trans-unit>
+        <trans-unit id="455" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>appl.company<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="456" translate="yes" xml:space="preserve">
+          <source>Global</source>
+        </trans-unit>
+        <trans-unit id="457" translate="yes" xml:space="preserve">
+          <source>xGlobal</source>
+        </trans-unit>
+        <trans-unit id="458" translate="yes" xml:space="preserve">
+          <source>Not applicable</source>
+        </trans-unit>
+        <trans-unit id="459" translate="yes" xml:space="preserve">
+          <source>Info</source>
+        </trans-unit>
+        <trans-unit id="460" translate="yes" xml:space="preserve">
+          <source>xInfo</source>
+        </trans-unit>
+        <trans-unit id="461" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Infolog<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="462" translate="yes" xml:space="preserve">
+          <source>MenuFunction</source>
+        </trans-unit>
+        <trans-unit id="463" translate="yes" xml:space="preserve">
+          <source>xMenuFunction</source>
+        </trans-unit>
+        <trans-unit id="464" translate="yes" xml:space="preserve">
+          <source>Not applicable</source>
+        </trans-unit>
+        <trans-unit id="465" translate="yes" xml:space="preserve">
+          <source>Session</source>
+        </trans-unit>
+        <trans-unit id="466" translate="yes" xml:space="preserve">
+          <source>xSession</source>
+        </trans-unit>
+        <trans-unit id="467" translate="yes" xml:space="preserve">
+          <source>Not applicable</source>
+        </trans-unit>
+        <trans-unit id="468" translate="yes" xml:space="preserve">
+          <source>VersionControl</source>
+        </trans-unit>
+        <trans-unit id="469" translate="yes" xml:space="preserve">
+          <source>xVersionControl</source>
+        </trans-unit>
+        <trans-unit id="470" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>versionControl<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="471" translate="yes" xml:space="preserve">
+          <source>Example of x-system classes</source>
+        </trans-unit>
+        <trans-unit id="472" translate="yes" xml:space="preserve">
+          <source>The following example shows the syntax for using several special variables that reference instances of the substitute application classes.</source>
+        </trans-unit>
+        <trans-unit id="473" translate="yes" xml:space="preserve">
+          <source>Running startup commands</source>
+        </trans-unit>
+        <trans-unit id="474" translate="yes" xml:space="preserve">
+          <source>You use the <bpt id="p1">**</bpt>SysStartupCmd<ept id="p1">**</ept> class framework to run commands at startup.</source>
+        </trans-unit>
+        <trans-unit id="475" translate="yes" xml:space="preserve">
+          <source>When Finance and Operations starts, calls are made to the <bpt id="p1">**</bpt>startup<ept id="p1">**</ept> methods on the application-substituted kernel classes <bpt id="p2">**</bpt>Application<ept id="p2">**</ept> (<bpt id="p3">**</bpt>Application.startup<ept id="p3">**</ept>) and <bpt id="p4">**</bpt>Info<ept id="p4">**</ept> (<bpt id="p5">**</bpt>Info.startup<ept id="p5">**</ept>).</source>
+        </trans-unit>
+        <trans-unit id="476" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>startup<ept id="p1">**</ept> methods are used for vital system and version-specific calls, and you must never directly modify these methods.</source>
+        </trans-unit>
+        <trans-unit id="477" translate="yes" xml:space="preserve">
+          <source>Instead, use the <bpt id="p1">**</bpt>SysStartupCmd<ept id="p1">**</ept> framework.</source>
+        </trans-unit>
+        <trans-unit id="478" translate="yes" xml:space="preserve">
+          <source>Serious issues can occur if the SYS layer versions of the <bpt id="p1">**</bpt>startup<ept id="p1">**</ept> methods aren't called.</source>
+        </trans-unit>
+        <trans-unit id="479" translate="yes" xml:space="preserve">
+          <source>The following example shows the order that calls are run in when Finance and Operations starts.</source>
+        </trans-unit>
+        <trans-unit id="480" translate="yes" xml:space="preserve">
+          <source>Commands that are available when Finance and Operations starts</source>
+        </trans-unit>
+        <trans-unit id="481" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>SysStartupCmd.construct<ept id="p1">**</ept> method lists the commands that are available when Finance and Operations starts.</source>
+        </trans-unit>
+        <trans-unit id="482" translate="yes" xml:space="preserve">
+          <source>Here are some of these commands:</source>
+        </trans-unit>
+        <trans-unit id="483" translate="yes" xml:space="preserve">
+          <source>AutoRun</source>
+        </trans-unit>
+        <trans-unit id="484" translate="yes" xml:space="preserve">
+          <source>AOTImport</source>
+        </trans-unit>
+        <trans-unit id="485" translate="yes" xml:space="preserve">
+          <source>Synchronize</source>
+        </trans-unit>
+        <trans-unit id="486" translate="yes" xml:space="preserve">
+          <source>The following example shows how to run a new command when Finance and Operations starts.</source>
+        </trans-unit>
+        <trans-unit id="487" translate="yes" xml:space="preserve">
+          <source>First, a class that extends <bpt id="p1">**</bpt>SysStartupCmd<ept id="p1">**</ept> is created.</source>
+        </trans-unit>
+        <trans-unit id="488" translate="yes" xml:space="preserve">
+          <source>This new class performs your specific task.</source>
+        </trans-unit>
+        <trans-unit id="489" translate="yes" xml:space="preserve">
+          <source>You then modify the construct method on <bpt id="p1">**</bpt>SysStartupCmd<ept id="p1">**</ept> to call your class.</source>
+        </trans-unit>
+        <trans-unit id="490" translate="yes" xml:space="preserve">
+          <source>In the Finance and Operations Configuration Utility, on the <bpt id="p1">**</bpt>General<ept id="p1">**</ept> tab, in the <bpt id="p2">**</bpt>Command to run at application startup<ept id="p2">**</ept> field, you can add commands that are run at startup.</source>
+        </trans-unit>
+        <trans-unit id="491" translate="yes" xml:space="preserve">
+          <source>Alternatively, you can use the <bpt id="p1">**</bpt>-startupcmd= <bpt id="p2">*</bpt>MyCommand<ept id="p2">*</ept><ept id="p1">**</ept> command-line parameter.</source>
+        </trans-unit>
+        <trans-unit id="492" translate="yes" xml:space="preserve">
+          <source>Batch processing classes</source>
+        </trans-unit>
+        <trans-unit id="493" translate="yes" xml:space="preserve">
+          <source>You implement classes by using the batch processing system, and by extending the <bpt id="p1">**</bpt>RunBase<ept id="p1">**</ept> and <bpt id="p2">**</bpt>RunBaseBatch<ept id="p2">**</ept> classes.</source>
+        </trans-unit>
+        <trans-unit id="494" translate="yes" xml:space="preserve">
+          <source>To remove the <bpt id="p1">**</bpt>Recurrence<ept id="p1">**</ept> button from the <bpt id="p2">**</bpt>Batch processing<ept id="p2">**</ept> dialog box, you use the <bpt id="p3">**</bpt>Args::parmEnum<ept id="p3">**</ept> method.</source>
+        </trans-unit>
+        <trans-unit id="495" translate="yes" xml:space="preserve">
+          <source>We recommend that you designate a class to run as a server-bound batch method.</source>
+        </trans-unit>
+        <trans-unit id="496" translate="yes" xml:space="preserve">
+          <source>Server-bound batch methods are more secure than batch methods that aren't server-bound for the following reasons:</source>
+        </trans-unit>
+        <trans-unit id="497" translate="yes" xml:space="preserve">
+          <source>The method is run by using the permissions of the user who submitted the method.</source>
+        </trans-unit>
+        <trans-unit id="498" translate="yes" xml:space="preserve">
+          <source>The method can use only specific <bpt id="p1">**</bpt>Info<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Global<ept id="p2">**</ept> class methods to interact with the client that is processing it.</source>
+        </trans-unit>
+        <trans-unit id="499" translate="yes" xml:space="preserve">
+          <source>This restriction limits interaction with the client.</source>
+        </trans-unit>
+        <trans-unit id="500" translate="yes" xml:space="preserve">
+          <source>Enable a class to run as a server-bound batch method</source>
+        </trans-unit>
+        <trans-unit id="501" translate="yes" xml:space="preserve">
+          <source>Create a class that extends the <bpt id="p1">**</bpt>RunBaseBatch<ept id="p1">**</ept> class.</source>
+        </trans-unit>
+        <trans-unit id="502" translate="yes" xml:space="preserve">
+          <source>Override the <bpt id="p1">**</bpt>RunBaseBatch.runsImpersonated<ept id="p1">**</ept> method to return a value of <bpt id="p2">**</bpt>true<ept id="p2">**</ept>, as shown in the following example.</source>
+        </trans-unit>
+        <trans-unit id="503" translate="yes" xml:space="preserve">
+          <source>Confirm that the class calls only the following <bpt id="p1">**</bpt>Info<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Global<ept id="p2">**</ept> class methods:</source>
+        </trans-unit>
+        <trans-unit id="504" translate="yes" xml:space="preserve">
+          <source>add</source>
+        </trans-unit>
+        <trans-unit id="505" translate="yes" xml:space="preserve">
+          <source>Info.copy</source>
+        </trans-unit>
+        <trans-unit id="506" translate="yes" xml:space="preserve">
+          <source>Info.cut</source>
+        </trans-unit>
+        <trans-unit id="507" translate="yes" xml:space="preserve">
+          <source>Info.import</source>
+        </trans-unit>
+        <trans-unit id="508" translate="yes" xml:space="preserve">
+          <source>Info.export</source>
+        </trans-unit>
+        <trans-unit id="509" translate="yes" xml:space="preserve">
+          <source>Info.line</source>
+        </trans-unit>
+        <trans-unit id="510" translate="yes" xml:space="preserve">
+          <source>Info.num</source>
+        </trans-unit>
+        <trans-unit id="511" translate="yes" xml:space="preserve">
+          <source>Global::error</source>
+        </trans-unit>
+        <trans-unit id="512" translate="yes" xml:space="preserve">
+          <source>Global::info</source>
+        </trans-unit>
+        <trans-unit id="513" translate="yes" xml:space="preserve">
+          <source>Global::warning</source>
+        </trans-unit>
+        <trans-unit id="514" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> The <bpt id="p2">**</bpt>Info.line<ept id="p2">**</ept> and <bpt id="p3">**</bpt>Info.num<ept id="p3">**</ept> methods are inherited from the <bpt id="p4">**</bpt>xInfo<ept id="p4">**</ept> class.</source>
+        </trans-unit>
+        <trans-unit id="515" translate="yes" xml:space="preserve">
+          <source>Removing the Recurrence button from the batch processing dialog box</source>
+        </trans-unit>
+        <trans-unit id="516" translate="yes" xml:space="preserve">
+          <source>When you implement a class by using the batch processing system, you can remove the <bpt id="p1">**</bpt>Recurrence<ept id="p1">**</ept> button by calling the <bpt id="p2">**</bpt>Args.parmEnum<ept id="p2">**</ept> method and passing the <bpt id="p3">**</bpt>NoYes::Yes<ept id="p3">**</ept> system enumeration value.</source>
+        </trans-unit>
+        <trans-unit id="517" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>NoYes<ept id="p1">**</ept> system enumeration determines whether the <bpt id="p2">**</bpt>Recurrence<ept id="p2">**</ept> button is removed from the dialog box.</source>
+        </trans-unit>
+        <trans-unit id="518" translate="yes" xml:space="preserve">
+          <source>The default value is <bpt id="p1">**</bpt>NoYes::No<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="519" translate="yes" xml:space="preserve">
+          <source>In the following example, the <bpt id="p1">**</bpt>InventTransferMultiShip<ept id="p1">**</ept> class is implemented.</source>
+        </trans-unit>
+        <trans-unit id="520" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>BatchDialog::main<ept id="p1">**</ept> method creates the <bpt id="p2">**</bpt>Batch processing<ept id="p2">**</ept> dialog box.</source>
+        </trans-unit>
+        <trans-unit id="521" translate="yes" xml:space="preserve">
+          <source>Image manipulation classes</source>
+        </trans-unit>
+        <trans-unit id="522" translate="yes" xml:space="preserve">
+          <source>Two system classes let you to manipulate graphics and icons: <bpt id="p1">**</bpt>Image<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Imagelist<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="523" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Image<ept id="p1">**</ept> – This class lets you load, save, and manipulate individual images.</source>
+        </trans-unit>
+        <trans-unit id="524" translate="yes" xml:space="preserve">
+          <source>For example, you can capture a screen and save it as an image, crop or rotate an image, or manipulate the color depth.</source>
+        </trans-unit>
+        <trans-unit id="525" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Imagelist<ept id="p1">**</ept> – This class lets you work with a set of images that have common properties, such as the size and transparency color.</source>
+        </trans-unit>
+        <trans-unit id="526" translate="yes" xml:space="preserve">
+          <source>You can view the image lists that are used in Finance and Operations in the <bpt id="p1">**</bpt>ImageListAppl<ph id="ph1">\_</ph><ph id="ph2">\*</ph><ept id="p1">**</ept> application classes.</source>
+        </trans-unit>
+        <trans-unit id="527" translate="yes" xml:space="preserve">
+          <source>Query object model</source>
+        </trans-unit>
+        <trans-unit id="528" translate="yes" xml:space="preserve">
+          <source>The query object model contains classes that are used to define and run a query.</source>
+        </trans-unit>
+        <trans-unit id="529" translate="yes" xml:space="preserve">
+          <source>The query objects are used to define the query data source, the fields that are returned, record ranges, and relations to child data sources.</source>
+        </trans-unit>
+        <trans-unit id="530" translate="yes" xml:space="preserve">
+          <source>The query classes are more visible when you create a dynamic query in code, but they are also used behind the scenes when you create a static query in Application Explorer.</source>
+        </trans-unit>
+        <trans-unit id="531" translate="yes" xml:space="preserve">
+          <source>The following table describes the classes in the query object model.</source>
+        </trans-unit>
+        <trans-unit id="532" translate="yes" xml:space="preserve">
+          <source>System class</source>
+        </trans-unit>
+        <trans-unit id="533" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="534" translate="yes" xml:space="preserve">
+          <source>QueryRun</source>
+        </trans-unit>
+        <trans-unit id="535" translate="yes" xml:space="preserve">
+          <source>This class runs the query and fetches the data.</source>
+        </trans-unit>
+        <trans-unit id="536" translate="yes" xml:space="preserve">
+          <source>Query</source>
+        </trans-unit>
+        <trans-unit id="537" translate="yes" xml:space="preserve">
+          <source>This class holds some properties, and has one or more related data sources.</source>
+        </trans-unit>
+        <trans-unit id="538" translate="yes" xml:space="preserve">
+          <source>It's the top level of the query definition.</source>
+        </trans-unit>
+        <trans-unit id="539" translate="yes" xml:space="preserve">
+          <source>QueryBuildDataSource</source>
+        </trans-unit>
+        <trans-unit id="540" translate="yes" xml:space="preserve">
+          <source>This class defines access to a single data source in the query.</source>
+        </trans-unit>
+        <trans-unit id="541" translate="yes" xml:space="preserve">
+          <source>If there is more than one data source at the same level in a query, separate SQL statements are produced and are run sequentially.</source>
+        </trans-unit>
+        <trans-unit id="542" translate="yes" xml:space="preserve">
+          <source>If one data source is a child of another data source, a join is created between the two data sources.</source>
+        </trans-unit>
+        <trans-unit id="543" translate="yes" xml:space="preserve">
+          <source>QueryBuildFieldList</source>
+        </trans-unit>
+        <trans-unit id="544" translate="yes" xml:space="preserve">
+          <source>This class defines the fields that are returned from the database.</source>
+        </trans-unit>
+        <trans-unit id="545" translate="yes" xml:space="preserve">
+          <source>By default, the field list is dynamic, and all fields are returned from the data source table, map, or view.</source>
+        </trans-unit>
+        <trans-unit id="546" translate="yes" xml:space="preserve">
+          <source>Each data source has only one <bpt id="p1">**</bpt>QueryBuildFieldList<ept id="p1">**</ept> object.</source>
+        </trans-unit>
+        <trans-unit id="547" translate="yes" xml:space="preserve">
+          <source>This object contains information about all selected fields.</source>
+        </trans-unit>
+        <trans-unit id="548" translate="yes" xml:space="preserve">
+          <source>You can specify aggregate functions, such as <bpt id="p1">**</bpt>SUM<ept id="p1">**</ept>, <bpt id="p2">**</bpt>COUNT<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>AVG<ept id="p3">**</ept>, on the field list object.</source>
+        </trans-unit>
+        <trans-unit id="549" translate="yes" xml:space="preserve">
+          <source>QueryBuildRange</source>
+        </trans-unit>
+        <trans-unit id="550" translate="yes" xml:space="preserve">
+          <source>This class defines a subset of records that is returned, based on a single field.</source>
+        </trans-unit>
+        <trans-unit id="551" translate="yes" xml:space="preserve">
+          <source>A range is translated into a <bpt id="p1">**</bpt>WHERE<ept id="p1">**</ept> clause in the query SQL statement.</source>
+        </trans-unit>
+        <trans-unit id="552" translate="yes" xml:space="preserve">
+          <source>If more than one field is used to limit the query (<bpt id="p1">**</bpt>WHERE<ept id="p1">**</ept> clause), the data source will contain more than one range.</source>
+        </trans-unit>
+        <trans-unit id="553" translate="yes" xml:space="preserve">
+          <source>QueryBuildDynalink</source>
+        </trans-unit>
+        <trans-unit id="554" translate="yes" xml:space="preserve">
+          <source>This class contains information about a relation (limitation) to an external record.</source>
+        </trans-unit>
+        <trans-unit id="555" translate="yes" xml:space="preserve">
+          <source>When the query is run, this information is converted to additional entries in the <bpt id="p1">**</bpt>WHERE<ept id="p1">**</ept> clause of the query SQL statement.</source>
+        </trans-unit>
+        <trans-unit id="556" translate="yes" xml:space="preserve">
+          <source>This class can exist only on the parent data source of a query.</source>
+        </trans-unit>
+        <trans-unit id="557" translate="yes" xml:space="preserve">
+          <source>Forms use the function when two data sources are synchronized.</source>
+        </trans-unit>
+        <trans-unit id="558" translate="yes" xml:space="preserve">
+          <source>The child data source will then contain one or more DLLs to the parent data source.</source>
+        </trans-unit>
+        <trans-unit id="559" translate="yes" xml:space="preserve">
+          <source>The function is used even if the two data sources are put in two different forms but are still synchronized.</source>
+        </trans-unit>
+        <trans-unit id="560" translate="yes" xml:space="preserve">
+          <source>QueryBuildLink</source>
+        </trans-unit>
+        <trans-unit id="561" translate="yes" xml:space="preserve">
+          <source>This class specifies the relation between the two data sources in the join.</source>
+        </trans-unit>
+        <trans-unit id="562" translate="yes" xml:space="preserve">
+          <source>This class can exist only on a child data source.</source>
+        </trans-unit>
+        <trans-unit id="563" translate="yes" xml:space="preserve">
+          <source>System classes overview</source>
+        </trans-unit>
+        <trans-unit id="564" translate="yes" xml:space="preserve">
+          <source>System classes (or kernel classes) are implemented in C++.</source>
+        </trans-unit>
+        <trans-unit id="565" translate="yes" xml:space="preserve">
+          <source>The source for these classes isn't available.</source>
+        </trans-unit>
+        <trans-unit id="566" translate="yes" xml:space="preserve">
+          <source>A system class can have the following characteristics:</source>
+        </trans-unit>
+        <trans-unit id="567" translate="yes" xml:space="preserve">
+          <source>Static methods (or class methods)</source>
+        </trans-unit>
+        <trans-unit id="568" translate="yes" xml:space="preserve">
+          <source>Dynamic methods</source>
+        </trans-unit>
+        <trans-unit id="569" translate="yes" xml:space="preserve">
+          <source>Properties – These properties are member functions that are used to set properties.</source>
+        </trans-unit>
+        <trans-unit id="570" translate="yes" xml:space="preserve">
+          <source>An example is <bpt id="p1">**</bpt>LeftMargin<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="571" translate="yes" xml:space="preserve">
+          <source>You can't override system class methods.</source>
+        </trans-unit>
+        <trans-unit id="572" translate="yes" xml:space="preserve">
+          <source>It isn't our intention that you will use the system classes to design your application objects from scratch.</source>
+        </trans-unit>
+        <trans-unit id="573" translate="yes" xml:space="preserve">
+          <source>Instead, use them to extend or modify the default functionality in Application Explorer.</source>
+        </trans-unit>
+        <trans-unit id="574" translate="yes" xml:space="preserve">
+          <source>For example, you can dynamically add extra information to an existing report.</source>
+        </trans-unit>
+        <trans-unit id="575" translate="yes" xml:space="preserve">
+          <source>Alternatively, you can change the options that are available on a page, based on the user's selection on a previous page.</source>
+        </trans-unit>
+        <trans-unit id="576" translate="yes" xml:space="preserve">
+          <source>Collection classes</source>
+        </trans-unit>
+        <trans-unit id="577" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">*</bpt>collection classes<ept id="p1">*</ept> let you create lists, sets, structs, maps, and arrays.</source>
+        </trans-unit>
+        <trans-unit id="578" translate="yes" xml:space="preserve">
+          <source>Application object classes</source>
+        </trans-unit>
+        <trans-unit id="579" translate="yes" xml:space="preserve">
+          <source>These system classes hold functions that are activated whenever you use Application Explorer to create your application.</source>
+        </trans-unit>
+        <trans-unit id="580" translate="yes" xml:space="preserve">
+          <source>For example, the system uses the <bpt id="p1">**</bpt>FormDesign<ept id="p1">**</ept> class when you define the layout of your form in the <bpt id="p2">**</bpt>Designs<ept id="p2">**</ept> node in Application Explorer.</source>
+        </trans-unit>
+        <trans-unit id="581" translate="yes" xml:space="preserve">
+          <source>These classes also let you to create and modify application objects.</source>
+        </trans-unit>
+        <trans-unit id="582" translate="yes" xml:space="preserve">
+          <source>Integration classes</source>
+        </trans-unit>
+        <trans-unit id="583" translate="yes" xml:space="preserve">
+          <source>The integration with the environment is typically implemented by classes.</source>
+        </trans-unit>
+        <trans-unit id="584" translate="yes" xml:space="preserve">
+          <source>Here are some examples of the classes in this category:</source>
+        </trans-unit>
+        <trans-unit id="585" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>COM<ept id="p1">**</ept> – The call of methods on COM objects.</source>
+        </trans-unit>
+        <trans-unit id="586" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>DLL<ept id="p1">**</ept> – The call of Microsoft Windows DLL functions.</source>
+        </trans-unit>
+        <trans-unit id="587" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>IO<ept id="p1">**</ept> – Read and write external files.</source>
+        </trans-unit>
+        <trans-unit id="588" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>ODBCConnection<ept id="p1">**</ept> – An Open Database Connectivity (ODBC) interface to a foreign database.</source>
+        </trans-unit>
+        <trans-unit id="589" translate="yes" xml:space="preserve">
+          <source>Event terminology and keywords</source>
+        </trans-unit>
+        <trans-unit id="590" translate="yes" xml:space="preserve">
+          <source>You can use the event design pattern to make your code more modular and reusable.</source>
+        </trans-unit>
+        <trans-unit id="591" translate="yes" xml:space="preserve">
+          <source>The term <bpt id="p1">*</bpt>event<ept id="p1">*</ept> is a metaphor that explains how delegates are used.</source>
+        </trans-unit>
+        <trans-unit id="592" translate="yes" xml:space="preserve">
+          <source>When something important occurs during a program run, other modules might have to process the occurrence.</source>
+        </trans-unit>
+        <trans-unit id="593" translate="yes" xml:space="preserve">
+          <source>These important occurrences are known as <bpt id="p1">*</bpt>events<ept id="p1">*</ept>.</source>
+        </trans-unit>
+        <trans-unit id="594" translate="yes" xml:space="preserve">
+          <source>When an event occurs, the program tells its notifier for the event that the notifier must send notifications about the event.</source>
+        </trans-unit>
+        <trans-unit id="595" translate="yes" xml:space="preserve">
+          <source>A notification must be sent to all the event handlers that are subscribers of the notifier.</source>
+        </trans-unit>
+        <trans-unit id="596" translate="yes" xml:space="preserve">
+          <source>When the program tells its notifier to send the notifications, we call that process <bpt id="p1">*</bpt>raising<ept id="p1">*</ept> an event.</source>
+        </trans-unit>
+        <trans-unit id="597" translate="yes" xml:space="preserve">
+          <source>The following table shows the terms that are used to describe the event metaphor.</source>
+        </trans-unit>
+        <trans-unit id="598" translate="yes" xml:space="preserve">
+          <source>Term</source>
+        </trans-unit>
+        <trans-unit id="599" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="600" translate="yes" xml:space="preserve">
+          <source>Event</source>
+        </trans-unit>
+        <trans-unit id="601" translate="yes" xml:space="preserve">
+          <source>An important occurrence in a program module where additional modules must process the occurrence.</source>
+        </trans-unit>
+        <trans-unit id="602" translate="yes" xml:space="preserve">
+          <source>Notifier</source>
+        </trans-unit>
+        <trans-unit id="603" translate="yes" xml:space="preserve">
+          <source>The program element that sends information about the event to all the event handlers that are subscribed to the notifier.</source>
+        </trans-unit>
+        <trans-unit id="604" translate="yes" xml:space="preserve">
+          <source>Subscriber</source>
+        </trans-unit>
+        <trans-unit id="605" translate="yes" xml:space="preserve">
+          <source>The program functions or methods that are subscribed to an event notifier.</source>
+        </trans-unit>
+        <trans-unit id="606" translate="yes" xml:space="preserve">
+          <source>Event handler</source>
+        </trans-unit>
+        <trans-unit id="607" translate="yes" xml:space="preserve">
+          <source>The methods that subscribe to an event notifier.</source>
+        </trans-unit>
+        <trans-unit id="608" translate="yes" xml:space="preserve">
+          <source>Only the appropriate kind of methods can be event handlers.</source>
+        </trans-unit>
+        <trans-unit id="609" translate="yes" xml:space="preserve">
+          <source>Keywords that are used for programming that uses delegates</source>
+        </trans-unit>
+        <trans-unit id="610" translate="yes" xml:space="preserve">
+          <source>The following table shows the keywords that describe the use of delegates.</source>
+        </trans-unit>
+        <trans-unit id="611" translate="yes" xml:space="preserve">
+          <source>Keyword or term</source>
+        </trans-unit>
+        <trans-unit id="612" translate="yes" xml:space="preserve">
+          <source>Code</source>
+        </trans-unit>
+        <trans-unit id="613" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="614" translate="yes" xml:space="preserve">
+          <source>delegate</source>
+        </trans-unit>
+        <trans-unit id="615" translate="yes" xml:space="preserve">
+          <source>delegate myDelegate(str <ph id="ph1">\_</ph>information) {}</source>
+        </trans-unit>
+        <trans-unit id="616" translate="yes" xml:space="preserve">
+          <source>The code shows what the delegate looks like in the method editor in the Microsoft MorphX client.</source>
+        </trans-unit>
+        <trans-unit id="617" translate="yes" xml:space="preserve">
+          <source>Because the return type is always <bpt id="p1">**</bpt>void<ept id="p1">**</ept>, it isn't mentioned in the syntax.</source>
+        </trans-unit>
+        <trans-unit id="618" translate="yes" xml:space="preserve">
+          <source>No code is allowed inside the braces ({}).</source>
+        </trans-unit>
+        <trans-unit id="619" translate="yes" xml:space="preserve">
+          <source>eventHandler</source>
+        </trans-unit>
+        <trans-unit id="620" translate="yes" xml:space="preserve">
+          <source>myClassInstance.myDelegate += eventHandler(otherClass.myInstanceMethod);</source>
+        </trans-unit>
+        <trans-unit id="621" translate="yes" xml:space="preserve">
+          <source>Although the syntax of the <bpt id="p1">**</bpt>eventHandler<ept id="p1">**</ept> keyword might give the impression that <bpt id="p2">**</bpt>eventHandler<ept id="p2">**</ept> is an X++ function, it isn't a function.</source>
+        </trans-unit>
+        <trans-unit id="622" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>eventHandler<ept id="p1">**</ept> keyword tells the compiler that a method is being subscribed to a delegate.</source>
+        </trans-unit>
+        <trans-unit id="623" translate="yes" xml:space="preserve">
+          <source>Subscribe or add a method to a delegate</source>
+        </trans-unit>
+        <trans-unit id="624" translate="yes" xml:space="preserve">
+          <source>myClassInstance.myDelegate += eventHandler(OtherClass::aStaticMethod);</source>
+        </trans-unit>
+        <trans-unit id="625" translate="yes" xml:space="preserve">
+          <source>In the code, the static method <bpt id="p1">**</bpt>OtherClass::aStaticMethod<ept id="p1">**</ept> becomes subscribed to the delegate.</source>
+        </trans-unit>
+        <trans-unit id="626" translate="yes" xml:space="preserve">
+          <source>Call a delegate</source>
+        </trans-unit>
+        <trans-unit id="627" translate="yes" xml:space="preserve">
+          <source>myClassInstance.myDelegate("Hello");</source>
+        </trans-unit>
+        <trans-unit id="628" translate="yes" xml:space="preserve">
+          <source>This call to the delegate prompts the delegate to call each method that is subscribed to the delegate.</source>
+        </trans-unit>
+        <trans-unit id="629" translate="yes" xml:space="preserve">
+          <source>The subscribed methods are called in the same order in which they were added to the delegate.</source>
+        </trans-unit>
+        <trans-unit id="630" translate="yes" xml:space="preserve">
+          <source>One subscribed method must be completed before the delegate calls the next method.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

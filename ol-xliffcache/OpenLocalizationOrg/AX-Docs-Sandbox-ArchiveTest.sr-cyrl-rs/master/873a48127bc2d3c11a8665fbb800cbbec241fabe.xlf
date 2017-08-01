@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">873a48127bc2d3c11a8665fbb800cbbec241fabe</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\lifecycle-services\ax-2012\configure-sql-server-integration-services-multiple-versions-dixf.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">a9b0f4336b01bc0d255915397a12dcb6adf30531</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">92e6af3f5ad99a257302d6a1f2ae89864ee387e3</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Configure the version of SSIS used by the AX 2012 Data import/export framework</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Configure the version of SSIS used by the AX 2012 Data import/export framework</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>This topic only applies to environments that are running Microsoft Dynamics AX 2012 R2 with <bpt id="p1">[</bpt>KB 3018235<ept id="p1">](https://mbs2.microsoft.com/Knowledgebase/KBDisplay.aspx?scid=kb;en-us;3018235)</ept> installed.</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>KB 3018235 is required to use Data Import/Export Framework for AX 2012 R2 CU7 with SQL Server 2014 Integration Services.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>If you are in an environment in which two versions of Microsoft SQL Server Integration Services are installed on the same computer, by default, the Data Import/Export Framework Windows service will attach to the oldest version of Integration Services that it can find.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>SQL Server 2008 Integration Services is the oldest supported version.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>You can force the Data Import/Export Framework to use another version of Integration Services by using redirecting assembly versions.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>We strongly recommend that you use Data Import/Export Framework in an environment with only one version of SQL Server Integration Services installed.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>To see which versions of Integration Services are supported with the Data Import/Export Framework, see the <bpt id="p1">[</bpt>Microsoft Dynamics AX 2012 System Requirements<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=165377)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Force the Data import/export framework to use a version of Integration Services other than the default</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>You can force the Data Import/Export Framework to use a version of Integration Services other than the default by <bpt id="p1">[</bpt>redirecting assembly versions<ept id="p1">](https://msdn.microsoft.com/en-us/library/7wd6ex19(v=vs.110).aspx)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Caution:</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>If the assembly version redirection is setup incorrectly, for example, by redirecting to a version of Integration Services that is not installed, the Data Import/Export Framework will not work correctly.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Locate the installation directory of the Data Import/Export Framework service component.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Open the file <bpt id="p1">**</bpt>Microsoft.Dynamics.AX.DMF.SSISHelperService.exe.config<ept id="p1">**</ept> in a text editor.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Locate the <bpt id="p1">**</bpt><ph id="ph1">&amp;lt;</ph>runtime<ph id="ph2">&amp;gt;</ph><ept id="p1">**</ept> element in the file.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Inside this element, add the following code.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Code to redirect to SQL Server 2012 Integration Services     <ph id="ph1">&lt;assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1"&gt;</ph> <ph id="ph2">&lt;dependentAssembly&gt;</ph> <ph id="ph3">&lt;assemblyIdentity name="Microsoft.SqlServer.DTSPipelineWrap"
+              publicKeyToken="89845dcd8080cc91" /&gt;</ph> <ph id="ph4">&lt;bindingRedirect oldVersion="10.0.0.0" newVersion="11.0.0.0" /&gt;</ph> <ph id="ph5">&lt;/dependentAssembly&gt;</ph> <ph id="ph6">&lt;dependentAssembly&gt;</ph> <ph id="ph7">&lt;assemblyIdentity name="Microsoft.SqlServer.DTSRuntimeWrap"
+              publicKeyToken="89845dcd8080cc91" /&gt;</ph> <ph id="ph8">&lt;bindingRedirect oldVersion="10.0.0.0" newVersion="11.0.0.0" /&gt;</ph> <ph id="ph9">&lt;/dependentAssembly&gt;</ph> <ph id="ph10">&lt;dependentAssembly&gt;</ph> <ph id="ph11">&lt;assemblyIdentity name="Microsoft.SqlServer.ManagedDTS"
+              publicKeyToken="89845dcd8080cc91" /&gt;</ph> <ph id="ph12">&lt;bindingRedirect oldVersion="10.0.0.0" newVersion="11.0.0.0" /&gt;</ph> <ph id="ph13">&lt;/dependentAssembly&gt;</ph> <ph id="ph14">&lt;dependentAssembly&gt;</ph> <ph id="ph15">&lt;assemblyIdentity name="Microsoft.SqlServer.PipelineHost"
+              publicKeyToken="89845dcd8080cc91" /&gt;</ph> <ph id="ph16">&lt;bindingRedirect oldVersion="10.0.0.0" newVersion="11.0.0.0" /&gt;</ph> <ph id="ph17">&lt;/dependentAssembly&gt;</ph> <ph id="ph18">&lt;dependentAssembly&gt;</ph> <ph id="ph19">&lt;assemblyIdentity name="Microsoft.SqlServer.SQLTask"
+              publicKeyToken="89845dcd8080cc91" /&gt;</ph> <ph id="ph20">&lt;bindingRedirect oldVersion="10.0.0.0" newVersion="11.0.0.0" /&gt;</ph> <ph id="ph21">&lt;/dependentAssembly&gt;</ph> <ph id="ph22">&lt;dependentAssembly&gt;</ph> <ph id="ph23">&lt;assemblyIdentity name="Microsoft.SqlServer.XmlSrc"
+              publicKeyToken="89845dcd8080cc91" /&gt;</ph> <ph id="ph24">&lt;bindingRedirect oldVersion="10.0.0.0" newVersion="11.0.0.0" /&gt;</ph> <ph id="ph25">&lt;/dependentAssembly&gt;</ph> <ph id="ph26">&lt;/assemblyBinding&gt;</ph></source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Code to redirect to SQL Server 2014 Integration Services         <ph id="ph1">&lt;assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1"&gt;</ph> <ph id="ph2">&lt;dependentAssembly&gt;</ph> <ph id="ph3">&lt;assemblyIdentity name="Microsoft.SqlServer.DTSPipelineWrap"
+              publicKeyToken="89845dcd8080cc91" /&gt;</ph> <ph id="ph4">&lt;bindingRedirect oldVersion="10.0.0.0" newVersion="12.0.0.0" /&gt;</ph> <ph id="ph5">&lt;/dependentAssembly&gt;</ph> <ph id="ph6">&lt;dependentAssembly&gt;</ph> <ph id="ph7">&lt;assemblyIdentity name="Microsoft.SqlServer.DTSRuntimeWrap"
+              publicKeyToken="89845dcd8080cc91" /&gt;</ph> <ph id="ph8">&lt;bindingRedirect oldVersion="10.0.0.0" newVersion="12.0.0.0" /&gt;</ph> <ph id="ph9">&lt;/dependentAssembly&gt;</ph> <ph id="ph10">&lt;dependentAssembly&gt;</ph> <ph id="ph11">&lt;assemblyIdentity name="Microsoft.SqlServer.ManagedDTS"
+              publicKeyToken="89845dcd8080cc91" /&gt;</ph> <ph id="ph12">&lt;bindingRedirect oldVersion="10.0.0.0" newVersion="12.0.0.0" /&gt;</ph> <ph id="ph13">&lt;/dependentAssembly&gt;</ph> <ph id="ph14">&lt;dependentAssembly&gt;</ph> <ph id="ph15">&lt;assemblyIdentity name="Microsoft.SqlServer.PipelineHost"
+              publicKeyToken="89845dcd8080cc91" /&gt;</ph> <ph id="ph16">&lt;bindingRedirect oldVersion="10.0.0.0" newVersion="12.0.0.0" /&gt;</ph> <ph id="ph17">&lt;/dependentAssembly&gt;</ph> <ph id="ph18">&lt;dependentAssembly&gt;</ph> <ph id="ph19">&lt;assemblyIdentity name="Microsoft.SqlServer.SQLTask"
+              publicKeyToken="89845dcd8080cc91" /&gt;</ph> <ph id="ph20">&lt;bindingRedirect oldVersion="10.0.0.0" newVersion="12.0.0.0" /&gt;</ph> <ph id="ph21">&lt;/dependentAssembly&gt;</ph> <ph id="ph22">&lt;dependentAssembly&gt;</ph> <ph id="ph23">&lt;assemblyIdentity name="Microsoft.SqlServer.XmlSrc"
+              publicKeyToken="89845dcd8080cc91" /&gt;</ph> <ph id="ph24">&lt;bindingRedirect oldVersion="10.0.0.0" newVersion="12.0.0.0" /&gt;</ph> <ph id="ph25">&lt;/dependentAssembly&gt;</ph> <ph id="ph26">&lt;/assemblyBinding&gt;</ph></source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Save the file.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Restart the Data Import/Export Framework service.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Test that your changes are working as expected.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

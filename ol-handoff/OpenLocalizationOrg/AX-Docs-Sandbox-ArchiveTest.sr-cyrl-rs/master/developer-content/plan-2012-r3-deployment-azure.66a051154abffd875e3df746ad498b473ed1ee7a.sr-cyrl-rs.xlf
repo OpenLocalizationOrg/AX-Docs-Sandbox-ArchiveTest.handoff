@@ -1,0 +1,2203 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">0b39a90fddf73c779da0bd62eba7d0bf6afdf636</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\lifecycle-services\ax-2012\plan-2012-r3-deployment-azure.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">217d5a786f108c601e5238a1d59a529e7cd7a2db</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">a8c9274ef42c706639904972a7ea339313ac5bda</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Plan your Dynamics AX 2012 R3 deployment on Azure</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Before you can deploy Microsoft Dynamics AX 2012 R3 on Microsoft Azure, there are several things you must consider and decisions you must make.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This article guides you through the planning process.</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Plan your Dynamics AX 2012 R3 deployment on Azure</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Before you can deploy Microsoft Dynamics AX 2012 R3 on Microsoft Azure, there are several things you must consider and decisions you must make.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This article guides you through the planning process.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Dynamics AX 2012 R3 can also be deployed on-premises.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>For details, see the topic <bpt id="p1">[</bpt>Install Microsoft Dynamics AX 2012<ept id="p1">](https://technet.microsoft.com/en-us/library/dd362138.aspx)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Verify that you can log on to Lifecycle Services</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Microsoft Dynamics Lifecycle Services is a cloud-based collaborative workspace that customers and partners can use to manage Microsoft Dynamics AX projects.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>You’ll use the Cloud-hosted environments tool, available on the Lifecycle Services website, to deploy AX 2012 R3 on Azure.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Lifecycle Services is available to customers and partners as part of their support plans.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>You can access it with your CustomerSource or PartnerSource credentials.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> Microsoft Dynamics AX 2012 R3 is officially supported on Microsoft Azure when deployments are performed through Lifecycle Services.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Deployments of Dynamics AX 2012 R3 are not supported on Azure when performed outside of Microsoft Dynamics Lifecycle Services.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Verify that you can log on to Lifecycle Services<ept id="p1">](https://lcs.dynamics.com/)</ept></source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Purchase an Azure subscription</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>To use Azure, you must purchase a subscription.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>For information about subscription plans and pricing details, see the <bpt id="p1">[</bpt>Azure pricing<ept id="p1">](https://azure.microsoft.com/en-us/pricing/)</ept> page.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Then follow the instructions on that page to purchase a subscription.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The subscription must be large enough to support the AX 2012 R3 environment that you want to deploy on Azure.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>The following table lists the types of AX 2012 R3 environments that you can deploy on Azure, and the number of cores required to deploy each environment in its default configuration.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> Keep in mind that when you deploy an environment, you can change the number and size of the virtual machines that are deployed.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>However, this table lists the number of cores required to deploy each environment in its <bpt id="p1">*</bpt>default<ept id="p1">*</ept> configuration.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Environment type:<ept id="p1">**</ept> - Demo</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Environment name</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Number of cores to deploy the environment in its default configuration</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>AX 2012 R3 demo</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>8 cores</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>AX 2012 R3 CU8 demo</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>8 cores</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Retail essentials demo</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>8 cores</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Environment type:<ept id="p1">**</ept> - Dev/test</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Environment name</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Number of cores to deploy the environment in its default configuration</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Development</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>9 cores</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Development with shared SQL Server</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>14 cores</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Test</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>13 cores</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Retail essentials dev/test</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>4 cores</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Retail e-commerce dev/test</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>4 cores</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Retail mobility dev/test</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>4 cores</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Environment type:<ept id="p1">**</ept> - High availability</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Environment name</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Number of cores to deploy the environment in its default configuration</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>High availability environment</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>45 cores</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>If you already have an Azure subscription, note the following:</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>To view the size of your subscription:<ept id="p1">**</ept> You can view the size of your subscription in the Azure management portal.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>To do so, log on to the <bpt id="p1">[</bpt>Azure management portal<ept id="p1">](https://manage.windowsazure.com/)</ept>, and then click <bpt id="p2">**</bpt>Settings<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Usage<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>To increase the size of your subscription:<ept id="p1">**</ept> To increase the size of your subscription, you’ll need to create a support ticket with the Azure support team.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>To do so, go to the <bpt id="p1">[</bpt>Azure support options<ept id="p1">](http://azure.microsoft.com/en-us/support/options/)</ept> page, and then click <bpt id="p2">**</bpt>Get Support<ept id="p2">**</ept> to create the support ticket.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>When creating the support ticket, be sure to indicate that the ticket is for billing support.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> The Cloud Solution Provider (CSP) program is currently not supported with Lifecycle Services due to the Azure Resource Manager (ARM) requirement.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Purchase and Azure support plan</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Azure support plans provide technical and billing support for Azure.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>The Azure support plans offer flexible support options that will allow you to select the right level of support for your Azure deployment.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>The support options range from support services included with your Azure subscription at no charge to premier support services.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>To learn about the available support plans and to purchase a plan, see the <bpt id="p1">[</bpt>Azure support plans<ept id="p1">](http://www.windowsazure.com/en-us/support/plans/)</ept> page.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Become familiar with the Azure management portal</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>The Azure management portal provides developers and IT professionals the ability to provision, configure, monitor, and manage their Azure components.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>It’s important to become familiar with the management portal because you’ll use it to:</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Upload a management certificate.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>(The management certificate enables Lifecycle Services to deploy AX 2012 R3 environments on Azure on your behalf.)</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Connect to virtual machines.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Monitor the health and status of your AX 2012 R3 environment.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>After you purchase an Azure subscription, you can access the management portal by clicking <bpt id="p1">[</bpt>here.<ept id="p1">](https://manage.windowsazure.com/?whr=live.com)</ept></source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>The following image shows the management portal.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>PlanYouAXR3DeploymentonAzure1<ept id="p1">](./media/planyouaxr3deploymentonazure1.jpg)](./media/planyouaxr3deploymentonazure1.jpg)</ept></source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Become familiar with the Azure VM agent</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>The Azure VM Agent is now automatically deployed with every VM deployed via Lifecycle Services.</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>The Azure VM Agent is used to install, configure, manage and run Azure Virtual Machine Extensions (VM Extensions).</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>VM extensions can help you monitor and manage your VMs.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Consider Cloud Services resource requirements</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>When a topology is deployed, the deployment system will inspect the virtual machine (VM) SKUs that were selected.</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>In order to ensure that Azure deploys these VMs to the proper clusters where the VMs are available, each level of VM SKU must have its own Azure Cloud Service.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>The VM SKU breakdown is as follows:</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>SKU<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Size<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>A</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>Standard A’s <ph id="ph1">\[</ph>A0-A4<ph id="ph2">\]</ph></source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>AM</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Standard A's <ph id="ph1">\[</ph>A5-A7<ph id="ph2">\]</ph></source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>AL</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Standard A’s (large) <ph id="ph1">\[</ph>A8-A11<ph id="ph2">\]</ph></source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>D</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>Standard D’s <ph id="ph1">\[</ph>all D series<ph id="ph2">\]</ph></source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>DS</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>Standard DS’s <ph id="ph1">\[</ph>all DS series<ph id="ph2">\]</ph></source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>G</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Standard G’s <ph id="ph1">\[</ph>all G series<ph id="ph2">\]</ph></source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>A Cloud Service will be created with the following naming scheme: Version-Topology-EnvironmentName-SKU-GUID Please consider the Cloud Services resource requirements for you deployments and request additional Cloud Services capacity in your Azure Subscription from Azure Support if necessary.</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Plan for storage accounts</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>For each project created in Lifecycle Services, one or more distinct storage accounts will be created in the Azure subscription.</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>A storage account is created when you connect your project to your Azure subscription.</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>This storage account is a Locally Redundant Storage (LRS) account, and is used to house scripts and VHDs which are required for deployments.</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>An additional Premium storage account is created for each project when the first Premium storage-enabled topology is deployed from the project.</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>Storage accounts are not shared across Lifecycle Services projects, even if the deployments are to the same Azure subscription.</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>When a Premium storage account is created, it too is created as LRS.</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>For more information about storage, click <bpt id="p1">[</bpt>here<ept id="p1">](http://azure.microsoft.com/en-us/pricing/details/storage)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Consider which topologies and the number of environments that will be deployed into the same Lifecycle Services (LCS) project and Azure Connector.</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>Premium storage account aside, by default there is 1 storage account for each LCS project and Azure Connector.</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>Be aware that Azure storage has <bpt id="p1">[</bpt>limits<ept id="p1">](https://azure.microsoft.com/en-us/documentation/articles/azure-subscription-service-limits/#storage-limits)</ept>, specifically 20,000 IOPS (input/output operations per second) per standard storage account.</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>Combined with 500 IOPS per VHD, that leaves roughly 40 <bpt id="p1">***</bpt>highly utilized<ept id="p1">***</ept> VHDs before throttling occurs.</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>To mitigate this, we recommend that you leverage multiple Azure Connectors and/or multiple LCS projects.</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>For example, consider having production environments in one LCS project, and Dev/Test environments in another.</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Note: Not all VHDs that LCS deploys will be highly utilized, such as the installation VHD.</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>Plan your SQL Server configuration</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>Azure Premium Storage delivers high-performance, low-latency disk support for I/O intensive workloads running on Azure virtual machines (VMs).</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>With Premium Storage, your applications can have up to 32 TB of storage per VM, achieve 50,000 IOPS per VM, and have extremely low latencies for read operations.</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>Premium Storage is required for AX 2012 R3 deployments that will be used in a production capacity.</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>Premium Storage is enabled by default for High Availability deployments when Azure DS-series VMs are selected.</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>Premium Storage is only offered on DS-series VMs at this time.</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>Premium Storage is enabled exclusively for the SQL Server AlwaysOn database servers, while non-Premium storage is used for all other storage needs.</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>When a SQL Server AlwaysOn availability set is created, Lifecycle Services will attach a disk for every disk slot supported by the DS-series VM selected.</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>For more information about VM disk capacity, click <bpt id="p1">[</bpt>here<ept id="p1">](https://msdn.microsoft.com/en-us/library/azure/dn197896.aspx)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>Different VM sizes will come with varying maximums for throughput and IOPS.</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>As a result, when you are planning your SQL Server configuration, please be familiar with these limitations to ensure that you are deploying the most efficient and cost effective solution for your business.</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>Please follow the guidance found in <bpt id="p1">[</bpt>Premium Storage: High-Performance Storage for Azure Virtual Machine Workloads<ept id="p1">](https://azure.microsoft.com/en-us/documentation/articles/storage-premium-storage-preview-portal/)</ept>, particularly the section, <bpt id="p2">**</bpt>Throttling when using Premium Storage<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>The SQL Server AlwaysOn availability set is created automatically through Lifecycle Services.</source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>It is important to consider your data and performance needs before deploying a High Availability topology for use with a production system.</source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>Please refer to Azure Premium Storage information <bpt id="p1">[</bpt>here<ept id="p1">](http://azure.microsoft.com/en-us/documentation/articles/storage-premium-storage-preview-portal/)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>Once you have planned your deployment with Premium Storage, the High Availability topology provides configuration options to help you achieve your cost and performance objectives.</source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>Under Advanced Settings for the High Availability topology, the following SQL Server configuration options appear:</source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Customize the SQL Server image configuration<ept id="p1">**</ept> – This option allows the use of a custom SQL Server Enterprise image or an Azure Gallery SQL Server Enterprise image.</source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>Custom SQL Server image (default) – This image contains a trial edition of SQL Server Enterprise 2014.</source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>The trial license is enabled for 3-6 months.</source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>Use this option if you want to use an existing EA/etc. license.</source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>Gallery SQL Server image – This image contains SQL Server Enterprise 2014 and uses consumption-based Azure pricing.</source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>More information can be found on the <bpt id="p1">[</bpt>Azure Virtual Machines Pricing<ept id="p1">](https://azure.microsoft.com/en-us/pricing/details/virtual-machines/#sql-server)</ept> page and the <bpt id="p2">[</bpt>SQL Server in Azure Virtual Machines<ept id="p2">](https://msdn.microsoft.com/library/azure/jj823132.aspx)</ept></source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Customize the SQL Server storage space configuration<ept id="p1">**</ept> – You can specify the number and size of the disks that will be attached to the SQL Server VMs.</source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>Keep the following points in mind when specifying the number of disks that should be used to create the storage space within SQL Server:</source>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>The VM size that is selected for the database server dictates how many disks are supported by that VM SKU.</source>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>Information about the number of disks that are supported by each VM can be found <bpt id="p1">[</bpt>here<ept id="p1">](https://msdn.microsoft.com/en-us/library/azure/dn197896.aspx)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>One of the available disk slots on the VM will be used by the Lifecycle Services deployment service.</source>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>This means the VM’s maximum number of disks—minus 1—equals the available slots to fill.</source>
+        </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>Leaving this setting blank will allow the deployment service to attach disks up to the maximum supported by the VM.</source>
+        </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>It is recommended for production deployments that the maximum disks be used.</source>
+        </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>Keep the following points in mind when specifying the size (in GB) of each disk attached to the VM:</source>
+        </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>Allowed values are 100 GB – 1024 GB.</source>
+        </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>Default is 128 GB.</source>
+        </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>The size of the disk used dictates the Premium Storage tier used.</source>
+        </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>The Premium Storage tier dictates cost, IOPS per disk, and throughput of the system being deployed.</source>
+        </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>For more information, click <bpt id="p1">[</bpt>here<ept id="p1">](http://azure.microsoft.com/en-us/pricing/details/storage/)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>All disks are formatted to 64k cluster size.</source>
+        </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>This results in up to a 20% increase in performance.</source>
+        </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>For more information, click <bpt id="p1">[</bpt>here<ept id="p1">](http://tk.azurewebsites.net/2012/08/)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>TempDB and logs are deployed onto storage spaces as to benefit from the performance gains.</source>
+        </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>One virtual disk is created over the number of disks configured for the storage space.</source>
+        </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>The virtual disk is then partitioned as follows:</source>
+        </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>SQL data = 1/2 of the total size of pool</source>
+        </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>SQL logs = 1/4 of the total size</source>
+        </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>SQL Temp db = 1/8 of the total size</source>
+        </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>SQL backup = remaining 1/8 of the total size</source>
+        </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>Other considerations to keep in mind:</source>
+        </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>When planning your deployment, ensure that Premium Storage is available in the Azure region you are targeting.</source>
+        </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>For more information, click <bpt id="p1">[</bpt>here<ept id="p1">](http://azure.microsoft.com/en-us/services/preview/)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>If you have a VPN/Express Route connection (or plan to) between your corporate network and Azure, please ensure this is done for an Azure region that supports Premium Storage.</source>
+        </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>Consult the <bpt id="p1">[</bpt>Azure Premium Storage documentation<ept id="p1">](http://azure.microsoft.com/en-us/documentation/services/storage/)</ept> to understand limitations of use.</source>
+        </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>If non-Premium Storage VMs are deployed with the High Availability topologies, all of the above SQL Server configuration settings are applicable; however, Premium Storage benefits will not apply.</source>
+        </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>When setting up your Lifecycle Services project for deployment, you must select a region that supports Premium Storage.</source>
+        </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>SQL Server best practices implemented by the deployment service include those recommended by the SQL Server team.</source>
+        </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>For more information, click <bpt id="p1">[</bpt>here<ept id="p1">](http://blogs.technet.com/b/dataplatforminsider/archive/2014/09/12/new-vm-images-optimized-for-transactional-and-dw-workloads-in-azure-vm-gallery.aspx)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>In addition, the following items are done:</source>
+        </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>Multiple temp files (one per CPU core).</source>
+        </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>Set max memory for SQL Server to 90% of available machine RAM.</source>
+        </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>Set max degree of parallelism.</source>
+        </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>Enabled trace flags  -T1204, -T1222.</source>
+        </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>Estimate costs and understand the Azure billing process</source>
+        </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>To help estimate the cost of your AX 2012 R3 deployment on Azure, use the <bpt id="p1">[</bpt>Azure pricing calculator<ept id="p1">](http://azure.microsoft.com/en-us/pricing/calculator/)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>It’s also important to understand the Azure billing process before you deploy AX 2012 R3 on Azure.</source>
+        </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>For an overview of the Azure billing process, links to sample invoices, and information about how to download daily usage data for the current billing period, see <bpt id="p1">[</bpt>Understand your bill<ept id="p1">](http://azure.microsoft.com/en-us/support/understand-your-bill/)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>**Note: **Keep in mind, you can shut down an AX 2012 R3 environment that has been deployed on Azure when it’s not in use.</source>
+        </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source>For example, you may want to shut down an environment on the weekends to reduce costs.</source>
+        </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source>When you shut down an environment, the environment still exists; however, the virtual machines in the environment are shut down.</source>
+        </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source>You won’t be charged for the virtual machines when they’re not running.</source>
+        </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source>For more information, see “How do I shut down an environment?”</source>
+        </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>in the <bpt id="p1">[</bpt>Manage your Microsoft Dynamics AX 2012 R3 deployment on Azure<ept id="p1">](manage-2012-r3-deployment-azure.md)</ept> article.</source>
+        </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>Consider legal and regulatory requirements</source>
+        </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source>Microsoft runs Azure services with common operational practices and features across multiple geographies and jurisdictions.</source>
+        </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source>However, it is ultimately up to you to determine if Microsoft services satisfy your regulatory needs.</source>
+        </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source>To help provide you with up-to-date information, the <bpt id="p1">[</bpt>Azure trust center<ept id="p1">](http://azure.microsoft.com/en-us/support/trust-center/)</ept> provides the following information about security, privacy, and compliance.</source>
+        </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Security<ept id="p1">**</ept> The <bpt id="p2">[</bpt>Azure security page<ept id="p2">](http://www.windowsazure.com/en-us/support/trust-center/security/)</ept> provides an overview of the provisions Microsoft is taking to provide a secure environment within geographically dispersed datacenters.</source>
+        </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source>Among the extensive list of security-related resources, the <bpt id="p1">[</bpt>Standard Response to Request for Information: Security and Privacy<ept id="p1">](https://www.microsoft.com/en-us/download/details.aspx?id=26647)</ept> white paper outlines how Azure meets the suggested principals and mapped them to the International Standards Organization (ISO) 27001:2005 and ISO 27002.</source>
+        </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Privacy<ept id="p1">**</ept> The <bpt id="p2">[</bpt>Azure privacy page<ept id="p2">](http://www.windowsazure.com/en-us/support/trust-center/privacy/)</ept> includes links to multiple resources that describe privacy practices of the Azure environment.</source>
+        </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source>It includes a link to the <bpt id="p1">[</bpt>Azure privacy statement<ept id="p1">](http://www.windowsazure.com/en-us/support/legal/privacy-statement/)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Compliance<ept id="p1">**</ept> The <bpt id="p2">[</bpt>Azure compliance page<ept id="p2">](http://www.windowsazure.com/en-us/support/trust-center/compliance/)</ept> provides resources to help you comply with the specific laws and regulations applicable to your unique industry and use scenario.</source>
+        </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source>Consider licensing requirements</source>
+        </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source>Licensing the various components of the AX 2012 R3 virtual machine environment is an important consideration.</source>
+        </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source>For deployments on Azure, you will want to evaluate the special licensing terms specific to Azure and the impact that these terms have on the overall suitability of the solution.</source>
+        </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>Licensing requirements vary based on the type of AX 2012 R3 virtual machine environment that you deploy on Azure.</source>
+        </trans-unit>
+        <trans-unit id="298" translate="yes" xml:space="preserve">
+          <source>The following table provides more information.</source>
+        </trans-unit>
+        <trans-unit id="299" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Type of environment<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="300" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Licensing requirements<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="301" translate="yes" xml:space="preserve">
+          <source>Demo</source>
+        </trans-unit>
+        <trans-unit id="302" translate="yes" xml:space="preserve">
+          <source>The software that is included in the virtual machine environment is time-bound and licensed according to the terms in the Software License Terms.</source>
+        </trans-unit>
+        <trans-unit id="303" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a href="http://go.microsoft.com/fwlink/?LinkId=397371"&gt;</bpt>Software License Terms for the AX 2013 R3 demo environment<ept id="p1">&lt;/a&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="304" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a href="http://go.microsoft.com/fwlink/?LinkId=397371"&gt;</bpt>Software License Terms for the AX 2013 R3 CU8 demo environment<ept id="p1">&lt;/a&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="305" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a href="http://go.microsoft.com/fwlink/?LinkId=397371"&gt;</bpt>Software License Terms for the Retail essentials demo environment<ept id="p1">&lt;/a&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="306" translate="yes" xml:space="preserve">
+          <source>Dev/test and high availability</source>
+        </trans-unit>
+        <trans-unit id="307" translate="yes" xml:space="preserve">
+          <source>All software included in the virtual machine environment must be properly licensed.</source>
+        </trans-unit>
+        <trans-unit id="308" translate="yes" xml:space="preserve">
+          <source>Please investigate your licensing needs thoroughly with your partner and your Microsoft representative.</source>
+        </trans-unit>
+        <trans-unit id="309" translate="yes" xml:space="preserve">
+          <source>You will need to investigate the terms for each piece of software that is included in the virtual machine environment.</source>
+        </trans-unit>
+        <trans-unit id="310" translate="yes" xml:space="preserve">
+          <source>For the complete list of software that is included in the virtual machine environment, review the Software License Terms.</source>
+        </trans-unit>
+        <trans-unit id="311" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a href="http://go.microsoft.com/fwlink/?LinkId=397363"&gt;</bpt>Software License Terms for the development environment<ept id="p1">&lt;/a&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="312" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a href="http://go.microsoft.com/fwlink/?LinkId=397363"&gt;</bpt>Software License Terms for the development with shared SQL Server environment<ept id="p1">&lt;/a&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="313" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a href="http://go.microsoft.com/fwlink/?LinkId=397363"&gt;</bpt>Software License Terms for the test environment<ept id="p1">&lt;/a&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="314" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a href="http://go.microsoft.com/fwlink/?LinkID=507496&amp;amp;amp;clcid=0x409"&gt;</bpt>Software License Terms for the Retail essentials dev/test environment<ept id="p1">&lt;/a&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="315" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a href="http://go.microsoft.com/fwlink/?LinkID=507494"&gt;</bpt>Software License Terms for the Retail e-commerce dev/test environment<ept id="p1">&lt;/a&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="316" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a href="http://go.microsoft.com/fwlink/?LinkID=507496"&gt;</bpt>Software License Terms for the Retail mobility dev/test environment<ept id="p1">&lt;/a&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="317" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a href="http://go.microsoft.com/fwlink/?LinkId=397363"&gt;</bpt>Software License Terms for the high availability environment<ept id="p1">&lt;/a&gt;</ept> When reviewing the licensing terms and requirements, you need to pay special attention to any terms that apply specifically to deploying on Azure, as well as terms that apply to your intended use.</source>
+        </trans-unit>
+        <trans-unit id="318" translate="yes" xml:space="preserve">
+          <source>For example, Microsoft Office has terms that are specific to Azure; but those terms vary depending on whether you deploy Office for development or test purposes, or whether you deploy Office for production purposes.</source>
+        </trans-unit>
+        <trans-unit id="319" translate="yes" xml:space="preserve">
+          <source>Some resources to help you get started are linked to below.</source>
+        </trans-unit>
+        <trans-unit id="320" translate="yes" xml:space="preserve">
+          <source>Most of the resources that are linked to below contain links to in-depth information for several products and scenarios; however, you may need to review additional information, as well.</source>
+        </trans-unit>
+        <trans-unit id="321" translate="yes" xml:space="preserve">
+          <source>This information is provided to help guide your authorized use of products you license; it is not your agreement.</source>
+        </trans-unit>
+        <trans-unit id="322" translate="yes" xml:space="preserve">
+          <source>Your use of products licensed under your volume license agreement is governed by the terms and conditions of that agreement.</source>
+        </trans-unit>
+        <trans-unit id="323" translate="yes" xml:space="preserve">
+          <source>In the case of any conflict between information linked here and your agreement, the terms and conditions of your agreement control.</source>
+        </trans-unit>
+        <trans-unit id="324" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Virtual machines licensing FAQ<ept id="p1">&lt;/strong&gt;</ept> Common questions regarding licensing on Azure virtual machines are answered on <bpt id="p2">&lt;a href="http://www.windowsazure.com/en-us/pricing/licensing-faq/"&gt;</bpt>this page<ept id="p2">&lt;/a&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="325" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Microsoft Product Use Rights and Product List<ept id="p1">&lt;/strong&gt;</ept> Learn more about Microsoft Volume Licensing product licensing models, programs, scenarios, and terms and conditions to help you make effective business decisions and maximize the value of your IT purchases on <bpt id="p2">&lt;a href="https://www.microsoft.com/licensing/about-licensing/product-licensing.aspx"&gt;</bpt>this page<ept id="p2">&lt;/a&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="326" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>License Mobility through Software Assurance on Azure program<ept id="p1">&lt;/strong&gt;</ept> License Mobility through Software Assurance gives Microsoft volume licensing customers the flexibility to deploy eligible server applications with active Software Assurance on Azure.</source>
+        </trans-unit>
+        <trans-unit id="327" translate="yes" xml:space="preserve">
+          <source>With this Software Assurance benefit, there is no need to purchase new licenses and no associated mobility fees.</source>
+        </trans-unit>
+        <trans-unit id="328" translate="yes" xml:space="preserve">
+          <source>This enables you to easily deploy existing licenses on the Azure cloud platform.</source>
+        </trans-unit>
+        <trans-unit id="329" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">&lt;a href="http://www.windowsazure.com/en-us/pricing/license-mobility/"&gt;</bpt>this page<ept id="p1">&lt;/a&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="330" translate="yes" xml:space="preserve">
+          <source>For Development, Test, and High Availability topologies trial versions of Sharepoint, Visual Studio, SQL Server, and Office are provided.</source>
+        </trans-unit>
+        <trans-unit id="331" translate="yes" xml:space="preserve">
+          <source>The trials range from 30-180 days.</source>
+        </trans-unit>
+        <trans-unit id="332" translate="yes" xml:space="preserve">
+          <source>Please apply licenses accordingly.</source>
+        </trans-unit>
+        <trans-unit id="333" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Microsoft Dynamics AX volume licensing buyer’s guide<ept id="p1">&lt;/strong&gt;</ept> For an overview of key licensing options with Microsoft Dynamics AX, see <bpt id="p2">&lt;a href="https://www.microsoft.com/licensing/about-licensing/dynamicsax.aspx#tab=1"&gt;</bpt>this page<ept id="p2">&lt;/a&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="334" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Shared computer activation for Office 365 ProPlus<ept id="p1">&lt;/strong&gt;</ept> Shared computer activation lets you to deploy Office 365 ProPlus to a computer in your organization that is accessed by multiple users.</source>
+        </trans-unit>
+        <trans-unit id="335" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">&lt;a href="https://technet.microsoft.com/en-us/library/dn782860(v=office.15).aspx"&gt;</bpt>this page<ept id="p1">&lt;/a&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="336" translate="yes" xml:space="preserve">
+          <source>Select the AX 2012 R3 environment that you want to deploy</source>
+        </trans-unit>
+        <trans-unit id="337" translate="yes" xml:space="preserve">
+          <source>You’ll use the Cloud-hosted environments tool in Lifecycle Services to deploy AX 2012 R3 environments on Azure.</source>
+        </trans-unit>
+        <trans-unit id="338" translate="yes" xml:space="preserve">
+          <source>When you use the Cloud-hosted environments tool to deploy, you’ll need to select the type of environment that you want to deploy on Azure, such as a demo or development/test environment.</source>
+        </trans-unit>
+        <trans-unit id="339" translate="yes" xml:space="preserve">
+          <source>Based on your selection, the Cloud-hosted environments tool provisions the appropriate number of virtual machines on Azure.</source>
+        </trans-unit>
+        <trans-unit id="340" translate="yes" xml:space="preserve">
+          <source>These virtual machines have AX 2012 R3 components—and all of their prerequisites—already installed on them.</source>
+        </trans-unit>
+        <trans-unit id="341" translate="yes" xml:space="preserve">
+          <source>The following sections describe the AX 2012 R3 environments that you can deploy on Azure.</source>
+        </trans-unit>
+        <trans-unit id="342" translate="yes" xml:space="preserve">
+          <source>AX 2012 R3 and AX 2012 R3 CU8 demo environments</source>
+        </trans-unit>
+        <trans-unit id="343" translate="yes" xml:space="preserve">
+          <source>Retail essentials demo environment</source>
+        </trans-unit>
+        <trans-unit id="344" translate="yes" xml:space="preserve">
+          <source>Development environments</source>
+        </trans-unit>
+        <trans-unit id="345" translate="yes" xml:space="preserve">
+          <source>Test environment</source>
+        </trans-unit>
+        <trans-unit id="346" translate="yes" xml:space="preserve">
+          <source>Retail essentials dev/test environment</source>
+        </trans-unit>
+        <trans-unit id="347" translate="yes" xml:space="preserve">
+          <source>Retail e-commerce dev/test environment</source>
+        </trans-unit>
+        <trans-unit id="348" translate="yes" xml:space="preserve">
+          <source>Retail mobility dev/test environment</source>
+        </trans-unit>
+        <trans-unit id="349" translate="yes" xml:space="preserve">
+          <source>High availability environment</source>
+        </trans-unit>
+        <trans-unit id="350" translate="yes" xml:space="preserve">
+          <source>**Note: **In these environments, SQL Server is configured to use the SQL<ph id="ph1">\_</ph>Latin1<ph id="ph2">\_</ph>General<ph id="ph3">\_</ph>CP1<ph id="ph4">\_</ph>CI<ph id="ph5">\_</ph>AS collation.</source>
+        </trans-unit>
+        <trans-unit id="351" translate="yes" xml:space="preserve">
+          <source>AX 2012 R3 and AX 2012 R3 CU8 demo environments</source>
+        </trans-unit>
+        <trans-unit id="352" translate="yes" xml:space="preserve">
+          <source>There are two AX 2012 R3 demo environments: one environment includes Cumulative Update 8, and the other does not.</source>
+        </trans-unit>
+        <trans-unit id="353" translate="yes" xml:space="preserve">
+          <source>The following table lists details about each environment.</source>
+        </trans-unit>
+        <trans-unit id="354" translate="yes" xml:space="preserve">
+          <source>**Note: **The virtual machine included in each environment is a single-instance virtual machine.</source>
+        </trans-unit>
+        <trans-unit id="355" translate="yes" xml:space="preserve">
+          <source>Single-instance virtual machines are not covered by an Azure <bpt id="p1">[</bpt>Service Level Agreement<ept id="p1">](http://azure.microsoft.com/en-us/support/legal/sla/)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="356" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Number of virtual machines deployed by default<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="357" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Description<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="358" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Size and name<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="359" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Software installed<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="360" translate="yes" xml:space="preserve">
+          <source>1</source>
+        </trans-unit>
+        <trans-unit id="361" translate="yes" xml:space="preserve">
+          <source>Demo machine</source>
+        </trans-unit>
+        <trans-unit id="362" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Size:<ept id="p1">&lt;/strong&gt;</ept> D3: Standard compute tier (4 cores, 14 GB memory)<bpt id="p2">&lt;strong&gt;</bpt>Default name:<ept id="p2">&lt;/strong&gt;</ept> DEMO-<ph id="ph1">&amp;lt;</ph>GUID<ph id="ph2">&amp;gt;</ph></source>
+        </trans-unit>
+        <trans-unit id="363" translate="yes" xml:space="preserve">
+          <source>Windows Server 2012 R2, including:</source>
+        </trans-unit>
+        <trans-unit id="364" translate="yes" xml:space="preserve">
+          <source>Active Directory</source>
+        </trans-unit>
+        <trans-unit id="365" translate="yes" xml:space="preserve">
+          <source>Domain Name Services (DNS)</source>
+        </trans-unit>
+        <trans-unit id="366" translate="yes" xml:space="preserve">
+          <source>Internet Information Services (IIS)</source>
+        </trans-unit>
+        <trans-unit id="367" translate="yes" xml:space="preserve">
+          <source>Remote Desktop Services</source>
+        </trans-unit>
+        <trans-unit id="368" translate="yes" xml:space="preserve">
+          <source>Microsoft Visual Studio 2013</source>
+        </trans-unit>
+        <trans-unit id="369" translate="yes" xml:space="preserve">
+          <source>Microsoft SQL Server 2014 components:</source>
+        </trans-unit>
+        <trans-unit id="370" translate="yes" xml:space="preserve">
+          <source>Database Engine Services</source>
+        </trans-unit>
+        <trans-unit id="371" translate="yes" xml:space="preserve">
+          <source>Reporting Services</source>
+        </trans-unit>
+        <trans-unit id="372" translate="yes" xml:space="preserve">
+          <source>Analysis Services</source>
+        </trans-unit>
+        <trans-unit id="373" translate="yes" xml:space="preserve">
+          <source>Management Studio</source>
+        </trans-unit>
+        <trans-unit id="374" translate="yes" xml:space="preserve">
+          <source>Developer tools</source>
+        </trans-unit>
+        <trans-unit id="375" translate="yes" xml:space="preserve">
+          <source>Microsoft SharePoint Server 2013</source>
+        </trans-unit>
+        <trans-unit id="376" translate="yes" xml:space="preserve">
+          <source>Microsoft Office 2013</source>
+        </trans-unit>
+        <trans-unit id="377" translate="yes" xml:space="preserve">
+          <source>AX 2012 R3 or AX 2012 R3 CU8 components:</source>
+        </trans-unit>
+        <trans-unit id="378" translate="yes" xml:space="preserve">
+          <source>Databases</source>
+        </trans-unit>
+        <trans-unit id="379" translate="yes" xml:space="preserve">
+          <source>Server components:</source>
+        </trans-unit>
+        <trans-unit id="380" translate="yes" xml:space="preserve">
+          <source>Application Object Server (AOS)</source>
+        </trans-unit>
+        <trans-unit id="381" translate="yes" xml:space="preserve">
+          <source>Web server components:</source>
+        </trans-unit>
+        <trans-unit id="382" translate="yes" xml:space="preserve">
+          <source>Enterprise Portal (EP)</source>
+        </trans-unit>
+        <trans-unit id="383" translate="yes" xml:space="preserve">
+          <source>Enterprise Search</source>
+        </trans-unit>
+        <trans-unit id="384" translate="yes" xml:space="preserve">
+          <source>Help Server</source>
+        </trans-unit>
+        <trans-unit id="385" translate="yes" xml:space="preserve">
+          <source>Business intelligence components:</source>
+        </trans-unit>
+        <trans-unit id="386" translate="yes" xml:space="preserve">
+          <source>Reporting Services extensions</source>
+        </trans-unit>
+        <trans-unit id="387" translate="yes" xml:space="preserve">
+          <source>Analysis Services configuration</source>
+        </trans-unit>
+        <trans-unit id="388" translate="yes" xml:space="preserve">
+          <source>Management Reporter components:</source>
+        </trans-unit>
+        <trans-unit id="389" translate="yes" xml:space="preserve">
+          <source>Management Reporter server components</source>
+        </trans-unit>
+        <trans-unit id="390" translate="yes" xml:space="preserve">
+          <source>Management Reporter Report Designer</source>
+        </trans-unit>
+        <trans-unit id="391" translate="yes" xml:space="preserve">
+          <source>Client components:</source>
+        </trans-unit>
+        <trans-unit id="392" translate="yes" xml:space="preserve">
+          <source>Client</source>
+        </trans-unit>
+        <trans-unit id="393" translate="yes" xml:space="preserve">
+          <source>Office add-ins</source>
+        </trans-unit>
+        <trans-unit id="394" translate="yes" xml:space="preserve">
+          <source>Remote Desktop Services integration</source>
+        </trans-unit>
+        <trans-unit id="395" translate="yes" xml:space="preserve">
+          <source>Developer tools:</source>
+        </trans-unit>
+        <trans-unit id="396" translate="yes" xml:space="preserve">
+          <source>Debugger</source>
+        </trans-unit>
+        <trans-unit id="397" translate="yes" xml:space="preserve">
+          <source>Visual Studio Tools</source>
+        </trans-unit>
+        <trans-unit id="398" translate="yes" xml:space="preserve">
+          <source>Trace Parser</source>
+        </trans-unit>
+        <trans-unit id="399" translate="yes" xml:space="preserve">
+          <source>Integration components:</source>
+        </trans-unit>
+        <trans-unit id="400" translate="yes" xml:space="preserve">
+          <source>Web services on IIS</source>
+        </trans-unit>
+        <trans-unit id="401" translate="yes" xml:space="preserve">
+          <source>.NET Business Connector</source>
+        </trans-unit>
+        <trans-unit id="402" translate="yes" xml:space="preserve">
+          <source>Management utilities</source>
+        </trans-unit>
+        <trans-unit id="403" translate="yes" xml:space="preserve">
+          <source>Retail components:</source>
+        </trans-unit>
+        <trans-unit id="404" translate="yes" xml:space="preserve">
+          <source>Retail POS</source>
+        </trans-unit>
+        <trans-unit id="405" translate="yes" xml:space="preserve">
+          <source>Retail Headquarters</source>
+        </trans-unit>
+        <trans-unit id="406" translate="yes" xml:space="preserve">
+          <source>Commerce Data Exchange components:</source>
+        </trans-unit>
+        <trans-unit id="407" translate="yes" xml:space="preserve">
+          <source>Synch Service</source>
+        </trans-unit>
+        <trans-unit id="408" translate="yes" xml:space="preserve">
+          <source>Real-time Service</source>
+        </trans-unit>
+        <trans-unit id="409" translate="yes" xml:space="preserve">
+          <source>Async Server</source>
+        </trans-unit>
+        <trans-unit id="410" translate="yes" xml:space="preserve">
+          <source>Async Client</source>
+        </trans-unit>
+        <trans-unit id="411" translate="yes" xml:space="preserve">
+          <source>Retail Channel Configuration Utility</source>
+        </trans-unit>
+        <trans-unit id="412" translate="yes" xml:space="preserve">
+          <source>Retail SDK</source>
+        </trans-unit>
+        <trans-unit id="413" translate="yes" xml:space="preserve">
+          <source>Retail online channel</source>
+        </trans-unit>
+        <trans-unit id="414" translate="yes" xml:space="preserve">
+          <source>Retail Server</source>
+        </trans-unit>
+        <trans-unit id="415" translate="yes" xml:space="preserve">
+          <source>Retail Mass Deployment Toolkit</source>
+        </trans-unit>
+        <trans-unit id="416" translate="yes" xml:space="preserve">
+          <source>Retail channel database</source>
+        </trans-unit>
+        <trans-unit id="417" translate="yes" xml:space="preserve">
+          <source>RapidStart Connector</source>
+        </trans-unit>
+        <trans-unit id="418" translate="yes" xml:space="preserve">
+          <source>Data Import/Export Framework components:</source>
+        </trans-unit>
+        <trans-unit id="419" translate="yes" xml:space="preserve">
+          <source>Data Import/Export Framework (DIXF) service</source>
+        </trans-unit>
+        <trans-unit id="420" translate="yes" xml:space="preserve">
+          <source>AOS component</source>
+        </trans-unit>
+        <trans-unit id="421" translate="yes" xml:space="preserve">
+          <source>Client component</source>
+        </trans-unit>
+        <trans-unit id="422" translate="yes" xml:space="preserve">
+          <source>Warehouse Mobile Devices Portal</source>
+        </trans-unit>
+        <trans-unit id="423" translate="yes" xml:space="preserve">
+          <source>Connector for Microsoft Dynamics</source>
+        </trans-unit>
+        <trans-unit id="424" translate="yes" xml:space="preserve">
+          <source>Retail Essentials demo environment</source>
+        </trans-unit>
+        <trans-unit id="425" translate="yes" xml:space="preserve">
+          <source>Deploy this environment to demo Retail essentials.</source>
+        </trans-unit>
+        <trans-unit id="426" translate="yes" xml:space="preserve">
+          <source>Retail essentials is a retail-centric configuration option for Microsoft Dynamics AX.</source>
+        </trans-unit>
+        <trans-unit id="427" translate="yes" xml:space="preserve">
+          <source>This environment includes one virtual machine, by default.</source>
+        </trans-unit>
+        <trans-unit id="428" translate="yes" xml:space="preserve">
+          <source>This virtual machine has Windows Server—and the software and sample data that you’ll need to demo Retail essentials—already installed on it.</source>
+        </trans-unit>
+        <trans-unit id="429" translate="yes" xml:space="preserve">
+          <source>The following table lists details about the default Retail essentials demo environment.</source>
+        </trans-unit>
+        <trans-unit id="430" translate="yes" xml:space="preserve">
+          <source>When you deploy the environment, you can add additional virtual machines to the environment, or change the size of the virtual machines.</source>
+        </trans-unit>
+        <trans-unit id="431" translate="yes" xml:space="preserve">
+          <source>**Note: **The virtual machines in this environment are single-instance virtual machines.</source>
+        </trans-unit>
+        <trans-unit id="432" translate="yes" xml:space="preserve">
+          <source>Single-instance virtual machines are not covered by an Azure <bpt id="p1">[</bpt>Service Level Agreement<ept id="p1">](http://azure.microsoft.com/en-us/support/legal/sla/)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="433" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Number of virtual machines deployed by default<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="434" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Description<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="435" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Size and name<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="436" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Software installed<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="437" translate="yes" xml:space="preserve">
+          <source>1</source>
+        </trans-unit>
+        <trans-unit id="438" translate="yes" xml:space="preserve">
+          <source>Retail essentials demo machine</source>
+        </trans-unit>
+        <trans-unit id="439" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Size:<ept id="p1">&lt;/strong&gt;</ept> D3: Standard compute tier (4 cores, 14 GB memory)<bpt id="p2">&lt;strong&gt;</bpt>Default name:<ept id="p2">&lt;/strong&gt;</ept> DEMO-<ph id="ph1">&amp;lt;</ph>GUID<ph id="ph2">&amp;gt;</ph></source>
+        </trans-unit>
+        <trans-unit id="440" translate="yes" xml:space="preserve">
+          <source>Windows Server 2012 R2</source>
+        </trans-unit>
+        <trans-unit id="441" translate="yes" xml:space="preserve">
+          <source>Microsoft SQL Server 2014 components:</source>
+        </trans-unit>
+        <trans-unit id="442" translate="yes" xml:space="preserve">
+          <source>Database Engine Services</source>
+        </trans-unit>
+        <trans-unit id="443" translate="yes" xml:space="preserve">
+          <source>Management Studio</source>
+        </trans-unit>
+        <trans-unit id="444" translate="yes" xml:space="preserve">
+          <source>Developer tools</source>
+        </trans-unit>
+        <trans-unit id="445" translate="yes" xml:space="preserve">
+          <source>AX 2012 R3 components:</source>
+        </trans-unit>
+        <trans-unit id="446" translate="yes" xml:space="preserve">
+          <source>Databases</source>
+        </trans-unit>
+        <trans-unit id="447" translate="yes" xml:space="preserve">
+          <source>Server components:</source>
+        </trans-unit>
+        <trans-unit id="448" translate="yes" xml:space="preserve">
+          <source>Application Object Server (AOS)</source>
+        </trans-unit>
+        <trans-unit id="449" translate="yes" xml:space="preserve">
+          <source>Client components:</source>
+        </trans-unit>
+        <trans-unit id="450" translate="yes" xml:space="preserve">
+          <source>Client</source>
+        </trans-unit>
+        <trans-unit id="451" translate="yes" xml:space="preserve">
+          <source>Integration components:</source>
+        </trans-unit>
+        <trans-unit id="452" translate="yes" xml:space="preserve">
+          <source>.NET Business Connector</source>
+        </trans-unit>
+        <trans-unit id="453" translate="yes" xml:space="preserve">
+          <source>Retail components:</source>
+        </trans-unit>
+        <trans-unit id="454" translate="yes" xml:space="preserve">
+          <source>Retail Headquarters</source>
+        </trans-unit>
+        <trans-unit id="455" translate="yes" xml:space="preserve">
+          <source>Commerce Data Exchange components:</source>
+        </trans-unit>
+        <trans-unit id="456" translate="yes" xml:space="preserve">
+          <source>Real-time Service</source>
+        </trans-unit>
+        <trans-unit id="457" translate="yes" xml:space="preserve">
+          <source>Async Server</source>
+        </trans-unit>
+        <trans-unit id="458" translate="yes" xml:space="preserve">
+          <source>Async Client</source>
+        </trans-unit>
+        <trans-unit id="459" translate="yes" xml:space="preserve">
+          <source>Retail channel database</source>
+        </trans-unit>
+        <trans-unit id="460" translate="yes" xml:space="preserve">
+          <source>Development environments</source>
+        </trans-unit>
+        <trans-unit id="461" translate="yes" xml:space="preserve">
+          <source>Deploy these development environments when you need to quickly jumpstart a development effort for one to many developers.</source>
+        </trans-unit>
+        <trans-unit id="462" translate="yes" xml:space="preserve">
+          <source>Deploy a development virtual machine (VM) for each of your developers in a matter of hours instead of days.</source>
+        </trans-unit>
+        <trans-unit id="463" translate="yes" xml:space="preserve">
+          <source>With a development environment, you have all the same domain and virtual network customizations that you have with the Test environment.</source>
+        </trans-unit>
+        <trans-unit id="464" translate="yes" xml:space="preserve">
+          <source>Two topology options are provided for developer scenarios:</source>
+        </trans-unit>
+        <trans-unit id="465" translate="yes" xml:space="preserve">
+          <source>Development: Includes all-in-one VMs deployed with Active Directory.</source>
+        </trans-unit>
+        <trans-unit id="466" translate="yes" xml:space="preserve">
+          <source>Development with shared SQL Server: Includes all-in-one VMs deployed with Active Directory.</source>
+        </trans-unit>
+        <trans-unit id="467" translate="yes" xml:space="preserve">
+          <source>The database for each development VM instance will be deployed to a shared SQL Server instance.</source>
+        </trans-unit>
+        <trans-unit id="468" translate="yes" xml:space="preserve">
+          <source>For those doing BI development you can deploy one instance for the purpose.</source>
+        </trans-unit>
+        <trans-unit id="469" translate="yes" xml:space="preserve">
+          <source>All other instances will not deploy with BI.</source>
+        </trans-unit>
+        <trans-unit id="470" translate="yes" xml:space="preserve">
+          <source>The development VMs provided have all the AX 2012 R3 components installed with Visual Studio 2013 and AX 2012 R3 development tools.</source>
+        </trans-unit>
+        <trans-unit id="471" translate="yes" xml:space="preserve">
+          <source>The VMs are joined to the Active Directory domain at deployment time.</source>
+        </trans-unit>
+        <trans-unit id="472" translate="yes" xml:space="preserve">
+          <source>If you provided an Active Directory domain as a customization option, then the VMs will join to that domain.</source>
+        </trans-unit>
+        <trans-unit id="473" translate="yes" xml:space="preserve">
+          <source>Development VMs will be deployed up to the point of the AX 2012 R3 checklist, and have all the software installed that is listed in the Test environment.</source>
+        </trans-unit>
+        <trans-unit id="474" translate="yes" xml:space="preserve">
+          <source>**Note: **The virtual machines in this environment are single-instance virtual machines.</source>
+        </trans-unit>
+        <trans-unit id="475" translate="yes" xml:space="preserve">
+          <source>Single-instance virtual machines are not covered by an Azure <bpt id="p1">[</bpt>Service Level Agreement<ept id="p1">](http://azure.microsoft.com/en-us/support/legal/sla/)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="476" translate="yes" xml:space="preserve">
+          <source>Test environment</source>
+        </trans-unit>
+        <trans-unit id="477" translate="yes" xml:space="preserve">
+          <source>This environment includes several virtual machines, by default.</source>
+        </trans-unit>
+        <trans-unit id="478" translate="yes" xml:space="preserve">
+          <source>These virtual machines have Windows Server—and the software that you’ll need for AX 2012 R3 testing purposes—already installed on them.</source>
+        </trans-unit>
+        <trans-unit id="479" translate="yes" xml:space="preserve">
+          <source>The following table lists details about the default test environment.</source>
+        </trans-unit>
+        <trans-unit id="480" translate="yes" xml:space="preserve">
+          <source>When you deploy the environment, you can add additional virtual machines to the environment, or change the size of the virtual machines.</source>
+        </trans-unit>
+        <trans-unit id="481" translate="yes" xml:space="preserve">
+          <source>**Note: **The virtual machines in this environment are single-instance virtual machines.</source>
+        </trans-unit>
+        <trans-unit id="482" translate="yes" xml:space="preserve">
+          <source>Single-instance virtual machines are not covered by an Azure <bpt id="p1">[</bpt>Service Level Agreement<ept id="p1">](http://azure.microsoft.com/en-us/support/legal/sla/)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="483" translate="yes" xml:space="preserve">
+          <source>**Note: **Data Import/Export Framework (DIXF) components are not installed by default.</source>
+        </trans-unit>
+        <trans-unit id="484" translate="yes" xml:space="preserve">
+          <source>If you want to use DIXF, you must use your own SQL Server installation media to install SQL Server Integration Services (SSIS) on the SQL Server machine.</source>
+        </trans-unit>
+        <trans-unit id="485" translate="yes" xml:space="preserve">
+          <source>After you install SSIS, you can use the Dynamics AX CD (available on a connected drive within the VMs) to install the DIXF components on the AOS and then client machines.</source>
+        </trans-unit>
+        <trans-unit id="486" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Number of virtual machines deployed by default<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="487" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Description<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="488" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Size and name<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="489" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Software installed<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="490" translate="yes" xml:space="preserve">
+          <source>1</source>
+        </trans-unit>
+        <trans-unit id="491" translate="yes" xml:space="preserve">
+          <source>Domain controller</source>
+        </trans-unit>
+        <trans-unit id="492" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Size:<ept id="p1">&lt;/strong&gt;</ept> D1: Basic compute tier (1 core, 3.5 GB memory)<bpt id="p2">&lt;strong&gt;</bpt>Default name:<ept id="p2">&lt;/strong&gt;</ept> AD-<ph id="ph1">&amp;lt;</ph>GUID<ph id="ph2">&amp;gt;</ph></source>
+        </trans-unit>
+        <trans-unit id="493" translate="yes" xml:space="preserve">
+          <source>Windows Server 2012 R2, including:</source>
+        </trans-unit>
+        <trans-unit id="494" translate="yes" xml:space="preserve">
+          <source>Active Directory</source>
+        </trans-unit>
+        <trans-unit id="495" translate="yes" xml:space="preserve">
+          <source>Domain Name Services (DNS)</source>
+        </trans-unit>
+        <trans-unit id="496" translate="yes" xml:space="preserve">
+          <source>1</source>
+        </trans-unit>
+        <trans-unit id="497" translate="yes" xml:space="preserve">
+          <source>AOS server</source>
+        </trans-unit>
+        <trans-unit id="498" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Size:<ept id="p1">&lt;/strong&gt;</ept> D3: Standard compute tier (4 cores, 14 GB memory)<bpt id="p2">&lt;strong&gt;</bpt>Default name:<ept id="p2">&lt;/strong&gt;</ept> AOS-<ph id="ph1">&amp;lt;</ph>GUID<ph id="ph2">&amp;gt;</ph></source>
+        </trans-unit>
+        <trans-unit id="499" translate="yes" xml:space="preserve">
+          <source>Windows Server 2012 R2, including:</source>
+        </trans-unit>
+        <trans-unit id="500" translate="yes" xml:space="preserve">
+          <source>Internet Information Services (IIS)</source>
+        </trans-unit>
+        <trans-unit id="501" translate="yes" xml:space="preserve">
+          <source>Microsoft Visual Studio 2013</source>
+        </trans-unit>
+        <trans-unit id="502" translate="yes" xml:space="preserve">
+          <source>Microsoft Project Server</source>
+        </trans-unit>
+        <trans-unit id="503" translate="yes" xml:space="preserve">
+          <source>Microsoft SQL Server 2014 components:</source>
+        </trans-unit>
+        <trans-unit id="504" translate="yes" xml:space="preserve">
+          <source>Management Studio</source>
+        </trans-unit>
+        <trans-unit id="505" translate="yes" xml:space="preserve">
+          <source>Native Client</source>
+        </trans-unit>
+        <trans-unit id="506" translate="yes" xml:space="preserve">
+          <source>AX 2012 R3 or AX 2012 R3 CU8 components:</source>
+        </trans-unit>
+        <trans-unit id="507" translate="yes" xml:space="preserve">
+          <source>Server components:</source>
+        </trans-unit>
+        <trans-unit id="508" translate="yes" xml:space="preserve">
+          <source>Application Object Server (AOS)</source>
+        </trans-unit>
+        <trans-unit id="509" translate="yes" xml:space="preserve">
+          <source>Client components:</source>
+        </trans-unit>
+        <trans-unit id="510" translate="yes" xml:space="preserve">
+          <source>Client</source>
+        </trans-unit>
+        <trans-unit id="511" translate="yes" xml:space="preserve">
+          <source>Office add-ins</source>
+        </trans-unit>
+        <trans-unit id="512" translate="yes" xml:space="preserve">
+          <source>Remote Desktop Services integration</source>
+        </trans-unit>
+        <trans-unit id="513" translate="yes" xml:space="preserve">
+          <source>Integration components:</source>
+        </trans-unit>
+        <trans-unit id="514" translate="yes" xml:space="preserve">
+          <source>Web services on IIS</source>
+        </trans-unit>
+        <trans-unit id="515" translate="yes" xml:space="preserve">
+          <source>.NET Business Connector</source>
+        </trans-unit>
+        <trans-unit id="516" translate="yes" xml:space="preserve">
+          <source>Management utilities</source>
+        </trans-unit>
+        <trans-unit id="517" translate="yes" xml:space="preserve">
+          <source>Retail components:</source>
+        </trans-unit>
+        <trans-unit id="518" translate="yes" xml:space="preserve">
+          <source>Retail Headquarters</source>
+        </trans-unit>
+        <trans-unit id="519" translate="yes" xml:space="preserve">
+          <source>Commerce Data Exchange components:</source>
+        </trans-unit>
+        <trans-unit id="520" translate="yes" xml:space="preserve">
+          <source>Synch Service</source>
+        </trans-unit>
+        <trans-unit id="521" translate="yes" xml:space="preserve">
+          <source>Real-time Service</source>
+        </trans-unit>
+        <trans-unit id="522" translate="yes" xml:space="preserve">
+          <source>Async Server</source>
+        </trans-unit>
+        <trans-unit id="523" translate="yes" xml:space="preserve">
+          <source>RapidStart Connector</source>
+        </trans-unit>
+        <trans-unit id="524" translate="yes" xml:space="preserve">
+          <source>1</source>
+        </trans-unit>
+        <trans-unit id="525" translate="yes" xml:space="preserve">
+          <source>Database server/BI server</source>
+        </trans-unit>
+        <trans-unit id="526" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Size:<ept id="p1">&lt;/strong&gt;</ept> D3: Standard compute tier (4 cores, 14 GB memory)<bpt id="p2">&lt;strong&gt;</bpt>Default name:<ept id="p2">&lt;/strong&gt;</ept> SQL-<ph id="ph1">&amp;lt;</ph>GUID<ph id="ph2">&amp;gt;</ph></source>
+        </trans-unit>
+        <trans-unit id="527" translate="yes" xml:space="preserve">
+          <source>Windows Server 2012 R2</source>
+        </trans-unit>
+        <trans-unit id="528" translate="yes" xml:space="preserve">
+          <source>Microsoft SQL Server 2014 components:</source>
+        </trans-unit>
+        <trans-unit id="529" translate="yes" xml:space="preserve">
+          <source>Database Engine Services</source>
+        </trans-unit>
+        <trans-unit id="530" translate="yes" xml:space="preserve">
+          <source>Reporting Services</source>
+        </trans-unit>
+        <trans-unit id="531" translate="yes" xml:space="preserve">
+          <source>Analysis Services</source>
+        </trans-unit>
+        <trans-unit id="532" translate="yes" xml:space="preserve">
+          <source>Management Studio</source>
+        </trans-unit>
+        <trans-unit id="533" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">
+&lt;strong&gt;</bpt>Note:<ept id="p1">&lt;/strong&gt;</ept> Reporting Services is configured to run in Native mode.</source>
+        </trans-unit>
+        <trans-unit id="534" translate="yes" xml:space="preserve">
+          <source>To use Power View, you’ll need to complete additional configuration steps.</source>
+        </trans-unit>
+        <trans-unit id="535" translate="yes" xml:space="preserve">
+          <source>For more information, see the prerequisites listed in <bpt id="p1">&lt;a href="https://technet.microsoft.com/en-us/library/jj933492.aspx"&gt;</bpt>Create a report by using Power View to connect to a cube<ept id="p1">&lt;/a&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="536" translate="yes" xml:space="preserve">
+          <source>AX 2012 R3 or AX 2012 R3 CU8 components:</source>
+        </trans-unit>
+        <trans-unit id="537" translate="yes" xml:space="preserve">
+          <source>Databases</source>
+        </trans-unit>
+        <trans-unit id="538" translate="yes" xml:space="preserve">
+          <source>Business intelligence components:</source>
+        </trans-unit>
+        <trans-unit id="539" translate="yes" xml:space="preserve">
+          <source>Reporting Services extensions</source>
+        </trans-unit>
+        <trans-unit id="540" translate="yes" xml:space="preserve">
+          <source>Analysis Services configuration</source>
+        </trans-unit>
+        <trans-unit id="541" translate="yes" xml:space="preserve">
+          <source>0</source>
+        </trans-unit>
+        <trans-unit id="542" translate="yes" xml:space="preserve">
+          <source>Enterprise Portal server</source>
+        </trans-unit>
+        <trans-unit id="543" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Size:<ept id="p1">&lt;/strong&gt;</ept> D3: Standard compute tier (4 cores, 14 GB memory)<bpt id="p2">&lt;strong&gt;</bpt>Default name:<ept id="p2">&lt;/strong&gt;</ept> EP-<ph id="ph1">&amp;lt;</ph>GUID<ph id="ph2">&amp;gt;</ph></source>
+        </trans-unit>
+        <trans-unit id="544" translate="yes" xml:space="preserve">
+          <source>Windows Server 2012 R2, including:</source>
+        </trans-unit>
+        <trans-unit id="545" translate="yes" xml:space="preserve">
+          <source>Internet Information Services (IIS)</source>
+        </trans-unit>
+        <trans-unit id="546" translate="yes" xml:space="preserve">
+          <source>Microsoft SQL Server 2012 components:</source>
+        </trans-unit>
+        <trans-unit id="547" translate="yes" xml:space="preserve">
+          <source>Full-text Search</source>
+        </trans-unit>
+        <trans-unit id="548" translate="yes" xml:space="preserve">
+          <source>Microsoft SharePoint Server 2013</source>
+        </trans-unit>
+        <trans-unit id="549" translate="yes" xml:space="preserve">
+          <source>AX 2012 R3 or AX 2012 R3 CU8 components:</source>
+        </trans-unit>
+        <trans-unit id="550" translate="yes" xml:space="preserve">
+          <source>Server components:</source>
+        </trans-unit>
+        <trans-unit id="551" translate="yes" xml:space="preserve">
+          <source>Web server components:</source>
+        </trans-unit>
+        <trans-unit id="552" translate="yes" xml:space="preserve">
+          <source>Enterprise Portal (EP)</source>
+        </trans-unit>
+        <trans-unit id="553" translate="yes" xml:space="preserve">
+          <source>Enterprise Search</source>
+        </trans-unit>
+        <trans-unit id="554" translate="yes" xml:space="preserve">
+          <source>Help Server</source>
+        </trans-unit>
+        <trans-unit id="555" translate="yes" xml:space="preserve">
+          <source>Management Reporter components:</source>
+        </trans-unit>
+        <trans-unit id="556" translate="yes" xml:space="preserve">
+          <source>Management Reporter server components</source>
+        </trans-unit>
+        <trans-unit id="557" translate="yes" xml:space="preserve">
+          <source>Retail components:</source>
+        </trans-unit>
+        <trans-unit id="558" translate="yes" xml:space="preserve">
+          <source>Commerce Data Exchange components:</source>
+        </trans-unit>
+        <trans-unit id="559" translate="yes" xml:space="preserve">
+          <source>Async Client</source>
+        </trans-unit>
+        <trans-unit id="560" translate="yes" xml:space="preserve">
+          <source>Retail Server</source>
+        </trans-unit>
+        <trans-unit id="561" translate="yes" xml:space="preserve">
+          <source>Retail Online Channel</source>
+        </trans-unit>
+        <trans-unit id="562" translate="yes" xml:space="preserve">
+          <source>Retail Channel Database</source>
+        </trans-unit>
+        <trans-unit id="563" translate="yes" xml:space="preserve">
+          <source>Retail Channel Configuration Utility</source>
+        </trans-unit>
+        <trans-unit id="564" translate="yes" xml:space="preserve">
+          <source>Retail Hardware Station</source>
+        </trans-unit>
+        <trans-unit id="565" translate="yes" xml:space="preserve">
+          <source>Warehouse Mobile Devices Portal</source>
+        </trans-unit>
+        <trans-unit id="566" translate="yes" xml:space="preserve">
+          <source>Connector for Microsoft Dynamics</source>
+        </trans-unit>
+        <trans-unit id="567" translate="yes" xml:space="preserve">
+          <source>1</source>
+        </trans-unit>
+        <trans-unit id="568" translate="yes" xml:space="preserve">
+          <source>Client computer</source>
+        </trans-unit>
+        <trans-unit id="569" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Size:<ept id="p1">&lt;/strong&gt;</ept> D3: Standard compute tier (4 cores, 14 GB memory)<bpt id="p2">&lt;strong&gt;</bpt>Default name:<ept id="p2">&lt;/strong&gt;</ept> CLI-<ph id="ph1">&amp;lt;</ph>GUID<ph id="ph2">&amp;gt;</ph></source>
+        </trans-unit>
+        <trans-unit id="570" translate="yes" xml:space="preserve">
+          <source>Windows Server 2012 R2</source>
+        </trans-unit>
+        <trans-unit id="571" translate="yes" xml:space="preserve">
+          <source>Microsoft Visual Studio 2013</source>
+        </trans-unit>
+        <trans-unit id="572" translate="yes" xml:space="preserve">
+          <source>Microsoft SQL Server 2014 components:</source>
+        </trans-unit>
+        <trans-unit id="573" translate="yes" xml:space="preserve">
+          <source>Developer tools</source>
+        </trans-unit>
+        <trans-unit id="574" translate="yes" xml:space="preserve">
+          <source>Microsoft SharePoint Server 2013 Client Components SDK</source>
+        </trans-unit>
+        <trans-unit id="575" translate="yes" xml:space="preserve">
+          <source>Microsoft Office 365 ProPlus</source>
+        </trans-unit>
+        <trans-unit id="576" translate="yes" xml:space="preserve">
+          <source>AX 2012 R3 or AX 2012 R3 CU8 components:</source>
+        </trans-unit>
+        <trans-unit id="577" translate="yes" xml:space="preserve">
+          <source>Management Reporter components:</source>
+        </trans-unit>
+        <trans-unit id="578" translate="yes" xml:space="preserve">
+          <source>Management Reporter Report Designer</source>
+        </trans-unit>
+        <trans-unit id="579" translate="yes" xml:space="preserve">
+          <source>Client components:</source>
+        </trans-unit>
+        <trans-unit id="580" translate="yes" xml:space="preserve">
+          <source>Client</source>
+        </trans-unit>
+        <trans-unit id="581" translate="yes" xml:space="preserve">
+          <source>Office add-ins</source>
+        </trans-unit>
+        <trans-unit id="582" translate="yes" xml:space="preserve">
+          <source>Remote Desktop Services integration</source>
+        </trans-unit>
+        <trans-unit id="583" translate="yes" xml:space="preserve">
+          <source>Developer tools:</source>
+        </trans-unit>
+        <trans-unit id="584" translate="yes" xml:space="preserve">
+          <source>Debugger</source>
+        </trans-unit>
+        <trans-unit id="585" translate="yes" xml:space="preserve">
+          <source>Visual Studio Tools</source>
+        </trans-unit>
+        <trans-unit id="586" translate="yes" xml:space="preserve">
+          <source>Trace Parser</source>
+        </trans-unit>
+        <trans-unit id="587" translate="yes" xml:space="preserve">
+          <source>Management utilities</source>
+        </trans-unit>
+        <trans-unit id="588" translate="yes" xml:space="preserve">
+          <source>Retail components:</source>
+        </trans-unit>
+        <trans-unit id="589" translate="yes" xml:space="preserve">
+          <source>Retail POS</source>
+        </trans-unit>
+        <trans-unit id="590" translate="yes" xml:space="preserve">
+          <source>0</source>
+        </trans-unit>
+        <trans-unit id="591" translate="yes" xml:space="preserve">
+          <source>Remote Desktop Services server</source>
+        </trans-unit>
+        <trans-unit id="592" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Size:<ept id="p1">&lt;/strong&gt;</ept> D3: Standard compute tier (4 cores, 14 GB memory)<bpt id="p2">&lt;strong&gt;</bpt>Default name:<ept id="p2">&lt;/strong&gt;</ept> RDS-<ph id="ph1">&amp;lt;</ph>GUID<ph id="ph2">&amp;gt;</ph></source>
+        </trans-unit>
+        <trans-unit id="593" translate="yes" xml:space="preserve">
+          <source>Windows Server 2012 R2, including:</source>
+        </trans-unit>
+        <trans-unit id="594" translate="yes" xml:space="preserve">
+          <source>Internet Information Services (IIS)</source>
+        </trans-unit>
+        <trans-unit id="595" translate="yes" xml:space="preserve">
+          <source>Remote Desktop Services</source>
+        </trans-unit>
+        <trans-unit id="596" translate="yes" xml:space="preserve">
+          <source>Microsoft SQL Server 2012 Native Client</source>
+        </trans-unit>
+        <trans-unit id="597" translate="yes" xml:space="preserve">
+          <source>Retail Essentials dev/test environment</source>
+        </trans-unit>
+        <trans-unit id="598" translate="yes" xml:space="preserve">
+          <source>Deploy this environment to develop or test features for Retail essentials.</source>
+        </trans-unit>
+        <trans-unit id="599" translate="yes" xml:space="preserve">
+          <source>This environment includes one virtual machine, by default.</source>
+        </trans-unit>
+        <trans-unit id="600" translate="yes" xml:space="preserve">
+          <source>This virtual machine has Windows Server—and the software that you’ll need for Retail essentials development and testing purposes—already installed on it.</source>
+        </trans-unit>
+        <trans-unit id="601" translate="yes" xml:space="preserve">
+          <source>The following table lists details about the default Retail essentials dev/test environment.</source>
+        </trans-unit>
+        <trans-unit id="602" translate="yes" xml:space="preserve">
+          <source>When you deploy the environment, you can add additional virtual machines to the environment, or change the size of the virtual machines.</source>
+        </trans-unit>
+        <trans-unit id="603" translate="yes" xml:space="preserve">
+          <source>**Note: **The virtual machines in this environment are single-instance virtual machines.</source>
+        </trans-unit>
+        <trans-unit id="604" translate="yes" xml:space="preserve">
+          <source>Single-instance virtual machines are not covered by an Azure <bpt id="p1">[</bpt>Service Level Agreement<ept id="p1">](http://azure.microsoft.com/en-us/support/legal/sla/)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="605" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Number of virtual machines deployed by default<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="606" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Description<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="607" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Size and name<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="608" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Software installed<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="609" translate="yes" xml:space="preserve">
+          <source>1</source>
+        </trans-unit>
+        <trans-unit id="610" translate="yes" xml:space="preserve">
+          <source>Retail essentials server</source>
+        </trans-unit>
+        <trans-unit id="611" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Size:<ept id="p1">&lt;/strong&gt;</ept> D3: Standard compute tier (4 cores, 14 GB memory)<bpt id="p2">&lt;strong&gt;</bpt>Default name:<ept id="p2">&lt;/strong&gt;</ept> ESSEN-<ph id="ph1">&amp;lt;</ph>GUID<ph id="ph2">&amp;gt;</ph></source>
+        </trans-unit>
+        <trans-unit id="612" translate="yes" xml:space="preserve">
+          <source>Windows Server 2012 R2</source>
+        </trans-unit>
+        <trans-unit id="613" translate="yes" xml:space="preserve">
+          <source>Microsoft SQL Server 2014 components:</source>
+        </trans-unit>
+        <trans-unit id="614" translate="yes" xml:space="preserve">
+          <source>Database Engine Services</source>
+        </trans-unit>
+        <trans-unit id="615" translate="yes" xml:space="preserve">
+          <source>Management Studio</source>
+        </trans-unit>
+        <trans-unit id="616" translate="yes" xml:space="preserve">
+          <source>Developer tools</source>
+        </trans-unit>
+        <trans-unit id="617" translate="yes" xml:space="preserve">
+          <source>AX 2012 R3 components:</source>
+        </trans-unit>
+        <trans-unit id="618" translate="yes" xml:space="preserve">
+          <source>Databases</source>
+        </trans-unit>
+        <trans-unit id="619" translate="yes" xml:space="preserve">
+          <source>Server components:</source>
+        </trans-unit>
+        <trans-unit id="620" translate="yes" xml:space="preserve">
+          <source>Application Object Server (AOS)</source>
+        </trans-unit>
+        <trans-unit id="621" translate="yes" xml:space="preserve">
+          <source>Client components:</source>
+        </trans-unit>
+        <trans-unit id="622" translate="yes" xml:space="preserve">
+          <source>Client</source>
+        </trans-unit>
+        <trans-unit id="623" translate="yes" xml:space="preserve">
+          <source>Integration components:</source>
+        </trans-unit>
+        <trans-unit id="624" translate="yes" xml:space="preserve">
+          <source>.NET Business Connector</source>
+        </trans-unit>
+        <trans-unit id="625" translate="yes" xml:space="preserve">
+          <source>Retail components:</source>
+        </trans-unit>
+        <trans-unit id="626" translate="yes" xml:space="preserve">
+          <source>Retail Headquarters</source>
+        </trans-unit>
+        <trans-unit id="627" translate="yes" xml:space="preserve">
+          <source>Commerce Data Exchange components:</source>
+        </trans-unit>
+        <trans-unit id="628" translate="yes" xml:space="preserve">
+          <source>Real-time Service</source>
+        </trans-unit>
+        <trans-unit id="629" translate="yes" xml:space="preserve">
+          <source>Async Server</source>
+        </trans-unit>
+        <trans-unit id="630" translate="yes" xml:space="preserve">
+          <source>Async Client</source>
+        </trans-unit>
+        <trans-unit id="631" translate="yes" xml:space="preserve">
+          <source>Retail channel database</source>
+        </trans-unit>
+        <trans-unit id="632" translate="yes" xml:space="preserve">
+          <source>Retail ecommerce dev/test environment</source>
+        </trans-unit>
+        <trans-unit id="633" translate="yes" xml:space="preserve">
+          <source>Deploy this environment to create and test an online sales channel that is fully integrated with AX 2012 R3.</source>
+        </trans-unit>
+        <trans-unit id="634" translate="yes" xml:space="preserve">
+          <source>This environment includes one virtual machine, by default.</source>
+        </trans-unit>
+        <trans-unit id="635" translate="yes" xml:space="preserve">
+          <source>This virtual machine has Windows Server—and the software that you’ll need for Retail e-commerce—already installed on it.</source>
+        </trans-unit>
+        <trans-unit id="636" translate="yes" xml:space="preserve">
+          <source>The following table lists details about the default Retail e-commerce dev/test environment.</source>
+        </trans-unit>
+        <trans-unit id="637" translate="yes" xml:space="preserve">
+          <source>When you deploy the environment, you can add additional virtual machines to the environment, or change the size of the virtual machines.</source>
+        </trans-unit>
+        <trans-unit id="638" translate="yes" xml:space="preserve">
+          <source>**Note: **The virtual machines in this environment are single-instance virtual machines.</source>
+        </trans-unit>
+        <trans-unit id="639" translate="yes" xml:space="preserve">
+          <source>Single-instance virtual machines are not covered by an Azure <bpt id="p1">[</bpt>Service Level Agreement<ept id="p1">](http://azure.microsoft.com/en-us/support/legal/sla/)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="640" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Number of virtual machines deployed by default<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="641" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Description<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="642" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Size and name<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="643" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Software installed<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="644" translate="yes" xml:space="preserve">
+          <source>1</source>
+        </trans-unit>
+        <trans-unit id="645" translate="yes" xml:space="preserve">
+          <source>Retail e-commerce server</source>
+        </trans-unit>
+        <trans-unit id="646" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Size:<ept id="p1">&lt;/strong&gt;</ept> D3: Standard compute tier (4 cores, 14 GB memory)<bpt id="p2">&lt;strong&gt;</bpt>Default name:<ept id="p2">&lt;/strong&gt;</ept> E-COM-<ph id="ph1">&amp;lt;</ph>GUID<ph id="ph2">&amp;gt;</ph></source>
+        </trans-unit>
+        <trans-unit id="647" translate="yes" xml:space="preserve">
+          <source>Windows Server 2012 R2</source>
+        </trans-unit>
+        <trans-unit id="648" translate="yes" xml:space="preserve">
+          <source>Microsoft SharePoint Server 2013</source>
+        </trans-unit>
+        <trans-unit id="649" translate="yes" xml:space="preserve">
+          <source>AX 2012 R3 components:</source>
+        </trans-unit>
+        <trans-unit id="650" translate="yes" xml:space="preserve">
+          <source>Retail components:</source>
+        </trans-unit>
+        <trans-unit id="651" translate="yes" xml:space="preserve">
+          <source>Commerce Data Exchange components:</source>
+        </trans-unit>
+        <trans-unit id="652" translate="yes" xml:space="preserve">
+          <source>Async Client</source>
+        </trans-unit>
+        <trans-unit id="653" translate="yes" xml:space="preserve">
+          <source>Retail online channel</source>
+        </trans-unit>
+        <trans-unit id="654" translate="yes" xml:space="preserve">
+          <source>Retail channel database</source>
+        </trans-unit>
+        <trans-unit id="655" translate="yes" xml:space="preserve">
+          <source>Retail mobility dev/test environment</source>
+        </trans-unit>
+        <trans-unit id="656" translate="yes" xml:space="preserve">
+          <source>Deploy this environment to enable your sales staff to process sales transactions, enter customer orders, and perform daily operations and inventory management with mobile devices anywhere in a store.</source>
+        </trans-unit>
+        <trans-unit id="657" translate="yes" xml:space="preserve">
+          <source>This environment includes one virtual machine, by default.</source>
+        </trans-unit>
+        <trans-unit id="658" translate="yes" xml:space="preserve">
+          <source>This virtual machine has Windows Server—and the software that you’ll need for Retail mobility—already installed on it.</source>
+        </trans-unit>
+        <trans-unit id="659" translate="yes" xml:space="preserve">
+          <source>The following table lists details about the default Retail mobility dev/test environment.</source>
+        </trans-unit>
+        <trans-unit id="660" translate="yes" xml:space="preserve">
+          <source>When you deploy the environment, you can add additional virtual machines to the environment, or change the size of the virtual machines.</source>
+        </trans-unit>
+        <trans-unit id="661" translate="yes" xml:space="preserve">
+          <source>**Note: **The virtual machines in this environment are single-instance virtual machines.</source>
+        </trans-unit>
+        <trans-unit id="662" translate="yes" xml:space="preserve">
+          <source>Single-instance virtual machines are not covered by an Azure <bpt id="p1">[</bpt>Service Level Agreement<ept id="p1">](http://azure.microsoft.com/en-us/support/legal/sla/)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="663" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Number of virtual machines deployed by default<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="664" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Description<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="665" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Size and name<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="666" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Software installed<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="667" translate="yes" xml:space="preserve">
+          <source>1</source>
+        </trans-unit>
+        <trans-unit id="668" translate="yes" xml:space="preserve">
+          <source>Retail server</source>
+        </trans-unit>
+        <trans-unit id="669" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Size:<ept id="p1">&lt;/strong&gt;</ept> D3: Standard compute tier (4 cores, 14 GB memory)<bpt id="p2">&lt;strong&gt;</bpt>Default name:<ept id="p2">&lt;/strong&gt;</ept> MOBIL-<ph id="ph1">&amp;lt;</ph>GUID<ph id="ph2">&amp;gt;</ph></source>
+        </trans-unit>
+        <trans-unit id="670" translate="yes" xml:space="preserve">
+          <source>Windows Server 2012 R2</source>
+        </trans-unit>
+        <trans-unit id="671" translate="yes" xml:space="preserve">
+          <source>AX 2012 R3 components:</source>
+        </trans-unit>
+        <trans-unit id="672" translate="yes" xml:space="preserve">
+          <source>Retail components:</source>
+        </trans-unit>
+        <trans-unit id="673" translate="yes" xml:space="preserve">
+          <source>Commerce Data Exchange components:</source>
+        </trans-unit>
+        <trans-unit id="674" translate="yes" xml:space="preserve">
+          <source>Async Client</source>
+        </trans-unit>
+        <trans-unit id="675" translate="yes" xml:space="preserve">
+          <source>Retail Server</source>
+        </trans-unit>
+        <trans-unit id="676" translate="yes" xml:space="preserve">
+          <source>Retail channel database</source>
+        </trans-unit>
+        <trans-unit id="677" translate="yes" xml:space="preserve">
+          <source>High availability environment</source>
+        </trans-unit>
+        <trans-unit id="678" translate="yes" xml:space="preserve">
+          <source>Deploy this environment to use AX 2012 R3 in an environment that can be configured for high availability.</source>
+        </trans-unit>
+        <trans-unit id="679" translate="yes" xml:space="preserve">
+          <source>This environment includes several virtual machines.</source>
+        </trans-unit>
+        <trans-unit id="680" translate="yes" xml:space="preserve">
+          <source>These virtual machines have Windows Server—and the software that you’ll need to use AX 2012 R3—already installed on them.</source>
+        </trans-unit>
+        <trans-unit id="681" translate="yes" xml:space="preserve">
+          <source>The following table lists details about the default high availability environment.</source>
+        </trans-unit>
+        <trans-unit id="682" translate="yes" xml:space="preserve">
+          <source>When you deploy the environment, you can add additional virtual machines to the environment, or change the size of the virtual machines.</source>
+        </trans-unit>
+        <trans-unit id="683" translate="yes" xml:space="preserve">
+          <source>**Note: **Azure Premium Storage is required for high availability environments.</source>
+        </trans-unit>
+        <trans-unit id="684" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Deploy a high availability environment on Azure<ept id="p1">](deploy-high-availability-environment-azure.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="685" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> The virtual machines in this environment are covered by an Azure <bpt id="p2">[</bpt>Service Level Agreement<ept id="p2">](http://azure.microsoft.com/en-us/support/legal/sla/)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="686" translate="yes" xml:space="preserve">
+          <source>**Note: **Data Import/Export Framework (DIXF) components are not installed by default.</source>
+        </trans-unit>
+        <trans-unit id="687" translate="yes" xml:space="preserve">
+          <source>If you want to use DIXF, you must use your own SQL Server installation media to install SQL Server Integration Services (SSIS) on the SQL Server machine.</source>
+        </trans-unit>
+        <trans-unit id="688" translate="yes" xml:space="preserve">
+          <source>After you install SSIS, you can use the Dynamics AX CD (available on a connected drive within the VMs) to install the DIXF components on the AOS and then client machines.</source>
+        </trans-unit>
+        <trans-unit id="689" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Number of virtual machines deployed by default<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="690" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Description<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="691" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Size and name<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="692" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Software installed<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="693" translate="yes" xml:space="preserve">
+          <source>3<bpt id="p1">&lt;strong&gt;</bpt>Note: <ept id="p1">&lt;/strong&gt;</ept>Three domain controllers are deployed in this environment.</source>
+        </trans-unit>
+        <trans-unit id="694" translate="yes" xml:space="preserve">
+          <source>If one domain controller fails, you must be left with two, online domain controllers in order to meet Azure’s <bpt id="p1">&lt;a href="http://azure.microsoft.com/en-us/support/legal/sla/"&gt;</bpt>Service Level Agreement<ept id="p1">&lt;/a&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="695" translate="yes" xml:space="preserve">
+          <source>Domain controller</source>
+        </trans-unit>
+        <trans-unit id="696" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Size:<ept id="p1">&lt;/strong&gt;</ept> D1: Basic compute tier (1 core, 3.5 GB memory)<bpt id="p2">&lt;strong&gt;</bpt>Default name:<ept id="p2">&lt;/strong&gt;</ept> AD-<ph id="ph1">&amp;lt;</ph>GUID<ph id="ph2">&amp;gt;</ph></source>
+        </trans-unit>
+        <trans-unit id="697" translate="yes" xml:space="preserve">
+          <source>Windows Server 2012 R2, including:</source>
+        </trans-unit>
+        <trans-unit id="698" translate="yes" xml:space="preserve">
+          <source>Active Directory</source>
+        </trans-unit>
+        <trans-unit id="699" translate="yes" xml:space="preserve">
+          <source>Domain Name Services (DNS)</source>
+        </trans-unit>
+        <trans-unit id="700" translate="yes" xml:space="preserve">
+          <source>2</source>
+        </trans-unit>
+        <trans-unit id="701" translate="yes" xml:space="preserve">
+          <source>AOS server</source>
+        </trans-unit>
+        <trans-unit id="702" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Size:<ept id="p1">&lt;/strong&gt;</ept> D3: Standard compute tier (4 cores, 14 GB memory)<bpt id="p2">&lt;strong&gt;</bpt>Default name:<ept id="p2">&lt;/strong&gt;</ept> AOS-<ph id="ph1">&amp;lt;</ph>GUID<ph id="ph2">&amp;gt;</ph></source>
+        </trans-unit>
+        <trans-unit id="703" translate="yes" xml:space="preserve">
+          <source>Windows Server 2012 R2, including:</source>
+        </trans-unit>
+        <trans-unit id="704" translate="yes" xml:space="preserve">
+          <source>Internet Information Services (IIS)</source>
+        </trans-unit>
+        <trans-unit id="705" translate="yes" xml:space="preserve">
+          <source>Microsoft Visual Studio 2013</source>
+        </trans-unit>
+        <trans-unit id="706" translate="yes" xml:space="preserve">
+          <source>Microsoft Project Server</source>
+        </trans-unit>
+        <trans-unit id="707" translate="yes" xml:space="preserve">
+          <source>Microsoft SQL Server 2014 components:</source>
+        </trans-unit>
+        <trans-unit id="708" translate="yes" xml:space="preserve">
+          <source>Management Studio</source>
+        </trans-unit>
+        <trans-unit id="709" translate="yes" xml:space="preserve">
+          <source>Native Client</source>
+        </trans-unit>
+        <trans-unit id="710" translate="yes" xml:space="preserve">
+          <source>AX 2012 R3 or AX 2012 R3 CU8 components:</source>
+        </trans-unit>
+        <trans-unit id="711" translate="yes" xml:space="preserve">
+          <source>Server components:</source>
+        </trans-unit>
+        <trans-unit id="712" translate="yes" xml:space="preserve">
+          <source>Application Object Server (AOS)</source>
+        </trans-unit>
+        <trans-unit id="713" translate="yes" xml:space="preserve">
+          <source>Client components:</source>
+        </trans-unit>
+        <trans-unit id="714" translate="yes" xml:space="preserve">
+          <source>Client</source>
+        </trans-unit>
+        <trans-unit id="715" translate="yes" xml:space="preserve">
+          <source>Office add-ins</source>
+        </trans-unit>
+        <trans-unit id="716" translate="yes" xml:space="preserve">
+          <source>Remote Desktop Services integration</source>
+        </trans-unit>
+        <trans-unit id="717" translate="yes" xml:space="preserve">
+          <source>Integration components:</source>
+        </trans-unit>
+        <trans-unit id="718" translate="yes" xml:space="preserve">
+          <source>Web services on IIS</source>
+        </trans-unit>
+        <trans-unit id="719" translate="yes" xml:space="preserve">
+          <source>.NET Business Connector</source>
+        </trans-unit>
+        <trans-unit id="720" translate="yes" xml:space="preserve">
+          <source>Management utilities</source>
+        </trans-unit>
+        <trans-unit id="721" translate="yes" xml:space="preserve">
+          <source>Retail components:</source>
+        </trans-unit>
+        <trans-unit id="722" translate="yes" xml:space="preserve">
+          <source>Retail Headquarters</source>
+        </trans-unit>
+        <trans-unit id="723" translate="yes" xml:space="preserve">
+          <source>Commerce Data Exchange components:</source>
+        </trans-unit>
+        <trans-unit id="724" translate="yes" xml:space="preserve">
+          <source>Synch Service</source>
+        </trans-unit>
+        <trans-unit id="725" translate="yes" xml:space="preserve">
+          <source>Real-time Service</source>
+        </trans-unit>
+        <trans-unit id="726" translate="yes" xml:space="preserve">
+          <source>Async Server</source>
+        </trans-unit>
+        <trans-unit id="727" translate="yes" xml:space="preserve">
+          <source>RapidStart Connector</source>
+        </trans-unit>
+        <trans-unit id="728" translate="yes" xml:space="preserve">
+          <source>2</source>
+        </trans-unit>
+        <trans-unit id="729" translate="yes" xml:space="preserve">
+          <source>Database server</source>
+        </trans-unit>
+        <trans-unit id="730" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Size:<ept id="p1">&lt;/strong&gt;</ept> D3: Standard compute tier (4 cores, 14 GB memory)<bpt id="p2">&lt;strong&gt;</bpt>Default name:<ept id="p2">&lt;/strong&gt;</ept> SQL-<ph id="ph1">&amp;lt;</ph>GUID<ph id="ph2">&amp;gt;</ph></source>
+        </trans-unit>
+        <trans-unit id="731" translate="yes" xml:space="preserve">
+          <source>Windows Server 2012 R2</source>
+        </trans-unit>
+        <trans-unit id="732" translate="yes" xml:space="preserve">
+          <source>Microsoft SQL Server 2014 components:</source>
+        </trans-unit>
+        <trans-unit id="733" translate="yes" xml:space="preserve">
+          <source>Database Engine Services</source>
+        </trans-unit>
+        <trans-unit id="734" translate="yes" xml:space="preserve">
+          <source>Management Studio</source>
+        </trans-unit>
+        <trans-unit id="735" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Note<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="736" translate="yes" xml:space="preserve">
+          <source>A Quorum server is also deployed.</source>
+        </trans-unit>
+        <trans-unit id="737" translate="yes" xml:space="preserve">
+          <source>This virtual machine is a listener for the AlwaysOn availability group.</source>
+        </trans-unit>
+        <trans-unit id="738" translate="yes" xml:space="preserve">
+          <source>This virtual machine:o    Is not represented in the High Availability VM list, but it is deployed with High Availability environments.o    Is named QRM-<ph id="ph1">&amp;lt;</ph>GUID<ph id="ph2">&amp;gt;</ph>.</source>
+        </trans-unit>
+        <trans-unit id="739" translate="yes" xml:space="preserve">
+          <source>This name can’t be customized.o    Is an A2 virtual machine.o    Runs a gallery image of Windows Server 2012 R2.o    Post deployment, this VM appears as a “Database Server” when adding VMs to the High Availability environment.</source>
+        </trans-unit>
+        <trans-unit id="740" translate="yes" xml:space="preserve">
+          <source>The 3rd VM referenced here is the A2 Quorum Server which is explicitly not a SQL Server.</source>
+        </trans-unit>
+        <trans-unit id="741" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Note<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="742" translate="yes" xml:space="preserve">
+          <source>Reporting Services is configured to run in Native mode.</source>
+        </trans-unit>
+        <trans-unit id="743" translate="yes" xml:space="preserve">
+          <source>To use Power View, you’ll need to complete additional configuration steps.</source>
+        </trans-unit>
+        <trans-unit id="744" translate="yes" xml:space="preserve">
+          <source>For more information, see the prerequisites listed in <bpt id="p1">&lt;a href="https://technet.microsoft.com/en-us/library/jj933492.aspx"&gt;</bpt>Create a report by using Power View to connect to a cube<ept id="p1">&lt;/a&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="745" translate="yes" xml:space="preserve">
+          <source>AX 2012 R3 or AX 2012 R3 CU8 components:</source>
+        </trans-unit>
+        <trans-unit id="746" translate="yes" xml:space="preserve">
+          <source>Databases</source>
+        </trans-unit>
+        <trans-unit id="747" translate="yes" xml:space="preserve">
+          <source>2</source>
+        </trans-unit>
+        <trans-unit id="748" translate="yes" xml:space="preserve">
+          <source>Business intelligence (BI) server</source>
+        </trans-unit>
+        <trans-unit id="749" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Size:<ept id="p1">&lt;/strong&gt;</ept> D3: Standard compute tier (4 cores, 14 GB memory)<bpt id="p2">&lt;strong&gt;</bpt>Default name:<ept id="p2">&lt;/strong&gt;</ept> BI-<ph id="ph1">&amp;lt;</ph>GUID<ph id="ph2">&amp;gt;</ph></source>
+        </trans-unit>
+        <trans-unit id="750" translate="yes" xml:space="preserve">
+          <source>Windows Server 2012 R2</source>
+        </trans-unit>
+        <trans-unit id="751" translate="yes" xml:space="preserve">
+          <source>Microsoft SQL Server 2014 components:</source>
+        </trans-unit>
+        <trans-unit id="752" translate="yes" xml:space="preserve">
+          <source>Database Engine Services</source>
+        </trans-unit>
+        <trans-unit id="753" translate="yes" xml:space="preserve">
+          <source>Reporting Services</source>
+        </trans-unit>
+        <trans-unit id="754" translate="yes" xml:space="preserve">
+          <source>Analysis Services</source>
+        </trans-unit>
+        <trans-unit id="755" translate="yes" xml:space="preserve">
+          <source>Management Studio</source>
+        </trans-unit>
+        <trans-unit id="756" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Note<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="757" translate="yes" xml:space="preserve">
+          <source>Reporting Services is configured to run in Native mode.</source>
+        </trans-unit>
+        <trans-unit id="758" translate="yes" xml:space="preserve">
+          <source>To use Power View, you’ll need to complete additional configuration steps.</source>
+        </trans-unit>
+        <trans-unit id="759" translate="yes" xml:space="preserve">
+          <source>For more information, see the prerequisites listed in <bpt id="p1">&lt;a href="https://technet.microsoft.com/en-us/library/jj933492.aspx"&gt;</bpt>Create a report by using Power View to connect to a cube<ept id="p1">&lt;/a&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="760" translate="yes" xml:space="preserve">
+          <source>AX 2012 R3 or AX 2012 R3 CU8 components:</source>
+        </trans-unit>
+        <trans-unit id="761" translate="yes" xml:space="preserve">
+          <source>Business intelligence components:</source>
+        </trans-unit>
+        <trans-unit id="762" translate="yes" xml:space="preserve">
+          <source>Reporting Services extensions</source>
+        </trans-unit>
+        <trans-unit id="763" translate="yes" xml:space="preserve">
+          <source>Analysis Services configuration</source>
+        </trans-unit>
+        <trans-unit id="764" translate="yes" xml:space="preserve">
+          <source>0</source>
+        </trans-unit>
+        <trans-unit id="765" translate="yes" xml:space="preserve">
+          <source>Enterprise Portal server</source>
+        </trans-unit>
+        <trans-unit id="766" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Size:<ept id="p1">&lt;/strong&gt;</ept> D3: Standard compute tier (4 cores, 14 GB memory)<bpt id="p2">&lt;strong&gt;</bpt>Default name:<ept id="p2">&lt;/strong&gt;</ept> EP-<ph id="ph1">&amp;lt;</ph>GUID<ph id="ph2">&amp;gt;</ph></source>
+        </trans-unit>
+        <trans-unit id="767" translate="yes" xml:space="preserve">
+          <source>Windows Server 2012 R2, including:</source>
+        </trans-unit>
+        <trans-unit id="768" translate="yes" xml:space="preserve">
+          <source>Internet Information Services (IIS)</source>
+        </trans-unit>
+        <trans-unit id="769" translate="yes" xml:space="preserve">
+          <source>Microsoft SQL Server 2012 components:</source>
+        </trans-unit>
+        <trans-unit id="770" translate="yes" xml:space="preserve">
+          <source>Full-text Search</source>
+        </trans-unit>
+        <trans-unit id="771" translate="yes" xml:space="preserve">
+          <source>Microsoft SharePoint Server 2013</source>
+        </trans-unit>
+        <trans-unit id="772" translate="yes" xml:space="preserve">
+          <source>AX 2012 R3 or AX 2012 R3 CU8 components:</source>
+        </trans-unit>
+        <trans-unit id="773" translate="yes" xml:space="preserve">
+          <source>Server components:</source>
+        </trans-unit>
+        <trans-unit id="774" translate="yes" xml:space="preserve">
+          <source>Web server components:</source>
+        </trans-unit>
+        <trans-unit id="775" translate="yes" xml:space="preserve">
+          <source>Enterprise Portal (EP)</source>
+        </trans-unit>
+        <trans-unit id="776" translate="yes" xml:space="preserve">
+          <source>Enterprise Search</source>
+        </trans-unit>
+        <trans-unit id="777" translate="yes" xml:space="preserve">
+          <source>Help Server</source>
+        </trans-unit>
+        <trans-unit id="778" translate="yes" xml:space="preserve">
+          <source>Management Reporter components:</source>
+        </trans-unit>
+        <trans-unit id="779" translate="yes" xml:space="preserve">
+          <source>Management Reporter server components</source>
+        </trans-unit>
+        <trans-unit id="780" translate="yes" xml:space="preserve">
+          <source>Retail components:</source>
+        </trans-unit>
+        <trans-unit id="781" translate="yes" xml:space="preserve">
+          <source>Commerce Data Exchange components:</source>
+        </trans-unit>
+        <trans-unit id="782" translate="yes" xml:space="preserve">
+          <source>Async Client</source>
+        </trans-unit>
+        <trans-unit id="783" translate="yes" xml:space="preserve">
+          <source>Retail Server</source>
+        </trans-unit>
+        <trans-unit id="784" translate="yes" xml:space="preserve">
+          <source>Retail Online Channel</source>
+        </trans-unit>
+        <trans-unit id="785" translate="yes" xml:space="preserve">
+          <source>Retail Channel Database</source>
+        </trans-unit>
+        <trans-unit id="786" translate="yes" xml:space="preserve">
+          <source>Retail Channel Configuration Utility</source>
+        </trans-unit>
+        <trans-unit id="787" translate="yes" xml:space="preserve">
+          <source>Retail Hardware Station</source>
+        </trans-unit>
+        <trans-unit id="788" translate="yes" xml:space="preserve">
+          <source>Warehouse Mobile Devices Portal</source>
+        </trans-unit>
+        <trans-unit id="789" translate="yes" xml:space="preserve">
+          <source>Connector for Microsoft Dynamics</source>
+        </trans-unit>
+        <trans-unit id="790" translate="yes" xml:space="preserve">
+          <source>2</source>
+        </trans-unit>
+        <trans-unit id="791" translate="yes" xml:space="preserve">
+          <source>Client computer</source>
+        </trans-unit>
+        <trans-unit id="792" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Size:<ept id="p1">&lt;/strong&gt;</ept> D3: Standard compute tier (4 cores, 14 GB memory)<bpt id="p2">&lt;strong&gt;</bpt>Default name:<ept id="p2">&lt;/strong&gt;</ept> CLI-<ph id="ph1">&amp;lt;</ph>GUID<ph id="ph2">&amp;gt;</ph></source>
+        </trans-unit>
+        <trans-unit id="793" translate="yes" xml:space="preserve">
+          <source>Windows Server 2012 R2</source>
+        </trans-unit>
+        <trans-unit id="794" translate="yes" xml:space="preserve">
+          <source>Microsoft Visual Studio 2013</source>
+        </trans-unit>
+        <trans-unit id="795" translate="yes" xml:space="preserve">
+          <source>Microsoft SQL Server 2014 components:</source>
+        </trans-unit>
+        <trans-unit id="796" translate="yes" xml:space="preserve">
+          <source>Developer tools</source>
+        </trans-unit>
+        <trans-unit id="797" translate="yes" xml:space="preserve">
+          <source>Microsoft SharePoint Server 2013 Client Components SDK</source>
+        </trans-unit>
+        <trans-unit id="798" translate="yes" xml:space="preserve">
+          <source>Microsoft Office 365 ProPlus</source>
+        </trans-unit>
+        <trans-unit id="799" translate="yes" xml:space="preserve">
+          <source>AX 2012 R3 or AX 2012 R3 CU8 components:</source>
+        </trans-unit>
+        <trans-unit id="800" translate="yes" xml:space="preserve">
+          <source>Management Reporter components:</source>
+        </trans-unit>
+        <trans-unit id="801" translate="yes" xml:space="preserve">
+          <source>Management Reporter Report Designer</source>
+        </trans-unit>
+        <trans-unit id="802" translate="yes" xml:space="preserve">
+          <source>Client components:</source>
+        </trans-unit>
+        <trans-unit id="803" translate="yes" xml:space="preserve">
+          <source>Client</source>
+        </trans-unit>
+        <trans-unit id="804" translate="yes" xml:space="preserve">
+          <source>Office add-ins</source>
+        </trans-unit>
+        <trans-unit id="805" translate="yes" xml:space="preserve">
+          <source>Remote Desktop Services integration</source>
+        </trans-unit>
+        <trans-unit id="806" translate="yes" xml:space="preserve">
+          <source>Developer tools:</source>
+        </trans-unit>
+        <trans-unit id="807" translate="yes" xml:space="preserve">
+          <source>Debugger</source>
+        </trans-unit>
+        <trans-unit id="808" translate="yes" xml:space="preserve">
+          <source>Visual Studio Tools</source>
+        </trans-unit>
+        <trans-unit id="809" translate="yes" xml:space="preserve">
+          <source>Trace Parser</source>
+        </trans-unit>
+        <trans-unit id="810" translate="yes" xml:space="preserve">
+          <source>Management utilities</source>
+        </trans-unit>
+        <trans-unit id="811" translate="yes" xml:space="preserve">
+          <source>Retail components:</source>
+        </trans-unit>
+        <trans-unit id="812" translate="yes" xml:space="preserve">
+          <source>Retail POS</source>
+        </trans-unit>
+        <trans-unit id="813" translate="yes" xml:space="preserve">
+          <source>2</source>
+        </trans-unit>
+        <trans-unit id="814" translate="yes" xml:space="preserve">
+          <source>Remote Desktop Services server</source>
+        </trans-unit>
+        <trans-unit id="815" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Size:<ept id="p1">&lt;/strong&gt;</ept> D3: Standard compute tier (4 cores, 14 GB memory)<bpt id="p2">&lt;strong&gt;</bpt>Default name:<ept id="p2">&lt;/strong&gt;</ept> RDS-<ph id="ph1">&amp;lt;</ph>GUID<ph id="ph2">&amp;gt;</ph></source>
+        </trans-unit>
+        <trans-unit id="816" translate="yes" xml:space="preserve">
+          <source>Windows Server 2012 R2, including:</source>
+        </trans-unit>
+        <trans-unit id="817" translate="yes" xml:space="preserve">
+          <source>Internet Information Services (IIS)</source>
+        </trans-unit>
+        <trans-unit id="818" translate="yes" xml:space="preserve">
+          <source>Remote Desktop Services</source>
+        </trans-unit>
+        <trans-unit id="819" translate="yes" xml:space="preserve">
+          <source>Microsoft SQL Server 2012 Native Client</source>
+        </trans-unit>
+        <trans-unit id="820" translate="yes" xml:space="preserve">
+          <source>Next steps</source>
+        </trans-unit>
+        <trans-unit id="821" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Deploy an AX 2012 R3 or AX 2012 R3 CU8 demo environment on Azure<ept id="p1">](deploy-ax-2012-r3-ax-2012-r3-cu8-demo-environment-azure.md)</ept></source>
+        </trans-unit>
+        <trans-unit id="822" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Deploy a Retail essentials demo environment on Azure<ept id="p1">](deploy-retail-essentials-demo-environment-azure.md)</ept></source>
+        </trans-unit>
+        <trans-unit id="823" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Deploy a development environment on Azure<ept id="p1">](deploy-development-environment-azure.md)</ept></source>
+        </trans-unit>
+        <trans-unit id="824" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Deploy a test environment on Azure<ept id="p1">](deploy-test-environment-azure.md)</ept></source>
+        </trans-unit>
+        <trans-unit id="825" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Deploy a Retail essentials dev/test environment on Azure<ept id="p1">](deploy-retail-essentials-devtest-environment-azure.md)</ept></source>
+        </trans-unit>
+        <trans-unit id="826" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Deploy a Retail e-commerce dev/test environment on Azure<ept id="p1">](deploy-retail-ecommerce-devtest-environment-azure.md)</ept></source>
+        </trans-unit>
+        <trans-unit id="827" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Deploy a Retail mobility dev/test environment on Azure<ept id="p1">](deploy-retail-mobility-devtest-environment-azure.md)</ept></source>
+        </trans-unit>
+        <trans-unit id="828" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Deploy a high availability environment on Azure<ept id="p1">](deploy-high-availability-environment-azure.md)</ept></source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

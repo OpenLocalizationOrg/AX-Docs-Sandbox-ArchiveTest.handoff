@@ -1,0 +1,1713 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">aa6cbae02d897691f3c4f854aee343ddf5cc59ee</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\dev-ref\xpp-data-query.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">67f048b8b45cbb345e1b1817413be67ec47bca09</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">bd5b9cb176b5578745def1230ff600049ce3fde0</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>X++ data selection and manipulation</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic describes the support for data selection and manipulation in the X++ language.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>X++ data selection and manipulation</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This topic describes the support for data selection and manipulation in the X++ language.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>You can use SQL statements, either interactively or within source code, to access and retrieve data that is stored in the database.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>You use the following statements for data manipulation:</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>select<ept id="p1">**</ept> – Select the data to modify.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>insert<ept id="p1">**</ept> – Add one or more new records to a table.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>update<ept id="p1">**</ept> – Modify data in existing table records.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>delete<ept id="p1">**</ept> – Remove existing records from a table.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Before any data can be changed, you must use a <bpt id="p1">**</bpt>select<ept id="p1">**</ept> statement to select the data to update.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>select forUpdate<ept id="p1">**</ept> command selects records for update only.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>insert<ept id="p1">**</ept>, <bpt id="p2">**</bpt>update<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>delete<ept id="p3">**</ept> statements perform operations on one record at a time.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>array insert<ept id="p1">**</ept>, <bpt id="p2">**</bpt>insert<ph id="ph1">\_</ph>recordset<ept id="p2">**</ept>, <bpt id="p3">**</bpt>RecordInsertList<ept id="p3">**</ept>, and <bpt id="p4">**</bpt>update<ph id="ph2">\_</ph>recordset<ept id="p4">**</ept> statements perform operations on multiple records at the same time.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>select statements</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>select<ept id="p1">**</ept> statement fetches or manipulates data from the database.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>All <bpt id="p1">**</bpt>select<ept id="p1">**</ept> statements use a table variable to fetch records.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>This variable must be declared before a <bpt id="p1">**</bpt>select<ept id="p1">**</ept> statement can be run.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>select<ept id="p1">**</ept> statement fetches only one record, or field.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>To fetch additional records, you can use the <bpt id="p1">**</bpt>next<ept id="p1">**</ept> statement.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>next<ept id="p1">**</ept> statement fetches the next record in the table.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>If no <bpt id="p1">**</bpt>select<ept id="p1">**</ept> statement precedes the <bpt id="p2">**</bpt>next<ept id="p2">**</ept> statement, an error occurs.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>If you use a <bpt id="p1">**</bpt>next<ept id="p1">**</ept> statement, don't use the <bpt id="p2">**</bpt>firstOnly<ept id="p2">**</ept> find option.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>If you must traverse several records, it's more appropriate to use a <bpt id="p1">**</bpt>while<ept id="p1">**</ept> <bpt id="p2">**</bpt>select<ept id="p2">**</ept> statement.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>The results of a <bpt id="p1">**</bpt>select<ept id="p1">**</ept> statement are returned in a table buffer variable.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>If you use a field list in the <bpt id="p1">**</bpt>select<ept id="p1">**</ept> statement, only those fields are available in the table variable.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>If you use aggregate functions, such as <bpt id="p1">**</bpt>sum<ept id="p1">**</ept> or <bpt id="p2">**</bpt>count<ept id="p2">**</ept>, the results are returned in the fields that you perform the <bpt id="p3">**</bpt>sum<ept id="p3">**</ept> or <bpt id="p4">**</bpt>count<ept id="p4">**</ept> over.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>You can count, average, or sum only integer and real fields.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Syntax of select statements</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>SelectStatement<ept id="p1">*</ept></source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>select<ept id="p1">**</ept> <bpt id="p2">*</bpt>Parameters<ept id="p2">*</ept></source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>Parameters<ept id="p1">*</ept></source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt><ph id="ph1">\[</ph> <ph id="ph2">\[</ph><ept id="p1">**</ept> <bpt id="p2">*</bpt>FindOptions<ept id="p2">*</ept> <bpt id="p3">**</bpt><ph id="ph3">\]</ph><ept id="p3">**</ept> <bpt id="p4">**</bpt><ph id="ph4">\[</ph><ept id="p4">**</ept> <bpt id="p5">*</bpt>FieldList<ept id="p5">*</ept> <bpt id="p6">**</bpt>from <ph id="ph5">\]</ph> <ph id="ph6">\]</ph><ept id="p6">**</ept> <bpt id="p7">*</bpt>TableBufferVariable<ept id="p7">*</ept> <bpt id="p8">**</bpt><ph id="ph7">\[</ph><ept id="p8">**</ept> <bpt id="p9">*</bpt>IndexClause<ept id="p9">*</ept> <bpt id="p10">**</bpt><ph id="ph8">\]</ph><ept id="p10">**</ept> <bpt id="p11">**</bpt><ph id="ph9">\[</ph><ept id="p11">**</ept> <bpt id="p12">*</bpt>Options<ept id="p12">*</ept> <bpt id="p13">**</bpt><ph id="ph10">\]</ph><ept id="p13">**</ept> <bpt id="p14">**</bpt><ph id="ph11">\[</ph><ept id="p14">**</ept> <bpt id="p15">*</bpt>WhereClause<ept id="p15">*</ept> <bpt id="p16">**</bpt><ph id="ph12">\]</ph><ept id="p16">**</ept> <bpt id="p17">**</bpt><ph id="ph13">\[</ph><ept id="p17">**</ept> <bpt id="p18">*</bpt>JoinClause<ept id="p18">*</ept> <bpt id="p19">**</bpt><ph id="ph14">\]</ph><ept id="p19">**</ept></source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>FindOptions<ept id="p1">*</ept></source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>crossCompany<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>reverse<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>firstFast<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\[</ph> <bpt id="p1">**</bpt>firstOnly<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>firstOnly10<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>firstOnly100<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>firstOnly1000<ept id="p1">**</ept> <ph id="ph1">\]</ph></source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>forUpdate<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>noFetch<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\[</ph><bpt id="p1">**</bpt>forcePlaceholders<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>forceLiterals<ept id="p1">**</ept><ph id="ph1">\]</ph></source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>forceselectorder<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>forceNestedLoop<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>repeatableRead<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>validTimeState<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>FieldList<ept id="p1">*</ept></source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>Field<ept id="p1">*</ept> <bpt id="p2">**</bpt>{ ,<ept id="p2">**</ept> <bpt id="p3">*</bpt>Field<ept id="p3">*</ept> <bpt id="p4">**</bpt>}<ept id="p4">**</ept></source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>Field<ept id="p1">*</ept></source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>Aggregate<ept id="p1">*</ept> <bpt id="p2">**</bpt>(<ept id="p2">**</ept> <bpt id="p3">*</bpt>FieldIdentifier<ept id="p3">*</ept> **)</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">** </ph><bpt id="p1">*</bpt>FieldIdentifier<ept id="p1">*</ept></source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>Aggregate<ept id="p1">*</ept></source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>sum<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>avg<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>minof<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>maxof<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>count<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>Options<ept id="p1">*</ept></source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt><ph id="ph1">\[</ph> order by<ept id="p1">**</ept> , <bpt id="p2">**</bpt>group by ,<ept id="p2">**</ept> <bpt id="p3">*</bpt>FieldIdentifier<ept id="p3">*</ept> <bpt id="p4">**</bpt><ph id="ph2">\[</ph> asc<ept id="p4">**</ept></source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>desc <ph id="ph1">\]</ph> { ,<ept id="p1">**</ept> <bpt id="p2">*</bpt>FieldIdentifier<ept id="p2">*</ept> <bpt id="p3">**</bpt><ph id="ph2">\[</ph> asc<ept id="p3">**</ept></source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>desc <ph id="ph1">\]</ph> }<ph id="ph2">\]</ph><ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt><ph id="ph1">\[</ph><ept id="p1">**</ept> <bpt id="p2">*</bpt>IndexClause<ept id="p2">*</ept> <bpt id="p3">**</bpt><ph id="ph2">\]</ph><ept id="p3">**</ept></source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>IndexClause<ept id="p1">*</ept></source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>index<ept id="p1">**</ept> <bpt id="p2">*</bpt>IndexName<ept id="p2">*</ept></source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>index hint<ept id="p1">**</ept> <bpt id="p2">*</bpt>IndexName<ept id="p2">*</ept></source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>WhereClause<ept id="p1">*</ept></source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>where<ept id="p1">**</ept> <bpt id="p2">*</bpt>Expression<ept id="p2">*</ept></source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>JoinClause<ept id="p1">*</ept></source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\[</ph><bpt id="p1">**</bpt>exists<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>notexists<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>outer<ept id="p1">**</ept> <ph id="ph1">\]</ph> <bpt id="p2">**</bpt>join<ept id="p2">**</ept> <bpt id="p3">*</bpt>Parameters<ept id="p3">*</ept></source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Keywords that are used in select statements</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Keyword</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>asc</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>This keyword is an option on the <bpt id="p1">**</bpt>order by<ept id="p1">**</ept> or <bpt id="p2">**</bpt>group by<ept id="p2">**</ept> clause.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>It specifies an ascending sort.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>If neither <bpt id="p1">**</bpt>asc<ept id="p1">**</ept> nor <bpt id="p2">**</bpt>desc<ept id="p2">**</ept> is specified, the sort is ascending.</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>avg</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>This keyword returns the average of the fields.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>count</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>This keyword returns the number of records.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>crossCompany</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>This keyword returns data for all companies that the user is authorized to read from.</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>You can add a container to reduce the number of companies that are involved.</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>desc</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>This keyword is an option on the <bpt id="p1">**</bpt>order by<ept id="p1">**</ept> or <bpt id="p2">**</bpt>group by<ept id="p2">**</ept> clause.</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>It specifies a descending sort.</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>If neither <bpt id="p1">**</bpt>asc<ept id="p1">**</ept> nor <bpt id="p2">**</bpt>desc<ept id="p2">**</ept> is specified, the sort is ascending.</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>exists</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>This keyword is a method that returns a Boolean value and a <bpt id="p1">**</bpt>join<ept id="p1">**</ept> clause.</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>firstFast</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>This keyword is a priority hint.</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Although the first row appears more quickly, but the total return time for this option might be slower.</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>firstFast<ept id="p1">**</ept> hint is automatically issued from all pages.</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>firstOnly</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>This keyword helps speed up the fetch by returning only the first row.</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>firstOnly10</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>This keyword is the same as <bpt id="p1">**</bpt>firstOnly<ept id="p1">**</ept>, but it returns 10 rows instead of one.</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>firstOnly100</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>This keyword is the same as <bpt id="p1">**</bpt>firstOnly<ept id="p1">**</ept>, but it returns 100 rows instead of one.</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>firstOnly1000</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>This keyword is the same as <bpt id="p1">**</bpt>firstOnly<ept id="p1">**</ept>, but it returns 1,000 rows instead of one.</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>forceLiterals</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>This keyword instructs the kernel to reveal the actual values that are used in <bpt id="p1">**</bpt>where<ept id="p1">**</ept> clauses to the Microsoft SQL Server database at the time of optimization.</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>forceLiterals<ept id="p1">**</ept> and <bpt id="p2">**</bpt>forcePlaceholders<ept id="p2">**</ept> keywords are mutually exclusive.</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>You should not to use the <bpt id="p1">**</bpt>forceLiterals<ept id="p1">**</ept> keyword in <bpt id="p2">**</bpt>select<ept id="p2">**</ept> statements, because it could expose code to an SQL injection security threat.</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>forceNestedLoop</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>This keyword forces the SQL Server database to use a nested-loop algorithm to process a particular SQL statement that contains a join algorithm.</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Therefore, a record from the first table is fetched before any records from the second table are fetched.</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>Typically, other join algorithms, such as hash joins and merge joins, are considered.</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>This keyword is often combined with the <bpt id="p1">**</bpt>forceSelectOrder<ept id="p1">**</ept> keyword.</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>forcePlaceholders</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>This keyword instructs the kernel <bpt id="p1">*</bpt>not<ept id="p1">*</ept> to reveal the actual values that are used in <bpt id="p2">**</bpt>where<ept id="p2">**</ept> clauses to the SQL Server database at the time of optimization.</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>By default, this behavior is used in all statements that aren't <bpt id="p1">**</bpt>join<ept id="p1">**</ept> statements.</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>The advantage of using this keyword is that the kernel can reuse the access plan for similar statements that have other search values.</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>The disadvantage is that the access plan is computed, but the fact that data distribution might be uneven isn't considered.</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>The access plan is an on-average access plan.</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>forcePlaceholders<ept id="p1">**</ept> and <bpt id="p2">**</bpt>forceLiterals<ept id="p2">**</ept> keywords are mutually exclusive.</source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>forceSelectOrder</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>This keyword forces the SQL Server database to access the tables in a join in the specified order.</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>If two tables are joined, the first table in the statement is always accessed first.</source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>This keyword is often combined with the <bpt id="p1">**</bpt>forceNestedLoop<ept id="p1">**</ept> keyword.</source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>forUpdate</source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>This keyword selects records for update only.</source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>Depending on the underlying database, the records might be locked for other users.</source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>group by</source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>This keyword instructs the database to group selected records by fields.</source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>index</source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>This keyword instructs the database to sort the selected records in the manner that is defined by the index.</source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>index hint</source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>This keyword gives the database a hint to use this index to sort the selected records in the manner that is defined by the index.</source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>The database can ignore the hint.</source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>An incorrect index hint can greatly affect performance.</source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>Index hints should be applied only to SQL statements that don't have dynamic <bpt id="p1">**</bpt>where<ept id="p1">**</ept> clauses or <bpt id="p2">**</bpt>order by<ept id="p2">**</ept> clauses, and where the effect of the hint can be verified.</source>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>join</source>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>This keyword is used to join tables on a column that is shared by both tables.</source>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>The join criteria are specified in a <bpt id="p1">**</bpt>where<ept id="p1">**</ept> clause, because there is no <bpt id="p2">**</bpt>on<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>This keyword reduces the number of SQL statements that are required if you want to loop through a table and update transactions in a related table.</source>
+        </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>For example, you process 500 records in a table and want to update related records in another table.</source>
+        </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>If you use a nested <bpt id="p1">**</bpt>while select<ept id="p1">**</ept>, there will be 501 trips to the database.</source>
+        </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>However, if you use a <bpt id="p1">**</bpt>join<ept id="p1">**</ept>, there will be just one trip to the database.</source>
+        </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>maxof</source>
+        </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>This keyword returns the maximum of the fields.</source>
+        </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>minof</source>
+        </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>This keyword returns the minimum of the fields.</source>
+        </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>noFetch</source>
+        </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>This keyword indicates that no records should be fetched now.</source>
+        </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>Typically, this keyword is used when the result of the <bpt id="p1">**</bpt>select<ept id="p1">**</ept> statement is passed on to another application object, such as a query that performs the actual fetch.</source>
+        </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>notExists</source>
+        </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>This keyword is selected only if there are no posts.</source>
+        </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>optimisticLock</source>
+        </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>This keyword forces a statement to run by using optimistic concurrency control, even if a different value is set on the table.</source>
+        </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>order by</source>
+        </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>This keyword instructs the database to sort the selected records by the fields in the <bpt id="p1">**</bpt>order by<ept id="p1">**</ept> list.</source>
+        </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>outer</source>
+        </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>This keyword returns all rows from the table that is named first, even if rows have no match in the table that is named second.</source>
+        </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>This join is a left outer join, even though there is no <bpt id="p1">**</bpt>left<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>There is no right outer join.</source>
+        </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>pessimisticLock</source>
+        </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>This keyword forces a statement to run by using pessimistic concurrency control, even if a different value is set on the table.</source>
+        </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>repeatableRead</source>
+        </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>This keyword specifies that the current transaction must be completed before other transactions can modify data that has been read by logic inside the current transaction.</source>
+        </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>An explicit transaction is completed at either <bpt id="p1">**</bpt>ttsAbort<ept id="p1">**</ept> or the outermost <bpt id="p2">**</bpt>ttsCommit<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>For a stand-alone <bpt id="p1">**</bpt>select<ept id="p1">**</ept> statement, the transaction duration is the duration of the <bpt id="p2">**</bpt>select<ept id="p2">**</ept> command.</source>
+        </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>However, the database sometimes enforces the equivalent of <bpt id="p1">**</bpt>repeatableRead<ept id="p1">**</ept> in individual <bpt id="p2">**</bpt>select<ept id="p2">**</ept> statements, even if this keyword doesn't appear in your code.</source>
+        </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>(The behavior depends on the method that the database uses to determine whether it should scan the tables.) For more information, see the documentation for the underlying relational database product.</source>
+        </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>reverse</source>
+        </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>Records are returned in reverse order.</source>
+        </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>sum</source>
+        </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>This keyword returns the sum of the fields.</source>
+        </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>It can be used to sum all accounts, order lines, and so on.</source>
+        </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>validTimeState</source>
+        </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>This keyword filters rows from a table where the <bpt id="p1">**</bpt>ValidTimeStateFieldType<ept id="p1">**</ept> property is set to a value other than <bpt id="p2">**</bpt>None<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>Keyword examples</source>
+        </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>select statement examples</source>
+        </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source>The following examples show how you can use <bpt id="p1">**</bpt>select<ept id="p1">**</ept> statements.</source>
+        </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source>join example</source>
+        </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source>The following example shows how an inner join can be performed as part of an SQL <bpt id="p1">**</bpt>select<ept id="p1">**</ept> statement.</source>
+        </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source>The example also shows an <bpt id="p1">**</bpt>order by<ept id="p1">**</ept> clause, where each field is qualified by a table name.</source>
+        </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>Therefore, you can use just one <bpt id="p1">**</bpt>order by<ept id="p1">**</ept> clause to control how the retrieved records are sorted.</source>
+        </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>group by and order by example</source>
+        </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source>The following example shows that the fields in the <bpt id="p1">**</bpt>group by<ept id="p1">**</ept> clause can be qualified by a table name.</source>
+        </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source>There can be multiple <bpt id="p1">**</bpt>group by<ept id="p1">**</ept> clauses.</source>
+        </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source>However, the fields can be qualified by a table name in only one <bpt id="p1">**</bpt>group by<ept id="p1">**</ept> clause.</source>
+        </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source>We recommend that you use table name qualifiers.</source>
+        </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>order by<ept id="p1">**</ept> clause follows the same syntax patterns as <bpt id="p2">**</bpt>group by<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source>Both clauses, if they are provided, must appear after the <bpt id="p1">**</bpt>join<ept id="p1">**</ept> (or <bpt id="p2">**</bpt>from<ept id="p2">**</ept>) clause, and both must appear before any <bpt id="p3">**</bpt>where<ept id="p3">**</ept> clause that exists on the same <bpt id="p4">**</bpt>join<ept id="p4">**</ept> clause.</source>
+        </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source>We recommend that all <bpt id="p1">**</bpt>group by<ept id="p1">**</ept>, <bpt id="p2">**</bpt>order by<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>where<ept id="p3">**</ept> clauses appear immediately after the last <bpt id="p4">**</bpt>join<ept id="p4">**</ept> clause.</source>
+        </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source>select statement that has an outer join</source>
+        </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>select<ept id="p1">**</ept> statement supports filtering an outer join in the <bpt id="p2">**</bpt>where<ept id="p2">**</ept> clause.</source>
+        </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>join<ept id="p1">**</ept> clause of standard SQL, there is an <bpt id="p2">**</bpt>on<ept id="p2">**</ept> keyword for filter criteria.</source>
+        </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source>However, this keyword isn't supported in X++.</source>
+        </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>An inner join rejects all table rows that don't match a row in the other joined table.</source>
+        </trans-unit>
+        <trans-unit id="298" translate="yes" xml:space="preserve">
+          <source>However, an outer join includes rows from the first table, even if there is no matching row in the other joined table.</source>
+        </trans-unit>
+        <trans-unit id="299" translate="yes" xml:space="preserve">
+          <source>Default values are substituted for the data that couldn't be obtained from a matching row in the other joined table.</source>
+        </trans-unit>
+        <trans-unit id="300" translate="yes" xml:space="preserve">
+          <source>You can filter an outer join at the equivalent of an <bpt id="p1">**</bpt>on<ept id="p1">**</ept> clause that is part of the <bpt id="p2">**</bpt>join<ept id="p2">**</ept> clause.</source>
+        </trans-unit>
+        <trans-unit id="301" translate="yes" xml:space="preserve">
+          <source>For an inner join, the behavior if you filter on an <bpt id="p1">**</bpt>on<ept id="p1">**</ept> clause is the same as the behavior if you filter on the <bpt id="p2">**</bpt>where<ept id="p2">**</ept> clause.</source>
+        </trans-unit>
+        <trans-unit id="302" translate="yes" xml:space="preserve">
+          <source>select statement example</source>
+        </trans-unit>
+        <trans-unit id="303" translate="yes" xml:space="preserve">
+          <source>The following example is based on two tables.</source>
+        </trans-unit>
+        <trans-unit id="304" translate="yes" xml:space="preserve">
+          <source>The field types and example data are included.</source>
+        </trans-unit>
+        <trans-unit id="305" translate="yes" xml:space="preserve">
+          <source>There is a one-to-many relationship between the SalesOrder parent table and the SalesOrderLine child table.</source>
+        </trans-unit>
+        <trans-unit id="306" translate="yes" xml:space="preserve">
+          <source>For each row in the SalesOrder table, there are 0 (zero) or more rows in the SalesOrderLine table.</source>
+        </trans-unit>
+        <trans-unit id="307" translate="yes" xml:space="preserve">
+          <source>There are two rows in the SalesOrder table.</source>
+        </trans-unit>
+        <trans-unit id="308" translate="yes" xml:space="preserve">
+          <source>SalesOrderID (integer, primary key)</source>
+        </trans-unit>
+        <trans-unit id="309" translate="yes" xml:space="preserve">
+          <source>DateAdded (date)</source>
+        </trans-unit>
+        <trans-unit id="310" translate="yes" xml:space="preserve">
+          <source>1</source>
+        </trans-unit>
+        <trans-unit id="311" translate="yes" xml:space="preserve">
+          <source>2010-01-01</source>
+        </trans-unit>
+        <trans-unit id="312" translate="yes" xml:space="preserve">
+          <source>2</source>
+        </trans-unit>
+        <trans-unit id="313" translate="yes" xml:space="preserve">
+          <source>2010-02-02</source>
+        </trans-unit>
+        <trans-unit id="314" translate="yes" xml:space="preserve">
+          <source>The SalesOrderLine table contains a foreign key field that is named <bpt id="p1">**</bpt>SalesOrderID<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="315" translate="yes" xml:space="preserve">
+          <source>This field references the primary key column of the SalesOrder table.</source>
+        </trans-unit>
+        <trans-unit id="316" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">**</bpt>SalesOrderID<ept id="p1">**</ept> value of <bpt id="p2">**</bpt>2<ept id="p2">**</ept> doesn't occur in the data for the SalesOrderLine table.</source>
+        </trans-unit>
+        <trans-unit id="317" translate="yes" xml:space="preserve">
+          <source>SalesOrderLineID (string, primary key)</source>
+        </trans-unit>
+        <trans-unit id="318" translate="yes" xml:space="preserve">
+          <source>Quantity (integer)</source>
+        </trans-unit>
+        <trans-unit id="319" translate="yes" xml:space="preserve">
+          <source>SalesOrderID (integer, foreign key)</source>
+        </trans-unit>
+        <trans-unit id="320" translate="yes" xml:space="preserve">
+          <source>AA</source>
+        </trans-unit>
+        <trans-unit id="321" translate="yes" xml:space="preserve">
+          <source>32</source>
+        </trans-unit>
+        <trans-unit id="322" translate="yes" xml:space="preserve">
+          <source>1</source>
+        </trans-unit>
+        <trans-unit id="323" translate="yes" xml:space="preserve">
+          <source>BB</source>
+        </trans-unit>
+        <trans-unit id="324" translate="yes" xml:space="preserve">
+          <source>67</source>
+        </trans-unit>
+        <trans-unit id="325" translate="yes" xml:space="preserve">
+          <source>1</source>
+        </trans-unit>
+        <trans-unit id="326" translate="yes" xml:space="preserve">
+          <source>CC</source>
+        </trans-unit>
+        <trans-unit id="327" translate="yes" xml:space="preserve">
+          <source>66</source>
+        </trans-unit>
+        <trans-unit id="328" translate="yes" xml:space="preserve">
+          <source>1</source>
+        </trans-unit>
+        <trans-unit id="329" translate="yes" xml:space="preserve">
+          <source>The following code has a <bpt id="p1">**</bpt>select<ept id="p1">**</ept> statement that reads the two tables.</source>
+        </trans-unit>
+        <trans-unit id="330" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>select<ept id="p1">**</ept> statement includes a left <bpt id="p2">**</bpt>outer join<ept id="p2">**</ept> clause.</source>
+        </trans-unit>
+        <trans-unit id="331" translate="yes" xml:space="preserve">
+          <source>Both the join criteria and the data filter are on the <bpt id="p1">**</bpt>where<ept id="p1">**</ept> clause.</source>
+        </trans-unit>
+        <trans-unit id="332" translate="yes" xml:space="preserve">
+          <source>The output from the code is also shown.</source>
+        </trans-unit>
+        <trans-unit id="333" translate="yes" xml:space="preserve">
+          <source>The second record in the output has a <bpt id="p1">**</bpt>SalesOrderID<ept id="p1">**</ept> value of <bpt id="p2">**</bpt>2<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="334" translate="yes" xml:space="preserve">
+          <source>However, that value isn't present in the SalesOrderLine table.</source>
+        </trans-unit>
+        <trans-unit id="335" translate="yes" xml:space="preserve">
+          <source>Therefore, some of the fields in the second record have default values: <bpt id="p1">**</bpt>0<ept id="p1">**</ept> for an integer and a zero-length string for a string.</source>
+        </trans-unit>
+        <trans-unit id="336" translate="yes" xml:space="preserve">
+          <source>while select statements</source>
+        </trans-unit>
+        <trans-unit id="337" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">**</bpt>while select<ept id="p1">**</ept> statement is used to handle data.</source>
+        </trans-unit>
+        <trans-unit id="338" translate="yes" xml:space="preserve">
+          <source>It's the most widely used form of the <bpt id="p1">**</bpt>select<ept id="p1">**</ept> statement.</source>
+        </trans-unit>
+        <trans-unit id="339" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>while select<ept id="p1">**</ept> statement loops over many records that meet specific criteria, and can run a statement on each record.</source>
+        </trans-unit>
+        <trans-unit id="340" translate="yes" xml:space="preserve">
+          <source>Typically, when you use the <bpt id="p1">**</bpt>while select<ept id="p1">**</ept> statement for data manipulation, you do it in a transaction to ensure data integrity.</source>
+        </trans-unit>
+        <trans-unit id="341" translate="yes" xml:space="preserve">
+          <source>The results of a <bpt id="p1">**</bpt>while select<ept id="p1">**</ept> statement are returned in a table buffer variable.</source>
+        </trans-unit>
+        <trans-unit id="342" translate="yes" xml:space="preserve">
+          <source>If you use a field list in the <bpt id="p1">**</bpt>select<ept id="p1">**</ept> statement, only those fields are available in the table variable.</source>
+        </trans-unit>
+        <trans-unit id="343" translate="yes" xml:space="preserve">
+          <source>If you use aggregate functions, such as <bpt id="p1">**</bpt>sum<ept id="p1">**</ept> or <bpt id="p2">**</bpt>count<ept id="p2">**</ept>, the results are returned in the fields that you perform the <bpt id="p3">**</bpt>sum<ept id="p3">**</ept> or <bpt id="p4">**</bpt>count<ept id="p4">**</ept> over.</source>
+        </trans-unit>
+        <trans-unit id="344" translate="yes" xml:space="preserve">
+          <source>You can count, average, or sum only integer and real fields.</source>
+        </trans-unit>
+        <trans-unit id="345" translate="yes" xml:space="preserve">
+          <source>The syntax of a <bpt id="p1">**</bpt>while select<ept id="p1">**</ept> statement resembles the syntax of a <bpt id="p2">**</bpt>select<ept id="p2">**</ept> statement, but the statement is preceded by <bpt id="p3">**</bpt>while select<ept id="p3">**</ept> instead of <bpt id="p4">**</bpt>select<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="346" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>select<ept id="p1">**</ept> statement itself is run only one time, immediately before the first iteration of the statements in the loop.</source>
+        </trans-unit>
+        <trans-unit id="347" translate="yes" xml:space="preserve">
+          <source>Any Boolean expressions (such as <bpt id="p1">**</bpt>iCounter <ph id="ph1">&amp;lt;</ph> 1<ept id="p1">**</ept>) that are added to the <bpt id="p2">**</bpt>while select<ept id="p2">**</ept> are tested only one time.</source>
+        </trans-unit>
+        <trans-unit id="348" translate="yes" xml:space="preserve">
+          <source>This behavior differs from the behavior of the <bpt id="p1">**</bpt>while<ept id="p1">**</ept> statement in languages such as C++ and C<ph id="ph1">\#</ph>.</source>
+        </trans-unit>
+        <trans-unit id="349" translate="yes" xml:space="preserve">
+          <source>For example, the following loop can have more than one iteration.</source>
+        </trans-unit>
+        <trans-unit id="350" translate="yes" xml:space="preserve">
+          <source>while select example</source>
+        </trans-unit>
+        <trans-unit id="351" translate="yes" xml:space="preserve">
+          <source>The following example prints the name reference and telephone number of every customer in the CustTable table whose account number is within a specified range.</source>
+        </trans-unit>
+        <trans-unit id="352" translate="yes" xml:space="preserve">
+          <source>while select example</source>
+        </trans-unit>
+        <trans-unit id="353" translate="yes" xml:space="preserve">
+          <source>The following example uses the <bpt id="p1">**</bpt>forUpdate<ept id="p1">**</ept> keyword.</source>
+        </trans-unit>
+        <trans-unit id="354" translate="yes" xml:space="preserve">
+          <source>Deleting a set of records</source>
+        </trans-unit>
+        <trans-unit id="355" translate="yes" xml:space="preserve">
+          <source>You can use a <bpt id="p1">**</bpt>while select<ept id="p1">**</ept> statement to loop over a set of records that meet some criteria, and perform an action on each record.</source>
+        </trans-unit>
+        <trans-unit id="356" translate="yes" xml:space="preserve">
+          <source>In the following example, the statement is used to delete a set of records.</source>
+        </trans-unit>
+        <trans-unit id="357" translate="yes" xml:space="preserve">
+          <source>You can achieve the same effect by using the <bpt id="p1">**</bpt>delete<ph id="ph1">\_</ph>from<ept id="p1">**</ept> keyword.</source>
+        </trans-unit>
+        <trans-unit id="358" translate="yes" xml:space="preserve">
+          <source>select statements on fields</source>
+        </trans-unit>
+        <trans-unit id="359" translate="yes" xml:space="preserve">
+          <source>You can use a <bpt id="p1">**</bpt>select<ept id="p1">**</ept> statement in a lookup on a field.</source>
+        </trans-unit>
+        <trans-unit id="360" translate="yes" xml:space="preserve">
+          <source>After a <bpt id="p1">**</bpt>select<ept id="p1">**</ept> statement that fetches a record in a table, you can enter <bpt id="p2">**</bpt>.fieldName<ept id="p2">**</ept> to reference a field in the table.</source>
+        </trans-unit>
+        <trans-unit id="361" translate="yes" xml:space="preserve">
+          <source>These <bpt id="p1">**</bpt>select<ept id="p1">**</ept> statements must be used in expressions.</source>
+        </trans-unit>
+        <trans-unit id="362" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">*</bpt>normal <bpt id="p2">**</bpt>select<ept id="p2">**</ept> statement<ept id="p1">*</ept> differs from a <bpt id="p3">*</bpt>field <bpt id="p4">**</bpt>select<ept id="p4">**</ept> statement<ept id="p3">*</ept>:</source>
+        </trans-unit>
+        <trans-unit id="363" translate="yes" xml:space="preserve">
+          <source>The field <bpt id="p1">**</bpt>select<ept id="p1">**</ept> statement operates directly on a table.</source>
+        </trans-unit>
+        <trans-unit id="364" translate="yes" xml:space="preserve">
+          <source>The normal <bpt id="p1">**</bpt>select<ept id="p1">**</ept> statement operates on a table buffer variable.</source>
+        </trans-unit>
+        <trans-unit id="365" translate="yes" xml:space="preserve">
+          <source>select field example</source>
+        </trans-unit>
+        <trans-unit id="366" translate="yes" xml:space="preserve">
+          <source>Aggregate functions: Differences between X++ and SQL</source>
+        </trans-unit>
+        <trans-unit id="367" translate="yes" xml:space="preserve">
+          <source>In industry-standard SQL, a database query can contain <bpt id="p1">*</bpt>aggregate functions<ept id="p1">*</ept>.</source>
+        </trans-unit>
+        <trans-unit id="368" translate="yes" xml:space="preserve">
+          <source>Examples include <bpt id="p1">**</bpt>count(RecID)<ept id="p1">**</ept> and <bpt id="p2">**</bpt>sum(columnA)<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="369" translate="yes" xml:space="preserve">
+          <source>When an aggregate function is used, but no rows match the <bpt id="p1">**</bpt>where<ept id="p1">**</ept> clause, a row must be returned to hold the result of the aggregates.</source>
+        </trans-unit>
+        <trans-unit id="370" translate="yes" xml:space="preserve">
+          <source>The row that is returned shows the value <bpt id="p1">**</bpt>0<ept id="p1">**</ept> (zero) for the <bpt id="p2">**</bpt>count<ept id="p2">**</ept> function and <bpt id="p3">**</bpt>null<ept id="p3">**</ept> for the <bpt id="p4">**</bpt>sum<ept id="p4">**</ept> function.</source>
+        </trans-unit>
+        <trans-unit id="371" translate="yes" xml:space="preserve">
+          <source>X++ doesn't support the concept of <bpt id="p1">**</bpt>null<ept id="p1">**</ept> values for the database.</source>
+        </trans-unit>
+        <trans-unit id="372" translate="yes" xml:space="preserve">
+          <source>Therefore, in cases where the <bpt id="p1">**</bpt>sum<ept id="p1">**</ept> function will return <bpt id="p2">**</bpt>null<ept id="p2">**</ept>, no row is returned to the user.</source>
+        </trans-unit>
+        <trans-unit id="373" translate="yes" xml:space="preserve">
+          <source>Additionally, every data type has a specific value that is treated as a <bpt id="p1">**</bpt>null<ept id="p1">**</ept> value in some circumstances.</source>
+        </trans-unit>
+        <trans-unit id="374" translate="yes" xml:space="preserve">
+          <source>index and order by keywords in select statements</source>
+        </trans-unit>
+        <trans-unit id="375" translate="yes" xml:space="preserve">
+          <source>You use the <bpt id="p1">**</bpt>order by<ept id="p1">**</ept> keyword in <bpt id="p2">**</bpt>select<ept id="p2">**</ept> statements to order the data that is returned.</source>
+        </trans-unit>
+        <trans-unit id="376" translate="yes" xml:space="preserve">
+          <source>Use the <bpt id="p1">**</bpt>index hint<ept id="p1">**</ept> keyword to specify the index that should be used in the query and to sort the selected records in the manner that is defined by the index.</source>
+        </trans-unit>
+        <trans-unit id="377" translate="yes" xml:space="preserve">
+          <source>Indexes optimize the selection of records.</source>
+        </trans-unit>
+        <trans-unit id="378" translate="yes" xml:space="preserve">
+          <source>To select records in a specific order, combine the <bpt id="p1">**</bpt>index hint<ept id="p1">**</ept> keyword with an <bpt id="p2">**</bpt>order by<ept id="p2">**</ept> expression.</source>
+        </trans-unit>
+        <trans-unit id="379" translate="yes" xml:space="preserve">
+          <source>If you want the output to be sorted in reverse order, use the <bpt id="p1">**</bpt>reverse<ept id="p1">**</ept> keyword.</source>
+        </trans-unit>
+        <trans-unit id="380" translate="yes" xml:space="preserve">
+          <source>If a table index has been disabled (that is, if the index's <bpt id="p1">**</bpt>Enabled<ept id="p1">**</ept> property is set to <bpt id="p2">**</bpt>No<ept id="p2">**</ept>), the <bpt id="p3">**</bpt>select<ept id="p3">**</ept> statement that references the index is still valid.</source>
+        </trans-unit>
+        <trans-unit id="381" translate="yes" xml:space="preserve">
+          <source>However, the database can't use the index as a hint to sort the data, because the index doesn't exist in the database.</source>
+        </trans-unit>
+        <trans-unit id="382" translate="yes" xml:space="preserve">
+          <source>The following table shows how to use the <bpt id="p1">**</bpt>index hint<ept id="p1">**</ept> and <bpt id="p2">**</bpt>order by<ept id="p2">**</ept> keywords in <bpt id="p3">**</bpt>select<ept id="p3">**</ept> statements.</source>
+        </trans-unit>
+        <trans-unit id="383" translate="yes" xml:space="preserve">
+          <source>Task</source>
+        </trans-unit>
+        <trans-unit id="384" translate="yes" xml:space="preserve">
+          <source>Use</source>
+        </trans-unit>
+        <trans-unit id="385" translate="yes" xml:space="preserve">
+          <source>Select records when the order isn't significant.</source>
+        </trans-unit>
+        <trans-unit id="386" translate="yes" xml:space="preserve">
+          <source>select ..</source>
+        </trans-unit>
+        <trans-unit id="387" translate="yes" xml:space="preserve">
+          <source>where ...</source>
+        </trans-unit>
+        <trans-unit id="388" translate="yes" xml:space="preserve">
+          <source>Select records when the order is significant.</source>
+        </trans-unit>
+        <trans-unit id="389" translate="yes" xml:space="preserve">
+          <source>select ..</source>
+        </trans-unit>
+        <trans-unit id="390" translate="yes" xml:space="preserve">
+          <source>order by ... where ...</source>
+        </trans-unit>
+        <trans-unit id="391" translate="yes" xml:space="preserve">
+          <source>Select records, and force a specific index to be used.</source>
+        </trans-unit>
+        <trans-unit id="392" translate="yes" xml:space="preserve">
+          <source>select ..</source>
+        </trans-unit>
+        <trans-unit id="393" translate="yes" xml:space="preserve">
+          <source>index hint ... where ...</source>
+        </trans-unit>
+        <trans-unit id="394" translate="yes" xml:space="preserve">
+          <source>Select records when the order is significant, and force a specific index to be used.</source>
+        </trans-unit>
+        <trans-unit id="395" translate="yes" xml:space="preserve">
+          <source>select ..</source>
+        </trans-unit>
+        <trans-unit id="396" translate="yes" xml:space="preserve">
+          <source>index hint ... order by ... where ...</source>
+        </trans-unit>
+        <trans-unit id="397" translate="yes" xml:space="preserve">
+          <source>index and order by example</source>
+        </trans-unit>
+        <trans-unit id="398" translate="yes" xml:space="preserve">
+          <source>The following example shows how to select transactions from the SalesTable table, based on a range of customers and due dates.</source>
+        </trans-unit>
+        <trans-unit id="399" translate="yes" xml:space="preserve">
+          <source>index hint</source>
+        </trans-unit>
+        <trans-unit id="400" translate="yes" xml:space="preserve">
+          <source>Before you can use <bpt id="p1">**</bpt>index hint<ept id="p1">**</ept> in queries, you must specify that hints can be used on the server.</source>
+        </trans-unit>
+        <trans-unit id="401" translate="yes" xml:space="preserve">
+          <source>Go to <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Administrative Tools<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Microsoft Dynamics AX Server Configuration<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="402" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Database Tuning<ept id="p1">**</ept> tab, select <bpt id="p2">**</bpt>Allow INDEX hints in queries<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>OK<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="403" translate="yes" xml:space="preserve">
+          <source>When a message box prompts you to restart the Application Object Server (AOS) service, click <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="404" translate="yes" xml:space="preserve">
+          <source>Index hints won't be enabled until the service is restarted.</source>
+        </trans-unit>
+        <trans-unit id="405" translate="yes" xml:space="preserve">
+          <source>When an <bpt id="p1">**</bpt>index hint<ept id="p1">**</ept> in a <bpt id="p2">**</bpt>select<ept id="p2">**</ept> statement refers to a non-clustered index, and the <bpt id="p3">**</bpt>where<ept id="p3">**</ept> clause contains only the fields that are found in a clustered index on the same table, the clustered index is used instead of the index that is specified in the hint.</source>
+        </trans-unit>
+        <trans-unit id="406" translate="yes" xml:space="preserve">
+          <source>For example, you run <bpt id="p1">**</bpt>sp<ph id="ph1">\_</ph>helpindex InventTable<ept id="p1">**</ept> in SQL Server Management Studio and you see that the InventTable table has a clustered index on the <bpt id="p2">**</bpt>DataAreaId<ept id="p2">**</ept> and <bpt id="p3">**</bpt>ItemId<ept id="p3">**</ept> columns, and a non-clustered index on the <bpt id="p4">**</bpt>DataAreaId<ept id="p4">**</ept>, <bpt id="p5">**</bpt>ItemProductId<ept id="p5">**</ept>, and <bpt id="p6">**</bpt>ItemType<ept id="p6">**</ept> columns.</source>
+        </trans-unit>
+        <trans-unit id="407" translate="yes" xml:space="preserve">
+          <source>Index name</source>
+        </trans-unit>
+        <trans-unit id="408" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="409" translate="yes" xml:space="preserve">
+          <source>Key columns</source>
+        </trans-unit>
+        <trans-unit id="410" translate="yes" xml:space="preserve">
+          <source>I<ph id="ph1">\_</ph>175ITEMIDX</source>
+        </trans-unit>
+        <trans-unit id="411" translate="yes" xml:space="preserve">
+          <source>Clustered, unique, primary key, located on PRIMARY</source>
+        </trans-unit>
+        <trans-unit id="412" translate="yes" xml:space="preserve">
+          <source>DATAAREAID, ITEMID</source>
+        </trans-unit>
+        <trans-unit id="413" translate="yes" xml:space="preserve">
+          <source>I<ph id="ph1">\_</ph>175PRODUCTIDX</source>
+        </trans-unit>
+        <trans-unit id="414" translate="yes" xml:space="preserve">
+          <source>Non-clustered, located on PRIMARY</source>
+        </trans-unit>
+        <trans-unit id="415" translate="yes" xml:space="preserve">
+          <source>DATAAREAID, ITEMPRODUCTID, ITEMTYPE</source>
+        </trans-unit>
+        <trans-unit id="416" translate="yes" xml:space="preserve">
+          <source>In the following code, the clustered index is used instead of the non-clustered index that is specified by <bpt id="p1">**</bpt>index hint<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="417" translate="yes" xml:space="preserve">
+          <source>Writing a select statement as an expression</source>
+        </trans-unit>
+        <trans-unit id="418" translate="yes" xml:space="preserve">
+          <source>You can use a <bpt id="p1">**</bpt>select<ept id="p1">**</ept> statement as an expression.</source>
+        </trans-unit>
+        <trans-unit id="419" translate="yes" xml:space="preserve">
+          <source>This type of <bpt id="p1">**</bpt>select<ept id="p1">**</ept> statement is known as an <bpt id="p2">*</bpt>expression <bpt id="p3">**</bpt>select<ept id="p3">**</ept> statement<ept id="p2">*</ept>.</source>
+        </trans-unit>
+        <trans-unit id="420" translate="yes" xml:space="preserve">
+          <source>A table buffer variable can't be used in an expression <bpt id="p1">**</bpt>select<ept id="p1">**</ept> statement.</source>
+        </trans-unit>
+        <trans-unit id="421" translate="yes" xml:space="preserve">
+          <source>The name of the table must be used in the <bpt id="p1">**</bpt>from<ept id="p1">**</ept> clause.</source>
+        </trans-unit>
+        <trans-unit id="422" translate="yes" xml:space="preserve">
+          <source>One limitation of expression <bpt id="p1">**</bpt>select<ept id="p1">**</ept> statements is that the <bpt id="p2">**</bpt>join<ept id="p2">**</ept> keyword isn't supported in an expression join.</source>
+        </trans-unit>
+        <trans-unit id="423" translate="yes" xml:space="preserve">
+          <source>expression select examples</source>
+        </trans-unit>
+        <trans-unit id="424" translate="yes" xml:space="preserve">
+          <source>In the following example, the <bpt id="p1">**</bpt>select<ept id="p1">**</ept> statement inside the parentheses returns one row.</source>
+        </trans-unit>
+        <trans-unit id="425" translate="yes" xml:space="preserve">
+          <source>The only column that can be populated with data is the column that is named before the <bpt id="p1">**</bpt>from<ept id="p1">**</ept> clause in the <bpt id="p2">**</bpt>select<ept id="p2">**</ept> clause.</source>
+        </trans-unit>
+        <trans-unit id="426" translate="yes" xml:space="preserve">
+          <source>After the closing parenthesis, the name of that column is used to reference the data value: <bpt id="p1">**</bpt>).AccountNum;<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="427" translate="yes" xml:space="preserve">
+          <source>This example returns a maximum of one row, because it uses the <bpt id="p1">**</bpt>firstonly<ept id="p1">**</ept> keyword.</source>
+        </trans-unit>
+        <trans-unit id="428" translate="yes" xml:space="preserve">
+          <source>However, the value that is assigned to <bpt id="p1">**</bpt>sAccountNum<ept id="p1">**</ept> is the same, even if the <bpt id="p2">**</bpt>firstonly<ept id="p2">**</ept> keyword is omitted.</source>
+        </trans-unit>
+        <trans-unit id="429" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>where<ept id="p1">**</ept> clause in this example serves no purpose except to show that the <bpt id="p2">**</bpt>where<ept id="p2">**</ept> clause must occur after the <bpt id="p3">**</bpt>order by<ept id="p3">**</ept> clause.</source>
+        </trans-unit>
+        <trans-unit id="430" translate="yes" xml:space="preserve">
+          <source>The table name can't be used to qualify a field name in the <bpt id="p1">**</bpt>order by<ept id="p1">**</ept> clause.</source>
+        </trans-unit>
+        <trans-unit id="431" translate="yes" xml:space="preserve">
+          <source>Here is a simpler way to achieve the same result as the previous example.</source>
+        </trans-unit>
+        <trans-unit id="432" translate="yes" xml:space="preserve">
+          <source>The following example includes a <bpt id="p1">**</bpt>where<ept id="p1">**</ept> clause.</source>
+        </trans-unit>
+        <trans-unit id="433" translate="yes" xml:space="preserve">
+          <source>In a <bpt id="p1">**</bpt>where<ept id="p1">**</ept> clause, the table name must be used as a qualifier of the field.</source>
+        </trans-unit>
+        <trans-unit id="434" translate="yes" xml:space="preserve">
+          <source>Here, the <bpt id="p1">**</bpt>maxof<ept id="p1">**</ept> aggregate function is used, and the <bpt id="p2">**</bpt>RecId<ept id="p2">**</ept> field is mentioned in the function.</source>
+        </trans-unit>
+        <trans-unit id="435" translate="yes" xml:space="preserve">
+          <source>The field that is mentioned in the aggregate function must be the same as the field name that is used to reference the data value after the closing parenthesis.</source>
+        </trans-unit>
+        <trans-unit id="436" translate="yes" xml:space="preserve">
+          <source>Otherwise, empty data is returned.</source>
+        </trans-unit>
+        <trans-unit id="437" translate="yes" xml:space="preserve">
+          <source>In the following example, a field name (in this case, <bpt id="p1">**</bpt>RecId<ept id="p1">**</ept>) is used to reference a data value that isn't a <bpt id="p2">**</bpt>RecId<ept id="p2">**</ept> value.</source>
+        </trans-unit>
+        <trans-unit id="438" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>count<ept id="p1">**</ept> aggregate function doesn't return a <bpt id="p2">**</bpt>RecId<ept id="p2">**</ept> value.</source>
+        </trans-unit>
+        <trans-unit id="439" translate="yes" xml:space="preserve">
+          <source>Typically, the <bpt id="p1">**</bpt>RecId<ept id="p1">**</ept> field is used with the <bpt id="p2">**</bpt>count<ept id="p2">**</ept> function.</source>
+        </trans-unit>
+        <trans-unit id="440" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>join<ept id="p1">**</ept> keyword isn't supported in expression <bpt id="p2">**</bpt>select<ept id="p2">**</ept> statements.</source>
+        </trans-unit>
+        <trans-unit id="441" translate="yes" xml:space="preserve">
+          <source>The following example shows a subselect.</source>
+        </trans-unit>
+        <trans-unit id="442" translate="yes" xml:space="preserve">
+          <source>However, expression select <bpt id="p1">**</bpt>statements<ept id="p1">**</ept> don't support subselects that are equivalent to a standard inner join.</source>
+        </trans-unit>
+        <trans-unit id="443" translate="yes" xml:space="preserve">
+          <source>Therefore, the following example doesn't compile, because it mentions two tables inside one expression <bpt id="p1">**</bpt>select<ept id="p1">**</ept> statement (that is, inside the subselect).</source>
+        </trans-unit>
+        <trans-unit id="444" translate="yes" xml:space="preserve">
+          <source>As this example shows, subselects are supported, but only in a limited manner.</source>
+        </trans-unit>
+        <trans-unit id="445" translate="yes" xml:space="preserve">
+          <source>update method</source>
+        </trans-unit>
+        <trans-unit id="446" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>update<ept id="p1">**</ept> table method updates the current record with the contents of the buffer.</source>
+        </trans-unit>
+        <trans-unit id="447" translate="yes" xml:space="preserve">
+          <source>It also updates the appropriate system fields.</source>
+        </trans-unit>
+        <trans-unit id="448" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>where<ept id="p1">**</ept> clause is optional.</source>
+        </trans-unit>
+        <trans-unit id="449" translate="yes" xml:space="preserve">
+          <source>When it's used, the <bpt id="p1">**</bpt>where<ept id="p1">**</ept> clause specifies a condition that <bpt id="p2">**</bpt>update<ept id="p2">**</ept> tests as it processes each row of the table.</source>
+        </trans-unit>
+        <trans-unit id="450" translate="yes" xml:space="preserve">
+          <source>Only those rows that test <bpt id="p1">**</bpt>true<ept id="p1">**</ept> against the condition are updated with the new values.</source>
+        </trans-unit>
+        <trans-unit id="451" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>update<ph id="ph1">\_</ph>recordset<ept id="p1">**</ept> operator is a record set–based operator that updates multiple records at the same time.</source>
+        </trans-unit>
+        <trans-unit id="452" translate="yes" xml:space="preserve">
+          <source>To override the behavior of <bpt id="p1">**</bpt>update<ept id="p1">**</ept>, use the <bpt id="p2">**</bpt>doUpdate<ept id="p2">**</ept> method.</source>
+        </trans-unit>
+        <trans-unit id="453" translate="yes" xml:space="preserve">
+          <source>The following example selects the custTable table for update.</source>
+        </trans-unit>
+        <trans-unit id="454" translate="yes" xml:space="preserve">
+          <source>Any records where the value of the <bpt id="p1">**</bpt>AccountNum<ept id="p1">**</ept> field is equal to <bpt id="p2">**</bpt>4000<ept id="p2">**</ept> are updated.</source>
+        </trans-unit>
+        <trans-unit id="455" translate="yes" xml:space="preserve">
+          <source>(In this case, only one record is updated.) The value of the <bpt id="p1">**</bpt>CreditMax<ept id="p1">**</ept> field is changed to <bpt id="p2">**</bpt>5000<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="456" translate="yes" xml:space="preserve">
+          <source>doUpdate method</source>
+        </trans-unit>
+        <trans-unit id="457" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>doUpdate<ept id="p1">**</ept> method updates the current record with the contents of the buffer.</source>
+        </trans-unit>
+        <trans-unit id="458" translate="yes" xml:space="preserve">
+          <source>This method also updates the appropriate system fields.</source>
+        </trans-unit>
+        <trans-unit id="459" translate="yes" xml:space="preserve">
+          <source>You should use the <bpt id="p1">**</bpt>doUpdate<ept id="p1">**</ept> method when the <bpt id="p2">**</bpt>update<ept id="p2">**</ept> method on the table must be bypassed.</source>
+        </trans-unit>
+        <trans-unit id="460" translate="yes" xml:space="preserve">
+          <source>The syntax for a <bpt id="p1">**</bpt>doUpdate<ept id="p1">**</ept> table method is <bpt id="p2">**</bpt>void doUpdate()<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="461" translate="yes" xml:space="preserve">
+          <source>In the following example, the value of the <bpt id="p1">**</bpt>CreditMax<ept id="p1">**</ept> field is increased by 1,000.</source>
+        </trans-unit>
+        <trans-unit id="462" translate="yes" xml:space="preserve">
+          <source>delete method</source>
+        </trans-unit>
+        <trans-unit id="463" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>delete<ept id="p1">**</ept> table method deletes the current record from the database.</source>
+        </trans-unit>
+        <trans-unit id="464" translate="yes" xml:space="preserve">
+          <source>To use this method, use a <bpt id="p1">**</bpt>where<ept id="p1">**</ept> clause to specify the rows to delete.</source>
+        </trans-unit>
+        <trans-unit id="465" translate="yes" xml:space="preserve">
+          <source>One record at a time is then removed from the specified table.</source>
+        </trans-unit>
+        <trans-unit id="466" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>delete<ph id="ph1">\_</ph>from<ept id="p1">**</ept> operator is a record set–based operator that removes multiple records at the same time.</source>
+        </trans-unit>
+        <trans-unit id="467" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>delete<ept id="p1">**</ept> method can be overridden.</source>
+        </trans-unit>
+        <trans-unit id="468" translate="yes" xml:space="preserve">
+          <source>For example, you might want to add extra validation before records are deleted.</source>
+        </trans-unit>
+        <trans-unit id="469" translate="yes" xml:space="preserve">
+          <source>If you override the <bpt id="p1">**</bpt>delete<ept id="p1">**</ept> method, you can run the original (base) version of the <bpt id="p2">**</bpt>delete<ept id="p2">**</ept> method by calling the <bpt id="p3">**</bpt>doDelete<ept id="p3">**</ept> method.</source>
+        </trans-unit>
+        <trans-unit id="470" translate="yes" xml:space="preserve">
+          <source>Therefore, a call to the <bpt id="p1">**</bpt>doDelete<ept id="p1">**</ept> method is equivalent to a call to <bpt id="p2">**</bpt>super()<ept id="p2">**</ept> in the <bpt id="p3">**</bpt>delete<ept id="p3">**</ept> method.</source>
+        </trans-unit>
+        <trans-unit id="471" translate="yes" xml:space="preserve">
+          <source>In the following example, all records in the MyTable table that satisfy the criterion in the <bpt id="p1">**</bpt>where<ept id="p1">**</ept> clause (that is, all records where the value of the <bpt id="p2">**</bpt>AccountNum<ept id="p2">**</ept> field is equal to <bpt id="p3">**</bpt>1000<ept id="p3">**</ept>) are deleted from the database.</source>
+        </trans-unit>
+        <trans-unit id="472" translate="yes" xml:space="preserve">
+          <source>One record is deleted at a time.</source>
+        </trans-unit>
+        <trans-unit id="473" translate="yes" xml:space="preserve">
+          <source>doDelete method</source>
+        </trans-unit>
+        <trans-unit id="474" translate="yes" xml:space="preserve">
+          <source>Like the <bpt id="p1">**</bpt>delete<ept id="p1">**</ept> table method, the <bpt id="p2">**</bpt>doDelete<ept id="p2">**</ept> table method deletes the current record from the database.</source>
+        </trans-unit>
+        <trans-unit id="475" translate="yes" xml:space="preserve">
+          <source>Use the <bpt id="p1">**</bpt>doDelete<ept id="p1">**</ept> method if the <bpt id="p2">**</bpt>delete<ept id="p2">**</ept> table method has been overridden, and you want to run the original (base) version of the <bpt id="p3">**</bpt>delete<ept id="p3">**</ept> method instead of the overridden version.</source>
+        </trans-unit>
+        <trans-unit id="476" translate="yes" xml:space="preserve">
+          <source>Therefore, a call to the <bpt id="p1">**</bpt>doDelete<ept id="p1">**</ept> method is equivalent to a call to <bpt id="p2">**</bpt>super()<ept id="p2">**</ept> in the <bpt id="p3">**</bpt>delete<ept id="p3">**</ept> method.</source>
+        </trans-unit>
+        <trans-unit id="477" translate="yes" xml:space="preserve">
+          <source>The following example deletes all records in the myTable table that have an account number that is more than or equal to <bpt id="p1">**</bpt>200<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="478" translate="yes" xml:space="preserve">
+          <source>insert method</source>
+        </trans-unit>
+        <trans-unit id="479" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>insert<ept id="p1">**</ept> method updates one record at a time.</source>
+        </trans-unit>
+        <trans-unit id="480" translate="yes" xml:space="preserve">
+          <source>To insert multiple records at a time, use array inserts, <bpt id="p1">**</bpt>insert<ph id="ph1">\_</ph>recordset<ept id="p1">**</ept>, or <bpt id="p2">**</bpt>RecordSortedList.insertDatabase<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="481" translate="yes" xml:space="preserve">
+          <source>To override the behavior of the <bpt id="p1">**</bpt>insert<ept id="p1">**</ept> method, use the <bpt id="p2">**</bpt>doInsert<ept id="p2">**</ept> method.</source>
+        </trans-unit>
+        <trans-unit id="482" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>xRecord .insert<ept id="p1">**</ept> method generates values for the <bpt id="p2">**</bpt>RecId<ept id="p2">**</ept> field and system fields, and then inserts the contents of the buffer into the database.</source>
+        </trans-unit>
+        <trans-unit id="483" translate="yes" xml:space="preserve">
+          <source>Here is how the <bpt id="p1">**</bpt>insert<ept id="p1">**</ept> method works:</source>
+        </trans-unit>
+        <trans-unit id="484" translate="yes" xml:space="preserve">
+          <source>Only the specified columns of the rows that have been selected by the query are inserted into the named table.</source>
+        </trans-unit>
+        <trans-unit id="485" translate="yes" xml:space="preserve">
+          <source>The columns of the table that is copied from and the columns of the table that is copied to must be type-compatible.</source>
+        </trans-unit>
+        <trans-unit id="486" translate="yes" xml:space="preserve">
+          <source>If the columns of both tables match in type and order, column list can be omitted from the <bpt id="p1">**</bpt>insert<ept id="p1">**</ept> clause.</source>
+        </trans-unit>
+        <trans-unit id="487" translate="yes" xml:space="preserve">
+          <source>insert example: Inserting a new record</source>
+        </trans-unit>
+        <trans-unit id="488" translate="yes" xml:space="preserve">
+          <source>The following example inserts a new record into the CustTable table.</source>
+        </trans-unit>
+        <trans-unit id="489" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>AccountNum<ept id="p1">**</ept> field of the new record is set to <bpt id="p2">**</bpt>5000<ept id="p2">**</ept>, and the <bpt id="p3">**</bpt>Name<ept id="p3">**</ept> field is set to <bpt id="p4">**</bpt>MyCompany<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="490" translate="yes" xml:space="preserve">
+          <source>(Other fields in the record will be blank.)</source>
+        </trans-unit>
+        <trans-unit id="491" translate="yes" xml:space="preserve">
+          <source>insert example: Transaction and duplicate key</source>
+        </trans-unit>
+        <trans-unit id="492" translate="yes" xml:space="preserve">
+          <source>The following example shows how you can catch a <bpt id="p1">**</bpt>DuplicateKeyException<ept id="p1">**</ept> exception in the context of an explicit transaction.</source>
+        </trans-unit>
+        <trans-unit id="493" translate="yes" xml:space="preserve">
+          <source>The exception is thrown when a call to <bpt id="p1">**</bpt>xRecord .insert<ept id="p1">**</ept> fails because an existing unique value is duplicated.</source>
+        </trans-unit>
+        <trans-unit id="494" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>catch<ept id="p1">**</ept> block, your code can either take corrective action or log the error for later analysis.</source>
+        </trans-unit>
+        <trans-unit id="495" translate="yes" xml:space="preserve">
+          <source>Your code can then continue without losing all the pending work of the transaction.</source>
+        </trans-unit>
+        <trans-unit id="496" translate="yes" xml:space="preserve">
+          <source>You can't catch a duplicate key exception that is caused by a set-based operation such as <bpt id="p1">**</bpt>insert<ph id="ph1">\_</ph>recordset<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="497" translate="yes" xml:space="preserve">
+          <source>This example depends on two tables: TableNumberA and TableNumberB.</source>
+        </trans-unit>
+        <trans-unit id="498" translate="yes" xml:space="preserve">
+          <source>Both tables have one mandatory integer field.</source>
+        </trans-unit>
+        <trans-unit id="499" translate="yes" xml:space="preserve">
+          <source>These fields are named <bpt id="p1">**</bpt>NumberAKey<ept id="p1">**</ept> and <bpt id="p2">**</bpt>NumberBKey<ept id="p2">**</ept>, respectively.</source>
+        </trans-unit>
+        <trans-unit id="500" translate="yes" xml:space="preserve">
+          <source>A unique index is defined on each key field.</source>
+        </trans-unit>
+        <trans-unit id="501" translate="yes" xml:space="preserve">
+          <source>The TableNumberA table must have at least one record in it.</source>
+        </trans-unit>
+        <trans-unit id="502" translate="yes" xml:space="preserve">
+          <source>doInsert method</source>
+        </trans-unit>
+        <trans-unit id="503" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>doInsert<ept id="p1">**</ept> method generates values for the <bpt id="p2">**</bpt>RecId<ept id="p2">**</ept> field and other system fields, and then inserts the contents of the buffer into the database.</source>
+        </trans-unit>
+        <trans-unit id="504" translate="yes" xml:space="preserve">
+          <source>Use this method when the <bpt id="p1">**</bpt>insert<ept id="p1">**</ept> method on the table must be bypassed.</source>
+        </trans-unit>
+        <trans-unit id="505" translate="yes" xml:space="preserve">
+          <source>In the following example, a new record is inserted.</source>
+        </trans-unit>
+        <trans-unit id="506" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>name<ept id="p1">**</ept> field of the record is set to <bpt id="p2">**</bpt>Warren Langer<ept id="p2">**</ept>, and the <bpt id="p3">**</bpt>value<ept id="p3">**</ept> field is set to <bpt id="p4">**</bpt>100<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="507" translate="yes" xml:space="preserve">
+          <source>Transactional integrity</source>
+        </trans-unit>
+        <trans-unit id="508" translate="yes" xml:space="preserve">
+          <source>If steps aren't taken to help guarantee the integrity of transactions, data corruption could occur.</source>
+        </trans-unit>
+        <trans-unit id="509" translate="yes" xml:space="preserve">
+          <source>At the very least, you might experience poor scalability with respect to concurrent users on the system.</source>
+        </trans-unit>
+        <trans-unit id="510" translate="yes" xml:space="preserve">
+          <source>Two internal checking features help guarantee the integrity of transactions: the <bpt id="p1">**</bpt>forUpdate<ept id="p1">**</ept> check and the <bpt id="p2">**</bpt>tssLevel<ept id="p2">**</ept> check.</source>
+        </trans-unit>
+        <trans-unit id="511" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">**</bpt>forUpdate<ept id="p1">**</ept> check helps guarantee that a record can be updated or deleted only if it has first been selected for update.</source>
+        </trans-unit>
+        <trans-unit id="512" translate="yes" xml:space="preserve">
+          <source>You can select a record for update by using either the <bpt id="p1">**</bpt>forUpdate<ept id="p1">**</ept> keyword in the <bpt id="p2">**</bpt>select<ept id="p2">**</ept> statement or the <bpt id="p3">**</bpt>selectForUpdate<ept id="p3">**</ept> method on tables.</source>
+        </trans-unit>
+        <trans-unit id="513" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">**</bpt>ttsLevel<ept id="p1">**</ept> check helps guarantee that a record can be updated or deleted only within the same transaction scope where it was selected for update.</source>
+        </trans-unit>
+        <trans-unit id="514" translate="yes" xml:space="preserve">
+          <source>The following statements are used to help guarantee integrity:</source>
+        </trans-unit>
+        <trans-unit id="515" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>ttsBegin<ept id="p1">**</ept> – This statement marks the beginning of a transaction.</source>
+        </trans-unit>
+        <trans-unit id="516" translate="yes" xml:space="preserve">
+          <source>It helps guarantee data integrity, and also helps guarantees that all updates that are done until the transaction ends (through <bpt id="p1">**</bpt>ttsCommit<ept id="p1">**</ept> or <bpt id="p2">**</bpt>ttsAbort<ept id="p2">**</ept>) are consistent (all or none).</source>
+        </trans-unit>
+        <trans-unit id="517" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>ttsCommit<ept id="p1">**</ept> – This statement marks the successful end of a transaction.</source>
+        </trans-unit>
+        <trans-unit id="518" translate="yes" xml:space="preserve">
+          <source>It ends and commits a transaction.</source>
+        </trans-unit>
+        <trans-unit id="519" translate="yes" xml:space="preserve">
+          <source>Finance and Operations helps guarantee that a transaction that has been committed will be performed according to intentions.</source>
+        </trans-unit>
+        <trans-unit id="520" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>ttsAbort<ept id="p1">**</ept> – This statement lets you explicitly discard all changes in the current transaction.</source>
+        </trans-unit>
+        <trans-unit id="521" translate="yes" xml:space="preserve">
+          <source>In this case, the database is rolled back to the original state where nothing has been changed.</source>
+        </trans-unit>
+        <trans-unit id="522" translate="yes" xml:space="preserve">
+          <source>Typically, you use this statement if you've detected that the user wants to break the current job.</source>
+        </trans-unit>
+        <trans-unit id="523" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>ttsAbort<ept id="p1">**</ept> statement helps guarantee that the database is consistent.</source>
+        </trans-unit>
+        <trans-unit id="524" translate="yes" xml:space="preserve">
+          <source>Usually, it's a better idea to use exception handling instead of <bpt id="p1">**</bpt>ttsAbort<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="525" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>throw<ept id="p1">**</ept> statement automatically aborts the current transaction.</source>
+        </trans-unit>
+        <trans-unit id="526" translate="yes" xml:space="preserve">
+          <source>As the following example shows, statements between <bpt id="p1">**</bpt>ttsBegin<ept id="p1">**</ept> and <bpt id="p2">**</bpt>ttsCommit<ept id="p2">**</ept> can include one or more transaction blocks.</source>
+        </trans-unit>
+        <trans-unit id="527" translate="yes" xml:space="preserve">
+          <source>In these cases, nothing is actually committed until the successful exit from the final <bpt id="p1">**</bpt>ttsCommit<ept id="p1">**</ept> statement.</source>
+        </trans-unit>
+        <trans-unit id="528" translate="yes" xml:space="preserve">
+          <source>The following example selects a set of records and updates the <bpt id="p1">**</bpt>NameAlias<ept id="p1">**</ept> field.</source>
+        </trans-unit>
+        <trans-unit id="529" translate="yes" xml:space="preserve">
+          <source>Example of code that is rejected by the two transaction integrity checks</source>
+        </trans-unit>
+        <trans-unit id="530" translate="yes" xml:space="preserve">
+          <source>In this example, the first failure occurs because the <bpt id="p1">**</bpt>forupdate<ept id="p1">**</ept> keyword is missing.</source>
+        </trans-unit>
+        <trans-unit id="531" translate="yes" xml:space="preserve">
+          <source>The second failure occurs because the transaction scope of the update differs from the transaction scope where the record was selected for update in <bpt id="p1">**</bpt>ttsCommit<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="532" translate="yes" xml:space="preserve">
+          <source>Speeding up SQL operations</source>
+        </trans-unit>
+        <trans-unit id="533" translate="yes" xml:space="preserve">
+          <source>The following constructs let you insert, update, or delete multiple records.</source>
+        </trans-unit>
+        <trans-unit id="534" translate="yes" xml:space="preserve">
+          <source>By using these constructs, you reduce communication between the application and the database, and therefore help increase performance.</source>
+        </trans-unit>
+        <trans-unit id="535" translate="yes" xml:space="preserve">
+          <source>In some situations, record set–based operations can fall back to record-by-record operations.</source>
+        </trans-unit>
+        <trans-unit id="536" translate="yes" xml:space="preserve">
+          <source>Construct</source>
+        </trans-unit>
+        <trans-unit id="537" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="538" translate="yes" xml:space="preserve">
+          <source>RecordSortedList</source>
+        </trans-unit>
+        <trans-unit id="539" translate="yes" xml:space="preserve">
+          <source>Insert multiple records in one database trip.</source>
+        </trans-unit>
+        <trans-unit id="540" translate="yes" xml:space="preserve">
+          <source>Use this construct when you want a subset of data from a specific table, and you want that data to be sorted in an order that doesn't currently exist as an index.</source>
+        </trans-unit>
+        <trans-unit id="541" translate="yes" xml:space="preserve">
+          <source>RecordInsertList</source>
+        </trans-unit>
+        <trans-unit id="542" translate="yes" xml:space="preserve">
+          <source>Insert multiple records in one database trip.</source>
+        </trans-unit>
+        <trans-unit id="543" translate="yes" xml:space="preserve">
+          <source>Use this construct when you don't have to sort the data.</source>
+        </trans-unit>
+        <trans-unit id="544" translate="yes" xml:space="preserve">
+          <source>insert<ph id="ph1">\_</ph>recordset</source>
+        </trans-unit>
+        <trans-unit id="545" translate="yes" xml:space="preserve">
+          <source>Copy multiple records directly from one or more tables into another table in one database trip.</source>
+        </trans-unit>
+        <trans-unit id="546" translate="yes" xml:space="preserve">
+          <source>update<ph id="ph1">\_</ph>recordset</source>
+        </trans-unit>
+        <trans-unit id="547" translate="yes" xml:space="preserve">
+          <source>Update multiple rows in a table in one database trip.</source>
+        </trans-unit>
+        <trans-unit id="548" translate="yes" xml:space="preserve">
+          <source>delete<ph id="ph1">\_</ph>from</source>
+        </trans-unit>
+        <trans-unit id="549" translate="yes" xml:space="preserve">
+          <source>Delete multiple records from the database in one database trip.</source>
+        </trans-unit>
+        <trans-unit id="550" translate="yes" xml:space="preserve">
+          <source>insert<ph id="ph1">\_</ph>recordset</source>
+        </trans-unit>
+        <trans-unit id="551" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>insert<ph id="ph1">\_</ph>recordset<ept id="p1">**</ept> statement copies data directly from one or more source tables into one destination table in one server trip.</source>
+        </trans-unit>
+        <trans-unit id="552" translate="yes" xml:space="preserve">
+          <source>It's faster to use <bpt id="p1">**</bpt>insert<ph id="ph1">\_</ph>recordset<ept id="p1">**</ept> than an array insert.</source>
+        </trans-unit>
+        <trans-unit id="553" translate="yes" xml:space="preserve">
+          <source>However, array inserts are more flexible if you want to handle the data before you insert it.</source>
+        </trans-unit>
+        <trans-unit id="554" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>insert<ph id="ph1">\_</ph>recordset<ept id="p1">**</ept> is a record set–based operator that performs operations on multiple records at a time.</source>
+        </trans-unit>
+        <trans-unit id="555" translate="yes" xml:space="preserve">
+          <source>However, it can fall back to record-by-record operations in many situations.</source>
+        </trans-unit>
+        <trans-unit id="556" translate="yes" xml:space="preserve">
+          <source>insert<ph id="ph1">\_</ph>recordset syntax</source>
+        </trans-unit>
+        <trans-unit id="557" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>ListOfFields<ept id="p1">*</ept> in the destination table must match the list of fields in the source tables.</source>
+        </trans-unit>
+        <trans-unit id="558" translate="yes" xml:space="preserve">
+          <source>Data is transferred in the order in which it appears in the list of fields.</source>
+        </trans-unit>
+        <trans-unit id="559" translate="yes" xml:space="preserve">
+          <source>Fields in the destination table that aren't present in the list of fields are assigned <bpt id="p1">**</bpt>0<ept id="p1">**</ept> (zero) values, as in other areas.</source>
+        </trans-unit>
+        <trans-unit id="560" translate="yes" xml:space="preserve">
+          <source>System fields, such as <bpt id="p1">**</bpt>RecId<ept id="p1">**</ept>, are assigned transparently by the kernel in the destination table.</source>
+        </trans-unit>
+        <trans-unit id="561" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>insert<ph id="ph1">\_</ph>recordset<ept id="p1">**</ept> <bpt id="p2">*</bpt>DestinationTable<ept id="p2">*</ept> <bpt id="p3">**</bpt>(<ept id="p3">**</ept> <bpt id="p4">*</bpt>ListOfFields<ept id="p4">*</ept> <bpt id="p5">**</bpt>)<ept id="p5">**</ept> <bpt id="p6">**</bpt>select<ept id="p6">**</ept> <bpt id="p7">*</bpt>ListOfFields1<ept id="p7">*</ept> <bpt id="p8">**</bpt>from<ept id="p8">**</ept> <bpt id="p9">*</bpt>SourceTable<ept id="p9">*</ept> <bpt id="p10">**</bpt><ph id="ph2">\[</ph> where<ept id="p10">**</ept> <bpt id="p11">*</bpt>WhereClause<ept id="p11">*</ept> <bpt id="p12">**</bpt><ph id="ph3">\]</ph><ept id="p12">**</ept> <bpt id="p13">**</bpt><ph id="ph4">\[</ph> join<ept id="p13">**</ept> <bpt id="p14">*</bpt>ListOfFields2<ept id="p14">*</ept> <bpt id="p15">**</bpt>from<ept id="p15">**</ept> <bpt id="p16">*</bpt>JoinedSourceTable<ept id="p16">*</ept> <bpt id="p17">**</bpt><ph id="ph5">\[</ph> where<ept id="p17">**</ept> <bpt id="p18">*</bpt>JoinedWhereClause<ept id="p18">*</ept> <bpt id="p19">**</bpt><ph id="ph6">\]</ph><ph id="ph7">\]</ph><ept id="p19">**</ept></source>
+        </trans-unit>
+        <trans-unit id="562" translate="yes" xml:space="preserve">
+          <source>Example: Inserting data from another table</source>
+        </trans-unit>
+        <trans-unit id="563" translate="yes" xml:space="preserve">
+          <source>In this example, the <bpt id="p1">**</bpt>myNum<ept id="p1">**</ept> and <bpt id="p2">**</bpt>mySum<ept id="p2">**</ept> records are retrieved from the anotherTable table and inserted into the myTable table.</source>
+        </trans-unit>
+        <trans-unit id="564" translate="yes" xml:space="preserve">
+          <source>The records are grouped according to <bpt id="p1">**</bpt>myNum<ept id="p1">**</ept>, and only <bpt id="p2">**</bpt>myNum<ept id="p2">**</ept> records that have a value that is less than or equal to <bpt id="p3">**</bpt>100<ept id="p3">**</ept> are included in the insertion.</source>
+        </trans-unit>
+        <trans-unit id="565" translate="yes" xml:space="preserve">
+          <source>Example: Inserting data from variables</source>
+        </trans-unit>
+        <trans-unit id="566" translate="yes" xml:space="preserve">
+          <source>The following example shows that the <bpt id="p1">**</bpt>insert<ph id="ph1">\_</ph>recordset<ept id="p1">**</ept> statement can insert data that is provided in variables.</source>
+        </trans-unit>
+        <trans-unit id="567" translate="yes" xml:space="preserve">
+          <source>In this example, the <bpt id="p1">**</bpt>firstonly<ept id="p1">**</ept> keyword is used so that only one row is inserted.</source>
+        </trans-unit>
+        <trans-unit id="568" translate="yes" xml:space="preserve">
+          <source>Literals, such as <bpt id="p1">**</bpt>128<ept id="p1">**</ept> or <bpt id="p2">**</bpt>"this literal string"<ept id="p2">**</ept>, can't be used as a source of data that is inserted.</source>
+        </trans-unit>
+        <trans-unit id="569" translate="yes" xml:space="preserve">
+          <source>Example: Inserting data by using a join</source>
+        </trans-unit>
+        <trans-unit id="570" translate="yes" xml:space="preserve">
+          <source>The following example shows a join of three tables on an <bpt id="p1">**</bpt>insert<ph id="ph1">\_</ph>recordset<ept id="p1">**</ept> statement that has a subselect.</source>
+        </trans-unit>
+        <trans-unit id="571" translate="yes" xml:space="preserve">
+          <source>It also shows a <bpt id="p1">**</bpt>while<ept id="p1">**</ept> <bpt id="p2">**</bpt>select<ept id="p2">**</ept> statement that has a similar join.</source>
+        </trans-unit>
+        <trans-unit id="572" translate="yes" xml:space="preserve">
+          <source>A variable is used to supply the inserted value for one column.</source>
+        </trans-unit>
+        <trans-unit id="573" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>str<ept id="p1">**</ept> variable must be declared, and must have a length that is less than or equal to the maximum length of the corresponding database field.</source>
+        </trans-unit>
+        <trans-unit id="574" translate="yes" xml:space="preserve">
+          <source>In this example, there is an <bpt id="p1">**</bpt>insert<ph id="ph1">\_</ph>recordset<ept id="p1">**</ept> statement for the tabEmplProj5 table.</source>
+        </trans-unit>
+        <trans-unit id="575" translate="yes" xml:space="preserve">
+          <source>One of the target fields is named <bpt id="p1">**</bpt>Description<ept id="p1">**</ept>, and the field's data comes from the local variable <bpt id="p2">**</bpt>sDescriptionVariable<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="576" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>insert<ph id="ph1">\_</ph>recordset<ept id="p1">**</ept> statement succeeds even when the configuration key for the <bpt id="p2">**</bpt>Description<ept id="p2">**</ept> field is turned off.</source>
+        </trans-unit>
+        <trans-unit id="577" translate="yes" xml:space="preserve">
+          <source>The system ignores both the <bpt id="p1">**</bpt>Description<ept id="p1">**</ept> field and the <bpt id="p2">**</bpt>sDescriptionVariable<ept id="p2">**</ept> variable.</source>
+        </trans-unit>
+        <trans-unit id="578" translate="yes" xml:space="preserve">
+          <source>Therefore, this code provides an example of <bpt id="p1">*</bpt>configuration key automation<ept id="p1">*</ept>.</source>
+        </trans-unit>
+        <trans-unit id="579" translate="yes" xml:space="preserve">
+          <source>Configuration key automation occurs when the system can automatically adjust the behavior of an <bpt id="p1">**</bpt>insert<ph id="ph1">\_</ph>recordset<ept id="p1">**</ept> statement that inserts data into fields that the configuration key is turned off for.</source>
+        </trans-unit>
+        <trans-unit id="580" translate="yes" xml:space="preserve">
+          <source>update<ph id="ph1">\_</ph>recordset</source>
+        </trans-unit>
+        <trans-unit id="581" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>update<ph id="ph1">\_</ph>recordset<ept id="p1">**</ept> statement lets you update multiple rows in one trip to the server.</source>
+        </trans-unit>
+        <trans-unit id="582" translate="yes" xml:space="preserve">
+          <source>Therefore, the power of SQL Server can help improve the performance of some tasks.</source>
+        </trans-unit>
+        <trans-unit id="583" translate="yes" xml:space="preserve">
+          <source>The ****update<ph id="ph1">\_</ph>recordset**** statement resembles <bpt id="p1">**</bpt>delete<ph id="ph2">\_</ph>from<ept id="p1">**</ept> in X++ and <bpt id="p2">**</bpt>update set<ept id="p2">**</ept> in SQL.</source>
+        </trans-unit>
+        <trans-unit id="584" translate="yes" xml:space="preserve">
+          <source>It doesn't retrieve each record separately by fetching, changing, and updating, Instead, it works on an SQL-style record set on the database server side.</source>
+        </trans-unit>
+        <trans-unit id="585" translate="yes" xml:space="preserve">
+          <source>If the <bpt id="p1">**</bpt>update<ept id="p1">**</ept> method is overridden, the implementation falls back to a classic looping construction, where one record at a time is updated.</source>
+        </trans-unit>
+        <trans-unit id="586" translate="yes" xml:space="preserve">
+          <source>(This behavior resembles the behavior of <bpt id="p1">**</bpt>delete<ph id="ph1">\_</ph>from<ept id="p1">**</ept> for deletions.) Therefore, the construction works on temporary tables and whole table–cached tables by using the looping construction.</source>
+        </trans-unit>
+        <trans-unit id="587" translate="yes" xml:space="preserve">
+          <source>Example: Update that is based on a calculated value</source>
+        </trans-unit>
+        <trans-unit id="588" translate="yes" xml:space="preserve">
+          <source>The following example updates the myTableBuffer table and increments the value of the <bpt id="p1">**</bpt>field1<ept id="p1">**</ept> field by ten percent in all records in the table.</source>
+        </trans-unit>
+        <trans-unit id="589" translate="yes" xml:space="preserve">
+          <source>Example: Update that uses a where clause</source>
+        </trans-unit>
+        <trans-unit id="590" translate="yes" xml:space="preserve">
+          <source>The following example updates all records in the myTable table where the <bpt id="p1">**</bpt>field1<ept id="p1">**</ept> field has the value <bpt id="p2">**</bpt>0<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="591" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>field1<ept id="p1">**</ept> field is assigned a new value of <bpt id="p2">**</bpt>1<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="592" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>field2<ept id="p1">**</ept> field is assigned a value that is the sum of <bpt id="p2">**</bpt>fieldX<ept id="p2">**</ept> and <bpt id="p3">**</bpt>fieldY<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="593" translate="yes" xml:space="preserve">
+          <source>This example updates multiple fields at the same time, and it updates only those rows that satisfy the <bpt id="p1">**</bpt>where<ept id="p1">**</ept> clause.</source>
+        </trans-unit>
+        <trans-unit id="594" translate="yes" xml:space="preserve">
+          <source>Example: Updating joined tables</source>
+        </trans-unit>
+        <trans-unit id="595" translate="yes" xml:space="preserve">
+          <source>The following example shows that the <bpt id="p1">**</bpt>update<ph id="ph1">\_</ph>recordset<ept id="p1">**</ept> statement supports joins of several tables.</source>
+        </trans-unit>
+        <trans-unit id="596" translate="yes" xml:space="preserve">
+          <source>Data from the joined tables can be used to assign values to fields in the table that is being updated.</source>
+        </trans-unit>
+        <trans-unit id="597" translate="yes" xml:space="preserve">
+          <source>delete<ph id="ph1">\_</ph>from</source>
+        </trans-unit>
+        <trans-unit id="598" translate="yes" xml:space="preserve">
+          <source>You can delete multiple records from a database table by using a <bpt id="p1">**</bpt>delete<ph id="ph1">\_</ph>from<ept id="p1">**</ept> statement.</source>
+        </trans-unit>
+        <trans-unit id="599" translate="yes" xml:space="preserve">
+          <source>This approach can be more efficient and faster than an approach that uses the <bpt id="p1">**</bpt>xRecord .delete<ept id="p1">**</ept> method in a loop to delete one record at a time.</source>
+        </trans-unit>
+        <trans-unit id="600" translate="yes" xml:space="preserve">
+          <source>If you've overridden the <bpt id="p1">**</bpt>delete<ept id="p1">**</ept> method, the system interprets the <bpt id="p2">**</bpt>delete<ph id="ph1">\_</ph>from<ept id="p2">**</ept> statement into code that calls the <bpt id="p3">**</bpt>delete<ept id="p3">**</ept> method one time for each row that is deleted.</source>
+        </trans-unit>
+        <trans-unit id="601" translate="yes" xml:space="preserve">
+          <source>Example: Efficiently deleting records by using delete<ph id="ph1">\_</ph>from</source>
+        </trans-unit>
+        <trans-unit id="602" translate="yes" xml:space="preserve">
+          <source>The following example shows an efficient way to delete multiple records.</source>
+        </trans-unit>
+        <trans-unit id="603" translate="yes" xml:space="preserve">
+          <source>Example: Inefficiently deleting records by using forUpdate</source>
+        </trans-unit>
+        <trans-unit id="604" translate="yes" xml:space="preserve">
+          <source>The following example is inefficient.</source>
+        </trans-unit>
+        <trans-unit id="605" translate="yes" xml:space="preserve">
+          <source>It issues a separate SQL <bpt id="p1">**</bpt>delete<ept id="p1">**</ept> call to the database server for every record.</source>
+        </trans-unit>
+        <trans-unit id="606" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>xRecord<ept id="p1">**</ept> <bpt id="p2">**</bpt>.delete<ept id="p2">**</ept> method never deletes more than one record per call.</source>
+        </trans-unit>
+        <trans-unit id="607" translate="yes" xml:space="preserve">
+          <source>Example: A delete operation that has an inner join</source>
+        </trans-unit>
+        <trans-unit id="608" translate="yes" xml:space="preserve">
+          <source>Inner joins aren't supported on the <bpt id="p1">**</bpt>delete<ph id="ph1">\_</ph>from<ept id="p1">**</ept> statement.</source>
+        </trans-unit>
+        <trans-unit id="609" translate="yes" xml:space="preserve">
+          <source>Therefore, you can't use the unmodified <bpt id="p1">**</bpt>join<ept id="p1">**</ept> keyword on the <bpt id="p2">**</bpt>delete<ph id="ph1">\_</ph>from<ept id="p2">**</ept> statement.</source>
+        </trans-unit>
+        <trans-unit id="610" translate="yes" xml:space="preserve">
+          <source>However, you can logically accomplish an inner join by using other techniques.</source>
+        </trans-unit>
+        <trans-unit id="611" translate="yes" xml:space="preserve">
+          <source>The following example shows the new and old techniques for achieving inner join logic through a sequence of statements.</source>
+        </trans-unit>
+        <trans-unit id="612" translate="yes" xml:space="preserve">
+          <source>Example: A delete operation that uses the notexists join keyword</source>
+        </trans-unit>
+        <trans-unit id="613" translate="yes" xml:space="preserve">
+          <source>You can use the <bpt id="p1">**</bpt>notexists join<ept id="p1">**</ept> keyword pair in a <bpt id="p2">**</bpt>delete<ph id="ph1">\_</ph>from<ept id="p2">**</ept> statement.</source>
+        </trans-unit>
+        <trans-unit id="614" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>delete<ph id="ph1">\_</ph>from<ept id="p1">**</ept> statements in the following example are efficient.</source>
+        </trans-unit>
+        <trans-unit id="615" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>notexists join<ept id="p1">**</ept> clause enables the <bpt id="p2">**</bpt>delete<ph id="ph1">\_</ph>from<ept id="p2">**</ept> statement to delete a specific set of rows.</source>
+        </trans-unit>
+        <trans-unit id="616" translate="yes" xml:space="preserve">
+          <source>In this example, the <bpt id="p1">**</bpt>delete<ph id="ph1">\_</ph>from<ept id="p1">**</ept> statement removes all parent-order header rows that there are no child-order line rows for.</source>
+        </trans-unit>
+        <trans-unit id="617" translate="yes" xml:space="preserve">
+          <source>You can also use the <bpt id="p1">**</bpt>exists join<ept id="p1">**</ept> clause on the <bpt id="p2">**</bpt>delete<ph id="ph1">\_</ph>from<ept id="p2">**</ept> statement.</source>
+        </trans-unit>
+        <trans-unit id="618" translate="yes" xml:space="preserve">
+          <source>Maintain fast SQL operations</source>
+        </trans-unit>
+        <trans-unit id="619" translate="yes" xml:space="preserve">
+          <source>There are situations where record set–based operations can be converted to slower record-by-record operations.</source>
+        </trans-unit>
+        <trans-unit id="620" translate="yes" xml:space="preserve">
+          <source>The following table identifies these situations.</source>
+        </trans-unit>
+        <trans-unit id="621" translate="yes" xml:space="preserve">
+          <source>Situation</source>
+        </trans-unit>
+        <trans-unit id="622" translate="yes" xml:space="preserve">
+          <source>DELETE<ph id="ph1">\_</ph>FROM</source>
+        </trans-unit>
+        <trans-unit id="623" translate="yes" xml:space="preserve">
+          <source>UPDATE<ph id="ph1">\_</ph>RECORDSET</source>
+        </trans-unit>
+        <trans-unit id="624" translate="yes" xml:space="preserve">
+          <source>INSERT<ph id="ph1">\_</ph>RECORDSET</source>
+        </trans-unit>
+        <trans-unit id="625" translate="yes" xml:space="preserve">
+          <source>ARRAY<ph id="ph1">\_</ph>INSERT</source>
+        </trans-unit>
+        <trans-unit id="626" translate="yes" xml:space="preserve">
+          <source>Use this setting for overrides</source>
+        </trans-unit>
+        <trans-unit id="627" translate="yes" xml:space="preserve">
+          <source>Non-SQL tables</source>
+        </trans-unit>
+        <trans-unit id="628" translate="yes" xml:space="preserve">
+          <source>Yes</source>
+        </trans-unit>
+        <trans-unit id="629" translate="yes" xml:space="preserve">
+          <source>Yes</source>
+        </trans-unit>
+        <trans-unit id="630" translate="yes" xml:space="preserve">
+          <source>Yes</source>
+        </trans-unit>
+        <trans-unit id="631" translate="yes" xml:space="preserve">
+          <source>Yes</source>
+        </trans-unit>
+        <trans-unit id="632" translate="yes" xml:space="preserve">
+          <source>Not applicable</source>
+        </trans-unit>
+        <trans-unit id="633" translate="yes" xml:space="preserve">
+          <source>Delete actions</source>
+        </trans-unit>
+        <trans-unit id="634" translate="yes" xml:space="preserve">
+          <source>Yes</source>
+        </trans-unit>
+        <trans-unit id="635" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="636" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="637" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="638" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>skipDeleteActions<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="639" translate="yes" xml:space="preserve">
+          <source>The database log is enabled.</source>
+        </trans-unit>
+        <trans-unit id="640" translate="yes" xml:space="preserve">
+          <source>Yes</source>
+        </trans-unit>
+        <trans-unit id="641" translate="yes" xml:space="preserve">
+          <source>Yes</source>
+        </trans-unit>
+        <trans-unit id="642" translate="yes" xml:space="preserve">
+          <source>Yes</source>
+        </trans-unit>
+        <trans-unit id="643" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="644" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>skipDatabaseLog<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="645" translate="yes" xml:space="preserve">
+          <source>Overridden method</source>
+        </trans-unit>
+        <trans-unit id="646" translate="yes" xml:space="preserve">
+          <source>Yes</source>
+        </trans-unit>
+        <trans-unit id="647" translate="yes" xml:space="preserve">
+          <source>Yes</source>
+        </trans-unit>
+        <trans-unit id="648" translate="yes" xml:space="preserve">
+          <source>Yes</source>
+        </trans-unit>
+        <trans-unit id="649" translate="yes" xml:space="preserve">
+          <source>Yes</source>
+        </trans-unit>
+        <trans-unit id="650" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>skipDataMethods<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="651" translate="yes" xml:space="preserve">
+          <source>Alerts are set up for the table.</source>
+        </trans-unit>
+        <trans-unit id="652" translate="yes" xml:space="preserve">
+          <source>Yes</source>
+        </trans-unit>
+        <trans-unit id="653" translate="yes" xml:space="preserve">
+          <source>Yes</source>
+        </trans-unit>
+        <trans-unit id="654" translate="yes" xml:space="preserve">
+          <source>Yes</source>
+        </trans-unit>
+        <trans-unit id="655" translate="yes" xml:space="preserve">
+          <source>No</source>
+        </trans-unit>
+        <trans-unit id="656" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>skipEvents<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="657" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>ValidTimeStateFieldType<ept id="p1">**</ept> property on a table isn't equal to <bpt id="p2">**</bpt>None<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="658" translate="yes" xml:space="preserve">
+          <source>Yes</source>
+        </trans-unit>
+        <trans-unit id="659" translate="yes" xml:space="preserve">
+          <source>Yes</source>
+        </trans-unit>
+        <trans-unit id="660" translate="yes" xml:space="preserve">
+          <source>Yes</source>
+        </trans-unit>
+        <trans-unit id="661" translate="yes" xml:space="preserve">
+          <source>Yes</source>
+        </trans-unit>
+        <trans-unit id="662" translate="yes" xml:space="preserve">
+          <source>Not applicable</source>
+        </trans-unit>
+        <trans-unit id="663" translate="yes" xml:space="preserve">
+          <source>You can use the settings that are shown in the last column to explicitly skip or ignore one or more factors that adversely affect performance.</source>
+        </trans-unit>
+        <trans-unit id="664" translate="yes" xml:space="preserve">
+          <source>If, for some reason, one of the previously mentioned SQL operations is downgraded to a record-by-record operation, all the <bpt id="p1">**</bpt>skip<ph id="ph1">\*</ph><ept id="p1">**</ept> settings are also ignored.</source>
+        </trans-unit>
+        <trans-unit id="665" translate="yes" xml:space="preserve">
+          <source>For example, in the following code, the <bpt id="p1">**</bpt>insert<ept id="p1">**</ept> method on the myTable table is run, even though it's explicitly stated that this method should be skipped if a container or memo field is defined for myTable.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

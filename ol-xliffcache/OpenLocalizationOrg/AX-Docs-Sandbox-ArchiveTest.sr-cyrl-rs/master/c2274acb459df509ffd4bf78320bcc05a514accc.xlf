@@ -1,0 +1,213 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">c2274acb459df509ffd4bf78320bcc05a514accc</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\user-interface\task-recorder-control-text.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">03ba62f391fdc72a788aa6adbfc363e07a0062d2</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">03eaf59ac78d95532bda8a313a3a4178f09e7aeb</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Control the text that Task Recorder generates for a control</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This article describes how Task recorder determines what instruction label to generate for controls.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>It then explains how you can make sure that these labels are meaningful for the user.</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Control the text that Task Recorder generates for a control</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>This article describes how Task recorder determines what instruction label to generate for controls.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>It then explains how you can make sure that these labels are meaningful for the user.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Every control must have useful and meaningful instruction labels, so that the task guide, Microsoft Word document, and Help content meet Content Publishing standards for readability.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>We must first define two terms:</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Control label<ept id="p1">**</ept> – The value that comes from the label property on the control.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Instruction label<ept id="p1">**</ept> – The label that a control instructs Task recorder to use when it's describing how to use that control (for example, “Click OK” or “In the First name field, enter ‘John’”).</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>When a control logs an event to Task recorder, three methods can be used to determine the instruction label that is shown to the user:</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>As part of logging the Task recorder event, the control might specify an exact instruction label ID to use.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>As a best practice, here is how label IDs should be named: <ph id="ph1">\[</ph>client control type name<ph id="ph2">\]</ph><ph id="ph3">\_</ph><ph id="ph4">\[</ph>property or command name<ph id="ph5">\]</ph> For manual specification of an instruction label ID, see the code example later in this article (<bpt id="p1">**</bpt>OptionalInstructionLabelIDOverride<ept id="p1">**</ept>).</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>If the control doesn't explicitly specify an instruction label ID, Task recorder looks in the SysTaskRecorderLabel file to try to find an existing instruction label ID that fits the following naming syntax: <ph id="ph1">\[</ph>client control type name<ph id="ph2">\]</ph><ph id="ph3">\_</ph><ph id="ph4">\[</ph>property or command name<ph id="ph5">\]</ph> If an instruction label ID of this type is found, Task recorder uses it.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>If a label can't be determined by using the preceding methods, Task recorder falls back to a more general-purpose instruction label.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>The general purpose instruction labels are in the SysTaskRecorder label file.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>There is one general-purpose instruction label for commands and another for properties.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Here is the general purpose instruction label for commands:</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Label ID:<ept id="p1">**</ept> CommandUserAction</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Label string:<ept id="p1">**</ept> %2 the %1</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Here is the general purpose instruction label for properties:</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Label ID:<ept id="p1">**</ept> PropertySetValue</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Label string:<ept id="p1">**</ept> In the %1 field, enter %2</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>When Task recorder has determined which instruction label to use (via one of the preceding three methods), it strFormats the label by using the following arguments:</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>%1<ept id="p1">**</ept> – This argument is the control label.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Task recorder gets the control label by inspecting the label on the intractable.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>However, a control can override this label and provide its own label.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>See the code example later in this article (<bpt id="p1">**</bpt>OptionalControlLabelOverride<ept id="p1">**</ept>).</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>%2<ept id="p1">**</ept> –  This argument is either the value (for properties) or the command name (for commands).</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>This value will be the value that the control sent to Task recorder as part of logging the event.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>However, the raw data value can be ugly or meaningless to an end user.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Therefore, a control can also provide a more user-friendly version of the value that Task recorder can display instead of the raw data value.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>See the code example later in this article (<bpt id="p1">**</bpt>OptionalValueLabelOverride<ept id="p1">**</ept>).</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>%3<ept id="p1">**</ept>–<bpt id="p2">**</bpt>%5<ept id="p2">**</ept> – These are command arguments and are used rarely.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>However, grids use them to record the row number, for example.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Case study</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Let's use the Checkbox control as a case study for improvement.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Currently, an instruction label isn't specified for the Checkbox via either method 1 or method 2 (see the previous section of this article).</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Therefore, the general-purpose property instruction label is used instead.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>If someone records selecting the Checkbox for a field that is named <bpt id="p1">**</bpt>Show infolog on failure<ept id="p1">**</ept>, the Task recorder output currently looks like this:</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>In the Show infolog on failure field, enter True.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>However, typical end users might not know what it means to set a Checkbox to <bpt id="p1">**</bpt>True<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Therefore, a suggested improvement is for the Checkbox to produce a label that looks like this:</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Check Show infolog on failure.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>To make this improvement, someone must add a new label ID.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>That user must then use the label ID when the event is logged to Task recorder by using method 1:</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Label ID:<ept id="p1">**</ept> Checkbox<ph id="ph1">\_</ph>Value</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Label string:<ept id="p1">**</ept> "%2 %1."</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>This change produces output that looks like this:</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>True Show infolog on failure.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>This isn't quite what we want to see.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Therefore, in addition, when the Checkbox logs the property change event to Task recorder, it should pass in a specific <bpt id="p1">*</bpt>value label<ept id="p1">*</ept> that says either “Check” or “Uncheck.”</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>If the control explicitly specifies a value label, Task recorder will use that value label instead of the raw data value that was recorded (<bpt id="p1">**</bpt>True<ept id="p1">**</ept> or <bpt id="p2">**</bpt>False<ept id="p2">**</ept>, in this case).</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>See the code example later in this article (<bpt id="p1">**</bpt>OptionalValueLabelOverride<ept id="p1">**</ept>).</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>After the user creates the new label and specifies the value label when the event is logged to Task recorder, the control will have suitable text output:</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Check Show infolog on failure.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Finally, the Checkbox should have a second instruction label for “example value” usage of the Checkbox.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>“Example value” represents a special way that Task recorder displays an instruction label to the user.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>The author of the task recording can specify whether the task guide should instruct users to enter the same values that were entered when the guide was recorded, or whether the task guide should instruct users to enter their own values that are specific to their business requirements.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Example value instruction labels have the following label ID syntax: <ph id="ph1">\[</ph>client control type name<ph id="ph2">\]</ph><ph id="ph3">\_</ph><ph id="ph4">\[</ph>property name<ph id="ph5">\]</ph><ph id="ph6">\_</ph>Example For the Checkbox example, the value label would look like this:</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Label ID:<ept id="p1">**</ept> Checkbox<ph id="ph1">\_</ph>Value<ph id="ph2">\_</ph>Example</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Label string:<ept id="p1">**</ept> “Check or uncheck the %1 field.”</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>The following code example shows how property change events are logged to Task recorder by an X++ control.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Similar application programming interfaces (APIs) exist for C++ kernel controls.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Command events have a similar API.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

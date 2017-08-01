@@ -1,0 +1,303 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">f6b357c92dac101c95badd9f4ee861b8344dadce</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\lifecycle-services\ax-2012\install-dixf.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">1517feb5c9f78a22cd6897a66ce783f5e1c46695</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">3e8b1e47af73d722e01ba90c15d002073b990e5b</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Install the Data import/export framework (AX 2012)</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic provides information about how to install the data import/export framework.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Install the Data import/export framework (AX 2012)</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>**Note: **The procedure for completing this task changed for cumulative update 7 or later for Microsoft Dynamics AX 2012 R2.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>The updated procedure also applies to AX 2012 R3.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>For more information, see the section later in this topic.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Before you begin, your environment must include the following components:</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>A running version of AX 2012 that has been configured for your business</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>A running version of Microsoft SQL Server Integration Services that is running the same version of SQL Server that is hosting the Microsoft Dynamics AX business and model store database</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Important:<ept id="p1">**</ept> Because the staging environment is highly normalized and might require significant processing bandwidth, we recommend that you increase the Maximum buffer size setting for your environment while you migrate data.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Use the Server configuration utility to set the value.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Install the version of the Data Import/Export Framework that is available in Microsoft Dynamics AX 2012 R3</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>To install the version of the framework available in Microsoft Dynamics AX 2012 R3, follow the instructions in <bpt id="p1">[</bpt>Install the Data import/export framework (AX 2012 R3)<ept id="p1">](install-ax-2012-r3.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Install the version of the Data Import/Export Framework that is available in cumulative update 7 for Microsoft Dynamics AX 2012 R2</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Important:<ept id="p1">**</ept> If you are running Microsoft Dynamics AX 2012 R2, we strongly recommend that you use the version of the Data Import/Export Framework that is available in cumulative update 7.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Components of the Data Import/Export Framework must be installed on computers that are running Integration Services, on a computer that is running an instance of Microsoft Dynamics AX Application Object Server (AOS), and on a computer that is running the Microsoft Dynamics AX client.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>You must run the installer locally on each computer.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Caution:<ept id="p1">**</ept> If you have previously installed the Data Import/Export Framework from InformationSource, you must fully uninstall it and then reinstall it for cumulative update 7 for Microsoft Dynamics AX 2012 R2.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>As part of this full uninstallation, you must remove all binary files by using Add/Remove Programs and uninstall the Data Import/Export Framework model.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>How to: Remove (Uninstall) a Model<ept id="p1">](http://msdn.microsoft.com/library/6552673a-a386-4349-9438-64c0de94ca7d(AX.60).aspx)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Install the Data Import/Export Framework from InformationSource</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Important:<ept id="p1">**</ept> Use the version of the Data Import/Export Framework that is available from InformationSource only with AX 2012 RTM or Microsoft Dynamics AX 2012 Feature Pack.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Install the Data Import/Export Framework binary components (InformationSource)</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Important:<ept id="p1">**</ept> Do NOT use this procedure if you are installing Data Import/Export Framework for cumulative update 7 for Microsoft Dynamics AX 2012 R2 or for AX 2012 R3.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Install the Data Import/Export Framework binary components on a computer that is running Integration Services, on a computer that is running an AOS instance, and on a computer that is running the Microsoft Dynamics AX client using the following procedure.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>You must run the installer locally on each computer.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Download the installation package for the Data Import/Export Framework, DataImportExportFramework.zip, and extract the package to a local folder.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Browse to the location where you extracted the files, right-click <bpt id="p1">**</bpt>Setup.exe<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>Run as administrator<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Setup<ept id="p1">**</ept> wizard, accept the license terms, and then click <bpt id="p2">**</bpt>Accept and continue<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Select components<ept id="p1">**</ept> page, select the components of the Data Import/Export Framework that can be installed on the local computer, and then click <bpt id="p2">**</bpt>Next<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>The prerequisite validation check runs.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Address any issues that the prerequisite check finds outside the installer.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>When all prerequisites have been addressed, restart <bpt id="p1">**</bpt>Setup<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>If you are installing on the computer that runs Microsoft SQL Server Integration Services, specify a service account and the version of SQL Server that is running.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>We recommend that you use the AOS service account.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Or,If you are installing on the AOS computer, specify the name of the server that is running SQL Server Integration Services.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Ready to install<ept id="p1">**</ept> page, review the summary, and then click <bpt id="p2">**</bpt>Install<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Installation completed<ept id="p1">**</ept> page, select <bpt id="p2">**</bpt>Show logs<ept id="p2">**</ept> to display the log files, verify that the files were installed successfully, and then click <bpt id="p3">**</bpt>Finish<ept id="p3">**</ept>.The log file is stored in the same location that <bpt id="p4">**</bpt>Setup<ept id="p4">**</ept> was run from.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Repeat until all components (Integration Services, AOS instance, and client) have been installed.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Install the Data Import/Export Framework model (InformationSource)</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Important:<ept id="p1">**</ept> Do NOT use this procedure if you are installing Data Import/Export Framework for cumulative update 7 for Microsoft Dynamics AX 2012 R2 or for AX 2012 R3.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>After all the components have been installed, you must install the Data Import/Export Framework model.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>On the client computer, from the location where you installed the Data Import/Export Framework, import the DataImportExportFramework.axmodel file.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>For more detailed instructions, see <bpt id="p1">[</bpt>How to: Export and Import a Model<ept id="p1">](http://msdn.microsoft.com/library/c2449a03-7574-4b9d-8518-9005b560209f(AX.60).aspx)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> Verify that the Microsoft Dynamics AX Management Shell is pointing to the database that you want to install the model in.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Drain client connections to the AOS instance that you are working with.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Stop the AOS.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Use one of the following command-line tools to import the model.The version of the model that you import depends on the version of Microsoft Dynamics AX that you are running:</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>For AX 2012, install the model from the 2012 directory.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>For AX 2012 Feature Pack, install the model from the 2012 FP directory.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>For AX 2012 R2, install the model from the 2012 R2 directory.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Windows PowerShell</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>AXUtil</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Restart the AOS service.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Start the client.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Model store has been modified<ept id="p1">**</ept> dialog box, click <bpt id="p2">**</bpt>Compile and synchronize<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>When the synchronization is completed, click <bpt id="p1">**</bpt>Compile into .Net Framework CIL<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>If the dialog box does not open by itself, follow these steps:</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Compile the application from <bpt id="p1">**</bpt>System administration<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Periodic<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Compile<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>System administration<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Periodic<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Database<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>SQL administration<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Table actions<ept id="p1">**</ept> menu, click <bpt id="p2">**</bpt>Synchronize database<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Compile into .NET CIL from <bpt id="p1">**</bpt>System administration<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Periodic<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Compile<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>After the model has been compiled into .NET CIL, the <bpt id="p1">**</bpt>Data Import/Export Framework<ept id="p1">**</ept> button is added to the navigation pane.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Troubleshoot an installation of the Data Import/Export Framework from cumulative update 7 for Microsoft Dynamics AX 2012 R2</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>This section describes how to troubleshoot issues with a Data Import/Export Framework installation from cumulative update 7 for Microsoft Dynamics AX 2012 R2.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>You receive an “Assembly containing type Microsoft.Dynamics.AX.DMF.ServiceProxy.DmfEntityProxy is not referenced.”</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>error</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>After you slipstream cumulative update 7 for Microsoft Dynamics AX 2012 R2, the Data Import/Export Framework appears to be installed, but you receive error messages when many forms are opened.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Resolution<ept id="p1">**</ept> When you slipstream install cumulative update 7 for Microsoft Dynamics AX 2012 R2, the Data Import/Export Framework appears to be installed for members of the System Administrators role.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>However, the binary components of the framework are not present.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>To fully install the Data Import/Export Framework, you must run the update installer.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Troubleshoot an installation of the Data Import/Export Framework from InformationSource</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>This section describes how to troubleshoot issues with a Data Import/Export Framework installation from InformationSource.</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>The Data Import/Export Framework does not compile</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>After you install the Data Import/Export Framework, if you cannot compile, validate that the Data Import/Export Framework was installed correctly.</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Verify that the Microsoft Dynamics AX Data Import/Export Framework service is running.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Verify that the Data Import/Export Framework DLLs are present in C:Program Files (x86)Microsoft Dynamics AX60ClientBin folder:</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Microsoft.Dynamics.AX.DMF.Mapper.dll</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Microsoft.Dynamics.AX.DMF.PreviewGrid.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Microsoft.Dynamics.AX.DMF.ServiceProxy.dll</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>DMFConfig.xml</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Microsoft.Dynamics.AX.DMF.DriverHelper.dll</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Resolution<ept id="p1">**</ept> Copy the DLLs from the installation location (C:Program FilesMicrosoft Dynamics AX 2012 Data Import Export Framework Client Component) to the C:Program Files (x86)Microsoft Dynamics AX60ClientBin folder.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>Exception message while you use Data Import/Export Framework</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>While you use the Data Import/Export Framework, you might receive the following error message:</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source><ph id="ph1"> ---</ph><ph id="ph2">&amp;gt;</ph> System.InvalidOperationException</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Verify that the following files are present in the C:Program Files (x86)Microsoft Dynamics AX60ServerBin folder on the server that is running the AOS instance:</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>DMFConfig.xml</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>DMFClientConfig.xml</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Microsoft.Dynamics.AX.DMF.ServiceProxy.dll.config</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Resolution<ept id="p1">**</ept> Copy the .xml and the config files from the installation location (C:Program FilesMicrosoft Dynamics AX 2012 Data Import Export Framework Server Component) to the C:Program Files (x86)Microsoft Dynamics AX60ServerBin folder on the server that is running the AOS instance.</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>Changes to the location of the Data Import/Export Framework service</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>If you have to update the location where you run Integration Services and the Data Import/Export Framework service, you can update the endpoint address in the Microsoft.Dynamics.AX.DMF.ServiceProxy.dll.config file to use the new server name.</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">&amp;lt;</ph>endpoint address="http://<ph id="ph2">&amp;lt;</ph><ph id="ph3">&amp;lt;</ph>NEW MACHINE NAME<ph id="ph4">&amp;gt;</ph><ph id="ph5">&amp;gt;</ph>:7000/DMFService/DMFServiceHelper.svc" <bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> The Microsoft.Dynamics.AX.DMF.ServiceProxy.dll.config file is located in the C:Program Files (x86)Microsoft Dynamics AX60ServerBin folder on the server that is running the AOS instance.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

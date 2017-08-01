@@ -1,0 +1,456 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">1fe05002a52577ea8f3004d689b09b15cd54403c</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\perf-test\continuous-build-test-automation.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">22f7519eb519fbafe189bbb9865065abfc54c81e</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">678a3df3d35c125d50e3645b14faab0ca0c56f0c</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Deployment with continuous build and test automation</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic describes how to deploy a developer topology that supports continuous build and test automation.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Deployment with continuous build and test automation</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This topic describes how to deploy a developer topology that supports continuous build and test automation.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Prerequisite: This requires a Visual Studio Team Services (VSTS) account for cloud VM deployment.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Workflow</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>After you have configured a VSTS subscription in Lifecycle Services (LCS), you can trigger Developer Topology Deployment to set up Developer and Build VMs.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>In this deployment, the Developer VM is configured with workspace mapping to develop against a VSTS project.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>The Build VM is auto-configured with the build agent/controller to build modules  VSTS project and to execute automated tests with external endpoint for validation.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>For more information on writing custom test code or generating automated test code to integrate with build infrastructure, see <bpt id="p1">[</bpt>Testing and validations<ept id="p1">](testing-validation.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>A typical workflow or usage scenario is shown below.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>build12<ept id="p1">](./media/build12-1024x693.jpg)](./media/build12.jpg)</ept></source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Set up Visual Studio Team Services (VSTS)</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Compare VSTS features required for your organization: <bpt id="p1">&lt;</bpt>https://www.visualstudio.com/products/visual-studio-team-services-feature-matrix-vs<ept id="p1">&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>TFVC vs GIT<ept id="p1">**</ept>: For RTW, we only support TFVC as source control repository that can be configured in VSTS project connected to LCS.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Git is not supported.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Suspend current builds:<ept id="p1">**</ept> If you are deploying the build agent on an existing VSTS project which already has build definition created, please ensure you do not have any active triggers to queue the build.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Additionally, make sure there are no builds scheduled / queued against the build pool.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>BuildTriggers<ept id="p1">](./media/buildtriggers.jpg)](./media/buildtriggers.jpg)</ept></source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Free VSTS account provides only one build agent<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Using free VSTS account and deploying new build VM with another build agent will fail as your account is not provisioned for more than one build agent.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>To use more than one build agents, setup your VSTS account with Azure billing: <bpt id="p1">&lt;</bpt>https://www.visualstudio.com/get-started/setup/set-up-billing-for-your-account-vs<ept id="p1">&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>VSTS1<ept id="p1">](./media/vsts1-300x155.jpg)](./media/vsts1.jpg)</ept></source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>After your account is linked with the Azure subscription.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Follow the instructions in the Azure management portal to provision more build agents - <bpt id="p1">&lt;</bpt>https://www.visualstudio.com/en-us/get-started/setup/get-more-build-or-load-testing-vs<ept id="p1">&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>VSTS2<ept id="p1">](./media/vsts2-300x151.jpg)](./media/vsts2.jpg)</ept></source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Note: make sure you increase “Private Agents” under PAID option.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>VSTS3<ept id="p1">](./media/vsts3-300x191.jpg)](./media/vsts3.jpg)</ept></source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Build Agent Pool role and permissions:<ept id="p1">**</ept> <bpt id="p2">&lt;</bpt>https://msdn.microsoft.com/library/vs/alm/build/agents/admin#agent-pools<ept id="p2">&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Once build agents are added, add user (who will be deploying build VM from LCS) to “Agent Pool Administrators” role.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>VSTS4<ept id="p1">](./media/vsts4.jpg)](./media/vsts4.jpg)</ept></source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Manage agent:<ept id="p1">**</ept> If you have multiple agents configured and want to delete one, select the agent and use the delete button to the right of the status column.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>build14<ept id="p1">](./media/build14.jpg)](./media/build14.jpg)</ept></source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Deleting Default Pool:<ept id="p1">**</ept> If for some reason you have deleted the default pool, please do not create a new pool with the name "Default".</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Instead create a new pool with the different name and pass the pool name from the "Advanced Settings" customization from LCS during deployment.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Personal access token:<ept id="p1">**</ept> This token is used for all Lifecycle Services (LCS) background actions, including upgrade and deployment.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>When a user initiates actions from LCS, LCS expects that users will be added to VSTS.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>The user must authorize LCS access to VSTS on behalf of the user.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Until the projects users authorize with VSTS, you will see the below message in action center:</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>VSTS setup in LCS<ph id="ph2">\_</ph>May27<ept id="p1">](./media/vsts-setup-in-lcs_may27-300x216.jpg)](./media/vsts-setup-in-lcs_may27.jpg)</ept></source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Deploy Developer topology from LCS</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>LCS provides an option to deploy a Development topology environment.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>With this option, you can deploy developer and build VMs in the cloud that are connected to your Visual Studio Team System  (VSTS) project.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>VSTS credential setup and linking to LCS project</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Login to the LCS portal to connect to VSTS and your LCS project at <bpt id="p1">[</bpt>https://lcs.dynamics.com/<ept id="p1">](https://lcs.dynamics.com/en/)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Select a project that you are working on.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Click the <bpt id="p1">**</bpt>Project Settings<ept id="p1">**</ept> tile.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Visual Studio Team Services<ept id="p1">**</ept> and enter the VSTS URL where the source code for your module project is located.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Specify the VSTS link, authorize, and then click <bpt id="p1">**</bpt>Choose default project<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> We currently support VSTF as source control and do not support Git.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>VSTS<ept id="p1">](./media/vsts-1024x792.jpg)](./media/vsts.jpg)</ept></source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Check-in migrated or new module code into VSTS</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>As part of code Migration process or development activities, we expect you to check-in your model source files and the associated test model source files into VSTS.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>If you have migrated your code using the LCS migration service, this is automatically done for you.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>If you have not checked in any code into VSTS and work on direct check-in, you must follow certain guidelines for the VSTS folder structure.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>This will help with setting up correct build definition.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>All modules should be added to root folder <bpt id="p1">**</bpt>Metadata<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Under each module, there should be two folders.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>One folder contains all models.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>The other folder should contain descriptor XML for that module.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>VSTS folder structure</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Deploy developer topology (Developer and Build VM)</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>In the LCS portal, select the project that is connected to VSTS.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Environments<ept id="p1">**</ept> pane, click <bpt id="p2">**</bpt><ph id="ph1">+</ph><ept id="p2">**</ept> to deploy a new environment.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Azure settings</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Select environment topology<ept id="p1">**</ept> pane, select <bpt id="p2">**</bpt>Azure<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>select environment topology</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Proceed to deploy a DEV/TEST environment.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Depending on your LCS project type, some deployment steps described below may vary.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Deploy environment<ept id="p1">**</ept> pane, enter the environment name for the deployment, and select the number of instances for <bpt id="p2">**</bpt>Developer<ept id="p2">**</ept> VMs.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> You can only deploy one Build VM and one Developer VM.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>If you don’t want to deploy a Developer VM, then set instances count to zero.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>If you want multiple Developer VMs then deploy new environment per developer VM.</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Deploy<ept id="p1">](./media/deploy-1024x669.jpg)](./media/deploy.jpg)</ept></source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Advanced settings<ept id="p1">**</ept>, select <bpt id="p2">**</bpt>Visual Studio Team Services<ept id="p2">**</ept></source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Build Agent Name: Friendly name for build agent on VSTS</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Build Agent Pool: specify build agent pool name which should be used for build machine deployment.</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Make sure VSTS contains at least one agent pool.</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>By default, there will be the default pool.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>If you have deleted the default pool then build deployment will fail.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Branch Name: Specify your VSTS source code branch which will be default source code sync location for the build VM.</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Default branch is "Trunk<ph id="ph1">\\</ph>Main".</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Settings<ept id="p1">](./media/settings-1024x389.jpg)](./media/settings.jpg)</ept></source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>After the settings are verified, click <bpt id="p1">**</bpt>Next<ept id="p1">**</ept> to start the deployment.</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>You can see progress of deployment under <bpt id="p1">**</bpt>Environments<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>After the deployment is complete, you can use Remote Desktop to view Developer and Build VM.</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>Use a Developer VM environment</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>When a Developer VM gets deployed, it’s auto-configured with a workspace that will be used to synchronize your code from source control (VSTS).</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>As this Developer VM has Microsoft Dynamics 365 for Finance and Operations, Enterprise edition deployed on it, it can also be used as a test VM.</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Configure Visual Studio to connect to VSTS</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>When you open Visual Studio the first time on a Developer VM, connect to VSTS using your credentials.</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Open <bpt id="p1">**</bpt>Team explorer<ept id="p1">**</ept> and click <bpt id="p2">**</bpt>Select Team projects<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>Enter the VSTS URL and click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>You will be prompted for your VSTS username and password.</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>After you are logged into the VSTS, your <bpt id="p1">**</bpt>Default workspace<ept id="p1">**</ept> that you will use for your development.</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>manage workspaces</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Test integration with the build</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>There are two ways to integrate test as part of build process for testing and validation:</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>SysTest framework based unit and component level tests.</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>Generate code from Task Recorder recording XML for automated test execution.</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>The details of these two approaches are mentioned in the <bpt id="p1">[</bpt>Testing and validation. <ept id="p1">](testing-validation.md)</ept>Review this article for testing and validation strategy.</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Use the Build VM environment</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>When a Build VM is deployed in Developer topology through LCS, it is pre-configured and ready to start a build.</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>You can change the default configuration at any time from the Visual Studio IDE or the VSTS interface.</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>On a Build VM, the module source code is synchronized to the build machine for easy build setup.</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>The build machine is also auto-configured with default settings for build agent, build controller, build process template, and build definition.</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Tests that are integrated with build definition are executed after the build is successful.</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>Review a pre-configured customizable build environment</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>The build VM contains the vNext build agent which was released as part of TFS 2015.</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>When you deploy the Build VM, the build agent is configured by default to connect and sync with the VSTS project.</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>As a part of the Build VM configuration, the default build definition is also created and configured, as shown below.</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Build1<ept id="p1">](./media/build1-1024x488.jpg)](./media/build1.jpg)</ept></source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Default build definition contains multiple tasks to perform specific operation, as described below.</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>Configure the predefined variables parameters that will be passed to the build.</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>To set up a clean database for every build execution, provide the name of the database backup file for the <bpt id="p1">**</bpt>DatabaseBackupToRestore<ept id="p1">**</ept> variable.</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>The packages folder is restored at every build with a copy of a clean package folder.</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>build2<ept id="p1">](./media/build2-1024x678.jpg)](./media/build2.jpg)</ept></source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>Build the solution to discover and build all modules under "Trunk/Main" branch as shown below.</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Build3<ept id="p1">](./media/build3-1024x456.jpg)](./media/build3.jpg)</ept></source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>Use "Deploy Report" task to generate reports and deploy on build VM.</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>Use "Database Sync" task to synchronize the database to local SQL on build VM.</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>After the build is successful, create a deployable package that can be used to update sandbox/ staging environment.</source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Build4<ept id="p1">](./media/build4-1024x462.jpg)](./media/build4.jpg)</ept></source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>"Copy and publish build artifacts" uploads the deployable package to VSTS artifacts location.</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>build5<ept id="p1">](./media/build5-1024x439.jpg)](./media/build5.jpg)</ept></source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>For test execution, there are three default tasks "Test Setup", "Execute Test" and "Test End".</source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>build7<ept id="p1">](./media/build7-1024x457.jpg)](./media/build7.jpg)</ept></source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>The default build is scheduled to trigger start every day at 5 P.M.</source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>You can change trigger as per your team's need to "Continuous" for each check-in.</source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>build8<ept id="p1">](./media/build8-1024x491.jpg)](./media/build8.jpg)</ept></source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>You can make changes to the default configuration, and the build VM will be ready to trigger a build.</source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>Start a build and verify the build and test execution results</source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>After you review the default build configuration, you can manually trigger a build from Visual Studio IDE or VSTS web interface.</source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>Open your browser and connect to the VSTS URL.</source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>Login using your credentials.</source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>On the home page, under <bpt id="p1">**</bpt>Recent projects and solutions<ept id="p1">**</ept>, select a project.</source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>From top links options, select <bpt id="p1">**</bpt>BUILD<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>On the left panel, select the default build definition instance.</source>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>Right-click and select <bpt id="p1">**</bpt>Queue Build<ept id="p1">**</ept> to trigger a build for your module and test module that is already checked into the VSTS source control.</source>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>image045<ept id="p1">](./media/image045.png)](./media/image045.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>Success or failure for the build will display, as shown by the following examples.</source>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>View all builds.</source>
+        </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>build9<ept id="p1">](./media/build9-1024x443.jpg)](./media/build9.jpg)</ept></source>
+        </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>Select specific completed build and view success/ failure details.</source>
+        </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>build10<ept id="p1">](./media/build10-1024x446.jpg)](./media/build10.jpg)</ept> Click on Test link to visualize test execution failure.</source>
+        </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>build11<ept id="p1">](./media/build11-1024x455.jpg)](./media/build11.jpg)</ept></source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

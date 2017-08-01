@@ -1,0 +1,390 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">507ba8fd0126e42e73e0265556acddbf7d14fffc</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\financial\dimension-entry-control-migration.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">07904b7b8f0b98495f7aaf438e8d7f8b9d55d41e</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ad00a419b5ca0c8ea097bc21cc9d7c3c26c22485</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Dimension entry control migration</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic describes the steps necessary to migrate default dimensions controls to Dimension Entry controls after code upgrade is run.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>It uses the PurchTable form as an example.</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Dimension entry control migration</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>This topic describes the steps necessary to migrate default dimensions controls to Dimension Entry controls after code upgrade is run.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>It uses the PurchTable form as an example.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Simple migration scenario - PurchTable form</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Search for the <bpt id="p1">**</bpt>PurchTable<ept id="p1">**</ept> form in the <bpt id="p2">**</bpt>Application Explorer<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Add the form to the current project.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Open the form in the designer and code editor view.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>In the form design view</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Locate the dimension entry controls (DECs), either by manually in the control tree or by searching for "DimensionEntry" in the search bar below the <bpt id="p1">**</bpt>File<ept id="p1">**</ept> tab.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Select the first <bpt id="p1">**</bpt>DEC<ept id="p1">**</ept> (DimensionEntryControlHeader) and verify the following:</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>The type for the control, specified in parenthesis next the control, is Dimension Entry Control.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>The Controller class property is blank.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>This property indicates what type of controller will be used by this instance of DEC, which in turn governs the behavior of the control.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>When this property is blank, the controller is determined by the EDT of the field specified in the <bpt id="p1">**</bpt>Value Data<ept id="p1">**</ept> field (in this case, the <bpt id="p2">**</bpt>DefaultDimension<ept id="p2">**</ept> field on the <bpt id="p3">**</bpt>PurchTable<ept id="p3">**</ept> table).</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Search for the <bpt id="p1">**</bpt>PurchTable<ept id="p1">**</ept> table in the Application Explorer.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Right-click <bpt id="p1">**</bpt>PurchTable<ept id="p1">**</ept> and select <bpt id="p2">**</bpt>Open Designer<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Expand the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> node and select the <bpt id="p2">**</bpt>DefaultDimension<ept id="p2">**</ept> field.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The EDT property of this field is set to LedgerDefaultDimensionValueSet.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>This EDT implies that this control will use the LedgerDefaultDimensionEntryController.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Back in the <bpt id="p1">**</bpt>PurchTable<ept id="p1">**</ept> form design view, select the second <bpt id="p2">**</bpt>DEC<ept id="p2">**</ept> (DimensionEntryControlLine) and verify the following:</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>The type for the control, specified in parenthesis next to the control, is Dimension Entry Control.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>The Controller class property is blank.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>The controller will be determined by the EDT of the field specified in the <bpt id="p1">**</bpt>Value Data<ept id="p1">**</ept> Field, as it was for the DEC.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Switch to the code editor view.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Search for all occurrences of "TODO: (Code Upgrade) <ph id="ph1">\[</ph>Dimension entry control<ph id="ph2">\]</ph>" in the form source code.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Go through each of the remaining TODO comments as follows.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Data source PurchTable</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>(Form <ph id="ph1">&amp;gt;</ph> Data sources <ph id="ph2">&amp;gt;</ph> PurchTable <ph id="ph3">&amp;gt;</ph> Methods<ept id="p1">**</ept>)</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Before<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>After<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">/</ph><ph id="ph2">\*</ph> TODO: (Code Upgrade) <ph id="ph3">\[</ph>Dimension entry control<ph id="ph4">\]</ph> Replace this based on the migration guidance.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\*</ph>/DimensionEntryControlHeader.reactivate();</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Because this method call doesn’t have a parm method called before it, it can be deleted.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>As a general rule with reactivate method calls, if it may not be needed, remove the call and test the control to make sure it works correctly.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>If it doesn’t, add the reactivate call back.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Data field OrderAccount</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>(<bpt id="p1">**</bpt>Form <ph id="ph1">&amp;gt;</ph> Data sources <ph id="ph2">&amp;gt;</ph> PurchTable <ph id="ph3">&amp;gt;</ph> Fields <ph id="ph4">&amp;gt;</ph> OrderAccount <ph id="ph5">&amp;gt;</ph> Methods<ept id="p1">**</ept>)</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Before<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>After<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">/</ph><ph id="ph2">\*</ph> TODO: (Code Upgrade) <ph id="ph3">\[</ph>Dimension entry control<ph id="ph4">\]</ph> Replace this based on the migration guidance.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\*</ph>/DimensionEntryControlHeader.reactivate();</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Because this method call doesn’t have a parm method called before it, it can be deleted.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Data field ProjId</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>(<bpt id="p1">**</bpt>Form <ph id="ph1">&amp;gt;</ph> Data sources <ph id="ph2">&amp;gt;</ph> PurchTable <ph id="ph3">&amp;gt;</ph> Fields <ph id="ph4">&amp;gt;</ph> ProjId <ph id="ph5">&amp;gt;</ph> Methods<ept id="p1">**</ept>)</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Before<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>After<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">/</ph><ph id="ph2">\*</ph> TODO: (Code Upgrade) <ph id="ph3">\[</ph>Dimension entry control<ph id="ph4">\]</ph> Replace this based on the migration guidance.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\*</ph>/DimensionEntryControlHeader.reactivate();</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Because this method call does not have a parm method called before it, it can be deleted.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>The entire modified() method can be deleted as well because the super() call is all that remains.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>The ProjId class can be removed because there are no methods in it.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Data field VendGroup</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>(<bpt id="p1">**</bpt>Form <ph id="ph1">&amp;gt;</ph> Data sources <ph id="ph2">&amp;gt;</ph> PurchTable <ph id="ph3">&amp;gt;</ph> Fields <ph id="ph4">&amp;gt;</ph> VendGroup <ph id="ph5">&amp;gt;</ph> Methods<ept id="p1">**</ept>)</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Before<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>After<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">/</ph><ph id="ph2">\*</ph> TODO: (Code Upgrade) <ph id="ph3">\[</ph>Dimension entry control<ph id="ph4">\]</ph> Replace this based on the migration guidance.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\*</ph>/DimensionEntryControlHeader.reactivate();</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Because this method call doesn’t have a parm method called before it, it can be deleted.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>The entire modified() method and VendGroup class can be deleted as well.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Data source PurchLine</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>(<bpt id="p1">**</bpt>Form <ph id="ph1">&amp;gt;</ph> Data sources <ph id="ph2">&amp;gt;</ph> PurchLine <ph id="ph3">&amp;gt;</ph> Methods<ept id="p1">**</ept>)</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Before<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>After<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">/</ph><ph id="ph2">\*</ph> TODO: (Code Upgrade) <ph id="ph3">\[</ph>Dimension entry control<ph id="ph4">\]</ph> Replace this based on the migration guidance.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\*</ph>/DimensionEntryControlLine.reactivate();<bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> This is the reactivate method call in the itemIdModified method on the data source.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Because this method call doesn’t have a parm method called before it, it can be deleted.</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">/</ph><ph id="ph2">\*</ph> TODO: (Code Upgrade) <ph id="ph3">\[</ph>Dimension entry control<ph id="ph4">\]</ph> Replace this based on the migration guidance.</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\*</ph>/DimensionEntryControlLine.reactivate();<bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> This is the reactivate method call in the create() method on the data source.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Because this method call doesn’t have a parm method called before it, it can be deleted.</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes.</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Data field AssetGroup</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>(<bpt id="p1">**</bpt>Form <ph id="ph1">&amp;gt;</ph> Data sources <ph id="ph2">&amp;gt;</ph> PurhcLine <ph id="ph3">&amp;gt;</ph> Fields <ph id="ph4">&amp;gt;</ph> AssetGroup <ph id="ph5">&amp;gt;</ph> Methods<ept id="p1">**</ept>)</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Before<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>After<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">/</ph><ph id="ph2">\*</ph> TODO: (Code Upgrade) <ph id="ph3">\[</ph>Dimension entry control<ph id="ph4">\]</ph> Replace this based on the migration guidance.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\*</ph>/DimensionEntryControlLine.reactivate();</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Because this method call does not have a parm method called before it, it can be deleted.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes.</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>The entire modified() method and AssetGroup class can be deleted as well.</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Data field AssetId(<bpt id="p1">**</bpt>Form <ph id="ph1">&amp;gt;</ph> Data sources <ph id="ph2">&amp;gt;</ph> PurchLine <ph id="ph3">&amp;gt;</ph> Fields <ph id="ph4">&amp;gt;</ph> AssetId <ph id="ph5">&amp;gt;</ph> Methods<ept id="p1">**</ept>)</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Before<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>After<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">/</ph><ph id="ph2">\*</ph> TODO: (Code Upgrade) <ph id="ph3">\[</ph>Dimension entry control<ph id="ph4">\]</ph> Replace this based on the migration guidance.</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\*</ph>/DimensionEntryControlLine.reactivate();</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>Because this method call does not have a parm method called before it, it can be deleted.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes.</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>Data field ProcurementCategory</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>(<bpt id="p1">**</bpt>Form <ph id="ph1">&amp;gt;</ph> Data sources <ph id="ph2">&amp;gt;</ph> PurchLine <ph id="ph3">&amp;gt;</ph> Fields <ph id="ph4">&amp;gt;</ph> ProcurementCategory <ph id="ph5">&amp;gt;</ph> Methods<ept id="p1">**</ept>)</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>|                                                                                                                                               |                                                                                                                                                                                                      ||-----------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | <bpt id="p1">**</bpt>Before<ept id="p1">**</ept><ph id="ph1">                                                                                                                                    | </ph><bpt id="p2">**</bpt>After<ept id="p2">**</ept>                                                                                                                                                                                            | | /<ph id="ph2">\*</ph> TODO: (Code Upgrade) <ph id="ph3">\[</ph>Dimension entry control<ph id="ph4">\]</ph> Replace this based on the migration guidance.</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\*</ph>/DimensionEntryControlLine.reactivate(); | Because this method call doesn’t have a parm method called before it, it can be deleted.</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes.</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>Data field ProjId</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>(<bpt id="p1">**</bpt>Form <ph id="ph1">&amp;gt;</ph> Data sources <ph id="ph2">&amp;gt;</ph> PurchLine <ph id="ph3">&amp;gt;</ph> Fields <ph id="ph4">&amp;gt;</ph> ProjId <ph id="ph5">&amp;gt;</ph> Methods<ept id="p1">**</ept>)</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Before<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>After<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">/</ph><ph id="ph2">\*</ph> TODO: (Code Upgrade) <ph id="ph3">\[</ph>Dimension entry control<ph id="ph4">\]</ph> Replace this based on the migration guidance.</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\*</ph>/DimensionEntryControlLine.reactivate();</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>Because this method call doesn’t have a parm method called before it, it can be deleted.</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes.</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>TabPage TabFinancialDimensionsLine</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>(Search for TabFinancialDimensionsLine in the search bar below the form tab)</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Before<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>After<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">/</ph><ph id="ph2">\*</ph> TODO: (Code Upgrade) <ph id="ph3">\[</ph>Dimension entry control<ph id="ph4">\]</ph> This method can be removed if there is no custom implementation <ph id="ph5">\*</ph>///dimensionDefaultingControllerLine.pageActivated();</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>The pageActivated method no longer needs to be called.</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>This entire method and the TabFinancialDimensionsLine class can be removed because there is no custom logic in the pageActivated method.</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>TabPage TabFinancialDimensionsHeader</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>(Search for TabFinancialDimensionsHeader in the search bar below the form tab)</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Before<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>After<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">/</ph><ph id="ph2">\*</ph> TODO: (Code Upgrade) <ph id="ph3">\[</ph>Dimension entry control<ph id="ph4">\]</ph> This method can be removed if there is no custom implementation <ph id="ph5">\*</ph>///dimensionDefaultingControllerHeader.pageActivated();</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>The pageActivated method no longer needs to be called.</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>This entire method and the TabFinancialDimensionsHeader class can be removed because there is no custom logic in the pageActivated method.</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>See also</source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Dimension Entry control uptake<ept id="p1">](dimension-entry-control-uptake.md)</ept></source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Dimension Entry control dialog support<ept id="p1">](dimension-entry-control-dialog-support.md)</ept></source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

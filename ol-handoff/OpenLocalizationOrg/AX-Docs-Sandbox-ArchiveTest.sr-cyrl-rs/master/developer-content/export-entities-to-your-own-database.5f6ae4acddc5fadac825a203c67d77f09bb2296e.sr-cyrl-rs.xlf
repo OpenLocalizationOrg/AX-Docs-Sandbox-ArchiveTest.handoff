@@ -1,0 +1,453 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">7af8210f438096284236be548f98ec244e4dc930</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\analytics\export-entities-to-your-own-database.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">3115f32a259b8c70e5422792025e6782b2efd538</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">f2d65597e2bfbfb60d3290cca17dc2620a5a760a</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Export entities to your own Azure SQL database</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic explains how to export entities to your own Azure SQL database.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Export entities to your own Azure SQL database</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This topic explains how administrators can export data entities from Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, to their own Microsoft Azure SQL database.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>This feature is also known as <bpt id="p1">*</bpt>bring your own database<ept id="p1">*</ept> (BYOD).</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>The BYOD feature was released in Platform update 2 (August 2016).</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Minor improvements and bug fixes have been included in subsequent platform updates.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>This feature lets administrators configure their own database, and export one or more of the data entities that are available in Finance and Operations.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>(Currently, more than 1,700 data entities are available.) Specifically, this feature lets you complete these tasks:</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Define one or more SQL databases into which you can export entity data from Finance and Operations.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Export either all the records (<bpt id="p1">*</bpt>full push<ept id="p1">*</ept>) or only the records that have changed (<bpt id="p2">*</bpt>incremental push<ept id="p2">*</ept>).</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Use the rich scheduling capabilities of the Finance and Operations batch framework to enable recurring exports.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Access the entity database by using Transact-SQL (T-SQL), and even extend the database by adding more tables.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Entity store or BYOD?</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>If you followed the series of <bpt id="p1">[</bpt>blog posts about Microsoft Power BI integration<ept id="p1">](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/)</ept>, you might be familiar with Entity store.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Entity store is the operational data warehouse that is included with Finance and Operations.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Entity store provides built-in integration of operational reports with Power BI.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Ready-made reports and analytical workspaces that are built into Finance and Operations use Entity store.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>If you write Power BI reports by using data in your Finance and Operations environment, you should use Entity store.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>The BYOD feature is recommended for the following scenarios:</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>You must export data from Finance and Operations into your own data warehouse.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>You use analytical tools besides Power BI, and those tools require T-SQL access to data.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>You must perform batch integration with other systems.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Finance and Operations doesn't allow T-SQL connections to the production database.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>If you're upgrading from a previous version of Finance and Operations, and you have integration solutions that require direct T-SQL access to the database, BYOD is the recommended upgrade path.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>As a customer of Finance and Operations, you can use either Entity store or BYOD.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Ready-made operational reports (especially the reports in the July 2017 update), take advantage of embedded Power BI and Entity store.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>You should use ready-made operational reports as your first choice.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>You can also extend the operational reports to meet your requirements.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>You should consider BYOD as a complementary option that you use as you require.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Creating an SQL database</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Before you begin this option, you must create an SQL database by using the Azure portal.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>For one-box development environments, you can create a database in the local Microsoft SQL Server database.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>However, this database should be used only for development and testing purposes.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>For production environments, you must create an SQL database.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>You should also create an SQL user account to sign in to the database.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Write down the server name, database name, and the SQL user ID and password.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>You will use this information in the next step.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>If you're using this functionality for integration with a business intelligence (BI) tool, you should consider creating an SQL premium database.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Premium databases support clustered columnstore indexes (CCIs).</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>CCIs are in-memory indexes that improve the performance of read queries that are typical in analytical and reporting workloads.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>If you're using this functionality to export data into a staging database or for general integration purposes, you can use a standard database.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Configuring the entity export option</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Start the Finance and Operations client, and then, on the <bpt id="p1">**</bpt>Data management<ept id="p1">**</ept> workspace, select the <bpt id="p2">**</bpt>Configure Entity export to database<ept id="p2">**</ept> tile.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Configure Entity export to database tile</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>If you've configured any databases, a list is shown.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Otherwise, you must configure a new database.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>New<ept id="p1">**</ept>, and enter a unique name and a description for the new database.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Note that you can export entities into multiple databases.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>New Record page</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Next, you must enter the connection string in the following format.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>In this connection string, the logical server name should resemble <bpt id="p1">**</bpt>nnnn.database.windows.net<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>You should be able to find the logical server name from the Azure portal.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>After you enter the connection string, select <bpt id="p1">**</bpt>Validate<ept id="p1">**</ept>, and make sure that the connection is successful.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Create clustered column store indexes<ept id="p1">**</ept> option optimizes the destination database for selected queries by defining CCIs for entities that are copied from Finance and Operations.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>However, CCIs are currently supported only on SQL premium databases.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Therefore, to enable this option, you must create an SQL premium database.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>When the validation is passed, the database that you configured for entity export now appears in the lists, as shown in the following illustration.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Database for entity export</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Next, you can publish one or more entities to the new database by selecting the <bpt id="p1">**</bpt>Publish<ept id="p1">**</ept> option on the menu.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Publishing the entity schema to the database</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Publish<ept id="p1">**</ept> page enables several scenarios:</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Publish new entities to the database.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Delete previously published entities from the database.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>(For example, you might want to re-create the schema.)</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Compare published entities with the entity schema in Finance and Operations.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>(For example, if new fields are added to Finance and Operations later, you can compare the fields with your database schema.)</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Configure change tracking functionality that enables incremental updates of your data.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Let’s look at each option.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Publish</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Publish<ept id="p1">**</ept> option defines the entity database schema on the destination database.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>When you select one or more entities, and then select the <bpt id="p1">**</bpt>Publish<ept id="p1">**</ept> option, a batch job is started.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>This job creates the entities in the destination database.</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>When the database definition job is completed, you receive a message, which you can access by using the bell symbol in the upper right.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>The actual data update occurs when you export data.</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>At this point, you're just creating the schema.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Drop entity</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Drop entity<ept id="p1">**</ept> option deletes the data and the entity definition from the destination database.</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Compare source names</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Compare source names<ept id="p1">**</ept> option lets you compare the entity schema in the destination with the entity schema in Finance and Operations.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>This option is used for version management.</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>You can also use this option to remove any unwanted columns from the destination table.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Configure change tracking</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>Change tracking is a feature that is provided in SQL Server and SQL Database.</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Change tracking enables the database to track changes that are made on tables.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>The system uses change tracking to identify changes that are made to tables as transactions are performed in Finance and Operations.</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Change tracking<ept id="p1">**</ept> option on the <bpt id="p2">**</bpt>Publish<ept id="p2">**</ept> page lets you configure how changes are tracked on the underlying entity.</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Change tracking on the underlying entity</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>The following table describes the change tracking options that are available.</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Option</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Enable primary table</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>An entity is composed of several tables.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>Select this option to track all changes that are made to the primary table of the entity.</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>When changes are made to the primary table, the corresponding record is inserted into or updated in the destination database.</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>Although data from the whole entity is written to the destination table, the system triggers the insert or update option only when the primary table is modified.</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Enable entire entity</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>Select this option to track all changes to the entity.</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>(These changes include changes to all the tables that make up the entity.) When changes are made to the entity, corresponding updates are made to the destination.</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>Enable custom query</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>This option lets a developer provide a custom query that the system runs to evaluate changes.</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>This option is useful when you have a complex requirement to track changes from only a selected set of fields.</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>You can also select this option when the entities that will be exported were built by using a hierarchy of nested views.</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>For the change tracking functionality to work, you must enable the <bpt id="p1">**</bpt>Change tracking<ept id="p1">**</ept> option in the Finance and Operations database.</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>This option is enabled by default.</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>If you republish an entity that exists in the destination database, the system warns you that existing data will be deleted as a result of the new operation.</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>When you confirm the publish operation, the system publishes the schema to the database, and you're notified about when the operation is completed.</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>By selecting the <bpt id="p1">**</bpt>Show published only<ept id="p1">**</ept> option back on the <bpt id="p2">**</bpt>Publish<ept id="p2">**</ept> page, you can show only the entities that were published to a given destination database.</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>The Publish function creates the entity schema in the database.</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>You can navigate to the database and see the table schemas that were created, together with corresponding indexes.</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>Currently, you can't export composite entities into BYOD.</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>You must export each entity in the composite entity.</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Export data into your database</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>After entities are published to the destination database, you can use the Export function in the <bpt id="p1">**</bpt>Data management<ept id="p1">**</ept> workspace to move data.</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>The Export function lets you to define a Data movement job that contains one or more entities.</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>You can use the <bpt id="p1">**</bpt>Export<ept id="p1">**</ept> page to export data from Finance and Operations into many target data formats, such as a comma-separated values (CSV) file.</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>This page also supports SQL databases as another destination.</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>Export page</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>When you add an entity for data export, you can select to do an incremental export (which is also known as incremental push) or a full push.</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>For incremental push to work, you must enable the <bpt id="p1">**</bpt>Change tracking<ept id="p1">**</ept> option in the Finance and Operations database and specify an appropriate change tracking option, as described earlier.</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>If you select to do an incremental push, whenever a new record is inserted, or a record is added, the corresponding change will be reflected in the destination entity.</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>In Platform update 8, records that are deleted in the source aren't updated in the destination.</source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>Full push truncates the table and inserts all the records from the selected entity.</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>You can create a data project that has multiple entities.</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>You can schedule this data project to run by using the Finance and Operations batch framework.</source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>You also schedule the data export job to run on a recurring basis by selecting the <bpt id="p1">**</bpt>Create recurring data job<ept id="p1">**</ept> option.</source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>Best practices and known limitations</source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>In Platform update 8, there are several known limitations in this feature.</source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Incremental push doesn't propagate records that have been deleted in the source<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>If records are deleted from any table in the source entity, corresponding delete operations aren't applied to the destination database.</source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>If you work with entities where records are deleted, we recommended that you periodically do full-push update operations.</source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Export data projects are specific to a single legal entity<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>You can't create a single job to export data across multiple legal entities.</source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>When you create a data project to export data, the job exports data from the current legal entity.</source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>If you must export data from multiple legal entities, you must create multiple data projects by switching legal entities.</source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>You can't export composite entities into BYOD<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>Currently, composite entities aren't supported.</source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>You must export individual entities that make up the composite entity.</source>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>However, you can export both the entities in the same data project.</source>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Entities that don't have unique keys can’t be exported by using incremental push<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>You might face this limitation especially when you try to incrementally export records from a few ready-made entities.</source>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>Because these entities were designed to enable the import of data into Finance and Operations, they don't have a unique key.</source>
+        </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>However, you can enable change tracking only for entities that have a unique key.</source>
+        </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>Therefore, there is a limitation on incremental push.</source>
+        </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>One workaround is to extend the required entity and define a unique key.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

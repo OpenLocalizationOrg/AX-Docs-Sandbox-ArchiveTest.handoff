@@ -1,0 +1,502 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">bbbfe388a90cb2e50af2a9cb07e32d81dbea9801</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\analytics\create-powerbi-report-dashboard.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">f56451075af8924f88d079b9050a00153b2908a9</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">324c93e6719a34f72835ac03c55940dce1bf1c3c</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Create a Power BI report and dashboard</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This tutorial guides you though the process of creating a basic Power BI report and explains how to start to create a dashboard on PowerBI.com.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Create a Power BI report and dashboard</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This tutorial guides you though the process of creating a basic Power BI report and explains how to start to create a dashboard on PowerBI.com.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Key concepts</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Power BI<ept id="p1">**</ept> – The cloud-based analytics visualization platform that is used to extract, transform, and present data from Microsoft Dynamics 365 for Finance and Operations (and other systems), so that users can interact with the data and share it.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Microsoft Power Query for Excel<ept id="p1">**</ept> – The Microsoft Excel–based tool that you can use to extract and transform data from Finance and Operations (through OData feeds) into an Excel-based data model that is used in Power BI reporting.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Self-service BI<ept id="p1">**</ept> – Tools and processes that let users create or modify analytic content such as reports, key performance indicators (KPIs), and dashboards.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Supported platforms and environments</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Excel and the latest version of Power Query are required.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Note the following points:</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Both 32-bit and 64-bit versions of Microsoft Office are supported.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>However, the 64-bit version is recommended for optimal performance.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Both Microsoft Office 2013 and Microsoft Office 2016 can be used for self-service scenarios, and to build Power BI reports, dashboards, and organizational content packs.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Currently, Office 2013 is required for the development of Power BI content packs.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>If you intend to publish your content through the Power BI service as a content pack, you must use Office 2013.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Before you start: Download and install Power Query</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Download Power Query <bpt id="p1">[</bpt>Microsoft Power Query for Excel<ept id="p1">](http://www.microsoft.com/en-gb/download/details.aspx?id=39379)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>You must find out which version of Excel you have.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Depending on the version that is installed, you must select either the 64-bit version or the 32-bit version of Power Query.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Start Excel, and verify that the <bpt id="p1">**</bpt>Power Query<ept id="p1">**</ept> tab is available.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Enable the Microsoft SQL Server Power Pivot for Excel add-in and the Power View add-in.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>View the OData feed in your web browser</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Start a web browser, and enter the URL that is used to access your Finance and Operations deployment.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>This URL will be in the following format: https://<bpt id="p1">*</bpt>yourenvrionment<ept id="p1">*</ept>.cloudax.dynamics.com</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Sign in by entering your credentials, if you aren't already signed in.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>To validate that data entities are exposed by using the OData v4 endpoint, add a suffix of “data” to the URL.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>The URL should now be in the following format: https://<bpt id="p1">*</bpt>yourenvironment<ept id="p1">*</ept>.cloudax.dynamics.com/data</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>If you’re using Internet Explorer, you must download the JSON file before you can view it.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>To view the JSON file, you must have Microsoft Visual Studio or a similar tool.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>If you’re using Chrome, you can view the feed in your browser window.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Feed Example<ept id="p1">](./media/1-1024x616.png)](./media/1.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Access OData endpoints in Power Query</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Start Excel.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Power Query<ept id="p1">**</ept> tab, click <bpt id="p2">**</bpt>From Other Sources<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>From OData Feed<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>2<ept id="p1">](./media/2-1024x457.png)](./media/2.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>In the dialog box, enter the URL of the OData endpoint, and then click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>For example, the URL will be in the following format: https://<bpt id="p1">*</bpt>yourenvironment<ept id="p1">*</ept>.cloudax.dynamics.com/data</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>3<ept id="p1">](./media/3.png)](./media/3.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Power Query requests that you authenticate the OData feed.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Organizational account<ept id="p1">**</ept> as the authentication method, and then click <bpt id="p2">**</bpt>Sign in<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>4<ept id="p1">](./media/4.png)](./media/4.png)</ept> <bpt id="p2">**</bpt>Note:<ept id="p2">**</ept> Finance and Operations uses Microsoft Azure Active Directory (AAD) to authenticate users.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>When you select <bpt id="p1">**</bpt>Organizational account<ept id="p1">**</ept> and enter your credentials, you're authenticated against Finance and Operations and are presented with only the data that you have access to through the Finance and Operations security model.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Power Query displays a list of available entities.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Connect<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>The Power Query <bpt id="p1">**</bpt>Navigator<ept id="p1">**</ept> pane is loaded.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>5<ept id="p1">](./media/5.png)](./media/5.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Use the <bpt id="p1">**</bpt>Navigator<ept id="p1">**</ept> pane to select the following entities, and then click <bpt id="p2">**</bpt>Load<ept id="p2">**</ept>:</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>FiscalCalendars</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>GeneralLedgerActivities</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>MainAccounts</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>6<ept id="p1">](./media/6.png)](./media/6.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Power Query loads the data from Finance and Operations into the Excel data model.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Depending on the size of the data set, this process might require some time.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>7<ept id="p1">](./media/7.png)](./media/7.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Double-click <bpt id="p1">**</bpt>MainAccounts<ept id="p1">**</ept> to load the query.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>8<ept id="p1">](./media/8.png)](./media/8.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>You can now use Power Query to perform transformations on your data set.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>For example, you can rename columns and transform values in the data set.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Home<ept id="p1">**</ept> tab, click <bpt id="p2">**</bpt>Choose Columns<ept id="p2">**</ept>, select the following fields, and then click <bpt id="p3">**</bpt>OK<ept id="p3">**</ept>:</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>AccountCategoryDescription</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>MainAccountCategory</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>MainAccountID</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>MainAccountRecID</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Type</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Name</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Rename the columns so that the names include spaces and are more readable.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>To rename a column, double-click the column header.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>AccountCategoryDescription:<ept id="p1">**</ept> Rename to <bpt id="p2">**</bpt>Account Category Description<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>MainAccountCategory:<ept id="p1">**</ept> Rename to <bpt id="p2">**</bpt>Main Account Category<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>MainAccountID:<ept id="p1">**</ept> Rename to <bpt id="p2">**</bpt>Main Account ID<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Close &amp; Load<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Optional: You can now repeat this process for the other queries to help guarantee that there is a clean data set in the data model.</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Data model optimization</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>In this section, we will review the Excel data model to optimize the data for reports and Power BI Q&amp;A.</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Power Pivot<ept id="p1">**</ept> tab, click <bpt id="p2">**</bpt>Manage Data Model<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Create the relationships among the three entities.</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Design<ept id="p1">**</ept> tab, click <bpt id="p2">**</bpt>Manage Relationships<ept id="p2">**</ept>, and then follow these steps:</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Create<ept id="p1">**</ept>, and then select <bpt id="p2">**</bpt>GeneralLedgerActivities<ept id="p2">**</ept> as table 1 and <bpt id="p3">**</bpt>MainAccounts<ept id="p3">**</ept> as table 2.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>MainAccountRecID<ept id="p1">**</ept> as the field for both tables.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Repeat this process for the <bpt id="p1">**</bpt>GeneralLedgerActivities<ept id="p1">**</ept> and <bpt id="p2">**</bpt>FiscalCalendars<ept id="p2">**</ept> tables, and the <bpt id="p3">**</bpt>LedgerGregorianDateID<ept id="p3">**</ept> field.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>You should now have two relationships that join your three entities.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>9<ept id="p1">](./media/9.png)](./media/9.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> Depending on your version of Office, the appearance of the <bpt id="p2">**</bpt>Manage Relationships<ept id="p2">**</ept> dialog box might differ slightly.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Close the <bpt id="p1">**</bpt>Manage Relationships<ept id="p1">**</ept> dialog box.</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>You can now hide fields that are used only for calculations or relationships from the end user.</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Follow these steps:</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>GeneralLedgerActivities<ept id="p1">**</ept> tab, right-click the <bpt id="p2">**</bpt>MainAccountRecID<ept id="p2">**</ept> column, and then select <bpt id="p3">**</bpt>Hide from Client Tools<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Repeat the previous step across all entities for fields that should not be presented to the end user.</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>To help guarantee that values are presented correctly, set the data type and format for all fields.</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Select the <bpt id="p1">**</bpt>Expenses<ept id="p1">**</ept> column, and set the data type and format to <bpt id="p2">**</bpt>Decimal Number<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>Repeat this step across all fields to improve the presentation in visualizations and Q&amp;A.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>10<ept id="p1">](./media/10.png)](./media/10.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>You can now add a calculated measure to use in reports.</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>Use the <bpt id="p1">**</bpt>Measures<ept id="p1">**</ept> pane at the bottom of the PowerPivot window to create two new measures.</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Follow these steps:</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>Click in the <bpt id="p1">**</bpt>Measure<ept id="p1">**</ept> pane, enter the following formula, and then press Enter: Total Expenses this year:=calculate(sum(<ph id="ph1">\[</ph>Expenses<ph id="ph2">\]</ph>),'FiscalCalendars'<ph id="ph3">\[</ph>YearOffset<ph id="ph4">\]</ph>=0)</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Click in the cell below the previous cell, and enter the following formula: Total Expenses last year:=calculate(sum(<ph id="ph1">\[</ph>Expenses<ph id="ph2">\]</ph>),'FiscalCalendars'<ph id="ph3">\[</ph>YearOffset<ph id="ph4">\]</ph>=-1)</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> These formulas use the Finance and Operations language.</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>Both formulas sum the <bpt id="p1">**</bpt>Expenses<ept id="p1">**</ept> column, but each applies a different filter to your fiscal calendars on the year offset.</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>A year offset of <bpt id="p1">**</bpt>0<ept id="p1">**</ept> specifies the current financial year, and a year offset of <bpt id="p2">**</bpt>-1<ept id="p2">**</ept> specifies last financial year.</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>This step lets users take advantage of their custom Finance and Operations fiscal calendars in Power BI.</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>11<ept id="p1">](./media/111.png)](./media/111.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>Click each new measure, and set the format to <bpt id="p1">**</bpt>Decimal Number<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>Then close the Power Pivot data model.</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Optional: Additional data model optimization</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>At this point, you can use the Power Pivot data model to optimize your data so that it includes additional measures that can be used in your visualizations.</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>For example, you can add the following measures:</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>Additional calculated measures:</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>New calculations</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>This/last year measures</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Synonyms for column names</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>Optimization for default field sets, and so on</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>Create a report by using Power View</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>In this section, we will create a basic report by using Power View.</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Insert<ept id="p1">**</ept> tab, click <bpt id="p2">**</bpt>Power View<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>Excel loads a blank Power View report.</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>Notice that your three entities appear in the <bpt id="p1">**</bpt>Power View Fields<ept id="p1">**</ept> pane on the right side.</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>Expand <bpt id="p1">**</bpt>GeneralLedgerActivities<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>Total Expense this year<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>Notice that Power View adds the field to a table on the report.</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>Follow these steps:</source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>Click the table, and then, on the <bpt id="p1">**</bpt>Design<ept id="p1">**</ept> tab, click <bpt id="p2">**</bpt>Column Chart<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Stacked Column<ept id="p3">**</ept> to change the table into a column chart.</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>Expand the size of the column chart until it fills two-thirds of your report.</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>To expand the chart, drag the corners.</source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>12<ept id="p1">](./media/121-1024x645.png)](./media/121.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>To add more detail to the chart, select the following fields in the Power View <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> pane:</source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>FiscalCalendars – Quarters</source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>FiscalCalendars – PeriodName</source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>MainAccounts – Main Account Category</source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>If the fields in the chart don't appear as you expected, you must drag the fields in the Power View pane, and put them into the correct <bpt id="p1">**</bpt>Axis<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Legend<ept id="p2">**</ept> areas.</source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>Drag <bpt id="p1">**</bpt>PeriodName<ept id="p1">**</ept> to the <bpt id="p2">**</bpt>AXIS<ept id="p2">**</ept> area underneath <bpt id="p3">**</bpt>Quarter<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>Drag <bpt id="p1">**</bpt>Main Account Category<ept id="p1">**</ept> to the <bpt id="p2">**</bpt>Legend<ept id="p2">**</ept> area.</source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> As you add fields from the three entities, notice that they are presented in a single visualization.</source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>This is possible because of the relationships that you previously set up in the Power Pivot data model.</source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>You can now drill into the quarter by double-clicking the <bpt id="p1">**</bpt>Q1<ept id="p1">**</ept> column.</source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Click here to add a title<ept id="p1">**</ept> field, enter a title for your report.</source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>Save the Excel workbook to your local machine or to Microsoft OneDrive.</source>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>Upload the Excel workbook to PowerBI.com</source>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>In this section, we will create a dashboard by using the data model that we created in Power Query.</source>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>Start your web browser, and go to <bpt id="p1">&lt;</bpt>http://app.powerbi.com<ept id="p1">&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>Sign in, if sign-in is required.</source>
+        </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>If you don't have a Power BI license, you must activate a trial, or contact your administrator.</source>
+        </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>Create a new dashboard by clicking the plus sign (<bpt id="p1">**</bpt><ph id="ph1">+</ph><ept id="p1">**</ept>) next to <bpt id="p2">**</bpt>Dashboards<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>Enter a suitable name.</source>
+        </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>The blank dashboard resembles the following screen shot.</source>
+        </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>Select the <bpt id="p1">**</bpt>Get Data<ept id="p1">**</ept> option to import data into the dashboard.</source>
+        </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>A page that resembles the following screen shot appears.</source>
+        </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Excel Workbook<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>Connect<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>File picker<ept id="p1">**</ept> dialog box, click <bpt id="p2">**</bpt>Browse<ept id="p2">**</ept>, and select the Excel model that you saved in the previous section.</source>
+        </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>Then click <bpt id="p1">**</bpt>Connect<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>A blank chart icon appears in the dashboard to indicate that the data is available.</source>
+        </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>Click the blank chart icon.</source>
+        </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>The Power View report that you previously authored appears.</source>
+        </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>You can author additional reports and pin them to the dashboard by using PowerBI.com functionality.</source>
+        </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>Click the chart, and then click the <bpt id="p1">**</bpt>Pin<ept id="p1">**</ept> button in the upper-right corner to pin the report to your dashboard.</source>
+        </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>In the left navigation pane, click your dashboard to return to it.</source>
+        </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>Your chart now appears in the dashboard.</source>
+        </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>You can repeat this process to build out your dashboard.</source>
+        </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>See also</source>
+        </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Power BI integration in Finance and Operations<ept id="p1">](power-bi-integration.md)</ept><ph id="ph1">
+</ph><bpt id="p2">[</bpt>Configuring Power BI integration for workspaces<ept id="p2">](configure-power-bi-integration.md)</ept></source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

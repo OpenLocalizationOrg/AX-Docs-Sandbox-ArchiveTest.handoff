@@ -1,0 +1,195 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">8d2ad58b5f101dd47561a7d92a7a3c50b2330259</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\lifecycle-services\configure-execute-code-upgrade.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">bf7f330789b2ae11fbb1fbe5433c025842313402</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">5f7f33ba1e1e14bcf5749820a7c72dc2c7c2cc62</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Configure the code upgrade service in Lifecycle Services</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic explains how to configure the &lt;strong&gt;Code upgrade &lt;/strong&gt;tile in Lifecycle Services (LCS) to migrate your solution to the latest version of Finance and Operations.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Configure the code upgrade service in Lifecycle Services</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This topic explains how to configure the <bpt id="p1">&lt;strong&gt;</bpt>Code upgrade <ept id="p1">&lt;/strong&gt;</ept>tile in Lifecycle Services (LCS) to migrate your solution to the latest version of Finance and Operations.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Overview</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>The code upgrade tool operates by connecting to Visual Studio Team Services (VSTS), locating your Trunk<ph id="ph1">\\</ph>Main branch, branching to a new branch which will be named as Releases<ph id="ph2">\\</ph><ph id="ph3">\&lt;</ph>version number<ph id="ph4">\&gt;</ph>, and then performing the code upgrade there.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>After this process is complete you can synchronize your Dynamics 365 for Operation developer environment to this new branch under Releases<ph id="ph1">\\</ph><ph id="ph2">\&lt;</ph>version number<ph id="ph3">\&gt;</ph> and resolve conflicts.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>When you have compiled and tested your upgraded code you can merge the new branch back into Trunk<ph id="ph1">\\</ph>Main, using source control explorer in Visual Studio and the process is complete.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Process</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>To create a personal access token</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>To connect to a VSTS project, LCS is authenticated using a personal access token.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Use the following steps to create a personal access token in VSTS.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>If you have already configured your LCS project to connect to your VSTS project, you can skip this section.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Sign in to visualstudio.com and locate your VSTS project.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>In the top right corner, hover over your name, a menu appears, select <bpt id="p1">**</bpt>Security<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept> to create a new personal access token, give it a name, and then enter the amount of time that you want the token to last for.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Create Token<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>codeupgrademaketoken<ept id="p1">](./media/codeupgrademaketoken.png)](./media/codeupgrademaketoken.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Copy the token to your clipboard.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>You will not be able to find the token details after this step is completed, so be sure that you have copied the token before navigating away from this page.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Configure your Lifecycle Services project to connect to VSTS</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>In your LCS project, go to the <bpt id="p1">**</bpt>Project settings<ept id="p1">**</ept> tile, select <bpt id="p2">**</bpt>Visual Studio Team Services<ept id="p2">**</ept>, and then select the <bpt id="p3">**</bpt>Setup Visual Studio Team Services<ept id="p3">**</ept> button.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>This configuration is needed by many LCS tools, if you have already configured LCS to connect to your VSTS project, you can skip this section.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>lcs<ph id="ph2">\_</ph>vsts<ph id="ph3">\_</ph>setup<ept id="p1">](./media/lcs_vsts_setup.png)](./media/lcs_vsts_setup.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Enter the root URL for your VSTS account and the access token created earlier, and then click <bpt id="p1">**</bpt>Continue<ept id="p1">**</ept>.<bpt id="p2">[</bpt><ph id="ph1">![</ph>lcstoken<ept id="p2">](./media/lcstoken.png)](./media/lcstoken.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Select the project within your VSTS account that you want to connect to, and select <bpt id="p1">**</bpt>Continue<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>lcs<ph id="ph2">\_</ph>selectproject<ept id="p1">](./media/lcs_selectproject.png)](./media/lcs_selectproject.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Review and save<ept id="p1">**</ept> page, click <bpt id="p2">**</bpt>Save<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Create an ax7.version file</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>The code upgrade tile in LCS automatically finds the version of Finance and Operations that you are migrating from, by reading the ax7.version file under the Main folder in your source control.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>You must create this file manually, either in Visual Studio or through the VSTS portal, as shown below.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>This file is not needed if you migrated your code from Dynamics AX 2012 R3 or an earlier version.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>The version number entered here must be the application version (not the platform version).</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Take care to enter the correct version number here as entering an incorrect version number in this file may cause your code upgrade run to fail.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>ax7<ph id="ph2">\_</ph>versionfile<ept id="p1">](./media/ax7_versionfile.png)](./media/ax7_versionfile.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>For more information about how to identify which application version you have, see <bpt id="p1">[</bpt>Overview of Microsoft Dynamics AX build numbers<ept id="p1">](https://blogs.msdn.microsoft.com/axsupport/2012/03/29/overview-of-microsoft-dynamics-ax-build-numbers/)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Execute the code upgrade tile</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>In your LCS project, select the <bpt id="p1">**</bpt>Code upgrade<ept id="p1">**</ept> tile.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>codeupgradetile<ept id="p1">](./media/codeupgradetile.png)](./media/codeupgradetile.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>In the bottom left corner of the screen, click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept>, and then enter a name and description.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Select the version you are upgrading from as Microsoft Dynamics AX 7, and then click <bpt id="p1">**</bpt>Create<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>If you are upgrading your code from Dynamics AX 2012 R3, select the version you are upgrading from.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>You will be prompted to upload a zipped version of your Dynamics AX 2012 R3 model store file.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>If the <bpt id="p1">**</bpt>Estimation Only<ept id="p1">**</ept> check box is selected, the tool only generates a report and does not check in or create a new code branch in VSTS for you.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>You should use this option if you want to evaluate the potential size of the work involved in upgrading before you commit to the actual upgrade.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>codeupgrade<ph id="ph2">\_</ph>new<ept id="p1">](./media/codeupgrade_new.png)](./media/codeupgrade_new.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Analyze code<ept id="p1">**</ept> in the bottom right corner.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>The code upgrade process will start.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>This typically takes 40 minutes for a large solution to complete.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>When complete, return to the <bpt id="p1">**</bpt>Code upgrade<ept id="p1">**</ept> tile in LCS to view the results.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>The code upgrade service creates a new branch and checks in the upgraded code to your VSTS project.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>After the upgrade process is complete, your code will exist in a new branch under the <bpt id="p1">**</bpt>Releases<ept id="p1">**</ept> folder.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>The branch name is suffixed with the date and time of the upgrade.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>codeupgradebranch<ept id="p1">](./media/codeupgradebranch-300x192.png)](./media/codeupgradebranch.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Merge Releases back into Trunk<ph id="ph1">\\</ph>Main</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Once the upgraded code in Releases<ph id="ph1">\\</ph><ph id="ph2">\&lt;</ph>version number<ph id="ph3">\&gt;</ph> compiles and has passed your tests, then you are ready to merge this branch back into Trunk<ph id="ph4">\\</ph>Main.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>To do this, on your development environment in Visual Studio open the Source control explorer pane then right-click on the <bpt id="p1">**</bpt>Releases<ph id="ph1">\\</ph><ph id="ph2">\&lt;</ph>version number<ph id="ph3">\&gt;</ph><ept id="p1">**</ept> branch and in the context menu go to <bpt id="p2">**</bpt>Branching and Merging<ept id="p2">**</ept> and then on the sub-menu select <bpt id="p3">**</bpt>Merge<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>mergereleasesbranch<ept id="p1">](./media/MergeReleasesBranch.PNG)](./media/MergeReleasesBranch.PNG)</ept></source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>This will open the <bpt id="p1">[</bpt>Source Control Merge Wizard<ept id="p1">](https://www.visualstudio.com/en-us/docs/tfvc/merge-folders-files#sourcecontrolwizard)</ept> which will guide you through merging the Releases<ph id="ph1">\\</ph><ph id="ph2">\&lt;</ph>version number<ph id="ph3">\&gt;</ph> branch back into Trunk<ph id="ph4">\\</ph>Main.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

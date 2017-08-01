@@ -1,0 +1,273 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">09f35cc4d654c92fbd04477b4ad33503785e2764</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scm\transportation\create-new-transportation-management-engine.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ca25665e95cc08e818a60c79429379ca112c3401</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">300db633119739e5e9135015c09026efc2081023</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Create a new transportation management engine</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This article describes how to create a new transportation management engine in Microsoft Dynamics 365 for Finance and Operations.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Create a new transportation management engine</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This article describes how to create a new transportation management engine in Microsoft Dynamics 365 for Finance and Operations.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Transportation management (TMS) engines define the logic that is used to generate and process transportation rates in Transportation management.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Microsoft Dynamics 365 for Finance and Operations provides several different engine types that calculate different parameters, such as rates, transit times, and the number of zones that will be crossed during transit.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>This article explains how to use the Microsoft Visual Studio development environment together with Finance and Operations development tools to create and deploy a new TMS engine, and then how to set up the engine in Operations.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>For more information about the engines that Finance and Operations provides, see <bpt id="p1">[</bpt>Transportation management engines<ept id="p1">](transportation-management-engines.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Create a new TMS engine</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>This section explains how to create a class library that has a TMS engine implementation, and how to reference it from a Finance and Operations model.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>To deploy your new engines, you must have a Finance and Operations model that will contain the engines.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Dynamics 365<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Model Management<ept id="p2">**</ept> menu, click <bpt id="p3">**</bpt>Create model<ept id="p3">**</ept> to create a new model.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>On the first page of the <bpt id="p1">**</bpt>Create model<ept id="p1">**</ept> wizard, name the model <bpt id="p2">**</bpt>TMSEngines<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Creating a model<ept id="p1">](./media/012.png)](./media/012.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>On the next page, select <bpt id="p1">**</bpt>Create new package<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Creating a new package<ept id="p1">](./media/021.png)](./media/021.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>On the next page, select the <bpt id="p1">**</bpt>ApplicationSuite<ept id="p1">**</ept> model to reference.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>(The <bpt id="p1">**</bpt>ApplicationPlatform<ept id="p1">**</ept> model is preselected.)</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Selecting the model to reference<ept id="p1">](./media/032.png)](./media/032.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>On the next page, click <bpt id="p1">**</bpt>Finish<ept id="p1">**</ept> to confirm the creation of a new model.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Completing model creation<ept id="p1">](./media/042.png)](./media/042.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>In a new solution, create a new Finance and Operations project, and name it <bpt id="p1">**</bpt>TMSThirdParty<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>In the project properties, set the project's model to <bpt id="p1">**</bpt>TMSEngines<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Add a new C<ph id="ph1">\#</ph> class library to your solution, and name it <bpt id="p1">**</bpt>ThirdPartyTMSEngines<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>In the ThirdPartyTMSEngines project, add references to Finance and Operations–specific assemblies:</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Application assemblies that enable X++ types to be referenced.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>These assemblies can be found in the following locations.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\[</ph>Packages root<ph id="ph2">\]</ph> is the path of the location where all the deployed Dynamics 365 for Finance and Operations assemblies are placed, such as C:<ph id="ph3">\\</ph>Packages.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Framework assemblies that enable access to data, LINQ, and auxiliary functions.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>All these assembles can be found in <ph id="ph1">\[</ph>Packages root<ph id="ph2">\]</ph><ph id="ph3">\\</ph>bin.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>The core TMS assembly (which contains engines) and the TMS base assembly (which contains helpers, constants, data transfer class definitions, and so on).</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>These assemblies can be found in the following locations.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Rename the C<ph id="ph1">\#</ph> class that is automatically generated in the ThirdPartyTMSEngines project to <bpt id="p1">**</bpt>SampleRatingEngine<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Implement the engine.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Because we are creating a rate engine in this example, we inherit from the base class for rate engines.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>The base class implements most of the rate engine interface (<bpt id="p1">**</bpt>TMSFwkIRateEngine<ept id="p1">**</ept>).</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>We just have to implement the rate method.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>To keep this example simple, we will make this method register a hard-coded rate of 100.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>You can create engines that implement any of the engine interfaces, such as <bpt id="p1">**</bpt>TMSFwkIAccessorialEngine<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>All the engine interfaces are defined in X++.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Build the solution.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Add a new reference to the TMSThirdParty project.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>The reference should point to the ThirdPartyTMSEngines project.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>When you've finished, your solution should look like this.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>The solution, which includes a reference to the TMSThirdParty project<ept id="p1">](./media/052.png)](./media/052.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Build the solution.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Verify that the new library appears in the <bpt id="p1">**</bpt>References<ept id="p1">**</ept> node in Application Explorer.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>The new library in Application Explorer’s References node<ept id="p1">](./media/061.png)](./media/061.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Deploy the TMS engine as a package</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>One way to deploy third-party TMS engines is through a deployment package.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>This approach is recommended in a production environment.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>In a development environment, you can manually copy the assemblies, as described in the next section, "Set up a TMS engine in Finance and Operations."</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>To deploy the engine as a package, follow these steps.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>On the **Dynamics 365 **<ph id="ph1">&amp;gt;</ph> <bpt id="p1">**</bpt>Deploy<ept id="p1">**</ept> menu, click <bpt id="p2">**</bpt>Create Deployment Package<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Create Deployment Package<ept id="p1">**</ept> dialog box, select the TMSEngines model, and enter the path where you want to store your package files.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Selecting the TMSEngines model <ept id="p1">](./media/071.png)](./media/071.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>You can now deploy the package to the target environment.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>For a tutorial, see <bpt id="p1">[</bpt>Install a deployable package<ept id="p1">](/dynamics365/unified-operations/dev-itpro/deployment/install-deployable-package)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Set up the TMS engine in Finance and Operations</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>This section explains how to set up Finance and Operations to use a TMS engine, and shows how the new engine that we have created is used in rate shopping.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>The example in this section uses the USMF demo data company.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Create a new engine as described in the "Create a new TMS engine" section.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Build your solution.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Copy the resulting assembly into the binary location of the Finance and Operations server, <ph id="ph1">\[</ph>AOSWebRoot<ph id="ph2">\]</ph>bin.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> This step is relevant only in a development environment.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>In a production environment, you should deploy through a deployment package.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>For instructions, see the previous section, "Deploy the TMS engine as a package."</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>In Finance and Operations, on the <bpt id="p1">**</bpt>Rate engines<ept id="p1">**</ept> page, create a new rating engine.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>The engine should point to the engine assembly that is produced by building the engine class library and the engine class that you implemented.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Creating a new rating engine on the Rate engines page<ept id="p1">](./media/081.png)](./media/081.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Create a shipping carrier that uses the Sample rate engine.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Because our engine doesn't use any data in Finance and Operations, you don’t have to assign a rate master.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Creating a new shipping carrier <ept id="p1">](./media/092.png)](./media/092.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Rate route workbench<ept id="p1">**</ept> page, click <bpt id="p2">**</bpt>Rate shop<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>You should see a rate of 100.00 from SampleCarrier, as shown in the following screen shot.</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>In this example, we are rate shopping for a route from warehouse 24 to customer US-004.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>However, but because the rate is hard-coded, you will always see a rate of 100.00.</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Rate route workbench<ept id="p1">](./media/101.png)](./media/101.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Tips and tricks</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>If you’re using development tools for Finance and Operations, it's useful to add a new Finance and Operations project to your solution.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>If you set this project as your startup project and start a debugging session, you can debug both X++ and C<ph id="ph1">\#</ph> code in the same debugging session.</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Every time that you change and recompile your ThirdPartyTMSEngines project, you must manually copy the resulting assembly to the Finance and Operations binary location or deploy through a deployment package.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Otherwise, you might run by using a stale assembly.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>After you execute TMS-specific operations in Finance and Operations, the Internet Information Services (IIS) worker process might lock the ThirdPartyTMSEngines assembly so that the assembly can’t be updated.</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>In this case, restart the w3svc process.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

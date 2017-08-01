@@ -1,0 +1,390 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">369ff57593ffa5151751fff77915ae53d0cb6015</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\lifecycle-services\ax-2012\configuration-functionality-idmf-workspace.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">fe89ea645e5cfcc2888445318920284dc79aa3e4</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">4251f3602d7c00d73f40660967fd0a2948d9646d</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Configuration</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Configuration in the Intelligent Data Management Framework (AX 2012)</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Purge and archive functionality</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>The Microsoft Dynamics AX application provides real-time updates for a transaction.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>For example, when users enter, modify, or delete orders, Microsoft Dynamics AX updates a main table and some of its related tables.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Over time, the volume of data in the database grows.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>IDMF lets you analyze the database and maintain an optimal database size.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>To maintain the database size, IDMF provides the purge and archive functions.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>The purge function removes or deletes data from a set of related entities, or tables, from the production database.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>The archive function moves data from a set of related tables from the production database to a standby database called the archive database.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Users can use the archive database for reporting, but we recommend that they not be allowed to update it.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>IDMF and this document use the term offlining interchangeably with the term archiving, and recycling interchangeably with purge or delete operation.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Both the purge and archive operations depend on a carefully determined hierarchical relationship tree of related tables based on the Microsoft Dynamics AX metadata.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>For example, when a user creates, updates, or deletes a sales order, the <bpt id="p1">**</bpt>SalesTable<ept id="p1">**</ept> table and other tables that are related to <bpt id="p2">**</bpt>SalesTable<ept id="p2">**</ept> are updated.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>When you archive or purge data from a main table, such as SalesTable, you must archive or purge data from all the tables that are related to that main table.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>The archive and purge operations always work on a set of related tables.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>This set of related tables forms a hierarchical relationship.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Each hierarchical relationship starts with the main table, called a driver table, at the root level, level 0, of the hierarchical tree.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>All the child tables that are related to the driver table are at the next level, level 1.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>All the child tables of tables in level 1 are at the next level, level 2.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The nested hierarchy of parent-child relationships continues until there are no more child tables for the lowest level of tables.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>To help you understand the hierarchical relationships, IDMF includes some templates that show sample hierarchical relationships.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Templates for the archive function are called archive templates.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Templates for the purge function are called purge templates.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Each template provides a sample hierarchy based on a standard installation without any customizations.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>You cannot use these templates directly.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>You must open these templates, review them to verify applicability in your environment, and then save them before you can use them for the archive or purge function.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>When you open a template, verify that the relationship hierarchy contains all the relevant tables from your implementation of Microsoft Dynamics AX.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>The hierarchical tree in the template may not match your implementation for several reasons.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>The following list provides some of the reasons for a difference between a template and the relationships in your implementation of Microsoft Dynamics AX:</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Your implementation may not have certain tables that are in the template, depending on the customization, configuration, and licensing of your implementation.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Certain fields in the tables in the template might not be available in your implementation.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>You may have created custom tables that are not contained in the templates.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>It is very important that your hierarchical relationship include all relevant tables in your implementation.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>A purge or archive operation that is based on an incorrect hierarchy causes data corruption.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Therefore, you must create a relationship tree that is complete and accurate for your implementation.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Because of the uniqueness of each implementation, you cannot use a template in the archive or purge function.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Instead, you must create a Purge Object or an Archive Object that encompasses all relevant relationships for your implementation.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>There are two ways you can create a Purge Object or an Archive Object:</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Work with a template.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Open a template that is included with IDMF.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Review the template, and then add or remove tables and rules to match your implementation.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Verify that the relationship tree is complete for your implementation.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Save the template.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>An archive template is saved as an Archive Object.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>A purge template is saved as a Purge Object.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Create an object on your own instead of using the template that is included with IDMF.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Depending on the licensing, configuration, and customization, the hierarchical relationship in your implementation may significantly differ from the templates that are included with IDMF.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>In this case, you must use the discovery process, which lets you select a driver table that is the parent table that forms the root of the relationship tree.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Based on the driver table that you select, and the Microsoft Dynamics AX metadata, IDMF generates the hierarchical relationship tree.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>IDMF checks an exception list and ignores tables that are contained in the exception list.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>We recommend that you create a Purge Object or an Archive Object through the discovery process instead of opening and saving a template.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Compare your object with the template, if a similar template exists, to see whether your object is missing any tables that the template contains.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Depending on the comparison and verification, add tables to or remove tables from your object, as appropriate.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Each Archive Object or Purge Object contains certain rules that govern the archiving or purging of data.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Rules let you specify the selection criteria that are used to select the data that is qualified for purging or archiving.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>You can add, remove, or modify these rules to match your archive and purge guidelines.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>You must save an Archive Object or a Purge Object before you can use it in a purge or archive task.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>IDMF provides a graphical view of your Purge Object or Archive Object that resembles the sample that is shown in the following diagram.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Familiarize yourself with the legend, so that you can easily understand and validate your Archive Objects and Purge Objects.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>IDMF archive object</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>The following table explains the legend that is shown in a relationship tree of an object or a template.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Text</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Table removed</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>This table has been removed from the object you are working with.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>The Purge Object or Archive Object does not purge or archive data from this table.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Table is missing from the production database</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>This table exists in the template or object you are working with, but is not found in your production database.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>You must remove this table from the relationship before you can save this object.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Fields with disabled configuration keys</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>In Microsoft Dynamics AX, each field is governed by the security key and a configuration key.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Depending on the licensing, security keys, and configuration you use, each field can be an enabled or a disabled field.</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>For the purpose of this document, a disabled field refers to a field that is disabled via the configuration key.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>A driver table with any rules that use a disabled field, or a child table with any relationships that use a disabled field, appears with a yellow border.</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>You must resolve the rules and relationships with disabled fields before you can save the object.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Selected table</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>You have selected this table.</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>You can select multiple tables, and then perform actions such as remove all occurrences of the selected tables or add selected tables to the data replication feature.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Table group property is worksheet header</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>This table has a <bpt id="p1">**</bpt>TableGroup<ept id="p1">**</ept> value of <bpt id="p2">**</bpt>WorksheetHeader<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>You can right-click such tables and rediscover related child tables.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Related Archive Object</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>This is a Related Archive Object.</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>To avoid complexity, you can add a Related Archive Object to your Archive Object, instead of adding a child table with many levels of nested relationships.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Related Archive Object: Table is missing from the production database</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>This Related Archive Object does not exist in the production database.</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>You must remove this table from the Related Archive Object and save it before you can save your current object.</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Related Archive Object: Fields with disabled configuration keys</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>This Related Archive Object contains relationships or rules with disabled configuration keys.</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>You must enable the configuration keys, or remove the relationships and rules based on disabled fields, and then save the Related Archive Object before you can use it in this object.</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Driver table of the parent Archive Object</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>This is the driver table of the Archive Object that is the parent object of this Related Archive Object.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>Introduction to the discovery process</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>The discovery process creates a hierarchical relationship tree for a Purge Object or an Archive Object.</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>When you create a new Purge Object or Archive Object, you select a parent table, called the driver table.</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>IDMF uses a process called discovery to create a hierarchical relationship tree based on the driver table you select.</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>The following steps provide a high-level walkthrough of the discovery process, assuming that you selected the WMSOrder table as the driver table:</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>The discovery process starts when you select a table as the driver table that is the root parent in a parent-child hierarchy.</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>However, IDMF does not display tables in the driver table list that are part of an exception list.</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>WMSOrder<ept id="p1">**</ept> table appears in the list, because it is not in the exception parameters list.</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>xRefTableRelation<ept id="p1">**</ept> table in Microsoft Dynamics AX contains relationships between two tables, and the fields that are used by the relationship.</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>IDMF queries the <bpt id="p1">**</bpt>xRefTableRelation<ept id="p1">**</ept> table to retrieve the names of the tables that are child tables of the parent, <bpt id="p2">**</bpt>WMSOrder<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>Explanation of the <bpt id="p1">**</bpt>xRefTableRelation<ept id="p1">**</ept> field is beyond the scope of this topic.</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>xRefTableRelation table<ept id="p1">](https://msdn.microsoft.com/en-us/library/aa860828.aspx)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>Continue the previous step for every table, until there are no child tables left.</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>In certain cases, a child table is excluded from the relationship tree in these conditions:</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>The child table has a <bpt id="p1">**</bpt>TableGroup<ept id="p1">**</ept> value of <bpt id="p2">**</bpt>Main<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Parameter<ept id="p3">**</ept>, or <bpt id="p4">**</bpt>Group<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>The child table is in the exception parameters list, with the <bpt id="p1">**</bpt>Purge discovery<ept id="p1">**</ept> field selected.</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>In this case, the child table is excluded from the relationship tree of the Purge Object.</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>The child table is in the exception parameters list, with the <bpt id="p1">**</bpt>Archive discovery<ept id="p1">**</ept> field selected.</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>In this case, the child table is excluded from the relationship tree of the Archive Object.</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Note<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>Tables with a <bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="ui"&gt;</bpt>Table Group<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept> value of <bpt id="p3">&lt;strong&gt;</bpt><bpt id="p4">&lt;span class="ui"&gt;</bpt>WorksheetHeader<ept id="p4">&lt;/span&gt;</ept><ept id="p3">&lt;/strong&gt;</ept> are ideal candidates for driver tables, and appear with a black border in the relationship tree when they are discovered as child tables.</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>The discovery process shows these tables as child tables, but does not show their child tables in the tree.</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>Determine which option in the following list is the best way to incorporate these tables in your purge and archive strategy:</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>Keep these tables in the relationship tree, but do not add their child tables.</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>Keep these tables in the relationship tree, and add their child tables.</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>Right-click a table, and then select <bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="ui"&gt;</bpt>Discover<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept> to discover, or add, the child tables that form the parent-child hierarchy for the table.</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>In the case of an Archive Object, remove these tables from the relationship tree, and either add them as Related Archive Objects or create independent Archive Objects.</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>In the case of a Purge Object, remove these tables, and create new Purge Objects by using these tables as the driver tables.</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Caution<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>You must understand the Microsoft Dynamics AX metadata and application before you start working with the exception parameters list, Archive Objects, or Purge Objects.</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>You must functionally validate the Purge Object or Archive Object to maintain database and application integrity.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

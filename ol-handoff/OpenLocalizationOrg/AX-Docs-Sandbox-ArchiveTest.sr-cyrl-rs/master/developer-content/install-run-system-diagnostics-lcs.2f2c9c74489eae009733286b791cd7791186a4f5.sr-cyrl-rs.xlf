@@ -1,0 +1,471 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">aa916af05968cfcda433cdc1043b5bc013be7c85</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\lifecycle-services\ax-2012\install-run-system-diagnostics-lcs.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">57472a203cc63a8ec0acfdec54c2bbf91e4b3d22</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">6f736c42f8a3102abdc05be4a85a4de866ee7714</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Install and run System diagnostics (AX 2012)</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>In Microsoft Dynamics Lifecycle Services, System diagnostics includes an on-premises component that must be installed before you can use the service to discover Microsoft Dynamics AX environments and collect data.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Install and run System diagnostics (AX 2012)</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>In Microsoft Dynamics Lifecycle Services, System diagnostics includes an on-premises component that must be installed before you can use the service to discover Microsoft Dynamics AX environments and collect data.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Install the System diagnostics on-premises component</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>To install the System diagnostics on-premises component, the following is required:</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>A service account with specific permissions on the local computer and the Microsoft Dynamics AX business database.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>An X509 certificate .</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>You can either use an existing certificate, or have the installer create one for you.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Each X509 certificate is associated with a single project.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Diagnostics from an environment can be uploaded to only one project.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Microsoft .NET 4.5 or 4.5.1</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Configure the service account for System diagnostics</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>This section describes the permissions that are required for the service account that the Lifecycle Services Diagnostic Service (LCSDiagFXService.exe) runs as.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>The service account must be a domain account that is a user in Microsoft Dynamics AX and a member of the <bpt id="p1">**</bpt>BusinessConnector<ept id="p1">**</ept> role.We strongly recommend that, if possible, the account be the same account used for the .NET Business Connector proxy.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Specify the .NET Business Connector proxy account<ept id="p1">](http://technet.microsoft.com/library/3e46dc0a-2ff4-4a06-ae61-041e52dcc774(AX.60).aspx)</ept> and <bpt id="p2">[</bpt>Assign users to security roles<ept id="p2">](http://technet.microsoft.com/library/214ee45b-5b99-4ea8-9454-f4297f68e38c(AX.60).aspx)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>If you reuse the .NET Business connector proxy account, you must still add it as a member of the <bpt id="p1">**</bpt>BusinessConnector<ept id="p1">**</ept> role.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>The service account must have read access to specific registry keys in the HKEY<ph id="ph1">\_</ph>LOCAL<ph id="ph2">\_</ph>MACHINE hive on all of the computers that run AOS instances and host Microsoft Dynamics AX business databases, so that the Lifecycle Services Diagnostic Service can discover environments and collect data.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>The service account must be a member of the <bpt id="p1">**</bpt>Event Log Readers<ept id="p1">**</ept> local group on each server in the environment, so that the Lifecycle Services Diagnostic Service can read the Windows event logs.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The service account must have read access to the Microsoft Dynamics AX business database (<bpt id="p1">**</bpt>db<ph id="ph1">\_</ph>datareader<ept id="p1">**</ept>), and must have VIEW SERVER STATE permission for the SQL Server instance, so that Lifecycle Services Diagnostic Service can run default dynamic management views in SQL Server.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Configure read permissions to the registry</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>On each server in your environment that hosts an AOS instance or Microsoft Dynamics AX SQL Server business database, you must grant read access to a registry key in the HKEY<ph id="ph1">\_</ph>LOCAL<ph id="ph2">\_</ph>MACHINE hive to the service account for the System diagnostics.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Caution<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>The following procedure includes editing the Windows Registry.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Editing the registry incorrectly can cause serious problems that may require you to reinstall Windows.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Microsoft cannot guarantee that problems resulting from incorrectly editing the registry can be solved.You should make a backup copy of the registry files (System.dat and User.dat) before you edit the registry.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>To grant access to collect data from the Windows registry on the server that hosts the SQL Server business database:</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Start<ept id="p1">**</ept>, click <bpt id="p2">**</bpt>Run<ept id="p2">**</ept>, type <bpt id="p3">**</bpt>regedit<ept id="p3">**</ept>, and then press <bpt id="p4">**</bpt>Enter<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Expand <bpt id="p1">**</bpt>HKEY<ph id="ph1">\_</ph>LOCAL<ph id="ph2">\_</ph>MACHINE<ept id="p1">**</ept>, navigate to the subkey <bpt id="p2">**</bpt>SystemCurrentControlSetControlPriorityControl<ept id="p2">**</ept>, right-click it and select <bpt id="p3">**</bpt>Permissions<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Add the user that you want to associate with the Lifecycle Services Diagnostic Service.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Select the user that you added, and then allow read permissions.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Advanced Security Settings<ept id="p1">**</ept>, and then ensure that the permissions are inherited by the child objects.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>To grant access to collect data from the Windows registry on a server that hosts one or more AOS instances:</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Start<ept id="p1">**</ept>, click <bpt id="p2">**</bpt>Run<ept id="p2">**</ept>, type <bpt id="p3">**</bpt>regedit<ept id="p3">**</ept>, and press <bpt id="p4">**</bpt>Enter<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Expand <bpt id="p1">**</bpt>HKEY<ph id="ph1">\_</ph>LOCAL<ph id="ph2">\_</ph>MACHINE<ept id="p1">**</ept>, navigate to the subkey <bpt id="p2">**</bpt>SystemCurrentControlSetServicesDynamics Server6.0<ept id="p2">**</ept>, right-click it and select <bpt id="p3">**</bpt>Permissions<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Add the user that you want to associate with the Lifecycle Services Diagnostic Service.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Select the user that you added, and then allow read permissions.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Advanced Security Settings<ept id="p1">**</ept>, and then ensure that the permissions are inherited by the child objects.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Repeat for all AOS instances in each environment that you want to collect data from.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Important<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>As you are configuring rights in the registry, do not reduce account privileges that already exist.For more information about Advanced security settings, see:</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a href="http://technet.microsoft.com/en-us/library/jj134043.aspx"&gt;</bpt>Windows Server 2012 Access Control and Authorization Overview<ept id="p1">&lt;/a&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a href="http://technet.microsoft.com/en-us/library/cc730772.aspx"&gt;</bpt>Windows Server 2008 R2 Advanced Security Settings Properties Page - Permissions Tab<ept id="p1">&lt;/a&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Edit the Group Policy on the AOS</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>You must make the services of the AOS remotely accessible in Group Policy.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>On the computer running the AOS instance, click <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Run<ept id="p2">**</ept>, type <bpt id="p3">**</bpt>gpedit.msc<ept id="p3">**</ept>, and then press <bpt id="p4">**</bpt>Enter<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>In the left pane, expand <bpt id="p1">**</bpt>Computer Configuration<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Windows settings<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Security settings<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Local policies<ept id="p4">**</ept> <ph id="ph4">&amp;gt;</ph> <bpt id="p5">**</bpt>Security options<ept id="p5">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>In the right pane, double-click <bpt id="p1">**</bpt>Network access: Remotely accessible registry paths and sub-paths<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>If the following paths are not in the list, add them to the end of the list and then click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>SystemCurrentControlSetControlPriorityControl</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>SystemCurrentControlSetservicesDynamics Server6.0</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Configure Windows event log and WMI permissions</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>The service account must be able to read the Windows event logs on each server in the environment, and must be able to monitor remote Windows Management Instrumentation connections.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Add a member to a local group<ept id="p1">](http://technet.microsoft.com/en-us/library/cc772524(v=WS.10).aspx)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>On each server in the environment, add the service account to the <bpt id="p1">**</bpt>Event Log Readers<ept id="p1">**</ept> local group, the <bpt id="p2">**</bpt>Distributed COM Users<ept id="p2">**</ept> local group and the <bpt id="p3">**</bpt>Performance Monitor Users<ept id="p3">**</ept> local group.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Secure the remote Windows Management Instrumentation connections</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>On each server in your environment that hosts an AOS instance or Microsoft Dynamics AX SQL Server business database, ensure that you secure the remote Windows Management Instrumentation (WMI) connection.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Run<ept id="p2">**</ept>, type <bpt id="p3">**</bpt>DCOMCNFG<ept id="p3">**</ept>, and then click <bpt id="p4">**</bpt>OK<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Component Services<ept id="p1">**</ept> dialog box, expand <bpt id="p2">**</bpt>Component Services<ept id="p2">**</ept>, expand <bpt id="p3">**</bpt>Computers<ept id="p3">**</ept>, and then right-click <bpt id="p4">**</bpt>My Computer<ept id="p4">**</ept> and click <bpt id="p5">**</bpt>Properties<ept id="p5">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>My Computer Properties<ept id="p1">**</ept> dialog box, click the <bpt id="p2">**</bpt>COM Security<ept id="p2">**</ept> tab.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Under <bpt id="p1">**</bpt>Launch and Activation Permissions<ept id="p1">**</ept>, click <bpt id="p2">**</bpt>Edit Limits<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Launch Permission<ept id="p1">**</ept> dialog box, follow these steps if your name or your group does not appear in the <bpt id="p2">**</bpt>Groups or user names<ept id="p2">**</ept> list:</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Launch Permission<ept id="p1">**</ept> dialog box, click <bpt id="p2">**</bpt>Add<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Select Users, Computers, or Groups<ept id="p1">**</ept> dialog box, in the <bpt id="p2">**</bpt>Enter the object names to select<ept id="p2">**</ept> box, type <bpt id="p3">**</bpt>Distributed COM Users<ept id="p3">**</ept>, click <bpt id="p4">**</bpt>Check Names<ept id="p4">**</ept>, and then click <bpt id="p5">**</bpt>OK<ept id="p5">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Enter the object names to select<ept id="p1">**</ept> box, type <bpt id="p2">**</bpt>Performance Monitor Users<ept id="p2">**</ept>, click <bpt id="p3">**</bpt>Check Names<ept id="p3">**</ept>, and then click <bpt id="p4">**</bpt>OK<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Allow<ept id="p1">**</ept> for each of the permissions (Local Launch, Remote Launch, Local Activation, Remote Activation) for each of these groups, and then click <bpt id="p2">**</bpt>OK<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Apply the WMI control security settings to all namespaces:</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Run<ept id="p2">**</ept>, type <bpt id="p3">**</bpt>wmimgmt.msc<ept id="p3">**</ept>, and then click <bpt id="p4">**</bpt>OK<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Right-click <bpt id="p1">**</bpt>WMI Control (Local)<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>Properties<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Security<ept id="p1">**</ept> tab, click <bpt id="p2">**</bpt>Root<ept id="p2">**</ept>, click <bpt id="p3">**</bpt>Security<ept id="p3">**</ept>, and then click <bpt id="p4">**</bpt>Add<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Under <bpt id="p1">**</bpt>Enter the object names to select<ept id="p1">**</ept>, type Distributed COM users, click <bpt id="p2">**</bpt>Check Names<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>OK<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Advanced<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Distributed COM Users<ept id="p1">**</ept> and then click <bpt id="p2">**</bpt>Edit<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>This namespace and subnamespaces<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Allow<ept id="p1">**</ept> for the following permissions: Execute Methods, Enable Account, and Remote Enable, and then click <bpt id="p2">**</bpt>OK<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Repeat step 6 for the Performance Monitor Users group, and then close all windows.</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Securing a Remote WMI Connection<ept id="p1">](http://msdn.microsoft.com/en-us/library/windows/desktop/aa393266(v=vs.85).aspx)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Configure SQL Server permissions</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>The service account must be able to read the data in the Microsoft Dynamics AX business database and must have access to the default dynamic management views in SQL Server.</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Add the service account as a login to the SQL Server instance where the Microsoft Dynamics AX business database is installed.For information about how to perform this step, see <bpt id="p1">[</bpt>Create a Login<ept id="p1">](http://msdn.microsoft.com/en-us/library/aa337562.aspx)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Add the account as a user of the business database.For information about how to perform this step, see <bpt id="p1">[</bpt>How to: Create a Database User<ept id="p1">](http://msdn.microsoft.com/en-us/library/aa337545.aspx)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>Add the service account to the db<ph id="ph1">\_</ph>datareader role in the business database.For information about how to perform this step, see <bpt id="p1">[</bpt>Join a Role<ept id="p1">](http://msdn.microsoft.com/en-us/library/ff877886.aspx)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Grant the service account the VIEW SERVER STATE permission in the SQL Server instance.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>In SQL Server Management Studio, expand <bpt id="p1">**</bpt>Databases<ept id="p1">**</ept>, right-click the <bpt id="p2">**</bpt>Microsoft Dynamics AX<ept id="p2">**</ept> database, and then click <bpt id="p3">**</bpt>Properties<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Permissions<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>View server permissions<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Logins or Roles<ept id="p1">**</ept> list, click the user to whom you want to grant the permission.</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Explicit permissions for user<ept id="p1">**</ept> list, select the <bpt id="p2">**</bpt>Grant<ept id="p2">**</ept> check box next to <bpt id="p3">**</bpt>View server state permission<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Verify that the .NET Business connector service is running in the environment</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>The Business Connector service must be running on the host where the Lifecycle Services Diagnostic Service is installed.</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>If more than one environment is to be discovered, the .Net Business Connector proxy account must be the same for each server that is running a Microsoft Dynamics AX Application Object Server (AOS) instance.</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Install the .NET Business Connector<ept id="p1">](http://technet.microsoft.com/library/c67944e8-73c5-4434-94d6-84484c810333(AX.60).aspx)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>Install the Microsoft Dynamics Lifecycle Services System diagnostics</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>To install the on-premises component of System diagnostics, you must be a member of the Administrator group on the local computer.</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Go to Lifecycle Services<ept id="p1">](https://lcs.dynamics.com)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Open a project and click the <bpt id="p1">**</bpt>System diagnostics<ept id="p1">**</ept> tile.</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Admin<ept id="p1">**</ept> page, download the compressed installer (<bpt id="p2">**</bpt>LCSDiagFX<ph id="ph1">\_</ph>x64.zip.<ept id="p2">**</ept>).</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Extract the installer to a computer that is running a Microsoft Dynamics AX client.The computer must have network access to all other servers in the environment, and must be running the .NET Business Connector if you are using the NET Business Connector proxy account as a service account.</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Important<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>In a production environment, we recommend that you install the on-premises component on a computer that is running only a client, not on computers that are also running an AOS instance or a SQL Server instance.</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Run <bpt id="p1">**</bpt>Setup.exe<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>Do not run the .msi file directly.</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>Accept the license terms.</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>If you have an existing local X509 certificate, on the <bpt id="p1">**</bpt>Select the certificate type<ept id="p1">**</ept> page, click <bpt id="p2">**</bpt>Use existing<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>If you do not have an X509 certificate, perform the following steps:</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Select the certificate type<ept id="p1">**</ept> page, click <bpt id="p2">**</bpt>Create new<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>Enter a prefix to be used in the certificate name.</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Next<ept id="p1">**</ept> to create the certificate.</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>Verify that the new certificate has been created in the specified location.</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>Return to the <bpt id="p1">**</bpt>System diagnostics<ept id="p1">**</ept> page, browse to the location of the certificate, and click <bpt id="p2">**</bpt>Upload<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Return to the <bpt id="p1">**</bpt>Upload the new certificate<ept id="p1">**</ept> page of the <bpt id="p2">**</bpt>Microsoft Dynamics Lifecycle Services Diagnostic Service Setup Wizard<ept id="p2">**</ept>, select <bpt id="p3">**</bpt>Certificate file has been uploaded<ept id="p3">**</ept>, and click <bpt id="p4">**</bpt>Next<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Select private certificate<ept id="p1">**</ept> page, the name of the certificate is displayed.</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Next<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Specify service account<ept id="p1">**</ept> page, enter the service account and password, and then click <bpt id="p2">**</bpt>Next<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Change destination folder<ept id="p1">**</ept> page, enter the location where you want to store the logs that were collected by the System diagnostics, and then click <bpt id="p2">**</bpt>Next<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> to install and start the System diagnostics, and then click <bpt id="p2">**</bpt>Finish<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>Two executable programs are installed: LCSDiagFXDiscovery.exe and LCSDiagFXCollector.exe.</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>Discover environments</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Start<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>Microsoft Dynamics AX Lifecycle Services Diagnostic Service Discovery.<ept id="p2">**</ept></source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Environment Discovery<ept id="p1">**</ept> window, enter a name for the environment, the fully-qualified name of the SQL Server instance and database, and then click <bpt id="p2">**</bpt>Discover<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>At the bottom of the Window, click the <bpt id="p1">**</bpt>Test permissions<ept id="p1">**</ept> button <ph id="ph1">![</ph>Test permissions button for System diagnostics<ph id="ph2">](./media/testpermissions.jpg)</ph> at the bottom of the page.</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Change destination folder<ept id="p1">**</ept> page, enter the location where you want to store the logs that were collected by the System diagnostics, and then click <bpt id="p2">**</bpt>Next<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>Collect data</source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>You can collect data on demand from the <bpt id="p1">**</bpt>Environment Discovery<ept id="p1">**</ept> window.</source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>We recommend that you schedule a job to collect data regularly.</source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>Data collection typically takes between 5 and 15 minutes.</source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>Errors that are encountered during data collection are logged in the Windows Application event log, as well as in a log file in the location that you specified during installation.</source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>To run an initial data collection in the <bpt id="p1">**</bpt>Environment Discovery<ept id="p1">**</ept> window, click <bpt id="p2">**</bpt>Collect now<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>We recommend that you run an initial collection immediately after discovering an environment for the first time.</source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>To generate a collection command that you can use to schedule collection jobs, click <bpt id="p1">**</bpt>Generate collection command<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>Copy the generated command to the clipboard.</source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>Schedule the command to run by using a scheduling engine, such as <bpt id="p1">**</bpt>Windows Task Scheduler<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>For more information about using <bpt id="p1">**</bpt>Task Scheduler<ept id="p1">**</ept>, see <bpt id="p2">[</bpt>Schedule a task<ept id="p2">](http://technet.microsoft.com/en-us/library/cc766428.aspx)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>Use same X509 certificate for all environments</source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>First time let setup generate certificate as usual</source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>Run MMC (Microsoft management console) as admin</source>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>File -<ph id="ph1">&amp;gt;</ph> "<bpt id="p1">**</bpt>Add or Remove Snap-ins<ept id="p1">**</ept>"</source>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>Double click <bpt id="p1">**</bpt>Certificates<ept id="p1">**</ept> item and choose computer account then next-<ph id="ph1">&amp;gt;</ph>finish-<ph id="ph2">&amp;gt;</ph>ok</source>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>Expand Certificates (Local Computer)-<ph id="ph1">&amp;gt;</ph><bpt id="p1">**</bpt>Personal<ept id="p1">**</ept><ph id="ph2">-</ph><ph id="ph3">&amp;gt;</ph>Certificates:</source>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>Right click on certificate generated on first step -<ph id="ph1">&amp;gt;</ph> All tasks -<ph id="ph2">&amp;gt;</ph> Export -<ph id="ph3">&amp;gt;</ph> Next -<ph id="ph4">&amp;gt;</ph> Choose "<bpt id="p1">**</bpt>Yes, export the private key<ept id="p1">**</ept>"</source>
+        </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>Leave default values in <ph id="ph1">\*</ph>.pfx export setup</source>
+        </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>In security step Use domain account or password for securing your exported file</source>
+        </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>Export files in next steps</source>
+        </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>Copy exported file to new environment click it and choose <bpt id="p1">**</bpt>Install PFX<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>Choose <bpt id="p1">**</bpt>Local Machine<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>Click next -<ph id="ph1">&amp;gt;</ph> And in following screen make sure that <bpt id="p1">**</bpt>Mark this key as exportable<ept id="p1">**</ept> is set.</source>
+        </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>Click next and finish</source>
+        </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>Now when running Lifecycle services system diagnostics setup choose on new environment use an existing certificate</source>
+        </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>Certificate generated in first step should be present in client certificates lookup choose it and continue as usual:</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

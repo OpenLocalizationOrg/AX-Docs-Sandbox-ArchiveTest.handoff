@@ -1,0 +1,510 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">8489efe590bd4de384a15e50060da3add2d9156f</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">financials\localizations\emea-ita-fiscal-books.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">basic</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">4cc9c18b12e11dc02761d09bd0068ab45b5cb840</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2a4a43f51610d83b6d57238a4813dda7c5ec63c2</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Italian sales tax books</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>The topic describes how to set up and use Italian sales tax books and Italian sales tax book sections.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Italian sales tax books</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>The topic describes how to set up and use Italian sales tax books and Italian sales tax book sections.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>According to Italian fiscal legislation, every value-added tax (VAT) transaction must belong to a tax book (<bpt id="p1">*</bpt>Libro IVA<ept id="p1">*</ept>) that will be used for tax reporting.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>To fulfill these legislative requirements, Microsoft Dynamics 365 for Finance and Operations, Enterprise edition implements Italian sales tax books.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Sales tax books can be of different types.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>You must specify the sales tax book type to help guarantee that all sales and purchase transactions are included on the <bpt id="p1">**</bpt>Italian sales tax payment<ept id="p1">**</ept> report.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>You can keep as many sales tax books of the <bpt id="p1">**</bpt>Sales<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Purchase<ept id="p2">**</ept> types as you require.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Every tax book can be divided into multiple tax book sections (<bpt id="p1">*</bpt>Sezionale IVA<ept id="p1">*</ept>).</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>All sales tax transactions must be sequentially numbered (without gaps) and ordered by posting date.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>A tax book section is equivalent to a number sequence for the Italian sales tax voucher number (<bpt id="p1">*</bpt>Protocollo IVA<ept id="p1">*</ept>) that must always be applied during posting to help guarantee chronological order by posting date.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Prerequisites</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>The following table shows the prerequisites that must be in place before you start.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Category</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Prerequisite</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Setup:<ept id="p1">&lt;/strong&gt;</ept> Legal entity</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>The primary address of the legal entity must be in Italy.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>(Click <bpt id="p1">&lt;strong&gt;</bpt>Organization administration<ept id="p1">&lt;/strong&gt;</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">&lt;strong&gt;</bpt>Organizations<ept id="p2">&lt;/strong&gt;</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">&lt;strong&gt;</bpt>Legal entities<ept id="p3">&lt;/strong&gt;</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">&lt;strong&gt;</bpt>Addresses<ept id="p4">&lt;/strong&gt;</ept> <ph id="ph4">&amp;gt;</ph> <bpt id="p5">&lt;strong&gt;</bpt>Country/region<ept id="p5">&lt;/strong&gt;</ept>.)</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Setup:<ept id="p1">&lt;/strong&gt;</ept> Number sequences</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Set up as many number sequences as you require to cover all the required types of sales tax transactions.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>(Click <bpt id="p1">&lt;strong&gt;</bpt>Organization administration<ept id="p1">&lt;/strong&gt;</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">&lt;strong&gt;</bpt>Number sequences<ept id="p2">&lt;/strong&gt;</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">&lt;strong&gt;</bpt>Number sequences<ept id="p3">&lt;/strong&gt;</ept>.) All these number sequences must be continuous and must have <bpt id="p4">&lt;strong&gt;</bpt>Company<ept id="p4">&lt;/strong&gt;</ept> scope.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Setup:<ept id="p1">&lt;/strong&gt;</ept> Journal names</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Set up the required journal names.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>(Click <bpt id="p1">&lt;strong&gt;</bpt>General Ledger<ept id="p1">&lt;/strong&gt;</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">&lt;strong&gt;</bpt>Journal setup<ept id="p2">&lt;/strong&gt;</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">&lt;strong&gt;</bpt>Journal names<ept id="p3">&lt;/strong&gt;</ept> or <bpt id="p4">&lt;strong&gt;</bpt>Project management and accounting<ept id="p4">&lt;/strong&gt;</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p5">&lt;strong&gt;</bpt>Setup<ept id="p5">&lt;/strong&gt;</ept> <ph id="ph4">&amp;gt;</ph> <bpt id="p6">&lt;strong&gt;</bpt>Journals<ept id="p6">&lt;/strong&gt;</ept> <ph id="ph5">&amp;gt;</ph> <bpt id="p7">&lt;strong&gt;</bpt>Journal names<ept id="p7">&lt;/strong&gt;</ept>.) On the <bpt id="p8">&lt;strong&gt;</bpt>General<ept id="p8">&lt;/strong&gt;</ept> FastTab, in the <bpt id="p9">&lt;strong&gt;</bpt>Sales tax<ept id="p9">&lt;/strong&gt;</ept> section, in the <bpt id="p10">&lt;strong&gt;</bpt>Italian sales tax book<ept id="p10">&lt;/strong&gt;</ept> field, specify one of the following values:</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Not included<ept id="p1">&lt;/strong&gt;</ept> – Select this value for invoices and credit notes that come from countries/regions that are outside the European community.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Purchase<ept id="p1">&lt;/strong&gt;</ept> – Select this value for purchase invoices and credit notes.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Sales<ept id="p1">&lt;/strong&gt;</ept> – Select this value for sales invoices and credit notes.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Empty<ept id="p1">&lt;/strong&gt;</ept> – Select this value for all other types of transactions.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>In some cases, the <bpt id="p1">&lt;strong&gt;</bpt>Italian sales tax book<ept id="p1">&lt;/strong&gt;</ept> field is set automatically, based on the <bpt id="p2">&lt;strong&gt;</bpt>Journal type<ept id="p2">&lt;/strong&gt;</ept> value.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>For example, if the <bpt id="p1">&lt;strong&gt;</bpt>Journal type<ept id="p1">&lt;/strong&gt;</ept> field is set to <bpt id="p2">&lt;strong&gt;</bpt>Invoice register<ept id="p2">&lt;/strong&gt;</ept>, the <bpt id="p3">&lt;strong&gt;</bpt>Italian sales tax book<ept id="p3">&lt;/strong&gt;</ept> field is set to <bpt id="p4">&lt;strong&gt;</bpt>Purchase<ept id="p4">&lt;/strong&gt;</ept> by default.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Setup:<ept id="p1">&lt;/strong&gt;</ept> Module parameters</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>For vouchers to follow the number sequences of the related invoices and credit notes, you must select the <bpt id="p1">&lt;strong&gt;</bpt>Reuse numbers<ept id="p1">&lt;/strong&gt;</ept> check box when you define the number sequences for those invoices and credit notes.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>You can find this check box on the <bpt id="p1">&lt;strong&gt;</bpt>Number sequences<ept id="p1">&lt;/strong&gt;</ept> tab of the following pages:</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Accounts receivable parameters</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Accounts payable parameters</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Project management and accounting parameters</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>For example, on the <bpt id="p1">&lt;strong&gt;</bpt>Accounts receivable parameters<ept id="p1">&lt;/strong&gt;</ept> page, on the <bpt id="p2">&lt;strong&gt;</bpt>Number sequences<ept id="p2">&lt;/strong&gt;</ept> tab, select the <bpt id="p3">&lt;strong&gt;</bpt>Reuse numbers<ept id="p3">&lt;/strong&gt;</ept> check box for <bpt id="p4">&lt;strong&gt;</bpt>Free text invoice voucher<ept id="p4">&lt;/strong&gt;</ept> to synchronize number allocation for free text invoice vouchers and free text invoices.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Set up sales tax books</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Sales tax books are used for sales tax reporting.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>To set up Italian sales tax books, click <bpt id="p1">**</bpt>Tax<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Sales tax<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Italian sales tax books<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>The following table describes the fields that are available on the <bpt id="p1">**</bpt>Italian sales tax books<ept id="p1">**</ept> page.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Field</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Sales tax book</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Enter the ID of the sales tax book.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Name</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Enter a description of the sales tax book.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Sales tax book type</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Select the nature of the operations that will be performed through the sales tax book sections that you will attach to the sales tax book.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>The following values are available:</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Purchase<ept id="p1">&lt;/strong&gt;</ept> – Select this value for purchase invoices and credit notes.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Sales<ept id="p1">&lt;/strong&gt;</ept> – Select this value for sales invoices and credit notes.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Not included<ept id="p1">&lt;/strong&gt;</ept> – Select this value for invoices and credit notes that come from countries/regions that are outside the European community.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>This type is used only for statistical purposes and won't be included on the final fiscal tax book reports.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Settlement period</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Select an existing sales tax settlement period.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>When a sales tax book is printed, if the <bpt id="p1">&lt;strong&gt;</bpt>Update<ept id="p1">&lt;/strong&gt;</ept> check box is selected on the <bpt id="p2">&lt;strong&gt;</bpt>Sales tax payment<ept id="p2">&lt;/strong&gt;</ept> page, the date in the <bpt id="p3">&lt;strong&gt;</bpt>From date<ept id="p3">&lt;/strong&gt;</ept> field is compared to the selected settlement period.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>The settlement period is also used to identify which sales tax books and sales tax book sections must be closed when a sales tax settlement is updated for a settlement period.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Closed to</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>The latest closing date from the related sales tax book sections that belong to the selected sales tax book.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>EU sales</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Select a sales tax book of the <bpt id="p1">&lt;strong&gt;</bpt>Sales<ept id="p1">&lt;/strong&gt;</ept> type, and attach it to the current sales tax book of the <bpt id="p2">&lt;strong&gt;</bpt>Purchase<ept id="p2">&lt;/strong&gt;</ept> type.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>This field is used if the selected sales tax book must include European Union (EU) purchase transactions from the current book on sales tax reports.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>This field is unavailable for sales tax books of the <bpt id="p1">&lt;strong&gt;</bpt>Sales<ept id="p1">&lt;/strong&gt;</ept> and <bpt id="p2">&lt;strong&gt;</bpt>Not included<ept id="p2">&lt;/strong&gt;</ept> types.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>ATECOFIN Code</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Select the tax code for reporting.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Print summary and payment</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Select this option to print the summary and payment report.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>This field is available only for sales tax books of the <bpt id="p1">&lt;strong&gt;</bpt>Sales<ept id="p1">&lt;/strong&gt;</ept> type.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Set up sales tax book sections</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Sales tax book sections are a repository where ledger transactions are posted according to their nature.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>The voucher numbering is driven by the sales tax book sections.</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>To set up Italian sales tax book sections, click <bpt id="p1">**</bpt>Tax<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Sales tax<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Italian sales tax book sections<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>The following table describes the fields that are available on the <bpt id="p1">**</bpt>Italian sales tax book sections<ept id="p1">**</ept> page.</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Field</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Sales tax book</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Select one of the existing sales tax books that the sales tax book section is attached to.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Sales tax book section</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Enter the ID of sales tax book section.</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Name</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Enter a description of the sales tax book section.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>Number sequence code</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Select the number sequence code for the sales tax book section.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>The number sequence code that you select depends on the type of sales tax book that the sales tax book section is attached to:</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>For a sales tax book of the <bpt id="p1">&lt;strong&gt;</bpt>Purchase<ept id="p1">&lt;/strong&gt;</ept> type: Select number sequence codes that are defined for purchase invoice vouchers or purchase credit note vouchers on the <bpt id="p2">&lt;strong&gt;</bpt>Accounts payable parameters<ept id="p2">&lt;/strong&gt;</ept> page, or number sequence codes that are used on the <bpt id="p3">&lt;strong&gt;</bpt>Journal names<ept id="p3">&lt;/strong&gt;</ept> page for vouchers that have the <bpt id="p4">&lt;strong&gt;</bpt>Italian sales tax book<ept id="p4">&lt;/strong&gt;</ept> field set to <bpt id="p5">&lt;strong&gt;</bpt>Purchase<ept id="p5">&lt;/strong&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>For a sales tax book of the <bpt id="p1">&lt;strong&gt;</bpt>Sales<ept id="p1">&lt;/strong&gt;</ept> type: Select number sequence codes that are defined for sales invoice vouchers or sales credit note vouchers or free text invoice vouchers or free text credit note vouchers on the <bpt id="p2">&lt;strong&gt;</bpt>Accounts receivable<ept id="p2">&lt;/strong&gt;</ept> <bpt id="p3">&lt;strong&gt;</bpt>parameters<ept id="p3">&lt;/strong&gt;</ept> page, or number sequence codes that are used on the <bpt id="p4">&lt;strong&gt;</bpt>Journal names<ept id="p4">&lt;/strong&gt;</ept> page for vouchers that have the <bpt id="p5">&lt;strong&gt;</bpt>Italian sales tax book<ept id="p5">&lt;/strong&gt;</ept> field set to <bpt id="p6">&lt;strong&gt;</bpt>Sales<ept id="p6">&lt;/strong&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>For a sales tax book of the <bpt id="p1">&lt;strong&gt;</bpt>Not included<ept id="p1">&lt;/strong&gt;</ept> type: Select any suitable number sequence code.</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Closed to</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Enter the end date of the last closed sales tax settlement period.</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>This field is used to filter data on the sales tax report.</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>Close Italian sales tax book section</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>The closing date of the Italian sales tax book for a tax period.</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>You can't post or reverse an invoice that has a date that is earlier than the closing date of the tax period.</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>This field is updated with the closing date of the tax period.</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">&lt;strong&gt;</bpt>Update<ept id="p1">&lt;/strong&gt;</ept> check box must also be selected on the <bpt id="p2">&lt;strong&gt;</bpt>Sales tax payment<ept id="p2">&lt;/strong&gt;</ept> page.</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>The following button is also available.</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Button</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>Create</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Automatically create all the required sales tax book sections for existing sales tax books of the <bpt id="p1">**</bpt>Sales<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Purchase<ept id="p2">**</ept> types.</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>Sales tax book sections are created for every number sequence that is defined for purchase invoice vouchers or purchase credit note vouchers or sales invoice vouchers or sales credit note vouchers or free text invoice vouchers or free text credit note vouchers on the <bpt id="p1">**</bpt>Accounts payable parameters<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Accounts receivable parameters<ept id="p2">**</ept>, or <bpt id="p3">**</bpt>Project management and accounting parameters<ept id="p3">**</ept> page, and for every number sequence that is used on the <bpt id="p4">**</bpt>Journal names<ept id="p4">**</ept> page for vouchers that have the <bpt id="p5">**</bpt>Italian sales tax book<ept id="p5">**</ept> field set to <bpt id="p6">**</bpt>Purchase<ept id="p6">**</ept> or <bpt id="p7">**</bpt>Sales<ept id="p7">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>Every sales tax book section that is created is automatically attached to the default sales tax book.</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>(The sales tax book must be created before the sales tax book sections.) If several sales tax books of the same sales tax book type (<bpt id="p1">**</bpt>Sales<ept id="p1">**</ept> or <bpt id="p2">**</bpt>Purchase<ept id="p2">**</ept>) exist, the first sales tax book is used by default.</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>However, you can manually change this attachment.</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>If no sales tax book exists, no sales tax book sections are automatically created.</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>Sales tax book status</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>When a new sales tax period is created, sales tax book lines are automatically set up for every sales tax book that exists.</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>If an additional sales tax book is created, lines can be manually created for existing periods that haven't been closed.</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Tax<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Indirect taxes<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Sales tax<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Sales tax settlement periods<ept id="p4">**</ept>, and then click <bpt id="p5">**</bpt>Sales tax book status<ept id="p5">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>The following table describes the tabs on the <bpt id="p1">**</bpt>Sales tax book status<ept id="p1">**</ept> page.</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Tab</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>Overview</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>View the page status of the sales tax books.</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>All the fields are locked for manual updates.</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>General</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>View the same information that appears on the <bpt id="p1">**</bpt>Overview<ept id="p1">**</ept> tab, but only for the selected sales tax book.</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>The following table describes the fields that are available.</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>Field</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>Sales tax book</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>Select the sales tax book ID that you set up on the <bpt id="p1">**</bpt>Italian sales tax books<ept id="p1">**</ept> page.</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>Name</source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>Enter the name of the tax book.</source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>First page number</source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>The first page number that will be used on the final sales tax report for this sales tax period.</source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>Changed to</source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>The page number that is specified in the <bpt id="p1">**</bpt>Change first page number<ept id="p1">**</ept> dialog box.</source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>Last page number</source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>The last page number that will be used on the final sales tax report for this sales tax period.</source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>Settlement period</source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>The settlement period that is used in the sales tax book.</source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>From date</source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>The start date for the settlement period.</source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>To date</source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>The end date for the settlement period.</source>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>The following button is also available.</source>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>Button</source>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>Change first page number</source>
+        </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>Open the <bpt id="p1">**</bpt>Change first page number<ept id="p1">**</ept> dialog box, where you can change the first page number that will be used for the current open settlement period.</source>
+        </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>Change first page number dialog box</source>
+        </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>Use the <bpt id="p1">**</bpt>Change first page number<ept id="p1">**</ept> dialog box to change the number of the first page on the final sales tax report for this sales tax settlement period.</source>
+        </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>The page number then appears in the <bpt id="p1">**</bpt>Changed to<ept id="p1">**</ept> column on the <bpt id="p2">**</bpt>Sales tax book status<ept id="p2">**</ept> page and is used as the first page number of the final sales tax report that is printed for the current tax period.</source>
+        </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>The following table describes the fields that are available in the <bpt id="p1">**</bpt>Change first page number<ept id="p1">**</ept> dialog box.</source>
+        </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>Field</source>
+        </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>First page number</source>
+        </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>The current first page number for the selected sales tax book.</source>
+        </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>Changed to</source>
+        </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>Enter the new first page number to use on the final sales tax report.</source>
+        </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>Using sales tax books</source>
+        </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>When the setup is completed, the sales tax book sections appear on the <bpt id="p1">**</bpt>Number sequences<ept id="p1">**</ept> tab of the following pages:</source>
+        </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>Accounts receivable parameters</source>
+        </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>Accounts payable parameters</source>
+        </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>Project management and accounting parameters</source>
+        </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>Voucher numbers that are assigned during posting must be sequentially ordered by posting date, and the sales tax transactions that use the same number sequence code must be posted in order.</source>
+        </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>If the voucher numbers aren't sequentially ordered, the user receives an error message.</source>
+        </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>In addition, posting is interrupted if a sales tax transaction isn't assigned to any sales tax book section when the user updates an invoice.</source>
+        </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>Whenever a voucher is posted through a sales tax book section, the identifiers of the related sales tax book and sales tax book section are saved in the tax transactions.</source>
+        </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>(Click <bpt id="p1">**</bpt>Tax<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Sales tax inquiries<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Posted sales tax<ept id="p3">**</ept>, and then click the <bpt id="p4">**</bpt>Posting<ept id="p4">**</ept> tab.) This data can then be used during further sales tax reporting.</source>
+        </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>Italian sales tax books are used for filtering, grouping, and sorting on the report that is accessed at <bpt id="p1">**</bpt>Tax<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Declarations<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Sales tax<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Sales Tax (Italy)<ept id="p4">**</ept>.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

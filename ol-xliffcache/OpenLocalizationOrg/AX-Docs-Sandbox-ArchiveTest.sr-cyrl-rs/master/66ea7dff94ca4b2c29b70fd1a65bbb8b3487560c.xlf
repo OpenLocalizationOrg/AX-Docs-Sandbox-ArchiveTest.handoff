@@ -1,0 +1,270 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">66ea7dff94ca4b2c29b70fd1a65bbb8b3487560c</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\dev-tools\programming-language-support.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">7348dff7290a98c62ca1bf503812fb9136fda7f1</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">069e5cb5a978347e9bea048391704fd89734445b</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Programming language support</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic reviews the changes made to the compiler for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Programming language support</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This topic reviews the changes made to the compiler for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>The X++ compiler has been rewritten.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>No backward-incompatible changes have been introduced to X++ except where required by structural changes to the product.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>A few language enhancements have been added.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>A new X++ best practice tool has also been implemented, which allows the addition of user-defined custom rules.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>No more pcode, everything is in .NET Framework CIL</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Through Microsoft Dynamics AX 2012, X++ source code was compiled into p-code, which was understood by the interpreter at run time.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Optionally, you could then compile the p-code into Microsoft .NET CIL (Common Intermediate Language).</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>CIL is what the .NET compilers for C<ph id="ph1">\#</ph> and Visual Basic generate.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>However, X++ CIL code was usable only in limited cases, mainly for code executed in services and batch jobs.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>The new X++ compiler generates CIL only.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>There is no more p-code.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>The following tools that worked with p-code are now obsolete and have been removed from Dynamics AX and replaced by .NET tools:</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The X++ compiler that generated p-code.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>The special compiler that input p-code and generated .NET CIL.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>The run time interpreter of p-code including its deterministic garbage collector.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>The Dynamics AX Debugger.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The Dynamics AX Code Profiler, which helped find performance bottlenecks.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>The AX .NET Business Connector for external applications that interoperated with Dynamics AX.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>There are important benefits to X++ code running exclusively as .NET CIL, including:</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>CIL runs much faster in most scenarios.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>In cases where there are many method calls, and a lot of algorithmic content (as opposed to database access), you can expect significant performance improvements.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>It's easier to write application logic in other managed languages.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>There's no longer any need for the AX .NET Business Connector or managed proxies, because the assemblies can be consumed directly.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>The preferred way of consuming business logic externally is by using services.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>CIL can efficiently reference classes that are available in other .NET assembly DLL files, without the run time reflection-based overhead that burdened the p-code interpreter.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>CIL can be operated on by the many .NET tools.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Unit of compilation</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Previous versions of Microsoft Dynamics AX could compile X++ at the level of an individual method.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Thus if a compilation of a class found an error in one method of the class, the methods that did compile correctly were still runnable.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>In the standard compilation unit now is the same as for other .NET languages such as C<ph id="ph1">\#</ph>.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>If any method in a model element (class, form, query etc.) fails to compile, the whole compilation fails.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Enhancements to X++</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>X++ is now a first-class citizen in the .NET world.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Therefore we are adding to X++ several constructs that are available in C<ph id="ph1">\#</ph> and other mainstream .NET languages.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>The changes are generally non-intrusive.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>In fact, very few changes have been made to the syntax and semantics of existing X++ code.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Most of these additions are in the following list:</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`finally`</ph> keyword is now available to follow the <ph id="ph2">`try`</ph> and <ph id="ph3">`catch`</ph> keywords.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>The semantics are identical to the semantics in C<ph id="ph1">\#</ph>.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>The statements provided in the finally clause are executed irrespective of whether the try block threw any exceptions.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`using`</ph> keyword has been added as shorthand for referencing .NET namespaces.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>The following code example illustrates two ways of utilizing the using keyword to reference namespaces:</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>You can now initialize a class's field in the field's declaration statement.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>This is illustrated twice in the previous code example.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>You can declare variables in smaller scopes, not just at the start of methods.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`var`</ph> keyword is available as a shortcut that allows the compiler to infer the type of the declared variable.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>A class's fields can now be static.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>In previous versions, only instance fields were allowed.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>A class can now have one static constructor.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>In previous versions, only instance constructors were available.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>The following X++ code example shows the syntax for a static constructor, through the new keyword typenew.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>An attribute decoration, such as on a class or a method, can now omit the suffix of the attribute name if the suffix is <ph id="ph1">`Attribute`</ph>.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>So the X++ joins the C<ph id="ph1">\#</ph> in allowing <ph id="ph2">`[MyFavorite]`</ph> instead of requiring <ph id="ph3">`[MyFavoriteAttribute]`</ph>.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>A delegate can now be defined in a table, form, or query, and not just in a class.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Attributes are now applied to the handlers of delegates and methods, to map the handlers to those targets.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Classes can now be nested in X++ source code.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Nested classes are available only inside forms (such as a class that extends FormRun) to represent controls, data sources, or data fields.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Backwardincompatible changes to X++</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>There are a few changes to X++ that require corresponding changes in legacy custom X++ source code.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Most of these changes are in the following list:</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>The following keywords are no longer part of the X++ language, and their use causes compilation errors:</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>In legacy X++, it was possible to designate a method to run either on the client or the server.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>This is no longer possible.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>All compiled X++ code is executed as .NET CIL on the server.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>There is no longer any X++ code that is evaluated at the client site or in the browser, therefore, the two keywords, <bpt id="p1">*</bpt>client<ept id="p1">*</ept> and <bpt id="p2">*</bpt>server<ept id="p2">*</ept>, are now ignored.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Their use doesn't cause a compile error, but they should not be used in any new X++ code.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>In Microsoft Dynamics AX 2012, there were a few areas where X++ behaved differently when compiled to p-code versus CIL.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>In Dynamics 365 for Finance and Operations, all these areas behave as they did in CIL in Microsoft Dynamics AX 2012.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>The significant behavioral differences between X++ p-code versus X+ as CIL were as follows:</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>In CIL, the <ph id="ph1">`real `</ph>data type is represented as <ph id="ph2">`System.Decimal`</ph>.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>This means the range and precision for each <ph id="ph1">`real`</ph> is different than it was under p-code.</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>This change was already in effect in Microsoft Dynamics AX 2012 when .NET CIL was run.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>An assignment of one entire array to another was performed in value in p-code mode, but it's performed by reference in CIL mode.</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>CIL helper methods such as <ph id="ph1">`Global::runClassMethodIL`</ph> have been removed, since they're no longer relevant.</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>There is no concept of a job, in the sense of <bpt id="p1">**</bpt>AOT<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Jobs<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>MyJob<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>To quickly and easily run an X++ method, you can still add in a <ph id="ph1">`static Main`</ph> method to a class, and then set the class as the startup object form for the project in Microsoft Visual Studio.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>When the project is run, the <ph id="ph1">`Main`</ph> method will be run.</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>See also</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Dynamics AX LINQ Provider for use in C#<ept id="p1">](linq-provider-c.md)</ept></source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Technical Concepts Guide<ept id="p1">](developer-home-page.md)</ept></source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

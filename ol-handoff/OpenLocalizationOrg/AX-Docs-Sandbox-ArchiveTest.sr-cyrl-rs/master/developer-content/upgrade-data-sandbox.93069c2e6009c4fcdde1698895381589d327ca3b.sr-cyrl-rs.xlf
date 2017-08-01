@@ -1,0 +1,366 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">e511b57b299d782fc0bdd77490cdc74c60814fb9</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\migration-upgrade\upgrade-data-sandbox.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">01c06659dca881e51bf5089795229d9a5aff1a32</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">e546397eb85ec267d1a9c6c63c1e6f23872b4b01</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Data upgrade in a sandbox environment</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic explains how to perform a data upgrade from AX 2012 to Dynamics 365 for Finance and Operations in a sandbox environment.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Data upgrade in a sandbox environment</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>The output of this task is an upgraded database that you can use in a sandbox environment.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>A sandbox environment is a Tier 2 or higher environment where business users and functional team members can validate application functionality.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This functionality includes customizations and the data that was brought forward from Microsoft Dynamics AX 2012.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>We strongly recommend that you run the data upgrade process in a development environment before you run it in a shared sandbox environment, because this approach will help reduce the overall time that is required for a successful data upgrade.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Data upgrade in a development environment<ept id="p1">](prepare-data-upgrade.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Overview of the sandbox data upgrade process</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>A sandbox environment for the purposes of this article is a Tier 2 or higher non-production environment.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Before you start to upgrade data in a sandbox environment, you will have already upgraded data in a development environment, as explained in <bpt id="p1">[</bpt>Data upgrade in a development environment<ept id="p1">](prepare-data-upgrade.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>The two processes are very similar.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The main difference is that a sandbox environment uses Microsoft Azure SQL Database for data storage, whereas a development environment uses Microsoft SQL Server.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>This technical difference in the database layer requires that you  modify the data upgrade procedure slightly in a sandbox environment, because a backup from the AX 2012 database instance can't just be restored to SQL Database.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Sandbox data upgrade process</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Here are the high-level steps in the upgrade process.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Create a copy of the AX 2012 database.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>We strongly recommend that you use a copy, because you must delete some objects in the copy that will be exported.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Export the copied database to a bacpac file by using a free SQL Server tool that is named SQLPackage.exe.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>This tool provides a special type of database backup that can be imported into SQL Database.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Upload the bacpac file to Azure storage.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Download the bacpac file to the Application Object Server (AOS) machine in the sandbox environment, and then import it by using SQLPackage.exe.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>You must then run a script against the imported database to reset the SQL database users.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Run the MajorVersionDataUpgrade.zip package to run the data upgrade against the imported database.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Create a copy of the AX 2012 database</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>You must create a copy of the AX 2012 database that you're upgrading, because you must delete some objects from the database.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>These objects include any Microsoft Windows authentication users.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>These changes make the modified database unusable for AX 2012.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>During this step, you will create a copy of the database and delete these objects.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>This step must be done by the database administrator (DBA) or a person who has similar knowledge and experience.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>To create a database copy, make a backup of the original database, and restore it under a new name.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Make sure that enough space is available for both databases.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>You can create the copy on a different server.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>The version of the SQL Server instance that runs the database isn't important.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Here is an example of the code that creates a database copy.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>You must modify this example to reflect your specific database names.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>After the copy is created, run the following Transact-SQL (T-SQL) script against it.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Export the copied database to a bacpac file</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Export the copied database to a bacpac file by using the SQLPackage.exe tool.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>This step should be done by the DBA or a team member who has equivalent knowledge.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>It's very important that you install the latest version of SQL Server Management Studio before you start this step.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Although SQLPackage is present in earlier versions of Management Studio, it won't work correctly for this step unless you first install the latest version.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>This step is important, because the export will have to be done again during the downtime before go-live.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Here are some tips:</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>The bacpac process is very I/O and CPU intensive.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Therefore, run the export on a high-powered machine.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>SQLPackage should be run locally on the machine that hosts the database.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Don't run SQLPackage on a local laptop that you connect to the database machine, because this process is also network intensive.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Next, open a <bpt id="p1">**</bpt>Command Prompt<ept id="p1">**</ept> window as an administrator, and run the following commands.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Here is an explanation of the parameters:</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>ssn<ept id="p1">**</ept> (source server name) – The name of the SQL Server to export from.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>For our process, this parameter should always be set to <bpt id="p1">**</bpt>localhost<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>sdn<ept id="p1">**</ept> (source database name) – The name of the database to export.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>tf<ept id="p1">**</ept> (target file) – The path and name of the file to export to.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>The folder should already exist, but the file will be created by the process.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>/p:CommandTimeout<ept id="p1">**</ept> – The per-query timeout value.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>This parameter enables larger tables to be exported without hitting a timeout.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Upload the bacpac file to Azure storage</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>The bacpac file you have created will need to be copied to the AOS machine in your Azure hosted sandbox environment.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>There are several reasons for this:</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>The Azure SQL Database instance used by your Tier 2 (or higher) sandbox environment has firewall rules preventing access from outside of the environment itself.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Performance of bacpac import is multiple times faster when importing from a machine within the same Azure datacenter as the Azure SQL database instance.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>You can choose how you would like to move the bacpac file to the AOS machine - you may have your own SFTP or other secure file transfer service.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>We recommend to use our Azure storage, which would require that you acquire your own Azure storage account on your own Azure subscription (this is not provided within the Dynamics subscription itself).</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>There are free tools to help you to move files between Azure storage, from a command line you can use <bpt id="p1">[</bpt>Azcopy<ept id="p1">](https://docs.microsoft.com/en-us/azure/storage/storage-use-azcopy)</ept>, or for a GUI experience you can use <bpt id="p2">[</bpt>Microsoft Azure storage explorer<ept id="p2">](http://storageexplorer.com/)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Use one of these tools to first upload the backup from your on-prem environment to Azure storage and then on your download it on your development environment.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Import the bacpac file into SQL Database</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>During this step, you will import the exported bacpac file to the SQL Database instance that your sandbox environment uses.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>You must first install the latest version of Management Studio on your sandbox AOS machine.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>You will then import the file by using the SQLPackage.exe tool.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>You will perform these tasks directly on the AOS machine in your sandbox environment, because there are firewall rules that restrict access to the SQL Database instance.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>However, by using the AOS machine, you can gain access.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>As for the export step, you must have the latest version of Management Studio before you start the import.</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>This step won't work if you have an older version.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>For performance reasons, we recommend that you put the bacpac file on drive D on the AOS machine.</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>On Azure virtual machines (VMs), drive D is a physical disk that typically has higher performance than other available disks.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Open a <bpt id="p1">**</bpt>Command Prompt<ept id="p1">**</ept> window as an administrator, and run the following commands.</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Here is an explanation of the parameters:</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>tsn<ept id="p1">**</ept> (target server name) – The name of the SQL Azure server to import to.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>The name can be found in LCS.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Suffix it with <bpt id="p1">**</bpt>.database.windows.net<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>tdn<ept id="p1">**</ept> (target database name) – The name of the database to import to.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>The database should not already exist.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>The import process will create it.</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>sf<ept id="p1">**</ept> (source file) – The path and name of the file to import from.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>tp<ept id="p1">**</ept> (target password) – The SQL password for the target SQL Database instance.</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>tu<ept id="p1">**</ept> (target user) – The SQL user name for the target SQL Database instance.</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>We recommend that you use <bpt id="p1">**</bpt>sqladmin<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>You can retrieve the password for this user from your LCS project.</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>/p:CommandTimeout<ept id="p1">**</ept> – The per-query timeout value.</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>This parameter enables larger tables to be exported without hitting a timeout.</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>/p:DatabaseServiceObjective<ept id="p1">**</ept> – The service tier level of the database that is created.</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>You can check the value for the existing database by using Management Studio.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>Right-click the database, and then select <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>After you run the commands, you will receive the following warning.</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>You can safely ignore it.</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Sandbox error</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>Run a script to update the database</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Run the following script against the imported database.</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>The script performs the following actions:</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>Recreate database users.</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Set the correct performance parameters.</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>Enable the SQL Query Store feature.</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>CREATE USER axdeployuser FROM LOGIN axdeployuser EXEC sp_addrolemember 'db_owner', 'axdeployuser'</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>CREATE USER axdbadmin WITH PASSWORD = '<ph id="ph1">&lt;password from lcs&gt;</ph>' EXEC sp_addrolemember 'db_owner', 'axdbadmin'</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>CREATE USER axruntimeuser WITH PASSWORD = '<ph id="ph1">&lt;password from lcs&gt;</ph>' EXEC sp_addrolemember 'db_datareader', 'axruntimeuser' EXEC sp_addrolemember 'db_datawriter', 'axruntimeuser'</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>CREATE USER axmrruntimeuser WITH PASSWORD = '<ph id="ph1">&lt;password from lcs&gt;</ph>' EXEC sp_addrolemember 'ReportingIntegrationUser', 'axmrruntimeuser' EXEC sp_addrolemember 'db_datareader', 'axmrruntimeuser' EXEC sp_addrolemember 'db_datawriter', 'axmrruntimeuser'</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>CREATE USER axretailruntimeuser WITH PASSWORD = '<ph id="ph1">&lt;password from lcs&gt;</ph>' EXEC sp_addrolemember 'UsersRole', 'axretailruntimeuser' EXEC sp_addrolemember 'ReportUsersRole', 'axretailruntimeuser'</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>CREATE USER axretaildatasyncuser WITH PASSWORD = '<ph id="ph1">&lt;password from lcs&gt;</ph>' EXEC sp_addrolemember 'DataSyncUsersRole', 'axretaildatasyncuser'</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>ALTER DATABASE SCOPED CONFIGURATION  SET MAXDOP=2 ALTER DATABASE SCOPED CONFIGURATION  SET LEGACY_CARDINALITY_ESTIMATION=ON ALTER DATABASE SCOPED CONFIGURATION  SET PARAMETER_SNIFFING= ON ALTER DATABASE SCOPED CONFIGURATION  SET QUERY_OPTIMIZER_HOTFIXES=OFF ALTER DATABASE <ph id="ph1">&lt;imported database name&gt;</ph> SET COMPATIBILITY_LEVEL = 130; ALTER DATABASE <ph id="ph2">&lt;imported database name&gt;</ph> SET QUERY_STORE = ON;</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>Run the MajorVersionDataUpgradeWithRetail.zip package</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>Run the data upgrade deployable package, which is called MajorVersionDataUpgradeWithRetail.zip as described in <bpt id="p1">[</bpt>Upgrade data in development, demo, or sandbox environments<ept id="p1">](upgrade-data-to-latest-update.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>You will find the MajorVersionDataUpgradeWithRetail.zip in the same location described in the article for MinorVersionDataUpgrade.zip.</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>Upgrade a copy of the database in a development environment</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>It's useful to upgrade the same database in a development environment.</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>If you have a copy of the database available for development environments, it will be much easier to investigate bugs that are found in the upgraded sandbox environment.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

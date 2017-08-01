@@ -1,0 +1,783 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">91379ebe19fce8b33e16b465a57f2f84dcb1cd8e</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\dev-ref\xpp-macros.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">110b018974eebbb4de04a81d846e08c8f0e88350</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">be6281c3f6f70adcbb26b9b2e63a7e852644dc3c</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Macros in X++</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic describes how to create and use macros in X++.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Macros in X++</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This topic describes how to create and use macros in X++.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Precompiler directives are processed before the the code is compiler.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>The directives declare and handle macros and their values.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>The directives are removed by the precompiler so that the X++ compiler never encounters them.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>The X++ compiler only sees the sequence of characters written into the X++ code by the directives.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\#</ph>define and <ph id="ph2">\#</ph>if directives</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>All precompiler directives and symbols begin with the <ph id="ph1">\#</ph> character.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>A macro can be defined at any point in the code.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>The variable can have a value that is a sequence of characters, but it is not required to have a value.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt><ph id="ph1">\#</ph>define<ept id="p1">**</ept> directive tells the precompiler to create the macro variable, including an optional value.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt><ph id="ph1">\#</ph>if<ept id="p1">**</ept> directive tests whether the variable is defined, and optionally, whether it has a specific value.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>The X++ precompiler directives, the macro names that they define, and the <bpt id="p1">**</bpt><ph id="ph1">\#</ph>if<ept id="p1">**</ept> directive value tests are all case-insensitive.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>However, it is a best practice to begin macro names with an uppercase letter.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Code example</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>In the following code sample, a macro named <bpt id="p1">**</bpt>MyMacro<ept id="p1">**</ept> is defined.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>It is not given a value in the <bpt id="p1">**</bpt><ph id="ph1">\#</ph>define.MyMacro<ept id="p1">**</ept> definition line.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Therefore it behaves as if the value is a zero-length sequence of characters.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt><ph id="ph1">\#</ph>if.MyMacro<ept id="p1">**</ept> statement tests whether <bpt id="p2">**</bpt>MyMacro<ept id="p2">**</ept> is defined.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Because <bpt id="p1">**</bpt>MyMacro<ept id="p1">**</ept> is defined, the lines of code before the first <bpt id="p2">**</bpt><ph id="ph1">\#</ph>endif<ept id="p2">**</ept> are included in the X++ code at the test location.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Near the end of the example there is an <bpt id="p1">**</bpt><ph id="ph1">\#</ph>ifnot.MyMacro<ept id="p1">**</ept> test.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Because <bpt id="p1">**</bpt>MyMacro<ept id="p1">**</ept> is defined, that test is false and no lines are written into the X++ code.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>After the precompile phase ends for this method, the <bpt id="p1">**</bpt>MyMacro<ept id="p1">**</ept> definition goes out of scope and is no longer known to the system.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Precompile and Compile Error Messages</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>When you are developing code that contains macros, you must understand whether an error message is generated during the precompile or the compile phase.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>The two key words to look for are:</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Lexical – This indicates a precompile error.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Syntax – This indicates a compile error.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>The following code example has a lexical error caused by the first closing parenthesis, which marks the end of the directive.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Therefore the precompiler is confused by the last two characters, "";)".</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>The following code example has a syntax error caused by using the non-existent <bpt id="p1">**</bpt><ph id="ph1">++++</ph><ept id="p1">**</ept> operator.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>The X++ compiler encounters this operator after <bpt id="p1">**</bpt><ph id="ph1">\#</ph>MyMacro2<ept id="p1">**</ept> is replaced by the macro value.The macro definition is correct even though its value is not accepted X++ syntax.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\#</ph>undef directive</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>You can use the <bpt id="p1">**</bpt><ph id="ph1">\#</ph>undef<ept id="p1">**</ept> directive to remove a macro definition that exists from a previous <bpt id="p2">**</bpt><ph id="ph2">\#</ph>define.<ept id="p2">**</ept></source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>After a macro name has been created by <bpt id="p1">**</bpt><ph id="ph1">\#</ph>define<ept id="p1">**</ept> and then removed by <bpt id="p2">**</bpt><ph id="ph2">\#</ph>undef,<ept id="p2">**</ept> the macro can be created again by another <bpt id="p3">**</bpt><ph id="ph3">\#</ph>define.<ept id="p3">**</ept></source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt><ph id="ph1">\#</ph>undef<ept id="p1">**</ept> has no effect on macros that are created by the <bpt id="p2">**</bpt><ph id="ph2">\#</ph>localmacro<ept id="p2">**</ept> directive.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>In the following code sample, the macro <bpt id="p1">**</bpt>MyMacro<ept id="p1">**</ept> is undefined by using the <ph id="ph1">\#</ph>undef directive.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">\#</ph>undef occurs between the two <ph id="ph2">\#</ph>if tests for its existence.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>The output shows only the first <ph id="ph1">\#</ph>if test was true.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Use a Macro Value</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>You can define a macro name to have a value.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>A macro value is a sequence of characters.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>A macro value is not a string (or <bpt id="p1">**</bpt>str<ept id="p1">**</ept>) in the formal sense of a data type.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>You assign a value to a macro by appending the value enclosed in parentheses at the end of a <ph id="ph1">\#</ph>define directive.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>You can use the macro symbol where you want the value to occur in the X++ code.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>A macro symbol is the name of the macro with the <ph id="ph1">\#</ph> character added as a prefix.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>The following code sample shows a macro symbol <bpt id="p1">**</bpt><ph id="ph1">\#</ph>MyMacro.<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>The symbol is replaced by the value of the macro.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Test a Macro Value</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>You can test a macro to see whether it has a value.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>You can also test to see whether its value is equal to a specific sequence of characters.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>These tests enable you to conditionally include lines of code in your X++ program.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>There is no way you can test whether a defined macro has a value.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>You can only test whether a specific value matches the value of a macro.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>As a best practice, any macro name that you define should always have a value, or it should never have a value.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>When you alternate between these modes, your code becomes difficult to understand.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>For macros that have a value, you can vary the value when you see fit.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>In the following code sample, two <bpt id="p1">**</bpt><ph id="ph1">\#</ph>if<ept id="p1">**</ept> tests are run to determine whether the macro <bpt id="p2">**</bpt>MyIntMacro<ept id="p2">**</ept> exists.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt><ph id="ph1">\#</ph>if.MyIntMacro()<ept id="p1">**</ept> test is true.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>This syntax behaves the same as <bpt id="p1">**</bpt><ph id="ph1">\#</ph>if.MyIntMacro.<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>The following code sample shows the <bpt id="p1">**</bpt><ph id="ph1">\#</ph>if.DebugMacro(heavy)<ept id="p1">**</ept> directive that tests the value of the <bpt id="p2">**</bpt>DebugMacro<ept id="p2">**</ept> macro.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>If the value is the five character sequence <bpt id="p1">**</bpt>heavy<ept id="p1">**</ept>, then the test is true.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\#</ph>defInc and <ph id="ph2">\#</ph>defDec directives</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt><ph id="ph1">\#</ph>defInc<ept id="p1">**</ept> and <bpt id="p2">**</bpt><ph id="ph2">\#</ph>defDec<ept id="p2">**</ept> are the only directives that interpret the value of a macro and they apply apply only to macros that have a value that can be converted to the formal <bpt id="p3">**</bpt>int<ept id="p3">**</ept> type.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>The value can only contain numerals.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>The only non-numeric character allowed is a leading negative sign (-).</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>The integer value is treated as an X++ <bpt id="p1">**</bpt>int<ept id="p1">**</ept>, not as an <bpt id="p2">**</bpt>int64<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>For macro names that are used by the <bpt id="p1">**</bpt><ph id="ph1">\#</ph>defInc<ept id="p1">**</ept> directive, it is important that the <bpt id="p2">**</bpt><ph id="ph2">\#</ph>define<ept id="p2">**</ept> directive that creates the macro not reside in a class declaration.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>The behavior of <bpt id="p1">**</bpt><ph id="ph1">\#</ph>defInc<ept id="p1">**</ept> in these cases is unpredictable.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Instead, such macros should be defined in only a method.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>We recommend that the <bpt id="p1">**</bpt><ph id="ph1">\#</ph>defInc<ept id="p1">**</ept> and <bpt id="p2">**</bpt><ph id="ph2">\#</ph>defDec<ept id="p2">**</ept> directives only be used for macros that have an integer value.</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>The precompiler follows special rules for <bpt id="p1">**</bpt><ph id="ph1">\#</ph>defInc<ept id="p1">**</ept> when the macro value is not an integer, or when the value is unusual or extreme.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>The following table lists the values that <bpt id="p1">**</bpt><ph id="ph1">\#</ph>defInc<ept id="p1">**</ept> converts to zero (0) and then increments.</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>When a value is converted to 0 by <bpt id="p1">**</bpt><ph id="ph1">\#</ph>defInc,<ept id="p1">**</ept> the original value cannot be recovered, not even by <bpt id="p2">**</bpt><ph id="ph2">\#</ph>defDec.<ept id="p2">**</ept></source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Macro value</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Behavior</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>(+55)</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>The positive sign (+) prefix makes the precompiler treat this as a non-numeric string.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>The precompiler treats all non-numeric strings as 0 when it handles a <bpt id="p1">**</bpt><ph id="ph1">\#</ph>defInc<ept id="p1">**</ept> (or <bpt id="p2">**</bpt><ph id="ph2">\#</ph>defDec)<ept id="p2">**</ept> directive.</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>("3")</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Integers enclosed in quotation marks are treated as 0.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>The quotation marks are discarded, and these changes persist.</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>( )</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>A string of spaces is treated as 0, and then incremented.</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>()</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>A zero-length string is treated as 0, and then incremented, when the value is enclosed in parentheses, as in <bpt id="p1">**</bpt><ph id="ph1">\#</ph>define.MyMac().<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>(Random string.)</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Any non-numeric string of characters is treated as 0, and then incremented.</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>(0x12)</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Hexadecimal numbers are treated as non-numeric strings.</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>Therefore they are converted to 0, and then incremented.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>(-44)</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>Negative numbers are acceptable, including integers without the negative sign (-).</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>(2147483647)</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>The maximum positive <bpt id="p1">**</bpt>int<ept id="p1">**</ept> value is changed to the minimum negative <bpt id="p2">**</bpt>int<ept id="p2">**</ept> value by <ph id="ph1">\#</ph>defInc.</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>(999888777666555)</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Any large number, beyond the capacity of <bpt id="p1">**</bpt>int<ept id="p1">**</ept> and <bpt id="p2">**</bpt>int64<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>This is treated as the maximum positive <bpt id="p1">**</bpt>int<ept id="p1">**</ept> value.</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>(5.8)</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Real numbers are truncated by <ph id="ph1">\#</ph>defDec (and <ph id="ph2">\#</ph>defInc).</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>Subsequent symbol substitution shows that the truncation persists.</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>When no value and no parentheses are provided for the directive <ph id="ph1">\#</ph>define.MyValuelessMacro, the precompiler rejects use of the directive <ph id="ph2">\#</ph>defInc.MyValuelessMacro.</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>Code example</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>In the following code sample, the initial value of the macro <bpt id="p1">**</bpt>CounterMacroA<ept id="p1">**</ept> is a string that can be converted into an integer.</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>The sample shows how the <bpt id="p1">**</bpt><ph id="ph1">\#</ph>defInc<ept id="p1">**</ept> and <bpt id="p2">**</bpt><ph id="ph2">\#</ph>defDec<ept id="p2">**</ept> directives can be used for this macro name.</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\#</ph>globaldefine directive</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt><ph id="ph1">\#</ph>globaldefine<ept id="p1">**</ept> directive is similar to the <bpt id="p2">**</bpt><ph id="ph2">\#</ph>define<ept id="p2">**</ept> directive.</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>The difference is that <bpt id="p1">**</bpt><ph id="ph1">\#</ph>define<ept id="p1">**</ept> directives generally take precedence over <bpt id="p2">**</bpt><ph id="ph2">\#</ph>globalmacro<ept id="p2">**</ept> directives.</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>This is true regardless of which directive occurs first in the X++ code.</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">**</bpt><ph id="ph1">\#</ph>globaldefine<ept id="p1">**</ept> never overwrites a <bpt id="p2">**</bpt><ph id="ph2">\#</ph>define<ept id="p2">**</ept> directive that has both a macro name and a value.</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">**</bpt><ph id="ph1">\#</ph>globaldefine<ept id="p1">**</ept> can overwrite another **<ph id="ph2">\#</ph>globaldefine.</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>**A <bpt id="p1">**</bpt><ph id="ph1">\#</ph>define<ept id="p1">**</ept> directive that has only a name does not overwrite a <ph id="ph2">\#</ph>globalmacro that has both a name and a value.</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>It is recommended that you use <bpt id="p1">**</bpt><ph id="ph1">\#</ph>define,<ept id="p1">**</ept> and that you do not use <bpt id="p2">**</bpt><ph id="ph2">\#</ph>globaldefine.<ept id="p2">**</ept></source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>Use of <bpt id="p1">**</bpt><ph id="ph1">\#</ph>globaldefine<ept id="p1">**</ept> can create uncertainty that makes code difficult to maintain.</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>The exact semantics of <bpt id="p1">**</bpt><ph id="ph1">\#</ph>globaldefine<ept id="p1">**</ept> cannot be achieved through <bpt id="p2">**</bpt><ph id="ph2">\#</ph>if<ept id="p2">**</ept> test directives.</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>By using <bpt id="p1">**</bpt><ph id="ph1">\#</ph>if<ept id="p1">**</ept> tests you can avoid overwriting a <bpt id="p2">**</bpt><ph id="ph2">\#</ph>define<ept id="p2">**</ept> and a <bpt id="p3">**</bpt><ph id="ph3">\#</ph>globaldefine.<ept id="p3">**</ept></source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>But <bpt id="p1">**</bpt><ph id="ph1">\#</ph>if<ept id="p1">**</ept> tests cannot distinguish between <bpt id="p2">**</bpt><ph id="ph2">\#</ph>define<ept id="p2">**</ept> and <bpt id="p3">**</bpt><ph id="ph3">\#</ph>globaldefine<ept id="p3">**</ept> macros.</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>The following code sample is the closest you can come to achieving the <bpt id="p1">**</bpt><ph id="ph1">\#</ph>globaldefine<ept id="p1">**</ept> semantic with other directives such as <bpt id="p2">**</bpt><ph id="ph2">\#</ph>if.<ept id="p2">**</ept></source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>Code example</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>The following code sample shows a difference in the behavior of <bpt id="p1">**</bpt><ph id="ph1">\#</ph>define<ept id="p1">**</ept> and <bpt id="p2">**</bpt><ph id="ph2">\#</ph>globaldefine.<ept id="p2">**</ept></source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>Following the code sample is a table explaining the conclusions from the output.</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>The primary test case in the code sample is labeled <bpt id="p1">**</bpt>12<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>Macro parameters</source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>You can define macro values to include parameter symbols.</source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>The first parameter symbol is %1, the second is %2, and so on.</source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>You pass values for the parameters when you reference the macro symbol name for expansion.</source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>Macro parameter values are character sequences of no formal type, and they are comma delimited.</source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>There is no way to pass in a comma as part of a parameter value.</source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>The number of parameters passed can be less than, greater than, or equal to the number of parameters that the macro value is designed to receive.</source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>The system tolerates mismatches in the number of parameters passed.</source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>If fewer parameters are passed than the macro expects, each omitted parameter is treated as a zero-length sequence of characters.</source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>In the following code sample, <bpt id="p1">**</bpt>MyMacro<ept id="p1">**</ept> is defined to have a value that contains parameters.</source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>Macro substitution symbols are given with parameter values in parentheses.</source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\#</ph>localmacro and <ph id="ph2">\#</ph>globalmacro directives</source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt><ph id="ph1">\#</ph>localmacro<ept id="p1">**</ept> directive is a good choice when you want a macro to have a value that is several lines long, or when your macro value contains a closing parenthesis.</source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt><ph id="ph1">\#</ph>localmacro<ept id="p1">**</ept> directive is a good choice when you want your macro value to be lines of X++ or SQL code.</source>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt><ph id="ph1">\#</ph>localmacro<ept id="p1">**</ept> directive can be written as <bpt id="p2">**</bpt><ph id="ph2">\#</ph>macro.<ept id="p2">**</ept></source>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>However, <bpt id="p1">**</bpt><ph id="ph1">\#</ph>localmacro<ept id="p1">**</ept> is the recommended term.</source>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>Both macros have the same behavior.</source>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>By using the <bpt id="p1">**</bpt><ph id="ph1">\#</ph>if<ept id="p1">**</ept> directive, you can test whether a macro name is declared with the <bpt id="p2">**</bpt><ph id="ph2">\#</ph>define<ept id="p2">**</ept> directive.</source>
+        </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>However, you cannot test whether the macro name is declared with the <bpt id="p1">**</bpt><ph id="ph1">\#</ph>localmacro<ept id="p1">**</ept> directive.</source>
+        </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>Only macros declared by using the <bpt id="p1">**</bpt><ph id="ph1">\#</ph>define<ept id="p1">**</ept> directive are affected by the <bpt id="p2">**</bpt><ph id="ph2">\#</ph>undef<ept id="p2">**</ept> directive.</source>
+        </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>In a <bpt id="p1">**</bpt><ph id="ph1">\#</ph>define<ept id="p1">**</ept> directive, you can specify a name that is already in scope as a <bpt id="p2">**</bpt><ph id="ph2">\#</ph>localmacro.<ept id="p2">**</ept></source>
+        </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>The effect is to discard the <bpt id="p1">**</bpt><ph id="ph1">\#</ph>localmacro<ept id="p1">**</ept> and create a <bpt id="p2">**</bpt><ph id="ph2">\#</ph>define<ept id="p2">**</ept> macro.</source>
+        </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>This also applies to the opposite sequence, which means that a <bpt id="p1">**</bpt><ph id="ph1">\#</ph>localmacro<ept id="p1">**</ept> can redefine a <bpt id="p2">**</bpt><ph id="ph2">\#</ph>define.<ept id="p2">**</ept></source>
+        </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">**</bpt><ph id="ph1">\#</ph>localmacro<ept id="p1">**</ept> (that has both a macro name and a value) always overrides a previous <bpt id="p2">**</bpt><ph id="ph2">\#</ph>localmacro<ept id="p2">**</ept> that has the same name.</source>
+        </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>However, you cannot always be sure whether the override occurs when you use <bpt id="p1">**</bpt><ph id="ph1">\#</ph>globalmacro.<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>For this reason we recommend that you do not use **<ph id="ph1">\#</ph>globalmacro.</source>
+        </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>**This same problem occurs with <bpt id="p1">**</bpt><ph id="ph1">\#</ph>globaldefine.<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>The main difference between a <bpt id="p1">**</bpt><ph id="ph1">\#</ph>define<ept id="p1">**</ept> macro and a <bpt id="p2">**</bpt><ph id="ph2">\#</ph>localmacro<ept id="p2">**</ept> macro is in how their syntax is terminated.</source>
+        </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>The terminators are as follows:</source>
+        </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt><ph id="ph1">\#</ph>define<ept id="p1">**</ept> – is terminated by– <bpt id="p2">**</bpt>)<ept id="p2">**</ept></source>
+        </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt><ph id="ph1">\#</ph>localmacro<ept id="p1">**</ept> – is terminated by– <bpt id="p2">**</bpt><ph id="ph2">\#</ph>endmacro<ept id="p2">**</ept></source>
+        </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt><ph id="ph1">\#</ph>localmacro<ept id="p1">**</ept> is a better choice for macros with multiple line values.</source>
+        </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>Multiple line values are typically lines of X++ or SQL code.</source>
+        </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>X++ and SQL contain lots of parentheses, and these would prematurely terminate a <ph id="ph1">\#</ph>define.</source>
+        </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>Both <bpt id="p1">**</bpt><ph id="ph1">\#</ph>define<ept id="p1">**</ept> and <bpt id="p2">**</bpt><ph id="ph2">\#</ph>localmacro<ept id="p2">**</ept> can be declared and terminated on either a single line or on subsequent lines.</source>
+        </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>In practice, the <bpt id="p1">**</bpt><ph id="ph1">\#</ph>define<ept id="p1">**</ept> is terminated on the same line that it is declared on.</source>
+        </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>In practice, the <bpt id="p1">**</bpt><ph id="ph1">\#</ph>localmacro<ept id="p1">**</ept> is terminated on a subsequent line.</source>
+        </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>Where both macro names and values are supplied, the <bpt id="p1">**</bpt><ph id="ph1">\#</ph>globalmacro<ept id="p1">**</ept> directive cannot override the <ph id="ph2">\#</ph>define directive.</source>
+        </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>Also, the <bpt id="p1">**</bpt><ph id="ph1">\#</ph>globaldefine<ept id="p1">**</ept> directive cannot override the <bpt id="p2">**</bpt><ph id="ph2">\#</ph>localmacro<ept id="p2">**</ept> directive.</source>
+        </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>Code examples</source>
+        </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>The following code sample shows how to use the <bpt id="p1">**</bpt><ph id="ph1">\#</ph>localmacro<ept id="p1">**</ept> directive.</source>
+        </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>It demonstrates that the <bpt id="p1">**</bpt><ph id="ph1">\#</ph>undef<ept id="p1">**</ept> directive does not affect <bpt id="p2">**</bpt><ph id="ph2">\#</ph>localmacro<ept id="p2">**</ept> macros.</source>
+        </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>It also shows that <ph id="ph1">\#</ph>if tests cannot determine whether a <bpt id="p1">**</bpt><ph id="ph2">\#</ph>localmacro<ept id="p1">**</ept> macro has been defined.</source>
+        </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>The following X++ code sample shows that <bpt id="p1">**</bpt><ph id="ph1">\#</ph>localmacro<ept id="p1">**</ept> overrides a <bpt id="p2">**</bpt><ph id="ph2">\#</ph>globalmacro<ept id="p2">**</ept> of the same macro name, but that <bpt id="p3">**</bpt><ph id="ph3">\#</ph>globalmacro<ept id="p3">**</ept> does not override <bpt id="p4">**</bpt><ph id="ph4">\#</ph>localmacro.<ept id="p4">**</ept></source>
+        </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>Nesting Macro Symbols</source>
+        </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>You can nest precompiler definition directives inside an outer definition directive.</source>
+        </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>The main definition directives are <bpt id="p1">**</bpt><ph id="ph1">\#</ph>define<ept id="p1">**</ept> and **<ph id="ph2">\#</ph>localmacro.</source>
+        </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>**The cases for which this topic provides code samples are as follows:</source>
+        </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>Transitive substitution: A <bpt id="p1">**</bpt><ph id="ph1">\#</ph>define<ept id="p1">**</ept> macro can have the symbol for another macro as its value.</source>
+        </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>Transitive substitution of the symbol occurs in X++ code.</source>
+        </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>No transitive substitution: An <bpt id="p1">**</bpt><ph id="ph1">\#</ph>if<ept id="p1">**</ept> directive test of a macro value does not perform substitutions.</source>
+        </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>Macro within a macro: A <ph id="ph1">\#</ph>define directive can be given inside a <bpt id="p1">**</bpt><ph id="ph2">\#</ph>localmacro<ept id="p1">**</ept> directive, or a <bpt id="p2">**</bpt><ph id="ph3">\#</ph>localmacro<ept id="p2">**</ept> can be inside a <bpt id="p3">**</bpt><ph id="ph4">\#</ph>define.<ept id="p3">**</ept></source>
+        </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>Transitive Substitution</source>
+        </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>In the following code sample, the value of the first <bpt id="p1">**</bpt><ph id="ph1">\#</ph>define<ept id="p1">**</ept> variable includes a symbol (<ph id="ph2">\#</ph>D) of the second <bpt id="p2">**</bpt><ph id="ph3">\#</ph>define<ept id="p2">**</ept> variable.</source>
+        </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>This works even though the expansion symbol <ph id="ph1">\#</ph>D occurs before macro <bpt id="p1">**</bpt>D<ept id="p1">**</ept> is defined.</source>
+        </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source>No transitive substitution</source>
+        </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source>The following code sample tries to determine whether two macro variables have the same value, without specifying what that value might be.</source>
+        </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source>The output shows that this determination cannot be made..</source>
+        </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source>The following code sample shows that the <ph id="ph1">\#</ph>defInc directive does not lead to transitive substitution of symbol values.</source>
+        </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>For more information about the <ph id="ph1">\#</ph>defInc directive, see How to: Use the <ph id="ph2">\#</ph>defInc and <ph id="ph3">\#</ph>defDec Directives.</source>
+        </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>After the <ph id="ph1">\#</ph>defInc.E2 directive, the subsequent output value for <ph id="ph2">\#</ph>E2 shows the value for <bpt id="p1">**</bpt>E2<ept id="p1">**</ept> is converted to zero (0) by <ph id="ph3">\#</ph>defInc.E2 before it is incremented to one (1).</source>
+        </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source>Before the conversion, the value of <bpt id="p1">**</bpt>E2<ept id="p1">**</ept> was the three characters <ph id="ph1">\#</ph>E2.</source>
+        </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source>The output for test case <bpt id="p1">**</bpt>36<ept id="p1">**</ept> shows the value has been converted to 1.</source>
+        </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source>Macro within a macro</source>
+        </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">**</bpt><ph id="ph1">\#</ph>define<ept id="p1">**</ept> directive can be given inside a <bpt id="p2">**</bpt><ph id="ph2">\#</ph>localmacro<ept id="p2">**</ept> directive, and a <bpt id="p3">**</bpt><ph id="ph3">\#</ph>localmacro<ept id="p3">**</ept> can be inside a <ph id="ph4">\#</ph>define.</source>
+        </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source>This is shown in the following code sample.</source>
+        </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\#</ph>macrolib directive</source>
+        </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source>In the Application Explorer under the Macros node, there are many library nodes that contain sets of macro directives.</source>
+        </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source>Both <bpt id="p1">**</bpt><ph id="ph1">\#</ph>define<ept id="p1">**</ept> and <bpt id="p2">**</bpt><ph id="ph2">\#</ph>localmacro<ept id="p2">**</ept> often appear in the contents of these macro libraries.</source>
+        </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source>You can use the <bpt id="p1">**</bpt><ph id="ph1">\#</ph>macrolib.MyAOTMacroLibrary<ept id="p1">**</ept> to include the contents of a macro library in your X++ code.</source>
+        </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt><ph id="ph1">\#</ph>if<ept id="p1">**</ept> and <bpt id="p2">**</bpt><ph id="ph2">\#</ph>undef<ept id="p2">**</ept> directives do not apply to <bpt id="p3">**</bpt><ph id="ph3">\#</ph>macrolib<ept id="p3">**</ept> names.</source>
+        </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source>However, they do apply to <bpt id="p1">**</bpt><ph id="ph1">\#</ph>define<ept id="p1">**</ept> directives that are the contents of a <bpt id="p2">**</bpt><ph id="ph2">\#</ph>macrolib<ept id="p2">**</ept> macro.</source>
+        </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>The directive <bpt id="p1">**</bpt><ph id="ph1">\#</ph>macrolib.MyAOTMacroLibrary<ept id="p1">**</ept> can also be written as <bpt id="p2">**</bpt><ph id="ph2">\#</ph>MyAOTMacroLibrary.<ept id="p2">**</ept></source>
+        </trans-unit>
+        <trans-unit id="298" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt><ph id="ph1">\#</ph>macrolib<ept id="p1">**</ept> prefix is recommended because it is never ambiguous to a person who later reads the code.</source>
+        </trans-unit>
+        <trans-unit id="299" translate="yes" xml:space="preserve">
+          <source>Create a macro library</source>
+        </trans-unit>
+        <trans-unit id="300" translate="yes" xml:space="preserve">
+          <source>To create a macro library:</source>
+        </trans-unit>
+        <trans-unit id="301" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Solution Explorer,<ept id="p1">**</ept> right-click on the project, select <bpt id="p2">**</bpt>Add<ept id="p2">**</ept> and then <bpt id="p3">**</bpt>New item.<ept id="p3">**</ept></source>
+        </trans-unit>
+        <trans-unit id="302" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Add New Item<ept id="p1">**</ept> dialog, select Installed and then <bpt id="p2">**</bpt>AX Artifacts<ept id="p2">**</ept> in the left pane.</source>
+        </trans-unit>
+        <trans-unit id="303" translate="yes" xml:space="preserve">
+          <source>In the middle pane, select <bpt id="p1">**</bpt>Macro.<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="304" translate="yes" xml:space="preserve">
+          <source>Enter a name and click <bpt id="p1">**</bpt>Add.<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="305" translate="yes" xml:space="preserve">
+          <source>Save the macro file and refresh the Application Explorer to find your macro library.</source>
+        </trans-unit>
+        <trans-unit id="306" translate="yes" xml:space="preserve">
+          <source>Code examples</source>
+        </trans-unit>
+        <trans-unit id="307" translate="yes" xml:space="preserve">
+          <source>Finance and Operations has an macro library that is named <bpt id="p1">**</bpt>Event.<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="308" translate="yes" xml:space="preserve">
+          <source>This macro library contains the directive <bpt id="p1">**</bpt><ph id="ph1">\#</ph>define.DefaultEventPollFrequency(15)<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="309" translate="yes" xml:space="preserve">
+          <source>The following code sample shows that the <bpt id="p1">**</bpt><ph id="ph1">\#</ph>macrolib.Event<ept id="p1">**</ept> directive makes the macro <bpt id="p2">**</bpt><ph id="ph2">\#</ph>DefaultEventPollFrequency<ept id="p2">**</ept> available.</source>
+        </trans-unit>
+        <trans-unit id="310" translate="yes" xml:space="preserve">
+          <source>The following code example shows what happens when you write a <bpt id="p1">**</bpt><ph id="ph1">\#</ph>define<ept id="p1">**</ept> for a name that is already the name of a node in the macro library.</source>
+        </trans-unit>
+        <trans-unit id="311" translate="yes" xml:space="preserve">
+          <source>For this example, there is a node named <bpt id="p1">**</bpt>MacLib23,<ept id="p1">**</ept> and its contents are one <bpt id="p2">**</bpt><ph id="ph1">\#</ph>define<ept id="p2">**</ept> as follows:</source>
+        </trans-unit>
+        <trans-unit id="312" translate="yes" xml:space="preserve">
+          <source>After a <ph id="ph1">\#</ph>macrolib directive is issued for <bpt id="p1">**</bpt>MacLib23<ept id="p1">**</ept>, <bpt id="p2">**</bpt><ph id="ph2">\#</ph>define<ept id="p2">**</ept> and <bpt id="p3">**</bpt><ph id="ph3">\#</ph>undef<ept id="p3">**</ept> directives have no effect on the <bpt id="p4">**</bpt><ph id="ph4">\#</ph>macrolib<ept id="p4">**</ept> macro (see output <ph id="ph5">\_</ph>BB).</source>
+        </trans-unit>
+        <trans-unit id="313" translate="yes" xml:space="preserve">
+          <source>However, a <bpt id="p1">**</bpt><ph id="ph1">\#</ph>define<ept id="p1">**</ept> in the contents of a <bpt id="p2">**</bpt><ph id="ph2">\#</ph>macrolib<ept id="p2">**</ept> macro can be overwritten by a subsequent <ph id="ph3">\#</ph>define or <bpt id="p3">**</bpt><ph id="ph4">\#</ph>undef<ept id="p3">**</ept> in the code (see output <ph id="ph5">\_</ph>DD).</source>
+        </trans-unit>
+        <trans-unit id="314" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\#</ph>linenumber Directive</source>
+        </trans-unit>
+        <trans-unit id="315" translate="yes" xml:space="preserve">
+          <source>You can use the <ph id="ph1">\#</ph>linenumber directive during your development and debugging of code.</source>
+        </trans-unit>
+        <trans-unit id="316" translate="yes" xml:space="preserve">
+          <source>It is replaced by the physical line number in the code file.</source>
+        </trans-unit>
+        <trans-unit id="317" translate="yes" xml:space="preserve">
+          <source>Code example</source>
+        </trans-unit>
+        <trans-unit id="318" translate="yes" xml:space="preserve">
+          <source>The following X++ code sample shows the behavior of the <bpt id="p1">**</bpt><ph id="ph1">\#</ph>linenumber<ept id="p1">**</ept> directive.</source>
+        </trans-unit>
+        <trans-unit id="319" translate="yes" xml:space="preserve">
+          <source>Range (scope) of macros</source>
+        </trans-unit>
+        <trans-unit id="320" translate="yes" xml:space="preserve">
+          <source>The range in which a macro can be referenced depends on where the macro is defined.</source>
+        </trans-unit>
+        <trans-unit id="321" translate="yes" xml:space="preserve">
+          <source>In a class, macros that are defined in the parent class can be referenced, but macros defined in a child class cannot be referenced.</source>
+        </trans-unit>
+        <trans-unit id="322" translate="yes" xml:space="preserve">
+          <source>When the precompiler handles a child class, the precompiler first traces the inheritance chain to the most ascendant class.</source>
+        </trans-unit>
+        <trans-unit id="323" translate="yes" xml:space="preserve">
+          <source>The precompiler processes all the directives from the class declaration part of the ascendant class.</source>
+        </trans-unit>
+        <trans-unit id="324" translate="yes" xml:space="preserve">
+          <source>It stores all the macros and their values in its internal tables.</source>
+        </trans-unit>
+        <trans-unit id="325" translate="yes" xml:space="preserve">
+          <source>The precompiler handles the next class in the inheritance chain the same way.</source>
+        </trans-unit>
+        <trans-unit id="326" translate="yes" xml:space="preserve">
+          <source>The result of the directives in each class declaration are applied to the internal tables that are already populated from directives that were found earlier in the inheritance chain.</source>
+        </trans-unit>
+        <trans-unit id="327" translate="yes" xml:space="preserve">
+          <source>When the precompiler reaches the target child class, it again handles the class declaration part.</source>
+        </trans-unit>
+        <trans-unit id="328" translate="yes" xml:space="preserve">
+          <source>However, it next handles each method in a series of separate operations.</source>
+        </trans-unit>
+        <trans-unit id="329" translate="yes" xml:space="preserve">
+          <source>The precompiler updates its internal tables in a way that the state of the tables can be restored as they were before processing of the current method began.</source>
+        </trans-unit>
+        <trans-unit id="330" translate="yes" xml:space="preserve">
+          <source>After the first method is handled, the internal tables are restored before the next method is handled.</source>
+        </trans-unit>
+        <trans-unit id="331" translate="yes" xml:space="preserve">
+          <source>The Method is All Contents of the Node</source>
+        </trans-unit>
+        <trans-unit id="332" translate="yes" xml:space="preserve">
+          <source>In this context, a method is defined as the contents of a method node in the Application Object Tree (AOT).</source>
+        </trans-unit>
+        <trans-unit id="333" translate="yes" xml:space="preserve">
+          <source>In the AOT, you can expand the Classes node, expand a class node, right-click a method node, and then select Edit.</source>
+        </trans-unit>
+        <trans-unit id="334" translate="yes" xml:space="preserve">
+          <source>Then you can add a line for <ph id="ph1">\#</ph>define.MyMacro("abc") before the method declaration.</source>
+        </trans-unit>
+        <trans-unit id="335" translate="yes" xml:space="preserve">
+          <source>The precompiler treats this <ph id="ph1">\#</ph>define directive as part of the method, even though the <ph id="ph2">\#</ph>define occurs outside the {} block of the method.</source>
+        </trans-unit>
+        <trans-unit id="336" translate="yes" xml:space="preserve">
+          <source>Class Inheritance and Macro Reference Range</source>
+        </trans-unit>
+        <trans-unit id="337" translate="yes" xml:space="preserve">
+          <source>The following code example demonstrates the range of macro referencing in class inheritance scenarios.</source>
+        </trans-unit>
+        <trans-unit id="338" translate="yes" xml:space="preserve">
+          <source>The primary line to notice in the method's output is the line labeled ClassC<ph id="ph1">\_</ph>h.</source>
+        </trans-unit>
+        <trans-unit id="339" translate="yes" xml:space="preserve">
+          <source>It shows that a macro defined in a grandparent class can be referenced in a method of the grandchild class.</source>
+        </trans-unit>
+        <trans-unit id="340" translate="yes" xml:space="preserve">
+          <source>Another important line in the output is labeled ClassA<ph id="ph1">\_</ph>k.</source>
+        </trans-unit>
+        <trans-unit id="341" translate="yes" xml:space="preserve">
+          <source>This line shows that a macro defined in a method is not available in other methods.</source>
+        </trans-unit>
+        <trans-unit id="342" translate="yes" xml:space="preserve">
+          <source>ClassA is the base class and it defines several macros in its class declaration.</source>
+        </trans-unit>
+        <trans-unit id="343" translate="yes" xml:space="preserve">
+          <source>Its descendant classes reference these macros.</source>
+        </trans-unit>
+        <trans-unit id="344" translate="yes" xml:space="preserve">
+          <source>The base class also defines a macro inside one of its methods.</source>
+        </trans-unit>
+        <trans-unit id="345" translate="yes" xml:space="preserve">
+          <source>A second method in this class determines the macro is defined out of range and cannot be referenced in the second method.</source>
+        </trans-unit>
+        <trans-unit id="346" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt><ph id="ph1">\#</ph>undef.MacroRange333<ept id="p1">**</ept> in the method <bpt id="p2">**</bpt>UseOtherMethodMacro<ept id="p2">**</ept> affects the availability of macro <bpt id="p3">**</bpt>MacroRange333<ept id="p3">**</ept> in the rest of that method.</source>
+        </trans-unit>
+        <trans-unit id="347" translate="yes" xml:space="preserve">
+          <source>Descendant classes can still reference <bpt id="p1">**</bpt>MacroRange333<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="348" translate="yes" xml:space="preserve">
+          <source>ClassB extends ClassA and it undefines the macro <bpt id="p1">**</bpt>MacroRangeA<ept id="p1">**</ept> that is defined in its parent class.</source>
+        </trans-unit>
+        <trans-unit id="349" translate="yes" xml:space="preserve">
+          <source>This makes the macro unavailable to any class that extends the present class.</source>
+        </trans-unit>
+        <trans-unit id="350" translate="yes" xml:space="preserve">
+          <source>The present class also redefines the macro <bpt id="p1">**</bpt>MacroRangeB<ept id="p1">**</ept> that is defined in its parent class.</source>
+        </trans-unit>
+        <trans-unit id="351" translate="yes" xml:space="preserve">
+          <source>This changes the value of the macro (from positive to negative).</source>
+        </trans-unit>
+        <trans-unit id="352" translate="yes" xml:space="preserve">
+          <source>ClassC extends ClassB and it uses <bpt id="p1">**</bpt><ph id="ph1">\#</ph>ifnot<ept id="p1">**</ept> to demonstrate that it cannot access the <bpt id="p2">**</bpt>MacroRangeA<ept id="p2">**</ept> macro that the base class, ClassInheritanceOfMacrosCBase1, defines.</source>
+        </trans-unit>
+        <trans-unit id="353" translate="yes" xml:space="preserve">
+          <source>The reason is that the mid-level class undefined the macro.</source>
+        </trans-unit>
+        <trans-unit id="354" translate="yes" xml:space="preserve">
+          <source>This class also demonstrates that it can access the macro <bpt id="p1">**</bpt>MacroRange333<ept id="p1">**</ept> that ClassInheritanceOfMacrosCBase1 class defines.</source>
+        </trans-unit>
+        <trans-unit id="355" translate="yes" xml:space="preserve">
+          <source>TestClass contains a method that calls the demonstration methods and displays the results.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

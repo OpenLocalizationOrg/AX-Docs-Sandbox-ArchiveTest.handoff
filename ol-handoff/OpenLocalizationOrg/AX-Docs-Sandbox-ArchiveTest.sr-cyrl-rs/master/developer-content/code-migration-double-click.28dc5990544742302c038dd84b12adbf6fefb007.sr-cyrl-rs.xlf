@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">8b278171d23421d2b43c5d480965754ae38c885e</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\migration-upgrade\code-migration-double-click.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">developer-content</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">9e8e328ea8e7481d828cfc95924c75e9247ad86a</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">9089f55ffad0d8e9335fd74de85517f949d3a2ec</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Code migration - Mouse double-click</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>In Microsoft Dynamics 365 for Finance and Operations, the mouseDblClick() override has been deprecated, and you will have to move this logic to new controls.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Code migration - Mouse double-click</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>In Microsoft Dynamics 365 for Finance and Operations, the mouseDblClick() override has been deprecated, and you will have to move this logic to new controls.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>In Microsoft Dynamics AX 2012, the mouse double-click event was used for various reasons.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>For example, it helped provide a better user experience and provided an alternative way to run certain scenarios.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Here are some examples of common usage patterns:</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Moving elements between two lists or tree controls</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Opening a new form to get more details about the selected field</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Running complex business logic</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Selecting a field in a lookup</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>In Finance and Operations, the <bpt id="p1">**</bpt>mouseDblClick()<ept id="p1">**</ept> override has been deprecated, and developers will have to move this logic to new controls, depending on the logic that was implemented.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Strategy overview</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Before you begin to use the form, it's a good idea to fix all best practice warning messages that state, “The mouseDblClick control method has been deprecated and should not be used.”</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Otherwise, the form might be useless, or it might work only in limited ways.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Migrate code from mouseDblClick() methods</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>As we mentioned earlier, there were various reasons for using the <bpt id="p1">**</bpt>mouseDblClick()<ept id="p1">**</ept> method in Dynamics AX 2012.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>This section explains how to migrate some of the most common scenarios.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Moving items between two lists controls</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>In Dynamics AX 2012, a mouse double-click was often used in List Panel scenarios, where two list controls appeared side by side.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Often, when a user double-clicked an item in one list control, that item was moved to the second list control.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Migration of this <bpt id="p1">**</bpt>mouseDblClick()<ept id="p1">**</ept> scenario in Finance and Operations involves alignment to the List Panel pattern.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>You have two options for migrating this usage pattern:</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Use the <bpt id="p1">**</bpt>SysListPanel<ept id="p1">**</ept> class itself, which provides the logic and the buttons for moving items between the two list controls.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>If you can't use the <bpt id="p1">**</bpt>SysListPanel<ept id="p1">**</ept> class (because the lists aren't ListViews, or the class isn't appropriate for the given situation), you can manually model the controls by following the List Panel sub-pattern.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>This pattern includes buttons for moving items between lists, but the developer will have to add the correct logic to make these buttons work.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Opening a new form</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>In another common usage pattern in Dynamics AX 2012, the user double-clicked a field to open a new form that showed more detailed information about that field.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>You have several options for migrating this usage pattern:</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Use a single-click to open a backing form that shows more details about a field.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>This functionality is automatically implemented for many fields that are based on table relations, and you can implement it manually by overriding the <bpt id="p1">**</bpt>jumpRef()<ept id="p1">**</ept> method on a control.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>The preferred migration route is to move the code from <bpt id="p1">**</bpt>mouseDblClick()<ept id="p1">**</ept> into a <bpt id="p2">**</bpt>jumpRef()<ept id="p2">**</ept> override, so that the navigation will be aligned with other fields in the system.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Model a new button on the form, and move the logic from the <bpt id="p1">**</bpt>mouseDblClick()<ept id="p1">**</ept> method into the button's <bpt id="p2">**</bpt>clicked()<ept id="p2">**</ept> method.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>You should use this approach only for non-input field controls (for example, a Tree control) in which a <bpt id="p1">**</bpt>jumpRef()<ept id="p1">**</ept> override doesn't exist.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Add a right-click context menu (shortcut menu) option.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>However, note that UX guidelines specify that the commands on context menus should <bpt id="p1">**</bpt>always<ept id="p1">**</ept> be available in other locations on the page.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">**</bpt>View details<ept id="p1">**</ept> command is automatically added to the right-click context menu for controls that have an overridden <bpt id="p2">**</bpt>jumpRef()<ept id="p2">**</ept> method.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Therefore, this approach should be used only as an optional addition to the previous migration route (modeling a new button).</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>For more information about how to add context menu options in Finance and Operations, see <bpt id="p1">[</bpt>Code migration: Context menus<ept id="p1">](code-migration-context-menus.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Moving logic to a button control</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>In another common usage pattern in Dynamics AX 2012, the double-click caused complex business logic to run.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>For this scenario, the preferred migration route is to model a new button on the form, and then move the logic from <bpt id="p1">**</bpt>mouseDblClick()<ept id="p1">**</ept> into the new button's <bpt id="p2">**</bpt>clicked()<ept id="p2">**</ept> method.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Selecting a field in a lookup</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>In some custom lookups in Dynamics AX 2012, code was added so that the user could double-click a row in a grid (or an element in a tree) to select the value and close the lookup.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>For this scenario, the recommended migration route is to add a <bpt id="p1">**</bpt>Select<ept id="p1">**</ept> button at the bottom of the lookup form to enable record selection.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>UX guidelines</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>As you migrate mouse double-click methods, you should consider the following guidelines:</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>To move items between controls, use the <bpt id="p1">**</bpt>SysListPanel<ept id="p1">**</ept> class or the ListPanel pattern whenever possible.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>When you add buttons to replace mouse double-click logic, put the button as close as possible (contextually) to the control.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>In some cases, you might have to redesign the form to accommodate the logic that was present in the <bpt id="p1">**</bpt>mouseDblClick()<ept id="p1">**</ept> method.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

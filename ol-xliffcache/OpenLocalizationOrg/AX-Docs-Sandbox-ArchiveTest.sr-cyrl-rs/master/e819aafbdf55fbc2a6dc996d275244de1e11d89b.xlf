@@ -1,0 +1,291 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="sr-cyrl-rs">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">e819aafbdf55fbc2a6dc996d275244de1e11d89b</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\analytics\add-analytics-tab-workspaces.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">basic</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2d0e46e932bf2d470ef352663ef968d84e169213</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">d88a8aa80c1a944938e4b0ff34dde5c8aaf81d7a</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Add analytics to workspaces by using Power BI Embedded</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic shows how to embed a Power BI report on the Analytics tab of a workspace.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Add analytics to workspaces by using Power BI Embedded</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This feature is supported in Dynamics 365 for Finance and Operations (version 7.2 and later).</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Introduction</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This topic shows how to embed a Microsoft Power BI report on the <bpt id="p1">**</bpt>Analytics<ept id="p1">**</ept> tab of a workspace.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>For the example that is given here, we will extend the <bpt id="p1">**</bpt>Reservation management<ept id="p1">**</ept> workspace in the Fleet Management application to embed an analytical workspace on an <bpt id="p2">**</bpt>Analytics<ept id="p2">**</ept> tab.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Prerequisites</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Access to a developer environment that runs Platform update 8 or later.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>An analytical report (.pbix file) that was created by using Microsoft Power BI Desktop, and that has a data model that is sourced from the Entity store database.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Overview</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Whether you extend an existing application workspace or introduce a new workspace of your own, you can use embedded analytical views to deliver insightful and interactive views of your business data.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The process for adding an analytical workspace tab has four steps.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Add a .pbix file as a Dynamics 365 resource.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Define an analytical workspace tab.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Embed the .pbix resource on the workspace tab.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Optional: Add extensions to customize the view.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>For more information about how to create analytical reports, see <bpt id="p1">[</bpt>Getting started with Power BI Desktop<ept id="p1">](https://powerbi.microsoft.com/documentation/powerbi-desktop-getting-started/)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>This page is a great source for insights that can help you create compelling analytical reporting solutions.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Add a .pbix file as a resource</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Before you begin, you must create or obtain the Power BI report that you will embed in the workspace.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>For more information about how to create analytical reports, see <bpt id="p1">[</bpt>Getting started with Power BI Desktop<ept id="p1">](https://powerbi.microsoft.com/documentation/powerbi-desktop-getting-started/)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Follow these steps to add a .pbix file as a Visual Studio project artifact.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Create a new project in the appropriate model.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>In Solution Explorer, select the project, right-click, and then select <bpt id="p1">**</bpt>Add<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>New Item<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Add New Item<ept id="p1">**</ept> dialog box, under <bpt id="p2">**</bpt>Operations Artifacts<ept id="p2">**</ept>, select the <bpt id="p3">**</bpt>Resource<ept id="p3">**</ept> template.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Enter a name that will be used to reference the report in X++ metadata, and then click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Add New Item dialog box</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Find the .pbix file that contains the definition of the analytical report, and then click <bpt id="p1">**</bpt>Open<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Select a Resource file dialog box</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Now that you've added the .pbix file as a Dynamics 365 resource, you can embed the reports in workspaces and add direct links by using menu items.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Add a tab control to an application workspace</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>In this example, we will extend the <bpt id="p1">**</bpt>Reservation management<ept id="p1">**</ept> workspace in the Fleet Management model by adding the <bpt id="p2">**</bpt>Analytics<ept id="p2">**</ept> tab to the definition of the <bpt id="p3">**</bpt>FMClerkWorkspace<ept id="p3">**</ept> form.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>The following illustration shows what the <bpt id="p1">**</bpt>FMClerkWorkspace<ept id="p1">**</ept> form looks like in the designer in Microsoft Visual Studio.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>FMClerkWorkspace form before changes</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Follow these steps to extend the form definition for the <bpt id="p1">**</bpt>Reservation management<ept id="p1">**</ept> workspace.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Open the form designer to extend the design definition.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>In the design definition, select the top element that is labeled <bpt id="p1">**</bpt>Design | Pattern: Workspace Operational<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Right-click, and then select <bpt id="p1">**</bpt>New<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Tab<ept id="p2">**</ept> to add a new control that is named <bpt id="p3">**</bpt>FormTabControl1<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>In the form designer, select <bpt id="p1">**</bpt>FormTabControl1<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Right-click, and then select <bpt id="p1">**</bpt>New Tab Page<ept id="p1">**</ept> to add a new tab page.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Rename the tab page to something meaningful, such as <bpt id="p1">**</bpt>Workspace<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>In the form designer, select <bpt id="p1">**</bpt>FormTabControl1<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Right-click, and then select <bpt id="p1">**</bpt>New Tab Page<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Rename the tab page to something meaningful, such as <bpt id="p1">**</bpt>Analytics<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>In the form designer, select <bpt id="p1">**</bpt>Analytics (Tab Page)<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Set the <bpt id="p1">**</bpt>Caption<ept id="p1">**</ept> property to <bpt id="p2">**</bpt>Analytics<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Right-click the control, and then select <bpt id="p1">**</bpt>New<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Group<ept id="p2">**</ept> to add a new form group control.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Rename the form group to something meaningful, such as <bpt id="p1">**</bpt>powerBIReportGroup<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>In the form designer, select <bpt id="p1">**</bpt>PanoramaBody (Tab)<ept id="p1">**</ept>, and then drag the control onto the <bpt id="p2">**</bpt>Workspace<ept id="p2">**</ept> tab.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>In the design definition, select the top element that is labeled <bpt id="p1">**</bpt>Design | Pattern: Workspace Operational<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Right-click, and then select <bpt id="p1">**</bpt>Remove pattern<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Right-click again, and then select <bpt id="p1">**</bpt>Add pattern<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Workspace Tabbed<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Perform a build to verify your changes.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>The following illustration shows what the design looks like after these changes are applied.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>FMClerkWorkspace after changes</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Now that you've added the form controls that will be used to embed the workspace report, you must define the size of the parent control so that it accommodates the layout.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>By default, both the <bpt id="p1">**</bpt>Filters Pane<ept id="p1">**</ept> page and the <bpt id="p2">**</bpt>Tab<ept id="p2">**</ept> page will be visible on the report.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>However, you can change the visibility of these controls as appropriate for the target consumer of the report.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>For embedded workspaces, we recommend that you use extensions to hide both the <bpt id="p1">**</bpt>Filters Pane<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Tab<ept id="p2">**</ept> pages, for consistency.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>You've now completed the task of extending the application form definition.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>For more information about how to use extensions to do customizations, see  <bpt id="p1">[</bpt>Customization: Overlayering and extensions<ept id="p1">](../extensibility/customization-overlayering-extensions.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Add X++ business logic to embed a viewer control</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Follow these steps to add business logic that initializes the report viewer control that is embedded in the <bpt id="p1">**</bpt>Reservation management<ept id="p1">**</ept> workspace.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Open the <bpt id="p1">**</bpt>FMClerkWorkspace<ept id="p1">**</ept> form designer to extend the design definition.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Press F7 to access the code behind the code definition.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Add the following X++ code.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Perform a build to verify your changes.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>You've now completed the task of adding business logic to initialize the embedded report viewer control.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>The following illustration shows what the workspace looks like after these changes are applied.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Report embedded in the workspace</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>You can access the existing operational view by using the workspace tabs below the page title.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Reference</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>PBIReportHelper.initializeReportControl method</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>This section provides information about the helper class that is used to embed a Power BI report (.pbix resource) in a form group control.</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Syntax</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Parameters</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Name</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>resourceName</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>The name of the .pbix resource.</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>formGroupControl</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>The form group control to apply the Power BI report control to.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>defaultPageName</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>The default page name.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>showFilterPane</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>A Boolean value that indicates whether the filter pane should be shown (<bpt id="p1">**</bpt>true<ept id="p1">**</ept>) or hidden (<bpt id="p2">**</bpt>false<ept id="p2">**</ept>).</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>showNavPane</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>A Boolean value that indicates whether the navigation pane should be shown (<bpt id="p1">**</bpt>true<ept id="p1">**</ept>) or hidden (<bpt id="p2">**</bpt>false<ept id="p2">**</ept>).</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>defaultFilters</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>The default filters for the Power BI report.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
