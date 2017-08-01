@@ -1,0 +1,199 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="fi-fi">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">d6ce53d4d9335348d0203a524e62dbbdfd1580b6</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">financials\fixed-assets\depreciation-book-upgrade-considerations.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">basic</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">8244768f9432ef6dce0a67726d94ff0e481a0936</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">294108038dfb8561f9437434f01c017a5954fd30</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Depreciation book upgrade overview</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>In previous releases, there were two valuation concepts for fixed assets -  value models and depreciation books.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>In Microsoft Dynamics 365 for Operations (1611), the value model functionality and depreciation book functionality have been merged into a single concept that is known as a book.</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic provides some things to consider for the upgrade.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Depreciation book upgrade overview</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>In previous releases, there were two valuation concepts for fixed assets -  value models and depreciation books.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>In Microsoft Dynamics 365 for Operations (1611), the value model functionality and depreciation book functionality have been merged into a single concept that is known as a book.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>This topic provides some things to consider for the upgrade.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>The upgrade process will move your existing setup and all existing transactions to the new book structure.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Value models will remain as they currently are, as a book that posts to the general ledger.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Depreciation books will be moved to a book that has the <bpt id="p1">**</bpt>Post to general ledger<ept id="p1">**</ept> option set to <bpt id="p2">**</bpt>No<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Depreciation book journal names will be moved to a general ledger journal name with the posting layer set to <bpt id="p1">**</bpt>None<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Depreciation book transactions will be moved to Fixed asset transactions.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Before running the data upgrade, you should understand the two options available for upgrading depreciation book journal lines to transaction vouchers, and the number sequence that will be used for the voucher series.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Option 1:  <bpt id="p1">**</bpt>System-defined number sequence<ept id="p1">**</ept> - This is the default option to optimize upgrade performance.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>The upgrade will not use the number sequences framework, but instead will allocate vouchers with a set-based approach.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>After the upgrade, the new number sequence will be created with the <bpt id="p1">**</bpt>Next number set<ept id="p1">**</ept> appropriately based on the upgraded transactions.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>By default, the number sequence used will be in the FADBUpgr<ph id="ph1">\#</ph><ph id="ph2">\#</ph><ph id="ph3">\#</ph><ph id="ph4">\#</ph><ph id="ph5">\#</ph><ph id="ph6">\#</ph><ph id="ph7">\#</ph><ph id="ph8">\#</ph><ph id="ph9">\#</ph> format.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>There are a few parameters available to you to adjust the format when using this approach:</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Number sequence code<ept id="p1">**</ept> – The code to identify the number sequence.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>This number sequence code cannot exist since it will be created by the upgrade.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Constant name: <bpt id="p1">**</bpt>NumberSequenceDefaultCode<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Default value: "FADBUpgr"</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Prefix<ept id="p1">**</ept> – The constant string value that will be used as a prefix for the voucher numbers.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Constant name: <bpt id="p1">**</bpt>NumberSequenceDefaultParameterPrefix<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Default value: "FADBUpgr"</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Alphanumeric length<ept id="p1">**</ept> – The length of the alphanumeric segment of the number sequence.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Constant name: **NumberSequenceDefaultParameterAlpanumericLength **</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Default value: 9</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Start number<ept id="p1">**</ept> - The first number to be used in the number sequence.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Constant name: **NumberSequenceDefaultParameterStartNumber  **</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Default value: 1</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Option 2: <bpt id="p1">**</bpt>Existing user-defined number sequence<ept id="p1">**</ept> - This option will allow you to define the number sequence to be used for the upgrade.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Consider using this option if you need advanced number sequence configuration.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>To use a number sequence, you must modify the upgrade class ReleaseUpdateDB70<ph id="ph1">\_</ph>FixedAssetJournalDepBookRemovalDepBookJournalTrans with the following information:</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Number sequence code<ept id="p1">**</ept> – The code of the number sequence.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Constant name: **NumberSequenceExistingCode **</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Default value: No default, this must be updated to the number sequence code.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Shared number sequence<ept id="p1">**</ept> – A boolean value to identify the scope of the number sequence.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Use "true" for shared number sequences across all companies, and "false" for a company-specific scope.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>When using "false", the number sequence with the specified name must exist in every company that contains depreciation book transactions.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Shared number sequences exist in every partition that contains depreciation book transactions.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Constant name: **NumberSequenceExistingIsShared **</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Default value: true</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>The parameters are located at the beginning of the ReleaseUpdateDB70<ph id="ph1">\_</ph>FixedAssetJournalDepBookRemovalDepBookJournalTrans class.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>// Specify a preferable approach of vouchers allocation<ept id="p1">*</ept><ph id="ph1"> 
+</ph><bpt id="p2">*</bpt>// true, if you want to use an existing number sequence code<ept id="p2">*</ept><ph id="ph2"> 
+</ph><bpt id="p3">*</bpt>// false, if you intend to use the system-defined number sequence (default)<ept id="p3">*</ept> const boolean NumberSequenceUseExistingCode = false;</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>// If using the system-defined number sequence approach, specify the parameters for the number sequence.<ept id="p1">*</ept><ph id="ph1">
+</ph><bpt id="p2">*</bpt>// A new number sequence will be created with these parameters.<ept id="p2">*</ept></source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>const str NumberSequenceDefaultCode = 'FADBUpgr'; const str NumberSequenceDefaultParameterPrefix = 'FADBUpgr'; const int NumberSequenceDefaultParameterAlpanumericLength = 9; const int NumberSequenceDefaultParameterStartNumber = 1;</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>// If using the existing number sequence approach, specify the existing number sequence code.<ept id="p1">*</ept><ph id="ph1"> 
+</ph><bpt id="p2">*</bpt>// Voucher allocation will go row-by-row for existing number sequences.<ept id="p2">*</ept></source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>const str NumberSequenceExistingCode = ''; <bpt id="p1">*</bpt>// Specify the scope of the existing number sequence code<ept id="p1">*</ept><ph id="ph1"> 
+</ph><bpt id="p2">*</bpt>// true, if the specified number sequence is shared<ept id="p2">*</ept><ph id="ph2"> 
+</ph><bpt id="p3">*</bpt>// false, if the specified number sequence is per-company<ept id="p3">*</ept><ph id="ph3"> 
+</ph><bpt id="p4">*</bpt>// The default system-defined number sequence will be used if a number sequence code with the specified scope is not found.<ept id="p4">*</ept></source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>const boolean NumberSequenceExistingIsShared = true;</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Rebuild the project that contains the class after the constants have been modified.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>When using the system-generated number sequence approach (option 1), the upgrade will use set-based processing to allocate the voucher numbers as specified in the upgrade script parameters.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>It will also create a new number sequence with specified parameters after the allocation.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>When using the user-defined existing number sequence approach (option 2), the data upgrade checks whether the number sequence with the specified scope exists in the database for each partition and company with depreciation book transactions.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>If it does exist, the upgrade will use row-by-row processing to allocate the voucher numbers as specified by the number sequence using the number sequence framework.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>If the number sequence does not exist with the specified scope, the upgrade will use the default system-defined number sequence approach to allocate the voucher numbers, and will create a new number sequence with specified default parameters after the allocation.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>With either approach, the data upgrade script will also use the number sequence for the <bpt id="p1">**</bpt>Voucher series<ept id="p1">**</ept> field on the new general ledger journal names created for the former depreciation book journal names.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
