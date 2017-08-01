@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="lt-lt">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">8e0f8f85609e7c3095f13738d43cdf5734018eaa</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scm\sales-marketing\reserve-same-batch-sales-order.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">basic</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">c3bb2f2920053e97d4e26e1db9af42f5d3a7ebc2</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">185a467812752ddaab0d1015a2dba52d9c9d5c93</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Reserve the same batch for a sales order</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This article explains how to set up a product to allow reservation of inventory against a single batch of inventory.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Reserve the same batch for a sales order</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This article explains how to set up a product to allow reservation of inventory against a single batch of inventory.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Same batch reservation lets you reserve inventory for a sales order line against a single batch of inventory.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>For example, a customer who orders wallpaper can request that the whole order be filled from the same batch or lot, to avoid inconsistencies among the rolls.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>To set up a product to use same batch reservation, the following settings must be active in the item model group, tracking dimension group, and storage dimension group that you assign to the product:</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Item model groups<ept id="p1">**</ept> – The item model group must have the <bpt id="p2">**</bpt>Same batch selection<ept id="p2">**</ept> and <bpt id="p3">**</bpt>Consolidate requirement<ept id="p3">**</ept> fields selected in the <bpt id="p4">**</bpt>Reservation<ept id="p4">**</ept> field group for inventory policies.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Tracking dimensions groups<ept id="p1">**</ept> – The tracking dimension group must have the <bpt id="p2">**</bpt>Coverage plan by dimension<ept id="p2">**</ept> field selected for the batch number.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Storage dimensions groups<ept id="p1">**</ept> – The storage dimension group must have the <bpt id="p2">**</bpt>Coverage plan by dimension<ept id="p2">**</ept> field selected for <bpt id="p3">**</bpt>Site<ept id="p3">**</ept> and <bpt id="p4">**</bpt>Warehouse<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>When you reserve inventory for a product on a sales order line that is set up for same batch selection, Microsoft Dynamics 365 for Finance and Operations tries to reserve the ordered quantity from a single inventory batch.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Any specific batch attribute requirements are also considered.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>If the quantity can't be filled from a single batch, the <bpt id="p1">**</bpt>Same batch reservation conflict<ept id="p1">**</ept> page appears.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>This page describes the issues and also the actions that you can take to continue with the reservation.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>The following conditions might prevent the batch from being reserved:</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>The batch disposition code has <bpt id="p1">**</bpt>Block reservation<ept id="p1">**</ept> for sales flagged as <bpt id="p2">**</bpt>Blocked<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The batch has expired, based on the expiration date and any applicable customer sellable days.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>The item can still be considered for reservation if the item model group for the item is First Expiry First Out (FEFO) date–controlled, and if the best-before date is selected as the pick criterion.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>The batch doesn't have enough shelf-life days remaining, based on the expiration date and best-before date, plus any customer sellable days.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

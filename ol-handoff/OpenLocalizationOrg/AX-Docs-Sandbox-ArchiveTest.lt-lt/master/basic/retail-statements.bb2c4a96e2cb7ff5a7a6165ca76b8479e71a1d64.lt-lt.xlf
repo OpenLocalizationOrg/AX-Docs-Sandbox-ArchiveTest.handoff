@@ -1,0 +1,171 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="lt-lt">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">f3d4b81bab2ee7525ab4ecbc60e22d7a3f7acb04</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">retail\retail-statements.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">basic</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">4abd4e8d775a881e8537e68823a8e0f3dd6050ba</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">f3f5a20beeb05f0053ae6f917bf88e71931e79d3</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Retail statements</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic describes how statements are created and posted.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Retail statements</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>In Microsoft Dynamics 365 for Retail, the statement posting process is used to account for the transactions that occur in Cloud point of sale (POS) or Modern POS (MPOS).</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>The statement posting process uses the distribution schedule to pull a set of POS transactions into the headquarters (HQ) client.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>The parameters that are defined on the <bpt id="p1">**</bpt>Retail parameters<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Stores<ept id="p2">**</ept> pages are used to select the transactions that are pulled into individual statements.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>The following illustration shows the statement posting process.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>In this process, transactions that are recorded in the POS are transmitted to the client by using the Retail scheduler.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>After the client receives the transactions, you can create, calculate, and post the transaction statement for the store.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Statement posting process<ept id="p1">](./media/retail-statements.png)](./media/retail-statements.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Creating and posting statements</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>You can create a statement manually or by using batch processes that you set up to run periodically throughout the day.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>In both cases, the following steps are used to create and post statements.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Create the statement</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>This step identifies the store that the statement is manually created for.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>If you configure a batch process, you can automatically create statements for all stores, based on a schedule that you define.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Calculate the statement</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>In this step, the transaction lines are selected based on criteria that are defined for each store on the <bpt id="p1">**</bpt>Retail parameters<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Stores<ept id="p2">**</ept> pages.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>On these pages, you define the criteria and specify how the transactions are calculated.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>To view a list of the transactions that are included in the statement before you calculate the statement, use the <bpt id="p1">**</bpt>Transactions<ept id="p1">**</ept> page.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Statement calculation uses tender declarations from the registers as the counted amount.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Alternatively, you can enter the counted amount manually.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>The statement shows the difference between the sales amount for the transactions and the actual counted amount in all payment methods.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>The statement is posted only if this difference is less than the maximum posting difference that is defined for the store.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>The statement calculation process uses the global number sequence.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>When you calculate a statement, the calculation includes the following tasks:</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>For the selected date range, mark transactions that weren't included in a previous statement calculation.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Calculate the total amounts that were tendered in the selected transactions.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>The results are shown on the statement lines, depending on the statement method:</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>If the statement method is <bpt id="p1">**</bpt>Total<ept id="p1">**</ept>, a line is created for each payment method in the selected transactions.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>If the statement method is <bpt id="p1">**</bpt>Staff<ept id="p1">**</ept>, a line is created for each payment method in transactions that were performed by the selected staff member.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>If the statement method is <bpt id="p1">**</bpt>POS terminal<ept id="p1">**</ept>, a line is created for each payment method in transactions that were performed on the selected register.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>If the statement method is <bpt id="p1">**</bpt>Shift<ept id="p1">**</ept>, a line is created for each payment method in transactions that were performed during a shift.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>If the <bpt id="p1">**</bpt>Split by Statement method<ept id="p1">**</ept> check box is selected on the <bpt id="p2">**</bpt>Stores<ept id="p2">**</ept> page, a separate statement is created based on the value that is selected in the <bpt id="p3">**</bpt>Statement method<ept id="p3">**</ept> field.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>If your store's operating hours extend past midnight, you can configure statement posting so that it's based on the end of the business day instead of the end of the calendar day.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Stores<ept id="p1">**</ept> page, on the <bpt id="p2">**</bpt>Statement/closing<ept id="p2">**</ept> FastTab, in the <bpt id="p3">**</bpt>End of business day<ept id="p3">**</ept> field, enter the time that the last transaction must be recorded to be included in the business day’s statement.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Select the <bpt id="p1">**</bpt>Post as business day<ept id="p1">**</ept> check box to post the transactions within the same business day.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>When the statement is posted, transactions that are recorded within the same business day can be included on the same sales order, even if some transactions occur before midnight and other transactions occur after midnight.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Example: Post a statement for a business day that extends over two calendar days</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>A store is open between 8:00 AM and 3:00 AM, and the <bpt id="p1">**</bpt>Post as business day<ept id="p1">**</ept> check box is selected in the store's configuration.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>On May 31, the store records transactions between 8:00 AM and midnight.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>The store also records transactions between 12:01 AM and 3:00 AM on June 1.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>When the store posts its statement for the close of the business day, the sales order that is generated includes all transactions that were recorded between the business hours of 8:00 AM and 3:00 AM, even though the transactions occurred on two days, May 31 and June 1.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>If the <bpt id="p1">**</bpt>Post as business day<ept id="p1">**</ept> check box is cleared for the same store, separate sales orders are generated when the store posts its statement for the close of the business day.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>One sales order includes the transactions that were recorded between the business hours of 8:00 AM and midnight on May 31, and the second sales order includes the transactions that were recorded between the business hours of 12:01 AM and 3:00 AM on June 1.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Before you can create statements, you should close the shifts in the statement period.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Post the statement</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>When you post a statement, sales orders and invoices are created for the retail sales in the statement.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Cash and carry sales are aggregated onto one sales order, and are invoiced for the default customer who is assigned to the store.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Retail sales for which a customer was added to the transaction in Microsoft Dynamics 365 for Retail POS generate separate sales orders and invoices, one for each unique customer.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Payment journals are automatically created for the payments in the statement, and the inventory is updated for the POS store.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
