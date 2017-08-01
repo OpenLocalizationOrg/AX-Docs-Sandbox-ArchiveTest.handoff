@@ -1,0 +1,471 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="lv-lv">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">404803c6317b2aeda78de86d4ba11987b2a8cf65</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scm\cost-management\backflush-costing.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">basic</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">9788c77f04696d1b80cabe6c27e1621ce398ef7f</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">745aa9b9b5a59135b6de4bbaeebe48f0ae9f17ed</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Backflush costing</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic introduces the concept of backflush costing that is used for Lean manufacturing.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Backflush costing</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This topic introduces the concept of backflush costing that is used for Lean manufacturing.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Costing for Lean manufacturing enables the production flow to use the cost accumulation method that is known as backflush costing.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>In the backflush costing method, the direct materials that are consumed are accumulated in the production flow's work in progress (WIP) cost account.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>The standard cost inventory model group is used.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>The products that are received from the production flow are deducted from WIP at their standard cost.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>The main difference between backflush costing and standard cost is that, for backflush costing, variances aren't calculated per kanban or finished product.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Instead, variances are calculated per production flow over a period.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>This method introduces a truly lean concept for reporting material consumption.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Dedicated picked quantities of material aren't reported to a kanban or production order.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Instead, full batches or handling units are staged to the production flow.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>After the batches or handling units are registered as empty, they are declared consumed.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Advanced consumption might be used, depending on the <bpt id="p1">[</bpt>configuration of the production flow<ept id="p1">](/dynamics365/unified-operations/supply-chain/production-control/lean-manufacturing-modeling-lean-organization)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Before advanced consumption can be used, organizations must allow themselves to make material vanish in the WIP of the production flow.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The periodic backflush costing determines the effective value of WIP to the end of the period.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>This determination is based on the kanban handling units and the kanban job status.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Deviations between the effective values and the actual WIP values per cost group and item are accounted and shown as variances.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Configuring backflush costing</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>To enable costing, you must complete the following setup:</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Set up WIP accounts for the production group and production flow.<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>The WIP accounts for the production flow are specified in the production group.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>The backflush costing production flow calculates variances as the difference in the WIP value before and after backflush costing is run for each production flow.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Therefore, we recommend that you create a WIP account for every production flow.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Assign a cost category to the resource group.<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>You must assign a cost category to the run-time category of the work cell.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>To determine variances by activity, you should create a cost category for every work cell.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>The cost categories for setup and quantity aren't considered in costing for lean manufacturing.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>The WIP accounts per resource group are ignored in backflush costing.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>For subcontracted activities, no cost category is required.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>The cost group that is assigned to the active service is used instead.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Assign cost groups.<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>To enable segmentation of the cost contribution in a production flow, you must assign cost groups by cost group type:</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Direct material cost group<ept id="p1">**</ept> - Direct material requires a cost group that identifies the material category for costing.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>This cost group enables an aggregated view of cost, WIP, and variances by direct material.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Direct manufacturing cost group<ept id="p1">**</ept> - The direct manufacturing cost group captures the direct cost contribution of operational resources to the production flow.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>This cost group enables an aggregated view of cost, WIP, and variances by direct manufacturing cost.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Indirect cost group<ept id="p1">**</ept> - The indirect cost group is required in order to calculate the indirect cost contribution to the production flow.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>This cost group enables an aggregated view of cost, WIP, and variances by indirect cost.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Direct outsourcing cost group<ept id="p1">**</ept> - The cost group for the services enables an aggregated view of assigned cost and WIP, and determines the cost variances of the subcontracted services.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Cost group for a finished product<ept id="p1">**</ept> - Finished products require a cost group that identifies the product category for costing.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>This cost group enables an aggregated view of cost, WIP, and variances by product category.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>The standard cost for products is calculated by using the cost calculation that is based on the bill of materials (BOM), and either the production flow and kanban rules or the route.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Costing sheet</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>The costing sheet models the cost structure for the company and is built by the cost groups to classify the cost.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>The costing sheet has various forms.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>It shows cost information according to the structure that is designed in it.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>In the costing sheet, you also define the formula that is used to calculate the indirect cost.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>The calculation formula can be based on quantities, weight, volume, or value.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Define a costing version.<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>In the costing version, the company defines how the cost should be maintained.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>A costing version can contain a set of standard cost records or a set of planned cost records, depending on the costing type that is assigned to the costing version.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>The costing version that is used for costing for Lean manufacturing must be based on standard cost.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Assign an inventory model group for released products.<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>All products that are related to the production flow must be assigned to an inventory model group that uses the <bpt id="p1">**</bpt>Standard cost<ept id="p1">**</ept> inventory model group.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Standard cost is maintained per site and activation date.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>For product masters, the inventory model group can be selected if the cost is maintained per variant or product master.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>By definition, subcontracted services are non-inventoried services.<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Subcontracted activities have no inventory model group.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>To cost a subcontracted activity correctly, you must make sure that the service activity belongs to an inventory model group where the inventory policy is set to <bpt id="p1">**</bpt>Stocked product = False<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>For output products, cost calculation that is based on the production flow requires that a standard cost be maintained for the services that are related to subcontracted activities.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>The cost group that is assigned to the services is used to determine the cost variances of the subcontracted activity.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Cost calculation for Lean manufacturing</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>For products that are supplied out of a production flow, the BOM calculation must be based on either a route version or a production flow.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>The BOM calculation calculates the cost of a product and the related breakdown to the resources and material that are required in order to build the product.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>The deduction from the WIP account for the production flow is done by using the breakdown of a product by item and cost group.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Calculation that is based on the production flow</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Lean manufacturing for Microsoft Dynamics 365 for Finance and Operations is independent of routes.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>The cost calculation for products that are supplied from a production flow can be based on the production flow itself.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Before the calculation can be done, a kanban rule must be created that supplies the product out of the production flow.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>If a product can be supplied from multiple production flows at the same site on the calculation date, you can select the production flow for the BOM calculation.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Default production flow<ept id="p1">**</ept> page, you can configure a default production flow for each item.</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>If multiple kanban rules exist for the same product in the same production flow that is active on the calculation date, the calculation selects the first kanban rule that is active for the calculation.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Calculation that is based on the route</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Calculation that is based on a route is as valid as calculation that is based on a production flow.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>However, calculation that is based on a route doesn't use the costing for Lean manufacturing functionality.</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>The route should use resource requirements for resource groups.</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>To avoid systematic variances, it should also use the same work cells, or at least the same cost categories.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Again, you should avoid cost categories for setup and quantity.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>They don't help calculate the cost in a more granular breakdown than Lean manufacturing cost backflushing.</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>To determine which option (production flow or route) you should use to calculate the cost, consider the results of the cost breakdown.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>The version that comes closer to reality and produces fewer variances overall is the better option.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>In a Lean manufacturing environment where a product is supplied by a single production flow and a single kanban rule, the calculation that is based on the production flow is probably more accurate.</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>For a product that can be supplied by Lean manufacturing and production orders on the same site, or that can have multiple production flows or multiple kanban rules in the same flow, a calculation might be more accurate if it's based on a route version that is built specifically for the cost calculation, not for the production.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>The production flow calculation must be used to calculate products that involve subcontracting.</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>In Microsoft Dynamics 365 for Finance and Operations, the cost models for subcontracting via production orders and subcontracting in Lean manufacturing are using two different approaches.</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Lean manufacturing introduces a new cost group type, <bpt id="p1">**</bpt>Direct outsourcing<ept id="p1">**</ept>, to calculate subcontracted services.</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Material consumption</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>When material is consumed from inventory to WIP, the cost of material is added to WIP at its actual standard cost for a cost group.</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>This operation occurs under the following conditions:</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Kanban issues are posted for kanban picking lines that update inventory.</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>Transfer jobs are completed that update inventory on pick but not receipt (Transfer of material from inventory to WIP).</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>Receiving products from the production flow</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>Products are received from the production flow under the following conditions:</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>Process jobs are completed that have <bpt id="p1">**</bpt>Update inventory on receipt<ept id="p1">**</ept> set to <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Transfer jobs are completed that update inventory on receipt, but that have <bpt id="p1">**</bpt>Update inventory on pick set<ept id="p1">**</ept> to <bpt id="p2">**</bpt>No<ept id="p2">**</ept> (Transfer from WIP to inventory).</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>This option lets you receive any products out of a production flow independently of the BOM and route configuration.</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>The process just follows the physical flows.</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>This option is especially suitable for receiving by-products, co-products, or scrap out of a production flow, and for correcting the cost balance of the production flow WIP accordingly.</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>Products that are received from the production flow are deducted from WIP.</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Products in WIP</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>The WIP model of Lean manufacturing in Microsoft Dynamics 365 for Finance and Operations lets you use the kanban handling unit status to manage the material, semi-finished products, and finished products that are part of WIP.</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Assigned<ept id="p1">**</ept> - The kanban can have consumed material that is accounted in WIP.</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Received<ept id="p1">**</ept> - If the kanban refers to a last activity where <bpt id="p2">**</bpt>Update inventory on receipt<ept id="p2">**</ept> is set to <bpt id="p3">**</bpt>No<ept id="p3">**</ept>, it represents a full handling unit of a product or a semi-finished product that isn't registered to inventory.</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>Note that material in WIP isn't visible in inventory on-hand overviews.</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>However, it's visible in the kanban quantity overviews.</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>Consuming products in WIP</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>Products in WIP are consumed when the corresponding kanban handling units are emptied.</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>A kanban empty signal doesn't produce an active costing transaction but will take effect when the next backflush costing is run.</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>Emptied kanban handling units are no longer accounted as on-hand and therefore calculated as consumed within the period.</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>Automatic empty registration</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Scheduled or event kanbans can be set to automatic empty registration in the kanban rule:</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>When handling units are received<ept id="p1">**</ept> - By default, for scheduled kanbans, the material is declared as consumed when the last job of the kanban is completed.</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>For fixed quantity kanbans, this option is recommended only for single-bin kanbans, because it returns the card to the source of demand whenever a kanban is received at the final destination.</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>When source requirement is registered<ept id="p1">**</ept> - This option is available only for event kanbans and is the default option for them.</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>In connection to WIP, this option is useful for keeping WIP clean, because kanbans for components in WIP are automatically emptied, and therefore consumed from WIP, when the parent kanban is prepared.</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>In conclusion, kanban handling units can be assigned (= in process), received (=full), or emptied.</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>There is no partial emptying.</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>Therefore, to enable accurate registration of consumption, it's important that you limit the product quantities of a kanban so that they are less than the consumption per period.</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>Products that are moved to the shop floor in big batches that cover days or weeks of demand should not be consumed to WIP.</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>Instead, these products should be kept in inventory.</source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>Backflush costing</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>You should run backflush costing to periodically value the WIP and produce an end-of-period status that calculates the variances of material, labor, and indirect costs.</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>The calculated variances are posted to the variance accounts.</source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>In the backflush costing process, all production flows of the legal entity are used in the same batch run.</source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>When backflush costing is run in a batch, the processing might be multi-threaded by production flow.</source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>The backflush period is defined by an end date.</source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>You can't post new transactions to a date when a backflush costing calculation has been run.</source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>You should never run backflush costing for the current date before the day is actually over.</source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>Backflush costing performs the following steps.</source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>Determine the unused quantities in the production flow as of the period's end date.</source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>After the backflush costing is run, you can view the unused quantities on the date of the costing run in the <bpt id="p1">**</bpt>Unused quantities<ept id="p1">**</ept> dialog box.</source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>Calculate the production flow's net realized usage over the period.</source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>Clear the WIP from the realized resource consumption and products.</source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>Calculate production variances to standard cost for the period.</source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>For consumed components for the period:<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>Financially update the net realized quantities of material that the production flow consumed over the period.</source>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>The system processes in first in, first out (FIFO) order on the individual inventory transactions as to financially update the physically updated transactions for the production flow, until the net realized quantities for the period are reached.</source>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>Transactions are financially split to map the exact consumed quantities.</source>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>Unused quantities in the production flow WIP remain in physically updated status.</source>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>For production completed quantities of the period:<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>Financially update the inventory transactions for the completed quantities for the period.</source>
+        </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>For the conversion cost:<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>The applied conversion cost transactions (route transactions) that were recorded for the period are financially updated.</source>
+        </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>All direct manufacturing cost is financially updated.</source>
+        </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>All kanban process jobs that are completed during the period are accumulated.</source>
+        </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>All indirect cost calculated for the consumed material within the period is calculated and deducted from WIP.</source>
+        </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>The remaining indirect cost is posted as a variance.</source>
+        </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>Calculate the production variances to standard cost.</source>
+        </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>The variance is calculated per cost group.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
