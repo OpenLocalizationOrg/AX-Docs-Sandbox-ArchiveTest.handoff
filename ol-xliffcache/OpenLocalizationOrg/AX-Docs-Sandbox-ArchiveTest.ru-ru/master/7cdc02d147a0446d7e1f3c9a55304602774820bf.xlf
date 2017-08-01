@@ -1,0 +1,621 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ru-ru">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">7cdc02d147a0446d7e1f3c9a55304602774820bf</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\analytics\tasks\er-required-configurations-import-data.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">bp_basic</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">bc664debee12c86bc7039d0e97d6e95f821950b3</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">a8d8f815e9bd863bacb88a27bd59e0bc15a963a0</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Create required configurations to import data from an external file for electronic reporting (ER)</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>The following steps explain how a user in the System administrator or Electronic reporting developer role can design Electronic reporting (ER) configurations to import data in to the Dynamics 365 for Finance and Operations, Enterprise edition application from an external file.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Create required configurations to import data from an external file for electronic reporting (ER)</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>The following steps explain how a user in the System administrator or Electronic reporting developer role can design Electronic reporting (ER) configurations to import data in to the Dynamics 365 for Finance and Operations, Enterprise edition application from an external file.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>In this example, you will create the required ER configurations for the sample company, Litware, Inc. To complete these steps, you must first complete the steps in the Task guide, “ER Create a configuration provider and mark it as active.”</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>These steps can be completed using the USMF data set.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>You must also download and save the following files locally using links from the Electronic reporting overview topic (https://go.microsoft.com/fwlink/?linkid=852550): 1099model.xml, 1099format.xml, 1099entries.xml, 1099entries.xlsx.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>ER offers business users the ability to configure the process of importing external data files to tables in Dynamics 365 for Finance and Operations, Enterprise edition in either .XML or .TXT format.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>First, an abstract data model and an ER data model configuration must be designed to represent the data that you are importing.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Next, you need to define the structure of the file that you are importing and the method that you will use to port the data from the file to the abstract data model.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>The ER format configuration that maps to the designed data model must be created for that abstract data model.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Then, the data model configuration must be extended with a mapping that describes how the imported data is persisted as abstract data model data and how it is used to update tables in Dynamics 365 for Finance and Operations, Enterprise edition.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The ER data model configuration must be appended with a new model mapping that describes the binding of the data model to the application’s destinations.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>The following scenario shows the ER data import capabilities.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>This includes vendor transactions that are tracked externally and then imported in to Dynamics 365 for Finance and Operations, Enterprise edition to be reported later in Vendor’s settlement for 1099’s.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Add a new ER model configuration</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Go to Organization administration &gt; Workspaces &gt; Electronic reporting.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Verify that the configuration provider for sample company ‘Litware, Inc.’</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>is available and marked as active.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>If you don’t see this configuration provider, you must first complete the steps in the procedure, “Create a configuration provider and mark it as active.”</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Click Reporting configurations.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Instead of creating of a new model to support data import, load the file, 1099model.xml, that you previously downloaded.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>This file contains the custom data model of vendors’ transactions.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>This data model is mapped to the Dynamics 365 for Finance and Operations, Enterprise edition data components that are in the AOT data entity.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Click Exchange.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Click Load from XML file.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Click Browse and navigate to the 1099model.xml file that you previously downloaded.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Click OK.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>In the tree, select '1099 Payments model'.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Review data model settings</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Click Designer.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>This model is designed to represent vendors’ transactions from the business standpoint and are separate from the implementation in Dynamics 365 for Finance and Operations, Enterprise edition.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>In the tree, expand '1099-MISC'.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>In the tree, select '1099-MISC\Transactions'.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>In the tree, expand '1099-MISC\Transactions'.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>The Transactions element of this model represents individual transactions.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>The child elements are used to specify required details, such as vendor account and transaction date, for each transaction.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Close the page.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Add a new ER format configuration that supports data import</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>The steps in this subtask show you how a new format configuration can be created to manage data import from external files.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Click Create configuration to open the drop dialog.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>In the New field, enter 'Format based on data model 1099 Payments model'.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Select Yes in the Supports data import field.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Press ESC key to close this page.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Instead of creating a new format to support data import, load the 1099format.xml file that you previously downloaded.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>This file contains the defined structure of the file you are importing and the mapping of the structure to the custom data model of vendors’ transactions.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Click Exchange.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Click Load from XML file.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Click Browse and navigate to the 1099format.xml file that you previously downloaded.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Click OK.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>In the tree, expand '1099 Payments model'.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>In the tree, select '1099 Payments model\Format for importing vendors' transactions'.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Review format settings</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Click Designer.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Toggle 'Show details' on.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Click Expand/collapse.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Click Expand/collapse.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>The designed format represents the expected structure of the external file.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>This file must be in XML format and have the settlement root element.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Each vendor’s transaction is represented by the transaction element that is defined as having zero-to-many multiplicity.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>This means that the incoming file may contain anywhere from zero to multiple transactions.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Nested elements of the ‘transaction’ element represent a single transaction’s attributes.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Note that all attributes, except country, are marked as mandatory, meaning that it is required to have them in the importing file.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Review the settings of the format mapping to the data model</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Click Map format to model.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>The mapping ‘For importing vendors' transactions’ contains the data transfer rules from the incoming XML file to the selected part of the custom data model, which is defined by selecting the1099-MISC definition.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Click Designer.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Toggle 'Show details' on.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>In the tree, expand 'format: Record'.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>In the tree, select 'format: Record'.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Note that the designed format is presented here as a data source component.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>In the tree, expand 'format: Record<ph id="ph1">\*</ph>settlement: XML Element 1..1 (settlement): Record'.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>In the tree, expand 'format: Record<ph id="ph1">\*</ph>settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list'.</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>In the tree, expand 'format: Record<ph id="ph1">\*</ph>settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list<ph id="ph2">\*</ph>vendor: XML Element 1..1 (vendor): Record'.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>In the tree, expand 'format: Record<ph id="ph1">\*</ph>settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list\country: XML Element 0..1 (country): Record'.</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>In the tree, select 'format: Record<ph id="ph1">\*</ph>settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list<ph id="ph2">\*</ph>vendor: XML Element 1..1 (vendor): Record'.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Note that the presentation of mandatory and optional format elements is different in the predefined ‘format’ data source component.</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>In the tree, expand 'Transactions: Record list= format.settlement.'$enumerated''.</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Note that the elements of the format that defines the structure of the imported file are bound to the elements of the custom data model.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Based on these bindings, the content of the imported XML file will be stored at run-time in the existing data model.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Pay attention to the binding of the country element.</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>For any transaction element in the incoming file that has no such element, the default country code ‘USA’ will be populated in the data model.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Click the Validations tab.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>This format mapping may contain user-defined logic to validate the accuracy of the imported data from a business standpoint.</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>For example, based on the setting, for any transaction in the importing file without a defined country code, a warning message will be generated in the Infolog informing the user about the case and indicating the transaction’s sequence number.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Close the page.</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>Run the format mapping to the data model</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Execute this format mapping for testing purposes.</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Use the file 1099entries.xml that you previously downloaded.</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>You can export this file from the 1099entries.xlsx workbook that is used to manage vendor transactions.</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>The generated output will be imported from the selected XML file and populate the custom data model at real import.</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Click Run.</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>Click Browse and navigate to the 1099entries.xml file that you previously downloaded.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>Click OK.</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>Note the warning message about a missing country code for a transaction in the imported file.</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>Review the output in XML format, which represents the data that has been imported from the selected file and ported to the data model.</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Close the page.</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>Close the page.</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Review the settings for the model mapping to the destinations</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>In the tree, select '1099 Payments model'.</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>Click Designer.</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Click Map model to datasource.</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>The mapping For 1099 manual transactions import has been defined with the To destination direction type.</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>This means that it has been entered to support data import and contains the setting of rules defining how the imported external file and persisted as abstract data model data is used to update tables in the Dynamics 365 for Finance and Operations, Enterprise edition application.</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>Click Designer.</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>In the tree, expand 'model: Data model 1099 Payments model'.</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>In the tree, expand 'model: Data model 1099 Payments model\Transactions: Record list'.</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>Note that the designed model is presented here as a data source element.</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>At runtime, it will contain the data that is imported from the external file.</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>Several tables were added as data source elements to ensure that the imported data is compliant with the data of the current application, including whether the importing transaction vendor account is available in the system, whether the combination of the importing country and state codes exists, etc.</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>In the tree, select 'model: Data model 1099 Payments model\Transactions: Record list<ph id="ph1">\$</ph>failed: Calculated field = IF(OR(ISEMPTY(model.Transactions.'$refs'.vendor), ISEMPTY(model.Transactions.'$refs'.vendor1099), ISEMPTY(model.Transactions.'$refs'.box1099), ISEMPTY(model.Transactions.'$refs'.country), ISEMPTY(model.Transactions.'$refs'.state), ISEMPTY(model.Transactions.'$refs'.location)), true, false): Boolean'.</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>Click Edit.</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Click Edit formula.</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>When at least one validation fails for a single imported transaction, this transaction will be marked as failed by the data source attribute ‘$failed’.</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>Close the page.</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>Click Cancel.</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>In the tree, select 'tax1099trans: Table 'VendSettlementTax1099' records= model.Validated'.</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>Click Edit destination.</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>This ER destination was added to specify how the imported data will update the application tables.</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>In this case, the data table VendSettlementTax1099 has been selected.</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>Because the record action Insert has been selected, the imported transactions will be inserted in the table VendSettlementTax1099.</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>Note that a single model mapping may contain several destinations.</source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>This means that the imported data can be used to update multiple application’s tables at once.</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>Tables, views, and data entities can be used as ER destinations.</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>If the mapping will be called from a point in the Dynamics 365 for Finance and Operations, Enterprise edition application (such as button or menu item) that was specifically designed for this action, the ER destination should be marked as the integration point.</source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>In this example this is the ERTableDestination#VendSettlementTax1099 point.</source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>Click Cancel.</source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>Click Show all.</source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>Click Show mapped only.</source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>In the tree, expand 'tax1099trans: Table 'VendSettlementTax1099' records= model.Validated'.</source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>Note that the data source element that contains the only validated transactions is bound to the created destination.</source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>You can filter the imported transactions to skip the ones that are incompatible with the applications’ data.</source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>In the tree, select 'failed: Table 'VendSettlementTax1099Entity' records= model.Failed'.</source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>Click the Validations tab.</source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>This model mapping may contain user-defined logic to validate the correctness of the imported data from the existing application data.</source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>For example, based on the present setting, for any transaction in the imported file with a vendor account that is not in the system, a warning message will be generated informing the user and indicating the incorrect vendor account code.</source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>Note that the Post validation action option can be used for each validation, to specify whether the import process must be continued or stopped, as well as if the already performed inserts/updates can be kept or rolled back.</source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>Click Show mapped only.</source>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>Click Show all.</source>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>Close the page.</source>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>Execute this model mapping to test the designed format and model mappings.</source>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>Use the file 1099entries.xml.</source>
+        </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>The data from the selected file will be imported in to the system.</source>
+        </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>Click Run.</source>
+        </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>Note that the dialog box contains no additional questions about the format mapping that must be used to parse the imported file and then port the data to the data model.</source>
+        </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>This is because there is currently only one format that uses this model, which is marked as designed to support data import.</source>
+        </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>Define the voucher ID to differentiate the imported transactions from other transactions that may already have been entered manually or imported.</source>
+        </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>In the Enter voucher id field, type 'IMPORT-001'.</source>
+        </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>Browse to get the '1099entries.xml' file.</source>
+        </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>Click OK.</source>
+        </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>The list of generated warnings provides information about incorrect vendor accounts, an incorrect tax 1099 box code, missing country codes, etc. Compare this list of warnings to the content that is included in the execution XML file.</source>
+        </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>Close the page.</source>
+        </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>Close the page.</source>
+        </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>Close the page.</source>
+        </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>Close the page.</source>
+        </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>Go to Accounts payable &gt; Periodic tasks &gt; Tax 1099 &gt; Vendor settlement for 1099s.</source>
+        </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>This form shows the cumulative transactions in the Tax1099Summary table that have been created based on imported transactions.</source>
+        </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>In the From date field, set the date to '2000-01-01'.</source>
+        </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>Click Manual 1099 transactions.</source>
+        </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>This form contains the list of transactions that were added manually and those that we just imported.</source>
+        </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>Open Voucher column filter.</source>
+        </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>Enter a filter value of "IMPORT-001" on the "Voucher" field using the "begins with" filter operator.</source>
+        </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>Review the relationship between model and format mappings</source>
+        </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>Close the page.</source>
+        </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>Close the page.</source>
+        </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>Go to Organization administration &gt; Workspaces &gt; Electronic reporting.</source>
+        </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>Click Reporting configurations.</source>
+        </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>In the tree, select '1099 Payments model'.</source>
+        </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>Assume that you want to support importing the same data but from a .TXT file format.</source>
+        </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>Click Create configuration to open the dialog box.</source>
+        </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>In the New field, enter 'Format based on data model 1099 Payments model'.</source>
+        </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>In the Name field, type 'Import data from TXT file'.</source>
+        </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>Select Yes in the Supports data import field.</source>
+        </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>Click Create configuration.</source>
+        </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>Click Designer.</source>
+        </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>Click Map format to model.</source>
+        </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>Click New.</source>
+        </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>In the Definition field, enter or select a value.</source>
+        </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>Select '1099-MISC' option.</source>
+        </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source>In the Name field, type 'Import data from TXT file'.</source>
+        </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source>In the Description field, type 'Import data from TXT file'.</source>
+        </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source>Click Save.</source>
+        </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source>Close the page.</source>
+        </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>Close the page.</source>
+        </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>Click Edit.</source>
+        </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source>If you installed the hotfix “KB 4012871 Support of GER model mappings in separated configurations with an ability to specify different kinds of prerequisites for deploying them on different versions of Dynamics 365 for Finance and Operations, Enterprise edition” (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871 ), execute the next step “Turn the flag ‘Default for model mapping’ on” for the entered format configuration.</source>
+        </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source>Skip the next step otherwise.</source>
+        </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source>Select Yes in the Default for model mapping field.</source>
+        </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source>In the tree, select '1099 Payments model'.</source>
+        </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source>Click Designer.</source>
+        </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source>Click Map model to datasource.</source>
+        </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source>Click Run.</source>
+        </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source>If you installed the hotfix, KB 4012871 Support of GER model mappings in separated configurations with an ability to specify different kinds of prerequisites for deploying them on different versions of Dynamics 365 for Finance and Operations, Enterprise edition (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871 ), select the preferred model mapping in the lookup field.</source>
+        </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source>If you haven't installed the hotfix yet, skip to the next step as the mapping has already been selected by the definition of the default format configuration.</source>
+        </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source>If you have not installed the hotfix, KB 4012871, notice that the dialog box contains an additional model mapping question that is used to parse the file that you are importing.</source>
+        </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source>The data is then ported from the dialog box to the data model.</source>
+        </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>Currently, you can choose which format mapping must be used depending on the type of file that you plan to import.</source>
+        </trans-unit>
+        <trans-unit id="298" translate="yes" xml:space="preserve">
+          <source>If you plan to call this model mapping from a point in Dynamics 365 for Finance and Operations, Enterprise edition that is specifically designed for the action, the ER destination and the format mapping must be marked as part of the integration.</source>
+        </trans-unit>
+        <trans-unit id="299" translate="yes" xml:space="preserve">
+          <source>Click Cancel.</source>
+        </trans-unit>
+        <trans-unit id="300" translate="yes" xml:space="preserve">
+          <source>Close the page.</source>
+        </trans-unit>
+        <trans-unit id="301" translate="yes" xml:space="preserve">
+          <source>Close the page.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

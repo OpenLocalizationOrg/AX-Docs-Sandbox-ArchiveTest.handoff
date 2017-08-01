@@ -1,0 +1,333 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ru-ru">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">d6f9fc973ae9b36f6d78228d2e8ed4a2684c4875</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\analytics\tasks\er-format-counting-summing-3.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">bp_basic</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">49cd43a40496382245e8083b0cdfc2ecdd5b3ff8</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">988a8895185f574225db6fb3edf7201047f41a87</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Use computations to make the output for counting and summing for electronic reporting (ER)</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to do counting and summing based on data of the already generated text output.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Use computations to make the output for counting and summing for electronic reporting (ER)</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to do counting and summing based on data of the already generated text output.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>These steps can be performed in any company.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>To complete these steps, you must first complete the steps in the “ER Configure format to do counting and summing (Part 2: Configure computations)” procedure.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Configure this report to use counting and summing info</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Go to Organization administration &gt; Workspaces &gt; Electronic reporting.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Click Reporting configurations.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>In the tree, expand 'Intrastat model'.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>In the tree, expand 'Intrastat model\Intrastat (DE)'.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>In the tree, select 'Intrastat model\Intrastat (DE)\Intrastat (DE) with counting &amp; summing'.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Click Designer.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Click the Mapping tab.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Click Add root to open the drop dialog.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Add a new data source to get the list of memorized blocks.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>In the tree, select 'Functions\Calculated field'.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>In the Name field, type '$BlocksList'.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>$BlocksList</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Click Edit formula.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>In the tree, select 'Data collection functions\COLLECTEDLIST'.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Click Add function.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Click Add data source.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>In the Formula field, enter 'COLLECTEDLIST('$BlockName', '.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>COLLECTEDLIST('$BlockName',</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>In the Formula field, enter 'COLLECTEDLIST('$BlockName', "*")'.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>COLLECTEDLIST('$BlockName', "*")</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Click Save.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>The pattern “*” means that all blocks will be included to the list for this record.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Close the page.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Click OK.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Click the Format tab.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>In the tree, select 'Intrastat\Data'.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Click Add to open the drop dialog.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>In the tree, select 'Text\Sequence'.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>In the Name field, type 'Totals by blocks'.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Totals by blocks</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>In the Special characters field, select 'New line - Windows (CR LF)'.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Click OK.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>In the tree, select 'Intrastat\Data\Totals by blocks'.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Click Add to open the drop dialog.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>In the tree, select 'Text\String'.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>In the Name field, type 'Block code'.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Block code</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Click OK.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Click Add String.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>In the Name field, type 'Lines counting'.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Lines counting</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Click OK.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Click Add String.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>In the Name field, type 'Total amount'.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Total amount</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Click OK.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Click the Mapping tab.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>In the tree, select '$BlocksList'.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Click Bind.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Create a summary line for each memorized block.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Click the Format tab.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>In the tree, select 'Intrastat\Data\Totals by blocks\Block code'.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Click the Mapping tab.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Click Edit formula.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>In the Formula field, enter '"Block id: " &amp; '.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>"Block id: " &amp;</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>In the tree, expand '$BlocksList'.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>In the tree, select '$BlocksList\Value'.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Click Add data source.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Click Save.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Close the page.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Click the Format tab.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>In the tree, select 'Intrastat\Data\Totals by blocks\Lines counting'.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Click the Mapping tab.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Click Edit formula.</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Create output for the number of lines for each block presented in this report.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>In the Formula field, enter '"Number of lines in this block: " &amp; '.</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>"Number of lines in this block: " &amp;</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>In the Formula field, enter '"Number of lines in this block: " &amp; TEXT('.</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>"Number of lines in this block: " &amp; TEXT(</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>In the tree, select 'Data collection functions\COUNTIFS'.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Click Add function.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Click Add data source.</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>In the Formula field, enter '"Number of lines in this block: " &amp; TEXT(COUNTIFS('$BlockName', '.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>"Number of lines in this block: " &amp; TEXT(COUNTIFS('$BlockName',</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>In the tree, expand '$BlocksList'.</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>In the tree, select '$BlocksList\Value'.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Click Add data source.</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>In the Formula field, enter '"Number of lines in this block: " &amp; TEXT(COUNTIFS('$BlockName', '$BlocksList'.Value, '.</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>"Number of lines in this block: " &amp; TEXT(COUNTIFS('$BlockName', '$BlocksList'.Value,</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>In the tree, select '$RecName'.</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Click Add data source.</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>In the Formula field, enter '"Number of lines in this block: " &amp; TEXT(COUNTIFS('$BlockName', '$BlocksList'.Value, '$RecName', "*"))'.</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>"Number of lines in this block: " &amp; TEXT(COUNTIFS('$BlockName', '$BlocksList'.Value, '$RecName', "*"))</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>Click Save.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>Close the page.</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>Click the Format tab.</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>In the tree, select 'Intrastat\Data\Totals by blocks\Total amount'.</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Click the Mapping tab.</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>Click Edit formula.</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Create output that will be the total of the invoiced amount for each block presented in this report.</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>In the Formula field, enter '"Sum of invoiced amount: " &amp; TEXT(SUMIFS('$InvName', '$BlockName', '$BlocksList'.Value, '$RecName', "*"))'.</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>"Sum of invoiced amount: " &amp; TEXT(SUMIFS('$InvName', '$BlockName', '$BlocksList'.Value, '$RecName', "*"))</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Click Save.</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>Close the page.</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>Click Save.</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>Close the page.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

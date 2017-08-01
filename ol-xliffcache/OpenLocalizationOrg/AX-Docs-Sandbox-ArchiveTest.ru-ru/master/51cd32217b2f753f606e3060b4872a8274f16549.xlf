@@ -1,0 +1,231 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ru-ru">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">51cd32217b2f753f606e3060b4872a8274f16549</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">financials\cash-bank-management\import-bank-statement-file-failed-incorrect-results.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">basic</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">b2626bda9d9c4cc36265e93ba932b7b24b3d8557</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">6eeb3b56561c9f0906d5d1f9e533583466469d39</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Bank statement file import troubleshooting</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>It's important that the bank statement file from the bank match the layout that Microsoft Dynamics 365 for Finance and Operations, Enterprise edition supports.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Because of strict standards for bank statements, most integrations will work correctly.</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>However, sometimes the statement file can't be imported or has incorrect results.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Typically, these issues are caused by small differences in the bank statement file.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This article explains how to fix these differences and resolve the issues.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Bank statement file import troubleshooting</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>It's important that the bank statement file from the bank match the layout that Microsoft Dynamics 365 for Finance and Operations, Enterprise edition supports.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Because of strict standards for bank statements, most integrations will work correctly.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>However, sometimes the statement file can't be imported or has incorrect results.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Typically, these issues are caused by small differences in the bank statement file.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>This article explains how to fix these differences and resolve the issues.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>What is the error?</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>After you try to import a bank statement file, go to the Data management job history and its execution details to find the error.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>The error can help by pointing to the statement, balance, or statement line.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>However, it's unlikely to provide enough information to help you identify the field or element that is causing the issue.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>What are the differences?</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Compare the bank file layout definition to the Finance and Operations import definition, and note any differences in the fields and elements.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Compare the bank statement file to the related sample Finance and Operations file.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>In the ISO20022 files, any differences should be easy to see.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Transformations</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Typically, the change must be made in one of three transformations.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Each transformation is written for a specific standard.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Resource name</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>File name</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>BankStmtImport<ph id="ph1">\_</ph>BAI2CSV<ph id="ph2">\_</ph>to<ph id="ph3">\_</ph>BAI2XML<ph id="ph4">\_</ph>xslt</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>BAI2CSV-to-BAI2XML.xslt</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>BankStmtImport<ph id="ph1">\_</ph>ISO20022XML<ph id="ph2">\_</ph>to<ph id="ph3">\_</ph>Reconciliation<ph id="ph4">\_</ph>xslt</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>ISO20022XML-to-Reconciliation.xslt</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>BankStmtImport<ph id="ph1">\_</ph>MT940TXT<ph id="ph2">\_</ph>to<ph id="ph3">\_</ph>MT940XML<ph id="ph4">\_</ph>xslt</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>MT940TXT-to-MT940XML.xslt</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Debugging transformations</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Adjust the BAI2 and MT940 files</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>The BAI2 and MT940 files are text-based files and require an adjustment to enable Extensible Stylesheet Language Transformations (XSLT) debugging.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>The program makes this adjustment when a file is imported.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Create an XML file, and copy the following text into it.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Copy the contents of the bank statement file, and paste them into the XML file so that they replace <bpt id="p1">**</bpt>PASTESTATEMENTFILEHERE<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Debug the XSLT</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">&lt;</bpt>https://msdn.microsoft.com/en-us/library/ms255605.aspx<ept id="p1">&gt;</ept>.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Start Microsoft Visual Studio.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Create a console application.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Open the appropriate XSLT.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Click the XLST and its properties page.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Set the input to the location of the bank statement file.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Define a location and file name for the output.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Set the required break points.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>On the menu, click <bpt id="p1">**</bpt>XML<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Start XSLT Debugging<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Format the XSLT output</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>When the transformation runs, it creates an output file that you can view in Visual Studio.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Use Ctrl+A, Ctrl+K, and Ctrl+D to quickly format the output file.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Adjust the transformation</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Adjust the transformation to get the appropriate field or element in the bank statement file.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Then map that field or element to the appropriate Finance and Operations element.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Debit/credit indicator</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Sometimes, debits might be imported as credits, and credits might be imported as debits.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>To resolve this issue, you must change the appropriate XSLT.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>If bank statements come from multiple banks, make sure that they all use the same debit/credit approach, or create separate transformations.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>BAI2XML-to-Reconciliation.xlst GetAmountCreditDebitIndicator template</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>ISO20022XML-to-Reconcilation.xslt GetCreditDebit template</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>MT940XML-to-Reconcilation.xslt GetCreditDebitIndicator template</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Examples of bank statement formats and technical layouts</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>The following table lists examples of the technical layout definitions for advanced bank reconciliation import files and three related bank statement example files.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>You can download the example files and technical layouts here: https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Technical layout definition</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Bank statement example file</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>DynamicsAXMT940Layout</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>MT940StatementExample</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>DynamicsAXISO20022Layout</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>ISO20022StatementExample</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>DynamicsAXBAI2Layout</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>BAI2StatementExample</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,2718 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ru-ru">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">1eb5560ba795ab6df61b5af889049810dd00d79e</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">financials\cost-accounting\overhead-calculation.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">basic</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">8a13c74eb67ff2170d494cdd8dfed3c368d5aa29</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">fe347f008ff571ab3e22c9168c909cc0e8909a8d</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Overhead calculation</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic describes the typical processes for calculating and allocating overhead costs.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Overhead calculation</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This topic describes the typical processes for calculating and allocating overhead costs.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Term definition</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Overhead costs are the costs that are incurred in order to run a business, but that can't be directly attributed to any specific business activity, product, or service.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Overhead costs provide critical support for the generation of profit-making activities.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Here are some examples of overhead costs:</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Rent</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Administrative salaries</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Overhead calculation overview</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Overhead calculation runs the cost accounting policies in the correct order.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>You can run overhead calculation multiple times for the same fiscal period if cost accounting policies have been changed or specific errors have been detected.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Each run of the overhead calculation is stored and receives a unique version ID that lets you compare the calculations in various versions.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>The cost entries that the overhead calculation generates receive an accounting date.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>This accounting date matches the end date of the fiscal period that is used in the calculation.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>The unique version ID consists of the following elements:</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Version type</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Date and time</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Cost accounting ledger</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Fiscal year</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Fiscal period</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Overhead calculation is run independently of the version.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Therefore, you can calculate the Budget version before the Actual version.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Overhead calculation consists of four steps, as shown in the following illustration.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>In each step, a journal header is created that has journal entries.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>This journal header keeps the input data for each calculation step.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Policies and rules are applied to each journal line, and cost entries are generated as output.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Therefore, you always have full traceability.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Overhead calculation<ept id="p1">](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Calculate and allocate the Electricity overhead cost</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>In Financial accounting, some costs, such as electricity, are registered as a lump sum.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Therefore, detailed managerial insight isn't provided for Cost accounting.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>In Cost accounting, to provide correct managerial insight across all organizational units and levels, costs must flow through the organizational units.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>This flow must be based on either an accurate record of the consumption or a fair assessment.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>In the general ledger, an electricity cost can be posted as shown in the following table.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Accounting date</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Cost center</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Main account</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Amount in the accounting currency</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>January 3, 2017</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>CC099</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Default cost center</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>10,000.00</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Step 1: Process the cost behavior calculation</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>By default, when cost entries are imported from the source data, they receive the <bpt id="p1">**</bpt>Unclassified<ept id="p1">**</ept> cost behavior classification in Cost accounting.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>By applying cost behavior policy rules, you can reclassify cost entries as either <bpt id="p1">**</bpt>Fixed cost<ept id="p1">**</ept> or <bpt id="p2">**</bpt>Variable cost<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Define the cost behavior rule</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>In some cases, part of the cost is a fixed fee, and the remaining cost is based on consumption.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Electricity bills often match this definition.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>After you pay a specific fixed fee, you pay for consumption per kilowatt hour (Kwh).</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>For example, if the fixed cost fee is 1,000.00, here is how the cost behavior rule is defined:</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Fixed amount 1,000.00</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>0 <ph id="ph1">&amp;lt;</ph>= 1,000.00 = Fixed</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>1000,01 <ph id="ph1">&amp;lt;</ph> N = Variable</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Journal</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Journal</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Journal type</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Fiscal calendar period</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Version</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>00001</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Cost behavior calculation journal</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Fiscal</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>2017</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Period 1</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Overhead calculation / 01-02-2017 11:51:00 PM / Ledger /2017 / Period 1</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Journal entries (Cost object balance journal entries)</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Accounting date</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Cost object</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Cost element</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Cost behavior</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Amount</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>January 3, 2017</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>CC099</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Default cost center</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Unclassified</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>10,000.00</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Cost entries</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>Cost object</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Cost element</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Cost behavior</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>Amount</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Accounting date</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>CC099</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Default cost center</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>Unclassified</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>10,000.00</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>January 3, 2017</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>CC099</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Default cost center</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>Unclassified</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>-10,000.00</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>CC099</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>Default cost center</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Fixed cost</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>1,000.00</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>CC099</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>Default cost center</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>Variable cost</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>9,000.00</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>For detailed information about cost behavior, see Cost behavior policy.</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>(Note that this topic isn't competed yet but is coming soon.)</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>Step 2: Process the cost distribution calculation</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>Cost distribution is used to redistribute cost from one cost object to one or more other cost objects by applying a relevant allocation base.</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>Cost distribution and cost allocation differ in that cost distribution always occurs at the level of the primary cost element of the original cost.</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>Define the cost distribution rule</source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>In Financial accounting, electricity costs are often registered as a lump sum.</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>In Cost accounting, this approach isn't detailed enough.</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>The variable cost should be distributed to the individual cost objects on a fair basis.</source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>The most logical allocation basis is the consumption of electricity (Kwh).</source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>A statistical dimension member that is named Electricity is created, and electricity consumption is recorded.</source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>By default, all statistical dimension members become available as allocation bases.</source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>Cost object</source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>Kwh</source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>CC001</source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>HR</source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>1,000</source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>CC002</source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>Finance</source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>6,000</source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>CC003</source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>Assembly</source>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>0</source>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>The following table shows the result when electricity consumption is applied as an allocation base for variable costs.</source>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>Cost object</source>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>Magnitude</source>
+        </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>Allocation factor</source>
+        </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>Amount</source>
+        </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>CC001</source>
+        </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>HR</source>
+        </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>1,000</source>
+        </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>(1,000 ÷ 7,000) × 9,000.00</source>
+        </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>1,285.71</source>
+        </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>CC002</source>
+        </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>Finance</source>
+        </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>6,000</source>
+        </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>(6,000 ÷ 7,000) × 9,000.00</source>
+        </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>7,714.29</source>
+        </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>CC003</source>
+        </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>Assembly</source>
+        </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>0</source>
+        </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>(0 ÷ 7,000) × 9,000.00</source>
+        </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>0.00</source>
+        </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>The fixed cost should be distributed evenly to the individual cost objects that have consumed electricity.</source>
+        </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>You can achieve this result by using the Electricity statistical dimension member in a formula allocation base: (Electricity <ph id="ph1">&amp;gt;</ph> 0.00) The following table shows the result when electricity consumption is applied as an allocation base for variable costs.</source>
+        </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>Cost object</source>
+        </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>Formula</source>
+        </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>Magnitude</source>
+        </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>Allocation factor</source>
+        </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>Amount</source>
+        </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>CC001</source>
+        </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>HR</source>
+        </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>(1,000 <ph id="ph1">&amp;gt;</ph> 0.00)</source>
+        </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>1</source>
+        </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>(1 ÷ 2) × 1,000.00</source>
+        </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>500.00</source>
+        </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>CC002</source>
+        </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>Finance</source>
+        </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>(6,000 <ph id="ph1">&amp;gt;</ph> 0.00)</source>
+        </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>1</source>
+        </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>(1 ÷ 2) × 1,000.00</source>
+        </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>500.00</source>
+        </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>CC003</source>
+        </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source>Assembly</source>
+        </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source>(0 <ph id="ph1">&amp;gt;</ph> 0.00)</source>
+        </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source>0</source>
+        </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source>(0 ÷ 2) × 1,000.00</source>
+        </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>0.00</source>
+        </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>Journal</source>
+        </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source>Journal</source>
+        </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source>Journal type</source>
+        </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source>Fiscal calendar period</source>
+        </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source>Version</source>
+        </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source>00002</source>
+        </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source>Cost distribution calculation journal</source>
+        </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source>Fiscal</source>
+        </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source>2017</source>
+        </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source>Period 1</source>
+        </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source>Overhead calculation / 01-02-2017 11:51:00 PM / Ledger /2017 / Period 1</source>
+        </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source>Journal entries (Cost object balance journal entries)</source>
+        </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>Accounting date</source>
+        </trans-unit>
+        <trans-unit id="298" translate="yes" xml:space="preserve">
+          <source>Cost object</source>
+        </trans-unit>
+        <trans-unit id="299" translate="yes" xml:space="preserve">
+          <source>Cost element</source>
+        </trans-unit>
+        <trans-unit id="300" translate="yes" xml:space="preserve">
+          <source>Cost behavior</source>
+        </trans-unit>
+        <trans-unit id="301" translate="yes" xml:space="preserve">
+          <source>Amount</source>
+        </trans-unit>
+        <trans-unit id="302" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="303" translate="yes" xml:space="preserve">
+          <source>CC099</source>
+        </trans-unit>
+        <trans-unit id="304" translate="yes" xml:space="preserve">
+          <source>Default cost center</source>
+        </trans-unit>
+        <trans-unit id="305" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="306" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="307" translate="yes" xml:space="preserve">
+          <source>Fixed cost</source>
+        </trans-unit>
+        <trans-unit id="308" translate="yes" xml:space="preserve">
+          <source>1,000.00</source>
+        </trans-unit>
+        <trans-unit id="309" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="310" translate="yes" xml:space="preserve">
+          <source>CC099</source>
+        </trans-unit>
+        <trans-unit id="311" translate="yes" xml:space="preserve">
+          <source>Default cost center</source>
+        </trans-unit>
+        <trans-unit id="312" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="313" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="314" translate="yes" xml:space="preserve">
+          <source>Variable cost</source>
+        </trans-unit>
+        <trans-unit id="315" translate="yes" xml:space="preserve">
+          <source>9,000.00</source>
+        </trans-unit>
+        <trans-unit id="316" translate="yes" xml:space="preserve">
+          <source>Cost entries</source>
+        </trans-unit>
+        <trans-unit id="317" translate="yes" xml:space="preserve">
+          <source>Cost object</source>
+        </trans-unit>
+        <trans-unit id="318" translate="yes" xml:space="preserve">
+          <source>Cost element</source>
+        </trans-unit>
+        <trans-unit id="319" translate="yes" xml:space="preserve">
+          <source>Cost behavior</source>
+        </trans-unit>
+        <trans-unit id="320" translate="yes" xml:space="preserve">
+          <source>Amount</source>
+        </trans-unit>
+        <trans-unit id="321" translate="yes" xml:space="preserve">
+          <source>Accounting date</source>
+        </trans-unit>
+        <trans-unit id="322" translate="yes" xml:space="preserve">
+          <source>CC099</source>
+        </trans-unit>
+        <trans-unit id="323" translate="yes" xml:space="preserve">
+          <source>Default cost center</source>
+        </trans-unit>
+        <trans-unit id="324" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="325" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="326" translate="yes" xml:space="preserve">
+          <source>Fixed cost</source>
+        </trans-unit>
+        <trans-unit id="327" translate="yes" xml:space="preserve">
+          <source>-1,000.00</source>
+        </trans-unit>
+        <trans-unit id="328" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="329" translate="yes" xml:space="preserve">
+          <source>CC001</source>
+        </trans-unit>
+        <trans-unit id="330" translate="yes" xml:space="preserve">
+          <source>HR</source>
+        </trans-unit>
+        <trans-unit id="331" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="332" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="333" translate="yes" xml:space="preserve">
+          <source>Fixed cost</source>
+        </trans-unit>
+        <trans-unit id="334" translate="yes" xml:space="preserve">
+          <source>500.00</source>
+        </trans-unit>
+        <trans-unit id="335" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="336" translate="yes" xml:space="preserve">
+          <source>CC002</source>
+        </trans-unit>
+        <trans-unit id="337" translate="yes" xml:space="preserve">
+          <source>Finance</source>
+        </trans-unit>
+        <trans-unit id="338" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="339" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="340" translate="yes" xml:space="preserve">
+          <source>Fixed cost</source>
+        </trans-unit>
+        <trans-unit id="341" translate="yes" xml:space="preserve">
+          <source>500.00</source>
+        </trans-unit>
+        <trans-unit id="342" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="343" translate="yes" xml:space="preserve">
+          <source>CC099</source>
+        </trans-unit>
+        <trans-unit id="344" translate="yes" xml:space="preserve">
+          <source>Default cost center</source>
+        </trans-unit>
+        <trans-unit id="345" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="346" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="347" translate="yes" xml:space="preserve">
+          <source>Variable cost</source>
+        </trans-unit>
+        <trans-unit id="348" translate="yes" xml:space="preserve">
+          <source>-9,000.00</source>
+        </trans-unit>
+        <trans-unit id="349" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="350" translate="yes" xml:space="preserve">
+          <source>CC001</source>
+        </trans-unit>
+        <trans-unit id="351" translate="yes" xml:space="preserve">
+          <source>HR</source>
+        </trans-unit>
+        <trans-unit id="352" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="353" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="354" translate="yes" xml:space="preserve">
+          <source>Variable cost</source>
+        </trans-unit>
+        <trans-unit id="355" translate="yes" xml:space="preserve">
+          <source>1,285.71</source>
+        </trans-unit>
+        <trans-unit id="356" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="357" translate="yes" xml:space="preserve">
+          <source>CC002</source>
+        </trans-unit>
+        <trans-unit id="358" translate="yes" xml:space="preserve">
+          <source>Finance</source>
+        </trans-unit>
+        <trans-unit id="359" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="360" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="361" translate="yes" xml:space="preserve">
+          <source>Variable cost</source>
+        </trans-unit>
+        <trans-unit id="362" translate="yes" xml:space="preserve">
+          <source>7,714.29</source>
+        </trans-unit>
+        <trans-unit id="363" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="364" translate="yes" xml:space="preserve">
+          <source>For detailed information about cost distribution and allocation bases, see Cost distribution policy and Allocation bases.</source>
+        </trans-unit>
+        <trans-unit id="365" translate="yes" xml:space="preserve">
+          <source>(Note that this topic isn't competed yet but is coming soon.)</source>
+        </trans-unit>
+        <trans-unit id="366" translate="yes" xml:space="preserve">
+          <source>Step 3: Process the overhead rate calculation</source>
+        </trans-unit>
+        <trans-unit id="367" translate="yes" xml:space="preserve">
+          <source>The overhead rate is used to charge one or more specific cost objects.</source>
+        </trans-unit>
+        <trans-unit id="368" translate="yes" xml:space="preserve">
+          <source>The charge is based on a predetermined cost rate and the magnitude from the assigned allocation base.</source>
+        </trans-unit>
+        <trans-unit id="369" translate="yes" xml:space="preserve">
+          <source>Define the overhead rate</source>
+        </trans-unit>
+        <trans-unit id="370" translate="yes" xml:space="preserve">
+          <source>Cost object CC001 HR contributes to a set of internal projects.</source>
+        </trans-unit>
+        <trans-unit id="371" translate="yes" xml:space="preserve">
+          <source>A statistical dimension member that is named HR projects is created to measure the consumed magnitude.</source>
+        </trans-unit>
+        <trans-unit id="372" translate="yes" xml:space="preserve">
+          <source>Cost object</source>
+        </trans-unit>
+        <trans-unit id="373" translate="yes" xml:space="preserve">
+          <source>Hours</source>
+        </trans-unit>
+        <trans-unit id="374" translate="yes" xml:space="preserve">
+          <source>Proj 1</source>
+        </trans-unit>
+        <trans-unit id="375" translate="yes" xml:space="preserve">
+          <source>Project 1</source>
+        </trans-unit>
+        <trans-unit id="376" translate="yes" xml:space="preserve">
+          <source>3</source>
+        </trans-unit>
+        <trans-unit id="377" translate="yes" xml:space="preserve">
+          <source>Proj 2</source>
+        </trans-unit>
+        <trans-unit id="378" translate="yes" xml:space="preserve">
+          <source>Project 2</source>
+        </trans-unit>
+        <trans-unit id="379" translate="yes" xml:space="preserve">
+          <source>1</source>
+        </trans-unit>
+        <trans-unit id="380" translate="yes" xml:space="preserve">
+          <source>A predetermined cost rate for the cost projects contribution has been defined.</source>
+        </trans-unit>
+        <trans-unit id="381" translate="yes" xml:space="preserve">
+          <source>Cost object</source>
+        </trans-unit>
+        <trans-unit id="382" translate="yes" xml:space="preserve">
+          <source>Cost element</source>
+        </trans-unit>
+        <trans-unit id="383" translate="yes" xml:space="preserve">
+          <source>Cost behavior</source>
+        </trans-unit>
+        <trans-unit id="384" translate="yes" xml:space="preserve">
+          <source>Units</source>
+        </trans-unit>
+        <trans-unit id="385" translate="yes" xml:space="preserve">
+          <source>Rate</source>
+        </trans-unit>
+        <trans-unit id="386" translate="yes" xml:space="preserve">
+          <source>CC001</source>
+        </trans-unit>
+        <trans-unit id="387" translate="yes" xml:space="preserve">
+          <source>HR</source>
+        </trans-unit>
+        <trans-unit id="388" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="389" translate="yes" xml:space="preserve">
+          <source>Variable cost</source>
+        </trans-unit>
+        <trans-unit id="390" translate="yes" xml:space="preserve">
+          <source>1</source>
+        </trans-unit>
+        <trans-unit id="391" translate="yes" xml:space="preserve">
+          <source>10</source>
+        </trans-unit>
+        <trans-unit id="392" translate="yes" xml:space="preserve">
+          <source>The following table shows the result when the HR projects are applied as an allocation base.</source>
+        </trans-unit>
+        <trans-unit id="393" translate="yes" xml:space="preserve">
+          <source>Cost object</source>
+        </trans-unit>
+        <trans-unit id="394" translate="yes" xml:space="preserve">
+          <source>Magnitude</source>
+        </trans-unit>
+        <trans-unit id="395" translate="yes" xml:space="preserve">
+          <source>Cost element</source>
+        </trans-unit>
+        <trans-unit id="396" translate="yes" xml:space="preserve">
+          <source>Allocation factor</source>
+        </trans-unit>
+        <trans-unit id="397" translate="yes" xml:space="preserve">
+          <source>Amount</source>
+        </trans-unit>
+        <trans-unit id="398" translate="yes" xml:space="preserve">
+          <source>Proj 1</source>
+        </trans-unit>
+        <trans-unit id="399" translate="yes" xml:space="preserve">
+          <source>Project 1</source>
+        </trans-unit>
+        <trans-unit id="400" translate="yes" xml:space="preserve">
+          <source>3</source>
+        </trans-unit>
+        <trans-unit id="401" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="402" translate="yes" xml:space="preserve">
+          <source>(3 ÷ 1) × 10.00</source>
+        </trans-unit>
+        <trans-unit id="403" translate="yes" xml:space="preserve">
+          <source>30.00</source>
+        </trans-unit>
+        <trans-unit id="404" translate="yes" xml:space="preserve">
+          <source>Proj 2</source>
+        </trans-unit>
+        <trans-unit id="405" translate="yes" xml:space="preserve">
+          <source>Project 2</source>
+        </trans-unit>
+        <trans-unit id="406" translate="yes" xml:space="preserve">
+          <source>1</source>
+        </trans-unit>
+        <trans-unit id="407" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="408" translate="yes" xml:space="preserve">
+          <source>(1 ÷ 1) × 10.00</source>
+        </trans-unit>
+        <trans-unit id="409" translate="yes" xml:space="preserve">
+          <source>10.00</source>
+        </trans-unit>
+        <trans-unit id="410" translate="yes" xml:space="preserve">
+          <source>Journal</source>
+        </trans-unit>
+        <trans-unit id="411" translate="yes" xml:space="preserve">
+          <source>Journal</source>
+        </trans-unit>
+        <trans-unit id="412" translate="yes" xml:space="preserve">
+          <source>Journal type</source>
+        </trans-unit>
+        <trans-unit id="413" translate="yes" xml:space="preserve">
+          <source>Fiscal calendar period</source>
+        </trans-unit>
+        <trans-unit id="414" translate="yes" xml:space="preserve">
+          <source>Version</source>
+        </trans-unit>
+        <trans-unit id="415" translate="yes" xml:space="preserve">
+          <source>00003</source>
+        </trans-unit>
+        <trans-unit id="416" translate="yes" xml:space="preserve">
+          <source>Overhead rate calculation journal</source>
+        </trans-unit>
+        <trans-unit id="417" translate="yes" xml:space="preserve">
+          <source>Fiscal</source>
+        </trans-unit>
+        <trans-unit id="418" translate="yes" xml:space="preserve">
+          <source>2017</source>
+        </trans-unit>
+        <trans-unit id="419" translate="yes" xml:space="preserve">
+          <source>Period 1</source>
+        </trans-unit>
+        <trans-unit id="420" translate="yes" xml:space="preserve">
+          <source>Overhead calculation / 01-02-2017 11:51:00 PM / Ledger /2017 / Period 1</source>
+        </trans-unit>
+        <trans-unit id="421" translate="yes" xml:space="preserve">
+          <source>Journal entries (Journal entries for overhead rate calculation)</source>
+        </trans-unit>
+        <trans-unit id="422" translate="yes" xml:space="preserve">
+          <source>Accounting date</source>
+        </trans-unit>
+        <trans-unit id="423" translate="yes" xml:space="preserve">
+          <source>Cost object</source>
+        </trans-unit>
+        <trans-unit id="424" translate="yes" xml:space="preserve">
+          <source>Magnitude</source>
+        </trans-unit>
+        <trans-unit id="425" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="426" translate="yes" xml:space="preserve">
+          <source>Proj 1</source>
+        </trans-unit>
+        <trans-unit id="427" translate="yes" xml:space="preserve">
+          <source>Internal Proj 1</source>
+        </trans-unit>
+        <trans-unit id="428" translate="yes" xml:space="preserve">
+          <source>3.00</source>
+        </trans-unit>
+        <trans-unit id="429" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="430" translate="yes" xml:space="preserve">
+          <source>Proj 2</source>
+        </trans-unit>
+        <trans-unit id="431" translate="yes" xml:space="preserve">
+          <source>Internal Proj 2</source>
+        </trans-unit>
+        <trans-unit id="432" translate="yes" xml:space="preserve">
+          <source>1.00</source>
+        </trans-unit>
+        <trans-unit id="433" translate="yes" xml:space="preserve">
+          <source>Cost entries</source>
+        </trans-unit>
+        <trans-unit id="434" translate="yes" xml:space="preserve">
+          <source>Cost object</source>
+        </trans-unit>
+        <trans-unit id="435" translate="yes" xml:space="preserve">
+          <source>Cost element</source>
+        </trans-unit>
+        <trans-unit id="436" translate="yes" xml:space="preserve">
+          <source>Cost behavior</source>
+        </trans-unit>
+        <trans-unit id="437" translate="yes" xml:space="preserve">
+          <source>Amount</source>
+        </trans-unit>
+        <trans-unit id="438" translate="yes" xml:space="preserve">
+          <source>Accounting date</source>
+        </trans-unit>
+        <trans-unit id="439" translate="yes" xml:space="preserve">
+          <source>CC0001</source>
+        </trans-unit>
+        <trans-unit id="440" translate="yes" xml:space="preserve">
+          <source>HR</source>
+        </trans-unit>
+        <trans-unit id="441" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="442" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="443" translate="yes" xml:space="preserve">
+          <source>Variable cost</source>
+        </trans-unit>
+        <trans-unit id="444" translate="yes" xml:space="preserve">
+          <source>-30.00</source>
+        </trans-unit>
+        <trans-unit id="445" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="446" translate="yes" xml:space="preserve">
+          <source>Proj 1</source>
+        </trans-unit>
+        <trans-unit id="447" translate="yes" xml:space="preserve">
+          <source>Internal Proj 1</source>
+        </trans-unit>
+        <trans-unit id="448" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="449" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="450" translate="yes" xml:space="preserve">
+          <source>Variable cost</source>
+        </trans-unit>
+        <trans-unit id="451" translate="yes" xml:space="preserve">
+          <source>30.00</source>
+        </trans-unit>
+        <trans-unit id="452" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="453" translate="yes" xml:space="preserve">
+          <source>CC001</source>
+        </trans-unit>
+        <trans-unit id="454" translate="yes" xml:space="preserve">
+          <source>HR</source>
+        </trans-unit>
+        <trans-unit id="455" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="456" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="457" translate="yes" xml:space="preserve">
+          <source>Variable cost</source>
+        </trans-unit>
+        <trans-unit id="458" translate="yes" xml:space="preserve">
+          <source>-10.00</source>
+        </trans-unit>
+        <trans-unit id="459" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="460" translate="yes" xml:space="preserve">
+          <source>Proj 2</source>
+        </trans-unit>
+        <trans-unit id="461" translate="yes" xml:space="preserve">
+          <source>Internal Proj 2</source>
+        </trans-unit>
+        <trans-unit id="462" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="463" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="464" translate="yes" xml:space="preserve">
+          <source>Variable cost</source>
+        </trans-unit>
+        <trans-unit id="465" translate="yes" xml:space="preserve">
+          <source>10.00</source>
+        </trans-unit>
+        <trans-unit id="466" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="467" translate="yes" xml:space="preserve">
+          <source>For detailed information about overhead rate policy, see Overhead rate policy and Allocation bases.</source>
+        </trans-unit>
+        <trans-unit id="468" translate="yes" xml:space="preserve">
+          <source>(Note that this topic isn't competed yet but is coming soon.)</source>
+        </trans-unit>
+        <trans-unit id="469" translate="yes" xml:space="preserve">
+          <source>Step 4: Process the cost allocation calculation</source>
+        </trans-unit>
+        <trans-unit id="470" translate="yes" xml:space="preserve">
+          <source>Allocation is used to allocate the balance of a cost object to other cost objects by applying an allocation base.</source>
+        </trans-unit>
+        <trans-unit id="471" translate="yes" xml:space="preserve">
+          <source>Finance and Operations supports the reciprocal allocation method.</source>
+        </trans-unit>
+        <trans-unit id="472" translate="yes" xml:space="preserve">
+          <source>In the reciprocal allocation method, the mutual services that auxiliary cost objects exchange are fully recognized.</source>
+        </trans-unit>
+        <trans-unit id="473" translate="yes" xml:space="preserve">
+          <source>The system automatically determines the correct order to perform the allocations in.</source>
+        </trans-unit>
+        <trans-unit id="474" translate="yes" xml:space="preserve">
+          <source>The balance of a cost object is allocated by a single allocation base.</source>
+        </trans-unit>
+        <trans-unit id="475" translate="yes" xml:space="preserve">
+          <source>Allocations across cost objects dimensions and their respective members are supported.</source>
+        </trans-unit>
+        <trans-unit id="476" translate="yes" xml:space="preserve">
+          <source>The allocation order is controlled by the cost control unit.</source>
+        </trans-unit>
+        <trans-unit id="477" translate="yes" xml:space="preserve">
+          <source>[<ph id="ph1">![</ph>Reciprocal method<ph id="ph2">](./media/reciprocal-method.png)</ph>]</source>
+        </trans-unit>
+        <trans-unit id="478" translate="yes" xml:space="preserve">
+          <source>Define the cost allocation</source>
+        </trans-unit>
+        <trans-unit id="479" translate="yes" xml:space="preserve">
+          <source>Here is a simple example that explains how you can trace the flow of cost.</source>
+        </trans-unit>
+        <trans-unit id="480" translate="yes" xml:space="preserve">
+          <source>Cost object CC001 HR contributes to several cost objects.</source>
+        </trans-unit>
+        <trans-unit id="481" translate="yes" xml:space="preserve">
+          <source>A statistical dimension member that is named HR services is created to measure the consumed magnitude.</source>
+        </trans-unit>
+        <trans-unit id="482" translate="yes" xml:space="preserve">
+          <source>Cost object</source>
+        </trans-unit>
+        <trans-unit id="483" translate="yes" xml:space="preserve">
+          <source>HR services</source>
+        </trans-unit>
+        <trans-unit id="484" translate="yes" xml:space="preserve">
+          <source>CC002</source>
+        </trans-unit>
+        <trans-unit id="485" translate="yes" xml:space="preserve">
+          <source>Finance</source>
+        </trans-unit>
+        <trans-unit id="486" translate="yes" xml:space="preserve">
+          <source>35</source>
+        </trans-unit>
+        <trans-unit id="487" translate="yes" xml:space="preserve">
+          <source>CC003</source>
+        </trans-unit>
+        <trans-unit id="488" translate="yes" xml:space="preserve">
+          <source>Assembly</source>
+        </trans-unit>
+        <trans-unit id="489" translate="yes" xml:space="preserve">
+          <source>55</source>
+        </trans-unit>
+        <trans-unit id="490" translate="yes" xml:space="preserve">
+          <source>CC004</source>
+        </trans-unit>
+        <trans-unit id="491" translate="yes" xml:space="preserve">
+          <source>Packaging</source>
+        </trans-unit>
+        <trans-unit id="492" translate="yes" xml:space="preserve">
+          <source>10</source>
+        </trans-unit>
+        <trans-unit id="493" translate="yes" xml:space="preserve">
+          <source>Cost object CC002 Finance contributes to several cost objects.</source>
+        </trans-unit>
+        <trans-unit id="494" translate="yes" xml:space="preserve">
+          <source>A statistical dimension member that is named Finance services is created to measure the consumed magnitude.</source>
+        </trans-unit>
+        <trans-unit id="495" translate="yes" xml:space="preserve">
+          <source>Cost object</source>
+        </trans-unit>
+        <trans-unit id="496" translate="yes" xml:space="preserve">
+          <source>Finance services</source>
+        </trans-unit>
+        <trans-unit id="497" translate="yes" xml:space="preserve">
+          <source>CC003</source>
+        </trans-unit>
+        <trans-unit id="498" translate="yes" xml:space="preserve">
+          <source>Assembly</source>
+        </trans-unit>
+        <trans-unit id="499" translate="yes" xml:space="preserve">
+          <source>65</source>
+        </trans-unit>
+        <trans-unit id="500" translate="yes" xml:space="preserve">
+          <source>CC004</source>
+        </trans-unit>
+        <trans-unit id="501" translate="yes" xml:space="preserve">
+          <source>Packaging</source>
+        </trans-unit>
+        <trans-unit id="502" translate="yes" xml:space="preserve">
+          <source>35</source>
+        </trans-unit>
+        <trans-unit id="503" translate="yes" xml:space="preserve">
+          <source>Cost object CC003 Assembly contributes to several cost objects.</source>
+        </trans-unit>
+        <trans-unit id="504" translate="yes" xml:space="preserve">
+          <source>A statistical dimension member that is named Assembly services is created to measure the consumed magnitude.</source>
+        </trans-unit>
+        <trans-unit id="505" translate="yes" xml:space="preserve">
+          <source>Cost object</source>
+        </trans-unit>
+        <trans-unit id="506" translate="yes" xml:space="preserve">
+          <source>Assembly services (hours)</source>
+        </trans-unit>
+        <trans-unit id="507" translate="yes" xml:space="preserve">
+          <source>Prod 1</source>
+        </trans-unit>
+        <trans-unit id="508" translate="yes" xml:space="preserve">
+          <source>Product 1</source>
+        </trans-unit>
+        <trans-unit id="509" translate="yes" xml:space="preserve">
+          <source>60</source>
+        </trans-unit>
+        <trans-unit id="510" translate="yes" xml:space="preserve">
+          <source>Prod 2</source>
+        </trans-unit>
+        <trans-unit id="511" translate="yes" xml:space="preserve">
+          <source>Product 2</source>
+        </trans-unit>
+        <trans-unit id="512" translate="yes" xml:space="preserve">
+          <source>20</source>
+        </trans-unit>
+        <trans-unit id="513" translate="yes" xml:space="preserve">
+          <source>Cost object CC004 Packaging contributes to several cost objects.</source>
+        </trans-unit>
+        <trans-unit id="514" translate="yes" xml:space="preserve">
+          <source>A statistical dimension member that is named Packaging services is created to measure the consumed magnitude.</source>
+        </trans-unit>
+        <trans-unit id="515" translate="yes" xml:space="preserve">
+          <source>Cost object</source>
+        </trans-unit>
+        <trans-unit id="516" translate="yes" xml:space="preserve">
+          <source>Packaging services (hours)</source>
+        </trans-unit>
+        <trans-unit id="517" translate="yes" xml:space="preserve">
+          <source>Prod 1</source>
+        </trans-unit>
+        <trans-unit id="518" translate="yes" xml:space="preserve">
+          <source>Product 1</source>
+        </trans-unit>
+        <trans-unit id="519" translate="yes" xml:space="preserve">
+          <source>80</source>
+        </trans-unit>
+        <trans-unit id="520" translate="yes" xml:space="preserve">
+          <source>Prod 2</source>
+        </trans-unit>
+        <trans-unit id="521" translate="yes" xml:space="preserve">
+          <source>Product 2</source>
+        </trans-unit>
+        <trans-unit id="522" translate="yes" xml:space="preserve">
+          <source>15</source>
+        </trans-unit>
+        <trans-unit id="523" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> In Finance and Operations, statistical measures such as the production hours that a product consumes can be derived from source data.</source>
+        </trans-unit>
+        <trans-unit id="524" translate="yes" xml:space="preserve">
+          <source>For more detailed information about statistical measure providers, see Statistical measure provider template.</source>
+        </trans-unit>
+        <trans-unit id="525" translate="yes" xml:space="preserve">
+          <source>(Note that this topic isn't completed yet but is coming soon.) The following table shows the result when the HR services are applied as an allocation base for total cost (fixed cost and variable cost).</source>
+        </trans-unit>
+        <trans-unit id="526" translate="yes" xml:space="preserve">
+          <source>Cost object</source>
+        </trans-unit>
+        <trans-unit id="527" translate="yes" xml:space="preserve">
+          <source>Magnitude</source>
+        </trans-unit>
+        <trans-unit id="528" translate="yes" xml:space="preserve">
+          <source>Allocation factor</source>
+        </trans-unit>
+        <trans-unit id="529" translate="yes" xml:space="preserve">
+          <source>Amount</source>
+        </trans-unit>
+        <trans-unit id="530" translate="yes" xml:space="preserve">
+          <source>Cost behavior</source>
+        </trans-unit>
+        <trans-unit id="531" translate="yes" xml:space="preserve">
+          <source>CC002</source>
+        </trans-unit>
+        <trans-unit id="532" translate="yes" xml:space="preserve">
+          <source>Finance</source>
+        </trans-unit>
+        <trans-unit id="533" translate="yes" xml:space="preserve">
+          <source>35</source>
+        </trans-unit>
+        <trans-unit id="534" translate="yes" xml:space="preserve">
+          <source>(35 ÷ 100) × 500.00</source>
+        </trans-unit>
+        <trans-unit id="535" translate="yes" xml:space="preserve">
+          <source>175.00</source>
+        </trans-unit>
+        <trans-unit id="536" translate="yes" xml:space="preserve">
+          <source>Fixed cost</source>
+        </trans-unit>
+        <trans-unit id="537" translate="yes" xml:space="preserve">
+          <source>CC003</source>
+        </trans-unit>
+        <trans-unit id="538" translate="yes" xml:space="preserve">
+          <source>Assembly</source>
+        </trans-unit>
+        <trans-unit id="539" translate="yes" xml:space="preserve">
+          <source>55</source>
+        </trans-unit>
+        <trans-unit id="540" translate="yes" xml:space="preserve">
+          <source>(55 ÷ 100) × 500.00</source>
+        </trans-unit>
+        <trans-unit id="541" translate="yes" xml:space="preserve">
+          <source>275.00</source>
+        </trans-unit>
+        <trans-unit id="542" translate="yes" xml:space="preserve">
+          <source>Fixed cost</source>
+        </trans-unit>
+        <trans-unit id="543" translate="yes" xml:space="preserve">
+          <source>CC004</source>
+        </trans-unit>
+        <trans-unit id="544" translate="yes" xml:space="preserve">
+          <source>Packaging</source>
+        </trans-unit>
+        <trans-unit id="545" translate="yes" xml:space="preserve">
+          <source>10</source>
+        </trans-unit>
+        <trans-unit id="546" translate="yes" xml:space="preserve">
+          <source>(10 ÷ 100) × 500.00</source>
+        </trans-unit>
+        <trans-unit id="547" translate="yes" xml:space="preserve">
+          <source>50.00</source>
+        </trans-unit>
+        <trans-unit id="548" translate="yes" xml:space="preserve">
+          <source>Fixed cost</source>
+        </trans-unit>
+        <trans-unit id="549" translate="yes" xml:space="preserve">
+          <source>CC002</source>
+        </trans-unit>
+        <trans-unit id="550" translate="yes" xml:space="preserve">
+          <source>Finance</source>
+        </trans-unit>
+        <trans-unit id="551" translate="yes" xml:space="preserve">
+          <source>35</source>
+        </trans-unit>
+        <trans-unit id="552" translate="yes" xml:space="preserve">
+          <source>(35 ÷ 100) × 1,245.71</source>
+        </trans-unit>
+        <trans-unit id="553" translate="yes" xml:space="preserve">
+          <source>436.00</source>
+        </trans-unit>
+        <trans-unit id="554" translate="yes" xml:space="preserve">
+          <source>Variable cost</source>
+        </trans-unit>
+        <trans-unit id="555" translate="yes" xml:space="preserve">
+          <source>CC003</source>
+        </trans-unit>
+        <trans-unit id="556" translate="yes" xml:space="preserve">
+          <source>Assembly</source>
+        </trans-unit>
+        <trans-unit id="557" translate="yes" xml:space="preserve">
+          <source>55</source>
+        </trans-unit>
+        <trans-unit id="558" translate="yes" xml:space="preserve">
+          <source>(55 ÷ 100) × 1,245.71</source>
+        </trans-unit>
+        <trans-unit id="559" translate="yes" xml:space="preserve">
+          <source>685.14</source>
+        </trans-unit>
+        <trans-unit id="560" translate="yes" xml:space="preserve">
+          <source>Variable cost</source>
+        </trans-unit>
+        <trans-unit id="561" translate="yes" xml:space="preserve">
+          <source>CC004</source>
+        </trans-unit>
+        <trans-unit id="562" translate="yes" xml:space="preserve">
+          <source>Packaging</source>
+        </trans-unit>
+        <trans-unit id="563" translate="yes" xml:space="preserve">
+          <source>10</source>
+        </trans-unit>
+        <trans-unit id="564" translate="yes" xml:space="preserve">
+          <source>(10 ÷ 100) × 1,245.71</source>
+        </trans-unit>
+        <trans-unit id="565" translate="yes" xml:space="preserve">
+          <source>124.57</source>
+        </trans-unit>
+        <trans-unit id="566" translate="yes" xml:space="preserve">
+          <source>Variable cost</source>
+        </trans-unit>
+        <trans-unit id="567" translate="yes" xml:space="preserve">
+          <source>The following table shows the result when the Finance services are applied as an allocation base for total cost (fixed cost and variable cost).</source>
+        </trans-unit>
+        <trans-unit id="568" translate="yes" xml:space="preserve">
+          <source>Cost object</source>
+        </trans-unit>
+        <trans-unit id="569" translate="yes" xml:space="preserve">
+          <source>Magnitude</source>
+        </trans-unit>
+        <trans-unit id="570" translate="yes" xml:space="preserve">
+          <source>Allocation factor</source>
+        </trans-unit>
+        <trans-unit id="571" translate="yes" xml:space="preserve">
+          <source>Amount</source>
+        </trans-unit>
+        <trans-unit id="572" translate="yes" xml:space="preserve">
+          <source>Cost behavior</source>
+        </trans-unit>
+        <trans-unit id="573" translate="yes" xml:space="preserve">
+          <source>CC003</source>
+        </trans-unit>
+        <trans-unit id="574" translate="yes" xml:space="preserve">
+          <source>Assembly</source>
+        </trans-unit>
+        <trans-unit id="575" translate="yes" xml:space="preserve">
+          <source>65</source>
+        </trans-unit>
+        <trans-unit id="576" translate="yes" xml:space="preserve">
+          <source>(65 ÷ 100) × (500.00 + 175.00)</source>
+        </trans-unit>
+        <trans-unit id="577" translate="yes" xml:space="preserve">
+          <source>438.75</source>
+        </trans-unit>
+        <trans-unit id="578" translate="yes" xml:space="preserve">
+          <source>Fixed cost</source>
+        </trans-unit>
+        <trans-unit id="579" translate="yes" xml:space="preserve">
+          <source>CC004</source>
+        </trans-unit>
+        <trans-unit id="580" translate="yes" xml:space="preserve">
+          <source>Packaging</source>
+        </trans-unit>
+        <trans-unit id="581" translate="yes" xml:space="preserve">
+          <source>35</source>
+        </trans-unit>
+        <trans-unit id="582" translate="yes" xml:space="preserve">
+          <source>(35 ÷ 100) × (500.00 + 175.00)</source>
+        </trans-unit>
+        <trans-unit id="583" translate="yes" xml:space="preserve">
+          <source>236.25</source>
+        </trans-unit>
+        <trans-unit id="584" translate="yes" xml:space="preserve">
+          <source>Fixed cost</source>
+        </trans-unit>
+        <trans-unit id="585" translate="yes" xml:space="preserve">
+          <source>CC003</source>
+        </trans-unit>
+        <trans-unit id="586" translate="yes" xml:space="preserve">
+          <source>Assembly</source>
+        </trans-unit>
+        <trans-unit id="587" translate="yes" xml:space="preserve">
+          <source>65</source>
+        </trans-unit>
+        <trans-unit id="588" translate="yes" xml:space="preserve">
+          <source>(65 ÷ 100) × (7,714.29 + 436.00)</source>
+        </trans-unit>
+        <trans-unit id="589" translate="yes" xml:space="preserve">
+          <source>5,297.69</source>
+        </trans-unit>
+        <trans-unit id="590" translate="yes" xml:space="preserve">
+          <source>Variable cost</source>
+        </trans-unit>
+        <trans-unit id="591" translate="yes" xml:space="preserve">
+          <source>CC004</source>
+        </trans-unit>
+        <trans-unit id="592" translate="yes" xml:space="preserve">
+          <source>Packaging</source>
+        </trans-unit>
+        <trans-unit id="593" translate="yes" xml:space="preserve">
+          <source>35</source>
+        </trans-unit>
+        <trans-unit id="594" translate="yes" xml:space="preserve">
+          <source>(35 ÷ 100) × (7,714.29 + 436.00)</source>
+        </trans-unit>
+        <trans-unit id="595" translate="yes" xml:space="preserve">
+          <source>2,852.60</source>
+        </trans-unit>
+        <trans-unit id="596" translate="yes" xml:space="preserve">
+          <source>Variable cost</source>
+        </trans-unit>
+        <trans-unit id="597" translate="yes" xml:space="preserve">
+          <source>The following table shows the result when the Assembly services are applied as an allocation base for total cost (fixed cost and variable cost).</source>
+        </trans-unit>
+        <trans-unit id="598" translate="yes" xml:space="preserve">
+          <source>Cost object</source>
+        </trans-unit>
+        <trans-unit id="599" translate="yes" xml:space="preserve">
+          <source>Magnitude</source>
+        </trans-unit>
+        <trans-unit id="600" translate="yes" xml:space="preserve">
+          <source>Allocation factor</source>
+        </trans-unit>
+        <trans-unit id="601" translate="yes" xml:space="preserve">
+          <source>Amount</source>
+        </trans-unit>
+        <trans-unit id="602" translate="yes" xml:space="preserve">
+          <source>Cost behavior</source>
+        </trans-unit>
+        <trans-unit id="603" translate="yes" xml:space="preserve">
+          <source>Prod 1</source>
+        </trans-unit>
+        <trans-unit id="604" translate="yes" xml:space="preserve">
+          <source>Product 1</source>
+        </trans-unit>
+        <trans-unit id="605" translate="yes" xml:space="preserve">
+          <source>60</source>
+        </trans-unit>
+        <trans-unit id="606" translate="yes" xml:space="preserve">
+          <source>(60 ÷ 80) × (275.00 + 438.75)</source>
+        </trans-unit>
+        <trans-unit id="607" translate="yes" xml:space="preserve">
+          <source>535.31</source>
+        </trans-unit>
+        <trans-unit id="608" translate="yes" xml:space="preserve">
+          <source>Fixed cost</source>
+        </trans-unit>
+        <trans-unit id="609" translate="yes" xml:space="preserve">
+          <source>Prod 2</source>
+        </trans-unit>
+        <trans-unit id="610" translate="yes" xml:space="preserve">
+          <source>Product 2</source>
+        </trans-unit>
+        <trans-unit id="611" translate="yes" xml:space="preserve">
+          <source>20</source>
+        </trans-unit>
+        <trans-unit id="612" translate="yes" xml:space="preserve">
+          <source>(20 ÷ 80) × (275.00 + 438.75)</source>
+        </trans-unit>
+        <trans-unit id="613" translate="yes" xml:space="preserve">
+          <source>178.44</source>
+        </trans-unit>
+        <trans-unit id="614" translate="yes" xml:space="preserve">
+          <source>Fixed cost</source>
+        </trans-unit>
+        <trans-unit id="615" translate="yes" xml:space="preserve">
+          <source>Prod 1</source>
+        </trans-unit>
+        <trans-unit id="616" translate="yes" xml:space="preserve">
+          <source>Product 1</source>
+        </trans-unit>
+        <trans-unit id="617" translate="yes" xml:space="preserve">
+          <source>60</source>
+        </trans-unit>
+        <trans-unit id="618" translate="yes" xml:space="preserve">
+          <source>(60 ÷ 80) × (5,297.69 + 685.14)</source>
+        </trans-unit>
+        <trans-unit id="619" translate="yes" xml:space="preserve">
+          <source>4,487.12</source>
+        </trans-unit>
+        <trans-unit id="620" translate="yes" xml:space="preserve">
+          <source>Variable cost</source>
+        </trans-unit>
+        <trans-unit id="621" translate="yes" xml:space="preserve">
+          <source>Prod 2</source>
+        </trans-unit>
+        <trans-unit id="622" translate="yes" xml:space="preserve">
+          <source>Product 2</source>
+        </trans-unit>
+        <trans-unit id="623" translate="yes" xml:space="preserve">
+          <source>20</source>
+        </trans-unit>
+        <trans-unit id="624" translate="yes" xml:space="preserve">
+          <source>(20 ÷ 80) × (5,297.69 + 685.14)</source>
+        </trans-unit>
+        <trans-unit id="625" translate="yes" xml:space="preserve">
+          <source>1,495.71</source>
+        </trans-unit>
+        <trans-unit id="626" translate="yes" xml:space="preserve">
+          <source>Variable cost</source>
+        </trans-unit>
+        <trans-unit id="627" translate="yes" xml:space="preserve">
+          <source>The following table shows the result when the Packaging services are applied as an allocation base for total cost (fixed cost and variable cost).</source>
+        </trans-unit>
+        <trans-unit id="628" translate="yes" xml:space="preserve">
+          <source>Cost object</source>
+        </trans-unit>
+        <trans-unit id="629" translate="yes" xml:space="preserve">
+          <source>Magnitude</source>
+        </trans-unit>
+        <trans-unit id="630" translate="yes" xml:space="preserve">
+          <source>Allocation factor</source>
+        </trans-unit>
+        <trans-unit id="631" translate="yes" xml:space="preserve">
+          <source>Amount</source>
+        </trans-unit>
+        <trans-unit id="632" translate="yes" xml:space="preserve">
+          <source>Cost behavior</source>
+        </trans-unit>
+        <trans-unit id="633" translate="yes" xml:space="preserve">
+          <source>Prod 1</source>
+        </trans-unit>
+        <trans-unit id="634" translate="yes" xml:space="preserve">
+          <source>Product 1</source>
+        </trans-unit>
+        <trans-unit id="635" translate="yes" xml:space="preserve">
+          <source>80</source>
+        </trans-unit>
+        <trans-unit id="636" translate="yes" xml:space="preserve">
+          <source>(80 ÷ 95) × (50.00 + 236.25)</source>
+        </trans-unit>
+        <trans-unit id="637" translate="yes" xml:space="preserve">
+          <source>241.05</source>
+        </trans-unit>
+        <trans-unit id="638" translate="yes" xml:space="preserve">
+          <source>Fixed cost</source>
+        </trans-unit>
+        <trans-unit id="639" translate="yes" xml:space="preserve">
+          <source>Prod 2</source>
+        </trans-unit>
+        <trans-unit id="640" translate="yes" xml:space="preserve">
+          <source>Product 2</source>
+        </trans-unit>
+        <trans-unit id="641" translate="yes" xml:space="preserve">
+          <source>15</source>
+        </trans-unit>
+        <trans-unit id="642" translate="yes" xml:space="preserve">
+          <source>(15 ÷ 95) × (50.00 + 236.25)</source>
+        </trans-unit>
+        <trans-unit id="643" translate="yes" xml:space="preserve">
+          <source>45.20</source>
+        </trans-unit>
+        <trans-unit id="644" translate="yes" xml:space="preserve">
+          <source>Fixed cost</source>
+        </trans-unit>
+        <trans-unit id="645" translate="yes" xml:space="preserve">
+          <source>Prod 1</source>
+        </trans-unit>
+        <trans-unit id="646" translate="yes" xml:space="preserve">
+          <source>Product 1</source>
+        </trans-unit>
+        <trans-unit id="647" translate="yes" xml:space="preserve">
+          <source>80</source>
+        </trans-unit>
+        <trans-unit id="648" translate="yes" xml:space="preserve">
+          <source>(80 ÷ 95) × (2,852.60 + 124.57)</source>
+        </trans-unit>
+        <trans-unit id="649" translate="yes" xml:space="preserve">
+          <source>2,507.09</source>
+        </trans-unit>
+        <trans-unit id="650" translate="yes" xml:space="preserve">
+          <source>Variable cost</source>
+        </trans-unit>
+        <trans-unit id="651" translate="yes" xml:space="preserve">
+          <source>Prod 2</source>
+        </trans-unit>
+        <trans-unit id="652" translate="yes" xml:space="preserve">
+          <source>Product 2</source>
+        </trans-unit>
+        <trans-unit id="653" translate="yes" xml:space="preserve">
+          <source>15</source>
+        </trans-unit>
+        <trans-unit id="654" translate="yes" xml:space="preserve">
+          <source>(15 ÷ 95) × (2,852.60 + 124.57)</source>
+        </trans-unit>
+        <trans-unit id="655" translate="yes" xml:space="preserve">
+          <source>470.08</source>
+        </trans-unit>
+        <trans-unit id="656" translate="yes" xml:space="preserve">
+          <source>Variable cost</source>
+        </trans-unit>
+        <trans-unit id="657" translate="yes" xml:space="preserve">
+          <source>Journal entries (cost object balance journal entries)</source>
+        </trans-unit>
+        <trans-unit id="658" translate="yes" xml:space="preserve">
+          <source>Journal</source>
+        </trans-unit>
+        <trans-unit id="659" translate="yes" xml:space="preserve">
+          <source>Journal type</source>
+        </trans-unit>
+        <trans-unit id="660" translate="yes" xml:space="preserve">
+          <source>Fiscal calendar period</source>
+        </trans-unit>
+        <trans-unit id="661" translate="yes" xml:space="preserve">
+          <source>Version</source>
+        </trans-unit>
+        <trans-unit id="662" translate="yes" xml:space="preserve">
+          <source>00004</source>
+        </trans-unit>
+        <trans-unit id="663" translate="yes" xml:space="preserve">
+          <source>Cost allocation journal</source>
+        </trans-unit>
+        <trans-unit id="664" translate="yes" xml:space="preserve">
+          <source>Fiscal</source>
+        </trans-unit>
+        <trans-unit id="665" translate="yes" xml:space="preserve">
+          <source>2017</source>
+        </trans-unit>
+        <trans-unit id="666" translate="yes" xml:space="preserve">
+          <source>Period 1</source>
+        </trans-unit>
+        <trans-unit id="667" translate="yes" xml:space="preserve">
+          <source>Overhead calculation / 01-02-2017 11:51:00 PM / Ledger /2017 / Period 1</source>
+        </trans-unit>
+        <trans-unit id="668" translate="yes" xml:space="preserve">
+          <source>Journal lines</source>
+        </trans-unit>
+        <trans-unit id="669" translate="yes" xml:space="preserve">
+          <source>Accounting date</source>
+        </trans-unit>
+        <trans-unit id="670" translate="yes" xml:space="preserve">
+          <source>Cost object</source>
+        </trans-unit>
+        <trans-unit id="671" translate="yes" xml:space="preserve">
+          <source>Cost element</source>
+        </trans-unit>
+        <trans-unit id="672" translate="yes" xml:space="preserve">
+          <source>Cost behavior</source>
+        </trans-unit>
+        <trans-unit id="673" translate="yes" xml:space="preserve">
+          <source>Amount</source>
+        </trans-unit>
+        <trans-unit id="674" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="675" translate="yes" xml:space="preserve">
+          <source>CC001</source>
+        </trans-unit>
+        <trans-unit id="676" translate="yes" xml:space="preserve">
+          <source>HR</source>
+        </trans-unit>
+        <trans-unit id="677" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="678" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="679" translate="yes" xml:space="preserve">
+          <source>Fixed cost</source>
+        </trans-unit>
+        <trans-unit id="680" translate="yes" xml:space="preserve">
+          <source>500.00</source>
+        </trans-unit>
+        <trans-unit id="681" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="682" translate="yes" xml:space="preserve">
+          <source>CC001</source>
+        </trans-unit>
+        <trans-unit id="683" translate="yes" xml:space="preserve">
+          <source>HR</source>
+        </trans-unit>
+        <trans-unit id="684" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="685" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="686" translate="yes" xml:space="preserve">
+          <source>Variable cost</source>
+        </trans-unit>
+        <trans-unit id="687" translate="yes" xml:space="preserve">
+          <source>1,245.71</source>
+        </trans-unit>
+        <trans-unit id="688" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="689" translate="yes" xml:space="preserve">
+          <source>CC002</source>
+        </trans-unit>
+        <trans-unit id="690" translate="yes" xml:space="preserve">
+          <source>Finance</source>
+        </trans-unit>
+        <trans-unit id="691" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="692" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="693" translate="yes" xml:space="preserve">
+          <source>Fixed cost</source>
+        </trans-unit>
+        <trans-unit id="694" translate="yes" xml:space="preserve">
+          <source>675.00</source>
+        </trans-unit>
+        <trans-unit id="695" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="696" translate="yes" xml:space="preserve">
+          <source>CC002</source>
+        </trans-unit>
+        <trans-unit id="697" translate="yes" xml:space="preserve">
+          <source>Finance</source>
+        </trans-unit>
+        <trans-unit id="698" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="699" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="700" translate="yes" xml:space="preserve">
+          <source>Variable cost</source>
+        </trans-unit>
+        <trans-unit id="701" translate="yes" xml:space="preserve">
+          <source>8,150.29</source>
+        </trans-unit>
+        <trans-unit id="702" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="703" translate="yes" xml:space="preserve">
+          <source>CC003</source>
+        </trans-unit>
+        <trans-unit id="704" translate="yes" xml:space="preserve">
+          <source>Assembly</source>
+        </trans-unit>
+        <trans-unit id="705" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="706" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="707" translate="yes" xml:space="preserve">
+          <source>Fixed cost</source>
+        </trans-unit>
+        <trans-unit id="708" translate="yes" xml:space="preserve">
+          <source>713.75</source>
+        </trans-unit>
+        <trans-unit id="709" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="710" translate="yes" xml:space="preserve">
+          <source>CC003</source>
+        </trans-unit>
+        <trans-unit id="711" translate="yes" xml:space="preserve">
+          <source>Assembly</source>
+        </trans-unit>
+        <trans-unit id="712" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="713" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="714" translate="yes" xml:space="preserve">
+          <source>Variable cost</source>
+        </trans-unit>
+        <trans-unit id="715" translate="yes" xml:space="preserve">
+          <source>5,982.83</source>
+        </trans-unit>
+        <trans-unit id="716" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="717" translate="yes" xml:space="preserve">
+          <source>CC003</source>
+        </trans-unit>
+        <trans-unit id="718" translate="yes" xml:space="preserve">
+          <source>Packaging</source>
+        </trans-unit>
+        <trans-unit id="719" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="720" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="721" translate="yes" xml:space="preserve">
+          <source>Fixed cost</source>
+        </trans-unit>
+        <trans-unit id="722" translate="yes" xml:space="preserve">
+          <source>286.25</source>
+        </trans-unit>
+        <trans-unit id="723" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="724" translate="yes" xml:space="preserve">
+          <source>CC003</source>
+        </trans-unit>
+        <trans-unit id="725" translate="yes" xml:space="preserve">
+          <source>Packaging</source>
+        </trans-unit>
+        <trans-unit id="726" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="727" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="728" translate="yes" xml:space="preserve">
+          <source>Variable cost</source>
+        </trans-unit>
+        <trans-unit id="729" translate="yes" xml:space="preserve">
+          <source>2,977.17</source>
+        </trans-unit>
+        <trans-unit id="730" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="731" translate="yes" xml:space="preserve">
+          <source>Prod 1</source>
+        </trans-unit>
+        <trans-unit id="732" translate="yes" xml:space="preserve">
+          <source>Product 1</source>
+        </trans-unit>
+        <trans-unit id="733" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="734" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="735" translate="yes" xml:space="preserve">
+          <source>Fixed cost</source>
+        </trans-unit>
+        <trans-unit id="736" translate="yes" xml:space="preserve">
+          <source>776.36</source>
+        </trans-unit>
+        <trans-unit id="737" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="738" translate="yes" xml:space="preserve">
+          <source>Prod 1</source>
+        </trans-unit>
+        <trans-unit id="739" translate="yes" xml:space="preserve">
+          <source>Product 1</source>
+        </trans-unit>
+        <trans-unit id="740" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="741" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="742" translate="yes" xml:space="preserve">
+          <source>Variable cost</source>
+        </trans-unit>
+        <trans-unit id="743" translate="yes" xml:space="preserve">
+          <source>6,994.21</source>
+        </trans-unit>
+        <trans-unit id="744" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="745" translate="yes" xml:space="preserve">
+          <source>Prod 2</source>
+        </trans-unit>
+        <trans-unit id="746" translate="yes" xml:space="preserve">
+          <source>Product 1</source>
+        </trans-unit>
+        <trans-unit id="747" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="748" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="749" translate="yes" xml:space="preserve">
+          <source>Fixed cost</source>
+        </trans-unit>
+        <trans-unit id="750" translate="yes" xml:space="preserve">
+          <source>223.64</source>
+        </trans-unit>
+        <trans-unit id="751" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="752" translate="yes" xml:space="preserve">
+          <source>Prod 2</source>
+        </trans-unit>
+        <trans-unit id="753" translate="yes" xml:space="preserve">
+          <source>Product 1</source>
+        </trans-unit>
+        <trans-unit id="754" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="755" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="756" translate="yes" xml:space="preserve">
+          <source>Variable cost</source>
+        </trans-unit>
+        <trans-unit id="757" translate="yes" xml:space="preserve">
+          <source>1,965.79</source>
+        </trans-unit>
+        <trans-unit id="758" translate="yes" xml:space="preserve">
+          <source>Cost entries</source>
+        </trans-unit>
+        <trans-unit id="759" translate="yes" xml:space="preserve">
+          <source>Cost object</source>
+        </trans-unit>
+        <trans-unit id="760" translate="yes" xml:space="preserve">
+          <source>Cost element</source>
+        </trans-unit>
+        <trans-unit id="761" translate="yes" xml:space="preserve">
+          <source>Cost behavior</source>
+        </trans-unit>
+        <trans-unit id="762" translate="yes" xml:space="preserve">
+          <source>Amount</source>
+        </trans-unit>
+        <trans-unit id="763" translate="yes" xml:space="preserve">
+          <source>Accounting date</source>
+        </trans-unit>
+        <trans-unit id="764" translate="yes" xml:space="preserve">
+          <source>CC001</source>
+        </trans-unit>
+        <trans-unit id="765" translate="yes" xml:space="preserve">
+          <source>HR</source>
+        </trans-unit>
+        <trans-unit id="766" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="767" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="768" translate="yes" xml:space="preserve">
+          <source>Fixed cost</source>
+        </trans-unit>
+        <trans-unit id="769" translate="yes" xml:space="preserve">
+          <source>-500.00</source>
+        </trans-unit>
+        <trans-unit id="770" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="771" translate="yes" xml:space="preserve">
+          <source>CC002</source>
+        </trans-unit>
+        <trans-unit id="772" translate="yes" xml:space="preserve">
+          <source>Finance</source>
+        </trans-unit>
+        <trans-unit id="773" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="774" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="775" translate="yes" xml:space="preserve">
+          <source>Fixed cost</source>
+        </trans-unit>
+        <trans-unit id="776" translate="yes" xml:space="preserve">
+          <source>175.00</source>
+        </trans-unit>
+        <trans-unit id="777" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="778" translate="yes" xml:space="preserve">
+          <source>CC003</source>
+        </trans-unit>
+        <trans-unit id="779" translate="yes" xml:space="preserve">
+          <source>Assembly</source>
+        </trans-unit>
+        <trans-unit id="780" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="781" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="782" translate="yes" xml:space="preserve">
+          <source>Fixed cost</source>
+        </trans-unit>
+        <trans-unit id="783" translate="yes" xml:space="preserve">
+          <source>275.00</source>
+        </trans-unit>
+        <trans-unit id="784" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="785" translate="yes" xml:space="preserve">
+          <source>CC004</source>
+        </trans-unit>
+        <trans-unit id="786" translate="yes" xml:space="preserve">
+          <source>Packaging</source>
+        </trans-unit>
+        <trans-unit id="787" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="788" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="789" translate="yes" xml:space="preserve">
+          <source>Fixed cost</source>
+        </trans-unit>
+        <trans-unit id="790" translate="yes" xml:space="preserve">
+          <source>50,00</source>
+        </trans-unit>
+        <trans-unit id="791" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="792" translate="yes" xml:space="preserve">
+          <source>CC001</source>
+        </trans-unit>
+        <trans-unit id="793" translate="yes" xml:space="preserve">
+          <source>HR</source>
+        </trans-unit>
+        <trans-unit id="794" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="795" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="796" translate="yes" xml:space="preserve">
+          <source>Variable cost</source>
+        </trans-unit>
+        <trans-unit id="797" translate="yes" xml:space="preserve">
+          <source>-1,245.71</source>
+        </trans-unit>
+        <trans-unit id="798" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="799" translate="yes" xml:space="preserve">
+          <source>CC002</source>
+        </trans-unit>
+        <trans-unit id="800" translate="yes" xml:space="preserve">
+          <source>Finance</source>
+        </trans-unit>
+        <trans-unit id="801" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="802" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="803" translate="yes" xml:space="preserve">
+          <source>Variable cost</source>
+        </trans-unit>
+        <trans-unit id="804" translate="yes" xml:space="preserve">
+          <source>436.00</source>
+        </trans-unit>
+        <trans-unit id="805" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="806" translate="yes" xml:space="preserve">
+          <source>CC003</source>
+        </trans-unit>
+        <trans-unit id="807" translate="yes" xml:space="preserve">
+          <source>Assembly</source>
+        </trans-unit>
+        <trans-unit id="808" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="809" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="810" translate="yes" xml:space="preserve">
+          <source>Variable cost</source>
+        </trans-unit>
+        <trans-unit id="811" translate="yes" xml:space="preserve">
+          <source>685.14</source>
+        </trans-unit>
+        <trans-unit id="812" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="813" translate="yes" xml:space="preserve">
+          <source>CC004</source>
+        </trans-unit>
+        <trans-unit id="814" translate="yes" xml:space="preserve">
+          <source>Packaging</source>
+        </trans-unit>
+        <trans-unit id="815" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="816" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="817" translate="yes" xml:space="preserve">
+          <source>Variable cost</source>
+        </trans-unit>
+        <trans-unit id="818" translate="yes" xml:space="preserve">
+          <source>124.57</source>
+        </trans-unit>
+        <trans-unit id="819" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="820" translate="yes" xml:space="preserve">
+          <source>CC002</source>
+        </trans-unit>
+        <trans-unit id="821" translate="yes" xml:space="preserve">
+          <source>Finance</source>
+        </trans-unit>
+        <trans-unit id="822" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="823" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="824" translate="yes" xml:space="preserve">
+          <source>Fixed cost</source>
+        </trans-unit>
+        <trans-unit id="825" translate="yes" xml:space="preserve">
+          <source>-675.00</source>
+        </trans-unit>
+        <trans-unit id="826" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="827" translate="yes" xml:space="preserve">
+          <source>CC003</source>
+        </trans-unit>
+        <trans-unit id="828" translate="yes" xml:space="preserve">
+          <source>Assembly</source>
+        </trans-unit>
+        <trans-unit id="829" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="830" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="831" translate="yes" xml:space="preserve">
+          <source>Fixed cost</source>
+        </trans-unit>
+        <trans-unit id="832" translate="yes" xml:space="preserve">
+          <source>438.75</source>
+        </trans-unit>
+        <trans-unit id="833" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="834" translate="yes" xml:space="preserve">
+          <source>CC004</source>
+        </trans-unit>
+        <trans-unit id="835" translate="yes" xml:space="preserve">
+          <source>Packaging</source>
+        </trans-unit>
+        <trans-unit id="836" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="837" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="838" translate="yes" xml:space="preserve">
+          <source>Fixed cost</source>
+        </trans-unit>
+        <trans-unit id="839" translate="yes" xml:space="preserve">
+          <source>236.25</source>
+        </trans-unit>
+        <trans-unit id="840" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="841" translate="yes" xml:space="preserve">
+          <source>CC002</source>
+        </trans-unit>
+        <trans-unit id="842" translate="yes" xml:space="preserve">
+          <source>Finance</source>
+        </trans-unit>
+        <trans-unit id="843" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="844" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="845" translate="yes" xml:space="preserve">
+          <source>Variable cost</source>
+        </trans-unit>
+        <trans-unit id="846" translate="yes" xml:space="preserve">
+          <source>-8,150.29</source>
+        </trans-unit>
+        <trans-unit id="847" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="848" translate="yes" xml:space="preserve">
+          <source>CC003</source>
+        </trans-unit>
+        <trans-unit id="849" translate="yes" xml:space="preserve">
+          <source>Assembly</source>
+        </trans-unit>
+        <trans-unit id="850" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="851" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="852" translate="yes" xml:space="preserve">
+          <source>Variable cost</source>
+        </trans-unit>
+        <trans-unit id="853" translate="yes" xml:space="preserve">
+          <source>5,297.69</source>
+        </trans-unit>
+        <trans-unit id="854" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="855" translate="yes" xml:space="preserve">
+          <source>CC004</source>
+        </trans-unit>
+        <trans-unit id="856" translate="yes" xml:space="preserve">
+          <source>Packaging</source>
+        </trans-unit>
+        <trans-unit id="857" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="858" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="859" translate="yes" xml:space="preserve">
+          <source>Variable cost</source>
+        </trans-unit>
+        <trans-unit id="860" translate="yes" xml:space="preserve">
+          <source>2,852.60</source>
+        </trans-unit>
+        <trans-unit id="861" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="862" translate="yes" xml:space="preserve">
+          <source>CC003</source>
+        </trans-unit>
+        <trans-unit id="863" translate="yes" xml:space="preserve">
+          <source>Assembly</source>
+        </trans-unit>
+        <trans-unit id="864" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="865" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="866" translate="yes" xml:space="preserve">
+          <source>Fixed cost</source>
+        </trans-unit>
+        <trans-unit id="867" translate="yes" xml:space="preserve">
+          <source>-713.75</source>
+        </trans-unit>
+        <trans-unit id="868" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="869" translate="yes" xml:space="preserve">
+          <source>Prod 1</source>
+        </trans-unit>
+        <trans-unit id="870" translate="yes" xml:space="preserve">
+          <source>Product 1</source>
+        </trans-unit>
+        <trans-unit id="871" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="872" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="873" translate="yes" xml:space="preserve">
+          <source>Fixed cost</source>
+        </trans-unit>
+        <trans-unit id="874" translate="yes" xml:space="preserve">
+          <source>535.31</source>
+        </trans-unit>
+        <trans-unit id="875" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="876" translate="yes" xml:space="preserve">
+          <source>Prod 2</source>
+        </trans-unit>
+        <trans-unit id="877" translate="yes" xml:space="preserve">
+          <source>Product 2</source>
+        </trans-unit>
+        <trans-unit id="878" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="879" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="880" translate="yes" xml:space="preserve">
+          <source>Fixed cost</source>
+        </trans-unit>
+        <trans-unit id="881" translate="yes" xml:space="preserve">
+          <source>178.44</source>
+        </trans-unit>
+        <trans-unit id="882" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="883" translate="yes" xml:space="preserve">
+          <source>CC003</source>
+        </trans-unit>
+        <trans-unit id="884" translate="yes" xml:space="preserve">
+          <source>Assembly</source>
+        </trans-unit>
+        <trans-unit id="885" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="886" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="887" translate="yes" xml:space="preserve">
+          <source>Variable cost</source>
+        </trans-unit>
+        <trans-unit id="888" translate="yes" xml:space="preserve">
+          <source>-5,982.83</source>
+        </trans-unit>
+        <trans-unit id="889" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="890" translate="yes" xml:space="preserve">
+          <source>Prod 1</source>
+        </trans-unit>
+        <trans-unit id="891" translate="yes" xml:space="preserve">
+          <source>Product 1</source>
+        </trans-unit>
+        <trans-unit id="892" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="893" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="894" translate="yes" xml:space="preserve">
+          <source>Variable cost</source>
+        </trans-unit>
+        <trans-unit id="895" translate="yes" xml:space="preserve">
+          <source>4,487.12</source>
+        </trans-unit>
+        <trans-unit id="896" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="897" translate="yes" xml:space="preserve">
+          <source>Prod 2</source>
+        </trans-unit>
+        <trans-unit id="898" translate="yes" xml:space="preserve">
+          <source>Product 2</source>
+        </trans-unit>
+        <trans-unit id="899" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="900" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="901" translate="yes" xml:space="preserve">
+          <source>Variable cost</source>
+        </trans-unit>
+        <trans-unit id="902" translate="yes" xml:space="preserve">
+          <source>1,495.71</source>
+        </trans-unit>
+        <trans-unit id="903" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="904" translate="yes" xml:space="preserve">
+          <source>CC003</source>
+        </trans-unit>
+        <trans-unit id="905" translate="yes" xml:space="preserve">
+          <source>Assembly</source>
+        </trans-unit>
+        <trans-unit id="906" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="907" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="908" translate="yes" xml:space="preserve">
+          <source>Fixed cost</source>
+        </trans-unit>
+        <trans-unit id="909" translate="yes" xml:space="preserve">
+          <source>-286.25</source>
+        </trans-unit>
+        <trans-unit id="910" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="911" translate="yes" xml:space="preserve">
+          <source>Prod 1</source>
+        </trans-unit>
+        <trans-unit id="912" translate="yes" xml:space="preserve">
+          <source>Product 1</source>
+        </trans-unit>
+        <trans-unit id="913" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="914" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="915" translate="yes" xml:space="preserve">
+          <source>Fixed cost</source>
+        </trans-unit>
+        <trans-unit id="916" translate="yes" xml:space="preserve">
+          <source>241.05</source>
+        </trans-unit>
+        <trans-unit id="917" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="918" translate="yes" xml:space="preserve">
+          <source>Prod 2</source>
+        </trans-unit>
+        <trans-unit id="919" translate="yes" xml:space="preserve">
+          <source>Product 2</source>
+        </trans-unit>
+        <trans-unit id="920" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="921" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="922" translate="yes" xml:space="preserve">
+          <source>Fixed cost</source>
+        </trans-unit>
+        <trans-unit id="923" translate="yes" xml:space="preserve">
+          <source>45.20</source>
+        </trans-unit>
+        <trans-unit id="924" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="925" translate="yes" xml:space="preserve">
+          <source>CC003</source>
+        </trans-unit>
+        <trans-unit id="926" translate="yes" xml:space="preserve">
+          <source>Assembly</source>
+        </trans-unit>
+        <trans-unit id="927" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="928" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="929" translate="yes" xml:space="preserve">
+          <source>Variable cost</source>
+        </trans-unit>
+        <trans-unit id="930" translate="yes" xml:space="preserve">
+          <source>-2,977.17</source>
+        </trans-unit>
+        <trans-unit id="931" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="932" translate="yes" xml:space="preserve">
+          <source>Prod 1</source>
+        </trans-unit>
+        <trans-unit id="933" translate="yes" xml:space="preserve">
+          <source>Product 1</source>
+        </trans-unit>
+        <trans-unit id="934" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="935" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="936" translate="yes" xml:space="preserve">
+          <source>Variable cost</source>
+        </trans-unit>
+        <trans-unit id="937" translate="yes" xml:space="preserve">
+          <source>2,507.09</source>
+        </trans-unit>
+        <trans-unit id="938" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="939" translate="yes" xml:space="preserve">
+          <source>Prod 2</source>
+        </trans-unit>
+        <trans-unit id="940" translate="yes" xml:space="preserve">
+          <source>Product 2</source>
+        </trans-unit>
+        <trans-unit id="941" translate="yes" xml:space="preserve">
+          <source>10001</source>
+        </trans-unit>
+        <trans-unit id="942" translate="yes" xml:space="preserve">
+          <source>Electricity</source>
+        </trans-unit>
+        <trans-unit id="943" translate="yes" xml:space="preserve">
+          <source>Variable cost</source>
+        </trans-unit>
+        <trans-unit id="944" translate="yes" xml:space="preserve">
+          <source>470.08</source>
+        </trans-unit>
+        <trans-unit id="945" translate="yes" xml:space="preserve">
+          <source>January 31, 2017</source>
+        </trans-unit>
+        <trans-unit id="946" translate="yes" xml:space="preserve">
+          <source>Conclusion</source>
+        </trans-unit>
+        <trans-unit id="947" translate="yes" xml:space="preserve">
+          <source>In Financial accounting, a cost of 10,000.00 for Electricity is posted to a dummy cost center ID.</source>
+        </trans-unit>
+        <trans-unit id="948" translate="yes" xml:space="preserve">
+          <source>Therefore, cost accountants will know that this cost must be allocated.</source>
+        </trans-unit>
+        <trans-unit id="949" translate="yes" xml:space="preserve">
+          <source>In Cost accounting, the costs flow across organizational units and levels, based on the policies and rules that are applied.</source>
+        </trans-unit>
+        <trans-unit id="950" translate="yes" xml:space="preserve">
+          <source>Each cost has been associated with an allocation base that provides the best assessment for the allocation of costs.</source>
+        </trans-unit>
+        <trans-unit id="951" translate="yes" xml:space="preserve">
+          <source>Cost element</source>
+        </trans-unit>
+        <trans-unit id="952" translate="yes" xml:space="preserve">
+          <source>Cost object</source>
+        </trans-unit>
+        <trans-unit id="953" translate="yes" xml:space="preserve">
+          <source>Total</source>
+        </trans-unit>
+        <trans-unit id="954" translate="yes" xml:space="preserve">
+          <source>CC099</source>
+        </trans-unit>
+        <trans-unit id="955" translate="yes" xml:space="preserve">
+          <source>CC001</source>
+        </trans-unit>
+        <trans-unit id="956" translate="yes" xml:space="preserve">
+          <source>CC002</source>
+        </trans-unit>
+        <trans-unit id="957" translate="yes" xml:space="preserve">
+          <source>CC003</source>
+        </trans-unit>
+        <trans-unit id="958" translate="yes" xml:space="preserve">
+          <source>CC004</source>
+        </trans-unit>
+        <trans-unit id="959" translate="yes" xml:space="preserve">
+          <source>Proj 1</source>
+        </trans-unit>
+        <trans-unit id="960" translate="yes" xml:space="preserve">
+          <source>Proj 2</source>
+        </trans-unit>
+        <trans-unit id="961" translate="yes" xml:space="preserve">
+          <source>Prod 1</source>
+        </trans-unit>
+        <trans-unit id="962" translate="yes" xml:space="preserve">
+          <source>Prod 2</source>
+        </trans-unit>
+        <trans-unit id="963" translate="yes" xml:space="preserve">
+          <source>10001 Electricity</source>
+        </trans-unit>
+        <trans-unit id="964" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>0.00<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="965" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>0.00<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="966" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>0.00<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="967" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>0.00<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="968" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>30.00<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="969" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>10.00<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="970" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>7,770.57<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="971" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>2,189.43<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="972" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>10,000.00<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="973" translate="yes" xml:space="preserve">
+          <source>Unclassified</source>
+        </trans-unit>
+        <trans-unit id="974" translate="yes" xml:space="preserve">
+          <source>0.00</source>
+        </trans-unit>
+        <trans-unit id="975" translate="yes" xml:space="preserve">
+          <source>Fixed cost</source>
+        </trans-unit>
+        <trans-unit id="976" translate="yes" xml:space="preserve">
+          <source>0.00</source>
+        </trans-unit>
+        <trans-unit id="977" translate="yes" xml:space="preserve">
+          <source>0.00</source>
+        </trans-unit>
+        <trans-unit id="978" translate="yes" xml:space="preserve">
+          <source>0.00</source>
+        </trans-unit>
+        <trans-unit id="979" translate="yes" xml:space="preserve">
+          <source>0.00</source>
+        </trans-unit>
+        <trans-unit id="980" translate="yes" xml:space="preserve">
+          <source>0.00</source>
+        </trans-unit>
+        <trans-unit id="981" translate="yes" xml:space="preserve">
+          <source>776.36</source>
+        </trans-unit>
+        <trans-unit id="982" translate="yes" xml:space="preserve">
+          <source>223.64</source>
+        </trans-unit>
+        <trans-unit id="983" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>1,000.00<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="984" translate="yes" xml:space="preserve">
+          <source>Variable cost</source>
+        </trans-unit>
+        <trans-unit id="985" translate="yes" xml:space="preserve">
+          <source>000</source>
+        </trans-unit>
+        <trans-unit id="986" translate="yes" xml:space="preserve">
+          <source>0.00</source>
+        </trans-unit>
+        <trans-unit id="987" translate="yes" xml:space="preserve">
+          <source>0.00</source>
+        </trans-unit>
+        <trans-unit id="988" translate="yes" xml:space="preserve">
+          <source>0.00</source>
+        </trans-unit>
+        <trans-unit id="989" translate="yes" xml:space="preserve">
+          <source>0.00</source>
+        </trans-unit>
+        <trans-unit id="990" translate="yes" xml:space="preserve">
+          <source>30.00</source>
+        </trans-unit>
+        <trans-unit id="991" translate="yes" xml:space="preserve">
+          <source>10.00</source>
+        </trans-unit>
+        <trans-unit id="992" translate="yes" xml:space="preserve">
+          <source>6,994.21</source>
+        </trans-unit>
+        <trans-unit id="993" translate="yes" xml:space="preserve">
+          <source>1,965.79</source>
+        </trans-unit>
+        <trans-unit id="994" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>9,000.00<ept id="p1">&lt;/strong&gt;</ept></source>
+        </trans-unit>
+        <trans-unit id="995" translate="yes" xml:space="preserve">
+          <source>This topic shows how a primary cost element, 10001 Electricity, flows through the cost objects.</source>
+        </trans-unit>
+        <trans-unit id="996" translate="yes" xml:space="preserve">
+          <source>Therefore, this overhead cost is allocated to the lowest level in the organization.</source>
+        </trans-unit>
+        <trans-unit id="997" translate="yes" xml:space="preserve">
+          <source>In other words, the cost objects at the lowest level bear the cost.</source>
+        </trans-unit>
+        <trans-unit id="998" translate="yes" xml:space="preserve">
+          <source>If you require a visual flow of the cost between the cost objects, you can use the cost roll-up policy rules to visualize the flow of the cost.</source>
+        </trans-unit>
+        <trans-unit id="999" translate="yes" xml:space="preserve">
+          <source>For more detailed information, see Cost roll-up policy.</source>
+        </trans-unit>
+        <trans-unit id="1000" translate="yes" xml:space="preserve">
+          <source>(Note that this topic isn't competed yet but is coming soon.)</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
