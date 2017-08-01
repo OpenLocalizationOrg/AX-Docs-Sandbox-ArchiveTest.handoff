@@ -1,0 +1,1650 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-cn">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">7caf033ab2de5afd6a2d88fa2d41631df4542cbe</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\deployment\setup-deploy-on-premises-environments.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">basic</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ca866ff67a22fafb75d13073ac2077f872662fac</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">0dc2a1ee0778dfe335b1b0ce60762b5b52d0dd0f</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Set up and deploy on-premises environments</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic provides information about how to plan, set up, and deploy an on-premises environment.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Set up and deploy on-premises environments</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This document describes how to plan your deployment, set up the infrastructure, and deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises).</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Finance and Operations components</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>The Finance and Operations application consists of three main components:</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Application Object Server (AOS)</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Business Intelligence (BI)</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Financial Reporting/Management Reporter</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>These components depend on the following system software:</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Microsoft Windows Server 2016</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Microsoft SQL Server 2016 SP1, which has following features:</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Full-text index search is enabled.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>SQL Server Reporting Services (SSRS).</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>SQL Server Integration Services (SSIS).</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>The application will not run if Full Text Search is not enabled.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>SQL Server Management Studio</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Standalone Microsoft Azure Service Fabric</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Windows PowerShell 5.0 or later</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Active Directory Federation Services (AD FS) on Windows Server 2016</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The domain controller must be Windows Server 2012 R2 or later with a domain functional level of 2012 R2, or greater</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>For more information about domain functional levels, see:</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>What Are Active Directory Functional Levels<ept id="p1">](https://technet.microsoft.com/en-us/library/cc787290(v=ws.10).aspx)</ept></source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Understanding Active Directory Domain Services Functional Levels<ept id="p1">](https://technet.microsoft.com/en-us/library/understanding-active-directory-functional-levels(v=ws.10).aspx)</ept></source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Lifecycle Services</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Finance and Operations bits are distributed through Microsoft Dynamics Lifecycle Services (LCS).</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Before you can deploy, you must purchase license keys through the <bpt id="p1">[</bpt>Enterprise Agreements<ept id="p1">](https://www.microsoft.com/en-us/Licensing/licensing-programs/enterprise.aspx)</ept> channel and set up an on-premises project in LCS.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Deployments can be initiated only through LCS.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>For more information about how to set up on-premises projects in LCS, see <bpt id="p1">[</bpt>Create an on-premises project in Lifecycle Services<ept id="p1">](../lifecycle-services/lbd-create-lcs-on-prem-project.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Authentication</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>The on-premises application works with AD FS.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>To interact with LCS, you must also configure Azure Active Directory (Azure AD).</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Standalone Service Fabric</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Finance and Operations uses Standalone Service Fabric.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>For more information, see the <bpt id="p1">[</bpt>Service Fabric documentation<ept id="p1">](/azure/service-fabric/)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Infrastructure</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Finance and Operations is designed to work on a hyper-converged architecture.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>The hardware configuration includes the following components:</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Standalone Service Fabric cluster that is based on Windows Server 2016 virtual machines (VMs)</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>SQL Server (both Clustered SQL and Always-On are supported)</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>AD FS for authentication</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Server Message Block (SMB) version 3 file share for storage</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Optional: Microsoft Office Server 2017</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>System requirements<ept id="p1">](../get-started/system-requirements.md)</ept> and Sizing guidelines.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Hardware layout</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Plan your infrastructure and Service Fabric cluster, based on the recommended sizing in <bpt id="p1">[</bpt>Hardware sizing for on-premises environments<ept id="p1">](../get-started/hardware-sizing-on-premises-environments.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>For more information about how to plan the Service Fabric cluster, see <bpt id="p1">[</bpt>Plan and prepare your Service Fabric standalone cluster deployment<ept id="p1">](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>The following table shows an example of the hardware layout.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>This example is used throughout this topic to illustrate the setup.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>The Primary node of the Service Fabric cluster must have at least three nodes.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>In this example, <bpt id="p1">**</bpt>OrchestratorType<ept id="p1">**</ept> is designated as the Primary node type.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Machine purpose</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Machine name</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>IP address</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Domain controller</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>DAX7SQLAODC1</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>10.179.108.2</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>AD FS</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>DAX7SQLAOADFS1</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>10.179.108.3</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>File server</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>DAX7SQLAOFILE1</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>10.179.108.4</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>SQL Always-On cluster</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>DAX7SQLAOSQLA01</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>10.179.108.5</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>DAX7SQLAOSQLA02</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>10.179.108.6</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>DAX7SQLAOSQLA</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>10.179.108.9</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Client</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>SQLAOCLIENT1</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>10.179.108.11</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Service Fabric cluster/AOS 1</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>SQLAOSF1AOS1</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>10.179.108.12</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Service Fabric cluster/AOS 2</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>SQLAOSF1AOS2</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>10.179.108.13</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Service Fabric cluster/AOS 3</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>SQLAOSF1AOS3</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>10.179.108.14</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Service Fabric cluster/Orchestrator 1</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>SQLAOSF1ORCH1</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>10.179.108.15</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Service Fabric cluster/Orchestrator 2</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>SQLAOSF1ORCH2</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>10.179.108.16</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Service Fabric cluster/Orchestrator 3</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>SQLAOSF1ORCH3</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>10.179.108.17</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Service Fabric cluster/Management Reporter node</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>SQLAOSMR1</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>10.179.108.18</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>Service Fabric cluster/SSRS node</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>SQLAOSFBIN1</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>10.179.108.10</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>Setup</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Prerequisites</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>Before you start the setup, the following prerequisites must be met.</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>The setup of these prerequisites is out of scope for this document.</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Active Directory Domain Services (AD DS) is installed and configured in your network.</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>AD FS is deployed.</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>SQL Server, SSRS, and Management Studio are installed.</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>Overview</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>The following steps must be completed to set up the infrastructure for Finance and Operations.</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Plan your domain name and DNS zones</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>Plan and acquire your certificates</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>Plan your users and Service accounts</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>Create DNS zones and add A records</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>Join VMs to the Domain</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>Add prerequisite software to VMs</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Download setup scripts from LCS</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>Describe your configuration</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>Install Certificates</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>Set up a standaalone Service Fabric CLuster</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>Configure LCS connectivity for the tenant</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>Set up File Storage</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>Set up SQL Server</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>Configure the Databases</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>Encrypt credentials</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>Set up SSRS</source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>Configure AD FS</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>Plan your domain name and DNS zones</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>We recommend that you use a publicly registered domain name for your production installation of AOS.</source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>In that way, it can be accessed outside the network, if outside access is required.</source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>For example, if your company's domain is contoso.com, your zone for Finance and Operations (on-premises) might be d365ffo.onprem.contoso.com, and the host names might be as follows:</source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>ax.d365ffo.onprem.contoso.com for AOS machines</source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>sf.d365ffo.onprem.contoso.com for the Service Fabric cluster</source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>Plan and acquire your certificates</source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>Secure Sockets Layer (SSL) certificates are required in order to secure a Service Fabric cluster and all the applications that are deployed.</source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>For your production and sandbox workloads, we recommend that you acquire certificates from a certificate authority (CA) such as <bpt id="p1">[</bpt>DigiCert<ept id="p1">](https://www.digicert.com/ssl-certificate/)</ept>, <bpt id="p2">[</bpt>Comodo<ept id="p2">](https://ssl.comodo.com/)</ept>, <bpt id="p3">[</bpt>Symantec<ept id="p3">](https://www.websecurity.symantec.com/ssl-certificate)</ept>, <bpt id="p4">[</bpt>GoDaddy<ept id="p4">](https://www.godaddy.com/web-security/ssl-certificate)</ept>, or <bpt id="p5">[</bpt>GlobalSign<ept id="p5">](https://www.globalsign.com/en/ssl/)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>If your domain is set up with <bpt id="p1">[</bpt>Active Directory Certificate Services<ept id="p1">](https://technet.microsoft.com/en-us/library/cc772393(v=ws.10).aspx)</ept> (AD CS), you can create the certificates through AD CS.</source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>Each certificate must contain a private key that was created for key exchange, and it must be exportable to a Personal Information Exchange (.pfx) file.</source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>Self-signed certificates can be used only for testing purposes.</source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>For convenience, the setup scripts include scripts that generate and export self-signed certificates.</source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>As we've mentioned, these certificates must be used for testing purposes only.</source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>Purpose</source>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>Explanation</source>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>Additional requirements</source>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>SQL Server SSL certificate</source>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>This certificate is used to encrypt data that is transmitted across a network between an instance of SQL Server and a client application.</source>
+        </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>The domain name of the certificate should match the fully qualified domain name (FQDN) of the SQL Server instance or listener.</source>
+        </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>For example, if the SQL listener is hosted on the machine DAX7SQLAOSQLA, the certificate's DNS name is DAX7SQLAOSQLA.onprem.contoso.com.</source>
+        </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>Service Fabric Server certificate</source>
+        </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>This certificate is used to help secure the node-to-node communication between the Service Fabric nodes.</source>
+        </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>This certificate is also used as the Server certificate that is presented to the client that connects to the cluster.</source>
+        </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>The domain name of the certificate must match the DNS zone where AOS and Service Fabric are hosted.</source>
+        </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>For example, the domain name of the certificate might be <ph id="ph1">\*</ph>.onprem.contoso.com or <ph id="ph2">\*</ph>.contoso.com.</source>
+        </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>If you use a wildcard certificate, the wildcard character applies to only one level.</source>
+        </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>A subdomain, subject alternative name (SAN), must be applied to the certificate if it's more than one level, such as <ph id="ph1">\*</ph>.contoso.com in the previous example.</source>
+        </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>Service Fabric Client certificate</source>
+        </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>This certificate is used by clients to view and manage the Service Fabric cluster.</source>
+        </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>Encipherment Certificate</source>
+        </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>This certificate is used to encrypt sensitive information such as the SQL Server password and user account passwords.</source>
+        </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>The certificate key usage must include Data Encipherment (10) and should not include Server Authentication or Client Authentication.</source>
+        </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Managing secrets in Service Fabric applications<ept id="p1">](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-application-secret-management)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>AOS SSL Certificate</source>
+        </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>This certificate is used as the Server certificate that is presented to the client for the AOS website.</source>
+        </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>It's also used to enable Windows Communication Foundation (WCF)/Simple Object Access Protocol (SOAP) certificates.</source>
+        </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>The Service Fabric Server certificate can be used here if it's a wildcard certificate.</source>
+        </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>The domain name of the certificate must match the DNS zone where AOS and Service fabric are hosted.</source>
+        </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>For example, the domain name of the certificate might be <ph id="ph1">\*</ph>.d365ffo.onprem.contoso.com, <ph id="ph2">\*</ph>.onprem.contoso.com, or <ph id="ph3">\*</ph>.contoso.com.</source>
+        </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>If you use a wildcard certificate, the wildcard applies to only one level.</source>
+        </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>A subdomain, SAN, must be applied to the certificate if it's more than one level, such as <ph id="ph1">\*</ph>.contoso.com in the previous example.</source>
+        </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>Session Authentication certificate</source>
+        </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>This certificate is used by AOS to help secure a user's session information.</source>
+        </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>This is also the <bpt id="p1">**</bpt>File Share<ept id="p1">**</ept> Certificate that will used at the time of deployment from LCS.</source>
+        </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>Data Encryption and Data Signing certificate</source>
+        </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>These certificates are used by AOS to encrypt sensitive information.</source>
+        </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>Financial Reporting client certificate</source>
+        </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>This certificate is used to help secure the communication between the Financial Reporting services and AOS.</source>
+        </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>Reporting Certificate</source>
+        </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>This certificate is used to help secure the communication between SSRS and AOS.</source>
+        </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>On-Premise local agent certificate</source>
+        </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>This certificate is used to help secure the communication between a local agent that is hosted on-premises and LCS.</source>
+        </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>This certificate enables the local agent to act on behalf of your Azure AD tenant, and to communicate with LCS to orchestrate and monitor deployments.</source>
+        </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>Plan your users and service accounts</source>
+        </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>You must create several user or service accounts for Finance and Operations (on-premises) to work.</source>
+        </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source>You must create a combination of group managed service accounts (gMSAs), domain accounts, and SQL accounts.</source>
+        </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source>The following table shows the user accounts, their purpose, and example names that will be used in this topic.</source>
+        </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source>User account</source>
+        </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source>Type</source>
+        </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>Purpose</source>
+        </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>User name</source>
+        </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source>Financial Reporting Application Service Account</source>
+        </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source>gMSA</source>
+        </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source>Contoso<ph id="ph1">\\</ph>svc-FRAS$</source>
+        </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source>Financial Reporting Process Service Account</source>
+        </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source>gMSA</source>
+        </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source>Contoso<ph id="ph1">\\</ph>svc-FRPS$</source>
+        </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source>Financial Reporting Click Once Designer Service Account</source>
+        </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source>gMSA</source>
+        </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source>Contoso<ph id="ph1">\\</ph>svc-FRCO$</source>
+        </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source>AOS Service Account</source>
+        </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source>gMSA</source>
+        </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>This user should be created for future-proofing.</source>
+        </trans-unit>
+        <trans-unit id="298" translate="yes" xml:space="preserve">
+          <source>We plan to enable AOS to work with the gMSA in upcoming releases.</source>
+        </trans-unit>
+        <trans-unit id="299" translate="yes" xml:space="preserve">
+          <source>By creating this user at the time of setup, you will help guarantee a seamless transition to the gMSA.</source>
+        </trans-unit>
+        <trans-unit id="300" translate="yes" xml:space="preserve">
+          <source>Contoso<ph id="ph1">\\</ph>svc-AXSF$</source>
+        </trans-unit>
+        <trans-unit id="301" translate="yes" xml:space="preserve">
+          <source>AOS Service Account</source>
+        </trans-unit>
+        <trans-unit id="302" translate="yes" xml:space="preserve">
+          <source>Domain account</source>
+        </trans-unit>
+        <trans-unit id="303" translate="yes" xml:space="preserve">
+          <source>AOS uses this user in the GA release.</source>
+        </trans-unit>
+        <trans-unit id="304" translate="yes" xml:space="preserve">
+          <source>Contoso<ph id="ph1">\\</ph>AXServiceUser</source>
+        </trans-unit>
+        <trans-unit id="305" translate="yes" xml:space="preserve">
+          <source>AOS SQL DB Admin user</source>
+        </trans-unit>
+        <trans-unit id="306" translate="yes" xml:space="preserve">
+          <source>SQL user</source>
+        </trans-unit>
+        <trans-unit id="307" translate="yes" xml:space="preserve">
+          <source>Finance and Operations uses this user to authenticate with SQL<ph id="ph1">\*</ph>.</source>
+        </trans-unit>
+        <trans-unit id="308" translate="yes" xml:space="preserve">
+          <source>This user will also be replaced by the gMSA user in upcoming releases.</source>
+        </trans-unit>
+        <trans-unit id="309" translate="yes" xml:space="preserve">
+          <source>AXDBAdmin</source>
+        </trans-unit>
+        <trans-unit id="310" translate="yes" xml:space="preserve">
+          <source>Local Deployment Agent Service Account</source>
+        </trans-unit>
+        <trans-unit id="311" translate="yes" xml:space="preserve">
+          <source>gMSA</source>
+        </trans-unit>
+        <trans-unit id="312" translate="yes" xml:space="preserve">
+          <source>This account is used by the local agent to orchestrate the deployment on various nodes.</source>
+        </trans-unit>
+        <trans-unit id="313" translate="yes" xml:space="preserve">
+          <source>Contoso<ph id="ph1">\\</ph>Svc-LocalAgent$</source>
+        </trans-unit>
+        <trans-unit id="314" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\*</ph> The SQL user name and password for SQL authentication are secured, because they are encrypted and stored in the file share.</source>
+        </trans-unit>
+        <trans-unit id="315" translate="yes" xml:space="preserve">
+          <source>Create DNS zones and add A records</source>
+        </trans-unit>
+        <trans-unit id="316" translate="yes" xml:space="preserve">
+          <source>DNS is integrated with AD DS, and lets you organize, manage, and find resources in a network.</source>
+        </trans-unit>
+        <trans-unit id="317" translate="yes" xml:space="preserve">
+          <source>Create a DNS forward lookup zone and A records for the AOS host name and the Service Fabric cluster.</source>
+        </trans-unit>
+        <trans-unit id="318" translate="yes" xml:space="preserve">
+          <source>In this example setup, the DNS zone name is d365ffo.onprem.contoso.com, and the A records/host names are as follows:</source>
+        </trans-unit>
+        <trans-unit id="319" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>ax<ept id="p1">**</ept>.d365ffo.onprem.contoso.com for AOS machines</source>
+        </trans-unit>
+        <trans-unit id="320" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>sf<ept id="p1">**</ept>.d365ffo.onprem.contoso.com for the Service Fabric cluster</source>
+        </trans-unit>
+        <trans-unit id="321" translate="yes" xml:space="preserve">
+          <source>Add a DNS zone</source>
+        </trans-unit>
+        <trans-unit id="322" translate="yes" xml:space="preserve">
+          <source>Use the following procedure to add a DNS zone.</source>
+        </trans-unit>
+        <trans-unit id="323" translate="yes" xml:space="preserve">
+          <source>Sign in to the domain controller machine, click <bpt id="p1">**</bpt>Start<ept id="p1">**</ept>, and start DNS Manager by typing <bpt id="p2">**</bpt>dnsmgmt.msc<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="324" translate="yes" xml:space="preserve">
+          <source>Right-click the domain controller name, and then click <bpt id="p1">**</bpt>New Zone<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Next<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="325" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Primary Zone<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="326" translate="yes" xml:space="preserve">
+          <source>Leave the <bpt id="p1">**</bpt>Store the zone in Active Directory (available only if the DNS Server is a writeable domain controller<ept id="p1">**</ept> check box selected, and then click <bpt id="p2">**</bpt>Next<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="327" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>To all DNS Servers running on Domain Controllers in this domain: Contoso.com<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>Next<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="328" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Forward Lookup Zone<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>Next<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="329" translate="yes" xml:space="preserve">
+          <source>Enter the zone name for your setup, and then click <bpt id="p1">**</bpt>Next<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="330" translate="yes" xml:space="preserve">
+          <source>For example, enter <bpt id="p1">**</bpt>d365ffo.onprem.contoso.com<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="331" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Do not allow dynamic updates<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>Next<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="332" translate="yes" xml:space="preserve">
+          <source>Set up an A record for AOS</source>
+        </trans-unit>
+        <trans-unit id="333" translate="yes" xml:space="preserve">
+          <source>In the new DNS zone, create one A record that is named <bpt id="p1">**</bpt>ax.d365ffo.onprem.contoso.com<ept id="p1">**</ept> for <bpt id="p2">**</bpt>each<ept id="p2">**</ept> Service Fabric cluster node of the <bpt id="p3">**</bpt>AOSNodeType<ept id="p3">**</ept> type.</source>
+        </trans-unit>
+        <trans-unit id="334" translate="yes" xml:space="preserve">
+          <source>Don't create A records for the other node types.</source>
+        </trans-unit>
+        <trans-unit id="335" translate="yes" xml:space="preserve">
+          <source>Right-click the new zone, and then click <bpt id="p1">**</bpt>New Host<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="336" translate="yes" xml:space="preserve">
+          <source>Enter the name and IP address of the Service Fabric node (e.g. 10.179.108.12), and then click <bpt id="p1">**</bpt>Add Host<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="337" translate="yes" xml:space="preserve">
+          <source>Set up an A Record for the orchestrator</source>
+        </trans-unit>
+        <trans-unit id="338" translate="yes" xml:space="preserve">
+          <source>In the new DNS zone, create an A record that is named <bpt id="p1">**</bpt>sf.d365ffo.onprem.contoso.com<ept id="p1">**</ept> for <bpt id="p2">**</bpt>each<ept id="p2">**</ept> Service Fabric cluster node of the <bpt id="p3">**</bpt>OrchestratorType<ept id="p3">**</ept> type.</source>
+        </trans-unit>
+        <trans-unit id="339" translate="yes" xml:space="preserve">
+          <source>Don't create A records for the other node types.</source>
+        </trans-unit>
+        <trans-unit id="340" translate="yes" xml:space="preserve">
+          <source>Right-click the new zone, and then click <bpt id="p1">**</bpt>New Host<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="341" translate="yes" xml:space="preserve">
+          <source>Enter the name and IP address of the Service Fabric node (e.g. 10.179.108.15), and then click <bpt id="p1">**</bpt>Add Host<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="342" translate="yes" xml:space="preserve">
+          <source>Join VMs to the domain</source>
+        </trans-unit>
+        <trans-unit id="343" translate="yes" xml:space="preserve">
+          <source>Join each of the VMs to the domain by completing the steps in <bpt id="p1">[</bpt>How to join Windows Server 2016 to an Active Directory domain<ept id="p1">](http://www.tomsitpro.com/articles/join-windows-server-2016-to-ad-domain,2-1063.html)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="344" translate="yes" xml:space="preserve">
+          <source>Alternatively, use the Windows PowerShell script.</source>
+        </trans-unit>
+        <trans-unit id="345" translate="yes" xml:space="preserve">
+          <source>Once the VMs are joined to the domain, add the AOS Service Accounts (Contoso\svc-AXSF$ , Contoso\svc-AXSF$ ) to the local administrators group.</source>
+        </trans-unit>
+        <trans-unit id="346" translate="yes" xml:space="preserve">
+          <source>You can check <bpt id="p1">[</bpt>Add a member to local group<ept id="p1">](https://technet.microsoft.com/en-us/library/cc772524(v=ws.11).aspx)</ept> article for how to do this.</source>
+        </trans-unit>
+        <trans-unit id="347" translate="yes" xml:space="preserve">
+          <source>Disable User Access Control</source>
+        </trans-unit>
+        <trans-unit id="348" translate="yes" xml:space="preserve">
+          <source>Execute the following script to disable the User Access Control on <bpt id="p1">**</bpt>every<ept id="p1">**</ept> Service Fabric node.</source>
+        </trans-unit>
+        <trans-unit id="349" translate="yes" xml:space="preserve">
+          <source>You must reboot the node after the script completes successfully.</source>
+        </trans-unit>
+        <trans-unit id="350" translate="yes" xml:space="preserve">
+          <source>Add prerequisite software to VMs</source>
+        </trans-unit>
+        <trans-unit id="351" translate="yes" xml:space="preserve">
+          <source>The following table lists the prerequisite software that must be applied to the machines of each node type.</source>
+        </trans-unit>
+        <trans-unit id="352" translate="yes" xml:space="preserve">
+          <source>You will have to restart your computer after you install the components.</source>
+        </trans-unit>
+        <trans-unit id="353" translate="yes" xml:space="preserve">
+          <source>Node type</source>
+        </trans-unit>
+        <trans-unit id="354" translate="yes" xml:space="preserve">
+          <source>Component</source>
+        </trans-unit>
+        <trans-unit id="355" translate="yes" xml:space="preserve">
+          <source>Command</source>
+        </trans-unit>
+        <trans-unit id="356" translate="yes" xml:space="preserve">
+          <source>AOS</source>
+        </trans-unit>
+        <trans-unit id="357" translate="yes" xml:space="preserve">
+          <source>SNAC – ODBC driver</source>
+        </trans-unit>
+        <trans-unit id="358" translate="yes" xml:space="preserve">
+          <source>See <bpt id="p1">[</bpt>Microsoft ODBC Driver 13.1 for SQL Server - Windows + Linux<ept id="p1">](https://www.microsoft.com/en-us/download/details.aspx?id=53339)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="359" translate="yes" xml:space="preserve">
+          <source>AOS</source>
+        </trans-unit>
+        <trans-unit id="360" translate="yes" xml:space="preserve">
+          <source>The Microsoft .NET Framework version 2.0–3.5 (CLR 2.0)</source>
+        </trans-unit>
+        <trans-unit id="361" translate="yes" xml:space="preserve">
+          <source>AOS</source>
+        </trans-unit>
+        <trans-unit id="362" translate="yes" xml:space="preserve">
+          <source>The Microsoft .NET Framework version 4.0–4.6 (CLR 4.0)</source>
+        </trans-unit>
+        <trans-unit id="363" translate="yes" xml:space="preserve">
+          <source>AOS</source>
+        </trans-unit>
+        <trans-unit id="364" translate="yes" xml:space="preserve">
+          <source>Internet Information Services (IIS)</source>
+        </trans-unit>
+        <trans-unit id="365" translate="yes" xml:space="preserve">
+          <source>AOS</source>
+        </trans-unit>
+        <trans-unit id="366" translate="yes" xml:space="preserve">
+          <source>Microsoft SQL Server Management Studio 2016</source>
+        </trans-unit>
+        <trans-unit id="367" translate="yes" xml:space="preserve">
+          <source>AOS</source>
+        </trans-unit>
+        <trans-unit id="368" translate="yes" xml:space="preserve">
+          <source>Microsoft Visual C++ Redistributable Packages for Microsoft Visual Studio 2013</source>
+        </trans-unit>
+        <trans-unit id="369" translate="yes" xml:space="preserve">
+          <source>See <bpt id="p1">[</bpt>Microsoft Visual C++ Redistributable Packages for Visual Studio 2013<ept id="p1">](https://support.microsoft.com/en-us/help/3179560)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="370" translate="yes" xml:space="preserve">
+          <source>AOS</source>
+        </trans-unit>
+        <trans-unit id="371" translate="yes" xml:space="preserve">
+          <source>Microsoft Access Database Engine 2010 Redistributable</source>
+        </trans-unit>
+        <trans-unit id="372" translate="yes" xml:space="preserve">
+          <source>See <bpt id="p1">[</bpt>Microsoft Access Database Engine 2010 Redistributable<ept id="p1">](https://www.microsoft.com/en-us/download/details.aspx?id=13255)</ept></source>
+        </trans-unit>
+        <trans-unit id="373" translate="yes" xml:space="preserve">
+          <source>BI</source>
+        </trans-unit>
+        <trans-unit id="374" translate="yes" xml:space="preserve">
+          <source>The .NET Framework version 2.0–3.5 (CLR 2.0)</source>
+        </trans-unit>
+        <trans-unit id="375" translate="yes" xml:space="preserve">
+          <source>BI</source>
+        </trans-unit>
+        <trans-unit id="376" translate="yes" xml:space="preserve">
+          <source>The .NET Framework version 4.0–4.6 (CLR 4.0)</source>
+        </trans-unit>
+        <trans-unit id="377" translate="yes" xml:space="preserve">
+          <source>BI</source>
+        </trans-unit>
+        <trans-unit id="378" translate="yes" xml:space="preserve">
+          <source>Microsoft SQL Server 2016 SP1</source>
+        </trans-unit>
+        <trans-unit id="379" translate="yes" xml:space="preserve">
+          <source>BI</source>
+        </trans-unit>
+        <trans-unit id="380" translate="yes" xml:space="preserve">
+          <source>Management Studio 2016</source>
+        </trans-unit>
+        <trans-unit id="381" translate="yes" xml:space="preserve">
+          <source>BI</source>
+        </trans-unit>
+        <trans-unit id="382" translate="yes" xml:space="preserve">
+          <source>SQL Server Reporting Services 2016 in <bpt id="p1">**</bpt>Native<ept id="p1">**</ept> mode</source>
+        </trans-unit>
+        <trans-unit id="383" translate="yes" xml:space="preserve">
+          <source>MR</source>
+        </trans-unit>
+        <trans-unit id="384" translate="yes" xml:space="preserve">
+          <source>The .NET Framework version 2.0–3.5 (CLR 2.0)</source>
+        </trans-unit>
+        <trans-unit id="385" translate="yes" xml:space="preserve">
+          <source>MR</source>
+        </trans-unit>
+        <trans-unit id="386" translate="yes" xml:space="preserve">
+          <source>The .NET Framework version 4.0–4.6 (CLR 4.0)</source>
+        </trans-unit>
+        <trans-unit id="387" translate="yes" xml:space="preserve">
+          <source>MR</source>
+        </trans-unit>
+        <trans-unit id="388" translate="yes" xml:space="preserve">
+          <source>Visual C++ Redistributable Packages for Visual Studio 2013</source>
+        </trans-unit>
+        <trans-unit id="389" translate="yes" xml:space="preserve">
+          <source>See <bpt id="p1">[</bpt>Microsoft Visual C++ Redistributable Packages for Visual Studio 2013<ept id="p1">](https://support.microsoft.com/en-us/help/3179560)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="390" translate="yes" xml:space="preserve">
+          <source>Download setup scripts from LCS</source>
+        </trans-unit>
+        <trans-unit id="391" translate="yes" xml:space="preserve">
+          <source>We have provided several scripts to help improve the setup experience.</source>
+        </trans-unit>
+        <trans-unit id="392" translate="yes" xml:space="preserve">
+          <source>Follow these steps to download the setup scripts from LCS.</source>
+        </trans-unit>
+        <trans-unit id="393" translate="yes" xml:space="preserve">
+          <source>Sign in to LCS (<bpt id="p1">&lt;</bpt>https://lcs.dynamics.com/v2<ept id="p1">&gt;</ept>).</source>
+        </trans-unit>
+        <trans-unit id="394" translate="yes" xml:space="preserve">
+          <source>On the dashboard, click the <bpt id="p1">**</bpt>Shared asset library<ept id="p1">**</ept> tile.</source>
+        </trans-unit>
+        <trans-unit id="395" translate="yes" xml:space="preserve">
+          <source>Click the <bpt id="p1">**</bpt>Model<ept id="p1">**</ept> tab.</source>
+        </trans-unit>
+        <trans-unit id="396" translate="yes" xml:space="preserve">
+          <source>In the grid, select the <bpt id="p1">**</bpt>Dynamics 365 for Operations - On-premises Deployment scripts<ept id="p1">**</ept> row.</source>
+        </trans-unit>
+        <trans-unit id="397" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Versions<ept id="p1">**</ept>, and download the latest version of the scripts.</source>
+        </trans-unit>
+        <trans-unit id="398" translate="yes" xml:space="preserve">
+          <source>Describe your configuration</source>
+        </trans-unit>
+        <trans-unit id="399" translate="yes" xml:space="preserve">
+          <source>This section provides information about the scripts that you must run.</source>
+        </trans-unit>
+        <trans-unit id="400" translate="yes" xml:space="preserve">
+          <source>The scripts are discussed in the order that you must run them in.</source>
+        </trans-unit>
+        <trans-unit id="401" translate="yes" xml:space="preserve">
+          <source>To run the scripts, fill in the template file at $(downloadPath)<ph id="ph1">\\</ph>ConfigTemplate.xml.</source>
+        </trans-unit>
+        <trans-unit id="402" translate="yes" xml:space="preserve">
+          <source>The ConfigTemplate.xml file describes the Service Fabric clusters, the certificates that are used to configure them, and the accounts that must be granted access to the relevant certificates.</source>
+        </trans-unit>
+        <trans-unit id="403" translate="yes" xml:space="preserve">
+          <source>In the example that is provided, the values are filled in for the example infrastructure that is described in this topic.</source>
+        </trans-unit>
+        <trans-unit id="404" translate="yes" xml:space="preserve">
+          <source>The template file will be used in the next section.</source>
+        </trans-unit>
+        <trans-unit id="405" translate="yes" xml:space="preserve">
+          <source>Create the domain account for a service user</source>
+        </trans-unit>
+        <trans-unit id="406" translate="yes" xml:space="preserve">
+          <source>Run the following command to create the domain user account, contoso<ph id="ph1">\\</ph>AXServiceUser.</source>
+        </trans-unit>
+        <trans-unit id="407" translate="yes" xml:space="preserve">
+          <source>Create gMSAs</source>
+        </trans-unit>
+        <trans-unit id="408" translate="yes" xml:space="preserve">
+          <source>Change the directory to <bpt id="p1">**</bpt>$(DownloadPath)<ept id="p1">**</ept>, and run the following Windows PowerShell command.</source>
+        </trans-unit>
+        <trans-unit id="409" translate="yes" xml:space="preserve">
+          <source>This script doesn't create the users.</source>
+        </trans-unit>
+        <trans-unit id="410" translate="yes" xml:space="preserve">
+          <source>Instead, it prints the commands that must be manually run on the domain controller machine.</source>
+        </trans-unit>
+        <trans-unit id="411" translate="yes" xml:space="preserve">
+          <source>Copy the output of the command into a Windows PowerShell window.</source>
+        </trans-unit>
+        <trans-unit id="412" translate="yes" xml:space="preserve">
+          <source>Make sure that the line breaks are removed, and run the lines on the Active Directory domain controller machine by using elevated privileges (right-click, and then click <bpt id="p1">**</bpt>Run as Administrator<ept id="p1">**</ept>).</source>
+        </trans-unit>
+        <trans-unit id="413" translate="yes" xml:space="preserve">
+          <source>Run the following script on the Active Directory domain controller machine to validate that the accounts have been successfully created.</source>
+        </trans-unit>
+        <trans-unit id="414" translate="yes" xml:space="preserve">
+          <source>Make sure that you run the script after you replace the pattern that matches the naming convention of the service accounts.</source>
+        </trans-unit>
+        <trans-unit id="415" translate="yes" xml:space="preserve">
+          <source>Run the Export-AddGMSAsONVMScript.ps1 script on the client machine.</source>
+        </trans-unit>
+        <trans-unit id="416" translate="yes" xml:space="preserve">
+          <source>This script generates scripts that are run on each Service Fabric VM and adds them to a folder that corresponds to each VM name.</source>
+        </trans-unit>
+        <trans-unit id="417" translate="yes" xml:space="preserve">
+          <source>Stop IIS</source>
+        </trans-unit>
+        <trans-unit id="418" translate="yes" xml:space="preserve">
+          <source>Use Remote Desktop Protocol (RDP) to connect to each Service Fabric VM, and complete the manual steps in <bpt id="p1">[</bpt>Start or Stop the Web Server (IIS 7)<ept id="p1">](https://technet.microsoft.com/en-us/library/cc732317(v=ws.10).aspx)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="419" translate="yes" xml:space="preserve">
+          <source>Alternatively, use the following Windows PowerShell script by using RDP to connect to each Service Fabric VM.</source>
+        </trans-unit>
+        <trans-unit id="420" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">_</bpt>IIS feature should be installed but disabled as there are some dependencies to the IIS dlls in the product.<ept id="p1">_</ept></source>
+        </trans-unit>
+        <trans-unit id="421" translate="yes" xml:space="preserve">
+          <source>Install Certificates</source>
+        </trans-unit>
+        <trans-unit id="422" translate="yes" xml:space="preserve">
+          <source>If you acquired the certificates that were listed earlier in this topic from a valid CA, fill in the .pfx file name and thumbprint for the certificates in the ConfigTemplate.xml file.</source>
+        </trans-unit>
+        <trans-unit id="423" translate="yes" xml:space="preserve">
+          <source>Set the <bpt id="p1">**</bpt>generateSelfSignedCert<ept id="p1">**</ept> attribute to <bpt id="p2">**</bpt>False<ept id="p2">**</ept> and the <bpt id="p3">**</bpt>exportable<ept id="p3">**</ept> attribute to <bpt id="p4">**</bpt>False<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="424" translate="yes" xml:space="preserve">
+          <source>Copy the .pfx files to the $(DownloadPath)<ph id="ph1">\\</ph>InfrastructureScripts<ph id="ph2">\\</ph>Certs folder.</source>
+        </trans-unit>
+        <trans-unit id="425" translate="yes" xml:space="preserve">
+          <source>If you're using self-signed certificates (for testing purposes only), run the following script.</source>
+        </trans-unit>
+        <trans-unit id="426" translate="yes" xml:space="preserve">
+          <source>To create self-signed certificates, in the ConfigTemplate.xml file, make sure that <bpt id="p1">**</bpt>generateSelfSignedCert<ept id="p1">**</ept> is set to <bpt id="p2">**</bpt>True<ept id="p2">**</ept> and <bpt id="p3">**</bpt>exportable<ept id="p3">**</ept> is set to <bpt id="p4">**</bpt>True<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="427" translate="yes" xml:space="preserve">
+          <source>The script will update the XML with the thumbprint for the certificates.</source>
+        </trans-unit>
+        <trans-unit id="428" translate="yes" xml:space="preserve">
+          <source>Export the new certificates with the private key (the .pfx file).</source>
+        </trans-unit>
+        <trans-unit id="429" translate="yes" xml:space="preserve">
+          <source>Use the following script to generate and run the export commands in Windows PowerShell.</source>
+        </trans-unit>
+        <trans-unit id="430" translate="yes" xml:space="preserve">
+          <source>The .pfx files will be put into the Certs folder.</source>
+        </trans-unit>
+        <trans-unit id="431" translate="yes" xml:space="preserve">
+          <source>The certificates must have been installed and must be present in cert:<ph id="ph1">\\</ph>CurrentUser<ph id="ph2">\\</ph>My.</source>
+        </trans-unit>
+        <trans-unit id="432" translate="yes" xml:space="preserve">
+          <source>The certificates must also be exportable.</source>
+        </trans-unit>
+        <trans-unit id="433" translate="yes" xml:space="preserve">
+          <source>If you're using self-signed certificates, skip to the next section.</source>
+        </trans-unit>
+        <trans-unit id="434" translate="yes" xml:space="preserve">
+          <source>You don't have to complete this procedure.</source>
+        </trans-unit>
+        <trans-unit id="435" translate="yes" xml:space="preserve">
+          <source>After you export or copy the .pfx files into the $(DownloadPath)<ph id="ph1">\\</ph>InfrastructureScripts<ph id="ph2">\\</ph>Certs folder, run the following commands to generate scripts that will be put in the folders that correspond to the VMs.</source>
+        </trans-unit>
+        <trans-unit id="436" translate="yes" xml:space="preserve">
+          <source>Copy the scripts in each folder to the VMs that correspond to the folder name.</source>
+        </trans-unit>
+        <trans-unit id="437" translate="yes" xml:space="preserve">
+          <source>On each VM, run the following scripts in the order that they appear in.</source>
+        </trans-unit>
+        <trans-unit id="438" translate="yes" xml:space="preserve">
+          <source>Set up a standalone Service Fabric cluster</source>
+        </trans-unit>
+        <trans-unit id="439" translate="yes" xml:space="preserve">
+          <source>Run the following command to generate the ClusterConfig.json file.</source>
+        </trans-unit>
+        <trans-unit id="440" translate="yes" xml:space="preserve">
+          <source>For more information, see, <bpt id="p1">[</bpt>Step 1B: Create a multi-machine cluster<ept id="p1">](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-creation-for-windows-server#create-the-cluster)</ept>, <bpt id="p2">[</bpt>Secure a standalone cluster on Windows using X.509 certificates<ept id="p2">](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-windows-cluster-x509-security)</ept>, and <bpt id="p3">[</bpt>Create a standalone cluster running on Windows Server<ept id="p3">](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-creation-for-windows-server#create-the-cluster)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="441" translate="yes" xml:space="preserve">
+          <source>Download the <bpt id="p1">[</bpt>Service Fabric standalone installation package<ept id="p1">](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-creation-for-windows-server#download-the-service-fabric-standalone-package)</ept> onto one of your Service Fabric nodes.</source>
+        </trans-unit>
+        <trans-unit id="442" translate="yes" xml:space="preserve">
+          <source>After the zip file is downloaded, unblock it by right-clicking the zip file and then clicking <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="443" translate="yes" xml:space="preserve">
+          <source>In the dialog box, select the <bpt id="p1">**</bpt>Unblock<ept id="p1">**</ept> check box in the lower right.</source>
+        </trans-unit>
+        <trans-unit id="444" translate="yes" xml:space="preserve">
+          <source>Copy the zip file to one of the nodes in the Service Fabric cluster, and unzip it.</source>
+        </trans-unit>
+        <trans-unit id="445" translate="yes" xml:space="preserve">
+          <source>Run the following commands to create an inbound firewall rule on ports 443 and 445 in all nodes.</source>
+        </trans-unit>
+        <trans-unit id="446" translate="yes" xml:space="preserve">
+          <source>Run the following commands to create an inbound firewall rule on port 80 for the SSRS node only.</source>
+        </trans-unit>
+        <trans-unit id="447" translate="yes" xml:space="preserve">
+          <source>Copy your ClusterConfig.json file to your unzipped install location of standalone Service Fabric.</source>
+        </trans-unit>
+        <trans-unit id="448" translate="yes" xml:space="preserve">
+          <source>Navigate to the unzipped install location in Windows PowerShell by using elevated privileges, and run the following command to test ClusterConfig.</source>
+        </trans-unit>
+        <trans-unit id="449" translate="yes" xml:space="preserve">
+          <source>If the test is successful, run the following command to deploy the cluster.</source>
+        </trans-unit>
+        <trans-unit id="450" translate="yes" xml:space="preserve">
+          <source>After the cluster is created, open the Service Fabric explorer on any client machine to validate the installation:</source>
+        </trans-unit>
+        <trans-unit id="451" translate="yes" xml:space="preserve">
+          <source>Install the Service Fabric client certificate in CurrentUser<ph id="ph1">\\</ph>My if it isn't already installed.</source>
+        </trans-unit>
+        <trans-unit id="452" translate="yes" xml:space="preserve">
+          <source>Go to <bpt id="p1">**</bpt>IE settings<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Compatibility Mode<ept id="p2">**</ept>, and clear the <bpt id="p3">**</bpt>Display Intranet sites in compatibility mode<ept id="p3">**</ept> check box.</source>
+        </trans-unit>
+        <trans-unit id="453" translate="yes" xml:space="preserve">
+          <source>Go to <ph id="ph1">`https://sf.d365ffo.onprem.contoso.com:19080`</ph>, where sf.d365ffo.onprem.contoso.com is the host name of the Service Fabric cluster that is specified in the zone.</source>
+        </trans-unit>
+        <trans-unit id="454" translate="yes" xml:space="preserve">
+          <source>If DNS name resolution isn't configured, use the IP address of the machine.</source>
+        </trans-unit>
+        <trans-unit id="455" translate="yes" xml:space="preserve">
+          <source>Select the client certificate.</source>
+        </trans-unit>
+        <trans-unit id="456" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Service Fabric explorer<ept id="p1">**</ept> page appears.</source>
+        </trans-unit>
+        <trans-unit id="457" translate="yes" xml:space="preserve">
+          <source>Configure LCS connectivity for the tenant</source>
+        </trans-unit>
+        <trans-unit id="458" translate="yes" xml:space="preserve">
+          <source>Deployment and servicing of Finance and Operations are orchestrated through LCS by using an on-premises local agent.</source>
+        </trans-unit>
+        <trans-unit id="459" translate="yes" xml:space="preserve">
+          <source>To establish connectivity from LCS to the Finance and Operations tenant, you must configure a certificate that enables the local agent to act on behalf on your Azure AD tenant (for example, Contoso.Onmicrosoft.com).</source>
+        </trans-unit>
+        <trans-unit id="460" translate="yes" xml:space="preserve">
+          <source>Use the on-premises agent certificate that you acquired from a CA or the self-signed certificate that you generated by using scripts.</source>
+        </trans-unit>
+        <trans-unit id="461" translate="yes" xml:space="preserve">
+          <source>Only user accounts that have the Global Administrator directory role can add certificates to authorize LCS.</source>
+        </trans-unit>
+        <trans-unit id="462" translate="yes" xml:space="preserve">
+          <source>By default, the person who signs up for Microsoft Office 365 for your organization will be the global administrator for the directory.</source>
+        </trans-unit>
+        <trans-unit id="463" translate="yes" xml:space="preserve">
+          <source>You must configure the certificate exactly one time per tenant.</source>
+        </trans-unit>
+        <trans-unit id="464" translate="yes" xml:space="preserve">
+          <source>All on-premises environments can use the same certificate to connect with LCS.</source>
+        </trans-unit>
+        <trans-unit id="465" translate="yes" xml:space="preserve">
+          <source>Download and install the latest version of Azure PowerShell on a client machine.</source>
+        </trans-unit>
+        <trans-unit id="466" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Install and configure Azure PowerShell<ept id="p1">](https://docs.microsoft.com/en-us/powershell/azure/install-azurerm-ps?view=azurermps-4.1.0&amp;viewFallbackFrom=azurermps-4.0.0)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="467" translate="yes" xml:space="preserve">
+          <source>Sign in to the <bpt id="p1">[</bpt>customer's Azure portal<ept id="p1">](https://portal.azure.com)</ept> to verify that you have the Global Administrator directory role.</source>
+        </trans-unit>
+        <trans-unit id="468" translate="yes" xml:space="preserve">
+          <source>Run the following script from $(DownloadPath)<ph id="ph1">\\</ph>InfrastructureScripts.</source>
+        </trans-unit>
+        <trans-unit id="469" translate="yes" xml:space="preserve">
+          <source>Set up file storage</source>
+        </trans-unit>
+        <trans-unit id="470" translate="yes" xml:space="preserve">
+          <source>You must set up two highly available SMB 3.0 file shares.</source>
+        </trans-unit>
+        <trans-unit id="471" translate="yes" xml:space="preserve">
+          <source>For information about how to enable SMB 3.0, see<bpt id="p1">[</bpt>SMB Security Enhancements<ept id="p1">](https://technet.microsoft.com/en-us/library/dn551363(v=ws.11).aspx#BKMK_disablesmb1)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="472" translate="yes" xml:space="preserve">
+          <source>Secure dialect negotiation can't detect or prevent downgrades from SMB 2.0 or 3.0 to SMB 1.0.</source>
+        </trans-unit>
+        <trans-unit id="473" translate="yes" xml:space="preserve">
+          <source>Because of this, and to take advantage of the full capabilities of SMB encryption, we strongly recommend that you disable the SMB 1.0 server</source>
+        </trans-unit>
+        <trans-unit id="474" translate="yes" xml:space="preserve">
+          <source>To help guarantee that your data is protected while it's at rest in your environment, BitLocker Drive Encryption must be enabled on every machine.</source>
+        </trans-unit>
+        <trans-unit id="475" translate="yes" xml:space="preserve">
+          <source>For information about how to enable BitLocker, see <bpt id="p1">[</bpt>BitLocker: How to deploy on Windows Server 2012 and later<ept id="p1">](https://docs.microsoft.com/en-us/windows/device-security/bitlocker/bitlocker-how-to-deploy-on-windows-server)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="476" translate="yes" xml:space="preserve">
+          <source>A file share that stores user documents that are uploaded to AOS (for example, <ph id="ph1">\\</ph><ph id="ph2">\\</ph>DAX7SQLAOFILE1<ph id="ph3">\\</ph>aos-storage).</source>
+        </trans-unit>
+        <trans-unit id="477" translate="yes" xml:space="preserve">
+          <source>A file share that stores the latest build and configuration files to orchestrate the deployment (for example, <ph id="ph1">\\</ph><ph id="ph2">\\</ph>DAX7SQLAOFILE1<ph id="ph3">\\</ph>agent))</source>
+        </trans-unit>
+        <trans-unit id="478" translate="yes" xml:space="preserve">
+          <source>Keep this file share path as short as possible to avoid exceeding the maximum path length on the files that will be put in the share.</source>
+        </trans-unit>
+        <trans-unit id="479" translate="yes" xml:space="preserve">
+          <source>On the file share machine, run the following command.</source>
+        </trans-unit>
+        <trans-unit id="480" translate="yes" xml:space="preserve">
+          <source>Set up the <ph id="ph1">\\</ph><ph id="ph2">\\</ph>DAX7SQLAOFILE1<ph id="ph3">\\</ph>aos-storage file share</source>
+        </trans-unit>
+        <trans-unit id="481" translate="yes" xml:space="preserve">
+          <source>In Server Manager, select <bpt id="p1">**</bpt>File and Storage Services<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Shares<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="482" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Tasks<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>New Share<ept id="p2">**</ept> to create a new share with name <bpt id="p3">**</bpt>aos-storage<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="483" translate="yes" xml:space="preserve">
+          <source>Grant <bpt id="p1">**</bpt>Modify<ept id="p1">**</ept> permissions for each machine in the Service Fabric cluster except <bpt id="p2">**</bpt>OrchestratorNodeType<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="484" translate="yes" xml:space="preserve">
+          <source>Grant <bpt id="p1">**</bpt>Modify<ept id="p1">**</ept> permissions for the user AOS domain user (contoso<ph id="ph1">\\</ph>AXServiceUser) and the gMSA user (contoso<ph id="ph2">\\</ph>svc-AXSF).</source>
+        </trans-unit>
+        <trans-unit id="485" translate="yes" xml:space="preserve">
+          <source>Set up the <ph id="ph1">\\</ph><ph id="ph2">\\</ph>DAX7SQLAOFILE1<ph id="ph3">\\</ph>agent file share</source>
+        </trans-unit>
+        <trans-unit id="486" translate="yes" xml:space="preserve">
+          <source>Go back to Server Manager, select <bpt id="p1">**</bpt>File and Storage Services<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Shares<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="487" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Tasks<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>New Share<ept id="p2">**</ept> to create a new share with name <bpt id="p3">**</bpt>agent<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="488" translate="yes" xml:space="preserve">
+          <source>Grant <bpt id="p1">**</bpt>Full-Control<ept id="p1">**</ept> permissions to the gMSA user for the local deployment agent (contoso<ph id="ph1">\\</ph>svc-LocalAgent$).</source>
+        </trans-unit>
+        <trans-unit id="489" translate="yes" xml:space="preserve">
+          <source>Set up SQL Server</source>
+        </trans-unit>
+        <trans-unit id="490" translate="yes" xml:space="preserve">
+          <source>Install SQL Server 2016 SP1 with high availability, either as SQL clusters that include a Storage Area Network (SAN) or in an Always-On configuration.</source>
+        </trans-unit>
+        <trans-unit id="491" translate="yes" xml:space="preserve">
+          <source>Verify that the <bpt id="p1">**</bpt>Database Engine, Reporting Services, Full Text Search<ept id="p1">**</ept>, and <bpt id="p2">**</bpt>Management Tools<ept id="p2">**</ept> are already installed.</source>
+        </trans-unit>
+        <trans-unit id="492" translate="yes" xml:space="preserve">
+          <source>Please ensure that the SQL Always On is setup according to <bpt id="p1">[</bpt>Select Initial Data Synchronization Page (Always On Availability Group Wizards)<ept id="p1">](https://docs.microsoft.com/en-us/sql/database-engine/availability-groups/windows/select-initial-data-synchronization-page-always-on-availability-group-wizards)</ept> and follow <bpt id="p2">[</bpt>To Prepare Secondary Databases Manually<ept id="p2">](https://docs.microsoft.com/en-us/sql/database-engine/availability-groups/windows/select-initial-data-synchronization-page-always-on-availability-group-wizards#PrepareSecondaryDbs)</ept></source>
+        </trans-unit>
+        <trans-unit id="493" translate="yes" xml:space="preserve">
+          <source>Run the SQL Service as a domain user.</source>
+        </trans-unit>
+        <trans-unit id="494" translate="yes" xml:space="preserve">
+          <source>Get an SSL certificate from a CA to configure Finance and Operations.</source>
+        </trans-unit>
+        <trans-unit id="495" translate="yes" xml:space="preserve">
+          <source>For testing purposes, you can create and use a self-signed certificate.</source>
+        </trans-unit>
+        <trans-unit id="496" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Self-signed certificate for Clustered SQL instance<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="497" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Self-signed certificate for Always-On SQL instance<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="498" translate="yes" xml:space="preserve">
+          <source>Using the certificate, complete the steps in <bpt id="p1">[</bpt>How to enable SSL encryption for an instance of SQL Server by using Microsoft Management Console<ept id="p1">](https://support.microsoft.com/en-us/help/316898/how-to-enable-ssl-encryption-for-an-instance-of-sql-server-by-using-microsoft-management-console)</ept> to configure SSL on SQL Server.</source>
+        </trans-unit>
+        <trans-unit id="499" translate="yes" xml:space="preserve">
+          <source>For each node of the cluster, follow these steps.</source>
+        </trans-unit>
+        <trans-unit id="500" translate="yes" xml:space="preserve">
+          <source>Make sure that you make the changes on the non-active node and fail over to it after changes are made.</source>
+        </trans-unit>
+        <trans-unit id="501" translate="yes" xml:space="preserve">
+          <source>Import the certificate into LocalMachine<ph id="ph1">\\</ph>My.</source>
+        </trans-unit>
+        <trans-unit id="502" translate="yes" xml:space="preserve">
+          <source>Grant certificate permissions to the service account that is used to run SQL service.</source>
+        </trans-unit>
+        <trans-unit id="503" translate="yes" xml:space="preserve">
+          <source>In Microsoft Management Console (MMC), right-click the certificate (certlm.msc), and then click <bpt id="p1">**</bpt>Tasks<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Manage Private Keys<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="504" translate="yes" xml:space="preserve">
+          <source>Add the certificate thumbprint to HKEY<ph id="ph1">\_</ph>LOCAL<ph id="ph2">\_</ph>MACHINE<ph id="ph3">\\</ph>SOFTWARE<ph id="ph4">\\</ph>Microsoft<ph id="ph5">\\</ph>Microsoft SQL Server<ph id="ph6">\\</ph><bpt id="p1">*</bpt>MSSQL.x<ept id="p1">*</ept><ph id="ph7">\\</ph>MSSQLServer<ph id="ph8">\\</ph>SuperSocketNetLib<ph id="ph9">\\</ph>Certificate.</source>
+        </trans-unit>
+        <trans-unit id="505" translate="yes" xml:space="preserve">
+          <source>In Microsoft SQL Server Configuration Manager, set <bpt id="p1">**</bpt>ForceEncryption<ept id="p1">**</ept> to <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="506" translate="yes" xml:space="preserve">
+          <source>Export the public key of the certificate (the .cer file), and install it in the trusted root of each Service Fabric node.</source>
+        </trans-unit>
+        <trans-unit id="507" translate="yes" xml:space="preserve">
+          <source>Configure the OrchestratorData database</source>
+        </trans-unit>
+        <trans-unit id="508" translate="yes" xml:space="preserve">
+          <source>Create an empty database, and name it <bpt id="p1">**</bpt>OrchestratorData<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="509" translate="yes" xml:space="preserve">
+          <source>This database is used by the on-premises local agent to orchestrate deployments.</source>
+        </trans-unit>
+        <trans-unit id="510" translate="yes" xml:space="preserve">
+          <source>Grant the local agent gMSA (svc-LocalAgent$) <bpt id="p1">**</bpt>db<ph id="ph1">\_</ph>owner<ept id="p1">**</ept> permissions on the database:</source>
+        </trans-unit>
+        <trans-unit id="511" translate="yes" xml:space="preserve">
+          <source>In the tree, expand the server name, expand <bpt id="p1">**</bpt>Security<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Logins<ept id="p2">**</ept>, and then right-click, and click <bpt id="p3">**</bpt>New Login<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="512" translate="yes" xml:space="preserve">
+          <source>New Login command</source>
+        </trans-unit>
+        <trans-unit id="513" translate="yes" xml:space="preserve">
+          <source>Look up the <bpt id="p1">**</bpt>svc-LocalAgent$<ept id="p1">**</ept> service account.</source>
+        </trans-unit>
+        <trans-unit id="514" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Locations<ept id="p1">**</ept>, and select <bpt id="p2">**</bpt>Entire Directory<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>Object Types<ept id="p3">**</ept>, and select <bpt id="p4">**</bpt>Service Account<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="515" translate="yes" xml:space="preserve">
+          <source>Select User, Service Account, or Group dialog box</source>
+        </trans-unit>
+        <trans-unit id="516" translate="yes" xml:space="preserve">
+          <source>Set <bpt id="p1">**</bpt>Assign ServerRole<ept id="p1">**</ept> to <bpt id="p2">**</bpt>Public<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="517" translate="yes" xml:space="preserve">
+          <source>Assign the <bpt id="p1">**</bpt>db<ph id="ph1">\_</ph>owner<ept id="p1">**</ept> database role permission to the OrchestratorData database.</source>
+        </trans-unit>
+        <trans-unit id="518" translate="yes" xml:space="preserve">
+          <source>Configure the Finance and Operations database</source>
+        </trans-unit>
+        <trans-unit id="519" translate="yes" xml:space="preserve">
+          <source>Sign in to LCS (<bpt id="p1">&lt;</bpt>https://lcs.dynamics.com/v2<ept id="p1">&gt;</ept>).</source>
+        </trans-unit>
+        <trans-unit id="520" translate="yes" xml:space="preserve">
+          <source>On the dashboard, click the <bpt id="p1">**</bpt>Shared asset library<ept id="p1">**</ept> tile.</source>
+        </trans-unit>
+        <trans-unit id="521" translate="yes" xml:space="preserve">
+          <source>Click the <bpt id="p1">**</bpt>Model<ept id="p1">**</ept> tab</source>
+        </trans-unit>
+        <trans-unit id="522" translate="yes" xml:space="preserve">
+          <source>In the grid, click the <bpt id="p1">**</bpt>Dynamics 365 for Operations on-premises, Enterprise edition - Demo data<ept id="p1">**</ept> row to download the zip.</source>
+        </trans-unit>
+        <trans-unit id="523" translate="yes" xml:space="preserve">
+          <source>Zip contains empty and demo data .bak files.</source>
+        </trans-unit>
+        <trans-unit id="524" translate="yes" xml:space="preserve">
+          <source>Based on your needs pick the appropriate .bak file.</source>
+        </trans-unit>
+        <trans-unit id="525" translate="yes" xml:space="preserve">
+          <source>For example, if you need demo data, restore the AxBootstrapDB_Demodata.bak file.</source>
+        </trans-unit>
+        <trans-unit id="526" translate="yes" xml:space="preserve">
+          <source>Restore the AxBootstrapDB_DemoData.bak database.</source>
+        </trans-unit>
+        <trans-unit id="527" translate="yes" xml:space="preserve">
+          <source>Rename the database <bpt id="p1">**</bpt>AXDBRAIN<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="528" translate="yes" xml:space="preserve">
+          <source>Run the following queries on the restored database.</source>
+        </trans-unit>
+        <trans-unit id="529" translate="yes" xml:space="preserve">
+          <source>Update the database files:</source>
+        </trans-unit>
+        <trans-unit id="530" translate="yes" xml:space="preserve">
+          <source>Right-click the database, and then click <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="531" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Files<ept id="p1">**</ept> to change the database file properties.</source>
+        </trans-unit>
+        <trans-unit id="532" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Initial Size (MB)<ept id="p1">**</ept> field, enter a value that is more than 5,120.</source>
+        </trans-unit>
+        <trans-unit id="533" translate="yes" xml:space="preserve">
+          <source>Database Properties dialog box</source>
+        </trans-unit>
+        <trans-unit id="534" translate="yes" xml:space="preserve">
+          <source>For <bpt id="p1">**</bpt>AXDBBuild<ph id="ph1">\_</ph>Data<ept id="p1">**</ept>, set the <bpt id="p2">**</bpt>Autogrowth/Maximize<ept id="p2">**</ept> field to <bpt id="p3">**</bpt>200<ept id="p3">**</ept> megabytes (MB).</source>
+        </trans-unit>
+        <trans-unit id="535" translate="yes" xml:space="preserve">
+          <source>For <bpt id="p1">**</bpt>AXDBBuild<ph id="ph1">\_</ph>Log<ept id="p1">**</ept>, set the <bpt id="p2">**</bpt>Autogrowth/Maximize<ept id="p2">**</ept> field to <bpt id="p3">**</bpt>500<ept id="p3">**</ept> MB.</source>
+        </trans-unit>
+        <trans-unit id="536" translate="yes" xml:space="preserve">
+          <source>Change Autogrowth dialog box</source>
+        </trans-unit>
+        <trans-unit id="537" translate="yes" xml:space="preserve">
+          <source>Create a new user that has SQL authentication enabled (axdbadmin).</source>
+        </trans-unit>
+        <trans-unit id="538" translate="yes" xml:space="preserve">
+          <source>Use the information in the following table to map the users and database roles.</source>
+        </trans-unit>
+        <trans-unit id="539" translate="yes" xml:space="preserve">
+          <source>User</source>
+        </trans-unit>
+        <trans-unit id="540" translate="yes" xml:space="preserve">
+          <source>Type</source>
+        </trans-unit>
+        <trans-unit id="541" translate="yes" xml:space="preserve">
+          <source>Database role</source>
+        </trans-unit>
+        <trans-unit id="542" translate="yes" xml:space="preserve">
+          <source>svc-AXSF$</source>
+        </trans-unit>
+        <trans-unit id="543" translate="yes" xml:space="preserve">
+          <source>gMSA</source>
+        </trans-unit>
+        <trans-unit id="544" translate="yes" xml:space="preserve">
+          <source>db<ph id="ph1">\_</ph>owner</source>
+        </trans-unit>
+        <trans-unit id="545" translate="yes" xml:space="preserve">
+          <source>svc-LocalAgent$</source>
+        </trans-unit>
+        <trans-unit id="546" translate="yes" xml:space="preserve">
+          <source>gMSA</source>
+        </trans-unit>
+        <trans-unit id="547" translate="yes" xml:space="preserve">
+          <source>db<ph id="ph1">\_</ph>owner</source>
+        </trans-unit>
+        <trans-unit id="548" translate="yes" xml:space="preserve">
+          <source>svc-FRPS$</source>
+        </trans-unit>
+        <trans-unit id="549" translate="yes" xml:space="preserve">
+          <source>gMSA</source>
+        </trans-unit>
+        <trans-unit id="550" translate="yes" xml:space="preserve">
+          <source>db<ph id="ph1">\_</ph>owner</source>
+        </trans-unit>
+        <trans-unit id="551" translate="yes" xml:space="preserve">
+          <source>svc-FRAS$</source>
+        </trans-unit>
+        <trans-unit id="552" translate="yes" xml:space="preserve">
+          <source>gMSA</source>
+        </trans-unit>
+        <trans-unit id="553" translate="yes" xml:space="preserve">
+          <source>db<ph id="ph1">\_</ph>owner</source>
+        </trans-unit>
+        <trans-unit id="554" translate="yes" xml:space="preserve">
+          <source>axdbadmin</source>
+        </trans-unit>
+        <trans-unit id="555" translate="yes" xml:space="preserve">
+          <source>SqlUser</source>
+        </trans-unit>
+        <trans-unit id="556" translate="yes" xml:space="preserve">
+          <source>db<ph id="ph1">\_</ph>owner</source>
+        </trans-unit>
+        <trans-unit id="557" translate="yes" xml:space="preserve">
+          <source>Give the svc-AXSF$ user and the axdbadmin SQL user access to the following roles in the tempdb database:</source>
+        </trans-unit>
+        <trans-unit id="558" translate="yes" xml:space="preserve">
+          <source>db<ph id="ph1">\_</ph>datareader</source>
+        </trans-unit>
+        <trans-unit id="559" translate="yes" xml:space="preserve">
+          <source>db<ph id="ph1">\_</ph>datawriter</source>
+        </trans-unit>
+        <trans-unit id="560" translate="yes" xml:space="preserve">
+          <source>db<ph id="ph1">\_</ph>ddladmin</source>
+        </trans-unit>
+        <trans-unit id="561" translate="yes" xml:space="preserve">
+          <source>In Management Studio, run the following Transact SQL (T-SQL) commands:</source>
+        </trans-unit>
+        <trans-unit id="562" translate="yes" xml:space="preserve">
+          <source>Run the following command:</source>
+        </trans-unit>
+        <trans-unit id="563" translate="yes" xml:space="preserve">
+          <source>Configure the Financial Reporting database</source>
+        </trans-unit>
+        <trans-unit id="564" translate="yes" xml:space="preserve">
+          <source>Create an empty database, and name it <bpt id="p1">**</bpt>FinancialReporting<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="565" translate="yes" xml:space="preserve">
+          <source>Use the information in the following table to map the users and database roles.</source>
+        </trans-unit>
+        <trans-unit id="566" translate="yes" xml:space="preserve">
+          <source>User</source>
+        </trans-unit>
+        <trans-unit id="567" translate="yes" xml:space="preserve">
+          <source>Type</source>
+        </trans-unit>
+        <trans-unit id="568" translate="yes" xml:space="preserve">
+          <source>Database role</source>
+        </trans-unit>
+        <trans-unit id="569" translate="yes" xml:space="preserve">
+          <source>svc-LocalAgent$</source>
+        </trans-unit>
+        <trans-unit id="570" translate="yes" xml:space="preserve">
+          <source>gMSA</source>
+        </trans-unit>
+        <trans-unit id="571" translate="yes" xml:space="preserve">
+          <source>db<ph id="ph1">\_</ph>owner</source>
+        </trans-unit>
+        <trans-unit id="572" translate="yes" xml:space="preserve">
+          <source>svc-FRPS$</source>
+        </trans-unit>
+        <trans-unit id="573" translate="yes" xml:space="preserve">
+          <source>gMSA</source>
+        </trans-unit>
+        <trans-unit id="574" translate="yes" xml:space="preserve">
+          <source>db<ph id="ph1">\_</ph>owner</source>
+        </trans-unit>
+        <trans-unit id="575" translate="yes" xml:space="preserve">
+          <source>svc-FRAS$</source>
+        </trans-unit>
+        <trans-unit id="576" translate="yes" xml:space="preserve">
+          <source>gMSA</source>
+        </trans-unit>
+        <trans-unit id="577" translate="yes" xml:space="preserve">
+          <source>db<ph id="ph1">\_</ph>owner</source>
+        </trans-unit>
+        <trans-unit id="578" translate="yes" xml:space="preserve">
+          <source>Encrypt credentials</source>
+        </trans-unit>
+        <trans-unit id="579" translate="yes" xml:space="preserve">
+          <source>On any client machine, install the encipherment certificate in the LocalMachine<ph id="ph1">\\</ph>My certificate store.</source>
+        </trans-unit>
+        <trans-unit id="580" translate="yes" xml:space="preserve">
+          <source>Grant the current user read access to the private key of this certificate.</source>
+        </trans-unit>
+        <trans-unit id="581" translate="yes" xml:space="preserve">
+          <source>Create the Credentials.json file as shown here.</source>
+        </trans-unit>
+        <trans-unit id="582" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>AccountPassword<ept id="p1">**</ept> is the encrypted domain user password for the AOS domain user (contoso<ph id="ph1">\\</ph>axserviceuser).</source>
+        </trans-unit>
+        <trans-unit id="583" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>SqlUser<ept id="p1">**</ept> is the encrypted SQL user (axdbadmin) that has access to the Finance and Operations database (AXDBRAIN), and <bpt id="p2">**</bpt>SqlPassword<ept id="p2">**</ept> is the encrypted SQL password.</source>
+        </trans-unit>
+        <trans-unit id="584" translate="yes" xml:space="preserve">
+          <source>Copy the .json file to the SMB file share, <ph id="ph1">\\</ph><ph id="ph2">\\</ph>AX7SQLAOFILE1<ph id="ph3">\\</ph>agent<ph id="ph4">\\</ph>Credentials<ph id="ph5">\\</ph>Credentials.json.</source>
+        </trans-unit>
+        <trans-unit id="585" translate="yes" xml:space="preserve">
+          <source>Update the Credentials.json file with encrypted values.</source>
+        </trans-unit>
+        <trans-unit id="586" translate="yes" xml:space="preserve">
+          <source>In Credentials.json, replace <bpt id="p1">**</bpt><ph id="ph1">\&lt;</ph>encryptedDomainUserPassword<ph id="ph2">\&gt;</ph><ept id="p1">**</ept> with the encrypted domain password.</source>
+        </trans-unit>
+        <trans-unit id="587" translate="yes" xml:space="preserve">
+          <source>Replace <bpt id="p1">**</bpt><ph id="ph1">\&lt;</ph>encryptedSqlUser<ph id="ph2">\&gt;</ph><ept id="p1">**</ept> with the encrypted Finance and Operations SQL user.</source>
+        </trans-unit>
+        <trans-unit id="588" translate="yes" xml:space="preserve">
+          <source>Replace <bpt id="p1">**</bpt><ph id="ph1">\&lt;</ph>encryptedSqlPassword<ph id="ph2">\&gt;</ph><ept id="p1">**</ept> with the Finance and Operations SQL password.</source>
+        </trans-unit>
+        <trans-unit id="589" translate="yes" xml:space="preserve">
+          <source>Set up SSRS</source>
+        </trans-unit>
+        <trans-unit id="590" translate="yes" xml:space="preserve">
+          <source>Before you begin, make sure that the prerequisites that are listed at the beginning of this topic are installed.</source>
+        </trans-unit>
+        <trans-unit id="591" translate="yes" xml:space="preserve">
+          <source>Follow the steps to <bpt id="p1">[</bpt>Configure SQL Server Reporting Services for an on-premises deployment<ept id="p1">](../analytics/configure-ssrs-on-premises.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="592" translate="yes" xml:space="preserve">
+          <source>Configure AD FS</source>
+        </trans-unit>
+        <trans-unit id="593" translate="yes" xml:space="preserve">
+          <source>Before you can complete this procedure, AD FS must be deployed on Windows Server 2016.</source>
+        </trans-unit>
+        <trans-unit id="594" translate="yes" xml:space="preserve">
+          <source>For information about how to deploy AD FS, see <bpt id="p1">[</bpt>Deployment Guide Windows Server 2016 and 2012 R2 AD FS Deployment Guide<ept id="p1">](https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/deployment/windows-server-2012-r2-ad-fs-deployment-guide)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="595" translate="yes" xml:space="preserve">
+          <source>Finance and Operations requires additional configuration beyond the default out-of-box configuration of AD FS.</source>
+        </trans-unit>
+        <trans-unit id="596" translate="yes" xml:space="preserve">
+          <source>For the following steps, Windows PowerShell runs on a machine that has the AD FS role service installed.</source>
+        </trans-unit>
+        <trans-unit id="597" translate="yes" xml:space="preserve">
+          <source>The user account must have enough permissions to administer AD FS.</source>
+        </trans-unit>
+        <trans-unit id="598" translate="yes" xml:space="preserve">
+          <source>For example, the user must have a domain administrator account.</source>
+        </trans-unit>
+        <trans-unit id="599" translate="yes" xml:space="preserve">
+          <source>Configure the AD FS identifier so that it matches the AD FS token issuer.</source>
+        </trans-unit>
+        <trans-unit id="600" translate="yes" xml:space="preserve">
+          <source>You should disable Windows Integrated Authentication (WIA) for intranet authentication connections unless you've configured AD FS for mixed environments.</source>
+        </trans-unit>
+        <trans-unit id="601" translate="yes" xml:space="preserve">
+          <source>For more information about how to configure WIA so that it can be used with AD FS, see <bpt id="p1">[</bpt>Configure browsers to use Windows Integrated Authentication (WIA) with AD FS<ept id="p1">](https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/operations/configure-ad-fs-browser-wia)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="602" translate="yes" xml:space="preserve">
+          <source>For sign-in, the user's email address must be an acceptable authentication input.</source>
+        </trans-unit>
+        <trans-unit id="603" translate="yes" xml:space="preserve">
+          <source>In order for AD FS to trust Finance and Operations for the exchange of authentication, various application entries must be registered in AD FS under an AD FS application group.</source>
+        </trans-unit>
+        <trans-unit id="604" translate="yes" xml:space="preserve">
+          <source>To speed up setup process and help reduce errors, you can use the following script for registration.</source>
+        </trans-unit>
+        <trans-unit id="605" translate="yes" xml:space="preserve">
+          <source>Copy the Publish-ADFSApplicationGroup.ps1 script and D365FO-OP directory to a machine that has the AD FS role service installed.</source>
+        </trans-unit>
+        <trans-unit id="606" translate="yes" xml:space="preserve">
+          <source>Then run the script by using a user account, such as an administrator account, that has enough permissions to administer AD FS.</source>
+        </trans-unit>
+        <trans-unit id="607" translate="yes" xml:space="preserve">
+          <source>For more information about how to use the script, see the documentation that is listed in the script.</source>
+        </trans-unit>
+        <trans-unit id="608" translate="yes" xml:space="preserve">
+          <source>Make a note of the client IDs that are specified in the output, because you will be asked for this information in LCS in a later step.</source>
+        </trans-unit>
+        <trans-unit id="609" translate="yes" xml:space="preserve">
+          <source>The AD FS management console should resemble the following illustration.</source>
+        </trans-unit>
+        <trans-unit id="610" translate="yes" xml:space="preserve">
+          <source>To open Server Manager, click <bpt id="p1">**</bpt>Tools<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>AD FS Management<ept id="p2">**</ept>, and then, at the bottom of the tree view on the left, click <bpt id="p3">**</bpt>Application Groups<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="611" translate="yes" xml:space="preserve">
+          <source>Double-click the application group to view more details.</source>
+        </trans-unit>
+        <trans-unit id="612" translate="yes" xml:space="preserve">
+          <source>Application group properties</source>
+        </trans-unit>
+        <trans-unit id="613" translate="yes" xml:space="preserve">
+          <source>Finally, for a sanity check, make sure that you can access the AD FS OpenID Configuration URL on a Service Fabric node of the <bpt id="p1">**</bpt>AOSNodeType<ept id="p1">**</ept> type by going to <ph id="ph1">`https://&lt;adfs-dns-name&gt;/adfs/.well-known/openid-configuration`</ph> in a web browser.</source>
+        </trans-unit>
+        <trans-unit id="614" translate="yes" xml:space="preserve">
+          <source>If you receive a message that states that the site isn't secure, you haven't added your AD FS SSL certificate to the Trusted Root Certification Authorities store.</source>
+        </trans-unit>
+        <trans-unit id="615" translate="yes" xml:space="preserve">
+          <source>This step is described in the AD FS deployment guide.</source>
+        </trans-unit>
+        <trans-unit id="616" translate="yes" xml:space="preserve">
+          <source>If you successfully access the URL, a JavaScript Object Notation (JSON) file is returned that contains your AD FS configuration, and you will see that your AD FS URL is trusted.</source>
+        </trans-unit>
+        <trans-unit id="617" translate="yes" xml:space="preserve">
+          <source>With this the setup of infrastructure is complete.</source>
+        </trans-unit>
+        <trans-unit id="618" translate="yes" xml:space="preserve">
+          <source>The following sections describe how to navigate to <bpt id="p1">[</bpt>LCS<ept id="p1">](https://lcs.dynamics.com)</ept> to set up your connector and deploy your Dynamics 365 for Finance and Operations environment.</source>
+        </trans-unit>
+        <trans-unit id="619" translate="yes" xml:space="preserve">
+          <source>Configure connector and install on-premises local agent</source>
+        </trans-unit>
+        <trans-unit id="620" translate="yes" xml:space="preserve">
+          <source>Sign in to <bpt id="p1">[</bpt>LCS<ept id="p1">](https://lcs.dynamics.com/)</ept> and open the on-premises implementation project.</source>
+        </trans-unit>
+        <trans-unit id="621" translate="yes" xml:space="preserve">
+          <source>On the hamburger menu, click <bpt id="p1">**</bpt>Project settings<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="622" translate="yes" xml:space="preserve">
+          <source>Project settings command</source>
+        </trans-unit>
+        <trans-unit id="623" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>On-premises connectors<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="624" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept> to create a new connector.</source>
+        </trans-unit>
+        <trans-unit id="625" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Setup host infrastructure<ept id="p1">**</ept> tab, download the agent installer.</source>
+        </trans-unit>
+        <trans-unit id="626" translate="yes" xml:space="preserve">
+          <source>Download agent installer button on the Setup host infrastructure tab</source>
+        </trans-unit>
+        <trans-unit id="627" translate="yes" xml:space="preserve">
+          <source>Verify that the zip file is unblocked.</source>
+        </trans-unit>
+        <trans-unit id="628" translate="yes" xml:space="preserve">
+          <source>Right-click the file, click <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept>, and then select <bpt id="p2">**</bpt>Unblock<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="629" translate="yes" xml:space="preserve">
+          <source>Unzip the agent installer on one of the Service fabric nodes of the <bpt id="p1">**</bpt>OrchestratorType<ept id="p1">**</ept> type.</source>
+        </trans-unit>
+        <trans-unit id="630" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Configure agent<ept id="p1">**</ept> tab, enter the configuration settings.</source>
+        </trans-unit>
+        <trans-unit id="631" translate="yes" xml:space="preserve">
+          <source>Save the configuration, and then click <bpt id="p1">**</bpt>Download configurations<ept id="p1">**</ept> to download the localagent-config.json configuration file.</source>
+        </trans-unit>
+        <trans-unit id="632" translate="yes" xml:space="preserve">
+          <source>Download configurations button on the Configure agent tab</source>
+        </trans-unit>
+        <trans-unit id="633" translate="yes" xml:space="preserve">
+          <source>Copy the localagent-config.json file to the machine where the agent installer package is located.</source>
+        </trans-unit>
+        <trans-unit id="634" translate="yes" xml:space="preserve">
+          <source>In a Command Prompt window, run the following command by navigating to the folder that contains the agent installer.</source>
+        </trans-unit>
+        <trans-unit id="635" translate="yes" xml:space="preserve">
+          <source>The user who runs this command must have <bpt id="p1">**</bpt>db<ph id="ph1">\_</ph>owner<ept id="p1">**</ept> permissions on the OrchestratorData database.</source>
+        </trans-unit>
+        <trans-unit id="636" translate="yes" xml:space="preserve">
+          <source>Once the local agent is installed successfully navigate back to your on-premises connector in LCS.</source>
+        </trans-unit>
+        <trans-unit id="637" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Validate setup<ept id="p1">**</ept> tab click on <bpt id="p2">**</bpt>Message agent<ept id="p2">**</ept> button.</source>
+        </trans-unit>
+        <trans-unit id="638" translate="yes" xml:space="preserve">
+          <source>This will test for LCS connectivity to your local agent.</source>
+        </trans-unit>
+        <trans-unit id="639" translate="yes" xml:space="preserve">
+          <source>When connection is established successfully the page will look like the graphic below.</source>
+        </trans-unit>
+        <trans-unit id="640" translate="yes" xml:space="preserve">
+          <source>Validate agent</source>
+        </trans-unit>
+        <trans-unit id="641" translate="yes" xml:space="preserve">
+          <source>Deploy your Dynamics 365 for Finance and Operations (on-premises) environment</source>
+        </trans-unit>
+        <trans-unit id="642" translate="yes" xml:space="preserve">
+          <source>Navigate to your on-premises project in LCS, go to <bpt id="p1">**</bpt>Environment<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Sandbox<ept id="p2">**</ept> and click on <bpt id="p3">**</bpt>Configure<ept id="p3">**</ept></source>
+        </trans-unit>
+        <trans-unit id="643" translate="yes" xml:space="preserve">
+          <source>Select your <bpt id="p1">**</bpt>Environment topology<ept id="p1">**</ept> and go through the wizard to intitiate your deployment.</source>
+        </trans-unit>
+        <trans-unit id="644" translate="yes" xml:space="preserve">
+          <source>The local agent will pick up the deployment request, kick off the deployment and communicate back to LCS when ready.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

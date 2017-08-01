@@ -1,0 +1,513 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-cn">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">c47ca406e2c8be98f26f1c78d6f5e0a3f66690a5</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">financials\accounts-payable\vendor-invoice-automation.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">basic</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">524e119b2c6ab30243e220bd892cf2d375410788</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">3d7eac57a47ba30af303b5aa0a82f96d79dc8473</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Vendor invoice automation</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic explains the features that are available for end-to-end automation of vendor invoices, even invoices that include attachments.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Vendor invoice automation</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This topic explains the features that are available for end-to-end automation of vendor invoices, even invoices that include attachments.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Organizations that want to streamline their Accounts payable (AP) processes often identify invoice processing as one of the top process areas that should be more efficient.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>In many cases, these organizations offload the processing of paper invoices to a third-party optical character recognition (OCR) service provider.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>They then receive machine-readable invoice metadata together with a scanned image of each invoice.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>To help with automation, a “last mile” solution is then built to enable consumption of these artifacts in the invoicing system.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition now enables this “last mile” automation out of the box, through an invoice automation solution.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Solution context</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>The invoice automation solution enables a standard interface that can accept invoice metadata for the invoice header and invoice lines, and also attachments that are applicable to the invoice.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Any external system that can generate artifacts that comply with this interface will be able to send the feed into Finance and Operations for automatic processing of invoices and attachments.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The following illustration shows a sample integration scenario where Contoso has partnered with an OCR service provider for vendor invoice processing.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Contoso’s vendors send invoices to the service provider by email.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Through OCR processing, the service provider generates invoice metadata (header and/or lines) and a scanned image of the invoice.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>An integration layer then transforms these artifacts so that Finance and Operations can consume them.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Sample integration scenario</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Several variations of the preceding scenario are possible if invoice integration is required.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Data migration is another use case where this interface can be used to create invoices and attachments in Finance and Operations.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Solution components</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The solution footprint consists of the following components:</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Data entities for the invoice header, invoice lines, and invoice attachments</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Exception processing for invoices</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>A side-by-side attachment viewer in invoices</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>The rest of this topic provides detailed descriptions of these solution components.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Data entities</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>A data package is the unit of work that must be sent to Finance and Operations, so that invoice headers, invoice lines, and invoice attachments can be created.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>The following data entities are used for the artifacts that make up the data package:</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Vendor invoice header</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Vendor invoice line</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Vendor invoice document attachment</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Vendor invoice document attachment is a new data entity that is introduced as part of this feature.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>The Vendor invoice header entity has been modified so that it supports attachments.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>The Vendor invoice line entity hasn’t been modified for this feature.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>This topic doesn’t give a detailed definition of a data package.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>It also doesn’t explain how to create data packages.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>For this information, see <bpt id="p1">[</bpt>Data entities and packages framework<ept id="p1">](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>To quickly generate test data that includes invoices and attachments, follow these steps.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Sign in to your Finance and Operations instance.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Go to <bpt id="p1">**</bpt>Accounts payables<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Invoices<ept id="p2">**</ept><ph id="ph2"> &gt; </ph><bpt id="p3">**</bpt>Pending vendor invoices<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Create invoices that have lines and attachments.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>The attachments must be header attachments.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Currently, the Vendor invoice document attachment entity doesn’t support line attachments.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Open the <bpt id="p1">**</bpt>Data management<ept id="p1">**</ept> workspace.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Create an export job that includes the Vendor invoice header, Vendor invoice line, and Vendor invoice document attachment entities.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Export the data.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Download the exported data as a package.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>You can now use the package to import data into target instances for testing purposes.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Determining the legal entity for an invoice</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Invoices that are imported via data packages can be associated with the legal entity that they belong to in two ways:</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>The import job that processes the invoice imports it into the same company in which the job was scheduled in the <bpt id="p1">**</bpt>Data management<ept id="p1">**</ept> workspace.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>In other words, the company of the job determines the company that the invoice belongs to.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>When the data package that contains invoices is sent to Finance and Operations, the caller (that is, the integration application that runs outside of Finance and Operations) can explicitly mention the company ID in the HTTP request.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>In this case, the company context in which the processing job runs in Finance and Operations is overridden, and the invoices are imported into the company that was passed via the HTTP request.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>This behavior is standard data management behavior.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>It’s explained here, in the context of invoices, just for the sake of completeness.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Exception processing</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>In scenarios where vendor invoices come into Finance and Operations via integration, there must be an easy way for an Accounts payable team member to process exceptions or failed invoices, and to create pending invoices out of failed invoices.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>This exception processing for vendor invoices is now part of Finance and Operations.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Exceptions list page</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>The new list page for invoice exceptions is available at <bpt id="p1">**</bpt>Accounts payable<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Invoices<ept id="p2">**</ept><ph id="ph2"> &gt; </ph><bpt id="p3">**</bpt>Import failures<ept id="p3">**</ept><ph id="ph3"> &gt; </ph><bpt id="p4">**</bpt>Vendor invoices that failed to import<ept id="p4">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>This page shows all the vendor invoice header records from the staging table of the Vendor invoice header data entity.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Note that you can view the same records from the <bpt id="p1">**</bpt>Data management<ept id="p1">**</ept> workspace, where you can also perform the same actions that are provided in the exception handling feature.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>However, the UI that the exception handling feature provides is optimized for a functional user.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Exceptions list page</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>This list page includes the following fields that come in via the feed:</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Company<ept id="p1">**</ept> – The company that the invoice belongs to</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Error message<ept id="p1">**</ept> – The error message that the data management framework issues to explain why the invoice could not be created</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Number<ept id="p1">**</ept> – The invoice number</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Invoice account<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Name<ept id="p1">**</ept> – The vendor’s name</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Vendor account<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Purchase order<ept id="p1">**</ept> – The purchase order (PO) number for the invoice</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Posting date<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Invoice date<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Invoice description<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Currency<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Log<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Line reference<ept id="p1">**</ept> – The identifier that comes from the external system</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>The line reference isn’t the invoice ID.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>This list page also has a preview pane that you can used in the following ways:</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>View the whole error message, so that you don’t have to expand the <bpt id="p1">**</bpt>Error message<ept id="p1">**</ept> column in the grid.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>View the whole list of attachments for the invoice, if any attachments came with the invoice.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>The list page supports the following actions:</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Edit<ept id="p1">**</ept> – Open the exception record in edit mode, so that you can fix the issues.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Options<ept id="p1">**</ept> – Access the standard options that are available on list pages.</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>You can use the <bpt id="p1">**</bpt>Add to workspace<ept id="p1">**</ept> option to pin the exceptions list page to your workspace as a list or tile.</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Exception details page</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>When you start edit mode, the exception details page for the invoice that has issues appears.</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>If there are any attachments, the invoice and the default attachment appear side by side on the exception details page.</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Exception details page</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>In the preceding illustration, there weren’t any lines for the vendor invoice header that came in.</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>Therefore, the lines section is empty.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>The exception details page supports the following operation:</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Create pending invoice<ept id="p1">**</ept> – After you’ve fixed the issues on the invoice as part of exception processing, you can click this button to create the pending invoice.</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>The creation of pending invoices occurs in the background (as an asynchronous operation).</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Shared service vs. organization-based exception processing</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>The exceptions list page supports the standard security constructs that the <bpt id="p1">**</bpt>Data management<ept id="p1">**</ept> workspace supports for the processing of staging records.</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>The invoice import job can be secured in the following ways:</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>By user role</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>By user</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>By legal entity</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>Import job that is secured by user role and legal entity</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>If security is configured for the invoice import job, the exceptions list page honors those settings.</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>Users will be able to see only the invoice exception records that this setup allows them to see.</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>For example, Contoso has decided to process invoice exceptions by legal entity.</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Therefore, security is configured on the invoice import job in such a way that a user in legal entity A can see only invoice exceptions in legal entity A, whereas a user in legal entity B can see only invoice exceptions in legal entity B. This setup enables segregation of duties for the management of invoice exceptions.</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>Contoso could also decide not to enforce any security, so that the same users can process invoice exceptions for all legal entities.</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>This setup enables a shared services scenario for the management of invoice exceptions.</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>Side-by-side attachment viewer</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>To help you easily view the attachments for vendor invoices, the following pages that are used in the invoicing process now provide an attachment viewer:</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Exception handling<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Pending vendor invoices<ept id="p1">**</ept> page (also available in the invoice review process)</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Invoice journal<ept id="p1">**</ept> inquiry page (for posted invoices)</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>Here is the main functionality that the attachment viewer provides:</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>View all attachment types that Document management supports (files, images, URLs, and notes).</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>View multi-page TIFF files.</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>Perform the following actions on image files:</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>Highlight parts of the image.</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>Block parts of the image.</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>Add annotations to the image.</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>Zoom in and out on the image.</source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>Pan the image.</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>Undo and redo actions.</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>Fit the image to size.</source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>These actions are available only for image files (JPEG, TIFF, PNG, and so on).</source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>Any changes that you make to an image by using these actions are saved to the image file.</source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>Currently, the attachment viewer doesn’t include versioning or auditing capabilities.</source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>Default attachment</source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>If a vendor invoice has more than one attachment, you can set one of the documents as the default attachment on the <bpt id="p1">**</bpt>Attachments<ept id="p1">**</ept> page.</source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Is default attachment<ept id="p1">**</ept> option is a new option that was added as part of this feature.</source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>This option is also exposed in the Vendor invoice document attachment data entity.</source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>Therefore, the default attachment can be set through integrations.</source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>Only one document can be set as the default attachment.</source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>After you set a document as the default attachment, it’s automatically shown in the attachment viewer when the invoice is opened.</source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>If you don’t set any document as the default attachment, the viewer doesn’t automatically show any attachment when the invoice is opened.</source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>Show/hide invoice attachments</source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>A new button that is available on the <bpt id="p1">**</bpt>Exception processing<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Pending invoice<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>Invoice journal<ept id="p3">**</ept> inquiry pages lets you show or hide the attachment viewer.</source>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>Security</source>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>The following actions in the attachment viewer are controlled via role-based security:</source>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>Highlighting</source>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>Block</source>
+        </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>Annotation</source>
+        </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>Pending vendor invoices page</source>
+        </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>The following privileges provide ready-only access or read/write access to the attachment viewer for the highlighting, block, and annotation actions:</source>
+        </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Maintain vendor invoice image<ept id="p1">**</ept> – This privilege provides read/write access.</source>
+        </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>View vendor invoice image<ept id="p1">**</ept> – This privilege provides read-only access.</source>
+        </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>The following duties provide read-only access or read/write access to the attachment viewer for those actions:</source>
+        </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Maintain vendor invoices<ept id="p1">**</ept> – The Maintain vendor invoice image privilege is assigned to this duty.</source>
+        </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Inquire into vendor invoice status<ept id="p1">**</ept> – The View vendor invoice image privilege is assigned to this duty.</source>
+        </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>The following roles provide read-only access or read/write access to the attachment viewer for those actions:</source>
+        </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Accounts payable clerk<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Accounts payable manager<ept id="p2">**</ept> – The Maintain vendor invoices duty is assigned to these roles.</source>
+        </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Accounts payable clerk<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Accounts payable manager<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Accounts payable centralized payments clerk<ept id="p3">**</ept>, and <bpt id="p4">**</bpt>Accounts payable payments clerk<ept id="p4">**</ept> – The Inquire into vendor invoice status duty is assigned to these roles.</source>
+        </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>Invoice exception details page</source>
+        </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>The following privileges provide ready-only access or read/write access to the attachment viewer for the highlighting, block, and annotation actions.</source>
+        </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>Out of the box, the roles that are mentioned in this section provide read-only access to the invoice images in the attachment viewer.</source>
+        </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>If a role must also have write access to the images, you can grant write access to that role by using the privilege and duty that are described here.</source>
+        </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Maintain vendor invoice header entity image<ept id="p1">**</ept> – This privilege provides read/write access to the invoice images in the attachment viewer.</source>
+        </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>View vendor invoice header entity image<ept id="p1">**</ept> – This privilege provides read-only view to the invoice image in the attachment viewer.</source>
+        </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>The following duties provide read-only access to the attachment viewer for those actions:</source>
+        </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Maintain vendor invoices<ept id="p1">**</ept> – The Maintain vendor invoice header entity image privilege is assigned to this duty.</source>
+        </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>The following roles provide read-only access to the attachment viewer for those actions:</source>
+        </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Accounts payable clerk<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Accounts payable manager<ept id="p2">**</ept> – The Maintain vendor invoices duty is assigned to these roles.</source>
+        </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>By default, if the user role provides edit rights on any page, the user will also have edit rights on the attachments viewer for the highlighting, block, and annotation actions.</source>
+        </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>However, if there are scenarios where a specific role should have edit rights on the page but not on the attachment viewer, the appropriate privileges from the preceding list can be used to satisfy the use case.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

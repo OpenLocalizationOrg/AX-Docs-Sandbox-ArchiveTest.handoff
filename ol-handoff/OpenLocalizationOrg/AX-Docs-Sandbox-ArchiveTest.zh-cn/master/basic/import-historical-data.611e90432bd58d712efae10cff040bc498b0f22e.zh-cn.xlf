@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-cn">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">d316abcbabeb4c55f9c3fec3f6921708cafa7899</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scm\master-planning\import-historical-data.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">basic</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">8778220ec054696e37e109adf7d34315d02db56f</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">52b152bcf11c137e92ea1af31ee1ba7eeb234e65</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Import historical data for demand forecasts</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>To get accurate demand forecasts, you require historical demand data per item or item allocation key.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic explains how to use data entities to import historical demand data from any system, so that you have a longer history of demand forecast data.</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Import historical data for demand forecasts</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>To help guarantee the accuracy of demand forecasts, you must have as much historical demand data as you can get per item or item allocation key.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>If the historical demand data isn't already imported, use the <bpt id="p1">**</bpt>Historical external demand<ept id="p1">**</ept> (ReqDemPlanHistoricalExternalDemandEntity) data entity in Microsoft Dynamics 365 for Finance and Operations to import it.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Data management<ept id="p1">**</ept> workspace, you can see an overview of all the fields in the entity.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Open the <bpt id="p1">**</bpt>Data management<ept id="p1">**</ept> workspace.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Click the <bpt id="p1">**</bpt>Data entities<ept id="p1">**</ept> tile.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Search the entity list for <bpt id="p1">**</bpt>Historical external demand<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Target fields<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>The following entity fields are mandatory: site (<bpt id="p1">**</bpt>DeliveringSiteId<ept id="p1">**</ept>), date (<bpt id="p2">**</bpt>DemandDate<ept id="p2">**</ept>), quantity (<bpt id="p3">**</bpt>DemandQuantity<ept id="p3">**</ept>), and either item number (<bpt id="p4">**</bpt>ItemNumber<ept id="p4">**</ept>) or item allocation key (<bpt id="p5">**</bpt>ProductAllocationKeyId<ept id="p5">**</ept>).</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>To use the data entity, you must have a Microsoft Excel file or comma-separated values (CSV) file that contains the historical demand data.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>The following example shows how to import the data from a CSV file.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Example</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>You can use the following file as an example.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Download the <bpt id="p1">[</bpt>HistoricalDemandData<ept id="p1">](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/365OperationsDemandForecast)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>This file contains the historical demand data for item D0001.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>It contains only the following mandatory fields: site, quantity, and the demand date.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Select the company to import the historical demand data into.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Open the <bpt id="p1">**</bpt>Data management<ept id="p1">**</ept> workspace.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Click the <bpt id="p1">**</bpt>Import<ept id="p1">**</ept> tile.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Enter a name for the import project, such as <bpt id="p1">**</bpt>Import historical demand for item D0001<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Source data format<ept id="p1">**</ept> field, select the file format of the file that you're importing.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>To import the HistoricalDemandData file for this example, select <bpt id="p1">**</bpt>CSV<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Entity name<ept id="p1">**</ept> field, select <bpt id="p2">**</bpt>Historical external demand<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Save the file to your computer, and then upload it.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Import<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Execution summary<ept id="p1">**</ept> page is opened automatically.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Verify the imported data on the page.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>After you've imported the historical demand data, you can generate a demand forecast.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>See also</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Generate a statistical baseline forecast<ept id="p1">](generate-statistical-baseline-forecast.md)</ept></source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
