@@ -1,0 +1,330 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="pt-br">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ebcae0e323203a98a9b8ed1113db945fceaaa4af</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scm\production-control\manage-subcontract-work-production.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">basic</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">55dde2c847412c64dba18493da84b5a46fdad864</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">3b1d2ed7dea3b062ae570e1506b5d5081b8e2571</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Manage subcontracting work in production</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic explains how subcontracted operations are managed in Microsoft Dynamics 365 for Finance and Operations.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>In other words, it explains how production operations that are allocated to a resource are managed by a vendor.</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Manage subcontracting work in production</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>This topic explains how subcontracted operations are managed in Microsoft Dynamics 365 for Finance and Operations.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>In other words, it explains how production operations that are allocated to a resource are managed by a vendor.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">[</bpt>production processes<ept id="p1">](production-process-overview.md)</ept>, work can be done by resources that are owned or administered by vendors.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Typically, vendor resources are used to level periodic excess demand that surpasses the available capacity of a company's own resources.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>The vendor might also be able to offer specific <bpt id="p1">[</bpt>resource capabilities<ept id="p1">](resource-capabilities.md)</ept>or resources at a lower price.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Depending on the vendor resources that are used in a production process, a <bpt id="p1">[</bpt>route<ept id="p1">](routes-operations.md)</ept> often has additional logistic requirements, because the material and semi-finished products must first be transported to the vendor's site.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Then the result of the subcontracted operation must be transported either to the location that is allocated to the next operation or to a finished goods warehouse.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>When subcontracting operations or activities are used, they affect all stages of operations, from the definition of the operations that are required in production, costing, forecasting, planning, and scheduling, to the management of logistics for materials, semi-finished products, and finished goods.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Finally, these resources require their own processes for accounting and cost control.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>For internal resources, a fixed cost rate is typically allocated for a period.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>By contrast, the cost of subcontracted resources is based on the purchase price of the related service.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>The service is defined as another product, and is used to drive the procurement and purchase processes for a given subcontracted operation.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Currently, there is no explicit concept of semi-finished products in Microsoft Dynamics 365 for Finance and Operations.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>For a production order that requires more than one operation in order to transform raw materials into a finished good, the finished good is posted back into inventory only in the last operation.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>The semi-finished products that the earlier operations produce are accounted in work in progress (WIP), but they aren't posted or tracked in inventory.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Although you can split the routes and bills of materials (BOMs) into multiple smaller units, this approach increases the number of products, BOMs, and routes that must be managed.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>There are two methods for modeling subcontracting work for production operations.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>These methods differ in the way that the subcontracting process can be modeled, the way that semi-finished products are represented in the process, and the way that cost control is managed.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Subcontracting of route operations in production orders or batch orders</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>The service product must be a stocked product, and it must be part of the BOM.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>This method supports first in, first out (FIFO) or standard cost.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Semi-finished products are represented by the service product in the process.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Cost control allocates the costs that are associated with subcontracted work to the material costs.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Subcontracting of production flow activities in a lean production flow</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>The service is a non-stocked service product, and it isn't part of the BOM.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>This method uses purchase agreements as service agreements.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>This method uses backflush costing.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>This method allows for aggregated and asynchronous procurement.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>(Material flow is independent of the procurement process.)</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Cost control allocates subcontracted work in its own cost breakdown block.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Subcontracting of route operations</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>To use subcontracting of route operations for production or batch orders, the service product that is used for the procurement of the service must be defined as a product of the <bpt id="p1">**</bpt>Service<ept id="p1">**</ept> type.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Additionally, it must have an item model group that has the <bpt id="p1">**</bpt>Stocked product<ept id="p1">**</ept> option under <bpt id="p2">**</bpt>Inventory policy<ept id="p2">**</ept> set to <bpt id="p3">**</bpt>Yes<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>This option defines whether a product is accounted as inventory on product receipt (<bpt id="p1">**</bpt>Stocked product<ept id="p1">**</ept><ph id="ph1"> = </ph><bpt id="p2">**</bpt>Yes<ept id="p2">**</ept>), or whether the product is expensed on a profit and loss account (<bpt id="p3">**</bpt>Stocked product<ept id="p3">**</ept><ph id="ph2"> = </ph><bpt id="p4">**</bpt>No<ept id="p4">**</ept>).</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Although this behavior might seem contradictory, it's based on the fact that only products that have this policy will create inventory transactions that can be used in cost control to calculate planned cost and determine the actual cost when a production order is ended.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>To be considered in planning and cost calculation, the service must be added to the BOM.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>The BOM line must be of the <bpt id="p1">**</bpt>Vendor<ept id="p1">**</ept> type, and it must be allocated to the route operation that the service is allocated to.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>This route operation must have a costing resource and resource requirement that point to a resource of the <bpt id="p1">**</bpt>Vendor<ept id="p1">**</ept> type that connects the operation and the related service to the corresponding vendor account.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>When this configuration is used, a purchase order is created for the related service product, based on estimation of a production order.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>The purchase order of the service is used as an anchor for the subcontracted operations.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>The subcontracted work can be managed through the <bpt id="p1">**</bpt>Subcontracted work<ept id="p1">**</ept> list page in Production control.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>The subcontracted work is used to ship raw material and, eventually, a semi-finished product to the vendor in preparation for the operation.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>It's also used to receive the resulting product of the subcontracted operation in item arrival, where the service product is used to identify the arrival of the semi-finished product.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>When the purchase order line is received, the production operation is updated as completed.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>A production order can have many operations, and each operation can be allocated to a different vendor.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Therefore, an end-to-end production order might trigger multiple purchase orders.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Subcontracting of production flow activities</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>lean manufacturing<ept id="p1">](lean-manufacturing-overview.md)</ept>solution models the subcontracting work as a service that is related to an activity of a <bpt id="p2">[</bpt>production flow<ept id="p2">](/dynamics365/unified-operations/supply-chain/production-control/tasks/create-production-flow-version)</ept> (Task guide topic).</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Therefore, this type of subcontracting is also referred to as <bpt id="p1">[</bpt>activity-based subcontracting.<ept id="p1">](activity-based-subcontracting.md)</ept></source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>A special cost group type, <bpt id="p1">**</bpt>Direct outsourcing<ept id="p1">**</ept>, has been introduced, and the subcontracting services aren't part of the BOM of the finished goods.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>When you use lean manufacturing, all activities are defined by kanbans that can be related to one or multiple production flow activities.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>So far, that explanation sounds just like an explanation of production orders.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>However, whereas production orders must always end with a finished product, you can create kanbans to supply a semi-finished product.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>You don't have to introduce a new product and BOM level.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Because kanban rules can be very dynamic, you can model different variants of supply for the same product on a production flow.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>When you use lean subcontracting, the material flow and the financial flow are strictly separated.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>All material flow is represented by kanban activities.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>The purchase orders for the service products and the receipt postings of those services can be automated, based on the status of kanban jobs in the production flow.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Kanban jobs can be started and completed even before the purchase orders are created.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>The subcontracting documents (purchase order and purchase receipt of the service) can be aggregated by period and service.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Therefore, the number of purchase documents and lines can be kept small, even in highly repetitive operations where vendors provide subcontracted services in a single-piece flow.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Modeling subcontracting in a production flow</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>In a <bpt id="p1">[</bpt>lean production flow<ept id="p1">](lean-manufacturing-modeling-lean-organization.md)</ept>, a process activity can be defined as subcontracted when it's allocated to a work cell (resource group) that has a single vendor resource.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>When a work cell is subcontracted, the related process activities must be linked to an active purchase agreement line that contains the service item and the price of the service.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>The service agreement of the activity also defines the calculation ratio between the product quantity of the kanban job and the resulting service quantity.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>You can select whether the service quantity is calculated based on the number of jobs, the good product quantity that is reported on the jobs, or the total product quantity (this total quantity includes scrapped products).</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Transfer activities can also be defined as subcontracted.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>This definition occurs implicitly when you select the responsible party for the shipping in the transfer activity.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>When you select <bpt id="p1">**</bpt>Shipper<ept id="p1">**</ept> or <bpt id="p2">**</bpt>Recipient<ept id="p2">**</ept>, if the corresponding source or target warehouse is a vendor-managed warehouse, the activity is considered subcontracted.</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>When you select <bpt id="p1">**</bpt>Carrier<ept id="p1">**</ept>, the activity is always subcontracted.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Like subcontracted process activities, a subcontracted transfer activity must be connected to a service agreement before the production flow can be activated.</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Backflush costing</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>The cost accounting of subcontracted work is completely integrated into the costing for the lean manufacturing solution (backflush costing).</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>When the purchase order receipt of the service is posted, or when invoicing occurs, the cost of the service is allocated to the production flow.</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>For backflush costing, the variance of subcontracted services is calculated by offsetting the subcontracting block of the standard cost of the received products against the actual received and invoiced service quantities.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Material supply for subcontracted operations</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Semi-finished products and other related materials must be transferred to the location where the work is physically performed.</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>When you use subcontracted operations and activities, this transfer is often related to additional transport to a vendor-operated site.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>By allocating material in the BOM to the subcontracted operation, you declare that the material must be staged at the input location of the resource group for the allocated resource.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>Master planning or lean replenishment then provisions the material to that location.</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>To model the inventory that is located at a vendor site, it's a best practice in the industry to define a vendor-managed warehouse.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>You can easily define a vendor-managed warehouse by creating a new warehouse and assigning the vendor account.</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>To document that material must be transferred to the vendor before an operation can be performed, you should allocate the vendor-managed warehouse to the input warehouse of the resource group that holds the resource.</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>To replenish material at this warehouse, you can use multiple strategies:</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Transfer orders</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Transfer journals</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Withdrawal kanbans</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Direct purchase to the vendor location</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>Semi-finished products are the exception to this rule.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>To transfer semi-finished products, you're limited to these options:</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>For production and batch orders, semi-finished products can only be transferred logically by using the Picking list journal from the <bpt id="p1">**</bpt>Subcontracted work<ept id="p1">**</ept> list page.</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>This journal will create a delivery note document that can be used to transfer semi-finished and raw material to the vendor.</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>For subcontracted operations in production flows, the transfer of semi-finished products is documented by the receipt of withdrawal or production kanbans at the vendor location.</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>To model an explicit transfer activity, you can end a production kanban with an additional transfer activity.</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> A production route for a single production order can't cross multiple sites.</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>This rule also applies to the subcontracted work.</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>Therefore, the warehouses that represent the vendor-managed material locations must be defined in the same site as the internal resources that are used in the route.</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Although production flows can cross sites, they can't transport semi-finished products from one site to another, because that operation implies a change of cost context.</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>Typically, the output warehouse and location of a subcontracted resource group are directly allocated to the warehouse and location of the next step of the operation in the route or production flow.</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>This setup helps reduce the amount of job reporting that occurs or the number additional transfer operations that must be modeled.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,432 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="pt-br">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">6be91dfc02b728ffdf0f9d3baf1d41d3d2c10fea</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\analytics\general-electronic-reporting-report-configuration-get-data-powerbi.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">basic</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">43d1433c73b408934a8ad6350dbbc8d229d309d1</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">94583e5b852bf3639b261aa8a31380430ec19508</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Configure Electronic reporting to pull data into Power BI</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic explains how you can use your Electronic reporting (ER) configuration to arrange the transfer of data from your instance of Finance and Operations to Power BI services.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>As an example, this topic uses Intrastat transactions as business data that must be transferred.</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>The Power BI map visualization uses this Intrastat transaction data to present a view for analysis of company import/export activities on the Power BI report.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Configure Electronic reporting to pull data into Power BI</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This topic explains how you can use your Electronic reporting (ER) configuration to arrange the transfer of data from your instance of Finance and Operations to Power BI services.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>As an example, this topic uses Intrastat transactions as business data that must be transferred.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>The Power BI map visualization uses this Intrastat transaction data to present a view for analysis of company import/export activities on the Power BI report.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Overview</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Microsoft Power BI is a collection of software services, apps, and connectors that work together to turn external sources of data into coherent, visually immersive, and interactive insights.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Electronic reporting (ER) lets users of Microsoft Dynamics 365 for Finance and Operations easily configure data sources and arrange the transfer of data from Finance and Operations to Power BI.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>The data is transferred as files in the OpenXML worksheet (Microsoft Excel workbook file) format.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The transferred files are stored on a Microsoft SharePoint Server that has been configured for that purpose.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>The stored files are used in Power BI to make reports that include visualizations (tables, charts, maps, and so on).</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Power BI reports are shared with Power BI users, and they are accessed in Power BI dashboards and on Finance and Operations pages.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>This topic explains the following tasks:</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Configure Finance and Operations.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Prepare your ER format configuration to get data from Finance and Operations.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Configure the ER environment to transfer data to Power BI.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Use transferred data to create a Power BI report.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Make the Power BI report accessible in Finance and Operations.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Prerequisites</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>To complete the example in this topic, you must have the following access:</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Access to Finance and Operations for one of the following roles:</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Electronic reporting developer</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Electronic reporting functional consultant</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>System administrator</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Access to the SharePoint Server that is configured for use with Finance and Operations</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Access to the Power BI framework</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Configure document management parameters</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Document management parameters<ept id="p1">**</ept> page, configure access to the SharePoint Server that will be used in the company that you're signed in to (the DEMF company in this example).</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Test the connection to the SharePoint Server to make sure that you've been granted access.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Document management parameters page<ept id="p1">](./media/ger-power-bi-sharepoint-server-setting-1024x369.png)](./media/ger-power-bi-sharepoint-server-setting.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Open the configured SharePoint site.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Create a new folder where ER will store Excel files that have the business data that the Power BI reports require as a source of Power BI datasets.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>In Finance and Operations, on the <bpt id="p1">**</bpt>Document types<ept id="p1">**</ept> page, create a new document type that will be used to access the SharePoint folder that you just created.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Enter <bpt id="p1">**</bpt>File<ept id="p1">**</ept> in the <bpt id="p2">**</bpt>Group<ept id="p2">**</ept> field and <bpt id="p3">**</bpt>SharePoint<ept id="p3">**</ept> in the <bpt id="p4">**</bpt>Location<ept id="p4">**</ept> field, and then enter the address of the SharePoint folder.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Document types page<ept id="p1">](./media/ger-power-bi-sharepoint-document-type-1024x485.png)](./media/ger-power-bi-sharepoint-document-type.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Configure ER parameters</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Electronic reporting<ept id="p1">**</ept> workspace, click the <bpt id="p2">**</bpt>Electronic reporting parameters<ept id="p2">**</ept> link.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Attachments<ept id="p1">**</ept> tab, select the <bpt id="p2">**</bpt>File<ept id="p2">**</ept> document type for all the fields.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Electronic reporting<ept id="p1">**</ept> workspace, make the required provider active by clicking <bpt id="p2">**</bpt>Set active<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>For more information, play the <bpt id="p1">**</bpt>ER Select service provider<ept id="p1">**</ept> task guide.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Use an ER data model as the source of data</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>You must have an ER data model as the source of business data that will be used on Power BI reports.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>This data model is uploaded from the ER configurations repository.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Download Electronic reporting configurations from Lifecycle Services<ept id="p1">](download-electronic-reporting-configuration-lcs.md)</ept>, or play the <bpt id="p2">**</bpt>ER Import a configuration from Lifecycle Services<ept id="p2">**</ept> task guide.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Intrastat<ept id="p1">**</ept> as the data model that will be uploaded from the selected ER configurations repository.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>(In this example, version 1 of the model is used.) You can then access the <bpt id="p1">**</bpt>Intrastat<ept id="p1">**</ept> ER model configuration on the <bpt id="p2">**</bpt>Configurations<ept id="p2">**</ept> page.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Configurations page<ept id="p1">](./media/ger-power-bi-data-model-1024x371.png)](./media/ger-power-bi-data-model.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Design an ER format configuration</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>You must create a new ER format configuration that uses the <bpt id="p1">**</bpt>Intrastat<ept id="p1">**</ept> data model as the source of business data.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>This format configuration must generate output results as electronic documents in OpenXML (Excel file) format.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>For more information, play the <bpt id="p1">**</bpt>ER Create a configuration for reports in OPENXML format<ept id="p1">**</ept> task guide.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Name the new configuration <bpt id="p1">**</bpt>Import / export activities<ept id="p1">**</ept>, as shown in the following illustration.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Use the <bpt id="p1">[</bpt>ER data - import and export details<ept id="p1">](https://go.microsoft.com/fwlink/?linkid=845208)</ept> Excel file as a template when you design the ER format.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>(For information about how to import a format template, play the task guide.) <bpt id="p1">[</bpt><ph id="ph1">![</ph>Import / export activities configuration<ept id="p1">](media/ger-power-bi-format-configuration.png)](media/ger-power-bi-format-configuration.png)</ept> To modify the <bpt id="p2">**</bpt>Import / export activities<ept id="p2">**</ept> format configuration, follow these steps.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Designer<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Format<ept id="p1">**</ept> tab, name the file element for this format <bpt id="p2">**</bpt>Excel output file<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Excel output file element<ept id="p1">](./media/ger-power-bi-format-configuration-file-element-name-1024x395.png)](./media/ger-power-bi-format-configuration-file-element-name.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Mapping<ept id="p1">**</ept> tab, specify the name of the Excel file that will be generated whenever this format is run.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Configure the related expression to return the value <bpt id="p1">**</bpt>Import and export details<ept id="p1">**</ept> (the .xlsx file name extension will be added automatically).</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Format designer<ept id="p1">](./media/ger-power-bi-format-configuration-output-file-name-1024x396.png)](./media/ger-power-bi-format-configuration-output-file-name.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Add a new data source item for this format.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>(This enumeration will be required for further data binding.)</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Name the data source <bpt id="p1">**</bpt>direction<ph id="ph1">\_</ph>enum<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Data model enumeration<ept id="p1">**</ept> as the data source type.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Refer to the <bpt id="p1">**</bpt>Direction<ept id="p1">**</ept> data model enumeration.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>direction<ph id="ph2">\_</ph>enum<ept id="p1">](./media/ger-power-bi-format-configuration-mapping-added-enum-1024x454.png)](./media/ger-power-bi-format-configuration-mapping-added-enum.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Complete the binding of elements of the <bpt id="p1">**</bpt>Intrastat<ept id="p1">**</ept> data model and elements of the designed format, as shown in the following illustration.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Completing the binding<ept id="p1">](./media/ger-power-bi-format-configuration-mapping-details-1024x454.png)](./media/ger-power-bi-format-configuration-mapping-details.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>After it's run, the ER format generates the output result in Excel format.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>It sends the details of the Intrastat transactions to the output result, and separates them as transactions that describe either import activities or export activities.</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Run<ept id="p1">**</ept> to test the new ER format for the list of Intrastat transactions on the <bpt id="p2">**</bpt>Intrastat<ept id="p2">**</ept> page (<bpt id="p3">**</bpt>Tax<ept id="p3">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p4">**</bpt>Declarations<ept id="p4">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p5">**</bpt>Foreign trade<ept id="p5">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p6">**</bpt>Intrastat<ept id="p6">**</ept>).</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Intrastat page<ept id="p1">](./media/ger-power-bi-format-test-run-transactions-1024x322.png)](./media/ger-power-bi-format-test-run-transactions.png)</ept> The following output result is generated.</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>The file is named <bpt id="p1">**</bpt>Import and export details.xlsx<ept id="p1">**</ept>, as you specified in the format settings.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Import and export details.xlsx<ept id="p1">](./media/ger-power-bi-format-test-run-output-1024x472.png)](./media/ger-power-bi-format-test-run-output.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Configure the ER destination</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>You must configure the ER framework to send the output result of the new ER format configuration in a special way.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>The output result must be sent to the folder of the selected SharePoint Server.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Each execution of the format configuration must create a new version of same Excel file.</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Electronic reporting<ept id="p1">**</ept> page (<bpt id="p2">**</bpt>Organization administration<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Electronic reporting<ept id="p3">**</ept>), click the <bpt id="p4">**</bpt>Electronic reporting destination<ept id="p4">**</ept> item, and add a new destination.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Reference<ept id="p1">**</ept> field, select the <bpt id="p2">**</bpt>Import / export activities<ept id="p2">**</ept> format configuration that you created earlier.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>Follow these steps to add a new file destination record for the reference.</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Name<ept id="p1">**</ept> field, enter the title of the file destination.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>File name<ept id="p1">**</ept> field, select the name <bpt id="p2">**</bpt>Excel output file<ept id="p2">**</ept> for the Excel file format component.</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>Click the <bpt id="p1">**</bpt>Settings<ept id="p1">**</ept> button for the new destination record.</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Then, in the <bpt id="p1">**</bpt>Destination settings<ept id="p1">**</ept> dialog box, follow these steps.</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Power BI<ept id="p1">**</ept> tab, set the <bpt id="p2">**</bpt>Enabled<ept id="p2">**</ept> option to <bpt id="p3">**</bpt>Yes<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>SharePoint<ept id="p1">**</ept> field, select the <bpt id="p2">**</bpt>Shared<ept id="p2">**</ept> document type that you created earlier.</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Schedule execution of the configured ER format</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Configurations<ept id="p1">**</ept> page (<bpt id="p2">**</bpt>Organization administration<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Electronic reporting<ept id="p3">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p4">**</bpt>Configurations<ept id="p4">**</ept>), in the configurations tree, select the <bpt id="p5">**</bpt>Import / export activities<ept id="p5">**</ept> configuration that you created earlier.</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>Change the status of version 1.1 from <bpt id="p1">**</bpt>Draft<ept id="p1">**</ept> to <bpt id="p2">**</bpt>Complete<ept id="p2">**</ept> to make this format available for use.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Configurations page<ept id="p1">](./media/ger-power-bi-format-configuration-complete-1024x401.png)](./media/ger-power-bi-format-configuration-complete.png)</ept> Select the completed version of the <bpt id="p2">**</bpt>Import / export activities<ept id="p2">**</ept> configuration, and then click <bpt id="p3">**</bpt>Run<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>Note that the configured destination is applied to the output result that is generated in Excel format.</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>Set the <bpt id="p1">**</bpt>Batch processing<ept id="p1">**</ept> option to <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept> to run this report in unattended mode.</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Recurrence<ept id="p1">**</ept> to schedule the required recurrence of this batch execution.</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>The recurrence defines how often the updated data will be transferred from Finance and Operations to Power BI.</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Electronic report parameters dialog box<ept id="p1">](./media/ger-power-bi-format-configuration-run-to-schedule-1024x413.png)](./media/ger-power-bi-format-configuration-run-to-schedule.png)</ept> After it's configured, you can find the ER report execution job on the <bpt id="p2">**</bpt>Batch jobs<ept id="p2">**</ept> page (<bpt id="p3">**</bpt>System administration <ph id="ph2">&amp;gt;</ph> Inquiries <ph id="ph3">&amp;gt;</ph> Batch jobs<ept id="p3">**</ept>).</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Batch jobs page<ept id="p1">](./media/ger-power-bi-format-configuration-running-job-1024x410.png)](./media/ger-power-bi-format-configuration-running-job.png)</ept> When this job is run for the first time, the destination creates a new Excel file that has the configured name in the selected SharePoint folder.</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>Every subsequent time that the job is run, the destination creates a new version of this Excel file.</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>New version of the Excel file<ept id="p1">](./media/ger-power-bi-output-file-in-sharepoint-server-folder-2-1024x412.png)](./media/ger-power-bi-output-file-in-sharepoint-server-folder-2.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>Create a Power BI dataset by using the output result of the ER format</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>Sign in to Power BI, and either open an existing Power BI group (workspace) or create a new group.</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>Either click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept> under <bpt id="p2">**</bpt>Files<ept id="p2">**</ept> in the <bpt id="p3">**</bpt>Import or Connect to Data<ept id="p3">**</ept> section, or click the plus sign (<bpt id="p4">**</bpt><ph id="ph1">+</ph><ept id="p4">**</ept>) next to <bpt id="p5">**</bpt>Datasets<ept id="p5">**</ept> in the left pane.</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Creating a dataset<ept id="p1">](./media/ger-power-bi-add-dataset-1024x524.png)](./media/ger-power-bi-add-dataset.png)</ept> Select the <bpt id="p2">**</bpt>SharePoint – Team sites<ept id="p2">**</ept> option, and then enter the path of SharePoint Server that you're using (<bpt id="p3">**</bpt>https://ax7partner.litware.com<ept id="p3">**</ept> in our example).</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Then browse to the <bpt id="p1">**</bpt>/Shared Documents/GER data/PowerBI<ept id="p1">**</ept> folder, and select the Excel file that you created as the source of data for the new Power BI dataset.</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Selecting the Excel file<ept id="p1">](./media/ger-power-bi-add-dataset-select-excel-file-1024x522.png)](./media/ger-power-bi-add-dataset-select-excel-file.png)</ept> Click <bpt id="p2">**</bpt>Connect<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>Import<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>A new dataset is created that is based on the selected Excel file.</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>The dataset can also be added automatically to the newly created dashboard.</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Dataset on the dashboard<ept id="p1">](./media/ger-power-bi-added-dataset-1024x489.png)](./media/ger-power-bi-added-dataset.png)</ept> Configure the refresh schedule for this dataset to force a periodic update.</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>Periodic updates enable the consumption of new business data that comes from Finance and Operations via periodic execution of the ER report through new versions of the Excel file that are created on the SharePoint Server.</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Create a Power BI report by using the new dataset</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>To create a new Power BI report, click the <bpt id="p1">**</bpt>Import and export details<ept id="p1">**</ept> Power BI dataset that you created.</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>Then configure the visualization.</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>For example, select the <bpt id="p1">**</bpt>Filled map<ept id="p1">**</ept> visualization, and configure it as follows:</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>Assign the <bpt id="p1">**</bpt>CountryOrigin<ept id="p1">**</ept> dataset field to the <bpt id="p2">**</bpt>Location<ept id="p2">**</ept> field of the map visualization.</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>Assign the <bpt id="p1">**</bpt>Amount<ept id="p1">**</ept> dataset field to the <bpt id="p2">**</bpt>Color saturation<ept id="p2">**</ept> field of the map visualization.</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>Add the <bpt id="p1">**</bpt>Activity<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Year<ept id="p2">**</ept> dataset fields to the <bpt id="p3">**</bpt>Filters<ept id="p3">**</ept> fields collection of the map visualization.</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>Save the Power BI report as <bpt id="p1">**</bpt>Import and export details report<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Import and export details report<ept id="p1">](./media/ger-power-bi-added-report-1024x498.png)](./media/ger-power-bi-added-report.png)</ept> Note that the map shows the countries/regions that are mentioned in the Excel file (Austria and Switzerland in this example).</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>These countries/regions are colored to show the proportion of invoiced amounts for each.</source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>Update the list of Intrastat transactions.</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>The export transaction that originated from Italy is added.</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Intrastat transactions list<ept id="p1">](./media/ger-power-bi-new-run-new-transaction-1024x321.png)](./media/ger-power-bi-new-run-new-transaction.png)</ept> Wait for the next scheduled execution of the ER report and the next scheduled update of the Power BI dataset.</source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>Then review the Power BI report (select to show import transactions only).</source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>The updated map now shows Italy.</source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Updated map<ept id="p1">](./media/ger-power-bi-new-run-new-map-1024x511.png)](./media/ger-power-bi-new-run-new-map.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>Access Power BI report in Finance and Operations</source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>Set up the integration between Finance and Operations and Power BI.</source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Configuring Power BI integration for workspaces<ept id="p1">](configure-power-bi-integration.md)</ept>.</source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Electronic reporting<ept id="p1">**</ept> workspace page that supports Power BI integration (<bpt id="p2">**</bpt>Organization administration<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Workspaces<ept id="p3">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p4">**</bpt>Electronic reporting workspace<ept id="p4">**</ept>), click <bpt id="p5">**</bpt>Options<ept id="p5">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p6">**</bpt>Open report catalog<ept id="p6">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>Select the <bpt id="p1">**</bpt>Import and export details<ept id="p1">**</ept> Power BI report that you created, to show that report as an action item on the selected page.</source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>Click the action item to open the Finance and Operations page that shows the report that you designed in Power BI.</source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Import and export details report<ept id="p1">](./media/ger-power-bi-review-bi-report-in-ax-form-1024x586.png)](./media/ger-power-bi-review-bi-report-in-ax-form.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>See also</source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Electronic reporting destinations<ept id="p1">](electronic-reporting-destinations.md)</ept></source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Electronic reporting overview<ept id="p1">](general-electronic-reporting.md)</ept></source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
