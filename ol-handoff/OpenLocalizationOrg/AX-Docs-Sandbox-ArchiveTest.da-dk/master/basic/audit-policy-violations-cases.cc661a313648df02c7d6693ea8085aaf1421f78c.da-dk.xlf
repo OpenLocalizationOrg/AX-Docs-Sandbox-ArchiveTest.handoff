@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="da-dk">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">bdb28f0f343aafdf20670a402b229cd9db4cbfd5</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">financials\general-ledger\audit-policy-violations-cases.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">basic</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">509551bd5d34de665300085ab8cbd7bb9fddcf56</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">918c9b987df8edb82ca0f754223d7f6e5fde024f</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Audit policy violations and cases</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>The article explains how audit cases are generated from violations of audit policy rules.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>It also includes information about the various ways that audit policies use the document selection date range.</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Audit policy violations and cases</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>The article explains how audit cases are generated from violations of audit policy rules.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>It also includes information about the various ways that audit policies use the document selection date range.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>How audit cases are generated</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Audit policies are used to identify expense reports, purchase orders, and vendor invoices that don't comply with business rules that you define and configure as audit policy rules.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Audit policies are run in batch mode.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>When you run an audit policy, all the policy rules that are part of that policy are run at the same time.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Each policy rule evaluates a set of documents.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>The policy rule selects documents that are in the document selection date range and that match the specified criteria.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>For example, one policy rule might select expense reports that have meals that exceed 50.00.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Another policy rule might select vendor invoices that are payable to a specific vendor.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>For each document that is selected in the set, a violation is generated.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>That violation is a record that a particular document, such as invoice 12345, doesn't comply with the policy rule.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Multiple audit violation records are grouped together and associated with audit cases.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>By default, cases for each audit policy are grouped by audit policy rule.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>If you prefer, you can select other grouping criteria by using the <bpt id="p1">**</bpt>Case grouping criteria<ept id="p1">**</ept> page.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>For example, you can group expense headers by project ID and vendor invoices by vendor account.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>In this case, all expense header violations that have the same project ID will be grouped in the same case, and all vendor invoices that have the same vendor account will be grouped in the same case.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>For audit policy rules that are based on a <bpt id="p1">**</bpt>Duplicate<ept id="p1">**</ept> query type, violations aren't grouped by policy rule or by the criteria that are specified on the <bpt id="p2">**</bpt>Case grouping criteria<ept id="p2">**</ept> page.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Instead, they are grouped by the criteria that are built into the audit policy rule.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>For example, if a policy rule evaluates expense reports for duplicate expenses of the same amount, merchant ID, and date, all expenses that have the same values in those fields will be one case.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Any expenses that have different values will be a separate case.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>After the audit cases have been generated, they are handled by using the typical processes for case management.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Document selection date ranges</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>When an audit policy is run, each policy rule selects documents of the specified type that have a date that is in the document selection date range.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>The document selection date range is specified on the <bpt id="p1">**</bpt>Additional options<ept id="p1">**</ept> page.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Many documents have more than one date associated with them.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>The date field that the audit policy rule uses is specified on the <bpt id="p1">**</bpt>Policy rule type<ept id="p1">**</ept> page.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Here are some other ways that an audit policy uses the document selection date range:</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>The policy uses the version of each policy rule that is effective on the last day of the document selection date range.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>You can view the effective dates for each policy rule on the <bpt id="p1">**</bpt>Audit policies<ept id="p1">**</ept> list page.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>The policy uses the organization nodes that are associated with the policy on the last day of the document selection date range.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Only the organization nodes that are currently associated with the policy appear on the <bpt id="p1">**</bpt>Audit policies<ept id="p1">**</ept> list page.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>For policy rules that are based on a <bpt id="p1">**</bpt>List search<ept id="p1">**</ept> query type, the policy evaluates documents for monitored entities that are effective on the last day of the document selection date range.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Audit policy rules<ept id="p1">](audit-policy-rules.md)</ept></source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

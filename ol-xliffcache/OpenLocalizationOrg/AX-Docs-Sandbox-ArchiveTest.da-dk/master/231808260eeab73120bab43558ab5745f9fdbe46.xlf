@@ -1,0 +1,378 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="da-dk">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">231808260eeab73120bab43558ab5745f9fdbe46</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scm\production-control\cross-docking-opportunities.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">basic</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">e972661ece1072fd004d28b4a9996d18bfe669f5</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">fbb85080b09d6fb1f3a54ab16eae3d4a5d685b7f</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Cross-docking from production orders to outbound docks</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic describes how to manage the process of cross-docking material that is being reported as finished from a production line to an outbound transportation dock.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Cross-docking from production orders to outbound docks</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This topic describes how to manage the process of cross-docking material that is being reported as finished from a production line to an outbound transportation dock.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Introduction</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Cross-docking from production to an outbound location is relevant for manufacturers who produce high volume and ideally want to ship the finished products as soon as they are reported as finished from the production lines.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>The purpose is to ship the products to distribution centers that are physically located close to the customer demand, rather than build up inventory at the manufacturing site.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>In case there is no immediate demand for a product, it must be put away to warehouse locations on the manufacturing site.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>This process is also known as <bpt id="p1">*</bpt>opportunistic cross-docking<ept id="p1">*</ept>, which indicates that if there is a demand for shipping the product, then this opportunity should be used instead of putting the product away for internal storage.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>The following example shows three variations of a flow that starts at the end of the production line (2).</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>A product is reported as finished to the production output location (3) and a fork lift driver will pick up the pallet at this location (3).</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>If there is a planned activity (6) for transferring the product from manufacturing (1) to a distribution center (7), then the truck driver will be directed by the system to put the pallet by a bay-door location (4).</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>If a trailer is already assigned to the bay door, the truck driver will be directed to load the product directly to the trailer.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>If there is no planned activity for transferring the product, the fork lift driver will be directed to put the product away to a location in the internal warehouse (5).</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Configure cross-docking</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>You configure the cross-docking process in <bpt id="p1">**</bpt>work policies<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>A work policy includes a work order type, location, and product.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>In the following example, cross-docking is configured for product X and location Y.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Work order types</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Work order type: Finished goods put way</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Work creation method: Cross docking</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Cross docking policy name: Transfer orders</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Inventory locations</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Warehouse: 51</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Location: Y</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Products</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Item number: X</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Currently, cross-docking can be configured for only two work order types:</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Finished goods put away</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Co-product and by-product put away</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>cross-docking policy<ept id="p1">**</ept>, you define which document types are applicable for cross-docking.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Currently, the only document type that is supported is <bpt id="p1">**</bpt>Transfer orders<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>The following example shows the configuration of a cross-docking policy.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Cross-docking policy name: Transfer order</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Sequence number: 10</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Work order type: Transfer issue</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Cross docking demand requires location: False</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Cross docking strategy: Date and time</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Sequence number</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>sequence number<ept id="p1">**</ept> indicates the priority of the document type.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Currently, <bpt id="p1">**</bpt>Transfer issue<ept id="p1">**</ept> is the only type that is supported.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Therefore, the sequence number will become relevant only when more work order types are supported.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Cross-docking policy</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>The cross-docking policy also sets the policy for the prioritization of transfer order demand.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>For example, if multiple transfer orders exist for the same product, the scheduled date and time that are set on the load, and associated with the transfer order, determine the prioritization between the orders.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>The scheduled date and time can be set directly on the load, or they can be set on an <bpt id="p1">**</bpt>appointment schedule<ept id="p1">**</ept> that is associated with the load.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>The prioritization is determined by the cross-docking strategy.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Currently, there is only one strategy: <bpt id="p1">**</bpt>Date and time<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Cross-docking demand requires location</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>In the cross-docking policy, you can set up a criterion to require that transfer orders have an assigned location in order to be eligible for cross-docking.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>This criterion is set in the <bpt id="p1">**</bpt>Cross docking demand requires location<ept id="p1">**</ept> field.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>The location on the appointment schedule that is associated with the load is used as the final location for the goods that are being cross-docked.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>The final location for the goods that are being cross-docked is determined by the location directive for <bpt id="p1">**</bpt>Transfer issue<ept id="p1">**</ept> for the <bpt id="p2">**</bpt>Put<ept id="p2">**</ept> work order type.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>You might find it useful to set the <bpt id="p1">**</bpt>Cross docking demand requires location<ept id="p1">**</ept> field in a scenario where the finished goods should be cross-docked only if a trailer is assigned to a bay door.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>In this scenario, the goods are moved directly from the production line into the trailer.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>When a trailer is assigned to the bay door, a user will assign the location to the appointment schedule and will therefore make the location applicable for cross-docking.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>The following sections walk you through two examples.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Scenario 1 – Cross-docking from production to transfer orders</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>After a product is reported as finished at the production line it is transferred to a bay-door location where it is loaded to a truck and transferred to a distribution center.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Use company USMF.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Enable a new number sequence for cross-docking.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Go to the <bpt id="p1">**</bpt>Number sequences<ept id="p1">**</ept> page, and select the <bpt id="p2">**</bpt>Generate<ept id="p2">**</ept> button.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>A wizard will guide you through the process.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Create a cross-docking policy.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Go to the <bpt id="p1">**</bpt>Cross docking policy<ept id="p1">**</ept> page, and create a new policy that is named <bpt id="p2">**</bpt>Cross docking to transfer order<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Note that the only work order type that you can select is <bpt id="p1">**</bpt>Transfer issue<ept id="p1">**</ept>, and the only cross-docking strategy that is available is <bpt id="p2">**</bpt>Date and time<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Create a work policy.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Go to the <bpt id="p1">**</bpt>Work policies<ept id="p1">**</ept> page, and create a new work policy that is named <bpt id="p2">**</bpt>Cross Dock L0101<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Set up loads so that they are created automatically for transfer orders.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>In the warehouse parameters, set up loads so that they are created automatically when transfer orders are created.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>A load is a prerequisite for making the transfer order eligible for cross-docking.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Set up the item load mapping.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Go to the <bpt id="p1">**</bpt>Item load mapping<ept id="p1">**</ept> page, and set up a standard load template for the <bpt id="p2">**</bpt>CarAudio<ept id="p2">**</ept> item group.</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>This mapping will automatically insert the load template on the load when the transfer order is created.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Create a transfer order.</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Create the transfer order for item number L0101.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Quantity = 20.</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Release the transfer order from the load planning workbench.</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Ship<ept id="p1">**</ept> tab, select the menu item for the load planning workbench and on the <bpt id="p2">**</bpt>Release<ept id="p2">**</ept> menu of the load line, select <bpt id="p3">**</bpt>Release to warehouse<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>An open wave line of type <bpt id="p1">**</bpt>Transfer issue<ept id="p1">**</ept> now exists for the transfer order.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Create a production order.</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Go to the <bpt id="p1">**</bpt>Production order<ept id="p1">**</ept> list page, and create a production order for product L0101.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Quantity = 20.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>Estimate and start the production order.</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Note that the <bpt id="p1">**</bpt>Post picking list now<ept id="p1">**</ept> field remains set to <bpt id="p2">**</bpt>No<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Report as finished from the mobile device.</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>Go to the mobile device portal and select menu item <bpt id="p1">**</bpt>Report as finished and put away<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Now report as finished L0101 from the handheld device.</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Note that the put location is <bpt id="p1">**</bpt>BAYDOOR<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>This location is found from the <bpt id="p1">**</bpt>Transfer issue<ept id="p1">**</ept> location directive for the <bpt id="p2">**</bpt>Put<ept id="p2">**</ept> work order type.</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Also notice that work of the type <bpt id="p1">**</bpt>Transfer issue<ept id="p1">**</ept> has been created and completed.</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Go to the transfer order work details to verify the work.</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>Now try to start 20 pieces more on the production order and then try to report 20 ea as finished by using the handheld device.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>This time, location <bpt id="p1">**</bpt>LP-001<ept id="p1">**</ept> is suggested as the put location.</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>This location is found from the location directive for <bpt id="p1">**</bpt>Finished goods put away<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>This location directive is being used, because no opportunity for cross-docking exists.</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>The transfer order for LP-001 was completely fulfilled by the first cross-docking activity.</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>Work of the type <bpt id="p1">**</bpt>Finished goods put away<ept id="p1">**</ept> was created and processed.</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Scenario 2 - Cross-docking from production to transfer orders with an appointment schedule</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>After a product is reported as finished at the production line it is transferred to a bay-door location that is identified by an appointment schedule for the bay-door locations.</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>Use company USMF.</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Change the cross-docking policy.</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>Change the cross-docking policy that you created in scenario 1 by selecting the <bpt id="p1">**</bpt>Cross docking demand requires location<ept id="p1">**</ept> check box.</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>Create a new transfer order.</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>Open the <bpt id="p1">**</bpt>Load planning workbench<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>From the load planning workbench, go to the <bpt id="p1">**</bpt>Loads<ept id="p1">**</ept> section, and select <bpt id="p2">**</bpt>Appointment schedule<ept id="p2">**</ept> on the <bpt id="p3">**</bpt>Transportation<ept id="p3">**</ept> menu to create a new appointment schedule.</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Note that the appointment schedule has a reference to the transfer order in the <bpt id="p1">**</bpt>Order number<ept id="p1">**</ept> field.</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Planned start date/time at location<ept id="p1">**</ept> field, you can set the date and time for the appointment.</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>This date and time will be used when cross-docking demand is prioritized during the cross-docking process.</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>The date and time that you set in this field will update the <bpt id="p1">**</bpt>Scheduled load shipping date and time<ept id="p1">**</ept> field on the corresponding load.</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>The location on the <bpt id="p1">**</bpt>Shipping details<ept id="p1">**</ept> FastTab determines the location that the transfer order is shipped on.</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Load planning workbench<ept id="p1">**</ept> release to the warehouse.</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Create a production order for item number <bpt id="p1">**</bpt>L0101<ept id="p1">**</ept>, and set the status to <bpt id="p2">**</bpt>Started<ept id="p2">**</ept>, with a quantity of 20.</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>Report as finished from the mobile device.</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>Go to the mobile device portal, and select the <bpt id="p1">**</bpt>Report as finished and put away<ept id="p1">**</ept> menu item.</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>Report item number <bpt id="p1">**</bpt>L0101<ept id="p1">**</ept> as finished from the handheld device.</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>Note that the put location is now <bpt id="p1">**</bpt>BAYDOOR 2<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>This location is found from the appointment schedule instead of the <bpt id="p1">**</bpt>Transfer receipt<ept id="p1">**</ept> location directive.</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>Additional information</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>The cross docking scenario is supported for batch and serial controlled items, both with the batch and serial number dimensions defined above and below location in the reservation hierarchy.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

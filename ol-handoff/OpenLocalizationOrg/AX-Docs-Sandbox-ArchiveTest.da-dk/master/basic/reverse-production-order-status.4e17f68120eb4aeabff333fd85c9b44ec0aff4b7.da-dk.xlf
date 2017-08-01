@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="da-dk">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">027456b183d4fc220566fca8691611cc2def3c26</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scm\production-control\reverse-production-order-status.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">basic</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">d8f106d77f6dbed696ddab2ff8761fea5752db08</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">37cab90df30c98aaedbb8d09d40420b7d452f2d1</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Reverse the production order status</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic describes how to reverse production order status.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Reverse the production order status</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This topic describes how to reverse production order status.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>If you reverse the status of a production order, the order and all operations that are associated with the routes revert to a previous step in the production life cycle.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>For example, a production order has a status of <bpt id="p1">**</bpt>Scheduled<ept id="p1">**</ept>, and you change the status back to <bpt id="p2">**</bpt>Created<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>In this case, the system must first change the status to <bpt id="p1">**</bpt>Estimated<ept id="p1">**</ept>, which is the status that immediately precedes <bpt id="p2">**</bpt>Scheduled<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>It can then change the status to the status that you want, <bpt id="p1">**</bpt>Created<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> If your order has reached the <bpt id="p2">**</bpt>Report as finished<ept id="p2">**</ept> status, you can still reverse it to an earlier status.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>However, you must re-run estimation and operations scheduling, job scheduling, or both types of scheduling, to update the information on the order.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>This step is required, because any reservations of remaining item consumption and operations resource consumption must also be reset.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>The rest of this article explains what occurs when you reverse the status of a production order in the following ways:</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>From <bpt id="p1">**</bpt>Estimated<ept id="p1">**</ept> to <bpt id="p2">**</bpt>Created<ept id="p2">**</ept></source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>From <bpt id="p1">**</bpt>Scheduled<ept id="p1">**</ept> to <bpt id="p2">**</bpt>Estimated<ept id="p2">**</ept></source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>From <bpt id="p1">**</bpt>Released<ept id="p1">**</ept> to <bpt id="p2">**</bpt>Scheduled<ept id="p2">**</ept></source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>From <bpt id="p1">**</bpt>Started<ept id="p1">**</ept> to <bpt id="p2">**</bpt>Released<ept id="p2">**</ept></source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>From Estimated to Created</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>When you reverse the status of a production order from <bpt id="p1">**</bpt>Estimated<ept id="p1">**</ept> to <bpt id="p2">**</bpt>Created<ept id="p2">**</ept>, the item consumption that was calculated for the items in the bill of materials (BOM) is removed.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Inventory transactions on the production line are deleted, and the <bpt id="p1">**</bpt>Remain status<ept id="p1">**</ept> field on the production order's BOM lines is reset to <bpt id="p2">**</bpt>Ended<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>When the <bpt id="p1">**</bpt>Derived purchases<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Derived production<ept id="p2">**</ept> options are selected, any underlying purchase orders or production orders are deleted.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>If you estimated the costs of the production order, or if you manually reserved items so that they could be used in production, those transactions are removed.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>From Scheduled to Estimated</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>When you reverse the status of a production order from <bpt id="p1">**</bpt>Scheduled<ept id="p1">**</ept> to <bpt id="p2">**</bpt>Estimated<ept id="p2">**</ept>, the scheduled start and end dates and times are removed.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Capacity reservations that were made during scheduling are removed, and jobs that were created during job scheduling are deleted.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>All information that is recorded about operation scheduling and job scheduling on the <bpt id="p1">**</bpt>Production order details<ept id="p1">**</ept> page is reset.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>From Released to Scheduled</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>When you reverse the status of a production order from <bpt id="p1">**</bpt>Released<ept id="p1">**</ept> to <bpt id="p2">**</bpt>Scheduled<ept id="p2">**</ept>, the only change that occurs is the value in the status field.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>From Started to Released</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>When you reverse the status of a production order from <bpt id="p1">**</bpt>Started<ept id="p1">**</ept> to <bpt id="p2">**</bpt>Released<ept id="p2">**</ept>, all items that were reported as finished are reverted.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>If material has been picked, or if inbound and outbound deliveries have been made to production, those settings are reversed.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Remain status<ept id="p1">**</ept> field on the production order’s BOM lines is changed from <bpt id="p2">**</bpt>Ended<ept id="p2">**</ept> to <bpt id="p3">**</bpt>Material consumption<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>If time has been registered, or if quantities have been reported as finished for the operations in the production route, those settings are reversed.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Remain status<ept id="p1">**</ept> field is changed from <bpt id="p2">**</bpt>Ended<ept id="p2">**</ept> to <bpt id="p3">**</bpt>Route consumption<ept id="p3">**</ept> in the production route.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>The settings for all items that are posted as in process or work in process are reversed.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Production order details<ept id="p1">**</ept> page, fields that show a quantity that was started or reported as finished are reset.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>The dates for those transactions are also reset.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

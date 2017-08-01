@@ -1,0 +1,624 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="da-dk">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">d97fb1039be8b3681d5b0e47e6e9dff555d754c0</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\migration-upgrade\upgrade-budget-planning.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">basic</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">328efc42a621b8c628eb0004ff53c3536fb8e001</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">841cde87b98929a4b90c44a944e8cd809fffb15f</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Upgrade budget planning</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>There are significant differences in budget planning between Microsoft Dynamics AX 2012 and Microsoft Dynamics 365 for Finance and Operations.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Some features were not upgraded and therefore require reconfiguration.</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic explains what must be reconfigured and also describes new features that should be considered after the upgrade is completed.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Upgrade budget planning</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>There are significant differences in budget planning between Microsoft Dynamics AX 2012 and Microsoft Dynamics 365 for Finance and Operations.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Some features were not upgraded and therefore require reconfiguration.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>This topic explains what must be reconfigured and also describes new features that should be considered after the upgrade is completed.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Budget planning in Microsoft Dynamics 365 for Finance and Operations has many enhancements that weren't available in Microsoft Dynamics AX 2012.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>This topic explains the changes that customers who upgrade must make.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>It also points out the new features that should be considered in the upgrade process.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Because of the extent of the changes, any existing budget plans will not be able to be opened until the changes that are outlined in this topic are made.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>However, reports should continue to work and not require additional changes.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Overview of changes</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Many significant changes have been made in Budgeting for Finance and Operations.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>These changes are intended to make Budget planning easier to configure and more reusable, to reduce year-over-year maintenance and setup.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The following areas in AX 2012 no longer exist in Finance and Operations:</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Budget plan templates (Budget planning configuration)</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Budget plan folders (Budget planning configuration)</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Scenario constraints (Budget planning configuration)</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Templates for Budget planning stage rules and templates (Budget planning process)</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Matrix fields for worksheet templates</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Budget plan Microsoft Excel template wizard</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Some new concepts can't be directly upgraded from the previous functionality.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Therefore, you must complete some reconfiguration to address these new concepts.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>The following sections describe the concepts that have replaced the items in the preceding list.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Columns</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Columns are a new concept that replace parts of the Excel template and also matrix fields.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Columns can represent a period, month, quarter, year, or all time.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>The time reference is dynamic.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>It points to a relative period or year in reference to the budget process.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>For example, a <bpt id="p1">**</bpt>Prior Year January<ept id="p1">**</ept> column references fiscal period 1 for year -1.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>A column is specific to a budget plan scenario, such as actuals or budget request.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Layouts</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Layouts are a new concept that replace the Excel template.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Layouts contain the columns that define which budget or actuals data and periods should be shown.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Layouts are also shared between the client and the Excel add-in.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Therefore, the user experience when you enter or view data in the Finance and Operations client is better than the user experience in AX 2012.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>To enter data in the Finance and Operations client, you're no longer limited to viewing and entering a single scenario in a transaction view.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Instead, a comparison view lets you easily view and enter amounts for multiple periods and accounts at the same time.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Layouts can also be defined so that you can enter and view currency, comments, and other optional data.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Layouts also let you define which ledger dimensions and dimension descriptions should be shown.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Layouts also incorporate scenario constraints to define which columns in a template can be edited and which columns should be available in Excel.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>After you define a layout, a template is generated for it.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>This template, in turn, creates the corresponding Excel template.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>You can then edit the Excel template to incorporate more formulas and formatting, and then upload it again.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Layouts are then assigned to each stage rule on the <bpt id="p1">**</bpt>Budget planning process<ept id="p1">**</ept> page.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Therefore, the layouts replace templates, which were assigned and used in a similar manner.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Budget planning processes</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Budget planning processes are mostly the same as in AX 2012.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>The most significant change is the replacement of templates with layouts.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>If any processes were previously completed in AX 2012, the processes are updated to a status of in-progress so that changes can be made.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>You must assign layouts will need for each stage rule to determine which scenarios and time periods appear when the plan is opened in the client.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>The layouts also determine which Excel template is opened outside Dynamic 365 for Finance and Operations so that you can view the budget.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Default account structure<ept id="p1">**</ept> is a new required field for the Budget planning process.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>For each Budget planning process, assign the primary account structure that should be used for budgeting.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Attachments</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>In AX 2012, justification documents were saved to an attachment folder.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>No previous justification documents are upgraded.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Justification documents are now stored in the database.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>If this information should be saved in the upgraded version, you can upload final justification documents for each plan as an attachment by using the <bpt id="p1">**</bpt>Justification<ept id="p1">**</ept> button on the Action Pane.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>In AX 2012, Excel worksheets for each budget plan were created based on the template.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>In Finance and Operations, all plans open a copy of the layout.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>However, no changes to the Excel file are saved.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Any formulas or supporting information that were used on a per-plan basis must be added via comments, a justification document, or some other supplemental process.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Configuring an upgraded environment from AX 2012</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>To help you determine how to configure the upgraded system, the following example uses an upgraded budget process from AX 2012 demo data.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Default configuration data for columns were created to help with the upgrade process.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>You can update or delete this default data if doesn't meet your configuration requirements.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> There are new required fields that won't be set in the system.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>If you get stuck on a page, such as the <bpt id="p1">**</bpt>Budget planning configuration<ept id="p1">**</ept> page, and can't navigate away, you can close your browser and then reopen it to a different page to enter details in the correct order.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>There are required fields that aren't yet set.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Therefore, issues might occur until everything is configured and all required fields have been set.</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>This topic explains how to set these fields, as required.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Here are some of these required fields:</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Budget planning process<ept id="p1">**</ept> page: <bpt id="p2">**</bpt>Default account structure<ept id="p2">**</ept> field</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Budget planning process<ept id="p1">**</ept> page: <bpt id="p2">**</bpt>Layout<ept id="p2">**</ept> field on the <bpt id="p3">**</bpt>Budget planning stage rules and layouts<ept id="p3">**</ept> FastTab</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Define columns and layouts</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Budget planning configuration<ept id="p1">**</ept> page, click the <bpt id="p2">**</bpt>Columns<ept id="p2">**</ept> tab.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>As part of the upgrade, new columns are automatically created based on your budget plan lines.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Columns now use dynamic dates, where the time and year are offset from the fiscal year that is defined in the Budget planning process.</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> For performance reasons during upgrade, it's assumed that all budget cycles represent calendar years, not fiscal years.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>If you use fiscal years, you must make edits to correctly map the columns to their fiscal year.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>For example, the following elements existed in AX 2012:</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Budget plan scenarios: Actuals, Baseline, Budget Request, Budget Approved</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Budget plan lines for all scenarios in 2017, and Actuals for both 2017 and 2016</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>The following columns will be created in Finance and Operations:</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Column name</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Budget plan scenario</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Column time period</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Year offset</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Jan Scenario 1</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>Actuals</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>1</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>0</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>Jan Scenario 2</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Baseline</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>1</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>0</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>Jan Scenario 3</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>Budget Request</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>1</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>0</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>Jan Scenario 4</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>Budget Approved</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>1</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>0</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>Jan Scenario 5</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>Actuals</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>1</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>-1</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>Feb Scenario 1</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Actuals</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>1</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>0</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>...</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>...</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>...</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>...</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>In this example, a column that is named <bpt id="p1">**</bpt>Jan Scenario 1<ept id="p1">**</ept> is created for the most recent budget plan transaction data that is found where transactions exist in January.</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>A similar column is created for each scenario that has data.</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>After columns exist for all periods in that year, columns are created for previous years.</source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>Change the column names and descriptions, and any other details, either manually in the client or by doing bulk updates through the Excel add-in that points to the budget plan columns data entity.</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>Any filters that were previously set for matrix fields are now set within the columns.</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>Create a new budget plan layout.</source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>A layout points to several columns to define the view that appears in Excel and the client.</source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>The layout first requires that you specify a ledger dimension set to determine which financial dimensions can be entered.</source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>After you specify the dimension set, click <bpt id="p1">**</bpt>Descriptions<ept id="p1">**</ept> to select dimension descriptions to include in the layout.</source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Layout elements<ept id="p1">**</ept> FastTab, click <bpt id="p2">**</bpt>Add<ept id="p2">**</ept> to add metadata for each row, such as a currency, a comment, or a budget class that determines revenue versus expense rows.</source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>Next, add columns for the time period, and scenarios that apply to this budget cycle and stage.</source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>You can make these changes manually in the client or through the Excel add-in that points to the budget plan layout elements data entity.</source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>For each layout element, select whether the column should be editable, and whether the column should also appear in the Excel workbook for this layout.</source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> For our historical plans, you might want to consider a layout that shows 12 monthly columns for any budget plan scenarios for that process.</source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>Update budget planning processes to use the appropriate layout for each budget stage</source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Budget planning process<ept id="p1">**</ept> page, select the process to configure.</source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>On the Action Pane, click <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>Specify the default account structure for this budget process.</source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Default account structure<ept id="p1">**</ept> is a new required field that must be set.</source>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Budget planning stage rules and layouts<ept id="p1">**</ept> FastTab, in the <bpt id="p2">**</bpt>Layout<ept id="p2">**</ept> field, select a layout that was previously configured, and that is appropriate for this stage.</source>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>Continue to select the same or different layouts for the various budget planning stages, and then save your changes.</source>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>Additional features to consider in your budgeting process</source>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>Budget planning workspace</source>
+        </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>This workspace is designed for both the budget owner and individual budget contributors.</source>
+        </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>It has links to any budget documents that require your attention.</source>
+        </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>It also has reports and key performance indicators (KPIs) for the budget process.</source>
+        </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>The budget administrator can define the current Budget planning process for all users on the <bpt id="p1">**</bpt>Budgeting parameters<ept id="p1">**</ept> page.</source>
+        </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Workspace settings<ept id="p1">**</ept> tab, the <bpt id="p2">**</bpt>Budget planning<ept id="p2">**</ept> FastTab includes a field where you can select the budget planning process.</source>
+        </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>Alternate layouts</source>
+        </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>Alternate layouts are a new feature that lets you view plans in different layouts.</source>
+        </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>One or more layouts can be provided as options.</source>
+        </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>You can then view a budget plan in a monthly layout or a quarterly layout.</source>
+        </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>You define alternate layouts on the <bpt id="p1">**</bpt>Budget the planning stage rules and layouts<ept id="p1">**</ept> FastTab on the <bpt id="p2">**</bpt>Budget planning process<ept id="p2">**</ept> page.</source>
+        </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>Budget milestones</source>
+        </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>As part of the budget process, it's vital that you understand key dates and deadlines.</source>
+        </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>You can now configure dates so that they have descriptions.</source>
+        </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>Budgeting users will see these descriptions when they open budgets to edit or view anything that is assigned to them.</source>
+        </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>Copy from Budget Plan allocation</source>
+        </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>A new allocation method lets you distribute from a parent plan to a child plan without having to go through an intermediate level in the hierarchy.</source>
+        </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>This method is especially useful for customers who previously created financial dimension just for budget distribution and approvals.</source>
+        </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>Generating budget plans from new budget sources</source>
+        </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>The following options were added as periodic processes.</source>
+        </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>These options let you generate a budget plan by using existing data from another module as the starting point:</source>
+        </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>Generate Budget Plan from Demand Forecast</source>
+        </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>Generate Budget Plan from Supply Forecast</source>
+        </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>Generate Budget Plan from Project</source>
+        </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>Generate Budget Plan from Budget Register</source>
+        </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>More complete tracking of amounts</source>
+        </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>In AX 2012, Budget planning had a single plan amount that was stored for each value.</source>
+        </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>In Finance and Operations, the data model has been expanded.</source>
+        </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>There are now accounting currency, transaction currency, and reporting currency amounts for each value.</source>
+        </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>During the upgrade, these new columns are automatically filled in for existing data.</source>
+        </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>Do not convert currency in aggregation</source>
+        </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>Typically, when a child plan is aggregated to a parent level, the amounts are automatically converted from the transaction currency to the accounting currency for the organization.</source>
+        </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>When you set the <bpt id="p1">**</bpt>Do not convert currency in aggregation<ept id="p1">**</ept> option to <bpt id="p2">**</bpt>No<ept id="p2">**</ept> the aggregated amounts remain in the original currency.</source>
+        </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>Therefore, this option allows for more accurate adjustments that are affected by exchange rate fluctuations.</source>
+        </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>Looking back from a budget plan to other modules that contributed to the budget</source>
+        </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>Budget plans can be generated from demand or supply forecasts, project, and other areas.</source>
+        </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>The Budget plans by dimension set inquiry includes several options that let you run queries to identify the data that was the source for the budget plan.</source>
+        </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>Overwrite or append to plan for allocation schedules</source>
+        </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source>If there are multiple sources for amounts that must be distributed, you can specify that the amounts should be additive.</source>
+        </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source>In this case, the amounts don't overwrite any existing amounts.</source>
+        </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source>Instead, they are appended to the existing amounts.</source>
+        </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source>Default financial dimension set for budget planning configuration</source>
+        </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Budget planning configuration<ept id="p1">**</ept> page now includes a field where you can specify the default financial dimension set.</source>
+        </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>Although this field is an optional field, it might be required for certain inquiries.</source>
+        </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source>It might also be required if you want to group or filter reports grouping by dimension set.</source>
+        </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source>Data entities</source>
+        </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source>Several data entities have been added to enable rapid implementation of Budget planning.</source>
+        </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source>The entities also let you make many changes through Excel.</source>
+        </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source>Therefore, you don't have to create items one at a time through the client.</source>
+        </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source>Here is a list of the new data entities:</source>
+        </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source>Entity name</source>
+        </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source>Budget parameters</source>
+        </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source>Budget plan parameter</source>
+        </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source>Budget plan scenarios</source>
+        </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source>Budget plan stages</source>
+        </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>Budget plan workflow stage</source>
+        </trans-unit>
+        <trans-unit id="298" translate="yes" xml:space="preserve">
+          <source>Budget plan allocation schedules</source>
+        </trans-unit>
+        <trans-unit id="299" translate="yes" xml:space="preserve">
+          <source>Budget plan stage allocations</source>
+        </trans-unit>
+        <trans-unit id="300" translate="yes" xml:space="preserve">
+          <source>Budget plan priorities</source>
+        </trans-unit>
+        <trans-unit id="301" translate="yes" xml:space="preserve">
+          <source>Budget plan columns</source>
+        </trans-unit>
+        <trans-unit id="302" translate="yes" xml:space="preserve">
+          <source>Budget plan layout elements</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
