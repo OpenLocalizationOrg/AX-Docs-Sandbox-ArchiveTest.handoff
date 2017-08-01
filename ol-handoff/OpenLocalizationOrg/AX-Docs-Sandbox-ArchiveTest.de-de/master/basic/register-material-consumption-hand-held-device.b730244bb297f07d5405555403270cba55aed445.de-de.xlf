@@ -1,0 +1,198 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="de-de">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">b4c0d14340e96b2e7916ea73e25e62ae5c33ce49</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scm\production-control\register-material-consumption-hand-held-device.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">basic</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">cf2569b90b6c9f6012ac596881af7a72cf999005</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">c5b73930972e1ba9baaf428fc600bf4a3d9aa5d7</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Register material consumption using a mobile device</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic describes a workflow that enables registration of raw material consumption in production by using a handheld device.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Register material consumption using a mobile device</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This topic describes a workflow that enables registration of raw material consumption in production by using a handheld device.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Introduction</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This workflow is relevant if there is a strict requirement for material traceability.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>In those cases, to maintain traceability of the materials, the exact time and quantity must be reported for the consumption.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>This process can be seen as opposed to pre- or back-flushing operations, where there is an offset between the time of registration and the time when the actual consumption takes place.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>This explains why a strategy of automatic consumption cannot be used for some materials with traceability requirements.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Let’s look at a simple scenario that explains how to set up a workflow to enable registration of raw material consumption in production by using a handheld device.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Scenario details</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>A continuous production process (5) consumes the batch-controlled raw material RM-100.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The material is on-hand on location Bulk-001 (1) on license plate PL-1 with two batches, B1 and B2, both with a quantity of 100 lbs.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Warehouse work (2) is released and processed for RM-100, and the material is picked from Bulk-001 to the production input location PIL-01 (3), which is defined as non-license plate controlled.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>The machine operator weighs out material from the production input location (3) and registers the weight and batch number as consumed (4).</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>From the production input location, a portion of the material is manually added to the production process in defined time intervals.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>When the machine operator adds material, it is weighed on a scale and the batch number is registered.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Set up the workflow to register consumption using a handheld device</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Create a finished-good product, FG-100, with a bill of material that has the batch-controlled raw material RM-100.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Add two batches, B1 and B2, of RM-100 in a quantity of 100 to location: Bulk-001 on license plate: PL-1.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The flushing principle on the bill of material line for RM-100 is set to <bpt id="p1">**</bpt>Manual<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Set  the production input location to PIL-01.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>You can do that by selecting this location as the default production input location on warehouse 51.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Create a new mobile device menu item:</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Menu item name<ept id="p1">**</ept> - Register material consumption.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Title<ept id="p1">**</ept> - Register material consumption.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Mode<ept id="p1">**</ept> - Indirect.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Activity code<ept id="p1">**</ept> - Register material consumption.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Add the menu item to the <bpt id="p1">**</bpt>Production Mobile<ept id="p1">**</ept> device menu.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Create a production order for the finished product:</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Item number<ept id="p1">**</ept> - FG-100</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Site<ept id="p1">**</ept> - 5</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Warehouse<ept id="p1">**</ept> - 51</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Quantity<ept id="p1">**</ept> - 150</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>The production order is <bpt id="p1">**</bpt>Estimated<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Released<ept id="p2">**</ept> and warehouse work is created.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Complete the work using the workflow for raw material picking for the handheld device.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>This will bring the material from the bulk location to the production input location PIL-01.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>After the work is completed, the material has the status <bpt id="p1">**</bpt>Picked on the production input location<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>The status after work has been processed can be either <bpt id="p1">**</bpt>Picked<ept id="p1">**</ept> or <bpt id="p2">**</bpt>Reserved physical<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>This is configured with the parameter <bpt id="p1">**</bpt>Issue status after put on the warehouse form<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Start the production order either from the client or from the handheld device by using the <bpt id="p1">**</bpt>Production start<ept id="p1">**</ept> menu item.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>After the production order has been started, you can register material consumption with the workflow for the handheld device.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Let's start by registering consumption of 25 lbs of batch B1.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Select the <bpt id="p1">**</bpt>Register material<ept id="p1">**</ept> <bpt id="p2">**</bpt>consumption<ept id="p2">**</ept> menu item in the menu for the hand held device, enter the following details:</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>The production order number.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>The location on which the material is going to be consumed, in this case PIL-01.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Item number RM-100.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Batch number B1.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>A quantity of 25.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Note that the message "Journal line is created" appears on the display.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>On the production order there is an open journal of the type <bpt id="p1">**</bpt>Production picking list<ept id="p1">**</ept> for item number RM-100 and batch number B1.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>You can now choose to continue your registration, for example on batch number B2, and each time you select <bpt id="p1">**</bpt>OK,<ept id="p1">**</ept> a new journal line is added to the open journal.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>After you have finished your registration, select <bpt id="p1">**</bpt>Done<ept id="p1">**</ept> to post the journal and end the workflow.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Additional comments</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>If a user cancels the workflow after a journal line is created, the journal is in an unposted state but if the user at a later point uses the workflow for the same production order, then the lines will be added to the open journal rather than to a new journal.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>The new workflow also supports the registration of serial numbers.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>It is only possible to register an item number that is defined in the bill of material or in the formula for the selected production order or batch order.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Material can be overconsumed.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>For example, if the material is estimated to be consumed with the quantity of 100 lbs, then it can be overconsumed with a quantity of, for example, 105 lbs.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
