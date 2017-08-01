@@ -1,0 +1,468 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="tr-tr">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-a2cb121" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">aac70abc25c45ef4479425cdb648f4450d5db2dc</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">financials\accounts-payable\create-vendor-payments-payment-proposal.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">basic</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">6ad6b850f9e5c4cc1d781e1031973753179954f3</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">7169eca116d442b1047d2b2ec706b83fea6d7cde</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Create vendor payments by using a payment proposal</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic provides an overview of the payment proposal options and includes some examples that show how payment proposals work.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Payment proposals are often used to create vendor payments, because the query can be used to quickly select vendor invoices for payment, based on criteria such as the due date and cash discount.</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Create vendor payments by using a payment proposal</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>This topic provides an overview of the payment proposal options and includes some examples that show how payment proposals work.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Payment proposals are often used to create vendor payments, because the query can be used to quickly select vendor invoices for payment, based on criteria such as the due date and cash discount.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Organizations often use payment proposals to create vendor payments, because the payment proposal query can be used to quickly select vendor invoices for payment, based on the due date, cash discount, and other criteria.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>The payment proposal query contains various tabs, each of which has different options for selecting invoices to pay.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Parameter<ept id="p1">**</ept> tab contains options that a majority of organization use most often.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Records to include<ept id="p1">**</ept> FastTab, you can specify which invoices or vendors to include for payment by defining ranges for various characteristics.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>For example, if you want to pay only a specific range of vendors, you can define a filter for the vendor range.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>This functionality is often used to select invoices for a specific of method of payment.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>For example, if you define a filter where <bpt id="p1">**</bpt>Method of payment<ept id="p1">**</ept><ph id="ph1"> = </ph><bpt id="p2">**</bpt>Check<ept id="p2">**</ept>, only invoices that have that method of payment are selected for payment, provided that they also meet other criteria that are specified in the query.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Advanced parameters<ept id="p1">**</ept> tab contains additional options, some of which might not be relevant to your organization.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>For example, this tab contains the options for paying invoices for centralized payments.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Parameters</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Select invoices by<ept id="p1">**</ept> – Invoices within the date range that is specified by the <bpt id="p2">**</bpt>From date<ept id="p2">**</ept> and <bpt id="p3">**</bpt>To date<ept id="p3">**</ept> fields can be selected by due date, cash discount date, or both.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>If you use the cash discount date, the system first looks for invoices that have a cash discount date between the from date and to date.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>The system then determines whether the invoice is eligible for the cash discount by using the session date to make sure that the cash discount date hasn’t already passed.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>From date<ept id="p1">**</ept> and <bpt id="p2">**</bpt>To date<ept id="p2">**</ept> – Invoices that have a due date or cash discount date within this date range are selected for payment.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Payment date<ept id="p1">**</ept> – This is only used when the <bpt id="p2">**</bpt>Period<ept id="p2">**</ept> field on the method of payment is set to <bpt id="p3">**</bpt>Total<ept id="p3">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>If a date is defined, all payments are created on this date.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Minimum payment date<ept id="p1">**</ept> field is ignored.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Minimum payment date<ept id="p1">**</ept> – Enter the minimum payment date.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>For example, the <bpt id="p1">**</bpt>From date<ept id="p1">**</ept> and <bpt id="p2">**</bpt>To date<ept id="p2">**</ept> fields specify a range from September 1 to September 10, and the minimum payment date is September 5.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>In this case, all invoices that have a due date from September 1 to September 5 have a payment date of September 5.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>However, all invoices that have a due date from September 5 to September 10 have a payment date that is equal to the due date of each invoice.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Amount limit<ept id="p1">**</ept> – Enter the maximum total amount for all payments.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Create payments without invoice preview<ept id="p1">**</ept> – If this option is set to <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept>, payments will be created immediately on the <bpt id="p3">**</bpt>Vendor payments<ept id="p3">**</ept> page.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Payment proposal<ept id="p1">**</ept> page will be skipped.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Therefore, payments will be created more quickly.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Payments can still be modified from the <bpt id="p1">**</bpt>Vendor payments<ept id="p1">**</ept> page.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Alternatively, you can return to the <bpt id="p1">**</bpt>Payment proposal<ept id="p1">**</ept> page by using the <bpt id="p2">**</bpt>Edit invoices for select payment<ept id="p2">**</ept> button.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Advanced options</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Check vendor balance<ept id="p1">**</ept> – If this option is set to <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept>, the system verifies that a vendor doesn’t have a debit balance before any invoice is paid.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>If a vendor does have a debit balance, no payment is created.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>For example, the vendor might have credit memos, or payments that have been posted but haven't been settled yet.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>In these cases, the vendor should not be paid.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Instead, the credit memos or payments should be settled against the outstanding invoices.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Delete negative payments<ept id="p1">**</ept> – This option works differently, depending on whether payments are made for individual invoices or for the sum of invoices that meet the payment criteria.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>This behavior is defined on the method of payment.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Payment for each invoice<ept id="p1">**</ept> – If the <bpt id="p2">**</bpt>Delete negative payments<ept id="p2">**</ept> option is set to <bpt id="p3">**</bpt>Yes<ept id="p3">**</ept>, and an unsettled invoice and payment exist for a vendor, only the invoice is selected for payment.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>The existing payment isn't settled against the invoice.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>If the <bpt id="p1">**</bpt>Delete negative payments<ept id="p1">**</ept> option is set to <bpt id="p2">**</bpt>No<ept id="p2">**</ept>, and an invoice and a payment aren't settled, both the invoice and the payment are selected for payment.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>A payment is created for the payment, and a refund (negative payment) is created for the payment.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Payment for sum of invoices<ept id="p1">**</ept> – If the <bpt id="p2">**</bpt>Delete negative payments<ept id="p2">**</ept> option is set to <bpt id="p3">**</bpt>Yes<ept id="p3">**</ept>, and an unsettled invoice and payment exist for a vendor, both the unsettled invoice and the payment are selected for payment, and the amounts are added together to produce the total payment amount.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>The only exception occurs if the sum results in a refund.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>In this case, neither the invoice nor the payment is selected.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>If the **Delete negative payments **option is set to <bpt id="p1">**</bpt>No<ept id="p1">**</ept>, and an invoice and a payment aren't settled, both the invoice and the payment are selected for payment, and the amounts are added together to produce the total payment amount.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Print report only<ept id="p1">**</ept> – Set this option to <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept> to see the results of the payment proposal on a report, but without creating any payments.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Include vendor invoices from other legal entities<ept id="p1">**</ept> – If your organization has a centralized process for payment, and the payment proposal should include invoices from other legal entities that are included in the search criteria, set this option to <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Propose separate vendor payment per legal entity<ept id="p1">**</ept> – If this option is set to <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept>, a separate payment is created for each legal entity per vendor.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>The vendor on the payment is the vendor from the invoice from each legal entity.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>If this option is set to <bpt id="p1">**</bpt>No<ept id="p1">**</ept>, and the same vendor has invoices in multiple legal entities, one payment is created for the total amount of the selected invoices.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>The vendor on the payment is the vendor in the current legal entity.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>If the vendor account doesn’t exist in the current legal entity, the vendor account of the first invoice that must be paid is used.</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Payment currency<ept id="p1">**</ept> – This field specifies the currency that all payments are created in.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>If a currency isn’t defined, each invoice is paid in the currency of the invoice.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Payment weekday<ept id="p1">**</ept> – Enter the day of the week when the payment should be made.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>This field is used only if the method of payment is set up to total invoices for payment on a specific day of the week.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Offset account type<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Offset account<ept id="p2">**</ept> – Set these fields to define a specific account type (such as <bpt id="p3">**</bpt>Ledger<ept id="p3">**</ept> or <bpt id="p4">**</bpt>Bank<ept id="p4">**</ept>) and offset account (such as a specific bank account).</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>The method of payment for the invoice defines the default offset account type and offset account, but you can use these fields to override the default values.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Additional filters<ept id="p1">**</ept> – On the <bpt id="p2">**</bpt>Records to include<ept id="p2">**</ept> FastTab, you can define additional ranges of criteria.</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>For example, if you want to pay only a range of vendors, you can define a filter for the vendor range.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>This functionality is often used to select invoices for a specific of method of payment.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>For example, if you define a filter where <bpt id="p1">**</bpt>Method of payment<ept id="p1">**</ept><ph id="ph1"> = </ph><bpt id="p2">**</bpt>Check<ept id="p2">**</ept>, only invoices that have that method of payment are selected for payment, provided that they also meet other criteria that are specified in the query.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Scenarios</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Vendor</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Invoice</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Invoice date</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Invoice amount</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Due date</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Cash discount date</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Cash discount amount</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>3050</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>1001</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>June 15</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>500.00</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>July 15</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>June 29</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>10.00</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>3050</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>1002</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>June 20</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>600.00</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>July 20</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>July 4</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>12.00</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>3075</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>1003</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>June 15</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>250.00</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>June 29</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>0.00</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>3100</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>1004</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>June 17</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>100.00</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>July 17</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>July 1</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>1.00</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>On July 1, April pays vendors.</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>She uses a payment proposal to help her complete this task more efficiently.</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>Option 1: By cash discount</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>April selects <bpt id="p1">**</bpt>Cash discount<ept id="p1">**</ept> as the proposal type.</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>She enters a date range of June 26 to July 10.</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>The following invoices are included in the proposal:</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>1002, because the discount date of July 4 is in the range of payment dates.</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>1004, because the discount date of July 1 is in the range of payment dates.</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>The following invoices aren't included in the proposal:</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>1001, because the discount date of June 29 has already expired, so this invoice is no longer eligible for the cash discount.</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>1003, because this invoice doesn't have a discount date.</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Option 2: By due date</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>April selects <bpt id="p1">**</bpt>Per due date<ept id="p1">**</ept> as the proposal type.</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>She enters a date range of June 26 to July 10.</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>The following invoices are included in the proposal:</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>1003, because the due date of June 29 is in the range of payment dates.</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>The following invoices aren't included in the proposal:</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>1001, because the due date of July 15 is outside the range of payment dates.</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>1002, because the due date of July 20 is outside the range of payment dates.</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>1004, because the due date of July 17 is outside the range of payment dates.</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>Option 3: By due date and cash discount</source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>April selects <bpt id="p1">**</bpt>Due date and cash discount<ept id="p1">**</ept> as the proposal type.</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>She enters a date range of June 26 to July 10.</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>The following invoices are included in the proposal:</source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>1003, because the due date of June 29 is in the range of payment dates.</source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>1002, because the discount date of July 4 is in the range of payment dates.</source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>1004, because the discount date of July 1 is in the range of payment dates.</source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>The following invoices aren't included in the proposal:</source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>1001, because the discount date of June 29 has already expired, so this invoice is no longer eligible for the cash discount, and the due date of July 15 is also outside the date range.</source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>Country specific considerations</source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>Norway</source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>Dimension control</source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>Dimension control allows you to control grouping of generated lines by payment proposal and set default dimensions based on financial dimensions used for the applied invoices.</source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>Under Norwegian country context for each method of payment there is financial dimension tab where you can activate dimension control as well as enable grouping for each dimension.</source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>Possible options are:</source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Dimension control<ept id="p1">**</ept> field is disabled.</source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>The payment proposal behaves as for any other country.</source>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Dimension control<ept id="p1">**</ept> field is activated without further defining the dimensions.</source>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>The payment proposal will be created without taking dimensions into consideration.</source>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>The created transaction inherits no dimensions from the applied entry.</source>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Dimension control<ept id="p1">**</ept> field is activated and the further dimensions are enabled.</source>
+        </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>Now you define how the dimensions will be copied to the journal.</source>
+        </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>For example: • Select the <bpt id="p1">**</bpt>BusinessUnit<ept id="p1">**</ept> check box to create a payment proposal per business unit for the method of payment, • Select the <bpt id="p2">**</bpt>CostCenter<ept id="p2">**</ept> check box to create a payment proposal per cost center for the method of payment</source>
+        </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> If you select more than one dimension in the third option, a payment proposal is created for the dimension combination.</source>
+        </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>Bank account selection</source>
+        </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>You can define a standard debiting payment account per method of payment regardless country context.</source>
+        </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>This will be set in payment lines generated by a proposal.</source>
+        </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>With the bank account feature, you can define multiple debiting bank accounts managed by dimension and currency or a combination of these to use different debiting bank accounts, depending on each combination.</source>
+        </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>You can set up these combinations in <bpt id="p1">**</bpt>Methods of payments<ept id="p1">**</ept> page by using the <bpt id="p2">**</bpt>Bank accounts<ept id="p2">**</ept> button available for each method of payment with <bpt id="p3">**</bpt>Posting account type<ept id="p3">**</ept><ph id="ph1"> = </ph><bpt id="p4">**</bpt>Bank<ept id="p4">**</ept>.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
