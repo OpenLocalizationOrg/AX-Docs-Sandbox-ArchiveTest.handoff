@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="et-ee">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2c0b31f6e51de4489a35dbd91a6e9886e620f421</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scm\sales-marketing\delivery-dates-available-promise-calculations.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">basic</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">4b318e61d1f649292e311467814a1e4cd06565fd</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">0cd8df5948f553b0841ea595018666163d344e67</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Order promising</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This article provides information about order promising.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Order promising helps you reliably promise delivery dates to your customers and gives you flexibility so that you can meet those dates.</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Order promising</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>This article provides information about order promising.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Order promising helps you reliably promise delivery dates to your customers and gives you flexibility so that you can meet those dates.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Order promising calculates the earliest ship and receipt dates, and is based on the delivery date control method and transport days.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>You can select among four delivery date control methods:</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Sales lead time<ept id="p1">**</ept> – Sales lead time is the time between creation of the sales order and shipment of the items.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>The delivery date calculation is based on a default number of days, and does not consider stock availability, known demand, or planned supply.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>ATP (available-to-promise)<ept id="p1">**</ept> – ATP is the quantity of an item that is available and can be promised to a customer on a specific date.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>The ATP calculation includes uncommitted inventory, lead times, planned receipts, and issues.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>ATP + Issue margin<ept id="p1">**</ept> – The shipping date is equal to the ATP date plus the issue margin for the item.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>The issue margin is the time that is required to prepare the items for shipment.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>CTP (capable-to-promise)<ept id="p1">**</ept> – Availability is calculated through explosion.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>ATP calculations</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The ATP quantity is calculated by using the “cumulative ATP with look-ahead” method.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>The main advantage of this ATP calculation method is that it can handle cases where the sum of issues among receipts is more than the latest receipt (for example, when a quantity from an earlier receipt must be used to meet a requirement).</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>The “cumulative ATP with look-ahead” calculation method includes all issues until the cumulative quantity to receive exceeds the cumulative quantity to issue.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Therefore, this ATP calculation method evaluates whether some of the quantity from an earlier period can be used in a later period.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The ATP quantity is the uncommitted inventory balance in the first period.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Typically, it's calculated for each period in which a receipt is scheduled.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>The program calculates the ATP period in days and calculates the current date as the first date for the ATP quantity.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>In the first period, ATP includes on-hand inventory minus customer orders that are due and overdue.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>ATP is calculated by using the following formula:</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>ATP = ATP for the previous period + Receipts for the current period – Issues for the current period – Net issue quantity for each future period until the period when the sum of receipts for all future periods, up to and including the future period, exceeds the sum of issues up to and including the future period.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>When there are no more issues or receipts to consider, the ATP quantity for the following dates is the same as the latest calculated ATP quantity.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>If not all the dimensions that are used for an item are given when the ATP check is completed, they can still be specified on the issue and receipts.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>In this case, in the ATP calculation, the receipts and issues must be aggregated to the existing dimensions to reduce the number of receipt and issue lines that are used in the ATP calculation.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>The ATP quantity that is shown is always greater than or equal to 0 (zero).</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>If the calculation returns a negative ATP quantity (for example, if the quantity that was previously promised exceeds the available quantity), the program automatically sets the quantity to <bpt id="p1">**</bpt>0<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Example</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>ATP backward demand time fence<ept id="p1">**</ept> field controls how far back in time to look for delayed demand orders or inventory issues.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>ATP backward supply time fence<ept id="p1">**</ept> field controls how far back in time to look for delayed supply orders or inventory receipts.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>For example, if orders that are delayed by only seven days should be considered in the ATP calculation, both fields should be set to <bpt id="p1">**</bpt>7<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>ATP delayed demand offset time<ept id="p1">**</ept> and <bpt id="p2">**</bpt>ATP delayed supply offset time<ept id="p2">**</ept> fields control when the delayed demand or supply will be considered in the ATP calculation.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>For example, if the delayed supply and demand should be considered in the ATP calculation the day after tomorrow, both fields should be set to <bpt id="p1">**</bpt>2<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>A value of <bpt id="p1">**</bpt>2<ept id="p1">**</ept> means that the quantity of an item on a delayed purchase order that should be considered in the ATP calculation will be seen as available two days after the current date.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>For the following example, <bpt id="p1">**</bpt>7<ept id="p1">**</ept> is entered in the <bpt id="p2">**</bpt>ATP backward demand time fence<ept id="p2">**</ept> and <bpt id="p3">**</bpt>ATP backward supply time fence<ept id="p3">**</ept> fields, and <bpt id="p4">**</bpt>1<ept id="p4">**</ept> is entered in the <bpt id="p5">**</bpt>ATP delayed demand offset time<ept id="p5">**</ept> and <bpt id="p6">**</bpt>ATP delayed supply offset time<ept id="p6">**</ept> fields.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>A purchase order for 200 pieces of a product that should have been received three days ago hasn't been received yet.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Therefore, a sales order line for 75 pieces of the same product that should have been shipped yesterday hasn't been shipped.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>A customer calls and wants to order 150 pieces of the same product.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>When you verify the availability of the product, you find that another purchase order for 100 pieces of the product will be delivered 10 days later.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>You create a sales order line for the product and enter <bpt id="p1">**</bpt>150<ept id="p1">**</ept> as the quantity.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Because the delivery date control is method is ATP, the ATP data is calculated to find the earliest possible ship date.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Based on the settings, the delayed purchase order and sales order are considered, and the resulting ATP quantity for the current date is 0.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Tomorrow, when the delayed purchase order is expected to be received, the ATP quantity is calculated as more than 0 (in this case, it's calculated as 125).</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>However, 10 days from now, when the additional purchase order for 100 pieces is expected to be received, the ATP quantity becomes more than 150.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Therefore, the ship date is set to 10 days from now, based on the ATP calculation.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Therefore, you tell the customer that the requested quantity can be delivered 10 days from now.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
