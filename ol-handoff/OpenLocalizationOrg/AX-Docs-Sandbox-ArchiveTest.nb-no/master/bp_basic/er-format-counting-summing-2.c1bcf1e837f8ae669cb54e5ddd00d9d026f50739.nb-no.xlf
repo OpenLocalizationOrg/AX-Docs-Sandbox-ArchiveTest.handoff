@@ -1,0 +1,393 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="nb-no">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">d787cc951f8389fb07a265c99635fedeca132170</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dev-itpro\analytics\tasks\er-format-counting-summing-2.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">bp_basic</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ef58236d1eb5b2a166a8907f14cb42edf5b3f46c</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">edb5b3078a1f376556a40e54f389fafae5f7bad1</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Configure computations to do counting and summing for electronic reporting (ER)</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to do counting and summing based on data of the already generated text output.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Configure computations to do counting and summing for electronic reporting (ER)</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to do counting and summing based on data of the already generated text output.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>These steps can be performed in any company.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>To complete these steps, you must first complete the steps in the “ER Configure format to do counting and summing (Part 1: Create format)” procedure.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Create a format configuration to add counting and summing details</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Go to Organization administration &gt; Workspaces &gt; Electronic reporting.</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Click Reporting configurations.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>In the tree, expand 'Intrastat model'.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>In the tree, select 'Intrastat model\Intrastat (DE)'.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Assume that you need to customize the format provided by Microsoft by adding lines with summary details at the end of the Intrastat report.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>You need to do that by deriving our own instance of the Intrastat configuration from the Microsoft instance to make modifications.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Click Create configuration to open the drop dialog.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>In the New field, enter 'Derive from Name: Intrastat (DE), Microsoft'.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>In the Name field, type 'Intrastat (DE) with counting &amp; summing'.</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Click Create configuration.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Configure this report to do counting and summation based on output details</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Click Designer.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Select Yes in the Collect output details field.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>This flag will activate at run-time the process of collecting output details for generating the Intrastat file.</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>You need to do counting for different Intrastat directions, so add a dedicated model enumeration to the data sources’ list of this format configuration.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Click the Mapping tab.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Click Add root to open the drop dialog.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>In the tree, select 'Data model\Enumeration '.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>In the Name field, type 'Direction'.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>In the Model enumeration field, enter or select a value.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Select the value Direction.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Click OK.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Click Add root to open the drop dialog.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>In the tree, select 'Functions\Calculated field'.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>In the Name field, type '$BlockName'.</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Click Edit formula.</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>In the Formula field, enter '"block"'.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Click Save.</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Close the page.</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Click OK.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Click Add root to open the drop dialog.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>In the tree, select 'Functions\Calculated field'.</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>In the Name field, type '$RecName'.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Click Edit formula.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>In the Formula field, enter '"record"'.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Click Save.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Close the page.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Click OK.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Click Add root to open the drop dialog.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>In the tree, select 'Functions\Calculated field'.</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>In the Name field, type '$InvName'.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Click Edit formula.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>In the Formula field, enter '"InvoicedAmountEUR"'.</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Click Save.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Close the page.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Click OK.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>In the tree, select 'Intrastat\Data'.</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Click Edit button for the ‘Collected data key name’ field</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Click Add data source.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>$BlockName</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Click Save.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Close the page.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Click the Edit button for the Collected data key value field.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>In the Formula field, enter 'IF(Intrastat.CommodityRecord.Direction=Direction.Import, "Import", "Export")'.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>IF(Intrastat.CommodityRecord.Direction=Direction.Import, "Import", "Export")</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Click Save.</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Close the page.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Count the lines of this sequence.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>The results will be used with the name “block” separately for different directions.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Value “Import” will be used for any arrivals Intrastat transactions.</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>The value “Export” will be used for any Intrastat dispatches transactions.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Consider this to be a virtual Excel spreadsheet.</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>For each transaction a row where the first column “block” is filled with the values “Import” and “Export” accordingly.</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>In the tree, expand 'Intrastat\Data: Sequence'.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>In the tree, select 'Intrastat\Data: Sequence\Arrivals?'.</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Click Edit button for the ‘Collected data key name’ field.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Count the lines of this sequence.</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>The results will be memorized using the name “record”.</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>In the tree, select '$RecName'.</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Click Add data source.</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Click Save.</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Close the page.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Click Edit button for the ‘Collected data key value’ field</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>In the Formula field, enter 'Intrastat.CommodityRecord.CommodityCode'.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Click Save.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>Close the page.</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Count the lines of this sequence.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>The results will be used with the name “record” separately for different commodity codes.</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>Consider this to be a virtual Excel spreadsheet.</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>For each transaction a row where the first column “block” is filled with the values “Import” and “Export” accordingly and the second block “record” is filled with the commodity code value.</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>In the tree, select 'Intrastat\Data: Sequence\Dispatches?'.</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Click Edit button for the ‘Collected data key name’ field</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>In the tree, select '$RecName'.</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Click Add data source.</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>Click Save.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>Close the page.</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>Click the Edit button for the ‘Collected data key value’ field.</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>In the Formula field, enter 'Intrastat.CommodityRecord.CommodityCode'.</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Click Save.</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>Close the page.</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>In the tree, expand 'Intrastat\Data: Sequence\Dispatches: Sequence?'.</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>In the tree, expand 'Intrastat\Data: Sequence\Dispatches: Sequence?\Record =  Intrastat.CommodityRecord'.</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>Click the Format tab.</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>In the tree, select 'Intrastat\Data\Dispatches\Record\Invoice amount EUR'.</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>Click the Mapping tab.</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>Click the Edit button for the ‘Collected data key name’ field.</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>In the tree, select '$InvName'.</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>Click Add data source.</source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Click Save.</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>Close the page.</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>Summarize the invoiced amount values for lines of this sequence.</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>The results will be used with the name “InvoicedAmountEUR” separately for different Intrastat directions and commodity codes.</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>Consider this to be a virtual creation in Excel spreadsheet.</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>For each transaction a row where the first column “block” is filled with the values “Import” and “Export” accordingly.</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>The second block “record” is filled with the commodity code value, and the third column “InvoicedAmountEUR” is filled with the invoice amount value.</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>In the tree, expand 'Intrastat\Data\Arrivals?'.</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>In the tree, expand 'Intrastat\Data\Arrivals?\Record =  Intrastat.CommodityRecord'.</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>Click the Format tab.</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>In the tree, select 'Intrastat\Data\Arrivals\Record\Invoice amount EUR'.</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>Click the Mapping tab.</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>Click the Edit button for the ‘Collected data key name’ field.</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>In the tree, select '$InvName'.</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>Click Add data source.</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>Click Save.</source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>Close the page.</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>Click Save.</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>Close the page.</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

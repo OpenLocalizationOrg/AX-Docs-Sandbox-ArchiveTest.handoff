@@ -1,0 +1,972 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="nb-no">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">da7662fd923d9b712c655893a878c3ddd3e34f41</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">financials\accounts-payable\mobile-invoice-approvals.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">basic</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2e842426ea64aa9c44c8b9a0a497540a44303483</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">1dd9fb241fa2bda867071e068580bf0c531b8ad3</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Mobile invoice approvals</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This topic is intended to provide a practical approach to designing mobile scenarios in Dynamics 365 for Finance and Operations by taking vendor invoice approvals for mobile as a use case.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Mobile invoice approvals</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Mobile capabilities in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition let a business user design mobile experiences.</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>For advanced scenarios, the platform also lets developers extend the capabilities as they desire.</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>The most effective way to learn some of the new concepts on mobile is to go through the process of designing a few scenarios.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>This topic is intended to provide a practical approach to designing mobile scenarios by taking vendor invoice approvals for mobile as a use case.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>This topic should help you design other variations of the scenarios and can also be applied to other scenarios that aren’t related to vendor invoices.</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Prerequisites</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Prerequisite</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Description</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Mobile handbook pre-read</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Mobile platform<ept id="p1">](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform)</ept></source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Dynamics 365 for Finance and Operations</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>An environment that has Microsoft Dynamics 365 for Operations version 1611 and Microsoft Dynamics for Operations platform update 3 (November 2016)</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Install hotfix KB 3204341.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Task recorder can erroneously record two Close commands for dropdown dialogs this is included in Dynamics 365 for Operation platform update 3 (November 2016 update)</source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Install hotfix KB 3207800.</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>This hotfix enables attachments to be viewed on the mobile client this is included in Dynamics 365 for Operation platform update 3 (November 2016 update).</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Install hotfix KB 3208224.</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Application code for the mobile vendor invoice approval application this is included in Microsoft Dynamics AX application 7.0.1 (May 2016).</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>An Android or iOS or a Windows device that has the mobile app installed for Finance and Operations</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Search for the app in the appropriate app store.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Introduction</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Mobile approvals for vendor invoices require the three hotfixes that are mentioned in the “Prerequisites” section.</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>These hotfixes don’t provide a workspace for the invoice approvals.</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>To learn what a workspace is in the context of mobile, read the mobile handbook that is mentioned in the “Prerequisites” section.</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>The invoice approvals workspace must be designed.</source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Every organization orchestrates and defines its business process for vendor invoices differently.</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Before you design a mobile experience for vendor invoice approvals, you should consider the following aspects of the business process.</source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>The idea is to use these data points as much as possible to optimize the user experience on the device.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>What fields from the invoice header will the user want to see in the mobile experience, and in what order?</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>What fields from the invoice lines will the user want to see in the mobile experience, and in what order?</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>How many invoice lines are there in an invoice?</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Apply the 80-20 rule here, and optimize for the 80 percent.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Will users want to see accounting distributions (invoice coding) on the mobile device during reviews?</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>If the answer to this question is yes, consider the following questions:</source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>How many accounting distributions (extended price, sales tax, charges, splits, and so on) are there for an invoice line?</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Again, apply the 80-20 rule.</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Do the invoices also have accounting distributions on the invoice header?</source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>If so, should these accounting distributions be available on the device?</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>This topic doesn’t explain how to edit accounting distributions, because this functionality isn’t currently supported for mobile scenarios.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Will users want to see attachments for the invoice on the device?</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>The design of the mobile experience for invoice approvals will differ, depending on the answers to these questions.</source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>The objective is to optimize the user experience for the business process on mobile in an organization.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>In the rest of this topic, we will look at two scenario variations that are based on different answers to the preceding questions.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>As a general guidance, when working with the mobile designer, make sure to 'publish' the changes to prevent losing the updates.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Designing a simple invoice approval scenario for Contoso</source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Scenario attribute</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Answer</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>What fields from the invoice header will the user want to see in the mobile experience, and in what order?</source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Vendor name</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Invoice total</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Invoice account</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Invoice number</source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Invoice date</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Invoice description</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Due date</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Invoice currency</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>What fields from the invoice lines will the user want to see in the mobile experience, and in what order?</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Procurement category</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Quantity</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Unit price</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Line net amount</source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>1099 amount</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>How many invoice lines are there in an invoice?</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Apply the 80-20 rule here, and optimize for the 80 percent.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>1</source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Will users want to see accounting distributions (invoice coding) on the mobile device during reviews?</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Yes</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>How many accounting distributions (extended price, sales tax, charges, and so on) are there for an invoice line?</source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Again, apply the 80-20 rule.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Extended price: 2 Sales tax: 0 Charges: 0</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Do the invoices also have accounting distributions on the invoice header?</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>If so, should these accounting distributions be available on the device?</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Not used</source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Will users want to see attachments for the invoice on the device?</source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Yes</source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Create the workspace</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>In a browser, open Finance and Operations, and sign in.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>After you’ve signed in, append <bpt id="p1">**</bpt>&amp;mode=mobile<ept id="p1">**</ept> to the URL as shown in the following example, and refresh the page: https://<ph id="ph1">&amp;lt;</ph>yoururl<ph id="ph2">&amp;gt;</ph>/?cmp=usmf&amp;mi=DefaultDashboard<bpt id="p2">**</bpt>&amp;mode=mobile<ept id="p2">**</ept></source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Click the <bpt id="p1">**</bpt>Settings<ept id="p1">**</ept> (gear) button in the upper right of the page, and then click <bpt id="p2">**</bpt>Mobile app<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>The mobile app designer must show up just as Task recorder shows up.</source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept> to create a new workspace.</source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>For this example, name the workspace <bpt id="p1">**</bpt>My approvals<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Enter a description.</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>Select a workspace color.</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>The workspace color will be used for the overall style of the mobile experience for this workspace.</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Select an icon for the workspace.</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Done<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Publish workspace<ept id="p1">**</ept> to save the changes</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Vendor invoices assigned to me</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>The first mobile page that you should design is the list of invoices that are assigned to the user for review.</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>To design this mobile page, use the <bpt id="p1">**</bpt>VendMobileInvoiceAssignedToMeListPage<ept id="p1">**</ept> page in Finance and Operations.</source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>Before you complete this procedure, make sure that at least one vendor invoice is assigned to you for review, and that the invoice line has two distributions.</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>This setup meets the requirements for this scenario.</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>In the Finance and Operations URL, replace the name of the menu item with <bpt id="p1">**</bpt>VendMobileInvoiceAssignedToMeListPage<ept id="p1">**</ept> to open the mobile version of the <bpt id="p2">**</bpt>Pending vendor invoices assigned to me<ept id="p2">**</ept> list page in the <bpt id="p3">**</bpt>Accounts payable<ept id="p3">**</ept> module.</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>Depending on the number of invoices that you have in your system assigned to you, this page will show those invoices.</source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>To find a specific invoice, you can use the filter on the left.</source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>However, we don’t require a specific invoice for this example.</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>We just require some invoice assigned to you which is going to allow you to design the mobile page.</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>The new pages that are available have been designed specifically for developing mobile scenarios for vendor invoice.</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>Therefore, you must use these pages.</source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>The URL should resemble the following URL, and after you enter it, the page that is shown in the illustration must appear: https://<ph id="ph1">&amp;lt;</ph>yourURL<ph id="ph2">&amp;gt;</ph>/?cmp=usmf&amp;mi=<bpt id="p1">**</bpt>VendMobileInvoiceAssignedToMeListPage<ept id="p1">**</ept>&amp;mode=mobile <bpt id="p2">[</bpt><ph id="ph3">![</ph>Pending vendor invoices assigned to me page<ept id="p2">](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>Click the <bpt id="p1">**</bpt>Settings<ept id="p1">**</ept> (gear) button in the upper right of the page, and then click <bpt id="p2">**</bpt>Mobile app<ept id="p2">**</ept></source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>Select your workspace and click <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Add page<ept id="p1">**</ept> to create the first mobile page.</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>Enter a name, such as <bpt id="p1">**</bpt>My vendor invoices<ept id="p1">**</ept>, and a description, such as <bpt id="p2">**</bpt>Vendor invoices assigned to me for review<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Done<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>In the mobile designer, on the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> tab, click <bpt id="p2">**</bpt>Select fields<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>The columns on the list page must resemble the following illustration.</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Columns on the Pending vendor invoices assigned to me page<ept id="p1">](./media/mobile-invoice-approvals02-1024x117.png)](./media/mobile-invoice-approvals02.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Add the required columns from the list page that must be shown to the users in the mobile page.</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>The order in which you add is the order in which the fields will be displayed to the end user.</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>The only way to change the ordering of the fields will be by re-selecting all the fields.</source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>Based on the requirements for this scenario, the following eight fields are required.</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>However, some users might consider eight fields too much information to have on a mobile device.</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>Therefore, we will show only the most important fields in the mobile list view.</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>The remaining fields will appear in the details view that we will design later.</source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>For now, we will add the following fields.</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>Click the plus sign (<bpt id="p1">**</bpt><ph id="ph1">+</ph><ept id="p1">**</ept>) in these columns to add to the mobile page.</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>Vendor name</source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>Invoice total</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>Invoice account</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>Invoice number</source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>Invoice date</source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>After the fields are added, the mobile page must resemble the following illustration.</source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Page after fields are added<ept id="p1">](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>You must also add the following columns now, so that we can enable workflow actions later.</source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>Show complete task</source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>Show delegate task</source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>Show recall task</source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>Show reject task</source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>Show request completion task</source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>Show resubmit task</source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Done<ept id="p1">**</ept> to exit edit mode.</source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Back<ept id="p1">**</ept> and then <bpt id="p2">**</bpt>Done<ept id="p2">**</ept> to exit the workspace</source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Publish workspace<ept id="p1">**</ept> to save your work.</source>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>Enable <bpt id="p1">**</bpt>Display invoice total on pending vendor invoices list<ept id="p1">**</ept> in accounts payable parameters form under <bpt id="p2">**</bpt>Invoice<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>Note that, only by enabling this parameter, invoice totals will be calculated to be displayed on the pending vendor invoices list page.</source>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>This is a new capability as part of the pre-requisite hot fix 3208224.</source>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>Vendor invoice details</source>
+        </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>To design the invoice details page for mobile, use the <bpt id="p1">**</bpt>VendMobileInvoiceHeaderDetails<ept id="p1">**</ept> page in Finance and Operations.</source>
+        </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>Note that, depending on the number of invoices that you have in your system, this page shows the oldest invoice (the invoice that was created first).</source>
+        </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>To find a specific invoice, you can use the filter on the left.</source>
+        </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>However, we don’t require a specific invoice for this example.</source>
+        </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>We just require some invoice data so that we can design the mobile page.</source>
+        </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Workflow page<ept id="p1">](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>In the Finance and Operations URL, replace the name of the menu item with <bpt id="p1">**</bpt>VendMobileInvoiceHeaderDetails<ept id="p1">**</ept> to open the form</source>
+        </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>Open the mobile designer from the <bpt id="p1">**</bpt>Settings<ept id="p1">**</ept> (gear) button.</source>
+        </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>Click the <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept> button to start edit mode in the workspace.</source>
+        </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>Select the **My vendor invoices **page that you created earlier, and then click <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> tab, click the <bpt id="p2">**</bpt>Grid<ept id="p2">**</ept> column heading.</source>
+        </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Add page<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> When you click the <bpt id="p2">**</bpt>Grid<ept id="p2">**</ept> heading and add a page, the relationship with the details page is established automatically.</source>
+        </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>Enter a page title, such as <bpt id="p1">**</bpt>Invoice details<ept id="p1">**</ept>, and a description, such as <bpt id="p2">**</bpt>View invoice header and line details<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Select fields<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>Note that, the order in which you add is the order in which the fields will be displayed to the end user.</source>
+        </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>The only way to change the ordering of the fields will be by re-selecting all the fields.</source>
+        </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>Add the following fields from the header, based on the requirements for this scenario:</source>
+        </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>Vendor name</source>
+        </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>Invoice total</source>
+        </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>Invoice account</source>
+        </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>Invoice number</source>
+        </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>Invoice date</source>
+        </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>Invoice description</source>
+        </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>Due date</source>
+        </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>Invoice currency</source>
+        </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>Add the following fields from the lines grid on the page:</source>
+        </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>Procurement category</source>
+        </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>Quantity</source>
+        </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>Unit price</source>
+        </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>Line net amount</source>
+        </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>1099 amount</source>
+        </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>After all the fields from the previous two steps have been added, click <bpt id="p1">**</bpt>Done<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>The page must resemble the following illustration.</source>
+        </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Page after fields are added<ept id="p1">](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Done<ept id="p1">**</ept> to exit edit mode.</source>
+        </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Back<ept id="p1">**</ept> and then <bpt id="p2">**</bpt>Done<ept id="p2">**</ept> to exit the workspace</source>
+        </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Publish workspace<ept id="p1">**</ept> to save your work</source>
+        </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source>Workflow actions</source>
+        </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source>To add workflow actions, use the <bpt id="p1">**</bpt>VendMobileInvoiceHeaderDetails<ept id="p1">**</ept> page in Finance and Operations.</source>
+        </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source>To open this page, replace the name of the menu item in the URL, as you did earlier.</source>
+        </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>Then open the mobile designer from the <bpt id="p1">**</bpt>Settings<ept id="p1">**</ept> (gear) button.</source>
+        </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>Follow these steps to add workflow actions on the details page.</source>
+        </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source>You must have invoices assigned to you that are in the appropriate state to make the workflow actions available to you that you are going to design for.</source>
+        </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source>Record workflow actions</source>
+        </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source>Click the <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept> button to start edit mode in the workspace.</source>
+        </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source>Select the <bpt id="p1">**</bpt>Invoice details<ept id="p1">**</ept> page that you created earlier, and then click <bpt id="p2">**</bpt>Edit<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Actions<ept id="p1">**</ept> tab, click <bpt id="p2">**</bpt>Add action<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source>Enter an action title, such as <bpt id="p1">**</bpt>Approve<ept id="p1">**</ept>, and a description, such as <bpt id="p2">**</bpt>Approve invoice<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source>Note that the action title that you enter here becomes the name of the action that is shown to the user in the mobile app.</source>
+        </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Done<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Select fields<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source>Go through the workflow process on the <bpt id="p1">**</bpt>VendMobileInvoiceHeaderDetails<ept id="p1">**</ept> page, and complete the action that you wanted to record.</source>
+        </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source>Make sure that you enter workflow comments during this process, so that a comments field is also included in the mobile experience.</source>
+        </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>After the workflow action is run, click <bpt id="p1">**</bpt>Done<ept id="p1">**</ept> to complete the Select fields task.</source>
+        </trans-unit>
+        <trans-unit id="298" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Done<ept id="p1">**</ept> to exit edit mode.</source>
+        </trans-unit>
+        <trans-unit id="299" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Back<ept id="p1">**</ept> and then <bpt id="p2">**</bpt>Done<ept id="p2">**</ept> to exit the workspace</source>
+        </trans-unit>
+        <trans-unit id="300" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Publish workspace<ept id="p1">**</ept> to save your work</source>
+        </trans-unit>
+        <trans-unit id="301" translate="yes" xml:space="preserve">
+          <source>Repeat the previous steps to record all the required workflow actions.</source>
+        </trans-unit>
+        <trans-unit id="302" translate="yes" xml:space="preserve">
+          <source>Create a .js file</source>
+        </trans-unit>
+        <trans-unit id="303" translate="yes" xml:space="preserve">
+          <source>Open Notepad or Microsoft Visual Studio, and paste the following code.</source>
+        </trans-unit>
+        <trans-unit id="304" translate="yes" xml:space="preserve">
+          <source>Save the file as a .js file.</source>
+        </trans-unit>
+        <trans-unit id="305" translate="yes" xml:space="preserve">
+          <source>This code does the following:</source>
+        </trans-unit>
+        <trans-unit id="306" translate="yes" xml:space="preserve">
+          <source>It hides the extra workflow-related columns that we added earlier on the mobile list page.</source>
+        </trans-unit>
+        <trans-unit id="307" translate="yes" xml:space="preserve">
+          <source>We added these columns so that the app has that information in context and can do the next step.</source>
+        </trans-unit>
+        <trans-unit id="308" translate="yes" xml:space="preserve">
+          <source>Based on the workflow step that is active, it applies logic to show only those actions.</source>
+        </trans-unit>
+        <trans-unit id="309" translate="yes" xml:space="preserve">
+          <source>The name of the pages and other controls in the code must be the same as the names in the workspace.</source>
+        </trans-unit>
+        <trans-unit id="310" translate="yes" xml:space="preserve">
+          <source>Upload the code file to the workspace by selecting the <bpt id="p1">**</bpt>Logic<ept id="p1">**</ept> tab</source>
+        </trans-unit>
+        <trans-unit id="311" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Done<ept id="p1">**</ept> to exit edit mode.</source>
+        </trans-unit>
+        <trans-unit id="312" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Back<ept id="p1">**</ept> and then <bpt id="p2">**</bpt>Done<ept id="p2">**</ept> to exit the workspace</source>
+        </trans-unit>
+        <trans-unit id="313" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Publish workspace<ept id="p1">**</ept> to save your work</source>
+        </trans-unit>
+        <trans-unit id="314" translate="yes" xml:space="preserve">
+          <source>Vendor invoice attachments</source>
+        </trans-unit>
+        <trans-unit id="315" translate="yes" xml:space="preserve">
+          <source>Click the <bpt id="p1">**</bpt>Settings<ept id="p1">**</ept> (gear) button in the upper right of the page, and then click <bpt id="p2">**</bpt>Mobile app<ept id="p2">**</ept></source>
+        </trans-unit>
+        <trans-unit id="316" translate="yes" xml:space="preserve">
+          <source>Click the <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept> button to start edit mode in the workspace.</source>
+        </trans-unit>
+        <trans-unit id="317" translate="yes" xml:space="preserve">
+          <source>Select the **Invoice details **page that you created earlier, and then click <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="318" translate="yes" xml:space="preserve">
+          <source>Set the <bpt id="p1">**</bpt>Document management<ept id="p1">**</ept> option to <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept> as shown below.</source>
+        </trans-unit>
+        <trans-unit id="319" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> If there are no requirements to show attachments on the mobile device, you can leave this option set to <bpt id="p2">**</bpt>No<ept id="p2">**</ept>, which is the default setting.</source>
+        </trans-unit>
+        <trans-unit id="320" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">![</ph>Document management<ph id="ph2">](./media/docmanagement-216x300.png)</ph></source>
+        </trans-unit>
+        <trans-unit id="321" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Done<ept id="p1">**</ept> to exit edit mode.</source>
+        </trans-unit>
+        <trans-unit id="322" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Back<ept id="p1">**</ept> and then <bpt id="p2">**</bpt>Done<ept id="p2">**</ept> to exit the workspace</source>
+        </trans-unit>
+        <trans-unit id="323" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Publish workspace<ept id="p1">**</ept> to save your work</source>
+        </trans-unit>
+        <trans-unit id="324" translate="yes" xml:space="preserve">
+          <source>Vendor invoice line distributions</source>
+        </trans-unit>
+        <trans-unit id="325" translate="yes" xml:space="preserve">
+          <source>The requirements for this scenario confirm that there will be only line-level distributions, and that an invoice will always have only one line.</source>
+        </trans-unit>
+        <trans-unit id="326" translate="yes" xml:space="preserve">
+          <source>Because this scenario is simple, the user experience on the mobile device must also be simple enough that the user doesn’t have to drill down several levels to view the distributions.</source>
+        </trans-unit>
+        <trans-unit id="327" translate="yes" xml:space="preserve">
+          <source>Vendor invoices in Finance and Operations include the option of showing all distributions from the invoice header.</source>
+        </trans-unit>
+        <trans-unit id="328" translate="yes" xml:space="preserve">
+          <source>This experience is what we need for the mobile scenario.</source>
+        </trans-unit>
+        <trans-unit id="329" translate="yes" xml:space="preserve">
+          <source>Therefore, we will use the <bpt id="p1">**</bpt>VendMobileInvoiceAllDistributionTree<ept id="p1">**</ept> page to design this part of the mobile scenario.</source>
+        </trans-unit>
+        <trans-unit id="330" translate="yes" xml:space="preserve">
+          <source>Knowing the requirements helps us decide which specific page to use and how exactly to optimize the mobile experience for the user when we design the scenario.</source>
+        </trans-unit>
+        <trans-unit id="331" translate="yes" xml:space="preserve">
+          <source>In the second scenario, we will use a different page to show the distributions, because the requirements for that scenario differ.</source>
+        </trans-unit>
+        <trans-unit id="332" translate="yes" xml:space="preserve">
+          <source>In the URL, replace the name of the menu item, as you did before.</source>
+        </trans-unit>
+        <trans-unit id="333" translate="yes" xml:space="preserve">
+          <source>The page that appears should resemble the following illustration.</source>
+        </trans-unit>
+        <trans-unit id="334" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>All distributions page<ept id="p1">](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="335" translate="yes" xml:space="preserve">
+          <source>Open the mobile designer from the <bpt id="p1">**</bpt>Settings<ept id="p1">**</ept> (gear) button.</source>
+        </trans-unit>
+        <trans-unit id="336" translate="yes" xml:space="preserve">
+          <source>Click the <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept> button to start edit mode in the workspace.</source>
+        </trans-unit>
+        <trans-unit id="337" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> You will see that two new pages were created automatically.</source>
+        </trans-unit>
+        <trans-unit id="338" translate="yes" xml:space="preserve">
+          <source>The system creates these pages, because you turned on document management in the previous section.</source>
+        </trans-unit>
+        <trans-unit id="339" translate="yes" xml:space="preserve">
+          <source>You can ignore these new pages.</source>
+        </trans-unit>
+        <trans-unit id="340" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Add page<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="341" translate="yes" xml:space="preserve">
+          <source>Enter a page title, such as <bpt id="p1">**</bpt>View accounting<ept id="p1">**</ept>, and a description, such as <bpt id="p2">**</bpt>View accounting for the invoice<ept id="p2">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="342" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Done<ept id="p1">**</ept>.</source>
+        </trans-unit>
+        <trans-unit id="343" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> tab, click <bpt id="p2">**</bpt>Select fields<ept id="p2">**</ept>, select the following fields from the distributions page, and then click <bpt id="p3">**</bpt>Done<ept id="p3">**</ept>:</source>
+        </trans-unit>
+        <trans-unit id="344" translate="yes" xml:space="preserve">
+          <source>Amount</source>
+        </trans-unit>
+        <trans-unit id="345" translate="yes" xml:space="preserve">
+          <source>Currency</source>
+        </trans-unit>
+        <trans-unit id="346" translate="yes" xml:space="preserve">
+          <source>Ledger account</source>
+        </trans-unit>
+        <trans-unit id="347" translate="yes" xml:space="preserve">
+          <source>We didn’t select the <bpt id="p1">**</bpt>Description<ept id="p1">**</ept> column from the distributions grid, because the requirements for this scenario confirmed that the extended price is the only amount that there will be distributions for.</source>
+        </trans-unit>
+        <trans-unit id="348" translate="yes" xml:space="preserve">
+          <source>Therefore, the user won’t require another field to determine the amount type that the distribution is for.</source>
+        </trans-unit>
+        <trans-unit id="349" translate="yes" xml:space="preserve">
+          <source>However, in the next scenario, we <bpt id="p1">**</bpt>will<ept id="p1">**</ept> use this information, because the requirements for that scenario specify that other amount types have distributions (for example, sales tax).</source>
+        </trans-unit>
+        <trans-unit id="350" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Done<ept id="p1">**</ept> to exit edit mode.</source>
+        </trans-unit>
+        <trans-unit id="351" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Back<ept id="p1">**</ept> and then <bpt id="p2">**</bpt>Done<ept id="p2">**</ept> to exit the workspace</source>
+        </trans-unit>
+        <trans-unit id="352" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Publish workspace<ept id="p1">**</ept> to save your work</source>
+        </trans-unit>
+        <trans-unit id="353" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>View accounting<ept id="p1">**</ept> mobile page isn’t currently linked to any of the mobile pages that we have designed so far.</source>
+        </trans-unit>
+        <trans-unit id="354" translate="yes" xml:space="preserve">
+          <source>Because the user should be able to navigate to the <bpt id="p1">**</bpt>View accounting<ept id="p1">**</ept> page from the <bpt id="p2">**</bpt>Invoice details<ept id="p2">**</ept> page on the mobile device, we must provide navigation from the <bpt id="p3">**</bpt>Invoice details<ept id="p3">**</ept> page to the <bpt id="p4">**</bpt>View accounting<ept id="p4">**</ept> page.</source>
+        </trans-unit>
+        <trans-unit id="355" translate="yes" xml:space="preserve">
+          <source>We establish this navigation by using additional logic via JavaScript.</source>
+        </trans-unit>
+        <trans-unit id="356" translate="yes" xml:space="preserve">
+          <source>Open the .js file that you created earlier, and add the lines that are highlighted in the following code.</source>
+        </trans-unit>
+        <trans-unit id="357" translate="yes" xml:space="preserve">
+          <source>This code does two things:</source>
+        </trans-unit>
+        <trans-unit id="358" translate="yes" xml:space="preserve">
+          <source>It helps guarantee that users can’t navigate directly from the workspace to the <bpt id="p1">**</bpt>View accounting<ept id="p1">**</ept> page.</source>
+        </trans-unit>
+        <trans-unit id="359" translate="yes" xml:space="preserve">
+          <source>It establishes a navigation control from the <bpt id="p1">**</bpt>Invoice details<ept id="p1">**</ept> page to the <bpt id="p2">**</bpt>View accounting<ept id="p2">**</ept> page.</source>
+        </trans-unit>
+        <trans-unit id="360" translate="yes" xml:space="preserve">
+          <source>The name of the pages and other controls in the code must be the same as the names in the workspace.</source>
+        </trans-unit>
+        <trans-unit id="361" translate="yes" xml:space="preserve">
+          <source>Upload the code file to the workspace by selecting the <bpt id="p1">**</bpt>Logic<ept id="p1">**</ept> tab to overwrite the previous code</source>
+        </trans-unit>
+        <trans-unit id="362" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Done<ept id="p1">**</ept> to exit edit mode.</source>
+        </trans-unit>
+        <trans-unit id="363" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Back<ept id="p1">**</ept> and then <bpt id="p2">**</bpt>Done<ept id="p2">**</ept> to exit the workspace</source>
+        </trans-unit>
+        <trans-unit id="364" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Publish workspace<ept id="p1">**</ept> to save your work</source>
+        </trans-unit>
+        <trans-unit id="365" translate="yes" xml:space="preserve">
+          <source>Validation</source>
+        </trans-unit>
+        <trans-unit id="366" translate="yes" xml:space="preserve">
+          <source>From your mobile device, open the app, and connect to your Finance and Operations instance.</source>
+        </trans-unit>
+        <trans-unit id="367" translate="yes" xml:space="preserve">
+          <source>Make sure that you sign in to the company where vendor invoices are assigned to you for review.</source>
+        </trans-unit>
+        <trans-unit id="368" translate="yes" xml:space="preserve">
+          <source>You should be able to perform the following actions:</source>
+        </trans-unit>
+        <trans-unit id="369" translate="yes" xml:space="preserve">
+          <source>See the <bpt id="p1">**</bpt>My approvals<ept id="p1">**</ept> workspace.</source>
+        </trans-unit>
+        <trans-unit id="370" translate="yes" xml:space="preserve">
+          <source>Drill into the <bpt id="p1">**</bpt>My approvals<ept id="p1">**</ept> workspace and see the <bpt id="p2">**</bpt>My vendor invoices<ept id="p2">**</ept> page.</source>
+        </trans-unit>
+        <trans-unit id="371" translate="yes" xml:space="preserve">
+          <source>Drill into the <bpt id="p1">**</bpt>My vendor invoices<ept id="p1">**</ept> page and see the list of invoices that are assigned to you.</source>
+        </trans-unit>
+        <trans-unit id="372" translate="yes" xml:space="preserve">
+          <source>Drill into one of the invoices, and see the invoice header details and line details.</source>
+        </trans-unit>
+        <trans-unit id="373" translate="yes" xml:space="preserve">
+          <source>On the details page, see a link to attachments, and use this link to navigate to the attachments list and view the attachments.</source>
+        </trans-unit>
+        <trans-unit id="374" translate="yes" xml:space="preserve">
+          <source>On the details page, see a link to the <bpt id="p1">**</bpt>View accounting<ept id="p1">**</ept> page, and use this link to navigate to the distributions page and view the distributions.</source>
+        </trans-unit>
+        <trans-unit id="375" translate="yes" xml:space="preserve">
+          <source>On the details page, click the <bpt id="p1">**</bpt>Actions<ept id="p1">**</ept> menu at the bottom, and perform workflow actions that are applicable to the workflow step.</source>
+        </trans-unit>
+        <trans-unit id="376" translate="yes" xml:space="preserve">
+          <source>Designing a complex invoice approval scenario for Fabrikam</source>
+        </trans-unit>
+        <trans-unit id="377" translate="yes" xml:space="preserve">
+          <source>Scenario attribute</source>
+        </trans-unit>
+        <trans-unit id="378" translate="yes" xml:space="preserve">
+          <source>Answer</source>
+        </trans-unit>
+        <trans-unit id="379" translate="yes" xml:space="preserve">
+          <source>What fields from the invoice header will the user want to see in the mobile experience, and in what order?</source>
+        </trans-unit>
+        <trans-unit id="380" translate="yes" xml:space="preserve">
+          <source>Vendor name</source>
+        </trans-unit>
+        <trans-unit id="381" translate="yes" xml:space="preserve">
+          <source>Invoice amount</source>
+        </trans-unit>
+        <trans-unit id="382" translate="yes" xml:space="preserve">
+          <source>Invoice account</source>
+        </trans-unit>
+        <trans-unit id="383" translate="yes" xml:space="preserve">
+          <source>Invoice number</source>
+        </trans-unit>
+        <trans-unit id="384" translate="yes" xml:space="preserve">
+          <source>Invoice date</source>
+        </trans-unit>
+        <trans-unit id="385" translate="yes" xml:space="preserve">
+          <source>Invoice description</source>
+        </trans-unit>
+        <trans-unit id="386" translate="yes" xml:space="preserve">
+          <source>Due date</source>
+        </trans-unit>
+        <trans-unit id="387" translate="yes" xml:space="preserve">
+          <source>Invoice currency</source>
+        </trans-unit>
+        <trans-unit id="388" translate="yes" xml:space="preserve">
+          <source>What fields from the invoice lines will the user want to see in the mobile experience, and in what order?</source>
+        </trans-unit>
+        <trans-unit id="389" translate="yes" xml:space="preserve">
+          <source>Procurement category</source>
+        </trans-unit>
+        <trans-unit id="390" translate="yes" xml:space="preserve">
+          <source>Quantity</source>
+        </trans-unit>
+        <trans-unit id="391" translate="yes" xml:space="preserve">
+          <source>Unit price</source>
+        </trans-unit>
+        <trans-unit id="392" translate="yes" xml:space="preserve">
+          <source>Line net amount</source>
+        </trans-unit>
+        <trans-unit id="393" translate="yes" xml:space="preserve">
+          <source>1099 amount</source>
+        </trans-unit>
+        <trans-unit id="394" translate="yes" xml:space="preserve">
+          <source>How many invoice lines are there in an invoice?</source>
+        </trans-unit>
+        <trans-unit id="395" translate="yes" xml:space="preserve">
+          <source>Apply the 80-20 rule here, and optimize for the 80 percent.</source>
+        </trans-unit>
+        <trans-unit id="396" translate="yes" xml:space="preserve">
+          <source>5</source>
+        </trans-unit>
+        <trans-unit id="397" translate="yes" xml:space="preserve">
+          <source>Will users want to see accounting distributions (invoice coding) on the mobile device during reviews?</source>
+        </trans-unit>
+        <trans-unit id="398" translate="yes" xml:space="preserve">
+          <source>Yes</source>
+        </trans-unit>
+        <trans-unit id="399" translate="yes" xml:space="preserve">
+          <source>How many accounting distributions (extended price, sales tax, charges, and so on) are there for an invoice line?</source>
+        </trans-unit>
+        <trans-unit id="400" translate="yes" xml:space="preserve">
+          <source>Again, apply the 80-20 rule.</source>
+        </trans-unit>
+        <trans-unit id="401" translate="yes" xml:space="preserve">
+          <source>Extended price: 2 Sales tax: 2 Charges: 2</source>
+        </trans-unit>
+        <trans-unit id="402" translate="yes" xml:space="preserve">
+          <source>Do the invoices also have accounting distributions on the invoice header?</source>
+        </trans-unit>
+        <trans-unit id="403" translate="yes" xml:space="preserve">
+          <source>If so, should these accounting distributions be available on the device?</source>
+        </trans-unit>
+        <trans-unit id="404" translate="yes" xml:space="preserve">
+          <source>Not used</source>
+        </trans-unit>
+        <trans-unit id="405" translate="yes" xml:space="preserve">
+          <source>Will users want to see attachments for the invoice on the device?</source>
+        </trans-unit>
+        <trans-unit id="406" translate="yes" xml:space="preserve">
+          <source>Yes</source>
+        </trans-unit>
+        <trans-unit id="407" translate="yes" xml:space="preserve">
+          <source>Next steps</source>
+        </trans-unit>
+        <trans-unit id="408" translate="yes" xml:space="preserve">
+          <source>The following variations can be done for scenario 1, based on the requirements for scenario 2.</source>
+        </trans-unit>
+        <trans-unit id="409" translate="yes" xml:space="preserve">
+          <source>You can use this section to improve your mobile app experience.</source>
+        </trans-unit>
+        <trans-unit id="410" translate="yes" xml:space="preserve">
+          <source>Because more invoice lines are expected in scenario 2, the following changes to the design will help optimize the user experience on the mobile device:</source>
+        </trans-unit>
+        <trans-unit id="411" translate="yes" xml:space="preserve">
+          <source>Instead of viewing invoice lines on the details page (as in scenario 1), users can choose to view lines on a separate mobile page.</source>
+        </trans-unit>
+        <trans-unit id="412" translate="yes" xml:space="preserve">
+          <source>Because more than one invoice line is expected in this scenario, if the <bpt id="p1">**</bpt>VendMobileInvoiceAllDistributionTree<ept id="p1">**</ept> page is used to design the distributions page for mobile (as in scenario 1), it might be confusing for the user to correlate lines to distributions.</source>
+        </trans-unit>
+        <trans-unit id="413" translate="yes" xml:space="preserve">
+          <source>Therefore, use the <bpt id="p1">**</bpt>VendMobileInvoiceLineDistributionTree<ept id="p1">**</ept> page to design the distributions page.</source>
+        </trans-unit>
+        <trans-unit id="414" translate="yes" xml:space="preserve">
+          <source>Ideally, the distributions should be shown in the context of an invoice line in this scenario.</source>
+        </trans-unit>
+        <trans-unit id="415" translate="yes" xml:space="preserve">
+          <source>Therefore, make sure that the user can drill into a line to see the distributions page.</source>
+        </trans-unit>
+        <trans-unit id="416" translate="yes" xml:space="preserve">
+          <source>Use the page link capability to establish the drill-through, just as you did for the header and details pages in scenario 1.</source>
+        </trans-unit>
+        <trans-unit id="417" translate="yes" xml:space="preserve">
+          <source>Because more than one amount type is expected on the distributions in scenario 2 (sales tax, charges, and so on), it will be useful to show the description of the amount type.</source>
+        </trans-unit>
+        <trans-unit id="418" translate="yes" xml:space="preserve">
+          <source>(We omitted this information in scenario 1.)</source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
