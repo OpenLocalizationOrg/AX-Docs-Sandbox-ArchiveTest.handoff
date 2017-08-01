@@ -1,0 +1,652 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="nl-nl">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-5a646d1" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">608ec87233acb05b0d46e367bcb7cd14985d7813</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">financials\budgeting\budget-plan.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">basic</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">HT</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">72cf86dc978646e023aadafc1cd95faae0224bb6</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">950ef35dc3aece8cb210805f2be485deeeb18f3e</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>Budget planning</source>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>The objective of this lab is to provide a guided view of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition functionality updates in Budget planning area.</source>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>The intent of this lab is to illustrate a quick configuration example of budget planning module and showcase how budget planning can be accomplished using this configuration.</source>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve" extradata="MT" restype="x-metadata">
+          <source>This lab will focus specifically on the following business processes or tasks -    - Creating organizational hierarchy for budget planning and configuring user security   - Defining budget plan scenarios, budget plan columns, layouts and Excel templates   - Creating and activating budget planning process   - Creating budget plan document by pulling in actuals from General ledger   - Using allocations to adjust budget plan document data   - Editing budget plan document data in Excel</source>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Budget planning</source>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>The objective of this lab is to provide a guided view of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition functionality updates in Budget planning area.</source>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>The intent of this lab is to illustrate a quick configuration example of budget planning module and showcase how budget planning can be accomplished using this configuration.</source>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>This lab will focus specifically on the following business processes or tasks -    - Creating organizational hierarchy for budget planning and configuring user security   - Defining budget plan scenarios, budget plan columns, layouts and Excel templates   - Creating and activating budget planning process   - Creating budget plan document by pulling in actuals from General ledger   - Using allocations to adjust budget plan document data   - Editing budget plan document data in Excel</source>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Prerequisites</source>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>For this tutorial, you’ll need to access the Finance and Operations environment with Contoso demo data, and be provisioned as an administrator on the instance.</source>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Do not use In Private browser mode for this lab - sign out from any other account in the browser if needed and sign in with Finance and Operations administrator credentials.</source>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>When signing into Finance and Operations, you <bpt id="p1">**</bpt>MUST<ept id="p1">**</ept> check the “Keep me signed in” checkbox.</source>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>This creates a persistent cookie that the Excel App currently needs.</source>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>If you sign in to the Finance and Operations using a browser other than IE, then you’ll be prompted to sign in within the Excel App.</source>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>When you click “Sign in” in the Excel App, an IE popup window will open and when signing in you <bpt id="p1">**</bpt>MUST<ept id="p1">**</ept> check the “Keep me signed in” checkbox.</source>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>If clicking “Sign in” in the Excel App doesn’t appear to do anything then you should clear the IE cookie cache.</source>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Scenario overview<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Julia works as a finance manager in Contoso Entertainment Systems in Germany (DEMF).</source>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>As FY2016 approaches, she needs to work on setting up the company’s budget for the upcoming year.</source>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Budget preparation looks as follows:</source>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Julia uses previous year actuals amounts as a starting point to create the budget.</source>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Based on the previous year actuals, she creates estimates for 12 months in the upcoming year</source>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Julia reviews the budget with CFO.</source>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Once done she makes necessary adjustments for the budget plan and finalizes budget preparation.</source>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Budget planning configuration schema for the scenario looks as follows:</source>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Budget planning configuration schema</source>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Julia uses the following Excel template to prepare the budget:</source>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Excel template<ept id="p1">](./media/screenshot2-1024x352.png)](./media/screenshot2.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Exercise 1: Configuration</source>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Task 1: Create organizational hierarchy<ept id="p1">**</ept></source>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>As all the budgeting process happens in the Finance department, therefore Julia needs to create a very simple organizational hierarchy – consisting of Finance department only.</source>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>1.1.</source>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Navigate to Organization hierarchies (Organization administration <ph id="ph1">&amp;gt;</ph> Organizations <ph id="ph2">&amp;gt;</ph> Organization hierarchies) and click New button</source>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Org hierarchy</source>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>1.2.</source>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Type the name for the organizational hierarchy and click button Assign purpose</source>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Name<ept id="p1">](./media/screenshot4.png)](./media/screenshot4.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>1.3.</source>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Select Budget planning purpose, click button Add and assign newly created organizational hierarchy:</source>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Assign purpose<ept id="p1">](./media/screenshot5.png)](./media/screenshot5.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>1.4.</source>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Repeat the step above for Security organizational purpose.</source>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Close the form when done.</source>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Security org<ept id="p1">](./media/screenshot6.png)](./media/screenshot6.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>1.5.</source>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>In the Organizational Hierarchies form click button View.</source>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Click Edit in the Hierarchy designer and create a hierarchy by clicking button Insert.</source>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Insert<ept id="p1">](./media/screenshot7.png)](./media/screenshot7.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>1.6.</source>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Select Finance department for the budgeting hierarchy.</source>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Finance<ept id="p1">](./media/screenshot8.png)](./media/screenshot8.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>1.7.</source>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>When done, click button Publish and Close.</source>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Select 1/1/2015 as effective date for hierarchy publishing.</source>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Effective date<ept id="p1">](./media/screenshot9.png)](./media/screenshot9.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Task 2: Configure user security</source>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Budget planning uses special security policies to configure access to budget plans data.</source>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Julia needs to give access to Finance budget plans for herself.</source>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>2.1.</source>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Switch to DEMF legal entity context.</source>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>2.2.</source>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Navigate to Budgeting <ph id="ph1">&amp;gt;</ph> Setup <ph id="ph2">&amp;gt;</ph> Budget planning <ph id="ph3">&amp;gt;</ph> Budget planning configuration.</source>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>In Parameters tab, set the Security model value to Based on security organizations</source>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Parameters<ept id="p1">](./media/screenshot11.png)](./media/screenshot11.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>2.3.</source>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Navigate to System administration <ph id="ph1">&amp;gt;</ph> Users <ph id="ph2">&amp;gt;</ph> Users.</source>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Give user Admin (Julia Funderburk) Budget manager role.</source>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Budget manager<ept id="p1">](./media/screenshot12.png)](./media/screenshot12.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>2.4.</source>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Pick user role and click Assign organizations</source>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Assign org<ept id="p1">](./media/screenshot13.png)](./media/screenshot13.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>2.5.</source>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Select “Grant access to specific organizations”.</source>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Pick Organizational hierarchy created in the first step.</source>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Pick Finance node and click Grant with children button</source>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">***</bpt>Important!<ept id="p1">***</ept></source>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>Make sure you are in DEMF legal entity context when performing this task, as Organizational security is applied per legal entity<ept id="p1">*</ept></source>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Grant access<ept id="p1">](./media/screenshot14.png)](./media/screenshot14.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Task 3: Create scenarios</source>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>3.1.</source>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Navigate to Budgeting<ph id="ph1">&amp;gt;</ph>Setup <ph id="ph2">&amp;gt;</ph> Budget planning <ph id="ph3">&amp;gt;</ph> Budget planning configuration.</source>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>In the Scenarios page note the scenarios we are going to use further in this lab: Previous year actuals and Budgeted.</source>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>Note: You can create new scenarios for this exercise if desired and use those instead.<ept id="p1">*</ept></source>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>New scenarios<ept id="p1">](./media/screenshot15.png)](./media/screenshot15.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>Note: as Julia is not using formal approval process for budget preparation, we will skip Workflows, Stages and Workflow stages setup in this lab and will use existing setup for Auto – approve workflow. See appendix for this workflow configuration.<ept id="p1">*</ept></source>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Task 4: Create budget plan columns</source>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>Budget plan columns are either Monetary or quantity based columns that can be used in budget plan document layout.</source>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>In our example we need to create a column for Previous year actuals and 12 columns to represent each month in a budgeted year.</source>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Columns can be created either by simply clicking Add button and filling in the values, or with a help of Data entity.</source>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>In this lab we will use Data entity to fill in the values.</source>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>4.1.</source>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>In Budgeting<ph id="ph1">&amp;gt;</ph>Setup <ph id="ph2">&amp;gt;</ph> Budget planning <ph id="ph3">&amp;gt;</ph> Budget planning configuration open Columns page.</source>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>Click Office button on the top right corner of the form and pick Columns (unfiltered)</source>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Columns unfiltered<ept id="p1">](./media/screenshot16.png)](./media/screenshot16.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>4.2.</source>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>System will open Excel workbook to be used for filling in the values.</source>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>If prompted, click Enable Editing and Trust this app</source>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Enable editing<ept id="p1">](./media/screenshot18.png)](./media/screenshot18.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Trust this app<ept id="p1">](./media/screenshot17.png)](./media/screenshot17.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>4.3.</source>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>We will need more columns to fill the values in.</source>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Click Design on the right side pane to add the columns to the grid:</source>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Design<ept id="p1">](./media/screenshot19.png)](./media/screenshot19.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>4.4.</source>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>Click little pencil button next to PlanColumns to see available columns to add to the grid</source>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Edit<ept id="p1">](./media/screenshot20.png)](./media/screenshot20.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>4.5.</source>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>Double click on each available field to add them to Selected fields and click Update</source>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>Update</source>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>](./media/screenshot21.png)</source>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>4.6.</source>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>In Excel table add all the columns that need to be created.</source>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Use AutoFill feature in Excel to add the lines quickly.</source>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>Make sure the lines are added as a part of the table (when using vertical scroll, you should be able to see column headers on the top of the grid)</source>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Autofill<ept id="p1">](./media/screenshot22.png)](./media/screenshot22.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>4.7.</source>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>Return to Finance and Operations and refresh the page.</source>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>Published values will appear in Finance and Operations.</source>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Refresh<ept id="p1">](./media/screenshot23.png)](./media/screenshot23.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>Task 5: Create budget plan document layouts and templates</source>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>Layout defines how budget plan document lines grid is going to look like when user opens budget plan document.</source>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>It is also possible to switch the layout for budget plan document to see the same data in different angles.</source>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>Now, as she’s got columns defined to be used with our budget plan document, Julia needs to create a budget plan document layout, that would look similar to the Excel table she uses to create budget data (see section Scenario overview in this lab)</source>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>5.1.</source>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>In Budgeting<ph id="ph1">&amp;gt;</ph>Setup <ph id="ph2">&amp;gt;</ph> Budget planning <ph id="ph3">&amp;gt;</ph> Budget planning configuration open Layouts page.</source>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>Create a new layout for Monthly budget entry:</source>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>Pick MA+BU dimension set to include Main accounts and Business units to the layout.</source>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>List all budget plan columns created in the previous step in the Elements section.</source>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>Make all but Previous year actuals editable.</source>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>Click Descriptions button to select which financial dimensions should display Descriptions in the grid.</source>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Descriptions<ept id="p1">](./media/screenshot24.png)](./media/screenshot24.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>Based on the budget plan layout definition we can create an Excel template to be used as an alternative way to edit Budget data.</source>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>As Excel template has to match budget plan layout definition, you won’t be able to edit budget plan layout after generating Excel template, therefore this task should be done after all layout components are defined.</source>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>5.2.</source>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>For the layout created in the 5.1.</source>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>step, click button Template <ph id="ph1">&amp;gt;</ph> Generate.</source>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>Confirm the warning message.</source>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>To view the template, click Template <ph id="ph1">&amp;gt;</ph> View.</source>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>Note: Make sure to select “Save as” and select the place where template should be stored in order to edit it. If user selects “Open” in the dialog without saving, the changes done to the file will not be retained when the file is closed.<ept id="p1">*</ept><ph id="ph1"> 
+</ph><bpt id="p2">[</bpt><ph id="ph2">![</ph>Template view<ept id="p2">](./media/screenshot25.png)](./media/screenshot25.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>5.3.</source>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">&amp;lt;</ph> Optional step<ph id="ph2">&amp;gt;</ph> Modify Excel template to make it look more user friendly – add total formulas, header fields, formatting, etc. Save the changes and upload the file to budget plan layout by clicking Layout <ph id="ph3">&amp;gt;</ph> Upload <bpt id="p1">[</bpt><ph id="ph4">![</ph>Upload<ept id="p1">](./media/screenshot26.png)](./media/screenshot26.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>Task 6: Create a budget planning process</source>
+        </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>Julia needs to create and activate a new budget planning process combining all the setup above to start entering budget plans.</source>
+        </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>Budget planning process defines what budgeting organizations, workflow, layouts and templates will be used for creating budget plans.</source>
+        </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>6.1.</source>
+        </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>Navigate to Budgeting <ph id="ph1">&amp;gt;</ph> Setup <ph id="ph2">&amp;gt;</ph> Budget planning <ph id="ph3">&amp;gt;</ph> Budget planning process and create a new record.</source>
+        </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>Budget planning process – DEMF budgeting FY2016</source>
+        </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>Budget cycle – FY2016</source>
+        </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>Ledger – DEMF</source>
+        </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>Default account structure – Manufacturing P&amp;L</source>
+        </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>Organization hierarchy – pick the hierarchy created in the beginning of the lab</source>
+        </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>Budget planning workflow – assign Auto – Approve workflow for Finance department</source>
+        </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>In budget planning stage rules and templates, for each workflow Budget planning stage pick if Adding lines and Modifying lines is allowed and what Layout should be used by default</source>
+        </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>Note: You can create additional document layouts and assign them to be available in budget planning workflow stage by clicking Alternate layouts button.<ept id="p1">*</ept></source>
+        </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Alternate layouts<ept id="p1">](./media/screenshot27.png)](./media/screenshot27.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>6.2.</source>
+        </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>Select Actions <ph id="ph1">&amp;gt;</ph> Activate to activate this budget planning workflow</source>
+        </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Activate<ept id="p1">](./media/screenshot28.png)](./media/screenshot28.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>Exercise 2: Process simulation</source>
+        </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>Task 7: Generate initial data for budget plan from General ledger</source>
+        </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>7.1.</source>
+        </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>Navigate to Budgeting <ph id="ph1">&amp;gt;</ph> Periodic <ph id="ph2">&amp;gt;</ph> Generate budget plan from General ledger.</source>
+        </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>Fill in the periodic process parameters and click button Generate.</source>
+        </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Generate<ept id="p1">](./media/screenshot29.png)](./media/screenshot29.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>7.2.</source>
+        </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>Navigate to Budgeting <ph id="ph1">&amp;gt;</ph> Budget plans to find a budget plan created by Generate process.</source>
+        </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Budget plan<ept id="p1">](./media/screenshot30.png)](./media/screenshot30.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>7.3.</source>
+        </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>Open document details by clicking on Document number hyperlink.</source>
+        </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>Budget plan is displayed as defined in the layout created during this lab</source>
+        </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Budget plan display<ept id="p1">](./media/screenshot31.png)](./media/screenshot31.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>Task 8: Create current year budget based on previous year actuals</source>
+        </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>Allocation methods can be used in budget plan to easily copy information for budget plans from one scenario to another/ spread them across periods/ allocate to dimensions.</source>
+        </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>We will use allocations to create current year budget from previous year actuals.</source>
+        </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>8.1.</source>
+        </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>Pick all lines in the budget plan document grid and click button allocate budget</source>
+        </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>All lines<ept id="p1">](./media/screenshot32.png)](./media/screenshot32.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>8.2.</source>
+        </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>Select allocation method, Period key, Source and destination scenarios and click Allocate</source>
+        </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Allocate<ept id="p1">](./media/screenshot33.png)](./media/screenshot33.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source>The previous year actual amounts will be copied to current year budget and allocate them across periods using Sales curve period key.</source>
+        </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Sales curve<ept id="p1">](./media/screenshot34.png)](./media/screenshot34.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source>Task 9: Adjust budget plan document using Excel and finalize the document</source>
+        </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>9.1.</source>
+        </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>Click Button worksheet to open document contents in Excel</source>
+        </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Excel<ept id="p1">](./media/screenshot35.png)](./media/screenshot35.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source>9.2.</source>
+        </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source>When Excel workbook opens, adjust the numbers in budget plan document and click button Publish.</source>
+        </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Publish<ept id="p1">](./media/screenshot36.png)](./media/screenshot36.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source>9.3.</source>
+        </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source>Return to budget plan document in Finance and Operations.</source>
+        </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source>Click Workflow <ph id="ph1">&amp;gt;</ph> Submit to Auto-approve the document</source>
+        </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Auto-approve<ept id="p1">](./media/screenshot37.png)](./media/screenshot37.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source>Once workflow completes, budget plan document stage changes to Approved.</source>
+        </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Approved<ept id="p1">](./media/screenshot38.png)](./media/screenshot38.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source>Appendix</source>
+        </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>Auto-Approve workflow configuration</source>
+        </trans-unit>
+        <trans-unit id="298" translate="yes" xml:space="preserve">
+          <source>A.</source>
+        </trans-unit>
+        <trans-unit id="299" translate="yes" xml:space="preserve">
+          <source>Budgeting <ph id="ph1">&amp;gt;</ph> Setup <ph id="ph2">&amp;gt;</ph> Budget planning <ph id="ph3">&amp;gt;</ph> Budgeting workflows Create a new workflow using template Budget planning workflows:</source>
+        </trans-unit>
+        <trans-unit id="300" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Create a new workflow<ept id="p1">](./media/screenshot39.png)](./media/screenshot39.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="301" translate="yes" xml:space="preserve">
+          <source>This workflow will contain only one task – Stage transition budget plan</source>
+        </trans-unit>
+        <trans-unit id="302" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Stage transition budget plan<ept id="p1">](./media/screenshot40.png)](./media/screenshot40.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="303" translate="yes" xml:space="preserve">
+          <source>Save and activate the workflow.</source>
+        </trans-unit>
+        <trans-unit id="304" translate="yes" xml:space="preserve">
+          <source>B.</source>
+        </trans-unit>
+        <trans-unit id="305" translate="yes" xml:space="preserve">
+          <source>Navigate to Budgeting <ph id="ph1">&amp;gt;</ph> Setup <ph id="ph2">&amp;gt;</ph> Budget planning <ph id="ph3">&amp;gt;</ph> Budget planning configuration.</source>
+        </trans-unit>
+        <trans-unit id="306" translate="yes" xml:space="preserve">
+          <source>In Stages tab create 2 stages – Initial and Submitted</source>
+        </trans-unit>
+        <trans-unit id="307" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Initial and submitted<ept id="p1">](./media/screenshot41.png)](./media/screenshot41.png)</ept></source>
+        </trans-unit>
+        <trans-unit id="308" translate="yes" xml:space="preserve">
+          <source>C.</source>
+        </trans-unit>
+        <trans-unit id="309" translate="yes" xml:space="preserve">
+          <source>Navigate to Budgeting <ph id="ph1">&amp;gt;</ph> Setup <ph id="ph2">&amp;gt;</ph> Budget planning <ph id="ph3">&amp;gt;</ph> Budget planning configuration.</source>
+        </trans-unit>
+        <trans-unit id="310" translate="yes" xml:space="preserve">
+          <source>In Workflow Stages tab Associate the workflow Auto – approve created in A step with the stages Initial and Submitted</source>
+        </trans-unit>
+        <trans-unit id="311" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Budgeting and budget planning<ept id="p1">](./media/screenshot42.png)](./media/screenshot42.png)</ept></source>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
